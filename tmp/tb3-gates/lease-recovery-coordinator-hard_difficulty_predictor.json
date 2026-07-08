@@ -1,0 +1,44 @@
+{
+  "advanced_hardness_categories": [
+    "state recovery",
+    "replay semantics",
+    "multi-component interaction",
+    "journal reconstruction"
+  ],
+  "difficulty": "hard",
+  "failure_mode_count": 8,
+  "findings": [],
+  "is_python_task": true,
+  "languages": [
+    "go",
+    "bash"
+  ],
+  "model_success_prediction": {
+    "justification": [
+      "8 documented failure modes reduce pass rate",
+      "Advanced categories: state recovery, replay semantics, multi-component interaction, journal reconstruction",
+      "4 adversarial mechanism layers"
+    ],
+    "predicted_claude_pass_rate": 2,
+    "predicted_gpt5_pass_rate": 3,
+    "predicted_worst_model_pass_rate": 3
+  },
+  "predicted_failure_modes": [
+    "mechanism:false_green_intermediate_states",
+    "The model will see NOP runs pass on simple scenarios and assume the logic is completely repaired.",
+    "mechanism:cross_file_cross_format_invariants",
+    "The model will repair shard state without aligning sequence order.",
+    "mechanism:environment_specific_cli_semantics",
+    "The model will assume relative paths work and miss path checks.",
+    "mechanism:rollback_recovery_requirements",
+    "The model will replay journals using alphabetical file sequence rather than global event seq order."
+  ],
+  "status": "PASS",
+  "strict": true,
+  "summary": {
+    "fail": 0,
+    "pass": 1,
+    "warn": 0
+  },
+  "task_dir": "tasks/lease-recovery-coordinator"
+}

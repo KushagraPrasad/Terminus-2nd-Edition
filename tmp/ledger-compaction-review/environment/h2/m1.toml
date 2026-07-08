@@ -1,0 +1,7 @@
+[report]
+target = "/app/output/ledger_compaction_report.json"
+schema_version = 1
+labels = ["clean", "restart", "rollback", "idempotent"]
+record_fields = ["id", "generation", "value", "source"]
+provenance_fields = ["id", "source", "generation"]
+digest_rule = "sort active records by id; join id:generation:value:source parts with |"

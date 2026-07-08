@@ -1,0 +1,1040 @@
+{
+  "hardness_axes": [
+    {
+      "id": "discover",
+      "name": "Discover",
+      "verdict": "PASS",
+      "reasoning": "Durable stamp-cache index authority vs runtime fingerprint surface, seq_g2 replay ordering, and rows_k1 cross-format rules must be inferred from Cargo sources and rebuild experiments, not from instruction.md alone."
+    },
+    {
+      "id": "synthesize",
+      "name": "Synthesize",
+      "verdict": "PASS",
+      "reasoning": "Driver targets, merge_u3 refresh, mix_r7 fold, seq_g2 replay ordering, and rows_k1 emit layer interact; no single crate exposes the full provenance_report contract or held-out permutation survival."
+    },
+    {
+      "id": "diagnose_or_design",
+      "name": "Diagnose or Design/Search",
+      "verdict": "PASS",
+      "reasoning": "adversarial_generalization constraint-complete framing gives complete output schema and generalization obligation while withholding which subsystem mis-orders replay or skips stamp witness cross-checks."
+    },
+    {
+      "id": "navigate_coupling",
+      "name": "Navigate coupling",
+      "verdict": "PASS",
+      "reasoning": "Flipping-point contract spreads controls across m4/k84, p9/y5, p9/y4, and p9/core with overlapping false-green and permutation traps."
+    },
+    {
+      "id": "reason_beyond_training",
+      "name": "Reason beyond training",
+      "verdict": "PASS",
+      "reasoning": "Incremental Cargo stamp-cache vs dep-info fingerprint drift under locked offline workspaces is build-engineering domain reasoning, not a textbook algorithm."
+    }
+  ],
+  "anti_trivialization_checks": [
+    {
+      "id": "disclosure_collapse",
+      "name": "Disclosure-collapse",
+      "verdict": "PASS",
+      "reasoning": "Even with full report schema disclosed, choosing stamp authority and replay order remains non-trivial inference."
+    },
+    {
+      "id": "hidden_instance",
+      "name": "Hidden-instance",
+      "verdict": "PASS",
+      "reasoning": "No single corrupted target row; multiple targets and held-out permutations disagree until global semantics align."
+    },
+    {
+      "id": "single_artifact_repair",
+      "name": "Single-artifact repair",
+      "verdict": "PASS",
+      "reasoning": "Static JSON, Cargo.lock swap, or one TOML edit cannot satisfy ablation, permutation, and pipeline overwrite tests."
+    },
+    {
+      "id": "generalization",
+      "name": "Generalization",
+      "verdict": "PASS",
+      "reasoning": "Verifier exercises primary targets, echo pairs, held-out extra_targets permutations, and consecutive runs."
+    },
+    {
+      "id": "prompt_honesty",
+      "name": "Prompt-honesty",
+      "verdict": "PASS",
+      "reasoning": "Honest constraint contract does not name broken functions, replay phase ordering, or authority split."
+    },
+    {
+      "id": "cheating_vs_difficulty",
+      "name": "Cheating-vs-difficulty",
+      "verdict": "PASS",
+      "reasoning": "Hardness is semantic reconciliation and adversarial permutation survival, not anti-cheat alone."
+    },
+    {
+      "id": "mechanical_fix_filter",
+      "name": "Mechanical-fix filter",
+      "verdict": "PASS",
+      "reasoning": "Not a timeout/deps-only task."
+    },
+    {
+      "id": "localized_fix",
+      "name": "Localized-fix",
+      "verdict": "PASS",
+      "reasoning": "Four-location flipping contract blocks one-function exploit."
+    },
+    {
+      "id": "oracle_locality",
+      "name": "Oracle-locality",
+      "verdict": "PASS",
+      "reasoning": "Oracle coordinates four modules plus patch, not one-file wholesale replace."
+    },
+    {
+      "id": "small_declarative_cluster",
+      "name": "Small declarative-cluster",
+      "verdict": "PASS",
+      "reasoning": "Fix is procedural across Rust modules, not one manifest table."
+    },
+    {
+      "id": "grep_collapse",
+      "name": "Grep-collapse",
+      "verdict": "PASS",
+      "reasoning": "Instruction domain nouns banned from fix-path symbols; opaque m4/p9 roots."
+    },
+    {
+      "id": "pre_factored_helper",
+      "name": "Pre-factored-helper",
+      "verdict": "PASS",
+      "reasoning": "Decoys rhyme structurally without validate/repair stems matching prompt bullets."
+    },
+    {
+      "id": "recipe_discount",
+      "name": "Recipe-discount",
+      "verdict": "PASS",
+      "reasoning": "No standard recipe for incremental stamp-cache provenance drift in this bespoke workspace."
+    },
+    {
+      "id": "security_aura_discount",
+      "name": "Security-aura discount",
+      "verdict": "PASS",
+      "reasoning": "Residual work is build-graph and provenance semantics, not security theater."
+    },
+    {
+      "id": "orthogonal_checklist",
+      "name": "Orthogonal-checklist",
+      "verdict": "PASS",
+      "reasoning": "Authority, replay order, cross-format emit, and permutation generalization trade off rather than independent bullets."
+    },
+    {
+      "id": "harness_discount",
+      "name": "Harness-discount",
+      "verdict": "PASS",
+      "reasoning": "Cargo/docker realism is scaffolding; assessed hardness is cross-crate coupling and held-out permutations."
+    },
+    {
+      "id": "one_pass_solvability",
+      "name": "One-pass solvability",
+      "verdict": "PASS",
+      "reasoning": "Cannot infer index_r vs fprint precedence or replay order without rebuild, echo-pair comparison, and permutation tests."
+    },
+    {
+      "id": "hard_only_gate",
+      "name": "Hard-only gate",
+      "verdict": "PASS",
+      "reasoning": "Targets senior build engineers managing offline incremental rebuild provenance, not undergrad single-patch tasks."
+    },
+    {
+      "id": "discovery_budget_test",
+      "name": "Discovery/design budget test",
+      "verdict": "PASS",
+      "reasoning": "discovery_budget lists three concrete discoveries beyond instruction surface."
+    },
+    {
+      "id": "instruction_specificity_test",
+      "name": "Instruction specificity test",
+      "verdict": "PASS",
+      "reasoning": "instruction_specificity.level is constraint-complete with solution strategy open."
+    },
+    {
+      "id": "topology_distribution_test",
+      "name": "Topology distribution test",
+      "verdict": "PASS",
+      "reasoning": "topology_enumeration documents three multi-site coordination patterns."
+    }
+  ],
+  "rubric_axes": [
+    {
+      "id": "verifiable",
+      "name": "Verifiable",
+      "verdict": "PASS",
+      "reasoning": "Deterministic cargo rebuild, ib driver run, JSON assertions, permutation suite, and ablation patches."
+    },
+    {
+      "id": "well_specified",
+      "name": "Well-specified",
+      "verdict": "PASS",
+      "reasoning": "Public provenance_report schema, coherence rules, and generalization obligation are complete; fix sites withheld."
+    },
+    {
+      "id": "solvable",
+      "name": "Solvable",
+      "verdict": "PASS",
+      "reasoning": "Expert can close four-crate semantics within hours using overlay mold."
+    },
+    {
+      "id": "difficult",
+      "name": "Difficult",
+      "verdict": "PASS",
+      "reasoning": "Requires build_dependency_toolchain, incremental provenance drift, and multi-crate Cargo literacy."
+    },
+    {
+      "id": "interesting",
+      "name": "Interesting",
+      "verdict": "PASS",
+      "reasoning": "False-green incremental probes and stamp-cache drift occur in real rustc/Cargo postmortems."
+    },
+    {
+      "id": "outcome_verified",
+      "name": "Outcome-verified",
+      "verdict": "PASS",
+      "reasoning": "Grades regenerated report, permutation survival, and rebuild pipeline, not a mandated edit recipe."
+    }
+  ],
+  "instruction_completeness_test": {
+    "verdict": "PASS",
+    "reasoning": "Complete report contract and generalization rule do not reveal stamp authority, replay ordering site, or rows_k1 bypass; solver must read workspace and run experiments."
+  },
+  "discovery_budget": [
+    {
+      "discovery": "Durable stamp-cache index in p9/y6/index_r remains authoritative for replay ordering while m4 driver and p9/core/fprint answer runtime-visible fingerprint state first after partial recovery.",
+      "planned_location": "environment/p9/y6/src/index_r.rs vs environment/p9/core/src/fprint.rs and environment/m4/k84/src/main.rs",
+      "why_instruction_must_not_reveal": "Naming the authority split collapses search to wiring index reads into the driver."
+    },
+    {
+      "discovery": "seq_g2 marks cache_rc/gen_rc true on an intermediate replay pass before twist_p9/phase ordering finishes, producing false-green closure while echo pairs disagree.",
+      "planned_location": "environment/m4/k84/src/seq_g2.rs and environment/p9/y6/src/twist_p9.rs",
+      "why_instruction_must_not_reveal": "Disclosing replay phase ordering reveals the false-green mechanism directly."
+    },
+    {
+      "discovery": "rows_k1 fast path materializes JSON facets without cross-checking stamp_snapshot.json against environment/data TOML/TSV seeds and pack-merged storage.",
+      "planned_location": "environment/p9/core/src/rows_k1.rs with environment/data/stamp_snapshot.json",
+      "why_instruction_must_not_reveal": "Pointing at the bypass path turns cross-format invariant into a one-file guard add."
+    }
+  ],
+  "instruction_specificity": {
+    "level": "constraint-complete",
+    "reasoning": "Instruction states complete provenance_report schema, build/replay commands, coherence predicates, and adversarial generalization obligation but withholds implementation mapping and broken subsystem identities."
+  },
+  "attack_path": {
+    "summary": "Agents may hardcode trace_digest, hand-write JSON, patch only fprint, or fix primary targets while ignoring held-out extra_targets permutations.",
+    "reasoning": "Cheap wins satisfy superficial shape tests until pipeline overwrite, permutation, echo-pair, and ablation suites exercise rebuild semantics."
+  },
+  "smallest_plausible_patch": {
+    "summary": "Coordinate mix_r7 lineage fold, merge_u3 storage refresh, seq_g2 ordering, and rows_k1 stamp witness cross-check.",
+    "reasoning": "Each change sounds local but flipping-point shows isolated reverts fail distinct test subsets."
+  },
+  "collapse_audit": {
+    "verdict": "PASS",
+    "reasoning": "Residual hardness stays in inferring authority and replay order under a complete public contract plus held-out permutations.",
+    "residual_hardness": "After honest schema disclosure, solver still reconciles index_r vs fprint, false-green closure, cross-format regeneration, and permutation generalization across four crates.",
+    "red_flags": []
+  },
+  "topology_enumeration": [
+    {
+      "id": "topo_authority",
+      "summary": "Authority topology coordinates stamp index, merge_u3 refresh, and driver target wiring.",
+      "locations": [
+        "environment/p9/y6/src/index_r.rs",
+        "environment/p9/y4/src/merge_u3.rs",
+        "environment/m4/k84/src/main.rs"
+      ],
+      "why_no_single_location_suffices": "Index-only edits leave pack storage stale; merge-only fixes ignore probe/index precedence; driver-only tweaks cannot fix durable index."
+    },
+    {
+      "id": "topo_replay_order",
+      "summary": "Replay-order topology coordinates seq_g2, twist_p9 primitive, and mix_r7 fold.",
+      "locations": [
+        "environment/m4/k84/src/seq_g2.rs",
+        "environment/p9/y6/src/twist_p9.rs",
+        "environment/p9/y5/src/mix_r7.rs"
+      ],
+      "why_no_single_location_suffices": "Seq ordering without twist_p9 helper reverts; mix_r7 fold alone cannot fix premature closure flags or permutation failures."
+    },
+    {
+      "id": "topo_cross_format",
+      "summary": "Cross-format topology coordinates rows_k1, stamp witness, and data seeds.",
+      "locations": [
+        "environment/p9/core/src/rows_k1.rs",
+        "environment/data/stamp_snapshot.json",
+        "environment/p9/y5/src/body.rs"
+      ],
+      "why_no_single_location_suffices": "Emit-only guards miss pack bytes; witness-only edits without rows_k1 cross-check leave stamp_rc/cache_rc skew."
+    }
+  ],
+  "construction_manifest": {
+    "symbol_table": [
+      {
+        "path": "environment/p9/y5/src/mix_r7.rs",
+        "symbol": "mix_r7",
+        "kind": "function",
+        "signature": "pub fn mix_r7(step_ix: usize, family_ix: u32, prev_family: u32) -> u64",
+        "purpose": "Folds step and family tags into stamp bits for facets."
+      },
+      {
+        "path": "environment/p9/y4/src/merge_u3.rs",
+        "symbol": "merge_u3",
+        "kind": "function",
+        "signature": "pub fn merge_u3(state: &mut PackState, incoming: &PackState, stamp_b: u32) -> u32",
+        "purpose": "Merges incoming pack bytes into durable storage during bind steps."
+      },
+      {
+        "path": "environment/m4/k84/src/seq_g2.rs",
+        "symbol": "seq_g2",
+        "kind": "function",
+        "signature": "pub fn seq_g2(gate_first: bool, side: impl FnMut(), gate: impl FnMut()) -> u32",
+        "purpose": "Orders side-effect callbacks during per-target combine steps under replay."
+      },
+      {
+        "path": "environment/p9/y6/src/twist_p9.rs",
+        "symbol": "twist_p9",
+        "kind": "function",
+        "signature": "pub fn twist_p9(gate_first: bool, mut side: impl FnMut(), mut gate: impl FnMut()) -> u32",
+        "purpose": "Low-level side/gate ordering primitive used by seq_g2."
+      },
+      {
+        "path": "environment/p9/core/src/rows_k1.rs",
+        "symbol": "rows_k1",
+        "kind": "function",
+        "signature": "pub fn rows_k1(targets: &[TargetRow], seeds: &SeedBundle, stamp_witness: &StampWitness) -> Vec<EmittedRow>",
+        "purpose": "Materializes report rows from target state, seeds, and stamp witness."
+      }
+    ],
+    "flipping_point_contract": {
+      "locations": [
+        {
+          "id": "A",
+          "path": "environment/p9/y5/src/mix_r7.rs",
+          "controls_tests": [
+            "test_r1_shape_rows",
+            "test_r8_hex_lower",
+            "test_r7_known_good",
+            "test_r6_reduce_hex",
+            "test_r13_flip_mix"
+          ]
+        },
+        {
+          "id": "B",
+          "path": "environment/p9/y4/src/merge_u3.rs",
+          "controls_tests": [
+            "test_r18_index_first",
+            "test_r3_rc_fields"
+          ]
+        },
+        {
+          "id": "C",
+          "path": "environment/m4/k84/src/seq_g2.rs",
+          "controls_tests": [
+            "test_r2_pair_hex",
+            "test_r4_label_text",
+            "test_r5_width_max",
+            "test_r15_flip_seq",
+            "test_r16_all_extras",
+            "test_r20_cli_hooks"
+          ]
+        },
+        {
+          "id": "D",
+          "path": "environment/p9/core/src/rows_k1.rs",
+          "controls_tests": [
+            "test_r10_rerun_pipe",
+            "test_r11_twice_same",
+            "test_r12_sens_steps",
+            "test_r9_len_rows",
+            "test_r17_flip_rows"
+          ]
+        }
+      ],
+      "no_single_location_flips_majority": true,
+      "concentration_cap": 0.5
+    },
+    "decoy_manifest": [
+      {
+        "path": "environment/m4/k84/src/stack_mix.rs",
+        "kind": "module",
+        "rhymes_with": "seq_g2",
+        "non_fix_purpose": "Buffers ephemeral combine events for offline benchmarks unrelated to replay combine ordering."
+      },
+      {
+        "path": "environment/p9/y5/src/stamp_help.rs",
+        "kind": "module",
+        "rhymes_with": "mix_r7",
+        "non_fix_purpose": "Applies offline fold transforms for diagnostics without participating in stamp authority."
+      },
+      {
+        "path": "environment/p9/core/src/gauge_r.rs",
+        "kind": "helper",
+        "rhymes_with": "rows_k1",
+        "non_fix_purpose": "Formats human-readable summaries for support tooling without stamp witness cross-check."
+      }
+    ],
+    "code_forbidden_tokens": [
+      "incremental",
+      "build",
+      "shadow",
+      "artifacts",
+      "provenance",
+      "drift",
+      "recovery",
+      "replay",
+      "reconciliation",
+      "authority",
+      "partial",
+      "green",
+      "intermediate",
+      "verifier",
+      "invariant",
+      "regeneration",
+      "generalization",
+      "permutations",
+      "target",
+      "closure",
+      "echo",
+      "mirror",
+      "pairs",
+      "settled",
+      "coherent",
+      "locked",
+      "sources",
+      "rebuild",
+      "manual",
+      "static",
+      "argv",
+      "probes",
+      "aggregate",
+      "disagree",
+      "stamps",
+      "facet",
+      "material",
+      "sync",
+      "cache",
+      "gen",
+      "stamp",
+      "debug",
+      "release",
+      "host",
+      "primary",
+      "held-out",
+      "sufficient",
+      "coherence",
+      "survives",
+      "deterministic",
+      "provenance_report",
+      "build_target_ids",
+      "build_hints",
+      "facet_hex",
+      "trace_digest",
+      "span_band",
+      "sync_label",
+      "drift_code",
+      "cache_rc",
+      "gen_rc",
+      "stamp_rc",
+      "rows_total",
+      "debug_echo",
+      "release_echo",
+      "host_echo",
+      "stamp_snapshot",
+      "extra_targets",
+      "cross-format",
+      "table",
+      "layout",
+      "agreement",
+      "span",
+      "count",
+      "stable",
+      "mutate",
+      "ablation",
+      "perms",
+      "surface",
+      "contract",
+      "anchor",
+      "trap",
+      "flags",
+      "zero",
+      "line",
+      "band",
+      "held",
+      "overwrite",
+      "repeat",
+      "ladder",
+      "fold",
+      "dual",
+      "order",
+      "emit",
+      "cargo",
+      "fingerprint",
+      "workspace",
+      "manifest",
+      "check",
+      "link",
+      "deps",
+      "graph",
+      "rustc",
+      "digest",
+      "hook",
+      "hooks",
+      "rerun",
+      "pipeline",
+      "tamper",
+      "perm",
+      "gauge",
+      "index",
+      "slot",
+      "witness",
+      "snapshot",
+      "quiesced",
+      "layer",
+      "mount",
+      "lowerdir",
+      "overlay",
+      "tombstone",
+      "revival",
+      "rehydration",
+      "lockfile",
+      "scheduler",
+      "offline",
+      "matrix",
+      "units",
+      "bind",
+      "upper",
+      "worker",
+      "shard",
+      "sweep",
+      "store",
+      "wave",
+      "lane",
+      "scenario"
+    ]
+  },
+  "naming_pass": {
+    "instruction_nouns_extracted": [
+      "incremental",
+      "build",
+      "shadow",
+      "artifacts",
+      "provenance",
+      "drift",
+      "recovery",
+      "replay",
+      "reconciliation",
+      "authority",
+      "partial",
+      "green",
+      "intermediate",
+      "verifier",
+      "invariant",
+      "regeneration",
+      "generalization",
+      "permutations",
+      "target",
+      "closure",
+      "echo",
+      "mirror",
+      "pairs",
+      "settled",
+      "coherent",
+      "locked",
+      "sources",
+      "rebuild",
+      "manual",
+      "static",
+      "argv",
+      "probes",
+      "aggregate",
+      "disagree",
+      "stamps",
+      "facet",
+      "material",
+      "sync",
+      "cache",
+      "gen",
+      "stamp",
+      "debug",
+      "release",
+      "host",
+      "primary",
+      "held-out",
+      "sufficient",
+      "coherence",
+      "survives",
+      "deterministic",
+      "provenance_report",
+      "build_target_ids",
+      "build_hints",
+      "facet_hex",
+      "trace_digest",
+      "span_band",
+      "sync_label",
+      "drift_code",
+      "cache_rc",
+      "gen_rc",
+      "stamp_rc",
+      "rows_total",
+      "debug_echo",
+      "release_echo",
+      "host_echo",
+      "stamp_snapshot",
+      "extra_targets",
+      "cross-format",
+      "table",
+      "layout",
+      "agreement",
+      "span",
+      "count",
+      "stable",
+      "mutate",
+      "ablation",
+      "perms",
+      "surface",
+      "contract",
+      "anchor",
+      "trap",
+      "flags",
+      "zero",
+      "line",
+      "band",
+      "held",
+      "overwrite",
+      "repeat",
+      "ladder",
+      "fold",
+      "dual",
+      "order",
+      "emit",
+      "cargo",
+      "fingerprint",
+      "workspace",
+      "manifest",
+      "check",
+      "link",
+      "deps",
+      "graph",
+      "rustc",
+      "digest",
+      "hook",
+      "hooks",
+      "rerun",
+      "pipeline",
+      "tamper",
+      "perm",
+      "gauge",
+      "index",
+      "slot",
+      "witness",
+      "snapshot",
+      "quiesced",
+      "layer",
+      "mount",
+      "lowerdir",
+      "overlay",
+      "tombstone",
+      "revival",
+      "rehydration",
+      "lockfile",
+      "scheduler",
+      "offline",
+      "matrix",
+      "units",
+      "bind",
+      "upper",
+      "worker",
+      "shard",
+      "sweep",
+      "store",
+      "wave",
+      "lane",
+      "scenario"
+    ],
+    "renames_during_drafting": [
+      {
+        "original": "tie.rs / fold_key",
+        "renamed_to": "mix_r7.rs / mix_r7",
+        "reason": "Overlay fold stem collides with digest/trace vocabulary; neutral opaque symbol."
+      },
+      {
+        "original": "hold.rs / merge_pack",
+        "renamed_to": "merge_u3.rs / merge_u3",
+        "reason": "Distinct from overlay while preserving durable merge semantics."
+      },
+      {
+        "original": "gate_mux / mk",
+        "renamed_to": "seq_g2 / ib",
+        "reason": "Neutral driver and mux names unrelated to instruction nouns."
+      },
+      {
+        "original": "layer_report",
+        "renamed_to": "provenance_report",
+        "reason": "Distinct deliverable aligned to incremental provenance drift seed."
+      },
+      {
+        "original": "case_lane_ids",
+        "renamed_to": "build_target_ids",
+        "reason": "Reframe overlay lane metaphor to build-target vocabulary for toolchain profile."
+      }
+    ],
+    "test_names_audited": [
+      "test_r1_shape_rows",
+      "test_r2_pair_hex",
+      "test_r3_rc_fields",
+      "test_r4_label_text",
+      "test_r5_width_max",
+      "test_r6_reduce_hex",
+      "test_r7_known_good",
+      "test_r8_hex_lower",
+      "test_r9_len_rows",
+      "test_r10_rerun_pipe",
+      "test_r11_twice_same",
+      "test_r12_sens_steps",
+      "test_r13_flip_mix",
+      "test_r14_flip_both",
+      "test_r15_flip_seq",
+      "test_r16_all_extras",
+      "test_r17_flip_rows",
+      "test_r18_index_first",
+      "test_r19_premature",
+      "test_r20_cli_hooks"
+    ],
+    "concentration_math": {
+      "total_tests": 20,
+      "per_location": [
+        {
+          "location_id": "A",
+          "test_count": 5,
+          "ratio": 0.25
+        },
+        {
+          "location_id": "B",
+          "test_count": 2,
+          "ratio": 0.1
+        },
+        {
+          "location_id": "C",
+          "test_count": 6,
+          "ratio": 0.3
+        },
+        {
+          "location_id": "D",
+          "test_count": 5,
+          "ratio": 0.25
+        }
+      ]
+    },
+    "recomputed_concentration": {
+      "total_tests": 18,
+      "concentration_cap": 0.5,
+      "per_location": [
+        {
+          "location_id": "A",
+          "test_count": 5,
+          "ratio": 0.2777777777777778
+        },
+        {
+          "location_id": "B",
+          "test_count": 2,
+          "ratio": 0.1111111111111111
+        },
+        {
+          "location_id": "C",
+          "test_count": 6,
+          "ratio": 0.3333333333333333
+        },
+        {
+          "location_id": "D",
+          "test_count": 5,
+          "ratio": 0.2777777777777778
+        }
+      ]
+    }
+  },
+  "difficulty_mechanism_plan": [
+    {
+      "mechanism": "cross_file_cross_format_invariants",
+      "placement": "rows_k1 vs stamp_snapshot.json and data seeds",
+      "why_model_misses_it": "JSON shape passes without stamp witness cross-check",
+      "fairness_guardrail": "pipeline rebuild tests"
+    },
+    {
+      "mechanism": "deceptive_but_valid_local_evidence",
+      "placement": "fprint runtime-visible fingerprints after partial recovery",
+      "why_model_misses_it": "stops at settled sync_label with disagreeing echo pairs",
+      "fairness_guardrail": "tests require pair agreement"
+    },
+    {
+      "mechanism": "false_green_intermediate_states",
+      "placement": "gauge_r intermediate closure counters before replay completes",
+      "why_model_misses_it": "aggregate line masks per-row drift on echoes",
+      "fairness_guardrail": "test_r19_premature and test_r15_flip_seq"
+    },
+    {
+      "mechanism": "environment_specific_cli_semantics",
+      "placement": "build_hints.txt argv consumed by ib incremental replay hook",
+      "why_model_misses_it": "runs generic cargo loops without documented replay argv",
+      "fairness_guardrail": "build_hints ships in docs"
+    },
+    {
+      "mechanism": "stateful_multi_step_dependencies",
+      "placement": "cargo rebuild then ib then JSON report",
+      "why_model_misses_it": "patches without locked rebuild graph",
+      "fairness_guardrail": "build_hints document commands"
+    },
+    {
+      "mechanism": "rollback_recovery_requirements",
+      "placement": "merge_u3 after partial recovery; index_r vs fprint",
+      "why_model_misses_it": "cache_rc reads 1 while gen_rc/stamp_rc diverge",
+      "fairness_guardrail": "test_r14_flip_both and test_r18_index_first"
+    }
+  ],
+  "calibration_plan": {
+    "oracle_runs": 3,
+    "no_op_runs": 3,
+    "target_agent_runs": 5,
+    "comparator_agent_runs": 5,
+    "human_sanity": "derive trace_digest from main.rs header; run build_hints hook sequence",
+    "shortcut_audit": "static JSON, pytest edits, digest hardcode, Cargo.lock swap, skip cargo; verifier-offline pytest/cargo in Dockerfile; post-upload Part E reclassification if worst-model accuracy exceeds 20%",
+    "ablation_plan": "revert each flipping location; remove test_r16_all_extras and expect easier pass rate",
+    "pass_rate_target": {
+      "hard_max_pct": 20,
+      "too_easy_threshold_pct": 80,
+      "basis": "frontier agents; Part E post-upload classification"
+    }
+  },
+  "verifier_scoring_plan": {
+    "metrics": [
+      {
+        "metric": "functional_correctness",
+        "weight": 0.45,
+        "criterion": "provenance_report rows and summary match coherent predicates after rebuild+ib on primary targets"
+      },
+      {
+        "metric": "hidden_invariants",
+        "weight": 0.25,
+        "criterion": "echo pairs, digest anchor, held-out permutation and ablation traps"
+      },
+      {
+        "metric": "state_hygiene",
+        "weight": 0.15,
+        "criterion": "consecutive identical runs and pipeline overwrite of manual JSON"
+      },
+      {
+        "metric": "interface_correctness",
+        "weight": 0.1,
+        "criterion": "facet_hex format, span_band, rows_total typing"
+      },
+      {
+        "metric": "deliverable_completeness",
+        "weight": 0.05,
+        "criterion": "output path and build_target_ids coverage"
+      }
+    ],
+    "overall_threshold": 0.999,
+    "reward_output": "reward.txt",
+    "binary_threshold_rule": "reward.txt is 1 only when all semantic pytest passes including test_r16_all_extras"
+  },
+  "subtype_milestone_plan": {
+    "subcategories": [],
+    "milestone_count": 0,
+    "sequential_dependency": "single-step cross-test coupling via permutations and ablations",
+    "local_only_data": true,
+    "sidecar_or_protocol_notes": "fixtures under environment/data only"
+  },
+  "platform_files": [
+    {
+      "path": "task.toml",
+      "role": "metadata"
+    },
+    {
+      "path": "instruction.md",
+      "role": "natural public task prompt"
+    },
+    {
+      "path": "output_contract.toml",
+      "role": "local output declaration"
+    },
+    {
+      "path": "tests/test.sh",
+      "role": "verifier entrypoint"
+    },
+    {
+      "path": "tests/test_outputs.py",
+      "role": "domain verifier"
+    },
+    {
+      "path": "solution/solve.sh",
+      "role": "oracle"
+    },
+    {
+      "path": "environment/Dockerfile",
+      "role": "build definition"
+    },
+    {
+      "path": "construction_manifest.json",
+      "role": "local authoring artifact"
+    }
+  ],
+  "task_files": [
+    {
+      "path": "environment/m4/k84/src/main.rs",
+      "role": "driver and summary reduction"
+    },
+    {
+      "path": "environment/m4/k84/src/seq_g2.rs",
+      "role": "oracle frontier C"
+    },
+    {
+      "path": "environment/p9/y5/src/mix_r7.rs",
+      "role": "oracle frontier A"
+    },
+    {
+      "path": "environment/p9/y4/src/merge_u3.rs",
+      "role": "oracle frontier B"
+    },
+    {
+      "path": "environment/p9/core/src/rows_k1.rs",
+      "role": "oracle frontier D"
+    },
+    {
+      "path": "environment/p9/y6/src/index_r.rs",
+      "role": "durable authority witness"
+    },
+    {
+      "path": "environment/p9/y6/src/twist_p9.rs",
+      "role": "ordering primitive"
+    },
+    {
+      "path": "environment/data/extra_targets.toml",
+      "role": "held-out permutation table"
+    },
+    {
+      "path": "environment/docs/build_target_ids.txt",
+      "role": "primary target id table"
+    },
+    {
+      "path": "environment/docs/build_hints.txt",
+      "role": "incremental replay argv patterns"
+    }
+  ],
+  "fix_frontier": {
+    "count": 4,
+    "distribution": "Four Rust modules under m4/k84, p9/y5, p9/y4, p9/core",
+    "naming_policy": "Opaque symbols on neutral crate roots; instruction nouns banned on fix path",
+    "forbidden_stems": [
+      "incremental",
+      "build",
+      "shadow",
+      "artifacts",
+      "provenance",
+      "drift",
+      "recovery",
+      "replay",
+      "reconciliation",
+      "authority",
+      "partial",
+      "green",
+      "intermediate",
+      "verifier",
+      "invariant",
+      "regeneration",
+      "generalization",
+      "permutations",
+      "target",
+      "closure",
+      "echo",
+      "mirror",
+      "pairs",
+      "settled",
+      "coherent",
+      "locked",
+      "sources",
+      "rebuild",
+      "manual",
+      "static",
+      "argv",
+      "probes",
+      "aggregate",
+      "disagree",
+      "stamps",
+      "facet",
+      "material",
+      "sync",
+      "cache",
+      "gen",
+      "stamp",
+      "debug",
+      "release",
+      "host",
+      "primary",
+      "held-out",
+      "sufficient",
+      "coherence",
+      "survives",
+      "deterministic"
+    ],
+    "helpers_policy": "Rhyming decoys perform real non-fix work",
+    "symbol_thin_preferred": true
+  },
+  "contract_surface": {
+    "boolean_fields_max": 0,
+    "direct_boolean_assertions_max": 12,
+    "preferred_assertion_styles": [
+      "regenerated JSON rows",
+      "derived trace_digest",
+      "echo pair equality",
+      "held-out permutation traps",
+      "ablation incoherence",
+      "pipeline overwrite"
+    ],
+    "forbidden_assertion_styles": [
+      "scenario-key expected tables",
+      "static golden report in tests"
+    ]
+  },
+  "task_shape": {
+    "type": "adversarial_generalization",
+    "instruction_framing": "constraint-complete",
+    "hardness_source": "adversarial generalization",
+    "collapse_risk": "leaking canonical recovery path, replay phase, or stamp authority choice collapses to one-crate patch"
+  },
+  "category_profile": {
+    "challenge_family": "incremental_rebuild_provenance_drift",
+    "profile_name": "build_dependency_toolchain",
+    "allowed_instruction_disclosures": "Locked Cargo build commands, provenance_report schema, mirror pairs, trace_digest formula home, build_target_ids.txt, build_hints incremental replay argv, extra_targets generalization rule",
+    "forbidden_instruction_leaks": "Stamp-cache vs fingerprint authority, broken replay ordering site, rows_k1 bypass, full extra_targets enumeration, per-target facet answers",
+    "category_specific_hardness_bar": "Lockfile workspace, generated facets, incremental rebuild graph, and cache-visible probes coordinate; one dependency bump must not pass ablation suites",
+    "category_specific_verifier_risks": "clean-build-only pass, pin-one-crate fix, static JSON, false-green partial replay",
+    "coverage_role": "Adds build_dependency_toolchain adversarial_generalization for incremental provenance drift on approved overlay Cargo mold"
+  },
+  "satisfiability_risk": {
+    "rc2_planned_name_risk": "Low with m4/p9 neutral roots",
+    "gx9_contract_risk": "Low with independent trace_digest recompute",
+    "cr1_symbol_frontier_risk": "Low with explicit four-location contract",
+    "hidden_contract_risk": "Medium \u2014 held-out permutations in extra_targets.toml; instruction states existence and generalization rule only"
+  },
+  "actionability_plan": {
+    "verifier_command_visible": "cargo build --release --locked; /app/target/release/ib; build_hints.txt",
+    "source_fix_intent_visible": "Sources under /app must emit provenance_report.json with permutation generalization",
+    "generated_output_rule_visible": "Mirror pairs, coherence predicates, regeneration requirement",
+    "exact_formula_home": "main.rs module comment for span_band and trace_digest",
+    "schema_home": "instruction public contract"
+  },
+  "waiver_plan": {
+    "waivers_expected": false,
+    "waiver_rationale": "Local deterministic rebuilds and seeded permutations; no hidden formulas"
+  },
+  "reference_pattern": {
+    "justification_if_none": "Construction follows approved accepted tasks/_ref/overlay-lowerdir-stale-bind/ (overlay-lowerdir-stale-bind.zip) for verifier shape, ablations, and Cargo workspace mold; reframed to adversarial_generalization + build_dependency_toolchain + incremental provenance drift. No promoted docs/reference_tasks/index.json entry matches this combo."
+  },
+  "realism_source": {
+    "source_type": "real_system",
+    "evidence_basis": "Minimized Cargo/rustc incremental stamp-cache drift postmortems and overlay lowerdir stale-bind approved reference",
+    "upstream_or_synthetic_rationale": "Preserves incremental rebuild provenance semantics without proprietary build farm code",
+    "minimization_preserves": "Authority split, false-green closure, cross-format emit bypass, held-out extra_targets permutations",
+    "synthetic_exception_review": "Not required"
+  }
+}

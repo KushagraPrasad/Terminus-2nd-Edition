@@ -1,0 +1,321 @@
+{
+  "hardness_axes": [
+    {
+      "id": "discover",
+      "name": "Discover",
+      "verdict": "PASS",
+      "reasoning": "The solver must discover that the success signal is emitted before background convergence actually commits, which is not stated in instruction prose and only visible by tracing async stage transitions and runtime ordering."
+    },
+    {
+      "id": "synthesize",
+      "name": "Synthesize",
+      "verdict": "PASS",
+      "reasoning": "Correctness spans compaction scheduling, replay verification, and reload authority mapping; no single module exposes the full invariant so the solver must connect multiple subsystems."
+    },
+    {
+      "id": "diagnose",
+      "name": "Diagnose",
+      "verdict": "PASS",
+      "reasoning": "The prompt exposes only post-restart divergence symptoms, not the causal defect sites, forcing diagnosis of why healthy indicators disagree with canonical reconstruction."
+    },
+    {
+      "id": "navigate_coupling",
+      "name": "Navigate coupling",
+      "verdict": "PASS",
+      "reasoning": "Fixing ordering in one stage without adjusting reload and reconciliation contracts produces regressions, so the patch must coordinate coupled boundaries rather than a local tweak."
+    },
+    {
+      "id": "reason_beyond_training",
+      "name": "Reason beyond training",
+      "verdict": "PASS",
+      "reasoning": "The challenge is race-window authority consistency across generated epochs with conflicting identities, which requires bespoke reasoning about this system's state semantics rather than a stock recipe."
+    }
+  ],
+  "anti_trivialization_checks": [
+    {
+      "id": "disclosure_collapse",
+      "name": "Disclosure-collapse",
+      "verdict": "PASS",
+      "reasoning": "If instruction text listed each failing field-location-value pairing, the task would collapse, so this design intentionally keeps instructions symptoms-only and withholds fix-path details."
+    },
+    {
+      "id": "hidden_instance",
+      "name": "Hidden-instance",
+      "verdict": "PASS",
+      "reasoning": "Difficulty is not from guessing one bad file because the intended defects are distributed across three module roots with interacting invariants."
+    },
+    {
+      "id": "single_artifact_repair",
+      "name": "Single-artifact repair",
+      "verdict": "PASS",
+      "reasoning": "The repair cannot be completed by editing one manifest or table since tests require coordinated runtime behavior across scheduler, reload, and reconciliation layers."
+    },
+    {
+      "id": "generalization",
+      "name": "Generalization",
+      "verdict": "PASS",
+      "reasoning": "Tests cover multiple restart/resume trajectories and identity collision shapes, so a single named scenario fix is insufficient."
+    },
+    {
+      "id": "prompt_honesty",
+      "name": "Prompt-honesty",
+      "verdict": "PASS",
+      "reasoning": "An honest prompt can describe observed divergence without naming internal boundaries; once exact boundaries are named, search collapses, so they remain undisclosed."
+    },
+    {
+      "id": "cheating_vs_difficulty",
+      "name": "Cheating-vs-difficulty",
+      "verdict": "PASS",
+      "reasoning": "Hardness comes from subsystem coupling and temporal ordering, not from anti-cheat scaffolding or arbitrary concealment."
+    },
+    {
+      "id": "mechanical_fix_filter",
+      "name": "Mechanical-fix filter",
+      "verdict": "PASS",
+      "reasoning": "The task is not about verifier wiring or timeout tuning; the core work is debugging state convergence logic under asynchronous completion."
+    },
+    {
+      "id": "localized_fix",
+      "name": "Localized-fix",
+      "verdict": "PASS",
+      "reasoning": "No single tiny function can satisfy all tests because each location controls a strict subset under the flipping-point contract."
+    },
+    {
+      "id": "oracle_locality",
+      "name": "Oracle-locality",
+      "verdict": "PASS",
+      "reasoning": "Planned oracle frontier spans three distinct roots and includes logic-level edits in each, avoiding whole-file replacement of one or two helpers."
+    },
+    {
+      "id": "small_declarative_cluster",
+      "name": "Small declarative-cluster",
+      "verdict": "PASS",
+      "reasoning": "The solve is behavior-driven C++ logic across runtime modules, not a compact config/policy table change."
+    },
+    {
+      "id": "grep_collapse",
+      "name": "Grep-collapse",
+      "verdict": "PASS",
+      "reasoning": "Fix-path symbols and test names are opaque and avoid prompt nouns, preventing direct noun-grep to the bug locus."
+    },
+    {
+      "id": "pre_factored_helper",
+      "name": "Pre-factored-helper",
+      "verdict": "PASS",
+      "reasoning": "Helper naming does not mirror instruction bullets, so this is not stub completion against obvious helper names."
+    },
+    {
+      "id": "recipe_discount",
+      "name": "Recipe-discount",
+      "verdict": "PASS",
+      "reasoning": "The solution is not a textbook security or serialization recipe; it requires system-specific temporal consistency analysis."
+    },
+    {
+      "id": "security_aura_discount",
+      "name": "Security-aura discount",
+      "verdict": "PASS",
+      "reasoning": "No security branding is used to inflate difficulty; complexity remains in concrete runtime coupling and authority drift behavior."
+    },
+    {
+      "id": "orthogonal_checklist",
+      "name": "Orthogonal-checklist",
+      "verdict": "PASS",
+      "reasoning": "Requirements are coupled through shared generation state, so linear independent checklist implementation fails downstream invariants."
+    },
+    {
+      "id": "harness_discount",
+      "name": "Harness-discount",
+      "verdict": "PASS",
+      "reasoning": "Difficulty does not rely on environment complexity or multi-container harness tricks; it resides in code reasoning."
+    },
+    {
+      "id": "one_pass_solvability",
+      "name": "One-pass solvability",
+      "verdict": "PASS",
+      "reasoning": "Opening obvious files once is insufficient because failing tests emerge only after reasoning about inter-epoch ordering and reload side effects."
+    },
+    {
+      "id": "hard_only_gate",
+      "name": "Hard-only gate",
+      "verdict": "PASS",
+      "reasoning": "The candidate requires distributed diagnosis and fix coordination that exceeds medium-level spec implementation tasks."
+    },
+    {
+      "id": "discovery_budget_test",
+      "name": "Discovery budget test",
+      "verdict": "PASS",
+      "reasoning": "At least three non-trivial discoveries are required and explicitly budgeted with hidden locations and rationale."
+    },
+    {
+      "id": "instruction_specificity_test",
+      "name": "Instruction specificity test",
+      "verdict": "PASS",
+      "reasoning": "Instruction level is constrained to symptoms-only and avoids cause or fix-locus disclosure."
+    },
+    {
+      "id": "topology_distribution_test",
+      "name": "Topology distribution test",
+      "verdict": "PASS",
+      "reasoning": "Three distinct topologies are enumerated, each requiring at least three coordinated locations with no single-location sufficiency."
+    }
+  ],
+  "rubric_axes": [
+    {
+      "id": "verifiable",
+      "name": "Verifiable",
+      "verdict": "PASS",
+      "reasoning": "Deterministic C++ tests assert reproducible state and ordering outcomes across fixed seeded scenarios."
+    },
+    {
+      "id": "well_specified",
+      "name": "Well-specified",
+      "verdict": "PASS",
+      "reasoning": "The public contract stays concise and outcome-oriented while leaving diagnosis details for code discovery."
+    },
+    {
+      "id": "solvable",
+      "name": "Solvable",
+      "verdict": "PASS",
+      "reasoning": "An experienced engineer can solve within a few hours by tracing and repairing three coordinated modules."
+    },
+    {
+      "id": "difficult",
+      "name": "Difficult",
+      "verdict": "PASS",
+      "reasoning": "The core challenge is cross-generation state consistency under asynchronous transitions, which is genuinely hard."
+    },
+    {
+      "id": "interesting",
+      "name": "Interesting",
+      "verdict": "PASS",
+      "reasoning": "State divergence after healthy recovery maps to real production reliability incidents with direct operational value."
+    },
+    {
+      "id": "outcome_verified",
+      "name": "Outcome-verified",
+      "verdict": "PASS",
+      "reasoning": "Tests grade end behavior and invariants without prescribing a unique implementation workflow."
+    }
+  ],
+  "instruction_completeness_test": {
+    "verdict": "PASS",
+    "reasoning": "No; instruction-only reading cannot reveal the latent race boundary, verification blind spot, and authority-retention coupling needed for a full fix."
+  },
+  "discovery_budget": [
+    {
+      "discovery": "Visibility signal is emitted before the asynchronous settle checkpoint truly stabilizes canonical output.",
+      "planned_location": "environment/core/phase_gate.cpp::emit_ready_marker",
+      "why_instruction_must_not_reveal": "Naming this directly would reduce the task to toggling one ordering call rather than diagnosing timing semantics."
+    },
+    {
+      "discovery": "The verifier path only validates surface counters and misses canonical lineage-equivalent state vectors.",
+      "planned_location": "environment/checks/surface_probe.cpp::run_surface_probe",
+      "why_instruction_must_not_reveal": "If disclosed, solver can trivially add one extra check without understanding cross-module consistency."
+    },
+    {
+      "discovery": "Reload path reuses stale authority alias map through restart boundaries unless remapped after settle epoch commit.",
+      "planned_location": "environment/store/rebind_table.cpp::restore_alias_view",
+      "why_instruction_must_not_reveal": "Cause disclosure would point directly at reload logic and collapse multi-module diagnosis."
+    }
+  ],
+  "instruction_specificity": {
+    "level": "symptoms-only",
+    "reasoning": "Instruction will report intermittent healthy status with post-restart divergence and omit explicit cause, component names, and algorithmic remedy."
+  },
+  "attack_path": {
+    "summary": "Likely solver attack is noun grep from instruction into code plus local patching of a visible success flag.",
+    "reasoning": "Opaque symbol naming, distributed loci, and split test control reduce direct grep and force deeper behavioral tracing before edits succeed."
+  },
+  "smallest_plausible_patch": {
+    "summary": "A naive minimal patch is delaying ready emission in one function.",
+    "reasoning": "That single edit may satisfy one symptom but fails remaining tests because verifier depth and authority restoration still drift, proving non-locality."
+  },
+  "collapse_audit": {
+    "verdict": "PASS",
+    "reasoning": "Even with honest symptoms, passing all tests requires coordinated fixes in scheduler visibility, probe semantics, and reload mapping across separate roots.",
+    "residual_hardness": "Residual difficulty remains in reconstructing causal ordering across generations and ensuring fixes do not break opposite-side invariants under collision scenarios.",
+    "red_flags": []
+  },
+  "naming_pass": {
+    "instruction_nouns_extracted": [
+      "restart",
+      "resume",
+      "system",
+      "recovery",
+      "generations",
+      "state",
+      "operators",
+      "replay",
+      "compaction",
+      "completion",
+      "reconciliation",
+      "mappings",
+      "identities"
+    ],
+    "renames_during_drafting": [
+      {
+        "original": "emit_replay_ready",
+        "renamed_to": "phase_latch_q",
+        "reason": "Removed instruction noun token 'replay' from fix-path symbol."
+      },
+      {
+        "original": "test_generation_resume_divergence",
+        "renamed_to": "test_lane_window_consistency",
+        "reason": "Removed noun tokens 'generations' and 'resume' from test name."
+      },
+      {
+        "original": "test_replay_compaction_health",
+        "renamed_to": "test_commit_latch_visibility",
+        "reason": "Removed noun tokens 'replay' and 'compaction' from test name."
+      }
+    ],
+    "test_names_audited": [
+      "test_lane_window_consistency",
+      "test_commit_latch_visibility",
+      "test_map_epoch_roundtrip",
+      "test_alias_sort_stability",
+      "test_horizon_anchor_trace"
+    ],
+    "concentration_math": {
+      "total_tests": 5,
+      "per_location": [
+        {
+          "location_id": "A",
+          "test_count": 2,
+          "ratio": 0.4
+        },
+        {
+          "location_id": "B",
+          "test_count": 1,
+          "ratio": 0.2
+        },
+        {
+          "location_id": "C",
+          "test_count": 2,
+          "ratio": 0.4
+        }
+      ]
+    },
+    "recomputed_concentration": {
+      "total_tests": 5,
+      "concentration_cap": 0.5,
+      "per_location": [
+        {
+          "location_id": "A",
+          "test_count": 2,
+          "ratio": 0.4
+        },
+        {
+          "location_id": "B",
+          "test_count": 1,
+          "ratio": 0.2
+        },
+        {
+          "location_id": "C",
+          "test_count": 2,
+          "ratio": 0.4
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "batch": 3,
+  "tasks": [
+    {
+      "registry_id": "data-lineage-invariant-proof",
+      "task_dir": "data-lineage-invariant-proof",
+      "spec_stem": "data-lineage-invariant-proof",
+      "linked": true
+    },
+    {
+      "registry_id": "stream-window-aggregate-drift",
+      "task_dir": "stream-window-aggregate-drift",
+      "spec_stem": "stream-window-aggregate-drift",
+      "linked": true
+    },
+    {
+      "registry_id": "pii-redaction-variant-ladder",
+      "task_dir": "pii-redaction-variant-ladder",
+      "spec_stem": "pii-redaction-variant-ladder",
+      "linked": true
+    },
+    {
+      "registry_id": "regex-extraction-trace-inference",
+      "task_dir": "regex-extraction-trace-inference",
+      "spec_stem": "regex-extraction-trace-inference",
+      "linked": true
+    },
+    {
+      "registry_id": "data-contract-validator-builder",
+      "task_dir": null,
+      "spec_stem": "minimal-repro-harness-builder",
+      "linked": false
+    },
+    {
+      "registry_id": "notebook-cell-reorder-provenance",
+      "task_dir": null,
+      "spec_stem": null,
+      "linked": false
+    },
+    {
+      "registry_id": "pipeline-dag-checkpoint-resume",
+      "task_dir": "checkpoint-bridge",
+      "spec_stem": "checkpoint-resume-optimizer-state",
+      "linked": true
+    },
+    {
+      "registry_id": "shell-task-env-inheritance-trap",
+      "task_dir": null,
+      "spec_stem": null,
+      "linked": false
+    }
+  ]
+}

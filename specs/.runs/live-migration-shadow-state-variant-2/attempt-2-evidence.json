@@ -1,0 +1,790 @@
+{
+  "hardness_axes": [
+    {
+      "id": "discover",
+      "name": "Discover",
+      "verdict": "PASS",
+      "reasoning": "The public prompt can expose recovery symptoms, command, output path, schema, and durability guarantees, but the solver must discover which in-memory and durable authorities disagree by reading source, fixtures, and regenerated traces."
+    },
+    {
+      "id": "synthesize",
+      "name": "Synthesize",
+      "verdict": "PASS",
+      "reasoning": "A valid repair spans checkpoint input material, replay sequencing, cleanup handling, active runtime records, and report emission; no single module or artifact contains the full solution."
+    },
+    {
+      "id": "navigate_coupling",
+      "name": "Navigate coupling",
+      "verdict": "PASS",
+      "reasoning": "Local changes to replay order, durable metadata, or report framing can each break idempotence, ownership continuity, cleanup safety, or regenerated output consistency."
+    },
+    {
+      "id": "reason_beyond_training",
+      "name": "Reason beyond training",
+      "verdict": "PASS",
+      "reasoning": "The work is not a textbook checkpoint or JSON validation recipe; it requires reasoning about local authority selection, generation boundaries, replay idempotence, and evidence-rich recovery observations."
+    }
+  ],
+  "anti_trivialization_checks": [
+    {
+      "id": "disclosure_collapse",
+      "name": "Disclosure-collapse",
+      "verdict": "PASS",
+      "reasoning": "After all tested recovery guarantees and schema fields are disclosed, the solver still must diagnose which local authority and replay boundary corrupts later-generation observations."
+    },
+    {
+      "id": "hidden_instance",
+      "name": "Hidden-instance",
+      "verdict": "PASS",
+      "reasoning": "Difficulty is not finding one corrupt row; tests must exercise multiple generations, cleanup paths, reruns, and independent bundles."
+    },
+    {
+      "id": "single_artifact_repair",
+      "name": "Single-artifact repair",
+      "verdict": "PASS",
+      "reasoning": "The planned flipping contract requires at least four locations across core, operations, storage, and emission; copying or editing one manifest cannot satisfy all checks."
+    },
+    {
+      "id": "generalization",
+      "name": "Generalization",
+      "verdict": "PASS",
+      "reasoning": "Verifier scenarios cover clean restore, replay after cleanup, repeated rerun, divergent records, and negative controls rather than one named broken case."
+    },
+    {
+      "id": "prompt_honesty",
+      "name": "Prompt-honesty",
+      "verdict": "PASS",
+      "reasoning": "An honest prompt can state the recovery command, output schema, and observable drift without naming shadow metadata, active-state selection, or exact replay phase."
+    },
+    {
+      "id": "cheating_vs_difficulty",
+      "name": "Cheating-vs-difficulty",
+      "verdict": "PASS",
+      "reasoning": "Anti-cheating controls such as deleting output are not treated as hardness; the hard work is source diagnosis across recovery state and generated observations."
+    },
+    {
+      "id": "mechanical_fix_filter",
+      "name": "Mechanical-fix filter",
+      "verdict": "PASS",
+      "reasoning": "The seed is not about verifier dependencies, timeout tuning, or reward formatting; it is about durable recovery semantics."
+    },
+    {
+      "id": "localized_fix",
+      "name": "Localized-fix",
+      "verdict": "PASS",
+      "reasoning": "The spec requires no one obvious handler and no public patch target; planned tests fail meaningful subsets when any one frontier location is reverted."
+    },
+    {
+      "id": "oracle_locality",
+      "name": "Oracle-locality",
+      "verdict": "PASS",
+      "reasoning": "The oracle must coordinate source changes across four behavioral roots rather than replace one or two files wholesale."
+    },
+    {
+      "id": "small_declarative_cluster",
+      "name": "Small declarative-cluster",
+      "verdict": "PASS",
+      "reasoning": "The solution is not a small table: replay, cleanup, authority choice, durable artifact writing, and observation framing must agree."
+    },
+    {
+      "id": "grep_collapse",
+      "name": "Grep-collapse",
+      "verdict": "PASS",
+      "reasoning": "Instruction nouns are banned from fix-path symbols and planned test names use neutral IDs, so grep does not directly land on the patch."
+    },
+    {
+      "id": "pre_factored_helper",
+      "name": "Pre-factored-helper",
+      "verdict": "PASS",
+      "reasoning": "Fix-path symbols are planned as neutral local engineering names whose names do not mirror public symptoms or requirements."
+    },
+    {
+      "id": "recipe_discount",
+      "name": "Recipe-discount",
+      "verdict": "PASS",
+      "reasoning": "The task is not a standard safe-extraction, manifest regeneration, or finite state-table recipe; semantic authority has to be inferred from local behavior."
+    },
+    {
+      "id": "security_aura_discount",
+      "name": "Security-aura discount",
+      "verdict": "PASS",
+      "reasoning": "No security flavor is used as a substitute for hardness; the difficulty is recovery/reconciliation reasoning."
+    },
+    {
+      "id": "orthogonal_checklist",
+      "name": "Orthogonal-checklist",
+      "verdict": "PASS",
+      "reasoning": "The checks are coupled: replay changes affect cleanup idempotence, durable artifacts, later-generation records, and emitted observations."
+    },
+    {
+      "id": "harness_discount",
+      "name": "Harness-discount",
+      "verdict": "PASS",
+      "reasoning": "Docker and runner setup are ordinary single-container scaffolding and are not counted as difficulty."
+    },
+    {
+      "id": "one_pass_solvability",
+      "name": "One-pass solvability",
+      "verdict": "PASS",
+      "reasoning": "A frontier model opening obvious files would still need to run the pipeline and compare generation traces to identify the real authority split and safe fix."
+    },
+    {
+      "id": "hard_only_gate",
+      "name": "Hard-only gate",
+      "verdict": "PASS",
+      "reasoning": "The residual task remains hard after disclosure because it requires multi-surface recovery diagnosis and coordinated repair, not medium-scale implementation."
+    },
+    {
+      "id": "instruction_specificity_test",
+      "name": "Instruction specificity test",
+      "verdict": "PASS",
+      "reasoning": "For repair_existing_system the instruction will be symptoms-only, not cause-revealing or spec-complete."
+    },
+    {
+      "id": "topology_distribution_test",
+      "name": "Topology distribution test",
+      "verdict": "PASS",
+      "reasoning": "Three repair topologies are viable and each requires at least three coordinated layers; no single component can pass the planned verifier alone."
+    }
+  ],
+  "rubric_axes": [
+    {
+      "id": "verifiable",
+      "name": "Verifiable",
+      "verdict": "PASS",
+      "reasoning": "Deterministic local commands regenerate a JSON observation artifact and tests derive invariant checks from records, digests, and reruns."
+    },
+    {
+      "id": "well_specified",
+      "name": "Well-specified",
+      "verdict": "PASS",
+      "reasoning": "The public contract can be short and concrete: command, output path, schema, source-fix requirement, and observable recovery guarantees."
+    },
+    {
+      "id": "solvable",
+      "name": "Solvable",
+      "verdict": "PASS",
+      "reasoning": "An expert can solve in a few hours by inspecting the local harness, source, fixtures, and test failures; the codebase remains small and single-container."
+    },
+    {
+      "id": "difficult",
+      "name": "Difficult",
+      "verdict": "PASS",
+      "reasoning": "The planned task demands professional debugging of replay state, durable artifacts, authority selection, and idempotence under misleading first-pass health."
+    },
+    {
+      "id": "interesting",
+      "name": "Interesting",
+      "verdict": "PASS",
+      "reasoning": "Live migration and recovery drift is economically meaningful because false health checks can promote stale or cross-generation workloads."
+    },
+    {
+      "id": "outcome_verified",
+      "name": "Outcome-verified",
+      "verdict": "PASS",
+      "reasoning": "Tests grade regenerated artifacts and behavioral invariants, not process choices or a required implementation approach."
+    }
+  ],
+  "instruction_completeness_test": {
+    "verdict": "PASS",
+    "reasoning": "Reading only instruction.md reveals success criteria but not the active-vs-durable authority split, replay mutation point, or emission trust boundary; source and runtime engagement remain necessary."
+  },
+  "discovery_budget": [
+    {
+      "discovery": "Which local authority should determine later-generation workload records after restore and replay.",
+      "planned_location": "environment/app/core/ledger.py plus fixtures under environment/app/fixtures/",
+      "why_instruction_must_not_reveal": "Naming the authority would reveal the diagnosis and collapse the task into wiring one named source into reports."
+    },
+    {
+      "discovery": "How replay boundaries mutate durable generation data during cleanup windows.",
+      "planned_location": "environment/app/ops/tape.py and environment/app/ops/clean.py",
+      "why_instruction_must_not_reveal": "The public prompt may describe post-replay drift, but exact phase ordering and mutation source are the repair path."
+    },
+    {
+      "discovery": "Why reconstructed summaries can look healthy while canonical artifacts diverge later.",
+      "planned_location": "environment/app/emit/frame.py, environment/app/io/store.py, generated output records",
+      "why_instruction_must_not_reveal": "Telling solvers which artifact is over-trusted would turn the task into replacing one input to the emitter."
+    },
+    {
+      "discovery": "Which rerun/idempotence obligations survive output deletion and repeated recovery.",
+      "planned_location": "environment/runner.py, environment/app/main.py, tests/test_outputs.py",
+      "why_instruction_must_not_reveal": "The instruction can require regenerated output and repeatability, but not which intermediate cache must be rebuilt."
+    },
+    {
+      "discovery": "Which negative controls must remain unchanged while fixing drift.",
+      "planned_location": "environment/app/fixtures/control_sets.json and emitted observation rows",
+      "why_instruction_must_not_reveal": "The controls should be discovered from local scenarios so the solver does not simply apply a broad state reset."
+    }
+  ],
+  "instruction_specificity": {
+    "level": "symptoms-only",
+    "reasoning": "The planned instruction states observed recovery drift, command/output/schema, regeneration, and durability expectations without naming shadow metadata, active state, canonical artifact selection, or replay-order fix."
+  },
+  "attack_path": {
+    "summary": "A shortcut solver may try to hardcode the JSON report, patch only the runner, or trust the first health row.",
+    "reasoning": "The verifier deletes and regenerates output, uses multiple scenarios and reruns, and derives invariants from traces so surface health and static reports are insufficient."
+  },
+  "smallest_plausible_patch": {
+    "summary": "A valid minimal repair coordinates authority selection, replay/cleanup mutation handling, durable artifact reads, and observation framing across four files.",
+    "reasoning": "A one-line source priority change, cache deletion, or summary-to-artifact swap alone fails at least one planned subset: cleanup idempotence, later-generation continuity, negative controls, or regenerated reports."
+  },
+  "collapse_audit": {
+    "verdict": "PASS",
+    "reasoning": "Attempt 2 structural correction: the prior record failed because evidence used numbered IDs (H1/AT1/R1) instead of canonical schema IDs; this attempt preserves the same design and changes only evidence identifiers to the required names. Stage: draft. Smallest plausible successful patch is a coordinated four-frontier recovery repair, likely editable frontier spans core ledger, operation tape, storage, and emission. Requirement-to-file mapping is intentionally many-to-many: recovery convergence and drift checks require multiple layers. Oracle LOC is not yet available but the spec requires substantive multi-file logic and CR2/GX3 guardrails. Discoverability remains fair because public surfaces expose symptoms and contracts but not the internal authority split or replay phase.",
+    "residual_hardness": "After full disclosure of schema, command, and recovery invariants, the solver must still infer authority, phase, durability, and emission interactions from local code and regenerated traces.",
+    "red_flags": []
+  },
+  "topology_enumeration": [
+    {
+      "id": "T1",
+      "summary": "Repair by canonicalizing authority selection before replay output is framed.",
+      "locations": [
+        "environment/app/core/ledger.py",
+        "environment/app/ops/tape.py",
+        "environment/app/emit/frame.py",
+        "environment/app/io/store.py"
+      ],
+      "why_no_single_location_suffices": "Authority selection without replay and emission changes leaves stale summaries or broken reruns; emission-only changes leave durable drift."
+    },
+    {
+      "id": "T2",
+      "summary": "Repair by making replay/cleanup produce idempotent durable generations and updating readers to consume them.",
+      "locations": [
+        "environment/app/ops/tape.py",
+        "environment/app/ops/clean.py",
+        "environment/app/io/store.py",
+        "environment/app/core/ledger.py"
+      ],
+      "why_no_single_location_suffices": "Cleanup-only fixes do not align output framing or negative controls, and storage-only fixes do not handle replay ordering."
+    },
+    {
+      "id": "T3",
+      "summary": "Repair by rebuilding observation generation around artifact provenance while preserving runtime continuity.",
+      "locations": [
+        "environment/app/emit/frame.py",
+        "environment/app/core/ledger.py",
+        "environment/app/ops/tape.py",
+        "environment/app/main.py"
+      ],
+      "why_no_single_location_suffices": "Observation-only repair cannot guarantee canonical state; main-only repair cannot pass provenance and idempotence checks."
+    }
+  ],
+  "construction_manifest": {
+    "symbol_table": [
+      {
+        "path": "environment/app/core/ledger.py",
+        "symbol": "fold_units",
+        "kind": "function",
+        "signature": "def fold_units(items: list[object], mark: str | None = None) -> dict[str, object]",
+        "purpose": "Combines collected records into the intermediate map used by the harness."
+      },
+      {
+        "path": "environment/app/ops/tape.py",
+        "symbol": "advance_span",
+        "kind": "function",
+        "signature": "def advance_span(batch: list[object], marker: str | None = None) -> list[dict[str, object]]",
+        "purpose": "Builds the next operation sequence from a batch of local records."
+      },
+      {
+        "path": "environment/app/io/store.py",
+        "symbol": "bind_entry",
+        "kind": "function",
+        "signature": "def bind_entry(slot: str, payload: dict[str, object]) -> dict[str, object]",
+        "purpose": "Loads and stores structured local entries used by the runner."
+      },
+      {
+        "path": "environment/app/emit/frame.py",
+        "symbol": "shape_rows",
+        "kind": "function",
+        "signature": "def shape_rows(label: str, frame: dict[str, object], order: list[str]) -> list[dict[str, object]]",
+        "purpose": "Converts intermediate maps into externally visible observation rows."
+      }
+    ],
+    "flipping_point_contract": {
+      "locations": [
+        {
+          "id": "F1",
+          "path": "environment/app/core/ledger.py",
+          "controls_tests": [
+            "test_r01",
+            "test_r02"
+          ]
+        },
+        {
+          "id": "F2",
+          "path": "environment/app/ops/tape.py",
+          "controls_tests": [
+            "test_r03",
+            "test_r04"
+          ]
+        },
+        {
+          "id": "F3",
+          "path": "environment/app/io/store.py",
+          "controls_tests": [
+            "test_r05",
+            "test_r06"
+          ]
+        },
+        {
+          "id": "F4",
+          "path": "environment/app/emit/frame.py",
+          "controls_tests": [
+            "test_r07",
+            "test_r08"
+          ]
+        }
+      ],
+      "no_single_location_flips_majority": true,
+      "concentration_cap": 0.5
+    },
+    "decoy_manifest": [
+      {
+        "path": "environment/app/emit/archive.py",
+        "kind": "helper",
+        "rhymes_with": "shape_rows",
+        "non_fix_purpose": "Writes diagnostic snapshots for operator inspection outside verifier-facing observations."
+      },
+      {
+        "path": "environment/app/core/checks.py",
+        "kind": "helper",
+        "rhymes_with": "fold_units",
+        "non_fix_purpose": "Performs sanity checks for local fixture rows before execution begins."
+      },
+      {
+        "path": "environment/app/ops/probe.py",
+        "kind": "helper",
+        "rhymes_with": "advance_span",
+        "non_fix_purpose": "Prints operator-facing dry-run traces for manual inspection."
+      }
+    ],
+    "code_forbidden_tokens": [
+      "migration",
+      "harness",
+      "workload",
+      "checkpoint",
+      "bundle",
+      "replay",
+      "cleanup",
+      "generation",
+      "ownership",
+      "lineage",
+      "artifact",
+      "recovery",
+      "observation",
+      "boundary",
+      "health"
+    ]
+  },
+  "naming_pass": {
+    "instruction_nouns_extracted": [
+      "migration",
+      "harness",
+      "workload",
+      "checkpoint",
+      "bundle",
+      "replay",
+      "cleanup",
+      "generation",
+      "ownership",
+      "lineage",
+      "artifact",
+      "recovery",
+      "observation",
+      "boundary",
+      "health"
+    ],
+    "renames_during_drafting": [
+      {
+        "original": "migration_state.py",
+        "renamed_to": "ledger.py",
+        "reason": "path token overlapped with instruction noun migration/state and would increase grep-collapse risk."
+      },
+      {
+        "original": "replay_window",
+        "renamed_to": "advance_span",
+        "reason": "symbol overlapped with instruction noun replay and revealed the phase under diagnosis."
+      },
+      {
+        "original": "test_replay_cleanup",
+        "renamed_to": "test_r03",
+        "reason": "test name overlapped with instruction nouns replay and cleanup."
+      },
+      {
+        "original": "observation_frame",
+        "renamed_to": "shape_rows",
+        "reason": "symbol overlapped with instruction noun observation."
+      }
+    ],
+    "test_names_audited": [
+      "test_r01",
+      "test_r02",
+      "test_r03",
+      "test_r04",
+      "test_r05",
+      "test_r06",
+      "test_r07",
+      "test_r08"
+    ],
+    "concentration_math": {
+      "total_tests": 8,
+      "per_location": [
+        {
+          "location_id": "F1",
+          "test_count": 2,
+          "ratio": 0.25
+        },
+        {
+          "location_id": "F2",
+          "test_count": 2,
+          "ratio": 0.25
+        },
+        {
+          "location_id": "F3",
+          "test_count": 2,
+          "ratio": 0.25
+        },
+        {
+          "location_id": "F4",
+          "test_count": 2,
+          "ratio": 0.25
+        }
+      ]
+    },
+    "recomputed_concentration": {
+      "total_tests": 8,
+      "concentration_cap": 0.5,
+      "per_location": [
+        {
+          "location_id": "F1",
+          "test_count": 2,
+          "ratio": 0.25
+        },
+        {
+          "location_id": "F2",
+          "test_count": 2,
+          "ratio": 0.25
+        },
+        {
+          "location_id": "F3",
+          "test_count": 2,
+          "ratio": 0.25
+        },
+        {
+          "location_id": "F4",
+          "test_count": 2,
+          "ratio": 0.25
+        }
+      ]
+    }
+  },
+  "difficulty_mechanism_plan": [
+    {
+      "mechanism": "stateful_multi_step_dependencies",
+      "placement": "runner scenarios perform restore, replay, cleanup, deletion, and rerun sequences before observations are stable.",
+      "why_model_misses_it": "A model can stop at the first healthy run and miss drift that appears only after later sequences.",
+      "fairness_guardrail": "All sequences are deterministic and reproducible through the public command and local fixtures."
+    },
+    {
+      "mechanism": "deceptive_but_valid_local_evidence",
+      "placement": "initial health records and reconstructed summaries look internally consistent while later records expose divergence.",
+      "why_model_misses_it": "Surface checks encourage premature closure around the wrong authority.",
+      "fairness_guardrail": "The final verifier derives invariants from full observation traces, not hidden facts."
+    },
+    {
+      "mechanism": "rollback_recovery_requirements",
+      "placement": "cleanup and rerun behavior must be safe after output deletion and repeated recovery.",
+      "why_model_misses_it": "Narrow fixes often pass one replay but fail idempotence or negative controls.",
+      "fairness_guardrail": "The public prompt names idempotent recovery and regeneration requirements."
+    },
+    {
+      "mechanism": "cross_file_cross_format_invariants",
+      "placement": "Python source, JSON fixtures, visible docs, emitted observations, and construction manifest must agree.",
+      "why_model_misses_it": "Single-file fixes leave fixture semantics, docs, or report framing inconsistent.",
+      "fairness_guardrail": "Every externally tested schema and artifact rule has a visible home."
+    },
+    {
+      "mechanism": "partial_observability_experiment_design",
+      "placement": "the solver must run and compare generated traces across modes to isolate the durable drift.",
+      "why_model_misses_it": "Static inspection alone may identify several plausible authorities that all look locally consistent.",
+      "fairness_guardrail": "No timing, latency, network, or nondeterministic crash injection is required."
+    }
+  ],
+  "calibration_plan": {
+    "oracle_runs": 3,
+    "no_op_runs": 3,
+    "target_agent_runs": 5,
+    "comparator_agent_runs": 5,
+    "human_sanity": "One careful human can solve using bundled source, fixtures, docs, public command, and regenerated observations in a few hours.",
+    "shortcut_audit": "Try static JSON writes, runner-only patches, broad state clearing, summary-only trust, test edits/deletions, and direct reward writes.",
+    "ablation_plan": "Remove one layer at a time: deceptive first health, cleanup rerun, durable artifact provenance, and cross-format schema checks; each removal should make a distinct shortcut viable.",
+    "pass_rate_target": {
+      "hard_max_pct": 20,
+      "too_easy_threshold_pct": 80,
+      "basis": "stronger target-agent trials on the finalized single-container task."
+    }
+  },
+  "verifier_scoring_plan": {
+    "metrics": [
+      {
+        "metric": "functional_correctness",
+        "weight": 0.45,
+        "criterion": "regenerated observations satisfy all recovery, replay, cleanup, and convergence checks."
+      },
+      {
+        "metric": "hidden_invariants",
+        "weight": 0.25,
+        "criterion": "derived provenance, generation continuity, digest, and idempotence invariants hold across scenarios."
+      },
+      {
+        "metric": "state_hygiene",
+        "weight": 0.15,
+        "criterion": "reruns after deletion and cleanup are deterministic and do not leave stale mutable state."
+      },
+      {
+        "metric": "interface_correctness",
+        "weight": 0.1,
+        "criterion": "public command, output path, JSON schema, and local-only runtime contract remain intact."
+      },
+      {
+        "metric": "deliverable_completeness",
+        "weight": 0.05,
+        "criterion": "all required files and executable scripts are present with no forbidden packaged artifacts."
+      }
+    ],
+    "overall_threshold": 0.999,
+    "reward_output": "reward.txt",
+    "binary_threshold_rule": "reward.txt is 1 only when every semantic and static verifier check passes; partial metric weights are for author calibration."
+  },
+  "subtype_milestone_plan": {
+    "subcategories": [],
+    "milestone_count": 0,
+    "sequential_dependency": "single-step task; sequential dependency is encoded inside deterministic recovery scenarios rather than milestone folders.",
+    "local_only_data": true,
+    "sidecar_or_protocol_notes": "all sidecar-like inputs are local JSON/docs fixtures under environment; no external service, database, UI, or runtime web access."
+  },
+  "platform_files": [
+    {
+      "path": "task.toml",
+      "role": "Edition 2 metadata"
+    },
+    {
+      "path": "instruction.md",
+      "role": "natural public task prompt"
+    },
+    {
+      "path": "output_contract.toml",
+      "role": "repo-local output declaration"
+    },
+    {
+      "path": "tests/test.sh",
+      "role": "verifier entrypoint"
+    },
+    {
+      "path": "tests/test_outputs.py",
+      "role": "domain verifier"
+    },
+    {
+      "path": "solution/solve.sh",
+      "role": "oracle"
+    },
+    {
+      "path": "environment/Dockerfile",
+      "role": "build definition"
+    },
+    {
+      "path": "construction_manifest.json",
+      "role": "local authoring artifact"
+    }
+  ],
+  "task_files": [
+    {
+      "path": "environment/runner.py",
+      "role": "user-facing command that regenerates observations"
+    },
+    {
+      "path": "environment/app/__init__.py",
+      "role": "package marker"
+    },
+    {
+      "path": "environment/app/main.py",
+      "role": "command dispatch and scenario orchestration"
+    },
+    {
+      "path": "environment/app/flow.py",
+      "role": "normalizes run records"
+    },
+    {
+      "path": "environment/app/core/__init__.py",
+      "role": "core package marker"
+    },
+    {
+      "path": "environment/app/core/ledger.py",
+      "role": "fix-frontier record combination"
+    },
+    {
+      "path": "environment/app/core/types.py",
+      "role": "shared value objects"
+    },
+    {
+      "path": "environment/app/core/checks.py",
+      "role": "decoy/helper sanity checks"
+    },
+    {
+      "path": "environment/app/ops/__init__.py",
+      "role": "operation package marker"
+    },
+    {
+      "path": "environment/app/ops/tape.py",
+      "role": "fix-frontier sequence handling"
+    },
+    {
+      "path": "environment/app/ops/clean.py",
+      "role": "cleanup sequence helper"
+    },
+    {
+      "path": "environment/app/ops/probe.py",
+      "role": "decoy diagnostic helper"
+    },
+    {
+      "path": "environment/app/io/__init__.py",
+      "role": "io package marker"
+    },
+    {
+      "path": "environment/app/io/packs.py",
+      "role": "input fixture reader"
+    },
+    {
+      "path": "environment/app/io/store.py",
+      "role": "fix-frontier durable entry handling"
+    },
+    {
+      "path": "environment/app/io/catalog.py",
+      "role": "scenario catalog loader"
+    },
+    {
+      "path": "environment/app/emit/__init__.py",
+      "role": "emit package marker"
+    },
+    {
+      "path": "environment/app/emit/frame.py",
+      "role": "fix-frontier observation framing"
+    },
+    {
+      "path": "environment/app/emit/write.py",
+      "role": "report writer"
+    },
+    {
+      "path": "environment/app/emit/archive.py",
+      "role": "decoy diagnostic archive writer"
+    },
+    {
+      "path": "environment/app/fixtures/control_sets.json",
+      "role": "local input scenarios and negative controls"
+    },
+    {
+      "path": "environment/app/fixtures/packs.json",
+      "role": "local checkpoint-like fixture data"
+    },
+    {
+      "path": "environment/app/fixtures/mutations.json",
+      "role": "deterministic sequence mutations"
+    },
+    {
+      "path": "environment/app/docs/contract.md",
+      "role": "visible product documentation for schema and recovery guarantees"
+    },
+    {
+      "path": "environment/app/docs/operators.md",
+      "role": "operator context without solution guidance"
+    },
+    {
+      "path": "environment/app/tools/inspect.py",
+      "role": "diagnostic command used for reproduction"
+    }
+  ],
+  "fix_frontier": {
+    "count": 4,
+    "distribution": "one core combiner, one operation sequencer, one durable entry handler, and one observation emitter across distinct package roots; no location controls more than 25% of tests.",
+    "naming_policy": "Fix-path symbols use neutral engineering names and avoid every extracted instruction noun; tests use neutral numeric IDs.",
+    "forbidden_stems": [
+      "migration",
+      "harness",
+      "workload",
+      "checkpoint",
+      "bundle",
+      "replay",
+      "cleanup",
+      "generation",
+      "ownership",
+      "lineage",
+      "artifact",
+      "recovery",
+      "observation",
+      "boundary",
+      "health"
+    ],
+    "helpers_policy": "Co-resident helpers and decoys perform genuine diagnostics or sanity checks; no cosmetic decoys or detector-padding files.",
+    "symbol_thin_preferred": true
+  },
+  "contract_surface": {
+    "boolean_fields_max": 0,
+    "direct_boolean_assertions_max": 0,
+    "preferred_assertion_styles": [
+      "run records",
+      "provenance traces",
+      "metamorphic clean-vs-rerun comparisons",
+      "artifact digests",
+      "idempotence checks"
+    ],
+    "forbidden_assertion_styles": [
+      "boolean answer keys",
+      "scenario-to-value truth tables",
+      "static copied reports",
+      "tests that only check JSON shape"
+    ]
+  },
+  "task_shape": {
+    "type": "repair_existing_system",
+    "instruction_framing": "symptoms-only",
+    "hardness_source": "diagnosis plus coordinated repair across local recovery state and regenerated artifacts",
+    "collapse_risk": "naming the restore boundary or trusted artifact too directly could reduce the task to replacing one source in one emitter."
+  },
+  "category_profile": {
+    "challenge_family": "live recovery replay boundary drift with durable artifact authority mismatch",
+    "bug_family": "live recovery replay boundary drift with durable artifact authority mismatch",
+    "profile_name": "state_recovery_crash_consistency",
+    "allowed_instruction_disclosures": "Crash/restart or recovery workflow, durability guarantee, recovery command, regenerated output path, report schema, externally visible post-recovery state, and idempotent rerun expectations.",
+    "forbidden_instruction_leaks": "Journal/checkpoint internals, shadow-vs-active authority mismatch, broken recovery phase, corrupt record, replay function, cleanup path, exact phase ordering, or patch location.",
+    "category_specific_hardness_bar": "Partial writes, replay, cleanup, idempotence, and rerun safety must coordinate across generated observations and durable local artifacts.",
+    "category_specific_verifier_risks": "Nondeterministic crash timing, one hidden snapshot, verifier trusting private internals, static report writes, and special-casing one scenario.",
+    "coverage_role": "Adds a state recovery crash-consistency profile task using migration-style replay drift, complementing the promoted config-policy reference rather than duplicating it."
+  },
+  "satisfiability_risk": {
+    "rc2_planned_name_risk": "low; fix-path paths use app/core/ops/io/emit and neutral symbols while instruction nouns are banned from symbols and test names.",
+    "gx9_contract_risk": "low; the output is observation-shaped and tests derive invariants from traces rather than instruction scenario-field-value tables.",
+    "cr1_symbol_frontier_risk": "low; the construction manifest predeclares four symbol-thin frontier functions across distinct roots.",
+    "hidden_contract_risk": "medium but controlled; schema, command, regenerated output rule, digest rule, and recovery guarantees must be mirrored in instruction.md or visible environment docs."
+  },
+  "actionability_plan": {
+    "verifier_command_visible": "instruction.md will name `python3 /app/environment/runner.py --write /app/output/migration_observations.json` as the normal regeneration command.",
+    "source_fix_intent_visible": "instruction.md will state that source under `/app/environment` must be fixed so normal regeneration produces correct observations; static output writes are insufficient.",
+    "generated_output_rule_visible": "instruction.md will state tests delete `/app/output/migration_observations.json`, rerun the harness, and inspect the regenerated records.",
+    "exact_formula_home": "instruction.md and visible environment docs will define only product-level derived checks: stable record digest from ordered observations and idempotent equality across reruns; implementation formula homes stay in docs/source, not tests alone.",
+    "schema_home": "instruction.md and environment/app/docs/contract.md will define `runs`, `steps`, `records`, `artifacts`, and per-record fields such as `name`, `generation`, `owner`, `lineage`, and `evidence`."
+  },
+  "waiver_plan": {
+    "waivers_expected": false,
+    "waiver_rationale": "No waivers planned; naming, output-contract shape, and multi-frontier construction address expected collapse and hidden-contract pressure."
+  },
+  "reference_pattern": {
+    "reference_task_id": "layered-policy-reload-drift"
+  },
+  "realism_source": {
+    "source_type": "synthetic_exception",
+    "evidence_basis": "Synthesized goal-sized survivor based on real classes of live migration, checkpoint replay, and recovery-controller bugs where a superficially healthy restored workload later diverges from canonical durable state.",
+    "upstream_or_synthetic_rationale": "No specific upstream bug is being cited; the synthetic exception is justified because the minimized local harness preserves a real workflow: restore, replay, cleanup, regenerated evidence, and post-recovery validation without external infrastructure.",
+    "minimization_preserves": "The design preserves false-green surface validation, multiple plausible authorities, replay-boundary mutation, cleanup windows, durable artifacts, idempotent reruns, and generated observation reports.",
+    "synthetic_exception_review": "Required and satisfied at spec level: no invented answer-key booleans, no metaphor-only prompt, local-only deterministic data, explicit actionability plan, no planned waivers, and extra collapse scrutiny via four-frontier flipping contract."
+  }
+}

@@ -1,0 +1,1255 @@
+{
+  "task_name": "incremental-build-graph-convergence",
+  "attempt": 2,
+  "best_score": [
+    0,
+    1
+  ],
+  "best_attempt": 1,
+  "plateau_count": 1,
+  "candidates": [
+    {
+      "attempt": 2,
+      "candidate_n": 1,
+      "score": [
+        0,
+        1
+      ],
+      "evidence_path": "specs/.runs/incremental-build-graph-convergence/attempt-2-evidence.json"
+    }
+  ],
+  "history": [
+    {
+      "attempt": 1,
+      "fails": 0,
+      "warns": 1,
+      "evidence_path": "specs/.runs/incremental-build-graph-convergence/attempt-1-evidence.json",
+      "evidence": {
+        "hardness_axes": [
+          {
+            "id": "discover",
+            "name": "Discover",
+            "verdict": "PASS",
+            "reasoning": "The solver must discover that evolution fails to prune stale edges because the graph walker skips unvisited nodes."
+          },
+          {
+            "id": "synthesize",
+            "name": "Synthesize",
+            "verdict": "PASS",
+            "reasoning": "The solver must synthesize graph walker edge deletion, action signature tracking in fingerprints, and manifest-db synchronization."
+          },
+          {
+            "id": "diagnose_or_design",
+            "name": "Diagnose or Design/Search",
+            "verdict": "PASS",
+            "reasoning": "Requires diagnosing structural convergence faults across multi-file outputs rather than standard syntax or configuration bugs."
+          },
+          {
+            "id": "navigate_coupling",
+            "name": "Navigate coupling",
+            "verdict": "PASS",
+            "reasoning": "The action graph, build database, manifest, and outputs are tightly coupled, meaning changes to one affect convergence."
+          },
+          {
+            "id": "reason_beyond_training",
+            "name": "Reason beyond training",
+            "verdict": "PASS",
+            "reasoning": "The convergence failure is an abstract graph mutation challenge, which avoids typical training dataset patterns."
+          }
+        ],
+        "anti_trivialization_checks": [
+          {
+            "id": "disclosure_collapse",
+            "name": "Disclosure-collapse",
+            "verdict": "PASS",
+            "reasoning": "The instruction specifies only external requirements without disclosing internal scheduling, hashing, or walker algorithms."
+          },
+          {
+            "id": "hidden_instance",
+            "name": "Hidden-instance",
+            "verdict": "PASS",
+            "reasoning": "All correctness contracts are documented, preventing hidden check failures."
+          },
+          {
+            "id": "single_artifact_repair",
+            "name": "Single-artifact repair",
+            "verdict": "PASS",
+            "reasoning": "Requires coordinate edits across the graph module, fingerprinting module, and manifest module."
+          },
+          {
+            "id": "generalization",
+            "name": "Generalization",
+            "verdict": "PASS",
+            "reasoning": "Tests verify multi-step sequences of mutations that require generalized graph traversal fixes."
+          },
+          {
+            "id": "prompt_honesty",
+            "name": "Prompt-honesty",
+            "verdict": "PASS",
+            "reasoning": "Symptoms match the actual failure behavior of the scheduling and graph evolution components."
+          },
+          {
+            "id": "cheating_vs_difficulty",
+            "name": "Cheating-vs-difficulty",
+            "verdict": "PASS",
+            "reasoning": "Difficulty is based on structural dependency evolution rather than timing checks, obfuscated tokens, or sandbox limits."
+          },
+          {
+            "id": "mechanical_fix_filter",
+            "name": "Mechanical-fix filter",
+            "verdict": "PASS",
+            "reasoning": "Simple search-and-replace or single line tweaks are insufficient to fix the coupled graph reconciliation errors."
+          },
+          {
+            "id": "localized_fix",
+            "name": "Localized-fix",
+            "verdict": "PASS",
+            "reasoning": "The fix frontier spans multiple files across the graph, scheduler, and manifest sub-packages."
+          },
+          {
+            "id": "oracle_locality",
+            "name": "Oracle-locality",
+            "verdict": "PASS",
+            "reasoning": "The fix frontier files align exactly with the core components being debugged."
+          },
+          {
+            "id": "small_declarative_cluster",
+            "name": "Small declarative-cluster",
+            "verdict": "PASS",
+            "reasoning": "Requires structural Go coding changes across the three modules rather than config updates."
+          },
+          {
+            "id": "grep_collapse",
+            "name": "Grep-collapse",
+            "verdict": "PASS",
+            "reasoning": "Planned symbols and path structures are named normally and do not reveal the exact patch site."
+          },
+          {
+            "id": "pre_factored_helper",
+            "name": "Pre-factored-helper",
+            "verdict": "PASS",
+            "reasoning": "Decoys and helper methods require full logical reasoning rather than obvious replacement blocks."
+          },
+          {
+            "id": "recipe_discount",
+            "name": "Recipe-discount",
+            "verdict": "PASS",
+            "reasoning": "The instructions do not outline step-by-step commands to repair the scheduler."
+          },
+          {
+            "id": "security_aura_discount",
+            "name": "Security-aura discount",
+            "verdict": "PASS",
+            "reasoning": "No security, auth, or sandbox isolation mechanics are used to inflate difficulty."
+          },
+          {
+            "id": "orthogonal_checklist",
+            "name": "Orthogonal-checklist",
+            "verdict": "PASS",
+            "reasoning": "All verifier checkpoints are directly related to incremental dependency resolution and convergence."
+          },
+          {
+            "id": "harness_discount",
+            "name": "Harness-discount",
+            "verdict": "PASS",
+            "reasoning": "The test suite invokes the build command directly without custom test harness wrappers."
+          },
+          {
+            "id": "one_pass_solvability",
+            "name": "One-pass solvability",
+            "verdict": "PASS",
+            "reasoning": "Solver cannot satisfy the verifier by mocking outputs because subsequent edit phases invalidate previous intermediate mock states."
+          },
+          {
+            "id": "hard_only_gate",
+            "name": "Hard-only gate",
+            "verdict": "PASS",
+            "reasoning": "Requires solving complex state updates and dependency evolution graphs, placing it in the hard difficulty tier."
+          },
+          {
+            "id": "discovery_budget_test",
+            "name": "Discovery/design budget test",
+            "verdict": "PASS",
+            "reasoning": "Discovery of the exact walker graph logic and interface export fingerprinting is left to the solver."
+          },
+          {
+            "id": "instruction_specificity_test",
+            "name": "Instruction specificity test",
+            "verdict": "PASS",
+            "reasoning": "No algorithms, keys, or CLI details are overdisclosed."
+          },
+          {
+            "id": "topology_distribution_test",
+            "name": "Topology distribution test",
+            "verdict": "PASS",
+            "reasoning": "The topology correctly lists all structural files that are checked by the verifier."
+          }
+        ],
+        "rubric_axes": [
+          {
+            "id": "verifiable",
+            "name": "Verifiable",
+            "verdict": "PASS",
+            "reasoning": "Each criterion is mapped to deterministic test execution and manifest comparisons."
+          },
+          {
+            "id": "well_specified",
+            "name": "Well-specified",
+            "verdict": "PASS",
+            "reasoning": "All observable properties and files are clearly defined in the instruction."
+          },
+          {
+            "id": "solvable",
+            "name": "Solvable",
+            "verdict": "PASS",
+            "reasoning": "Correct Go code in the three modules satisfies all verifier runs."
+          },
+          {
+            "id": "difficult",
+            "name": "Difficult",
+            "verdict": "PASS",
+            "reasoning": "Requires structural fixes across multiple components, which is difficult for SOTA models."
+          },
+          {
+            "id": "interesting",
+            "name": "Interesting",
+            "verdict": "PASS",
+            "reasoning": "Models real-world compiler and build tool scheduling divergence problems."
+          },
+          {
+            "id": "outcome_verified",
+            "name": "Outcome-verified",
+            "verdict": "PASS",
+            "reasoning": "The verifier checks database status, graph edges, and manifest content convergence."
+          }
+        ],
+        "instruction_completeness_test": {
+          "verdict": "PASS",
+          "reasoning": "The instructions tell the solver what the required behavior is, but the solver must debug the Go codebase to understand why dependency edges, manifests, and fingerprints diverge."
+        },
+        "discovery_budget": [
+          {
+            "discovery": "Dependency graph evolution stale edge removal logic bug location",
+            "planned_location": "environment/dag/dag.go",
+            "why_instruction_must_not_reveal": "Revealing the exact file and line for edge deletion turns a graph-logic repair into a copy-paste patch."
+          },
+          {
+            "discovery": "Fingerprint hashing exception for interface exports",
+            "planned_location": "environment/scheduler/fingerprint.go",
+            "why_instruction_must_not_reveal": "Revealing the exact fingerprinting struct or method would expose the scheduler repair path."
+          },
+          {
+            "discovery": "Manifest divergence recovery logic",
+            "planned_location": "environment/registry/registry.go",
+            "why_instruction_must_not_reveal": "Revealing how the manifest gets out of sync with the database would bypass the stateful reconstruction challenge."
+          }
+        ],
+        "instruction_specificity": {
+          "level": "symptoms-only",
+          "reasoning": "Instructions describe only the external symptoms (developer reports, build commands, file structure) and the expected convergence correctness properties."
+        },
+        "attack_path": {
+          "summary": "Fix stale edge removal in dag.go, fix action fingerprint update in fingerprint.go, and update registry reconciliation in registry.go.",
+          "reasoning": "The solver must identify that stale edges are retained after edits because the graph walker skips unvisited edges under sequential deletes, correct the action fingerprint logic to evaluate exported Go interface metadata, and synchronize database entries during manifest updates."
+        },
+        "smallest_plausible_patch": {
+          "summary": "Approximately 45-60 lines of Go code changes across the three modules.",
+          "reasoning": "Requires adding edge deletion logic on unvisited edges (15 lines), incorporating interface signature hash in scheduler fingerprints (20 lines), and writing registry synchronization queries (15 lines)."
+        },
+        "collapse_audit": {
+          "verdict": "PASS",
+          "reasoning": "The three bugs are logically independent and verified across separate steps of the sequential verifier test loop. Solving only one does not result in a passing verifier.",
+          "residual_hardness": "Requires understanding how graph mutations propagate through scheduling, serialization, and database states.",
+          "red_flags": []
+        },
+        "topology_enumeration": [
+          {
+            "id": "action_graph_spec",
+            "summary": "The serialized DAG of actions and dependency edges.",
+            "locations": [
+              "action_graph.json",
+              "environment/dag/dag.go",
+              "tests/test_outputs.py"
+            ],
+            "why_no_single_location_suffices": "The action graph structure is validated by the verifier, built by the graph module, and serialized to disk."
+          },
+          {
+            "id": "build_database_spec",
+            "summary": "The database caching action fingerprints and build state.",
+            "locations": [
+              "build.db",
+              "environment/scheduler/db.go",
+              "tests/test_outputs.py"
+            ],
+            "why_no_single_location_suffices": "The DB holds fingerprints which must converge with actual action executions."
+          },
+          {
+            "id": "artifact_manifest_spec",
+            "summary": "The JSON file recording generated build targets and content digests.",
+            "locations": [
+              "artifact_manifest.json",
+              "environment/registry/registry.go",
+              "tests/test_outputs.py"
+            ],
+            "why_no_single_location_suffices": "The manifest must converge with the graph, which is verified by cross-checking."
+          }
+        ],
+        "construction_manifest": {
+          "symbol_table": [
+            {
+              "path": "environment/dag/dag.go",
+              "symbol": "ReconcileEdges",
+              "kind": "method",
+              "signature": "func (g *DependencyGraph) ReconcileEdges(newEdges []Edge) error",
+              "purpose": "Updates dependency graph edges, pruning stale links correctly."
+            },
+            {
+              "path": "environment/scheduler/fingerprint.go",
+              "symbol": "ComputeActionFingerprint",
+              "kind": "function",
+              "signature": "func ComputeActionFingerprint(action *Action) (string, error)",
+              "purpose": "Computes fingerprint of a build action, including Go interface signatures."
+            },
+            {
+              "path": "environment/registry/registry.go",
+              "symbol": "SyncRegistry",
+              "kind": "function",
+              "signature": "func SyncRegistry(dbPath string, manifestPath string) error",
+              "purpose": "Synchronizes current physical build outputs and registry manifest with database state."
+            }
+          ],
+          "flipping_point_contract": {
+            "locations": [
+              {
+                "id": "graph_reconciliation",
+                "path": "environment/dag/dag.go",
+                "controls_tests": [
+                  "test_edge_pruning",
+                  "test_sequential_package_edits"
+                ]
+              },
+              {
+                "id": "action_fingerprinting",
+                "path": "environment/scheduler/fingerprint.go",
+                "controls_tests": [
+                  "test_interface_evolution_triggering",
+                  "test_downstream_dependency_triggering"
+                ]
+              },
+              {
+                "id": "manifest_synchronization",
+                "path": "environment/registry/registry.go",
+                "controls_tests": [
+                  "test_manifest_consistency",
+                  "test_complete_rebuild_verification"
+                ]
+              }
+            ],
+            "no_single_location_flips_majority": true,
+            "concentration_cap": 0.34
+          },
+          "decoy_manifest": [
+            {
+              "path": "environment/scheduler/decoy_executor.go",
+              "kind": "file",
+              "rhymes_with": "fingerprint.go",
+              "non_fix_purpose": "Coordinates build execution threads (decoy scheduler subsystem)."
+            },
+            {
+              "path": "environment/dag/decoy_sorter.go",
+              "kind": "file",
+              "rhymes_with": "dag.go",
+              "non_fix_purpose": "Performs topological sorting of graph nodes for execution queues."
+            }
+          ],
+          "code_forbidden_tokens": [
+            "builder",
+            "convergence",
+            "fingerprints",
+            "packages"
+          ]
+        },
+        "naming_pass": {
+          "instruction_nouns_extracted": [
+            "builder",
+            "convergence",
+            "fingerprints",
+            "packages"
+          ],
+          "renames_during_drafting": [],
+          "test_names_audited": [
+            "test_edge_pruning",
+            "test_sequential_package_edits",
+            "test_interface_evolution_triggering",
+            "test_downstream_dependency_triggering",
+            "test_manifest_consistency",
+            "test_complete_rebuild_verification"
+          ],
+          "concentration_math": {
+            "total_tests": 6,
+            "per_location": [
+              {
+                "location_id": "graph_reconciliation",
+                "test_count": 2,
+                "ratio": 0.3333333333333333
+              },
+              {
+                "location_id": "action_fingerprinting",
+                "test_count": 2,
+                "ratio": 0.3333333333333333
+              },
+              {
+                "location_id": "manifest_synchronization",
+                "test_count": 2,
+                "ratio": 0.3333333333333333
+              }
+            ]
+          },
+          "recomputed_concentration": {
+            "total_tests": 6,
+            "concentration_cap": 0.34,
+            "per_location": [
+              {
+                "location_id": "graph_reconciliation",
+                "test_count": 2,
+                "ratio": 0.3333333333333333
+              },
+              {
+                "location_id": "action_fingerprinting",
+                "test_count": 2,
+                "ratio": 0.3333333333333333
+              },
+              {
+                "location_id": "manifest_synchronization",
+                "test_count": 2,
+                "ratio": 0.3333333333333333
+              }
+            ]
+          }
+        },
+        "difficulty_mechanism_plan": [
+          {
+            "mechanism": "false_green_intermediate_states",
+            "placement": "Single component patches may compile and pass simple initial build tests but fail on subsequent downstream package edits.",
+            "why_model_misses_it": "Model assumes a local test pass guarantees complete graph convergence.",
+            "fairness_guardrail": "Test suite runs sequential build cycles checking graph serialization."
+          },
+          {
+            "mechanism": "stateful_multi_step_dependencies",
+            "placement": "Verifier performs mutations, cleanups, restarts, and checks outputs sequentially.",
+            "why_model_misses_it": "Model only fixes the first-step compilation or manifest edit.",
+            "fairness_guardrail": "Step descriptions are mapped to build guarantees."
+          },
+          {
+            "mechanism": "cross_file_cross_format_invariants",
+            "placement": "Reconciles action_graph.json, artifact_manifest.json, build.db, and generated outputs.",
+            "why_model_misses_it": "Model edits only one output instead of resolving scheduler/manifest code.",
+            "fairness_guardrail": "Convergence contract is detailed in the build contract document."
+          },
+          {
+            "mechanism": "deceptive_but_valid_local_evidence",
+            "placement": "Cached artifacts appear correct on clean rebuild but diverge after incremental runs.",
+            "why_model_misses_it": "Model rebuilds cleanly or clears caches to bypass debugging the graph walker.",
+            "fairness_guardrail": "Instructions state that complete rebuilds succeed but deterministic incremental behavior must be preserved."
+          }
+        ],
+        "calibration_plan": {
+          "oracle_runs": 3,
+          "no_op_runs": 3,
+          "target_agent_runs": 20,
+          "comparator_agent_runs": 20,
+          "human_sanity": "Verified that sequential Go rebuilds and json diffs trigger on bugs.",
+          "shortcut_audit": "Clearing the cache directory fails incremental consistency tests.",
+          "ablation_plan": "Ablating fingerprint checks and verifying failures on downstream triggers.",
+          "pass_rate_target": {
+            "hard_max_pct": 20,
+            "too_easy_threshold_pct": 80,
+            "basis": "Worst-model pass rate on platform auto-eval."
+          }
+        },
+        "verifier_scoring_plan": {
+          "metrics": [
+            {
+              "metric": "functional_correctness",
+              "weight": 0.4,
+              "criterion": "Passes all incremental build convergence phases."
+            },
+            {
+              "metric": "hidden_invariants",
+              "weight": 0.3,
+              "criterion": "Dependency graph correctly prunes stale edges."
+            },
+            {
+              "metric": "state_hygiene",
+              "weight": 0.15,
+              "criterion": "Downstream targets correctly trigger on interface change."
+            },
+            {
+              "metric": "interface_correctness",
+              "weight": 0.1,
+              "criterion": "Manifest matches build outputs and database state."
+            },
+            {
+              "metric": "deliverable_completeness",
+              "weight": 0.05,
+              "criterion": "Action graph converges cleanly."
+            }
+          ],
+          "overall_threshold": 1.0,
+          "reward_output": "reward.txt",
+          "binary_threshold_rule": "all tests must pass"
+        },
+        "subtype_milestone_plan": {
+          "subcategories": [
+            "db_interaction"
+          ],
+          "milestone_count": 0,
+          "sequential_dependency": "none",
+          "local_only_data": true,
+          "sidecar_or_protocol_notes": "none"
+        },
+        "platform_files": [
+          {
+            "path": "task.toml",
+            "role": "Task metadata"
+          },
+          {
+            "path": "instruction.md",
+            "role": "Task instructions"
+          },
+          {
+            "path": "output_contract.toml",
+            "role": "Output schemas"
+          },
+          {
+            "path": "tests/test.sh",
+            "role": "Verifier script"
+          },
+          {
+            "path": "tests/test_outputs.py",
+            "role": "Verifier test cases"
+          },
+          {
+            "path": "solution/solve.sh",
+            "role": "Solution patch script"
+          },
+          {
+            "path": "environment/Dockerfile",
+            "role": "Container runtime environment"
+          },
+          {
+            "path": "construction_manifest.json",
+            "role": "Mapping manifest"
+          }
+        ],
+        "task_files": [
+          {
+            "path": "environment/dag/dag.go",
+            "role": "Graph edge pruning module"
+          },
+          {
+            "path": "environment/scheduler/fingerprint.go",
+            "role": "Action fingerprinting module"
+          },
+          {
+            "path": "environment/registry/registry.go",
+            "role": "Manifest sync module"
+          },
+          {
+            "path": "environment/scheduler/decoy_executor.go",
+            "role": "Decoy scheduler executor module"
+          },
+          {
+            "path": "environment/dag/decoy_sorter.go",
+            "role": "Decoy topo sorter module"
+          }
+        ],
+        "fix_frontier": {
+          "count": 3,
+          "distribution": "environment/dag/dag.go, environment/scheduler/fingerprint.go, environment/registry/registry.go",
+          "naming_policy": "standard Go module names",
+          "forbidden_stems": [],
+          "helpers_policy": "allowed",
+          "symbol_thin_preferred": true
+        },
+        "contract_surface": {
+          "boolean_fields_max": 0,
+          "direct_boolean_assertions_max": 2,
+          "preferred_assertion_styles": [
+            "JSON diff validations",
+            "database records verification"
+          ],
+          "forbidden_assertion_styles": [
+            "shallow print assertions"
+          ]
+        },
+        "task_shape": {
+          "type": "repair_existing_system",
+          "instruction_framing": "symptoms-only",
+          "hardness_source": "Sequential graph edits, fingerprint evolution mismatch, and multi-file convergence.",
+          "collapse_risk": "Na\u00efve fixes to single components fail multi-file convergence check."
+        },
+        "category_profile": {
+          "challenge_family": "incremental_build_system",
+          "profile_name": "build_dependency_toolchain",
+          "allowed_instruction_disclosures": "build command, output locations, externally observable build guarantees, output schemas, deterministic behavior requirements, regeneration requirements",
+          "forbidden_instruction_leaks": "patch location, scheduler name, fingerprint algorithm, dependency traversal implementation, graph serialization details",
+          "category_specific_hardness_bar": "Verifier performs multiple sequential mutations, restarts, and check steps.",
+          "category_specific_verifier_risks": "None.",
+          "coverage_role": "target"
+        },
+        "satisfiability_risk": {
+          "rc2_planned_name_risk": "Low",
+          "gx9_contract_risk": "Low",
+          "cr1_symbol_frontier_risk": "Medium (avoid graph terminology matching implementation identifiers)",
+          "hidden_contract_risk": "Low"
+        },
+        "actionability_plan": {
+          "verifier_command_visible": "pytest",
+          "source_fix_intent_visible": "Fix the build engine under /app/environment.",
+          "generated_output_rule_visible": "artifact_manifest.json",
+          "exact_formula_home": "environment/docs/build_contract.md",
+          "schema_home": "output_contract.toml"
+        },
+        "waiver_plan": {
+          "waivers_expected": false,
+          "waiver_rationale": "No waivers planned."
+        },
+        "reference_pattern": {
+          "justification_if_none": "This task exercises incremental state consistency and scheduling in build engines."
+        },
+        "realism_source": {
+          "source_type": "real_bug",
+          "evidence_basis": "Bazel/Buck style interface fingerprinting and graph caching issues.",
+          "upstream_or_synthetic_rationale": "Represents standard incremental DAG evolution challenges.",
+          "minimization_preserves": "Graph walker, fingerprinting functions, manifest output loop.",
+          "synthetic_exception_review": "None."
+        }
+      },
+      "evidence_errors": [],
+      "evidence_warnings": [],
+      "blocking_failures": [],
+      "strict": true
+    },
+    {
+      "attempt": 2,
+      "fails": 0,
+      "warns": 1,
+      "evidence_path": "specs/.runs/incremental-build-graph-convergence/attempt-2-evidence.json",
+      "evidence": {
+        "hardness_axes": [
+          {
+            "id": "discover",
+            "name": "Discover",
+            "verdict": "PASS",
+            "reasoning": "The solver must discover that evolution fails to prune stale edges because the graph walker skips unvisited nodes."
+          },
+          {
+            "id": "synthesize",
+            "name": "Synthesize",
+            "verdict": "PASS",
+            "reasoning": "The solver must synthesize graph walker edge deletion, action signature tracking in fingerprints, and manifest-db synchronization."
+          },
+          {
+            "id": "diagnose_or_design",
+            "name": "Diagnose or Design/Search",
+            "verdict": "PASS",
+            "reasoning": "Requires diagnosing structural convergence faults across multi-file outputs rather than standard syntax or configuration bugs."
+          },
+          {
+            "id": "navigate_coupling",
+            "name": "Navigate coupling",
+            "verdict": "PASS",
+            "reasoning": "The action graph, build database, manifest, and outputs are tightly coupled, meaning changes to one affect convergence."
+          },
+          {
+            "id": "reason_beyond_training",
+            "name": "Reason beyond training",
+            "verdict": "PASS",
+            "reasoning": "The convergence failure is an abstract graph mutation challenge, which avoids typical training dataset patterns."
+          }
+        ],
+        "anti_trivialization_checks": [
+          {
+            "id": "disclosure_collapse",
+            "name": "Disclosure-collapse",
+            "verdict": "PASS",
+            "reasoning": "The instruction specifies only external requirements without disclosing internal scheduling, hashing, or walker algorithms."
+          },
+          {
+            "id": "hidden_instance",
+            "name": "Hidden-instance",
+            "verdict": "PASS",
+            "reasoning": "All correctness contracts are documented, preventing hidden check failures."
+          },
+          {
+            "id": "single_artifact_repair",
+            "name": "Single-artifact repair",
+            "verdict": "PASS",
+            "reasoning": "Requires coordinate edits across the graph module, fingerprinting module, and manifest module."
+          },
+          {
+            "id": "generalization",
+            "name": "Generalization",
+            "verdict": "PASS",
+            "reasoning": "Tests verify multi-step sequences of mutations that require generalized graph traversal fixes."
+          },
+          {
+            "id": "prompt_honesty",
+            "name": "Prompt-honesty",
+            "verdict": "PASS",
+            "reasoning": "Symptoms match the actual failure behavior of the scheduling and graph evolution components."
+          },
+          {
+            "id": "cheating_vs_difficulty",
+            "name": "Cheating-vs-difficulty",
+            "verdict": "PASS",
+            "reasoning": "Difficulty is based on structural dependency evolution rather than timing checks, obfuscated tokens, or sandbox limits."
+          },
+          {
+            "id": "mechanical_fix_filter",
+            "name": "Mechanical-fix filter",
+            "verdict": "PASS",
+            "reasoning": "Simple search-and-replace or single line tweaks are insufficient to fix the coupled graph reconciliation errors."
+          },
+          {
+            "id": "localized_fix",
+            "name": "Localized-fix",
+            "verdict": "PASS",
+            "reasoning": "The fix frontier spans multiple files across the graph, scheduler, and manifest sub-packages."
+          },
+          {
+            "id": "oracle_locality",
+            "name": "Oracle-locality",
+            "verdict": "PASS",
+            "reasoning": "The fix frontier files align exactly with the core components being debugged."
+          },
+          {
+            "id": "small_declarative_cluster",
+            "name": "Small declarative-cluster",
+            "verdict": "PASS",
+            "reasoning": "Requires structural Go coding changes across the three modules rather than config updates."
+          },
+          {
+            "id": "grep_collapse",
+            "name": "Grep-collapse",
+            "verdict": "PASS",
+            "reasoning": "Planned symbols and path structures are named normally and do not reveal the exact patch site."
+          },
+          {
+            "id": "pre_factored_helper",
+            "name": "Pre-factored-helper",
+            "verdict": "PASS",
+            "reasoning": "Decoys and helper methods require full logical reasoning rather than obvious replacement blocks."
+          },
+          {
+            "id": "recipe_discount",
+            "name": "Recipe-discount",
+            "verdict": "PASS",
+            "reasoning": "The instructions do not outline step-by-step commands to repair the scheduler."
+          },
+          {
+            "id": "security_aura_discount",
+            "name": "Security-aura discount",
+            "verdict": "PASS",
+            "reasoning": "No security, auth, or sandbox isolation mechanics are used to inflate difficulty."
+          },
+          {
+            "id": "orthogonal_checklist",
+            "name": "Orthogonal-checklist",
+            "verdict": "PASS",
+            "reasoning": "All verifier checkpoints are directly related to incremental dependency resolution and convergence."
+          },
+          {
+            "id": "harness_discount",
+            "name": "Harness-discount",
+            "verdict": "PASS",
+            "reasoning": "The test suite invokes the build command directly without custom test harness wrappers."
+          },
+          {
+            "id": "one_pass_solvability",
+            "name": "One-pass solvability",
+            "verdict": "PASS",
+            "reasoning": "Solver cannot satisfy the verifier by mocking outputs because subsequent edit phases invalidate previous intermediate mock states."
+          },
+          {
+            "id": "hard_only_gate",
+            "name": "Hard-only gate",
+            "verdict": "PASS",
+            "reasoning": "Requires solving complex state updates and dependency evolution graphs, placing it in the hard difficulty tier."
+          },
+          {
+            "id": "discovery_budget_test",
+            "name": "Discovery/design budget test",
+            "verdict": "PASS",
+            "reasoning": "Discovery of the exact walker graph logic and interface export fingerprinting is left to the solver."
+          },
+          {
+            "id": "instruction_specificity_test",
+            "name": "Instruction specificity test",
+            "verdict": "PASS",
+            "reasoning": "No algorithms, keys, or CLI details are overdisclosed."
+          },
+          {
+            "id": "topology_distribution_test",
+            "name": "Topology distribution test",
+            "verdict": "PASS",
+            "reasoning": "The topology correctly lists all structural files that are checked by the verifier."
+          }
+        ],
+        "rubric_axes": [
+          {
+            "id": "verifiable",
+            "name": "Verifiable",
+            "verdict": "PASS",
+            "reasoning": "Each criterion is mapped to deterministic test execution and manifest comparisons."
+          },
+          {
+            "id": "well_specified",
+            "name": "Well-specified",
+            "verdict": "PASS",
+            "reasoning": "All observable properties and files are clearly defined in the instruction."
+          },
+          {
+            "id": "solvable",
+            "name": "Solvable",
+            "verdict": "PASS",
+            "reasoning": "Correct Go code in the three modules satisfies all verifier runs."
+          },
+          {
+            "id": "difficult",
+            "name": "Difficult",
+            "verdict": "PASS",
+            "reasoning": "Requires structural fixes across multiple components, which is difficult for SOTA models."
+          },
+          {
+            "id": "interesting",
+            "name": "Interesting",
+            "verdict": "PASS",
+            "reasoning": "Models real-world compiler and build tool scheduling divergence problems."
+          },
+          {
+            "id": "outcome_verified",
+            "name": "Outcome-verified",
+            "verdict": "PASS",
+            "reasoning": "The verifier checks database status, graph edges, and manifest content convergence."
+          }
+        ],
+        "instruction_completeness_test": {
+          "verdict": "PASS",
+          "reasoning": "The instructions tell the solver what the required behavior is, but the solver must debug the Go codebase to understand why dependency edges, manifests, and fingerprints diverge."
+        },
+        "discovery_budget": [
+          {
+            "discovery": "Dependency graph evolution stale edge removal logic bug location",
+            "planned_location": "environment/dag/dag.go",
+            "why_instruction_must_not_reveal": "Revealing the exact file and line for edge deletion turns a graph-logic repair into a copy-paste patch."
+          },
+          {
+            "discovery": "Fingerprint hashing exception for interface exports",
+            "planned_location": "environment/scheduler/fingerprint.go",
+            "why_instruction_must_not_reveal": "Revealing the exact fingerprinting struct or method would expose the scheduler repair path."
+          },
+          {
+            "discovery": "Manifest divergence recovery logic",
+            "planned_location": "environment/registry/registry.go",
+            "why_instruction_must_not_reveal": "Revealing how the manifest gets out of sync with the database would bypass the stateful reconstruction challenge."
+          }
+        ],
+        "instruction_specificity": {
+          "level": "symptoms-only",
+          "reasoning": "Instructions describe only the external symptoms (developer reports, build commands, file structure) and the expected convergence correctness properties."
+        },
+        "attack_path": {
+          "summary": "Fix stale edge removal in dag.go, fix action fingerprint update in fingerprint.go, and update registry reconciliation in registry.go.",
+          "reasoning": "The solver must identify that stale edges are retained after edits because the graph walker skips unvisited edges under sequential deletes, correct the action fingerprint logic to evaluate exported Go interface metadata, and synchronize database entries during manifest updates."
+        },
+        "smallest_plausible_patch": {
+          "summary": "Approximately 45-60 lines of Go code changes across the three modules.",
+          "reasoning": "Requires adding edge deletion logic on unvisited edges (15 lines), incorporating interface signature hash in scheduler fingerprints (20 lines), and writing registry synchronization queries (15 lines)."
+        },
+        "collapse_audit": {
+          "verdict": "PASS",
+          "reasoning": "The three bugs are logically independent and verified across separate steps of the sequential verifier test loop. Solving only one does not result in a passing verifier.",
+          "residual_hardness": "Requires understanding how graph mutations propagate through scheduling, serialization, and database states.",
+          "red_flags": []
+        },
+        "topology_enumeration": [
+          {
+            "id": "action_graph_spec",
+            "summary": "The serialized DAG of actions and dependency edges.",
+            "locations": [
+              "action_graph.json",
+              "environment/dag/dag.go",
+              "tests/test_outputs.py"
+            ],
+            "why_no_single_location_suffices": "The action graph structure is validated by the verifier, built by the graph module, and serialized to disk."
+          },
+          {
+            "id": "build_database_spec",
+            "summary": "The database caching action fingerprints and build state.",
+            "locations": [
+              "build.db",
+              "environment/scheduler/db.go",
+              "tests/test_outputs.py"
+            ],
+            "why_no_single_location_suffices": "The DB holds fingerprints which must converge with actual action executions."
+          },
+          {
+            "id": "artifact_manifest_spec",
+            "summary": "The JSON file recording generated build targets and content digests.",
+            "locations": [
+              "artifact_manifest.json",
+              "environment/registry/registry.go",
+              "tests/test_outputs.py"
+            ],
+            "why_no_single_location_suffices": "The manifest must converge with the graph, which is verified by cross-checking."
+          }
+        ],
+        "construction_manifest": {
+          "symbol_table": [
+            {
+              "path": "environment/dag/dag.go",
+              "symbol": "ReconcileEdges",
+              "kind": "method",
+              "signature": "func (g *DependencyGraph) ReconcileEdges(newEdges []Edge) error",
+              "purpose": "Updates dependency graph edges, pruning stale links correctly."
+            },
+            {
+              "path": "environment/scheduler/fingerprint.go",
+              "symbol": "ComputeActionFingerprint",
+              "kind": "function",
+              "signature": "func ComputeActionFingerprint(action *Action) (string, error)",
+              "purpose": "Computes fingerprint of a build action, including Go interface signatures."
+            },
+            {
+              "path": "environment/registry/registry.go",
+              "symbol": "SyncRegistry",
+              "kind": "function",
+              "signature": "func SyncRegistry(dbPath string, manifestPath string) error",
+              "purpose": "Synchronizes current physical build outputs and registry manifest with database state."
+            }
+          ],
+          "flipping_point_contract": {
+            "locations": [
+              {
+                "id": "graph_reconciliation",
+                "path": "environment/dag/dag.go",
+                "controls_tests": [
+                  "test_dag_edge_pruning",
+                  "test_sequential_package_edits"
+                ]
+              },
+              {
+                "id": "action_fingerprinting",
+                "path": "environment/scheduler/fingerprint.go",
+                "controls_tests": [
+                  "test_interface_evolution_triggering",
+                  "test_downstream_dependency_triggering"
+                ]
+              },
+              {
+                "id": "manifest_synchronization",
+                "path": "environment/registry/registry.go",
+                "controls_tests": [
+                  "test_registry_regeneration_consistency",
+                  "test_complete_rebuild_verification"
+                ]
+              }
+            ],
+            "no_single_location_flips_majority": true,
+            "concentration_cap": 0.34
+          },
+          "decoy_manifest": [
+            {
+              "path": "environment/scheduler/decoy_executor.go",
+              "kind": "file",
+              "rhymes_with": "fingerprint.go",
+              "non_fix_purpose": "Coordinates build execution threads (decoy scheduler subsystem)."
+            },
+            {
+              "path": "environment/dag/decoy_sorter.go",
+              "kind": "file",
+              "rhymes_with": "dag.go",
+              "non_fix_purpose": "Performs topological sorting of graph nodes for execution queues."
+            },
+            {
+              "path": "environment/scheduler/db.go",
+              "kind": "file",
+              "rhymes_with": "fingerprint.go",
+              "non_fix_purpose": "Initializes SQLite connection pool and defines tables."
+            }
+          ],
+          "code_forbidden_tokens": [
+            "builder",
+            "convergence",
+            "fingerprints",
+            "packages"
+          ]
+        },
+        "naming_pass": {
+          "instruction_nouns_extracted": [
+            "builder",
+            "convergence",
+            "fingerprints",
+            "packages"
+          ],
+          "renames_during_drafting": [],
+          "test_names_audited": [
+            "test_dag_edge_pruning",
+            "test_sequential_package_edits",
+            "test_interface_evolution_triggering",
+            "test_downstream_dependency_triggering",
+            "test_registry_regeneration_consistency",
+            "test_complete_rebuild_verification"
+          ],
+          "concentration_math": {
+            "total_tests": 6,
+            "per_location": [
+              {
+                "location_id": "graph_reconciliation",
+                "test_count": 2,
+                "ratio": 0.3333333333333333
+              },
+              {
+                "location_id": "action_fingerprinting",
+                "test_count": 2,
+                "ratio": 0.3333333333333333
+              },
+              {
+                "location_id": "manifest_synchronization",
+                "test_count": 2,
+                "ratio": 0.3333333333333333
+              }
+            ]
+          },
+          "recomputed_concentration": {
+            "total_tests": 6,
+            "concentration_cap": 0.34,
+            "per_location": [
+              {
+                "location_id": "graph_reconciliation",
+                "test_count": 2,
+                "ratio": 0.3333333333333333
+              },
+              {
+                "location_id": "action_fingerprinting",
+                "test_count": 2,
+                "ratio": 0.3333333333333333
+              },
+              {
+                "location_id": "manifest_synchronization",
+                "test_count": 2,
+                "ratio": 0.3333333333333333
+              }
+            ]
+          }
+        },
+        "difficulty_mechanism_plan": [
+          {
+            "mechanism": "false_green_intermediate_states",
+            "placement": "Single component patches may compile and pass simple initial build tests but fail on subsequent downstream package edits.",
+            "why_model_misses_it": "Model assumes a local test pass guarantees complete graph convergence.",
+            "fairness_guardrail": "Test suite runs sequential build cycles checking graph serialization."
+          },
+          {
+            "mechanism": "stateful_multi_step_dependencies",
+            "placement": "Verifier performs mutations, cleanups, restarts, and checks outputs sequentially.",
+            "why_model_misses_it": "Model only fixes the first-step compilation or manifest edit.",
+            "fairness_guardrail": "Step descriptions are mapped to build guarantees."
+          },
+          {
+            "mechanism": "cross_file_cross_format_invariants",
+            "placement": "Reconciles action_graph.json, artifact_manifest.json, build.db, and generated outputs.",
+            "why_model_misses_it": "Model edits only one output instead of resolving scheduler/manifest code.",
+            "fairness_guardrail": "Convergence contract is detailed in the build contract document."
+          },
+          {
+            "mechanism": "deceptive_but_valid_local_evidence",
+            "placement": "Cached artifacts appear correct on clean rebuild but diverge after incremental runs.",
+            "why_model_misses_it": "Model rebuilds cleanly or clears caches to bypass debugging the graph walker.",
+            "fairness_guardrail": "Instructions state that complete rebuilds succeed but deterministic incremental behavior must be preserved."
+          }
+        ],
+        "calibration_plan": {
+          "oracle_runs": 3,
+          "no_op_runs": 3,
+          "target_agent_runs": 20,
+          "comparator_agent_runs": 20,
+          "human_sanity": "Verified that sequential Go rebuilds and json diffs trigger on bugs.",
+          "shortcut_audit": "Clearing the cache directory fails incremental consistency tests.",
+          "ablation_plan": "Ablating fingerprint checks and verifying failures on downstream triggers.",
+          "pass_rate_target": {
+            "hard_max_pct": 20,
+            "too_easy_threshold_pct": 80,
+            "basis": "Worst-model pass rate on platform auto-eval."
+          }
+        },
+        "verifier_scoring_plan": {
+          "metrics": [
+            {
+              "metric": "functional_correctness",
+              "weight": 0.4,
+              "criterion": "Passes all incremental build convergence phases."
+            },
+            {
+              "metric": "hidden_invariants",
+              "weight": 0.3,
+              "criterion": "Dependency graph correctly prunes stale edges."
+            },
+            {
+              "metric": "state_hygiene",
+              "weight": 0.15,
+              "criterion": "Downstream targets correctly trigger on interface change."
+            },
+            {
+              "metric": "interface_correctness",
+              "weight": 0.1,
+              "criterion": "Manifest matches build outputs and database state."
+            },
+            {
+              "metric": "deliverable_completeness",
+              "weight": 0.05,
+              "criterion": "Action graph converges cleanly."
+            }
+          ],
+          "overall_threshold": 1.0,
+          "reward_output": "reward.txt",
+          "binary_threshold_rule": "all tests must pass"
+        },
+        "subtype_milestone_plan": {
+          "subcategories": [
+            "db_interaction"
+          ],
+          "milestone_count": 0,
+          "sequential_dependency": "none",
+          "local_only_data": true,
+          "sidecar_or_protocol_notes": "none"
+        },
+        "platform_files": [
+          {
+            "path": "task.toml",
+            "role": "Task metadata"
+          },
+          {
+            "path": "instruction.md",
+            "role": "Task instructions"
+          },
+          {
+            "path": "output_contract.toml",
+            "role": "Output schemas"
+          },
+          {
+            "path": "tests/test.sh",
+            "role": "Verifier script"
+          },
+          {
+            "path": "tests/test_outputs.py",
+            "role": "Verifier test cases"
+          },
+          {
+            "path": "solution/solve.sh",
+            "role": "Solution patch script"
+          },
+          {
+            "path": "environment/Dockerfile",
+            "role": "Container runtime environment"
+          },
+          {
+            "path": "construction_manifest.json",
+            "role": "Mapping manifest"
+          }
+        ],
+        "task_files": [
+          {
+            "path": "environment/dag/dag.go",
+            "role": "Graph edge pruning module"
+          },
+          {
+            "path": "environment/scheduler/fingerprint.go",
+            "role": "Action fingerprinting module"
+          },
+          {
+            "path": "environment/registry/registry.go",
+            "role": "Manifest sync module"
+          },
+          {
+            "path": "environment/scheduler/decoy_executor.go",
+            "role": "Decoy scheduler executor module"
+          },
+          {
+            "path": "environment/dag/decoy_sorter.go",
+            "role": "Decoy topo sorter module"
+          }
+        ],
+        "fix_frontier": {
+          "count": 3,
+          "distribution": "environment/dag/dag.go, environment/scheduler/fingerprint.go, environment/registry/registry.go",
+          "naming_policy": "standard Go module names",
+          "forbidden_stems": [],
+          "helpers_policy": "allowed",
+          "symbol_thin_preferred": true
+        },
+        "contract_surface": {
+          "boolean_fields_max": 0,
+          "direct_boolean_assertions_max": 2,
+          "preferred_assertion_styles": [
+            "JSON diff validations",
+            "database records verification"
+          ],
+          "forbidden_assertion_styles": [
+            "shallow print assertions"
+          ]
+        },
+        "task_shape": {
+          "type": "repair_existing_system",
+          "instruction_framing": "symptoms-only",
+          "hardness_source": "Sequential graph edits, fingerprint evolution mismatch, and multi-file convergence.",
+          "collapse_risk": "Na\u00efve fixes to single components fail multi-file convergence check."
+        },
+        "category_profile": {
+          "challenge_family": "incremental_build_system",
+          "profile_name": "build_dependency_toolchain",
+          "allowed_instruction_disclosures": "build command, output locations, externally observable build guarantees, output schemas, deterministic behavior requirements, regeneration requirements",
+          "forbidden_instruction_leaks": "patch location, scheduler name, fingerprint algorithm, dependency traversal implementation, graph serialization details",
+          "category_specific_hardness_bar": "Verifier performs multiple sequential mutations, restarts, and check steps.",
+          "category_specific_verifier_risks": "None.",
+          "coverage_role": "target"
+        },
+        "satisfiability_risk": {
+          "rc2_planned_name_risk": "Low",
+          "gx9_contract_risk": "Low",
+          "cr1_symbol_frontier_risk": "Medium (avoid graph terminology matching implementation identifiers)",
+          "hidden_contract_risk": "Low"
+        },
+        "actionability_plan": {
+          "verifier_command_visible": "pytest",
+          "source_fix_intent_visible": "Fix the build engine under /app/environment.",
+          "generated_output_rule_visible": "artifact_manifest.json",
+          "exact_formula_home": "environment/docs/build_contract.md",
+          "schema_home": "output_contract.toml"
+        },
+        "waiver_plan": {
+          "waivers_expected": false,
+          "waiver_rationale": "No waivers planned."
+        },
+        "reference_pattern": {
+          "justification_if_none": "This task exercises incremental state consistency and scheduling in build engines."
+        },
+        "realism_source": {
+          "source_type": "real_bug",
+          "evidence_basis": "Bazel/Buck style interface fingerprinting and graph caching issues.",
+          "upstream_or_synthetic_rationale": "Represents standard incremental DAG evolution challenges.",
+          "minimization_preserves": "Graph walker, fingerprinting functions, manifest output loop.",
+          "synthetic_exception_review": "None."
+        }
+      },
+      "evidence_errors": [],
+      "evidence_warnings": [],
+      "blocking_failures": [],
+      "strict": true
+    }
+  ],
+  "schema_path": "specs/validation_schema.json",
+  "emit_legacy_reviewer": false
+}

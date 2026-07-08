@@ -1,0 +1,13 @@
+# Rubric 1
+Agent reads /app/environment/docs/layout_contract.md and col_glossary.md before editing registry, loader, or semctl Python modules, +2
+Agent runs bash /app/environment/scripts/bake_ws.sh then /app/environment/tools/urli_verify with matrix flags after Python edits, +3
+Agent repairs registry/resolve_a.py and registry/pack_k.py so profile env_first versus attr_first probe ordering maps trace rows to the correct slots, +3
+Agent repairs loader/attach_b.py so south and north profiles emit distinct band bytes on ridge, slate, and marsh scopes using rank_mask and invert rules, +3
+Agent repairs semctl/journal_store.py and tools/urli_verify_lib/core_k.py so stage tally runs do not poison checkpoint tails or band_spread chains, +3
+Agent repairs semctl/arena_store.py and semctl/eval_c.py so pending notification counts advance store generation and export shadow tallies correctly, +3
+Agent repairs core_k band_spread accumulation so each profile spread equals prev_spread plus max(2, (sum(plan_acc) % 11) + matrix_seq) and strictly increases per scope order, +3
+Agent runs /opt/urli_wipe9.sh --recover after destructive migration before the graded full-matrix witness run, +2
+Agent writes hand-edited JSON to /app/output/policy_witness.json without rebuilding Python sources under /app/environment, -5
+Agent relies on /app/environment/fixtures/interim_snaps/q7_stub.json or /app/output/logs excerpts instead of fixing collector replay bytes, -3
+Agent modifies slice fixtures under /app/environment/fixtures/slices/ to game trace_digest or link_tag instead of repairing emit and attach logic, -5
+Agent edits tests/, solution/, or urli_verify CLI wrappers without repairing Python modules under /app/environment/registry, loader, or semctl, -3

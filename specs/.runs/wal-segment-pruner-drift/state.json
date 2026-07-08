@@ -1,0 +1,3041 @@
+{
+  "task_name": "wal-segment-pruner-drift",
+  "attempt": 5,
+  "best_score": [
+    0,
+    1
+  ],
+  "best_attempt": 2,
+  "plateau_count": 3,
+  "candidates": [
+    {
+      "attempt": 3,
+      "candidate_n": 1,
+      "score": [
+        0,
+        1
+      ],
+      "evidence_path": "specs/.runs/wal-segment-pruner-drift/attempt-3-evidence.json"
+    },
+    {
+      "attempt": 4,
+      "candidate_n": 2,
+      "score": [
+        0,
+        1
+      ],
+      "evidence_path": "specs/.runs/wal-segment-pruner-drift/attempt-4-evidence.json"
+    },
+    {
+      "attempt": 5,
+      "candidate_n": 3,
+      "score": [
+        0,
+        1
+      ],
+      "evidence_path": "specs/.runs/wal-segment-pruner-drift/attempt-5-evidence.json"
+    }
+  ],
+  "history": [
+    {
+      "attempt": 1,
+      "fails": 4,
+      "warns": 1,
+      "evidence_path": "specs/.runs/wal-segment-pruner-drift/attempt-1-evidence.json",
+      "evidence": {
+        "hardness_axes": [
+          {
+            "id": "discover",
+            "name": "Discover",
+            "verdict": "PASS",
+            "reasoning": "The agent must inspect the Rust source code, SQLite database schema, and test expectations to discover sorting epoch suffixes and reachability rules."
+          },
+          {
+            "id": "synthesize",
+            "name": "Synthesize",
+            "verdict": "PASS",
+            "reasoning": "The agent must synthesize constraints across Rust structures, SQLite transactional recovery, directory-level log file listing, and output schemas."
+          },
+          {
+            "id": "diagnose_or_design",
+            "name": "Diagnose or Design/Search",
+            "verdict": "PASS",
+            "reasoning": "The agent needs to diagnose the double-counting bug under crash recovery, tree traversal early termination, and epoch-based sorting issues."
+          },
+          {
+            "id": "navigate_coupling",
+            "name": "Navigate coupling",
+            "verdict": "PASS",
+            "reasoning": "Modifying recovery logic requires keeping both physical directory logs and database staging tables consistent across crash restarts."
+          },
+          {
+            "id": "reason_beyond_training",
+            "name": "Reason beyond training",
+            "verdict": "PASS",
+            "reasoning": "Standard training recipes for directory listings are insufficient since it requires custom epoch extraction and multi-crash consistent recovery logic."
+          }
+        ],
+        "anti_trivialization_checks": [
+          {
+            "id": "disclosure_collapse",
+            "name": "Disclosure-collapse",
+            "verdict": "PASS",
+            "reasoning": "Even with explicit instructions detailing sorting and recovery goals, the implementation of idempotent database recovery and deep tree traversal remains complex."
+          },
+          {
+            "id": "hidden_instance",
+            "name": "Hidden-instance",
+            "verdict": "PASS",
+            "reasoning": "The codebase structure is clearly visible, and the files that need modifications are obvious; difficulty is semantic, not a hidden search puzzle."
+          },
+          {
+            "id": "single_artifact_repair",
+            "name": "Single-artifact repair",
+            "verdict": "PASS",
+            "reasoning": "The fix spans multiple logic blocks inside main.rs including file listing, reachability logic, staging recovery, and atomic syncing."
+          },
+          {
+            "id": "generalization",
+            "name": "Generalization",
+            "verdict": "PASS",
+            "reasoning": "Tests verify multiple directories, diverse graph topologies, multiple crash loops, and random inode orders."
+          },
+          {
+            "id": "prompt_honesty",
+            "name": "Prompt-honesty",
+            "verdict": "PASS",
+            "reasoning": "The prompt describes the expected symptoms and public invariants without pointing out the exact bug locations or providing the solution patch."
+          },
+          {
+            "id": "cheating_vs_difficulty",
+            "name": "Cheating-vs-difficulty",
+            "verdict": "PASS",
+            "reasoning": "No trick tests or arbitrary code filters are added to construct artificial difficulty."
+          },
+          {
+            "id": "mechanical_fix_filter",
+            "name": "Mechanical-fix filter",
+            "verdict": "PASS",
+            "reasoning": "The core difficulty lies in solving logical bugs in Rust WAL pruning, not verifier environment dependencies or configuration tweaks."
+          },
+          {
+            "id": "localized_fix",
+            "name": "Localized-fix",
+            "verdict": "PASS",
+            "reasoning": "The changes affect three different system stages (directory sorting, recovery loop, graph search) across main.rs."
+          },
+          {
+            "id": "oracle_locality",
+            "name": "Oracle-locality",
+            "verdict": "PASS",
+            "reasoning": "The oracle changes multiple functions (list_segments, recover_staging, build_reachability_graph) that are semantically distinct."
+          },
+          {
+            "id": "small_declarative_cluster",
+            "name": "Small declarative-cluster",
+            "verdict": "PASS",
+            "reasoning": "The fix is procedural and algorithmic in Rust, involving complex traversal loops and state checks rather than declarative metadata tuning."
+          },
+          {
+            "id": "grep_collapse",
+            "name": "Grep-collapse",
+            "verdict": "PASS",
+            "reasoning": "Grep will lead the agent to the main file, but solving requires understanding the full SQLite transaction and graph state flow."
+          },
+          {
+            "id": "pre_factored_helper",
+            "name": "Pre-factored-helper",
+            "verdict": "PASS",
+            "reasoning": "No pre-factored helper functions in the code trivialise the sorting or reachability fixes."
+          },
+          {
+            "id": "recipe_discount",
+            "name": "Recipe-discount",
+            "verdict": "PASS",
+            "reasoning": "The multi-stage crash-recovery idempotence and path parsing require domain-specific logic, not standard boilerplates."
+          },
+          {
+            "id": "security_aura_discount",
+            "name": "Security-aura discount",
+            "verdict": "PASS",
+            "reasoning": "This is a data-processing and recovery task; it does not rely on security buzzwords for complexity."
+          },
+          {
+            "id": "orthogonal_checklist",
+            "name": "Orthogonal-checklist",
+            "verdict": "PASS",
+            "reasoning": "The fixes are coupled (e.g., if sorting epoch is wrong, reachability traversal fails to resolve active dependencies correctly)."
+          },
+          {
+            "id": "harness_discount",
+            "name": "Harness-discount",
+            "verdict": "PASS",
+            "reasoning": "The task's hardness comes from the Rust algorithm implementation, not setup complexity in the Docker container."
+          },
+          {
+            "id": "one_pass_solvability",
+            "name": "One-pass solvability",
+            "verdict": "PASS",
+            "reasoning": "A single-pass edit without running the test suite will fail due to the subtle crash restart checks and inode-ordering quirks."
+          },
+          {
+            "id": "hard_only_gate",
+            "name": "Hard-only gate",
+            "verdict": "PASS",
+            "reasoning": "Worst-model pass rate is predicted to be under 20% due to the combination of crash restart idempotency and file sorting checks."
+          },
+          {
+            "id": "discovery_budget_test",
+            "name": "Discovery/design budget test",
+            "verdict": "PASS",
+            "reasoning": "We document three distinct discoveries (sorting, recovery idempotency, graph traversal) which the instructions omit."
+          },
+          {
+            "id": "instruction_specificity_test",
+            "name": "Instruction specificity test",
+            "verdict": "PASS",
+            "reasoning": "Instruction is framed as symptoms-only; it describes requirements but keeps solution details hidden."
+          },
+          {
+            "id": "topology_distribution_test",
+            "name": "Topology distribution test",
+            "verdict": "PASS",
+            "reasoning": "The topology lists multiple coupled code structures and assertions."
+          }
+        ],
+        "rubric_axes": [
+          {
+            "id": "verifiable",
+            "name": "Verifiable",
+            "verdict": "PASS",
+            "reasoning": "The test suite programmatically asserts staging DB status, reachability outcomes, and rolling digests."
+          },
+          {
+            "id": "well_specified",
+            "name": "Well-specified",
+            "verdict": "PASS",
+            "reasoning": "The requirements of epoch sorting and graph reachability are fully detailed in instruction.md."
+          },
+          {
+            "id": "solvable",
+            "name": "Solvable",
+            "verdict": "PASS",
+            "reasoning": "An experienced Rust engineer can solve this by correcting the graph traversal, path epoch parsing, and staging transaction checks in a few hours."
+          },
+          {
+            "id": "difficult",
+            "name": "Difficult",
+            "verdict": "PASS",
+            "reasoning": "Requires deep understanding of transaction safety, directories on Unix/Linux platforms, and graph connectivity logic."
+          },
+          {
+            "id": "interesting",
+            "name": "Interesting",
+            "verdict": "PASS",
+            "reasoning": "WAL pruning crash safety is a critical part of modern storage engine and logging broker systems."
+          },
+          {
+            "id": "outcome_verified",
+            "name": "Outcome-verified",
+            "verdict": "PASS",
+            "reasoning": "Grading is based on the correctness of physical segments on disk and SQLite entries, not the code style or patch structure."
+          }
+        ],
+        "instruction_completeness_test": {
+          "verdict": "PASS",
+          "reasoning": "The instruction specifies symptoms and invariants, forcing the agent to discover code defects by inspecting main.rs."
+        },
+        "discovery_budget": [
+          {
+            "discovery": "Sorting log directory by epoch suffix instead of trusting inode/readdir order.",
+            "planned_location": "environment/src/main.rs",
+            "why_instruction_must_not_reveal": "Revealing the exact sorting logic turns the task into a straightforward sorting fix."
+          },
+          {
+            "discovery": "Double-counting during recovery from staging table due to lack of idempotency check.",
+            "planned_location": "environment/src/main.rs",
+            "why_instruction_must_not_reveal": "Explicitly mentioning double-counting in staging table recovery exposes the exact handler bug."
+          },
+          {
+            "discovery": "Tombstone node traversal termination bug in reachability chain.",
+            "planned_location": "environment/src/main.rs",
+            "why_instruction_must_not_reveal": "Explaining node traversal checks makes tracing trivial."
+          }
+        ],
+        "instruction_specificity": {
+          "level": "symptoms-only",
+          "reasoning": "The instruction.md describes symptoms (e.g., corrupted rolling digests, orphaned active segments, double-counting) without naming the buggy files or functions."
+        },
+        "attack_path": {
+          "summary": "Fix double-counting recovery check, support tombstone reachability nodes, sort segment directories by epoch, and fsync barrier updates.",
+          "reasoning": "The solver must first modify list_segments to parse segment names (e.g. log_epoch) and sort them. Then, update build_reachability_graph to check descendants of tombstone nodes. Finally, ensure recover_staging checks if staging records have already been written to prevent double-counting."
+        },
+        "smallest_plausible_patch": {
+          "summary": "Implement sorting on listing vector, fix recursion break condition in reachability, and add database select exist guard in staging recovery.",
+          "reasoning": "This represents the minimal path changes: about 10-15 lines of code total across three functions in environment/src/main.rs."
+        },
+        "collapse_audit": {
+          "verdict": "PASS",
+          "reasoning": "No single location or patch collapses the task because the bugs are spread across three logically separate operations in main.rs.",
+          "residual_hardness": "The agent must handle crash consistency constraints and understand custom Rust directory traversals and graph node evaluation rules.",
+          "red_flags": []
+        },
+        "topology_enumeration": [
+          {
+            "id": "double_count_recovery",
+            "summary": "Double-counting state recovery under multiple crash restarts.",
+            "locations": [
+              "environment/src/main.rs",
+              "tests/test_outputs.py",
+              "solution/solve.sh"
+            ],
+            "why_no_single_location_suffices": "Requires DB state setup, Rust recovery logic edit, and validation verification."
+          },
+          {
+            "id": "non_deterministic_inode_order",
+            "summary": "Directory traversal relies on OS inode order causing drift.",
+            "locations": [
+              "environment/src/main.rs",
+              "tests/test_outputs.py",
+              "solution/solve.sh"
+            ],
+            "why_no_single_location_suffices": "Requires file setup, sorting logic implementation, and verifier checking."
+          },
+          {
+            "id": "tombstone_traversal",
+            "summary": "Reachability tree truncation at tombstoned nodes.",
+            "locations": [
+              "environment/src/main.rs",
+              "tests/test_outputs.py",
+              "solution/solve.sh"
+            ],
+            "why_no_single_location_suffices": "Requires dependency mapping, graph traversal logic correction, and verification."
+          }
+        ],
+        "construction_manifest": {
+          "symbol_table": [
+            {
+              "path": "environment/src/main.rs",
+              "symbol": "recover_staging",
+              "kind": "function",
+              "signature": "fn recover_staging(db: &mut Connection) -> Result<(), sqlite3::Error>",
+              "purpose": "Recover database state from staging table after a crash restart, ensuring idempotency."
+            },
+            {
+              "path": "environment/src/main.rs",
+              "symbol": "build_reachability_graph",
+              "kind": "function",
+              "signature": "fn build_reachability_graph(db: &Connection) -> Result<Graph, sqlite3::Error>",
+              "purpose": "Traverse graph dependency nodes to resolve file reachability, ignoring intermediate tombstones."
+            },
+            {
+              "path": "environment/src/main.rs",
+              "symbol": "list_segments",
+              "kind": "function",
+              "signature": "fn list_segments(dir: &Path) -> Result<Vec<PathBuf>, std::io::Error>",
+              "purpose": "List log segment files on disk sorted in ascending order of their epoch suffix."
+            }
+          ],
+          "flipping_point_contract": {
+            "locations": [
+              {
+                "id": "staging_recovery",
+                "path": "environment/src/main.rs",
+                "controls_tests": [
+                  "test_staging_recovery_no_double_count",
+                  "test_sync_epoch_atomicity_and_idempotency"
+                ]
+              },
+              {
+                "id": "graph_traversal",
+                "path": "environment/src/main.rs",
+                "controls_tests": [
+                  "test_reachability_chain_validation"
+                ]
+              },
+              {
+                "id": "segment_sorting",
+                "path": "environment/src/main.rs",
+                "controls_tests": [
+                  "test_epoch_ordered_digest"
+                ]
+              }
+            ],
+            "no_single_location_flips_majority": true,
+            "concentration_cap": 0.5
+          },
+          "decoy_manifest": [
+            {
+              "path": "environment/src/decoy_catalog.rs",
+              "kind": "file",
+              "rhymes_with": "main.rs",
+              "non_fix_purpose": "Mock catalog backup registry decoder helper."
+            },
+            {
+              "path": "environment/src/decoy_utils.rs",
+              "kind": "file",
+              "rhymes_with": "main.rs",
+              "non_fix_purpose": "Mock base64 logging helper logic."
+            }
+          ],
+          "code_forbidden_tokens": [
+            "pruner",
+            "recovery",
+            "segments"
+          ]
+        },
+        "naming_pass": {
+          "instruction_nouns_extracted": [
+            "pruner",
+            "recovery",
+            "segments"
+          ],
+          "renames_during_drafting": [],
+          "test_names_audited": [
+            "test_staging_recovery_no_double_count",
+            "test_reachability_chain_validation",
+            "test_epoch_ordered_digest",
+            "test_sync_epoch_atomicity_and_idempotency"
+          ],
+          "concentration_math": {
+            "total_tests": 4,
+            "per_location": [
+              {
+                "location_id": "staging_recovery",
+                "test_count": 2,
+                "ratio": 0.5
+              },
+              {
+                "location_id": "graph_traversal",
+                "test_count": 1,
+                "ratio": 0.25
+              },
+              {
+                "location_id": "segment_sorting",
+                "test_count": 1,
+                "ratio": 0.25
+              }
+            ]
+          },
+          "recomputed_concentration": {
+            "total_tests": 4,
+            "concentration_cap": 0.5,
+            "per_location": [
+              {
+                "location_id": "staging_recovery",
+                "test_count": 2,
+                "ratio": 0.5
+              },
+              {
+                "location_id": "graph_traversal",
+                "test_count": 1,
+                "ratio": 0.25
+              },
+              {
+                "location_id": "segment_sorting",
+                "test_count": 1,
+                "ratio": 0.25
+              }
+            ]
+          }
+        },
+        "difficulty_mechanism_plan": [
+          {
+            "mechanism": "false_green_intermediate_states",
+            "placement": "Intermediate builds and NOP runs pass compile and basic test checks, but fail on multi-step recovery.",
+            "why_model_misses_it": "Model assumes code is correct once compilation succeeds.",
+            "fairness_guardrail": "The test suite verifies full crash-recovery consistency."
+          },
+          {
+            "mechanism": "cross_file_cross_format_invariants",
+            "placement": "Main database state must agree with physical directory listing digests.",
+            "why_model_misses_it": "Model edits main.rs without aligning directory parsing output.",
+            "fairness_guardrail": "Mismatch errors are logged cleanly in verifier checks."
+          },
+          {
+            "mechanism": "rollback_recovery_requirements",
+            "placement": "The system must recover correctly and idempotently from staging table across crash loops.",
+            "why_model_misses_it": "Model implements a single-pass drain without checking if records are already committed.",
+            "fairness_guardrail": "Test suite implements multiple restarts."
+          },
+          {
+            "mechanism": "environment_specific_cli_semantics",
+            "placement": "Processing directory entries relies on epoch order rather than raw readdir/inode order.",
+            "why_model_misses_it": "Model assumes OS readdir order is chronological.",
+            "fairness_guardrail": "The instructions require processing in epoch sequence order."
+          }
+        ],
+        "calibration_plan": {
+          "oracle_runs": 3,
+          "no_op_runs": 3,
+          "target_agent_runs": 20,
+          "comparator_agent_runs": 20,
+          "human_sanity": "verified",
+          "shortcut_audit": "none",
+          "ablation_plan": "none",
+          "pass_rate_target": {
+            "hard_max_pct": 20,
+            "too_easy_threshold_pct": 80,
+            "basis": "platform worst-model"
+          }
+        },
+        "verifier_scoring_plan": {},
+        "subtype_milestone_plan": {},
+        "platform_files": [
+          {
+            "path": "task.toml",
+            "role": "Metadata definition"
+          },
+          {
+            "path": "instruction.md",
+            "role": "Public task instruction"
+          },
+          {
+            "path": "output_contract.toml",
+            "role": "Structured output contract"
+          },
+          {
+            "path": "tests/test.sh",
+            "role": "Test verifier runner"
+          },
+          {
+            "path": "tests/test_outputs.py",
+            "role": "Python test assertions"
+          },
+          {
+            "path": "solution/solve.sh",
+            "role": "Patch application script"
+          },
+          {
+            "path": "environment/Dockerfile",
+            "role": "Container runtime definition"
+          },
+          {
+            "path": "construction_manifest.json",
+            "role": "Authoring manifest mapping"
+          }
+        ],
+        "task_files": [
+          {
+            "path": "environment/src/main.rs",
+            "role": "Main WAL pruner daemon (oracle frontier)"
+          },
+          {
+            "path": "environment/src/decoy_catalog.rs",
+            "role": "Backup catalog decoy module"
+          },
+          {
+            "path": "environment/src/decoy_utils.rs",
+            "role": "Utility helper decoy module"
+          }
+        ],
+        "fix_frontier": {
+          "count": 1,
+          "distribution": "environment/src/main.rs",
+          "naming_policy": "standard Rust structure",
+          "forbidden_stems": [],
+          "helpers_policy": "allowed",
+          "symbol_thin_preferred": true
+        },
+        "contract_surface": {
+          "boolean_fields_max": 0,
+          "direct_boolean_assertions_max": 4,
+          "preferred_assertion_styles": [
+            "JSON check"
+          ],
+          "forbidden_assertion_styles": [
+            "hardcoded mappings"
+          ]
+        },
+        "category_profile": {
+          "challenge_family": "wal_segment_pruner_drift",
+          "profile_name": "state_recovery_crash_consistency",
+          "allowed_instruction_disclosures": "database schema, directories",
+          "forbidden_instruction_leaks": "detailed source fix",
+          "category_specific_hardness_bar": "idempotency + sorting + traversals",
+          "category_specific_verifier_risks": "none",
+          "coverage_role": "target"
+        },
+        "satisfiability_risk": {
+          "rc2_planned_name_risk": "low",
+          "gx9_contract_risk": "low",
+          "cr1_symbol_frontier_risk": "low",
+          "hidden_contract_risk": "low"
+        },
+        "actionability_plan": {
+          "verifier_command_visible": "pytest",
+          "source_fix_intent_visible": "yes",
+          "generated_output_rule_visible": "prune_report.json",
+          "exact_formula_home": "instruction.md",
+          "schema_home": "output_contract.toml"
+        },
+        "waiver_plan": {
+          "waivers_expected": false,
+          "waiver_rationale": "no waivers expected"
+        },
+        "reference_pattern": {
+          "justification_if_none": "This task is built from scratch to model real-world crash recovery and epoch-order listing errors in log-structured storage engines."
+        },
+        "realism_source": {
+          "source_type": "real_system",
+          "evidence_basis": "Based on database replication logs and WAL pruning architectures.",
+          "upstream_or_synthetic_rationale": "Replicates bugs found in production WAL-purging engines.",
+          "minimization_preserves": "Complete recovery routines, SQLite transactions, and epoch sorting.",
+          "synthetic_exception_review": "None."
+        }
+      },
+      "evidence_errors": [
+        "task_shape is missing (task-shape validation from Step 1). New strict-mode specs must provide it.",
+        "verifier_scoring_plan is missing (weighted verifier metrics with reward output and binary threshold rule). New strict-mode specs must provide it.",
+        "subtype_milestone_plan is missing (subcategories, milestone dependencies, local-only data, and sidecar/protocol plan). New strict-mode specs must provide it.",
+        "test name 'test_staging_recovery_no_double_count' contains forbidden instruction noun 'recovery'."
+      ],
+      "evidence_warnings": [],
+      "blocking_failures": [
+        "task_shape is missing (task-shape validation from Step 1). New strict-mode specs must provide it.",
+        "verifier_scoring_plan is missing (weighted verifier metrics with reward output and binary threshold rule). New strict-mode specs must provide it.",
+        "subtype_milestone_plan is missing (subcategories, milestone dependencies, local-only data, and sidecar/protocol plan). New strict-mode specs must provide it.",
+        "test name 'test_staging_recovery_no_double_count' contains forbidden instruction noun 'recovery'."
+      ],
+      "strict": true
+    },
+    {
+      "attempt": 2,
+      "fails": 0,
+      "warns": 1,
+      "evidence_path": "specs/.runs/wal-segment-pruner-drift/attempt-2-evidence.json",
+      "evidence": {
+        "hardness_axes": [
+          {
+            "id": "discover",
+            "name": "Discover",
+            "verdict": "PASS",
+            "reasoning": "The agent must inspect the Rust source code, SQLite database schema, and test expectations to discover sorting epoch suffixes and reachability rules."
+          },
+          {
+            "id": "synthesize",
+            "name": "Synthesize",
+            "verdict": "PASS",
+            "reasoning": "The agent must synthesize constraints across Rust structures, SQLite transactional recovery, directory-level log file listing, and output schemas."
+          },
+          {
+            "id": "diagnose_or_design",
+            "name": "Diagnose or Design/Search",
+            "verdict": "PASS",
+            "reasoning": "The agent needs to diagnose the double-counting bug under crash recovery, tree traversal early termination, and epoch-based sorting issues."
+          },
+          {
+            "id": "navigate_coupling",
+            "name": "Navigate coupling",
+            "verdict": "PASS",
+            "reasoning": "Modifying recovery logic requires keeping both physical directory logs and database staging tables consistent across crash restarts."
+          },
+          {
+            "id": "reason_beyond_training",
+            "name": "Reason beyond training",
+            "verdict": "PASS",
+            "reasoning": "Standard training recipes for directory listings are insufficient since it requires custom epoch extraction and multi-crash consistent recovery logic."
+          }
+        ],
+        "anti_trivialization_checks": [
+          {
+            "id": "disclosure_collapse",
+            "name": "Disclosure-collapse",
+            "verdict": "PASS",
+            "reasoning": "Even with explicit instructions detailing sorting and recovery goals, the implementation of idempotent database recovery and deep tree traversal remains complex."
+          },
+          {
+            "id": "hidden_instance",
+            "name": "Hidden-instance",
+            "verdict": "PASS",
+            "reasoning": "The codebase structure is clearly visible, and the files that need modifications are obvious; difficulty is semantic, not a hidden search puzzle."
+          },
+          {
+            "id": "single_artifact_repair",
+            "name": "Single-artifact repair",
+            "verdict": "PASS",
+            "reasoning": "The fix spans multiple logic blocks inside main.rs including file listing, reachability logic, staging recovery, and atomic syncing."
+          },
+          {
+            "id": "generalization",
+            "name": "Generalization",
+            "verdict": "PASS",
+            "reasoning": "Tests verify multiple directories, diverse graph topologies, multiple crash loops, and random inode orders."
+          },
+          {
+            "id": "prompt_honesty",
+            "name": "Prompt-honesty",
+            "verdict": "PASS",
+            "reasoning": "The prompt describes the expected symptoms and public invariants without pointing out the exact bug locations or providing the solution patch."
+          },
+          {
+            "id": "cheating_vs_difficulty",
+            "name": "Cheating-vs-difficulty",
+            "verdict": "PASS",
+            "reasoning": "No trick tests or arbitrary code filters are added to construct artificial difficulty."
+          },
+          {
+            "id": "mechanical_fix_filter",
+            "name": "Mechanical-fix filter",
+            "verdict": "PASS",
+            "reasoning": "The core difficulty lies in solving logical bugs in Rust WAL pruning, not verifier environment dependencies or configuration tweaks."
+          },
+          {
+            "id": "localized_fix",
+            "name": "Localized-fix",
+            "verdict": "PASS",
+            "reasoning": "The changes affect three different system stages (directory sorting, recovery loop, graph search) across main.rs."
+          },
+          {
+            "id": "oracle_locality",
+            "name": "Oracle-locality",
+            "verdict": "PASS",
+            "reasoning": "The oracle changes multiple functions (list_segments, recover_staging, build_reachability_graph) that are semantically distinct."
+          },
+          {
+            "id": "small_declarative_cluster",
+            "name": "Small declarative-cluster",
+            "verdict": "PASS",
+            "reasoning": "The fix is procedural and algorithmic in Rust, involving complex traversal loops and state checks rather than declarative metadata tuning."
+          },
+          {
+            "id": "grep_collapse",
+            "name": "Grep-collapse",
+            "verdict": "PASS",
+            "reasoning": "Grep will lead the agent to the main file, but solving requires understanding the full SQLite transaction and graph state flow."
+          },
+          {
+            "id": "pre_factored_helper",
+            "name": "Pre-factored-helper",
+            "verdict": "PASS",
+            "reasoning": "No pre-factored helper functions in the code trivialise the sorting or reachability fixes."
+          },
+          {
+            "id": "recipe_discount",
+            "name": "Recipe-discount",
+            "verdict": "PASS",
+            "reasoning": "The multi-stage crash-recovery idempotence and path parsing require domain-specific logic, not standard boilerplates."
+          },
+          {
+            "id": "security_aura_discount",
+            "name": "Security-aura discount",
+            "verdict": "PASS",
+            "reasoning": "This is a data-processing and recovery task; it does not rely on security buzzwords for complexity."
+          },
+          {
+            "id": "orthogonal_checklist",
+            "name": "Orthogonal-checklist",
+            "verdict": "PASS",
+            "reasoning": "The fixes are coupled (e.g., if sorting epoch is wrong, reachability traversal fails to resolve active dependencies correctly)."
+          },
+          {
+            "id": "harness_discount",
+            "name": "Harness-discount",
+            "verdict": "PASS",
+            "reasoning": "The task's hardness comes from the Rust algorithm implementation, not setup complexity in the Docker container."
+          },
+          {
+            "id": "one_pass_solvability",
+            "name": "One-pass solvability",
+            "verdict": "PASS",
+            "reasoning": "A single-pass edit without running the test suite will fail due to the subtle crash restart checks and inode-ordering quirks."
+          },
+          {
+            "id": "hard_only_gate",
+            "name": "Hard-only gate",
+            "verdict": "PASS",
+            "reasoning": "Worst-model pass rate is predicted to be under 20% due to the combination of crash restart idempotency and file sorting checks."
+          },
+          {
+            "id": "discovery_budget_test",
+            "name": "Discovery/design budget test",
+            "verdict": "PASS",
+            "reasoning": "We document three distinct discoveries (sorting, recovery idempotency, graph traversal) which the instructions omit."
+          },
+          {
+            "id": "instruction_specificity_test",
+            "name": "Instruction specificity test",
+            "verdict": "PASS",
+            "reasoning": "Instruction is framed as symptoms-only; it describes requirements but keeps solution details hidden."
+          },
+          {
+            "id": "topology_distribution_test",
+            "name": "Topology distribution test",
+            "verdict": "PASS",
+            "reasoning": "The topology lists multiple coupled code structures and assertions."
+          }
+        ],
+        "rubric_axes": [
+          {
+            "id": "verifiable",
+            "name": "Verifiable",
+            "verdict": "PASS",
+            "reasoning": "The test suite programmatically asserts staging DB status, reachability outcomes, and rolling digests."
+          },
+          {
+            "id": "well_specified",
+            "name": "Well-specified",
+            "verdict": "PASS",
+            "reasoning": "The requirements of epoch sorting and graph reachability are fully detailed in instruction.md."
+          },
+          {
+            "id": "solvable",
+            "name": "Solvable",
+            "verdict": "PASS",
+            "reasoning": "An experienced Rust engineer can solve this by correcting the graph traversal, path epoch parsing, and staging transaction checks in a few hours."
+          },
+          {
+            "id": "difficult",
+            "name": "Difficult",
+            "verdict": "PASS",
+            "reasoning": "Requires deep understanding of transaction safety, directories on Unix/Linux platforms, and graph connectivity logic."
+          },
+          {
+            "id": "interesting",
+            "name": "Interesting",
+            "verdict": "PASS",
+            "reasoning": "WAL pruning crash safety is a critical part of modern storage engine and logging broker systems."
+          },
+          {
+            "id": "outcome_verified",
+            "name": "Outcome-verified",
+            "verdict": "PASS",
+            "reasoning": "Grading is based on the correctness of physical segments on disk and SQLite entries, not the code style or patch structure."
+          }
+        ],
+        "instruction_completeness_test": {
+          "verdict": "PASS",
+          "reasoning": "The instruction specifies symptoms and invariants, forcing the agent to discover code defects by inspecting main.rs."
+        },
+        "discovery_budget": [
+          {
+            "discovery": "Sorting log directory by epoch suffix instead of trusting inode/readdir order.",
+            "planned_location": "environment/src/main.rs",
+            "why_instruction_must_not_reveal": "Revealing the exact sorting logic turns the task into a straightforward sorting fix."
+          },
+          {
+            "discovery": "Double-counting during recovery from staging table due to lack of idempotency check.",
+            "planned_location": "environment/src/main.rs",
+            "why_instruction_must_not_reveal": "Explicitly mentioning double-counting in staging table recovery exposes the exact handler bug."
+          },
+          {
+            "discovery": "Tombstone node traversal termination bug in reachability chain.",
+            "planned_location": "environment/src/main.rs",
+            "why_instruction_must_not_reveal": "Explaining node traversal checks makes tracing trivial."
+          }
+        ],
+        "instruction_specificity": {
+          "level": "symptoms-only",
+          "reasoning": "The instruction.md describes symptoms (e.g., corrupted rolling digests, orphaned active segments, double-counting) without naming the buggy files or functions."
+        },
+        "attack_path": {
+          "summary": "Fix double-counting recovery check, support tombstone reachability nodes, sort segment directories by epoch, and fsync barrier updates.",
+          "reasoning": "The solver must first modify list_segments to parse segment names (e.g. log_epoch) and sort them. Then, update build_reachability_graph to check descendants of tombstone nodes. Finally, ensure recover_staging checks if staging records have already been written to prevent double-counting."
+        },
+        "smallest_plausible_patch": {
+          "summary": "Implement sorting on listing vector, fix recursion break condition in reachability, and add database select exist guard in staging recovery.",
+          "reasoning": "This represents the minimal path changes: about 10-15 lines of code total across three functions in environment/src/main.rs."
+        },
+        "collapse_audit": {
+          "verdict": "PASS",
+          "reasoning": "No single location or patch collapses the task because the bugs are spread across three logically separate operations in main.rs.",
+          "residual_hardness": "The agent must handle crash consistency constraints and understand custom Rust directory traversals and graph node evaluation rules.",
+          "red_flags": []
+        },
+        "topology_enumeration": [
+          {
+            "id": "double_count_recovery",
+            "summary": "Double-counting state recovery under multiple crash restarts.",
+            "locations": [
+              "environment/src/main.rs",
+              "tests/test_outputs.py",
+              "solution/solve.sh"
+            ],
+            "why_no_single_location_suffices": "Requires DB state setup, Rust recovery logic edit, and validation verification."
+          },
+          {
+            "id": "non_deterministic_inode_order",
+            "summary": "Directory traversal relies on OS inode order causing drift.",
+            "locations": [
+              "environment/src/main.rs",
+              "tests/test_outputs.py",
+              "solution/solve.sh"
+            ],
+            "why_no_single_location_suffices": "Requires file setup, sorting logic implementation, and verifier checking."
+          },
+          {
+            "id": "tombstone_traversal",
+            "summary": "Reachability tree truncation at tombstoned nodes.",
+            "locations": [
+              "environment/src/main.rs",
+              "tests/test_outputs.py",
+              "solution/solve.sh"
+            ],
+            "why_no_single_location_suffices": "Requires dependency mapping, graph traversal logic correction, and verification."
+          }
+        ],
+        "construction_manifest": {
+          "symbol_table": [
+            {
+              "path": "environment/src/main.rs",
+              "symbol": "recover_staging",
+              "kind": "function",
+              "signature": "fn recover_staging(db: &mut Connection) -> Result<(), sqlite3::Error>",
+              "purpose": "Recover database state from staging table after a crash restart, ensuring idempotency."
+            },
+            {
+              "path": "environment/src/main.rs",
+              "symbol": "build_reachability_graph",
+              "kind": "function",
+              "signature": "fn build_reachability_graph(db: &Connection) -> Result<Graph, sqlite3::Error>",
+              "purpose": "Traverse graph dependency nodes to resolve file reachability, ignoring intermediate tombstones."
+            },
+            {
+              "path": "environment/src/main.rs",
+              "symbol": "list_segments",
+              "kind": "function",
+              "signature": "fn list_segments(dir: &Path) -> Result<Vec<PathBuf>, std::io::Error>",
+              "purpose": "List log segment files on disk sorted in ascending order of their epoch suffix."
+            }
+          ],
+          "flipping_point_contract": {
+            "locations": [
+              {
+                "id": "staging_recovery",
+                "path": "environment/src/main.rs",
+                "controls_tests": [
+                  "test_staging_drain_no_double_count",
+                  "test_sync_epoch_atomicity_and_idempotency"
+                ]
+              },
+              {
+                "id": "graph_traversal",
+                "path": "environment/src/main.rs",
+                "controls_tests": [
+                  "test_reachability_chain_validation"
+                ]
+              },
+              {
+                "id": "segment_sorting",
+                "path": "environment/src/main.rs",
+                "controls_tests": [
+                  "test_epoch_ordered_digest"
+                ]
+              }
+            ],
+            "no_single_location_flips_majority": true,
+            "concentration_cap": 0.5
+          },
+          "decoy_manifest": [
+            {
+              "path": "environment/src/decoy_catalog.rs",
+              "kind": "file",
+              "rhymes_with": "main.rs",
+              "non_fix_purpose": "Mock catalog backup registry decoder helper."
+            },
+            {
+              "path": "environment/src/decoy_utils.rs",
+              "kind": "file",
+              "rhymes_with": "main.rs",
+              "non_fix_purpose": "Mock base64 logging helper logic."
+            }
+          ],
+          "code_forbidden_tokens": [
+            "pruner",
+            "recovery",
+            "segments"
+          ]
+        },
+        "naming_pass": {
+          "instruction_nouns_extracted": [
+            "pruner",
+            "recovery",
+            "segments"
+          ],
+          "renames_during_drafting": [],
+          "test_names_audited": [
+            "test_staging_drain_no_double_count",
+            "test_reachability_chain_validation",
+            "test_epoch_ordered_digest",
+            "test_sync_epoch_atomicity_and_idempotency"
+          ],
+          "concentration_math": {
+            "total_tests": 4,
+            "per_location": [
+              {
+                "location_id": "staging_recovery",
+                "test_count": 2,
+                "ratio": 0.5
+              },
+              {
+                "location_id": "graph_traversal",
+                "test_count": 1,
+                "ratio": 0.25
+              },
+              {
+                "location_id": "segment_sorting",
+                "test_count": 1,
+                "ratio": 0.25
+              }
+            ]
+          },
+          "recomputed_concentration": {
+            "total_tests": 4,
+            "concentration_cap": 0.5,
+            "per_location": [
+              {
+                "location_id": "staging_recovery",
+                "test_count": 2,
+                "ratio": 0.5
+              },
+              {
+                "location_id": "graph_traversal",
+                "test_count": 1,
+                "ratio": 0.25
+              },
+              {
+                "location_id": "segment_sorting",
+                "test_count": 1,
+                "ratio": 0.25
+              }
+            ]
+          }
+        },
+        "difficulty_mechanism_plan": [
+          {
+            "mechanism": "false_green_intermediate_states",
+            "placement": "Intermediate builds and NOP runs pass compile and basic test checks, but fail on multi-step recovery.",
+            "why_model_misses_it": "Model assumes code is correct once compilation succeeds.",
+            "fairness_guardrail": "The test suite verifies full crash-recovery consistency."
+          },
+          {
+            "mechanism": "cross_file_cross_format_invariants",
+            "placement": "Main database state must agree with physical directory listing digests.",
+            "why_model_misses_it": "Model edits main.rs without aligning directory parsing output.",
+            "fairness_guardrail": "Mismatch errors are logged cleanly in verifier checks."
+          },
+          {
+            "mechanism": "rollback_recovery_requirements",
+            "placement": "The system must recover correctly and idempotently from staging table across crash loops.",
+            "why_model_misses_it": "Model implements a single-pass drain without checking if records are already committed.",
+            "fairness_guardrail": "Test suite implements multiple restarts."
+          },
+          {
+            "mechanism": "environment_specific_cli_semantics",
+            "placement": "Processing directory entries relies on epoch order rather than raw readdir/inode order.",
+            "why_model_misses_it": "Model assumes OS readdir order is chronological.",
+            "fairness_guardrail": "The instructions require processing in epoch sequence order."
+          }
+        ],
+        "calibration_plan": {
+          "oracle_runs": 3,
+          "no_op_runs": 3,
+          "target_agent_runs": 20,
+          "comparator_agent_runs": 20,
+          "human_sanity": "verified",
+          "shortcut_audit": "none",
+          "ablation_plan": "none",
+          "pass_rate_target": {
+            "hard_max_pct": 20,
+            "too_easy_threshold_pct": 80,
+            "basis": "platform worst-model"
+          }
+        },
+        "verifier_scoring_plan": {
+          "metrics": [
+            {
+              "metric": "functional_correctness",
+              "weight": 0.45,
+              "criterion": "Passes basic WAL pruning."
+            },
+            {
+              "metric": "hidden_invariants",
+              "weight": 0.25,
+              "criterion": "Idempotent recovery and sorting."
+            },
+            {
+              "metric": "state_hygiene",
+              "weight": 0.15,
+              "criterion": "Tombstone node traversal behaves correctly."
+            },
+            {
+              "metric": "interface_correctness",
+              "weight": 0.1,
+              "criterion": "prune_report.json matches schema."
+            },
+            {
+              "metric": "deliverable_completeness",
+              "weight": 0.05,
+              "criterion": "Correct exits and logging."
+            }
+          ],
+          "overall_threshold": 1.0,
+          "reward_output": "reward.txt",
+          "binary_threshold_rule": "all tests must pass"
+        },
+        "subtype_milestone_plan": {
+          "subcategories": [
+            "db_interaction"
+          ],
+          "milestone_count": 0,
+          "sequential_dependency": "none",
+          "local_only_data": true,
+          "sidecar_or_protocol_notes": "none"
+        },
+        "platform_files": [
+          {
+            "path": "task.toml",
+            "role": "Metadata definition"
+          },
+          {
+            "path": "instruction.md",
+            "role": "Public task instruction"
+          },
+          {
+            "path": "output_contract.toml",
+            "role": "Structured output contract"
+          },
+          {
+            "path": "tests/test.sh",
+            "role": "Test verifier runner"
+          },
+          {
+            "path": "tests/test_outputs.py",
+            "role": "Python test assertions"
+          },
+          {
+            "path": "solution/solve.sh",
+            "role": "Patch application script"
+          },
+          {
+            "path": "environment/Dockerfile",
+            "role": "Container runtime definition"
+          },
+          {
+            "path": "construction_manifest.json",
+            "role": "Authoring manifest mapping"
+          }
+        ],
+        "task_files": [
+          {
+            "path": "environment/src/main.rs",
+            "role": "Main WAL pruner daemon (oracle frontier)"
+          },
+          {
+            "path": "environment/src/decoy_catalog.rs",
+            "role": "Backup catalog decoy module"
+          },
+          {
+            "path": "environment/src/decoy_utils.rs",
+            "role": "Utility helper decoy module"
+          }
+        ],
+        "fix_frontier": {
+          "count": 1,
+          "distribution": "environment/src/main.rs",
+          "naming_policy": "standard Rust structure",
+          "forbidden_stems": [],
+          "helpers_policy": "allowed",
+          "symbol_thin_preferred": true
+        },
+        "contract_surface": {
+          "boolean_fields_max": 0,
+          "direct_boolean_assertions_max": 4,
+          "preferred_assertion_styles": [
+            "JSON check"
+          ],
+          "forbidden_assertion_styles": [
+            "hardcoded mappings"
+          ]
+        },
+        "task_shape": {
+          "type": "repair_existing_system",
+          "instruction_framing": "symptoms-only",
+          "hardness_source": "Multi-point crash consistency, graph traversal, and directory ordering.",
+          "collapse_risk": "Exposing sorting details or graph node traversal collapses search."
+        },
+        "category_profile": {
+          "challenge_family": "wal_segment_pruner_drift",
+          "profile_name": "state_recovery_crash_consistency",
+          "allowed_instruction_disclosures": "database schema, directories",
+          "forbidden_instruction_leaks": "detailed source fix",
+          "category_specific_hardness_bar": "idempotency + sorting + traversals",
+          "category_specific_verifier_risks": "none",
+          "coverage_role": "target"
+        },
+        "satisfiability_risk": {
+          "rc2_planned_name_risk": "low",
+          "gx9_contract_risk": "low",
+          "cr1_symbol_frontier_risk": "low",
+          "hidden_contract_risk": "low"
+        },
+        "actionability_plan": {
+          "verifier_command_visible": "pytest",
+          "source_fix_intent_visible": "yes",
+          "generated_output_rule_visible": "prune_report.json",
+          "exact_formula_home": "instruction.md",
+          "schema_home": "output_contract.toml"
+        },
+        "waiver_plan": {
+          "waivers_expected": false,
+          "waiver_rationale": "no waivers expected"
+        },
+        "reference_pattern": {
+          "justification_if_none": "This task is built from scratch to model real-world crash recovery and epoch-order listing errors in log-structured storage engines."
+        },
+        "realism_source": {
+          "source_type": "real_system",
+          "evidence_basis": "Based on database replication logs and WAL pruning architectures.",
+          "upstream_or_synthetic_rationale": "Replicates bugs found in production WAL-purging engines.",
+          "minimization_preserves": "Complete recovery routines, SQLite transactions, and epoch sorting.",
+          "synthetic_exception_review": "None."
+        }
+      },
+      "evidence_errors": [],
+      "evidence_warnings": [],
+      "blocking_failures": [],
+      "strict": true
+    },
+    {
+      "attempt": 3,
+      "fails": 0,
+      "warns": 1,
+      "evidence_path": "specs/.runs/wal-segment-pruner-drift/attempt-3-evidence.json",
+      "evidence": {
+        "hardness_axes": [
+          {
+            "id": "discover",
+            "name": "Discover",
+            "verdict": "PASS",
+            "reasoning": "The agent must inspect the Rust source code, SQLite database schema, and test expectations to discover sorting epoch suffixes and reachability rules."
+          },
+          {
+            "id": "synthesize",
+            "name": "Synthesize",
+            "verdict": "PASS",
+            "reasoning": "The agent must synthesize constraints across Rust structures, SQLite transactional recovery, directory-level log file listing, and output schemas."
+          },
+          {
+            "id": "diagnose_or_design",
+            "name": "Diagnose or Design/Search",
+            "verdict": "PASS",
+            "reasoning": "The agent needs to diagnose the double-counting bug under crash recovery, tree traversal early termination, and epoch-based sorting issues."
+          },
+          {
+            "id": "navigate_coupling",
+            "name": "Navigate coupling",
+            "verdict": "PASS",
+            "reasoning": "Modifying recovery logic requires keeping both physical directory logs and database staging tables consistent across crash restarts."
+          },
+          {
+            "id": "reason_beyond_training",
+            "name": "Reason beyond training",
+            "verdict": "PASS",
+            "reasoning": "Standard training recipes for directory listings are insufficient since it requires custom epoch extraction and multi-crash consistent recovery logic."
+          }
+        ],
+        "anti_trivialization_checks": [
+          {
+            "id": "disclosure_collapse",
+            "name": "Disclosure-collapse",
+            "verdict": "PASS",
+            "reasoning": "Even with explicit instructions detailing sorting and recovery goals, the implementation of idempotent database recovery and deep tree traversal remains complex."
+          },
+          {
+            "id": "hidden_instance",
+            "name": "Hidden-instance",
+            "verdict": "PASS",
+            "reasoning": "The codebase structure is clearly visible, and the files that need modifications are obvious; difficulty is semantic, not a hidden search puzzle."
+          },
+          {
+            "id": "single_artifact_repair",
+            "name": "Single-artifact repair",
+            "verdict": "PASS",
+            "reasoning": "The fix spans multiple logic blocks inside recovery, graph, and epoch modules under environment/."
+          },
+          {
+            "id": "generalization",
+            "name": "Generalization",
+            "verdict": "PASS",
+            "reasoning": "Tests verify multiple directories, diverse graph topologies, multiple crash loops, and random inode orders."
+          },
+          {
+            "id": "prompt_honesty",
+            "name": "Prompt-honesty",
+            "verdict": "PASS",
+            "reasoning": "The prompt describes the expected symptoms and public invariants without pointing out the exact bug locations or providing the solution patch."
+          },
+          {
+            "id": "cheating_vs_difficulty",
+            "name": "Cheating-vs-difficulty",
+            "verdict": "PASS",
+            "reasoning": "No trick tests or arbitrary code filters are added to construct artificial difficulty."
+          },
+          {
+            "id": "mechanical_fix_filter",
+            "name": "Mechanical-fix filter",
+            "verdict": "PASS",
+            "reasoning": "The core difficulty lies in solving logical bugs in Rust WAL pruning, not verifier environment dependencies or configuration tweaks."
+          },
+          {
+            "id": "localized_fix",
+            "name": "Localized-fix",
+            "verdict": "PASS",
+            "reasoning": "The changes affect three different system stages (directory sorting, recovery loop, graph search) across multiple files."
+          },
+          {
+            "id": "oracle_locality",
+            "name": "Oracle-locality",
+            "verdict": "PASS",
+            "reasoning": "The oracle changes multiple functions (list_segments, recover_staging, build_reachability_graph) that are semantically distinct."
+          },
+          {
+            "id": "small_declarative_cluster",
+            "name": "Small declarative-cluster",
+            "verdict": "PASS",
+            "reasoning": "The fix is procedural and algorithmic in Rust, involving complex traversal loops and state checks rather than declarative metadata tuning."
+          },
+          {
+            "id": "grep_collapse",
+            "name": "Grep-collapse",
+            "verdict": "PASS",
+            "reasoning": "Grep will lead the agent to the file, but solving requires understanding the full SQLite transaction and graph state flow."
+          },
+          {
+            "id": "pre_factored_helper",
+            "name": "Pre-factored-helper",
+            "verdict": "PASS",
+            "reasoning": "No pre-factored helper functions in the code trivialise the sorting or reachability fixes."
+          },
+          {
+            "id": "recipe_discount",
+            "name": "Recipe-discount",
+            "verdict": "PASS",
+            "reasoning": "The multi-stage crash-recovery idempotence and path parsing require domain-specific logic, not standard boilerplates."
+          },
+          {
+            "id": "security_aura_discount",
+            "name": "Security-aura discount",
+            "verdict": "PASS",
+            "reasoning": "This is a data-processing and recovery task; it does not rely on security buzzwords for complexity."
+          },
+          {
+            "id": "orthogonal_checklist",
+            "name": "Orthogonal-checklist",
+            "verdict": "PASS",
+            "reasoning": "The fixes are coupled (e.g., if sorting epoch is wrong, reachability traversal fails to resolve active dependencies correctly)."
+          },
+          {
+            "id": "harness_discount",
+            "name": "Harness-discount",
+            "verdict": "PASS",
+            "reasoning": "The task's hardness comes from the Rust algorithm implementation, not setup complexity in the Docker container."
+          },
+          {
+            "id": "one_pass_solvability",
+            "name": "One-pass solvability",
+            "verdict": "PASS",
+            "reasoning": "A single-pass edit without running the test suite will fail due to the subtle crash restart checks and inode-ordering quirks."
+          },
+          {
+            "id": "hard_only_gate",
+            "name": "Hard-only gate",
+            "verdict": "PASS",
+            "reasoning": "Worst-model pass rate is predicted to be under 20% due to the combination of crash restart idempotency and file sorting checks."
+          },
+          {
+            "id": "discovery_budget_test",
+            "name": "Discovery/design budget test",
+            "verdict": "PASS",
+            "reasoning": "We document three distinct discoveries (sorting, recovery idempotency, graph traversal) which the instructions omit."
+          },
+          {
+            "id": "instruction_specificity_test",
+            "name": "Instruction specificity test",
+            "verdict": "PASS",
+            "reasoning": "Instruction is framed as symptoms-only; it describes requirements but keeps solution details hidden."
+          },
+          {
+            "id": "topology_distribution_test",
+            "name": "Topology distribution test",
+            "verdict": "PASS",
+            "reasoning": "The topology lists multiple coupled code structures and assertions."
+          }
+        ],
+        "rubric_axes": [
+          {
+            "id": "verifiable",
+            "name": "Verifiable",
+            "verdict": "PASS",
+            "reasoning": "The test suite programmatically asserts staging DB status, reachability outcomes, and rolling digests."
+          },
+          {
+            "id": "well_specified",
+            "name": "Well-specified",
+            "verdict": "PASS",
+            "reasoning": "The requirements of epoch sorting and graph reachability are fully detailed in instruction.md."
+          },
+          {
+            "id": "solvable",
+            "name": "Solvable",
+            "verdict": "PASS",
+            "reasoning": "An experienced Rust engineer can solve this by correcting the graph traversal, path epoch parsing, and staging transaction checks in a few hours."
+          },
+          {
+            "id": "difficult",
+            "name": "Difficult",
+            "verdict": "PASS",
+            "reasoning": "Requires deep understanding of transaction safety, directories on Unix/Linux platforms, and graph connectivity logic."
+          },
+          {
+            "id": "interesting",
+            "name": "Interesting",
+            "verdict": "PASS",
+            "reasoning": "WAL pruning crash safety is a critical part of modern storage engine and logging broker systems."
+          },
+          {
+            "id": "outcome_verified",
+            "name": "Outcome-verified",
+            "verdict": "PASS",
+            "reasoning": "Grading is based on the correctness of physical segments on disk and SQLite entries, not the code style or patch structure."
+          }
+        ],
+        "instruction_completeness_test": {
+          "verdict": "PASS",
+          "reasoning": "The instruction specifies symptoms and invariants, forcing the agent to discover code defects by inspecting main.rs."
+        },
+        "discovery_budget": [
+          {
+            "discovery": "Sorting log directory by epoch suffix instead of trusting inode/readdir order.",
+            "planned_location": "environment/epoch/epoch.rs",
+            "why_instruction_must_not_reveal": "Revealing the exact sorting logic turns the task into a straightforward sorting fix."
+          },
+          {
+            "discovery": "Double-counting during recovery from staging table due to lack of idempotency check.",
+            "planned_location": "environment/recovery/recovery.rs",
+            "why_instruction_must_not_reveal": "Explicitly mentioning double-counting in staging table recovery exposes the exact handler bug."
+          },
+          {
+            "discovery": "Tombstone node traversal termination bug in reachability chain.",
+            "planned_location": "environment/graph/graph.rs",
+            "why_instruction_must_not_reveal": "Explaining node traversal checks makes tracing trivial."
+          }
+        ],
+        "instruction_specificity": {
+          "level": "symptoms-only",
+          "reasoning": "The instruction.md describes symptoms (e.g., corrupted rolling digests, orphaned active segments, double-counting) without naming the buggy files or functions."
+        },
+        "attack_path": {
+          "summary": "Fix double-counting recovery check, support tombstone reachability nodes, sort segment directories by epoch, and fsync barrier updates.",
+          "reasoning": "The solver must first modify list_segments to parse segment names (e.g. log_epoch) and sort them. Then, update build_reachability_graph to check descendants of tombstone nodes. Finally, ensure recover_staging checks if staging records have already been written to prevent double-counting."
+        },
+        "smallest_plausible_patch": {
+          "summary": "Implement sorting on listing vector, fix recursion break condition in reachability, and add database select exist guard in staging recovery.",
+          "reasoning": "This represents the minimal path changes: about 10-15 lines of code total across three functions in recovery, graph, and epoch modules."
+        },
+        "collapse_audit": {
+          "verdict": "PASS",
+          "reasoning": "No single location or patch collapses the task because the bugs are spread across three logically separate operations.",
+          "residual_hardness": "The agent must handle crash consistency constraints and understand custom Rust directory traversals and graph node evaluation rules.",
+          "red_flags": []
+        },
+        "topology_enumeration": [
+          {
+            "id": "double_count_recovery",
+            "summary": "Double-counting state recovery under multiple crash restarts.",
+            "locations": [
+              "environment/recovery/recovery.rs",
+              "tests/test_outputs.py",
+              "solution/solve.sh"
+            ],
+            "why_no_single_location_suffices": "Requires DB state setup, Rust recovery logic edit, and validation verification."
+          },
+          {
+            "id": "non_deterministic_inode_order",
+            "summary": "Directory traversal relies on OS inode order causing drift.",
+            "locations": [
+              "environment/epoch/epoch.rs",
+              "tests/test_outputs.py",
+              "solution/solve.sh"
+            ],
+            "why_no_single_location_suffices": "Requires file setup, sorting logic implementation, and verifier checking."
+          },
+          {
+            "id": "tombstone_traversal",
+            "summary": "Reachability tree truncation at tombstoned nodes.",
+            "locations": [
+              "environment/graph/graph.rs",
+              "tests/test_outputs.py",
+              "solution/solve.sh"
+            ],
+            "why_no_single_location_suffices": "Requires dependency mapping, graph traversal logic correction, and verification."
+          }
+        ],
+        "construction_manifest": {
+          "symbol_table": [
+            {
+              "path": "environment/recovery/recovery.rs",
+              "symbol": "recover_staging",
+              "kind": "function",
+              "signature": "pub fn recover_staging(db: &mut Connection, dir: &Path) -> Result<(), Box<dyn std::error::Error>>",
+              "purpose": "Recover database state from staging table after a crash restart, ensuring idempotency."
+            },
+            {
+              "path": "environment/graph/graph.rs",
+              "symbol": "build_reachability_graph",
+              "kind": "function",
+              "signature": "pub fn build_reachability_graph(db: &Connection) -> Result<HashSet<String>, rusqlite::Error>",
+              "purpose": "Traverse graph dependency nodes to resolve file reachability, ignoring intermediate tombstones."
+            },
+            {
+              "path": "environment/epoch/epoch.rs",
+              "symbol": "list_segments",
+              "kind": "function",
+              "signature": "pub fn list_segments(dir: &Path) -> Result<Vec<PathBuf>, std::io::Error>",
+              "purpose": "List log segment files on disk sorted in ascending order of their epoch suffix."
+            }
+          ],
+          "flipping_point_contract": {
+            "locations": [
+              {
+                "id": "staging_recovery",
+                "path": "environment/recovery/recovery.rs",
+                "controls_tests": [
+                  "test_staging_drain_no_double_count",
+                  "test_sync_epoch_atomicity_and_idempotency"
+                ]
+              },
+              {
+                "id": "graph_traversal",
+                "path": "environment/graph/graph.rs",
+                "controls_tests": [
+                  "test_reachability_chain_validation"
+                ]
+              },
+              {
+                "id": "segment_sorting",
+                "path": "environment/epoch/epoch.rs",
+                "controls_tests": [
+                  "test_epoch_ordered_digest"
+                ]
+              }
+            ],
+            "no_single_location_flips_majority": true,
+            "concentration_cap": 0.5
+          },
+          "decoy_manifest": [
+            {
+              "path": "environment/src/decoy_catalog.rs",
+              "kind": "mock catalog encoder",
+              "rhymes_with": "main.rs",
+              "non_fix_purpose": "Mock catalog backup registry decoder helper."
+            },
+            {
+              "path": "environment/src/decoy_utils.rs",
+              "kind": "mock base64 logger helper",
+              "rhymes_with": "main.rs",
+              "non_fix_purpose": "Mock base64 logging helper logic."
+            }
+          ],
+          "code_forbidden_tokens": [
+            "pruner",
+            "recovery",
+            "segments"
+          ]
+        },
+        "naming_pass": {
+          "instruction_nouns_extracted": [
+            "pruner",
+            "recovery",
+            "segments"
+          ],
+          "renames_during_drafting": [],
+          "test_names_audited": [
+            "test_staging_drain_no_double_count",
+            "test_reachability_chain_validation",
+            "test_epoch_ordered_digest",
+            "test_sync_epoch_atomicity_and_idempotency"
+          ],
+          "concentration_math": {
+            "total_tests": 4,
+            "per_location": [
+              {
+                "location_id": "staging_recovery",
+                "test_count": 2,
+                "ratio": 0.5
+              },
+              {
+                "location_id": "graph_traversal",
+                "test_count": 1,
+                "ratio": 0.25
+              },
+              {
+                "location_id": "segment_sorting",
+                "test_count": 1,
+                "ratio": 0.25
+              }
+            ]
+          },
+          "recomputed_concentration": {
+            "total_tests": 4,
+            "concentration_cap": 0.5,
+            "per_location": [
+              {
+                "location_id": "staging_recovery",
+                "test_count": 2,
+                "ratio": 0.5
+              },
+              {
+                "location_id": "graph_traversal",
+                "test_count": 1,
+                "ratio": 0.25
+              },
+              {
+                "location_id": "segment_sorting",
+                "test_count": 1,
+                "ratio": 0.25
+              }
+            ]
+          }
+        },
+        "difficulty_mechanism_plan": [
+          {
+            "mechanism": "false_green_intermediate_states",
+            "placement": "Intermediate builds and NOP runs pass compile and basic test checks, but fail on multi-step recovery.",
+            "why_model_misses_it": "Model assumes code is correct once compilation succeeds.",
+            "fairness_guardrail": "The test suite verifies full crash-recovery consistency."
+          },
+          {
+            "mechanism": "cross_file_cross_format_invariants",
+            "placement": "Main database state must agree with physical directory listing digests.",
+            "why_model_misses_it": "Model edits main.rs without aligning directory parsing output.",
+            "fairness_guardrail": "Mismatch errors are logged cleanly in verifier checks."
+          },
+          {
+            "mechanism": "rollback_recovery_requirements",
+            "placement": "The system must recover correctly and idempotently from staging table across crash loops.",
+            "why_model_misses_it": "Model implements a single-pass drain without checking if records are already committed.",
+            "fairness_guardrail": "Test suite implements multiple restarts."
+          },
+          {
+            "mechanism": "environment_specific_cli_semantics",
+            "placement": "Processing directory entries relies on epoch order rather than raw readdir/inode order.",
+            "why_model_misses_it": "Model assumes OS readdir order is chronological.",
+            "fairness_guardrail": "The instructions require processing in epoch sequence order."
+          }
+        ],
+        "calibration_plan": {
+          "oracle_runs": 3,
+          "no_op_runs": 3,
+          "target_agent_runs": 20,
+          "comparator_agent_runs": 20,
+          "human_sanity": "verified",
+          "shortcut_audit": "none",
+          "ablation_plan": "none",
+          "pass_rate_target": {
+            "hard_max_pct": 20,
+            "too_easy_threshold_pct": 80,
+            "basis": "platform worst-model"
+          }
+        },
+        "verifier_scoring_plan": {
+          "metrics": [
+            {
+              "metric": "functional_correctness",
+              "weight": 0.45,
+              "criterion": "Passes basic WAL pruning."
+            },
+            {
+              "metric": "hidden_invariants",
+              "weight": 0.25,
+              "criterion": "Idempotent recovery and sorting."
+            },
+            {
+              "metric": "state_hygiene",
+              "weight": 0.15,
+              "criterion": "Tombstone node traversal behaves correctly."
+            },
+            {
+              "metric": "interface_correctness",
+              "weight": 0.1,
+              "criterion": "prune_report.json matches schema."
+            },
+            {
+              "metric": "deliverable_completeness",
+              "weight": 0.05,
+              "criterion": "Correct exits and logging."
+            }
+          ],
+          "overall_threshold": 1.0,
+          "reward_output": "reward.txt",
+          "binary_threshold_rule": "all tests must pass"
+        },
+        "subtype_milestone_plan": {
+          "subcategories": [
+            "db_interaction"
+          ],
+          "milestone_count": 0,
+          "sequential_dependency": "none",
+          "local_only_data": true,
+          "sidecar_or_protocol_notes": "none"
+        },
+        "platform_files": [
+          {
+            "path": "task.toml",
+            "role": "Metadata definition"
+          },
+          {
+            "path": "instruction.md",
+            "role": "Public task instruction"
+          },
+          {
+            "path": "output_contract.toml",
+            "role": "Structured output contract"
+          },
+          {
+            "path": "tests/test.sh",
+            "role": "Test verifier runner"
+          },
+          {
+            "path": "tests/test_outputs.py",
+            "role": "Python test assertions"
+          },
+          {
+            "path": "solution/solve.sh",
+            "role": "Patch application script"
+          },
+          {
+            "path": "environment/Dockerfile",
+            "role": "Container runtime definition"
+          },
+          {
+            "path": "construction_manifest.json",
+            "role": "Authoring manifest mapping"
+          }
+        ],
+        "task_files": [
+          {
+            "path": "environment/src/main.rs",
+            "role": "Main WAL pruner daemon (oracle frontier)"
+          },
+          {
+            "path": "environment/recovery/recovery.rs",
+            "role": "Staging table recovery module"
+          },
+          {
+            "path": "environment/graph/graph.rs",
+            "role": "Dependency reachability graph traversal module"
+          },
+          {
+            "path": "environment/epoch/epoch.rs",
+            "role": "Log segments directory lister and sorting module"
+          },
+          {
+            "path": "environment/src/decoy_catalog.rs",
+            "role": "Backup catalog decoy module"
+          },
+          {
+            "path": "environment/src/decoy_utils.rs",
+            "role": "Utility helper decoy module"
+          },
+          {
+            "path": "environment/decoy_hash.py",
+            "role": "Decoy Python dependency alignment script"
+          }
+        ],
+        "fix_frontier": {
+          "count": 3,
+          "distribution": "environment/recovery/recovery.rs, environment/graph/graph.rs, environment/epoch/epoch.rs",
+          "naming_policy": "standard Rust structure",
+          "forbidden_stems": [],
+          "helpers_policy": "allowed",
+          "symbol_thin_preferred": true
+        },
+        "contract_surface": {
+          "boolean_fields_max": 0,
+          "direct_boolean_assertions_max": 4,
+          "preferred_assertion_styles": [
+            "JSON check"
+          ],
+          "forbidden_assertion_styles": [
+            "hardcoded mappings"
+          ]
+        },
+        "task_shape": {
+          "type": "repair_existing_system",
+          "instruction_framing": "symptoms-only",
+          "hardness_source": "Multi-point crash consistency, graph traversal, and directory ordering.",
+          "collapse_risk": "Exposing sorting details or graph node traversal collapses search."
+        },
+        "category_profile": {
+          "challenge_family": "wal_segment_pruner_drift",
+          "profile_name": "state_recovery_crash_consistency",
+          "allowed_instruction_disclosures": "database schema, directories",
+          "forbidden_instruction_leaks": "detailed source fix",
+          "category_specific_hardness_bar": "idempotency + sorting + traversals",
+          "category_specific_verifier_risks": "none",
+          "coverage_role": "target"
+        },
+        "satisfiability_risk": {
+          "rc2_planned_name_risk": "low",
+          "gx9_contract_risk": "low",
+          "cr1_symbol_frontier_risk": "low",
+          "hidden_contract_risk": "low"
+        },
+        "actionability_plan": {
+          "verifier_command_visible": "pytest",
+          "source_fix_intent_visible": "yes",
+          "generated_output_rule_visible": "prune_report.json",
+          "exact_formula_home": "instruction.md",
+          "schema_home": "output_contract.toml"
+        },
+        "waiver_plan": {
+          "waivers_expected": false,
+          "waiver_rationale": "no waivers expected"
+        },
+        "reference_pattern": {
+          "justification_if_none": "This task is built from scratch to model real-world crash recovery and epoch-order listing errors in log-structured storage engines."
+        },
+        "realism_source": {
+          "source_type": "real_system",
+          "evidence_basis": "Based on database replication logs and WAL pruning architectures.",
+          "upstream_or_synthetic_rationale": "Replicates bugs found in production WAL-purging engines.",
+          "minimization_preserves": "Complete recovery routines, SQLite transactions, and epoch sorting.",
+          "synthetic_exception_review": "None."
+        }
+      },
+      "evidence_errors": [],
+      "evidence_warnings": [],
+      "blocking_failures": [],
+      "strict": true
+    },
+    {
+      "attempt": 4,
+      "fails": 0,
+      "warns": 1,
+      "evidence_path": "specs/.runs/wal-segment-pruner-drift/attempt-4-evidence.json",
+      "evidence": {
+        "hardness_axes": [
+          {
+            "id": "discover",
+            "name": "Discover",
+            "verdict": "PASS",
+            "reasoning": "The agent must inspect the Rust source code, SQLite database schema, and test expectations to discover sorting epoch suffixes and reachability rules."
+          },
+          {
+            "id": "synthesize",
+            "name": "Synthesize",
+            "verdict": "PASS",
+            "reasoning": "The agent must synthesize constraints across Rust structures, SQLite transactional recovery, directory-level log file listing, and output schemas."
+          },
+          {
+            "id": "diagnose_or_design",
+            "name": "Diagnose or Design/Search",
+            "verdict": "PASS",
+            "reasoning": "The agent needs to diagnose the double-counting bug under crash recovery, tree traversal early termination, and epoch-based sorting issues."
+          },
+          {
+            "id": "navigate_coupling",
+            "name": "Navigate coupling",
+            "verdict": "PASS",
+            "reasoning": "Modifying recovery logic requires keeping both physical directory logs and database staging tables consistent across crash restarts."
+          },
+          {
+            "id": "reason_beyond_training",
+            "name": "Reason beyond training",
+            "verdict": "PASS",
+            "reasoning": "Standard training recipes for directory listings are insufficient since it requires custom epoch extraction and multi-crash consistent recovery logic."
+          }
+        ],
+        "anti_trivialization_checks": [
+          {
+            "id": "disclosure_collapse",
+            "name": "Disclosure-collapse",
+            "verdict": "PASS",
+            "reasoning": "Even with explicit instructions detailing sorting and recovery goals, the implementation of idempotent database recovery and deep tree traversal remains complex."
+          },
+          {
+            "id": "hidden_instance",
+            "name": "Hidden-instance",
+            "verdict": "PASS",
+            "reasoning": "The codebase structure is clearly visible, and the files that need modifications are obvious; difficulty is semantic, not a hidden search puzzle."
+          },
+          {
+            "id": "single_artifact_repair",
+            "name": "Single-artifact repair",
+            "verdict": "PASS",
+            "reasoning": "The fix spans multiple logic blocks inside recovery, graph, and epoch modules under environment/."
+          },
+          {
+            "id": "generalization",
+            "name": "Generalization",
+            "verdict": "PASS",
+            "reasoning": "Tests verify multiple directories, diverse graph topologies, multiple crash loops, and random inode orders."
+          },
+          {
+            "id": "prompt_honesty",
+            "name": "Prompt-honesty",
+            "verdict": "PASS",
+            "reasoning": "The prompt describes the expected symptoms and public invariants without pointing out the exact bug locations or providing the solution patch."
+          },
+          {
+            "id": "cheating_vs_difficulty",
+            "name": "Cheating-vs-difficulty",
+            "verdict": "PASS",
+            "reasoning": "No trick tests or arbitrary code filters are added to construct artificial difficulty."
+          },
+          {
+            "id": "mechanical_fix_filter",
+            "name": "Mechanical-fix filter",
+            "verdict": "PASS",
+            "reasoning": "The core difficulty lies in solving logical bugs in Rust WAL pruning, not verifier environment dependencies or configuration tweaks."
+          },
+          {
+            "id": "localized_fix",
+            "name": "Localized-fix",
+            "verdict": "PASS",
+            "reasoning": "The changes affect three different system stages (directory sorting, recovery loop, graph search) across multiple files."
+          },
+          {
+            "id": "oracle_locality",
+            "name": "Oracle-locality",
+            "verdict": "PASS",
+            "reasoning": "The oracle changes multiple functions (list_segments, recover_staging, build_reachability_graph) that are semantically distinct."
+          },
+          {
+            "id": "small_declarative_cluster",
+            "name": "Small declarative-cluster",
+            "verdict": "PASS",
+            "reasoning": "The fix is procedural and algorithmic in Rust, involving complex traversal loops and state checks rather than declarative metadata tuning."
+          },
+          {
+            "id": "grep_collapse",
+            "name": "Grep-collapse",
+            "verdict": "PASS",
+            "reasoning": "Grep will lead the agent to the file, but solving requires understanding the full SQLite transaction and graph state flow."
+          },
+          {
+            "id": "pre_factored_helper",
+            "name": "Pre-factored-helper",
+            "verdict": "PASS",
+            "reasoning": "No pre-factored helper functions in the code trivialise the sorting or reachability fixes."
+          },
+          {
+            "id": "recipe_discount",
+            "name": "Recipe-discount",
+            "verdict": "PASS",
+            "reasoning": "The multi-stage crash-recovery idempotence and path parsing require domain-specific logic, not standard boilerplates."
+          },
+          {
+            "id": "security_aura_discount",
+            "name": "Security-aura discount",
+            "verdict": "PASS",
+            "reasoning": "This is a data-processing and recovery task; it does not rely on security buzzwords for complexity."
+          },
+          {
+            "id": "orthogonal_checklist",
+            "name": "Orthogonal-checklist",
+            "verdict": "PASS",
+            "reasoning": "The fixes are coupled (e.g., if sorting epoch is wrong, reachability traversal fails to resolve active dependencies correctly)."
+          },
+          {
+            "id": "harness_discount",
+            "name": "Harness-discount",
+            "verdict": "PASS",
+            "reasoning": "The task's hardness comes from the Rust algorithm implementation, not setup complexity in the Docker container."
+          },
+          {
+            "id": "one_pass_solvability",
+            "name": "One-pass solvability",
+            "verdict": "PASS",
+            "reasoning": "A single-pass edit without running the test suite will fail due to the subtle crash restart checks and inode-ordering quirks."
+          },
+          {
+            "id": "hard_only_gate",
+            "name": "Hard-only gate",
+            "verdict": "PASS",
+            "reasoning": "Worst-model pass rate is predicted to be under 20% due to the combination of crash restart idempotency and file sorting checks."
+          },
+          {
+            "id": "discovery_budget_test",
+            "name": "Discovery/design budget test",
+            "verdict": "PASS",
+            "reasoning": "We document three distinct discoveries (sorting, recovery idempotency, graph traversal) which the instructions omit."
+          },
+          {
+            "id": "instruction_specificity_test",
+            "name": "Instruction specificity test",
+            "verdict": "PASS",
+            "reasoning": "Instruction is framed as symptoms-only; it describes requirements but keeps solution details hidden."
+          },
+          {
+            "id": "topology_distribution_test",
+            "name": "Topology distribution test",
+            "verdict": "PASS",
+            "reasoning": "The topology lists multiple coupled code structures and assertions."
+          }
+        ],
+        "rubric_axes": [
+          {
+            "id": "verifiable",
+            "name": "Verifiable",
+            "verdict": "PASS",
+            "reasoning": "The test suite programmatically asserts staging DB status, reachability outcomes, and rolling digests."
+          },
+          {
+            "id": "well_specified",
+            "name": "Well-specified",
+            "verdict": "PASS",
+            "reasoning": "The requirements of epoch sorting and graph reachability are fully detailed in instruction.md."
+          },
+          {
+            "id": "solvable",
+            "name": "Solvable",
+            "verdict": "PASS",
+            "reasoning": "An experienced Rust engineer can solve this by correcting the graph traversal, path epoch parsing, and staging transaction checks in a few hours."
+          },
+          {
+            "id": "difficult",
+            "name": "Difficult",
+            "verdict": "PASS",
+            "reasoning": "Requires deep understanding of transaction safety, directories on Unix/Linux platforms, and graph connectivity logic."
+          },
+          {
+            "id": "interesting",
+            "name": "Interesting",
+            "verdict": "PASS",
+            "reasoning": "WAL pruning crash safety is a critical part of modern storage engine and logging broker systems."
+          },
+          {
+            "id": "outcome_verified",
+            "name": "Outcome-verified",
+            "verdict": "PASS",
+            "reasoning": "Grading is based on the correctness of physical segments on disk and SQLite entries, not the code style or patch structure."
+          }
+        ],
+        "instruction_completeness_test": {
+          "verdict": "PASS",
+          "reasoning": "The instruction specifies symptoms and invariants, forcing the agent to discover code defects by inspecting main.rs."
+        },
+        "discovery_budget": [
+          {
+            "discovery": "Sorting log directory by epoch suffix instead of trusting inode/readdir order.",
+            "planned_location": "environment/epoch/epoch.rs",
+            "why_instruction_must_not_reveal": "Revealing the exact sorting logic turns the task into a straightforward sorting fix."
+          },
+          {
+            "discovery": "Double-counting during recovery from staging table due to lack of idempotency check.",
+            "planned_location": "environment/recovery/recovery.rs",
+            "why_instruction_must_not_reveal": "Explicitly mentioning double-counting in staging table recovery exposes the exact handler bug."
+          },
+          {
+            "discovery": "Tombstone node traversal termination bug in reachability chain.",
+            "planned_location": "environment/graph/graph.rs",
+            "why_instruction_must_not_reveal": "Explaining node traversal checks makes tracing trivial."
+          }
+        ],
+        "instruction_specificity": {
+          "level": "symptoms-only",
+          "reasoning": "The instruction.md describes symptoms (e.g., corrupted rolling digests, orphaned active segments, double-counting) without naming the buggy files or functions."
+        },
+        "attack_path": {
+          "summary": "Fix double-counting recovery check, support tombstone reachability nodes, sort segment directories by epoch, and fsync barrier updates.",
+          "reasoning": "The solver must first modify list_segments to parse segment names (e.g. log_epoch) and sort them. Then, update build_reachability_graph to check descendants of tombstone nodes. Finally, ensure recover_staging checks if staging records have already been written to prevent double-counting."
+        },
+        "smallest_plausible_patch": {
+          "summary": "Implement sorting on listing vector, fix recursion break condition in reachability, and add database select exist guard in staging recovery.",
+          "reasoning": "This represents the minimal path changes: about 10-15 lines of code total across three functions in recovery, graph, and epoch modules."
+        },
+        "collapse_audit": {
+          "verdict": "PASS",
+          "reasoning": "No single location or patch collapses the task because the bugs are spread across three logically separate operations.",
+          "residual_hardness": "The agent must handle crash consistency constraints and understand custom Rust directory traversals and graph node evaluation rules.",
+          "red_flags": []
+        },
+        "topology_enumeration": [
+          {
+            "id": "double_count_recovery",
+            "summary": "Double-counting state recovery under multiple crash restarts.",
+            "locations": [
+              "environment/recovery/recovery.rs",
+              "tests/test_outputs.py",
+              "solution/solve.sh"
+            ],
+            "why_no_single_location_suffices": "Requires DB state setup, Rust recovery logic edit, and validation verification."
+          },
+          {
+            "id": "non_deterministic_inode_order",
+            "summary": "Directory traversal relies on OS inode order causing drift.",
+            "locations": [
+              "environment/epoch/epoch.rs",
+              "tests/test_outputs.py",
+              "solution/solve.sh"
+            ],
+            "why_no_single_location_suffices": "Requires file setup, sorting logic implementation, and verifier checking."
+          },
+          {
+            "id": "tombstone_traversal",
+            "summary": "Reachability tree truncation at tombstoned nodes.",
+            "locations": [
+              "environment/graph/graph.rs",
+              "tests/test_outputs.py",
+              "solution/solve.sh"
+            ],
+            "why_no_single_location_suffices": "Requires dependency mapping, graph traversal logic correction, and verification."
+          }
+        ],
+        "construction_manifest": {
+          "symbol_table": [
+            {
+              "path": "environment/recovery/recovery.rs",
+              "symbol": "recover_staging",
+              "kind": "function",
+              "signature": "pub fn recover_staging(db: &mut Connection, dir: &Path) -> Result<(), Box<dyn std::error::Error>>",
+              "purpose": "Recover database state from staging table after a crash restart, ensuring idempotency."
+            },
+            {
+              "path": "environment/graph/graph.rs",
+              "symbol": "build_reachability_graph",
+              "kind": "function",
+              "signature": "pub fn build_reachability_graph(db: &Connection) -> Result<HashSet<String>, rusqlite::Error>",
+              "purpose": "Traverse graph dependency nodes to resolve file reachability, ignoring intermediate tombstones."
+            },
+            {
+              "path": "environment/epoch/epoch.rs",
+              "symbol": "list_segments",
+              "kind": "function",
+              "signature": "pub fn list_segments(dir: &Path) -> Result<Vec<PathBuf>, std::io::Error>",
+              "purpose": "List log segment files on disk sorted in ascending order of their epoch suffix."
+            }
+          ],
+          "flipping_point_contract": {
+            "locations": [
+              {
+                "id": "staging_recovery",
+                "path": "environment/recovery/recovery.rs",
+                "controls_tests": [
+                  "test_staging_drain_no_double_count",
+                  "test_sync_epoch_atomicity_and_idempotency"
+                ]
+              },
+              {
+                "id": "graph_traversal",
+                "path": "environment/graph/graph.rs",
+                "controls_tests": [
+                  "test_reachability_chain_validation"
+                ]
+              },
+              {
+                "id": "segment_sorting",
+                "path": "environment/epoch/epoch.rs",
+                "controls_tests": [
+                  "test_epoch_ordered_digest"
+                ]
+              }
+            ],
+            "no_single_location_flips_majority": true,
+            "concentration_cap": 0.5
+          },
+          "decoy_manifest": [
+            {
+              "path": "environment/src/decoy_catalog.rs",
+              "kind": "mock catalog encoder",
+              "rhymes_with": "main.rs",
+              "non_fix_purpose": "Mock catalog backup registry decoder helper."
+            },
+            {
+              "path": "environment/src/decoy_utils.rs",
+              "kind": "mock base64 logger helper",
+              "rhymes_with": "main.rs",
+              "non_fix_purpose": "Mock base64 logging helper logic."
+            }
+          ],
+          "code_forbidden_tokens": [
+            "pruner",
+            "recovery",
+            "segments"
+          ]
+        },
+        "naming_pass": {
+          "instruction_nouns_extracted": [
+            "pruner",
+            "recovery",
+            "segments"
+          ],
+          "renames_during_drafting": [],
+          "test_names_audited": [
+            "test_staging_drain_no_double_count",
+            "test_reachability_chain_validation",
+            "test_epoch_ordered_digest",
+            "test_sync_epoch_atomicity_and_idempotency"
+          ],
+          "concentration_math": {
+            "total_tests": 4,
+            "per_location": [
+              {
+                "location_id": "staging_recovery",
+                "test_count": 2,
+                "ratio": 0.5
+              },
+              {
+                "location_id": "graph_traversal",
+                "test_count": 1,
+                "ratio": 0.25
+              },
+              {
+                "location_id": "segment_sorting",
+                "test_count": 1,
+                "ratio": 0.25
+              }
+            ]
+          },
+          "recomputed_concentration": {
+            "total_tests": 4,
+            "concentration_cap": 0.5,
+            "per_location": [
+              {
+                "location_id": "staging_recovery",
+                "test_count": 2,
+                "ratio": 0.5
+              },
+              {
+                "location_id": "graph_traversal",
+                "test_count": 1,
+                "ratio": 0.25
+              },
+              {
+                "location_id": "segment_sorting",
+                "test_count": 1,
+                "ratio": 0.25
+              }
+            ]
+          }
+        },
+        "difficulty_mechanism_plan": [
+          {
+            "mechanism": "false_green_intermediate_states",
+            "placement": "Intermediate builds and NOP runs pass compile and basic test checks, but fail on multi-step recovery.",
+            "why_model_misses_it": "Model assumes code is correct once compilation succeeds.",
+            "fairness_guardrail": "The test suite verifies full crash-recovery consistency."
+          },
+          {
+            "mechanism": "cross_file_cross_format_invariants",
+            "placement": "Main database state must agree with physical directory listing digests.",
+            "why_model_misses_it": "Model edits main.rs without aligning directory parsing output.",
+            "fairness_guardrail": "Mismatch errors are logged cleanly in verifier checks."
+          },
+          {
+            "mechanism": "rollback_recovery_requirements",
+            "placement": "The system must recover correctly and idempotently from staging table across crash loops.",
+            "why_model_misses_it": "Model implements a single-pass drain without checking if records are already committed.",
+            "fairness_guardrail": "Test suite implements multiple restarts."
+          },
+          {
+            "mechanism": "environment_specific_cli_semantics",
+            "placement": "Processing directory entries relies on epoch order rather than raw readdir/inode order.",
+            "why_model_misses_it": "Model assumes OS readdir order is chronological.",
+            "fairness_guardrail": "The instructions require processing in epoch sequence order."
+          }
+        ],
+        "calibration_plan": {
+          "oracle_runs": 3,
+          "no_op_runs": 3,
+          "target_agent_runs": 20,
+          "comparator_agent_runs": 20,
+          "human_sanity": "verified",
+          "shortcut_audit": "none",
+          "ablation_plan": "none",
+          "pass_rate_target": {
+            "hard_max_pct": 20,
+            "too_easy_threshold_pct": 80,
+            "basis": "platform worst-model"
+          }
+        },
+        "verifier_scoring_plan": {
+          "metrics": [
+            {
+              "metric": "functional_correctness",
+              "weight": 0.45,
+              "criterion": "Passes basic WAL pruning."
+            },
+            {
+              "metric": "hidden_invariants",
+              "weight": 0.25,
+              "criterion": "Idempotent recovery and sorting."
+            },
+            {
+              "metric": "state_hygiene",
+              "weight": 0.15,
+              "criterion": "Tombstone node traversal behaves correctly."
+            },
+            {
+              "metric": "interface_correctness",
+              "weight": 0.1,
+              "criterion": "prune_report.json matches schema."
+            },
+            {
+              "metric": "deliverable_completeness",
+              "weight": 0.05,
+              "criterion": "Correct exits and logging."
+            }
+          ],
+          "overall_threshold": 1.0,
+          "reward_output": "reward.txt",
+          "binary_threshold_rule": "all tests must pass"
+        },
+        "subtype_milestone_plan": {
+          "subcategories": [
+            "db_interaction"
+          ],
+          "milestone_count": 0,
+          "sequential_dependency": "none",
+          "local_only_data": true,
+          "sidecar_or_protocol_notes": "none"
+        },
+        "platform_files": [
+          {
+            "path": "task.toml",
+            "role": "Metadata definition"
+          },
+          {
+            "path": "instruction.md",
+            "role": "Public task instruction"
+          },
+          {
+            "path": "output_contract.toml",
+            "role": "Structured output contract"
+          },
+          {
+            "path": "tests/test.sh",
+            "role": "Test verifier runner"
+          },
+          {
+            "path": "tests/test_outputs.py",
+            "role": "Python test assertions"
+          },
+          {
+            "path": "solution/solve.sh",
+            "role": "Patch application script"
+          },
+          {
+            "path": "environment/Dockerfile",
+            "role": "Container runtime definition"
+          },
+          {
+            "path": "construction_manifest.json",
+            "role": "Authoring manifest mapping"
+          }
+        ],
+        "task_files": [
+          {
+            "path": "environment/src/main.rs",
+            "role": "Main WAL pruner daemon (oracle frontier)"
+          },
+          {
+            "path": "environment/recovery/recovery.rs",
+            "role": "Staging table recovery module"
+          },
+          {
+            "path": "environment/graph/graph.rs",
+            "role": "Dependency reachability graph traversal module"
+          },
+          {
+            "path": "environment/epoch/epoch.rs",
+            "role": "Log segments directory lister and sorting module"
+          },
+          {
+            "path": "environment/src/decoy_catalog.rs",
+            "role": "Backup catalog decoy module"
+          },
+          {
+            "path": "environment/src/decoy_utils.rs",
+            "role": "Utility helper decoy module"
+          },
+          {
+            "path": "environment/decoy_hash.py",
+            "role": "Decoy Python dependency alignment script"
+          }
+        ],
+        "fix_frontier": {
+          "count": 3,
+          "distribution": "environment/recovery/recovery.rs, environment/graph/graph.rs, environment/epoch/epoch.rs",
+          "naming_policy": "standard Rust structure",
+          "forbidden_stems": [],
+          "helpers_policy": "allowed",
+          "symbol_thin_preferred": true
+        },
+        "contract_surface": {
+          "boolean_fields_max": 0,
+          "direct_boolean_assertions_max": 4,
+          "preferred_assertion_styles": [
+            "JSON check"
+          ],
+          "forbidden_assertion_styles": [
+            "hardcoded mappings"
+          ]
+        },
+        "task_shape": {
+          "type": "repair_existing_system",
+          "instruction_framing": "symptoms-only",
+          "hardness_source": "Multi-point crash consistency, graph traversal, and directory ordering.",
+          "collapse_risk": "Exposing sorting details or graph node traversal collapses search."
+        },
+        "category_profile": {
+          "challenge_family": "wal_segment_pruner_drift",
+          "profile_name": "state_recovery_crash_consistency",
+          "allowed_instruction_disclosures": "database schema, directories",
+          "forbidden_instruction_leaks": "detailed source fix",
+          "category_specific_hardness_bar": "idempotency + sorting + traversals",
+          "category_specific_verifier_risks": "none",
+          "coverage_role": "target"
+        },
+        "satisfiability_risk": {
+          "rc2_planned_name_risk": "low",
+          "gx9_contract_risk": "low",
+          "cr1_symbol_frontier_risk": "low",
+          "hidden_contract_risk": "low"
+        },
+        "actionability_plan": {
+          "verifier_command_visible": "pytest",
+          "source_fix_intent_visible": "yes",
+          "generated_output_rule_visible": "prune_report.json",
+          "exact_formula_home": "instruction.md",
+          "schema_home": "output_contract.toml"
+        },
+        "waiver_plan": {
+          "waivers_expected": false,
+          "waiver_rationale": "no waivers expected"
+        },
+        "reference_pattern": {
+          "justification_if_none": "This task is built from scratch to model real-world crash recovery and epoch-order listing errors in log-structured storage engines."
+        },
+        "realism_source": {
+          "source_type": "real_system",
+          "evidence_basis": "Based on database replication logs and WAL pruning architectures.",
+          "upstream_or_synthetic_rationale": "Replicates bugs found in production WAL-purging engines.",
+          "minimization_preserves": "Complete recovery routines, SQLite transactions, and epoch sorting.",
+          "synthetic_exception_review": "None."
+        }
+      },
+      "evidence_errors": [],
+      "evidence_warnings": [],
+      "blocking_failures": [],
+      "strict": true
+    },
+    {
+      "attempt": 5,
+      "fails": 0,
+      "warns": 1,
+      "evidence_path": "specs/.runs/wal-segment-pruner-drift/attempt-5-evidence.json",
+      "evidence": {
+        "hardness_axes": [
+          {
+            "id": "discover",
+            "name": "Discover",
+            "verdict": "PASS",
+            "reasoning": "The agent must inspect the Rust source code, SQLite database schema, and test expectations to discover sorting epoch suffixes and reachability rules."
+          },
+          {
+            "id": "synthesize",
+            "name": "Synthesize",
+            "verdict": "PASS",
+            "reasoning": "The agent must synthesize constraints across Rust structures, SQLite transactional recovery, directory-level log file listing, and output schemas."
+          },
+          {
+            "id": "diagnose_or_design",
+            "name": "Diagnose or Design/Search",
+            "verdict": "PASS",
+            "reasoning": "The agent needs to diagnose the double-counting bug under crash recovery, tree traversal early termination, and epoch-based sorting issues."
+          },
+          {
+            "id": "navigate_coupling",
+            "name": "Navigate coupling",
+            "verdict": "PASS",
+            "reasoning": "Modifying recovery logic requires keeping both physical directory logs and database staging tables consistent across crash restarts."
+          },
+          {
+            "id": "reason_beyond_training",
+            "name": "Reason beyond training",
+            "verdict": "PASS",
+            "reasoning": "Standard training recipes for directory listings are insufficient since it requires custom epoch extraction and multi-crash consistent recovery logic."
+          }
+        ],
+        "anti_trivialization_checks": [
+          {
+            "id": "disclosure_collapse",
+            "name": "Disclosure-collapse",
+            "verdict": "PASS",
+            "reasoning": "Even with explicit instructions detailing sorting and recovery goals, the implementation of idempotent database recovery and deep tree traversal remains complex."
+          },
+          {
+            "id": "hidden_instance",
+            "name": "Hidden-instance",
+            "verdict": "PASS",
+            "reasoning": "The codebase structure is clearly visible, and the files that need modifications are obvious; difficulty is semantic, not a hidden search puzzle."
+          },
+          {
+            "id": "single_artifact_repair",
+            "name": "Single-artifact repair",
+            "verdict": "PASS",
+            "reasoning": "The fix spans multiple logic blocks inside recovery, graph, and epoch modules under environment/."
+          },
+          {
+            "id": "generalization",
+            "name": "Generalization",
+            "verdict": "PASS",
+            "reasoning": "Tests verify multiple directories, diverse graph topologies, multiple crash loops, and random inode orders."
+          },
+          {
+            "id": "prompt_honesty",
+            "name": "Prompt-honesty",
+            "verdict": "PASS",
+            "reasoning": "The prompt describes the expected symptoms and public invariants without pointing out the exact bug locations or providing the solution patch."
+          },
+          {
+            "id": "cheating_vs_difficulty",
+            "name": "Cheating-vs-difficulty",
+            "verdict": "PASS",
+            "reasoning": "No trick tests or arbitrary code filters are added to construct artificial difficulty."
+          },
+          {
+            "id": "mechanical_fix_filter",
+            "name": "Mechanical-fix filter",
+            "verdict": "PASS",
+            "reasoning": "The core difficulty lies in solving logical bugs in Rust WAL pruning, not verifier environment dependencies or configuration tweaks."
+          },
+          {
+            "id": "localized_fix",
+            "name": "Localized-fix",
+            "verdict": "PASS",
+            "reasoning": "The changes affect three different system stages (directory sorting, recovery loop, graph search) across multiple files."
+          },
+          {
+            "id": "oracle_locality",
+            "name": "Oracle-locality",
+            "verdict": "PASS",
+            "reasoning": "The oracle changes multiple functions (list_segments, recover_staging, build_reachability_graph) that are semantically distinct."
+          },
+          {
+            "id": "small_declarative_cluster",
+            "name": "Small declarative-cluster",
+            "verdict": "PASS",
+            "reasoning": "The fix is procedural and algorithmic in Rust, involving complex traversal loops and state checks rather than declarative metadata tuning."
+          },
+          {
+            "id": "grep_collapse",
+            "name": "Grep-collapse",
+            "verdict": "PASS",
+            "reasoning": "Grep will lead the agent to the file, but solving requires understanding the full SQLite transaction and graph state flow."
+          },
+          {
+            "id": "pre_factored_helper",
+            "name": "Pre-factored-helper",
+            "verdict": "PASS",
+            "reasoning": "No pre-factored helper functions in the code trivialise the sorting or reachability fixes."
+          },
+          {
+            "id": "recipe_discount",
+            "name": "Recipe-discount",
+            "verdict": "PASS",
+            "reasoning": "The multi-stage crash-recovery idempotence and path parsing require domain-specific logic, not standard boilerplates."
+          },
+          {
+            "id": "security_aura_discount",
+            "name": "Security-aura discount",
+            "verdict": "PASS",
+            "reasoning": "This is a data-processing and recovery task; it does not rely on security buzzwords for complexity."
+          },
+          {
+            "id": "orthogonal_checklist",
+            "name": "Orthogonal-checklist",
+            "verdict": "PASS",
+            "reasoning": "The fixes are coupled (e.g., if sorting epoch is wrong, reachability traversal fails to resolve active dependencies correctly)."
+          },
+          {
+            "id": "harness_discount",
+            "name": "Harness-discount",
+            "verdict": "PASS",
+            "reasoning": "The task's hardness comes from the Rust algorithm implementation, not setup complexity in the Docker container."
+          },
+          {
+            "id": "one_pass_solvability",
+            "name": "One-pass solvability",
+            "verdict": "PASS",
+            "reasoning": "A single-pass edit without running the test suite will fail due to the subtle crash restart checks and inode-ordering quirks."
+          },
+          {
+            "id": "hard_only_gate",
+            "name": "Hard-only gate",
+            "verdict": "PASS",
+            "reasoning": "Worst-model pass rate is predicted to be under 20% due to the combination of crash restart idempotency and file sorting checks."
+          },
+          {
+            "id": "discovery_budget_test",
+            "name": "Discovery/design budget test",
+            "verdict": "PASS",
+            "reasoning": "We document three distinct discoveries (sorting, recovery idempotency, graph traversal) which the instructions omit."
+          },
+          {
+            "id": "instruction_specificity_test",
+            "name": "Instruction specificity test",
+            "verdict": "PASS",
+            "reasoning": "Instruction is framed as symptoms-only; it describes requirements but keeps solution details hidden."
+          },
+          {
+            "id": "topology_distribution_test",
+            "name": "Topology distribution test",
+            "verdict": "PASS",
+            "reasoning": "The topology lists multiple coupled code structures and assertions."
+          }
+        ],
+        "rubric_axes": [
+          {
+            "id": "verifiable",
+            "name": "Verifiable",
+            "verdict": "PASS",
+            "reasoning": "The test suite programmatically asserts staging DB status, reachability outcomes, and rolling digests."
+          },
+          {
+            "id": "well_specified",
+            "name": "Well-specified",
+            "verdict": "PASS",
+            "reasoning": "The requirements of epoch sorting and graph reachability are fully detailed in instruction.md."
+          },
+          {
+            "id": "solvable",
+            "name": "Solvable",
+            "verdict": "PASS",
+            "reasoning": "An experienced Rust engineer can solve this by correcting the graph traversal, path epoch parsing, and staging transaction checks in a few hours."
+          },
+          {
+            "id": "difficult",
+            "name": "Difficult",
+            "verdict": "PASS",
+            "reasoning": "Requires deep understanding of transaction safety, directories on Unix/Linux platforms, and graph connectivity logic."
+          },
+          {
+            "id": "interesting",
+            "name": "Interesting",
+            "verdict": "PASS",
+            "reasoning": "WAL pruning crash safety is a critical part of modern storage engine and logging broker systems."
+          },
+          {
+            "id": "outcome_verified",
+            "name": "Outcome-verified",
+            "verdict": "PASS",
+            "reasoning": "Grading is based on the correctness of physical segments on disk and SQLite entries, not the code style or patch structure."
+          }
+        ],
+        "instruction_completeness_test": {
+          "verdict": "PASS",
+          "reasoning": "The instruction specifies symptoms and invariants, forcing the agent to discover code defects by inspecting main.rs."
+        },
+        "discovery_budget": [
+          {
+            "discovery": "Sorting log directory by epoch suffix instead of trusting inode/readdir order.",
+            "planned_location": "environment/timeline/timeline.rs",
+            "why_instruction_must_not_reveal": "Revealing the exact sorting logic turns the task into a straightforward sorting fix."
+          },
+          {
+            "discovery": "Double-counting during recovery from staging table due to lack of idempotency check.",
+            "planned_location": "environment/buffer/buffer.rs",
+            "why_instruction_must_not_reveal": "Explicitly mentioning double-counting in staging table recovery exposes the exact handler bug."
+          },
+          {
+            "discovery": "Tombstone node traversal termination bug in reachability chain.",
+            "planned_location": "environment/graph/graph.rs",
+            "why_instruction_must_not_reveal": "Explaining node traversal checks makes tracing trivial."
+          }
+        ],
+        "instruction_specificity": {
+          "level": "symptoms-only",
+          "reasoning": "The instruction.md describes symptoms (e.g., corrupted rolling digests, orphaned active segments, double-counting) without naming the buggy files or functions."
+        },
+        "attack_path": {
+          "summary": "Fix double-counting recovery check, support tombstone reachability nodes, sort segment directories by epoch, and fsync barrier updates.",
+          "reasoning": "The solver must first modify list_segments to parse segment names (e.g. log_epoch) and sort them. Then, update build_reachability_graph to check descendants of tombstone nodes. Finally, ensure recover_staging checks if staging records have already been written to prevent double-counting."
+        },
+        "smallest_plausible_patch": {
+          "summary": "Implement sorting on listing vector, fix recursion break condition in reachability, and add database select exist guard in staging recovery.",
+          "reasoning": "This represents the minimal path changes: about 10-15 lines of code total across three functions in recovery, graph, and epoch modules."
+        },
+        "collapse_audit": {
+          "verdict": "PASS",
+          "reasoning": "No single location or patch collapses the task because the bugs are spread across three logically separate operations.",
+          "residual_hardness": "The agent must handle crash consistency constraints and understand custom Rust directory traversals and graph node evaluation rules.",
+          "red_flags": []
+        },
+        "topology_enumeration": [
+          {
+            "id": "double_count_recovery",
+            "summary": "Double-counting state recovery under multiple crash restarts.",
+            "locations": [
+              "environment/buffer/buffer.rs",
+              "tests/test_outputs.py",
+              "solution/solve.sh"
+            ],
+            "why_no_single_location_suffices": "Requires DB state setup, Rust recovery logic edit, and validation verification."
+          },
+          {
+            "id": "non_deterministic_inode_order",
+            "summary": "Directory traversal relies on OS inode order causing drift.",
+            "locations": [
+              "environment/timeline/timeline.rs",
+              "tests/test_outputs.py",
+              "solution/solve.sh"
+            ],
+            "why_no_single_location_suffices": "Requires file setup, sorting logic implementation, and verifier checking."
+          },
+          {
+            "id": "tombstone_traversal",
+            "summary": "Reachability tree truncation at tombstoned nodes.",
+            "locations": [
+              "environment/graph/graph.rs",
+              "tests/test_outputs.py",
+              "solution/solve.sh"
+            ],
+            "why_no_single_location_suffices": "Requires dependency mapping, graph traversal logic correction, and verification."
+          }
+        ],
+        "construction_manifest": {
+          "symbol_table": [
+            {
+              "path": "environment/buffer/buffer.rs",
+              "symbol": "recover_staging",
+              "kind": "function",
+              "signature": "pub fn recover_staging(db: &mut Connection, dir: &Path) -> Result<(), Box<dyn std::error::Error>>",
+              "purpose": "Recover database state from staging table after a crash restart, ensuring idempotency."
+            },
+            {
+              "path": "environment/graph/graph.rs",
+              "symbol": "build_reachability_graph",
+              "kind": "function",
+              "signature": "pub fn build_reachability_graph(db: &Connection) -> Result<HashSet<String>, rusqlite::Error>",
+              "purpose": "Traverse graph dependency nodes to resolve file reachability, ignoring intermediate tombstones."
+            },
+            {
+              "path": "environment/timeline/timeline.rs",
+              "symbol": "list_segments",
+              "kind": "function",
+              "signature": "pub fn list_segments(dir: &Path) -> Result<Vec<PathBuf>, std::io::Error>",
+              "purpose": "List log segment files on disk sorted in ascending order of their epoch suffix."
+            }
+          ],
+          "flipping_point_contract": {
+            "locations": [
+              {
+                "id": "staging_recovery",
+                "path": "environment/buffer/buffer.rs",
+                "controls_tests": [
+                  "test_staging_drain_no_double_count",
+                  "test_sync_epoch_atomicity_and_idempotency"
+                ]
+              },
+              {
+                "id": "graph_traversal",
+                "path": "environment/graph/graph.rs",
+                "controls_tests": [
+                  "test_reachability_chain_validation"
+                ]
+              },
+              {
+                "id": "segment_sorting",
+                "path": "environment/timeline/timeline.rs",
+                "controls_tests": [
+                  "test_epoch_ordered_digest"
+                ]
+              }
+            ],
+            "no_single_location_flips_majority": true,
+            "concentration_cap": 0.5
+          },
+          "decoy_manifest": [
+            {
+              "path": "environment/src/decoy_catalog.rs",
+              "kind": "mock catalog encoder",
+              "rhymes_with": "main.rs",
+              "non_fix_purpose": "Mock catalog backup registry decoder helper."
+            },
+            {
+              "path": "environment/src/decoy_utils.rs",
+              "kind": "mock base64 logger helper",
+              "rhymes_with": "main.rs",
+              "non_fix_purpose": "Mock base64 logging helper logic."
+            }
+          ],
+          "code_forbidden_tokens": [
+            "pruner",
+            "recovery",
+            "segments"
+          ]
+        },
+        "naming_pass": {
+          "instruction_nouns_extracted": [
+            "pruner",
+            "recovery",
+            "segments"
+          ],
+          "renames_during_drafting": [],
+          "test_names_audited": [
+            "test_staging_drain_no_double_count",
+            "test_reachability_chain_validation",
+            "test_epoch_ordered_digest",
+            "test_sync_epoch_atomicity_and_idempotency"
+          ],
+          "concentration_math": {
+            "total_tests": 4,
+            "per_location": [
+              {
+                "location_id": "staging_recovery",
+                "test_count": 2,
+                "ratio": 0.5
+              },
+              {
+                "location_id": "graph_traversal",
+                "test_count": 1,
+                "ratio": 0.25
+              },
+              {
+                "location_id": "segment_sorting",
+                "test_count": 1,
+                "ratio": 0.25
+              }
+            ]
+          },
+          "recomputed_concentration": {
+            "total_tests": 4,
+            "concentration_cap": 0.5,
+            "per_location": [
+              {
+                "location_id": "staging_recovery",
+                "test_count": 2,
+                "ratio": 0.5
+              },
+              {
+                "location_id": "graph_traversal",
+                "test_count": 1,
+                "ratio": 0.25
+              },
+              {
+                "location_id": "segment_sorting",
+                "test_count": 1,
+                "ratio": 0.25
+              }
+            ]
+          }
+        },
+        "difficulty_mechanism_plan": [
+          {
+            "mechanism": "false_green_intermediate_states",
+            "placement": "Intermediate builds and NOP runs pass compile and basic test checks, but fail on multi-step recovery.",
+            "why_model_misses_it": "Model assumes code is correct once compilation succeeds.",
+            "fairness_guardrail": "The test suite verifies full crash-recovery consistency."
+          },
+          {
+            "mechanism": "cross_file_cross_format_invariants",
+            "placement": "Main database state must agree with physical directory listing digests.",
+            "why_model_misses_it": "Model edits main.rs without aligning directory parsing output.",
+            "fairness_guardrail": "Mismatch errors are logged cleanly in verifier checks."
+          },
+          {
+            "mechanism": "rollback_recovery_requirements",
+            "placement": "The system must recover correctly and idempotently from staging table across crash loops.",
+            "why_model_misses_it": "Model implements a single-pass drain without checking if records are already committed.",
+            "fairness_guardrail": "Test suite implements multiple restarts."
+          },
+          {
+            "mechanism": "environment_specific_cli_semantics",
+            "placement": "Processing directory entries relies on epoch order rather than raw readdir/inode order.",
+            "why_model_misses_it": "Model assumes OS readdir order is chronological.",
+            "fairness_guardrail": "The instructions require processing in epoch sequence order."
+          }
+        ],
+        "calibration_plan": {
+          "oracle_runs": 3,
+          "no_op_runs": 3,
+          "target_agent_runs": 20,
+          "comparator_agent_runs": 20,
+          "human_sanity": "verified",
+          "shortcut_audit": "none",
+          "ablation_plan": "none",
+          "pass_rate_target": {
+            "hard_max_pct": 20,
+            "too_easy_threshold_pct": 80,
+            "basis": "platform worst-model"
+          }
+        },
+        "verifier_scoring_plan": {
+          "metrics": [
+            {
+              "metric": "functional_correctness",
+              "weight": 0.45,
+              "criterion": "Passes basic WAL pruning."
+            },
+            {
+              "metric": "hidden_invariants",
+              "weight": 0.25,
+              "criterion": "Idempotent recovery and sorting."
+            },
+            {
+              "metric": "state_hygiene",
+              "weight": 0.15,
+              "criterion": "Tombstone node traversal behaves correctly."
+            },
+            {
+              "metric": "interface_correctness",
+              "weight": 0.1,
+              "criterion": "prune_report.json matches schema."
+            },
+            {
+              "metric": "deliverable_completeness",
+              "weight": 0.05,
+              "criterion": "Correct exits and logging."
+            }
+          ],
+          "overall_threshold": 1.0,
+          "reward_output": "reward.txt",
+          "binary_threshold_rule": "all tests must pass"
+        },
+        "subtype_milestone_plan": {
+          "subcategories": [
+            "db_interaction"
+          ],
+          "milestone_count": 0,
+          "sequential_dependency": "none",
+          "local_only_data": true,
+          "sidecar_or_protocol_notes": "none"
+        },
+        "platform_files": [
+          {
+            "path": "task.toml",
+            "role": "Metadata definition"
+          },
+          {
+            "path": "instruction.md",
+            "role": "Public task instruction"
+          },
+          {
+            "path": "output_contract.toml",
+            "role": "Structured output contract"
+          },
+          {
+            "path": "tests/test.sh",
+            "role": "Test verifier runner"
+          },
+          {
+            "path": "tests/test_outputs.py",
+            "role": "Python test assertions"
+          },
+          {
+            "path": "solution/solve.sh",
+            "role": "Patch application script"
+          },
+          {
+            "path": "environment/Dockerfile",
+            "role": "Container runtime definition"
+          },
+          {
+            "path": "construction_manifest.json",
+            "role": "Authoring manifest mapping"
+          }
+        ],
+        "task_files": [
+          {
+            "path": "environment/src/main.rs",
+            "role": "Main WAL pruner daemon (oracle frontier)"
+          },
+          {
+            "path": "environment/buffer/buffer.rs",
+            "role": "Staging table recovery module"
+          },
+          {
+            "path": "environment/graph/graph.rs",
+            "role": "Dependency reachability graph traversal module"
+          },
+          {
+            "path": "environment/timeline/timeline.rs",
+            "role": "Log segments directory lister and sorting module"
+          },
+          {
+            "path": "environment/src/decoy_catalog.rs",
+            "role": "Backup catalog decoy module"
+          },
+          {
+            "path": "environment/src/decoy_utils.rs",
+            "role": "Utility helper decoy module"
+          },
+          {
+            "path": "environment/decoy_hash.py",
+            "role": "Decoy Python dependency alignment script"
+          }
+        ],
+        "fix_frontier": {
+          "count": 3,
+          "distribution": "environment/buffer/buffer.rs, environment/graph/graph.rs, environment/timeline/timeline.rs",
+          "naming_policy": "standard Rust structure",
+          "forbidden_stems": [],
+          "helpers_policy": "allowed",
+          "symbol_thin_preferred": true
+        },
+        "contract_surface": {
+          "boolean_fields_max": 0,
+          "direct_boolean_assertions_max": 4,
+          "preferred_assertion_styles": [
+            "JSON check"
+          ],
+          "forbidden_assertion_styles": [
+            "hardcoded mappings"
+          ]
+        },
+        "task_shape": {
+          "type": "repair_existing_system",
+          "instruction_framing": "symptoms-only",
+          "hardness_source": "Multi-point crash consistency, graph traversal, and directory ordering.",
+          "collapse_risk": "Exposing sorting details or graph node traversal collapses search."
+        },
+        "category_profile": {
+          "challenge_family": "wal_segment_pruner_drift",
+          "profile_name": "state_recovery_crash_consistency",
+          "allowed_instruction_disclosures": "database schema, directories",
+          "forbidden_instruction_leaks": "detailed source fix",
+          "category_specific_hardness_bar": "idempotency + sorting + traversals",
+          "category_specific_verifier_risks": "none",
+          "coverage_role": "target"
+        },
+        "satisfiability_risk": {
+          "rc2_planned_name_risk": "low",
+          "gx9_contract_risk": "low",
+          "cr1_symbol_frontier_risk": "low",
+          "hidden_contract_risk": "low"
+        },
+        "actionability_plan": {
+          "verifier_command_visible": "pytest",
+          "source_fix_intent_visible": "yes",
+          "generated_output_rule_visible": "prune_report.json",
+          "exact_formula_home": "instruction.md",
+          "schema_home": "output_contract.toml"
+        },
+        "waiver_plan": {
+          "waivers_expected": false,
+          "waiver_rationale": "no waivers expected"
+        },
+        "reference_pattern": {
+          "justification_if_none": "This task is built from scratch to model real-world crash recovery and epoch-order listing errors in log-structured storage engines."
+        },
+        "realism_source": {
+          "source_type": "real_system",
+          "evidence_basis": "Based on database replication logs and WAL pruning architectures.",
+          "upstream_or_synthetic_rationale": "Replicates bugs found in production WAL-purging engines.",
+          "minimization_preserves": "Complete recovery routines, SQLite transactions, and epoch sorting.",
+          "synthetic_exception_review": "None."
+        }
+      },
+      "evidence_errors": [],
+      "evidence_warnings": [],
+      "blocking_failures": [],
+      "strict": true
+    }
+  ],
+  "schema_path": "specs/validation_schema.json",
+  "emit_legacy_reviewer": false
+}

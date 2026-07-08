@@ -1,0 +1,13 @@
+[package]
+name = "yd66"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[lib]
+path = "src/lib.rs"
+
+[dependencies]
+layer_core = { path = "../layer_core" }
+yb44 = { path = "../y4" }
+yc55 = { path = "../y5" }

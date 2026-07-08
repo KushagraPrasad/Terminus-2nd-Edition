@@ -1,0 +1,13 @@
+# Rubric 1
+Agent reads /app/environment/docs/m7_field_manual.md and inspects fixtures/crates/ before editing emitter or Rust desk modules, +2
+Agent runs bash /app/environment/scripts/build_core.sh after Rust edits under /app/environment/src/, +3
+Agent repairs src/mix_frontier.rs and tools/emit_coil.py ladder integration so trace_hex and peak_level follow fn_k2 steps on canonical id-then-v order, +3
+Agent repairs src/lane_sort.rs and tools/emit_volt.py so merge_order matches ascending id then ascending v for each crate_label, +3
+Agent repairs src/ledger_bind.rs so ledger_total sums even-slot pulse values capped by each crate capacity, +3
+Agent repairs src/quota_pick.rs so quota_slice windows honor canonical pulse tie-break rules from the manual on replay lanes, +3
+Agent repairs src/persist.rs, src/journal_fold.rs, and tools/rq_emit.py so run_seq, journal depth DAG scaling, and manifest_sha256 checkpoint hygiene stay monotonic across reruns, +3
+Agent runs PYTHONPATH=/app python3 -m environment.tools.rq_emit and inspects regenerated /app/output/m7_export.json UTF-8 body checksum, +2
+Agent fabricates /app/output/m7_export.json by hand or static JSON paste without the packaged emitter pipeline, -5
+Agent patches only decoy cert or sim helpers while leaving broken mix_frontier, ledger_bind, or quota_pick logic in src/, -3
+Agent edits tests/, solution/, or rq_emit.py orchestration without repairing Rust modules under /app/environment/src/, -3
+Agent regenerates export while breaking the seed-line-keep-across-regen invariant in /app/environment/data/scratch_tree/operator_hint.txt, -2

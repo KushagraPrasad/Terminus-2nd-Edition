@@ -1,0 +1,735 @@
+{
+  "task_name": "device-node-lineage-mismatch-variant-1",
+  "attempt": 1,
+  "best_score": [
+    0,
+    0
+  ],
+  "best_attempt": 1,
+  "plateau_count": 0,
+  "candidates": [],
+  "history": [
+    {
+      "attempt": 1,
+      "fails": 0,
+      "warns": 0,
+      "evidence_path": "specs/.runs/device-node-lineage-mismatch-variant-1/attempt-1-evidence.json",
+      "evidence": {
+        "hardness_axes": [
+          {
+            "id": "discover",
+            "name": "Discover",
+            "verdict": "PASS",
+            "reasoning": "Solver must inspect recovery, vault, and writer modules plus docs to learn which authority feeds the verifier."
+          },
+          {
+            "id": "synthesize",
+            "name": "Synthesize",
+            "verdict": "PASS",
+            "reasoning": "Fix requires coordinating replay windows, mirror reads, and summary emission rather than one function."
+          },
+          {
+            "id": "diagnose_or_design",
+            "name": "Diagnose or Design/Search",
+            "verdict": "PASS",
+            "reasoning": "Repair shape with symptoms-only instruction; causes are discovered from code and transcripts."
+          },
+          {
+            "id": "navigate_coupling",
+            "name": "Navigate coupling",
+            "verdict": "PASS",
+            "reasoning": "Changing mirror selection affects writer digests and recovery cleanup ordering tests."
+          },
+          {
+            "id": "reason_beyond_training",
+            "name": "Reason beyond training",
+            "verdict": "PASS",
+            "reasoning": "Failure mixes distributed recovery semantics, not a textbook CRUD or crypto exercise."
+          }
+        ],
+        "anti_trivialization_checks": [
+          {
+            "id": "disclosure_collapse",
+            "name": "Disclosure-collapse",
+            "verdict": "PASS",
+            "reasoning": "After honest disclosure of digest rules, work remains integrating authorities, not translating a single table."
+          },
+          {
+            "id": "hidden_instance",
+            "name": "Hidden-instance",
+            "verdict": "PASS",
+            "reasoning": "Bug is behavioral across scenarios, not guessing which of hundreds of files is corrupt."
+          },
+          {
+            "id": "single_artifact_repair",
+            "name": "Single-artifact repair",
+            "verdict": "PASS",
+            "reasoning": "Flipping one manifest or checksum without code changes fails multi-wave tests."
+          },
+          {
+            "id": "generalization",
+            "name": "Generalization",
+            "verdict": "PASS",
+            "reasoning": "Verifier spans multiple replay orderings and restart paths, not one static tuple."
+          },
+          {
+            "id": "prompt_honesty",
+            "name": "Prompt-honesty",
+            "verdict": "PASS",
+            "reasoning": "Honest symptoms do not name the broken mirror branch; search space stays broad."
+          },
+          {
+            "id": "cheating_vs_difficulty",
+            "name": "Cheating-vs-difficulty",
+            "verdict": "PASS",
+            "reasoning": "Anti-cheat is standard regeneration deletes, not the sole source of hardness."
+          },
+          {
+            "id": "mechanical_fix_filter",
+            "name": "Mechanical-fix filter",
+            "verdict": "PASS",
+            "reasoning": "Core issue is semantic authority skew, not dependency pins or timeouts."
+          },
+          {
+            "id": "localized_fix",
+            "name": "Localized-fix",
+            "verdict": "PASS",
+            "reasoning": "Three separated module roots participate in flipping contract."
+          },
+          {
+            "id": "oracle_locality",
+            "name": "Oracle-locality",
+            "verdict": "PASS",
+            "reasoning": "Planned oracle coordinates behavioral edits across three files, not one wholesale overwrite."
+          },
+          {
+            "id": "small_declarative_cluster",
+            "name": "Small declarative-cluster",
+            "verdict": "PASS",
+            "reasoning": "No tiny policy table captures the fix; logic spans procedural recovery flows."
+          },
+          {
+            "id": "grep_collapse",
+            "name": "Grep-collapse",
+            "verdict": "PASS",
+            "reasoning": "Instruction nouns are banned on fix-path symbols; domain terms still appear in prose only."
+          },
+          {
+            "id": "pre_factored_helper",
+            "name": "Pre-factored-helper",
+            "verdict": "PASS",
+            "reasoning": "No helper named validate_lineage or similar maps 1:1 to prompt bullets."
+          },
+          {
+            "id": "recipe_discount",
+            "name": "Recipe-discount",
+            "verdict": "PASS",
+            "reasoning": "Not a textbook safe-extract or schema-fill; requires runtime-specific diagnosis."
+          },
+          {
+            "id": "security_aura_discount",
+            "name": "Security-aura discount",
+            "verdict": "PASS",
+            "reasoning": "Hardness is recovery correctness, not merely exploit vocabulary."
+          },
+          {
+            "id": "orthogonal_checklist",
+            "name": "Orthogonal-checklist",
+            "verdict": "PASS",
+            "reasoning": "Requirements interact: mirror choice constrains digest emission and cleanup replay."
+          },
+          {
+            "id": "harness_discount",
+            "name": "Harness-discount",
+            "verdict": "PASS",
+            "reasoning": "Docker provides isolation; difficulty is in code coupling."
+          },
+          {
+            "id": "one_pass_solvability",
+            "name": "One-pass solvability",
+            "verdict": "PASS",
+            "reasoning": "Agents must run sequences, compare transcripts, and revise hypotheses."
+          },
+          {
+            "id": "hard_only_gate",
+            "name": "Hard-only gate",
+            "verdict": "PASS",
+            "reasoning": "Residual work matches professional distributed recovery debugging, not a day-one exercise."
+          },
+          {
+            "id": "discovery_budget_test",
+            "name": "Discovery/design budget test",
+            "verdict": "PASS",
+            "reasoning": "Discovery budget lists three non-trivial obligations all living in environment code paths."
+          },
+          {
+            "id": "instruction_specificity_test",
+            "name": "Instruction specificity test",
+            "verdict": "PASS",
+            "reasoning": "Instruction stays symptoms-only per repair policy while docs carry disclosed formulas."
+          },
+          {
+            "id": "topology_distribution_test",
+            "name": "Topology distribution test",
+            "verdict": "PASS",
+            "reasoning": "Three topologies enumerated each require three coordinated loci and no single locus suffices."
+          }
+        ],
+        "rubric_axes": [
+          {
+            "id": "verifiable",
+            "name": "Verifiable",
+            "verdict": "PASS",
+            "reasoning": "Deterministic pytest over regenerated transcripts and digests."
+          },
+          {
+            "id": "well_specified",
+            "name": "Well-specified",
+            "verdict": "PASS",
+            "reasoning": "Public contract anchors on commands, paths, and documented schema."
+          },
+          {
+            "id": "solvable",
+            "name": "Solvable",
+            "verdict": "PASS",
+            "reasoning": "Expert human can complete within hours given codebase access."
+          },
+          {
+            "id": "difficult",
+            "name": "Difficult",
+            "verdict": "PASS",
+            "reasoning": "Coupled authorities and delayed symptoms exceed undergrad scope."
+          },
+          {
+            "id": "interesting",
+            "name": "Interesting",
+            "verdict": "PASS",
+            "reasoning": "Mirrors paid incident work on control planes and data recovery services."
+          },
+          {
+            "id": "outcome_verified",
+            "name": "Outcome-verified",
+            "verdict": "PASS",
+            "reasoning": "Grades regenerated artifacts, not narrated solution steps."
+          }
+        ],
+        "instruction_completeness_test": {
+          "verdict": "PASS",
+          "reasoning": "instruction.md will describe symptoms and contracts only; choosing mirror versus store and sequencing cleanup requires reading code and running commands."
+        },
+        "discovery_budget": [
+          {
+            "discovery": "Which reconciliation path still reads the mirror snapshot after live records refresh during cleanup.",
+            "planned_location": "environment/vault/mirror.py and related call sites",
+            "why_instruction_must_not_reveal": "Naming it collapses diagnosis to a single grep target."
+          },
+          {
+            "discovery": "How replay window tagging reorders durable generation markers during overlapping reruns.",
+            "planned_location": "environment/recovery/window.py",
+            "why_instruction_must_not_reveal": "Would telegraph the exact ordering bug class."
+          },
+          {
+            "discovery": "Why the writer emits summary digests that disagree with the durable envelope under late verifier passes.",
+            "planned_location": "environment/writer/summary.py",
+            "why_instruction_must_not_reveal": "Stating the bug as writer-only invites a one-file patch."
+          }
+        ],
+        "instruction_specificity": {
+          "level": "symptoms-only",
+          "reasoning": "Public text stays on observed mis-sync across reruns; formulas live in docs, not causal patch hints."
+        },
+        "attack_path": {
+          "summary": "Grepping instruction nouns on fix symbols is blocked; naive mirror bypass fails late-wave tests; static JSON fails regeneration traps.",
+          "reasoning": "Each shortcut leaves at least one flipping contract test red while others may briefly pass."
+        },
+        "smallest_plausible_patch": {
+          "summary": "Still requires retargeting reconciliation to durable envelopes, adjusting replay tagging, and aligning writer digests together.",
+          "reasoning": "Smallest honest English description spans three behavioral roots, not one knob."
+        },
+        "collapse_audit": {
+          "verdict": "PASS",
+          "reasoning": "Post-disclosure residual requires reasoning about authority precedence and ordering, not mapping one bullet to one function after formulas are visible in docs.",
+          "residual_hardness": "Even knowing digest formulas, the solver must decide when mirror inputs are legal and how cleanup interacts with generation markers across reruns.",
+          "red_flags": [
+            "watch for summary-only tests without envelope checks",
+            "avoid naming restore phases in instruction"
+          ]
+        },
+        "topology_enumeration": [
+          {
+            "id": "topo_mirror_first",
+            "summary": "Prioritize vault mirror correction then adjust writer digests while leaving recovery timing unchanged.",
+            "locations": [
+              "environment/vault/mirror.py",
+              "environment/writer/summary.py",
+              "environment/recovery/window.py"
+            ],
+            "why_no_single_location_suffices": "Mirror-only fixes leave writer emitting mismatched digests; writer-only fixes still read wrong inputs; recovery-only fixes do not repair summary trust."
+          },
+          {
+            "id": "topo_recovery_first",
+            "summary": "Repair replay window tagging first, then propagate corrections through vault reads and writer emission.",
+            "locations": [
+              "environment/recovery/window.py",
+              "environment/vault/mirror.py",
+              "environment/writer/summary.py"
+            ],
+            "why_no_single_location_suffices": "Window-only changes without vault alignment still feed stale identifiers; vault changes without writer updates leave summaries inconsistent."
+          },
+          {
+            "id": "topo_writer_first",
+            "summary": "Start from summary emission correctness and backtrack to mirror selection and replay tagging.",
+            "locations": [
+              "environment/writer/summary.py",
+              "environment/vault/mirror.py",
+              "environment/recovery/window.py"
+            ],
+            "why_no_single_location_suffices": "Writer-only patch cannot choose correct envelopes if mirror path stays biased; recovery timing still corrupts generation tags."
+          }
+        ],
+        "construction_manifest": {
+          "symbol_table": [
+            {
+              "path": "environment/recovery/window.py",
+              "symbol": "op_a",
+              "kind": "function",
+              "signature": "op_a(ctx, phase_id, seq_bundle)",
+              "purpose": "Computes generation tagging across replay segments for downstream readers."
+            },
+            {
+              "path": "environment/vault/mirror.py",
+              "symbol": "reconcile_b",
+              "kind": "function",
+              "signature": "reconcile_b(store_handle, view_handle, mode_flag)",
+              "purpose": "Selects reconciler inputs for durable reads versus cached views."
+            },
+            {
+              "path": "environment/writer/summary.py",
+              "symbol": "phase_c",
+              "kind": "function",
+              "signature": "phase_c(transcript_row, envelope_bytes, policy_id)",
+              "purpose": "Builds externally visible digest records for verifier consumption."
+            }
+          ],
+          "flipping_point_contract": {
+            "locations": [
+              {
+                "id": "A",
+                "path": "environment/recovery/window.py",
+                "controls_tests": [
+                  "test_tseq_a",
+                  "test_tseq_b"
+                ]
+              },
+              {
+                "id": "B",
+                "path": "environment/vault/mirror.py",
+                "controls_tests": [
+                  "test_idempo_dup",
+                  "test_digest_chain"
+                ]
+              },
+              {
+                "id": "C",
+                "path": "environment/writer/summary.py",
+                "controls_tests": [
+                  "test_restore_twice",
+                  "test_lane_compare"
+                ]
+              }
+            ],
+            "no_single_location_flips_majority": true,
+            "concentration_cap": 0.5
+          },
+          "decoy_manifest": [
+            {
+              "path": "environment/recovery/shadow_lane.py",
+              "kind": "module",
+              "rhymes_with": "op_a",
+              "non_fix_purpose": "Provides an alternate scheduling helper used only in optional diagnostics."
+            },
+            {
+              "path": "environment/vault/ledger_sidecar.py",
+              "kind": "helper",
+              "rhymes_with": "reconcile_b",
+              "non_fix_purpose": "Maintains an archival ledger unrelated to live mirror selection."
+            }
+          ],
+          "code_forbidden_tokens": [
+            "workloads",
+            "validation",
+            "generations",
+            "reconciler",
+            "metadata",
+            "cleanup",
+            "verifier",
+            "replay",
+            "boundaries",
+            "digests"
+          ]
+        },
+        "naming_pass": {
+          "instruction_nouns_extracted": [
+            "workloads",
+            "validation",
+            "generations",
+            "reconciler",
+            "metadata",
+            "cleanup",
+            "verifier",
+            "replay",
+            "boundaries",
+            "digests"
+          ],
+          "renames_during_drafting": [
+            {
+              "original": "test_digest_reconciler_alignment",
+              "renamed_to": "test_digest_chain",
+              "reason": "Former name contained instruction nouns reconciler and digest stem collision risk."
+            }
+          ],
+          "test_names_audited": [
+            "test_tseq_a",
+            "test_tseq_b",
+            "test_idempo_dup",
+            "test_digest_chain",
+            "test_restore_twice",
+            "test_lane_compare"
+          ],
+          "concentration_math": {
+            "total_tests": 6,
+            "per_location": [
+              {
+                "location_id": "A",
+                "test_count": 2,
+                "ratio": 0.3333333333333333
+              },
+              {
+                "location_id": "B",
+                "test_count": 2,
+                "ratio": 0.3333333333333333
+              },
+              {
+                "location_id": "C",
+                "test_count": 2,
+                "ratio": 0.3333333333333333
+              }
+            ]
+          },
+          "recomputed_concentration": {
+            "total_tests": 6,
+            "concentration_cap": 0.5,
+            "per_location": [
+              {
+                "location_id": "A",
+                "test_count": 2,
+                "ratio": 0.3333333333333333
+              },
+              {
+                "location_id": "B",
+                "test_count": 2,
+                "ratio": 0.3333333333333333
+              },
+              {
+                "location_id": "C",
+                "test_count": 2,
+                "ratio": 0.3333333333333333
+              }
+            ]
+          }
+        },
+        "difficulty_mechanism_plan": [
+          {
+            "mechanism": "false_green_intermediate_states",
+            "placement": "early transcript waves look healthy while later waves pull skewed lineage when cleanup overlaps replay.",
+            "why_model_misses_it": "models stop after first passing surface check without chaining reruns.",
+            "fairness_guardrail": "failing behavior is visible through the documented command and transcript fields."
+          },
+          {
+            "mechanism": "rollback_recovery_requirements",
+            "placement": "restart and replay scenarios require idempotent merges without clobbering durable envelopes.",
+            "why_model_misses_it": "a shortcut flush fixes one rerun but breaks another scenario.",
+            "fairness_guardrail": "commands and fixtures are deterministic with seeded ordering."
+          },
+          {
+            "mechanism": "cross_file_cross_format_invariants",
+            "placement": "JSON transcripts, TOML fixtures, and vault byte records must agree on digest linkage.",
+            "why_model_misses_it": "editing one format leaves orphans elsewhere.",
+            "fairness_guardrail": "cross-format rules are documented in recovery_contract.md."
+          },
+          {
+            "mechanism": "deceptive_but_valid_local_evidence",
+            "placement": "mirror path returns consistent short-term answers that disagree with durable store after replay.",
+            "why_model_misses_it": "local reads look coherent so the mirror is mistaken for truth.",
+            "fairness_guardrail": "both paths are real code paths discoverable via reading modules."
+          }
+        ],
+        "calibration_plan": {
+          "oracle_runs": 3,
+          "no_op_runs": 3,
+          "target_agent_runs": 5,
+          "comparator_agent_runs": 5,
+          "human_sanity": "Expert can trace three roots using transcripts and docs within a few hours.",
+          "shortcut_audit": "watch for static JSON writes, digest hardcoding, test edits, NOP oracle gaming.",
+          "ablation_plan": "drop mirror fix alone, drop writer fix alone, drop recovery window fix alone to show partial failures.",
+          "pass_rate_target": {
+            "hard_max_pct": 20,
+            "too_easy_threshold_pct": 80,
+            "basis": "stronger target agent on identical Harbor harness"
+          }
+        },
+        "verifier_scoring_plan": {
+          "metrics": [
+            {
+              "metric": "functional_correctness",
+              "weight": 0.45,
+              "criterion": "transcript digests and envelope linkage match regenerated golden derivations from public rules."
+            },
+            {
+              "metric": "hidden_invariants",
+              "weight": 0.25,
+              "criterion": "cross-wave lineage and replay-boundary invariants hold under reruns."
+            },
+            {
+              "metric": "state_hygiene",
+              "weight": 0.15,
+              "criterion": "no stale mirror fields after cleanup completes."
+            },
+            {
+              "metric": "interface_correctness",
+              "weight": 0.1,
+              "criterion": "runner CLI and paths behave as documented across scenarios."
+            },
+            {
+              "metric": "deliverable_completeness",
+              "weight": 0.05,
+              "criterion": "all required transcript sections populated without hand edits."
+            }
+          ],
+          "overall_threshold": 0.999,
+          "reward_output": "reward.txt",
+          "binary_threshold_rule": "reward.txt equals 1 only when every weighted semantic check passes in test_outputs.py."
+        },
+        "subtype_milestone_plan": {
+          "subcategories": [],
+          "milestone_count": 0,
+          "sequential_dependency": "single-step task; ordering is expressed via stateful command sequences inside tests.",
+          "local_only_data": true,
+          "sidecar_or_protocol_notes": "all fixtures and transcripts are local; no network or multi-container services."
+        },
+        "platform_files": [
+          {
+            "path": "task.toml",
+            "role": "Edition 2 metadata"
+          },
+          {
+            "path": "instruction.md",
+            "role": "natural public task prompt"
+          },
+          {
+            "path": "output_contract.toml",
+            "role": "repo-local output declaration"
+          },
+          {
+            "path": "tests/test.sh",
+            "role": "verifier entrypoint"
+          },
+          {
+            "path": "tests/test_outputs.py",
+            "role": "domain verifier"
+          },
+          {
+            "path": "solution/solve.sh",
+            "role": "oracle"
+          },
+          {
+            "path": "environment/Dockerfile",
+            "role": "build definition"
+          },
+          {
+            "path": "construction_manifest.json",
+            "role": "local authoring artifact"
+          }
+        ],
+        "task_files": [
+          {
+            "path": "environment/runner.py",
+            "role": "regenerates recovery transcript JSON"
+          },
+          {
+            "path": "environment/app/entry.py",
+            "role": "command dispatch and scenario orchestration"
+          },
+          {
+            "path": "environment/app/flow.py",
+            "role": "normalizes run records for transcripts"
+          },
+          {
+            "path": "environment/recovery/window.py",
+            "role": "fix-frontier replay window and generation tagging"
+          },
+          {
+            "path": "environment/recovery/cleanup.py",
+            "role": "cleanup phase ordering hooks"
+          },
+          {
+            "path": "environment/recovery/shadow_lane.py",
+            "role": "decoy parallel recovery helper"
+          },
+          {
+            "path": "environment/vault/mirror.py",
+            "role": "fix-frontier reconciler-facing mirror vs live record"
+          },
+          {
+            "path": "environment/vault/store.py",
+            "role": "durable envelope persistence"
+          },
+          {
+            "path": "environment/vault/ledger_sidecar.py",
+            "role": "decoy ledger helper"
+          },
+          {
+            "path": "environment/writer/summary.py",
+            "role": "fix-frontier external digest emission"
+          },
+          {
+            "path": "environment/writer/frame.py",
+            "role": "transcript framing helpers"
+          },
+          {
+            "path": "environment/writer/archive.py",
+            "role": "non-fix historical writer"
+          },
+          {
+            "path": "environment/app/core/types.py",
+            "role": "shared value objects"
+          },
+          {
+            "path": "environment/app/core/checks.py",
+            "role": "consistency checks used by runner"
+          },
+          {
+            "path": "environment/app/readers/basefile.py",
+            "role": "fixture reader"
+          },
+          {
+            "path": "environment/app/readers/seqfile.py",
+            "role": "sequence fixture reader"
+          },
+          {
+            "path": "environment/app/data/sequences.json",
+            "role": "replay sequence fixture"
+          },
+          {
+            "path": "environment/app/data/nodes.toml",
+            "role": "node fixture"
+          },
+          {
+            "path": "environment/app/docs/recovery_contract.md",
+            "role": "solver-visible transcript schema and command semantics"
+          },
+          {
+            "path": "environment/app/docs/operators.md",
+            "role": "operational context without patch guidance"
+          },
+          {
+            "path": "environment/app/tools/inspect.py",
+            "role": "diagnostic helper"
+          },
+          {
+            "path": "environment/app/tools/sample_env.sh",
+            "role": "example setup"
+          }
+        ],
+        "fix_frontier": {
+          "count": 3,
+          "distribution": "one module in recovery timing, one in vault mirror selection, one in writer summary path; each participates in distinct verifier clusters.",
+          "naming_policy": "opaque fix-path symbols per construction manifest; directory names stay generic engineering labels.",
+          "forbidden_stems": [
+            "workloads",
+            "validation",
+            "generations",
+            "reconciler",
+            "metadata",
+            "cleanup",
+            "verifier",
+            "replay",
+            "boundaries",
+            "digests"
+          ],
+          "helpers_policy": "decoy modules perform plausible sibling work; fix-path symbols remain thin and renamed away from instruction nouns.",
+          "symbol_thin_preferred": true
+        },
+        "contract_surface": {
+          "boolean_fields_max": 0,
+          "direct_boolean_assertions_max": 0,
+          "preferred_assertion_styles": [
+            "run transcripts",
+            "cross-run digest identities",
+            "metamorphic clean-vs-replay comparisons",
+            "idempotence reruns",
+            "artifact provenance chains"
+          ],
+          "forbidden_assertion_styles": [
+            "boolean answer keys",
+            "scenario-to-value truth tables in instruction",
+            "tests that only assert JSON presence"
+          ]
+        },
+        "task_shape": {
+          "type": "repair_existing_system",
+          "instruction_framing": "symptoms-only",
+          "hardness_source": "diagnosis across replay windows, mirror read path, and summary emission without naming the defective branch",
+          "collapse_risk": "naming the restore boundary, flipping one trust bit on summaries, or patching a single cleanup ordering table"
+        },
+        "category_profile": {
+          "challenge_family": "crash-consistent recovery with replay-window lineage skew and false-green summaries",
+          "bug_family": "crash-consistent recovery with replay-window lineage skew and false-green summaries",
+          "profile_name": "state_recovery_crash_consistency",
+          "allowed_instruction_disclosures": "crash/restart workflow, durability expectation, recovery command, regenerated transcript path, externally tested digest and idempotence behavior.",
+          "forbidden_instruction_leaks": "journal internals, exact broken phase, mirror function names, cleanup ordering recipe, or which module ignores the durable envelope.",
+          "category_specific_hardness_bar": "partial writes, replay, cleanup windows, idempotent reruns, and verifier-visible digest provenance must stay aligned after disclosure.",
+          "category_specific_verifier_risks": "nondeterministic crash injection, hidden golden digests, tests that read private vault internals instead of public transcripts.",
+          "coverage_role": "Adds a promoted-reference-calibrated recovery task emphasizing shadow-vs-live authority and summary-vs-store divergence, distinct from pure filesystem reconstruction."
+        },
+        "satisfiability_risk": {
+          "rc2_planned_name_risk": "low; roots split recovery, vault, writer with neutral directory tokens.",
+          "gx9_contract_risk": "medium; instruction must disclose transcript fields and digest rules as derivations, not per-row expected literals.",
+          "cr1_symbol_frontier_risk": "low; manifest caps fix-path fan-in and pairs co-resident helpers explicitly.",
+          "hidden_contract_risk": "medium; every digest field, rerun command, and envelope rule must be mirrored into instruction.md or environment docs."
+        },
+        "actionability_plan": {
+          "verifier_command_visible": "instruction.md names the python runner that writes the transcript path and the pytest entry the harness uses.",
+          "source_fix_intent_visible": "instruction.md states /app/environment source must be repaired so the normal pipeline regenerates outputs.",
+          "generated_output_rule_visible": "instruction.md states tests delete the transcript and rerun generation across crash/restart scenarios.",
+          "exact_formula_home": "digest linkage formulas and envelope identities live in environment/app/docs/recovery_contract.md and are summarized without patch steps in instruction.md.",
+          "schema_home": "top-level transcript schema (runs, waves, envelope references, digest records) documented in recovery_contract.md and echoed at a high level in instruction.md."
+        },
+        "waiver_plan": {
+          "waivers_expected": false,
+          "waiver_rationale": "No checker false positives anticipated; synthetic pattern stays inside standard collapse and output-contract policy."
+        },
+        "reference_pattern": {
+          "reference_task_id": "layered-policy-reload-drift"
+        },
+        "realism_source": {
+          "source_type": "synthetic_exception",
+          "evidence_basis": "No single upstream CVE or public patch; distilled from operator reports about recovery managers that reconcile against stale mirrors and accept summary digests.",
+          "upstream_or_synthetic_rationale": "Exception justified because the seed encodes a recurring control-plane class (post-restart false greens) while remaining fully local and evidence-anchored.",
+          "minimization_preserves": "Delayed symptom after early mutation, multiple internally consistent authorities, replay ordering effects, and verifier trust in the wrong surface.",
+          "synthetic_exception_review": "Category profile state_recovery_crash_consistency applied; instruction stays symptoms-only; output contract uses observation transcripts not boolean verdict maps; discovery budget names three non-obvious code obligations; waivers not used to bypass fairness."
+        }
+      },
+      "evidence_errors": [],
+      "evidence_warnings": [],
+      "blocking_failures": [],
+      "strict": true,
+      "provided_score": [
+        0,
+        0
+      ]
+    }
+  ],
+  "schema_path": "specs/validation_schema.json",
+  "emit_legacy_reviewer": false
+}

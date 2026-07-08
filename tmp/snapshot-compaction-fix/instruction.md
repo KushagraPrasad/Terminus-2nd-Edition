@@ -1,0 +1,6 @@
+The snapshot pipeline health signal drifts between restart and resume runs. Repair the C++ source under `/app/src` (not output-only) so a normal build produces `/app/bin/snapshot_matrix`, which writes `/app/output/report.json`. Do not hand-edit the report or tests. Configure and compile under `/app/build`, run the matrix binary, and keep repeat runs identical. Scoring rebuilds that same cmake target and binary, then runs pytest on the regenerated report.
+
+The report is JSON whose top-level keys are exactly:
+lane_window_consistency, commit_latch_visibility, map_epoch_roundtrip, alias_sort_stability, horizon_anchor_trace, probe_depth_agreement (snake_case spelling). Each value is a boolean for the seeded scenario on disk. Inputs are `/app/data/seed/window_a.json`, `window_b.json`, `window_c.json` (space-separated integers), `/app/data/seed/alias_stream.txt` (space-separated integers for the fold stream), and `/app/data/seed/epoch_slice.txt` (slot, alias, committed_epoch per line). Files under `/app/config/` are reference-only.
+
+Derivation rules for all six booleans—including tick boundaries, epoch selection, the horizon mix and parity gate, the fold stream, and paired-window depth semantics—are in `/app/docs/report_contract.md`. Implement the pipeline so regenerated JSON matches that contract on the shipped seeds.

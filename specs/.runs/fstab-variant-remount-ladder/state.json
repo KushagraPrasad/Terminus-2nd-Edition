@@ -1,0 +1,874 @@
+{
+  "task_name": "fstab-variant-remount-ladder",
+  "attempt": 1,
+  "best_score": [
+    0,
+    0
+  ],
+  "best_attempt": 1,
+  "plateau_count": 0,
+  "candidates": [],
+  "history": [
+    {
+      "attempt": 1,
+      "fails": 0,
+      "warns": 0,
+      "evidence_path": "specs/.runs/fstab-variant-remount-ladder/attempt-1-evidence.json",
+      "evidence": {
+        "hardness_axes": [
+          {
+            "id": "discover",
+            "name": "Discover",
+            "verdict": "PASS",
+            "reasoning": "Solver must infer which fstab row merge, unit option sync, and consumer lane surfaces control mount_fingerprint agreement across held-out remount orderings; constraint-complete contract alone does not name broken coupling."
+          },
+          {
+            "id": "synthesize",
+            "name": "Synthesize",
+            "verdict": "PASS",
+            "reasoning": "Robust generalization coordinates row_merge_a table synthesis, opt_sync_b unit option reconciliation, and lane_notify_c consumer propagation across three Go package roots plus the public lad_check ladder driver."
+          },
+          {
+            "id": "diagnose_or_design",
+            "name": "Diagnose or Design/Search",
+            "verdict": "PASS",
+            "reasoning": "Instruction is constraint-complete about remount ladder outcomes without naming fstab/unit/consumer fix route or generalization recipe; agent must design cross-surface mount state invariant."
+          },
+          {
+            "id": "navigate_coupling",
+            "name": "Navigate coupling",
+            "verdict": "PASS",
+            "reasoning": "Unit-only or table-only local fixes pass public tier_alpha/tier_beta smoke while held-out bind-move reorderings, duplicated recovery passes, and repeat migration poison rerun safety."
+          },
+          {
+            "id": "reason_beyond_training",
+            "name": "Reason beyond training",
+            "verdict": "PASS",
+            "reasoning": "Requires fstab/systemd mount-unit/propagation coupling beyond generic config editing or textbook atomic-mount recipes."
+          }
+        ],
+        "anti_trivialization_checks": [
+          {
+            "id": "disclosure_collapse",
+            "name": "Disclosure-collapse",
+            "verdict": "PASS",
+            "reasoning": "After disclosing lad_check command, ladder_report schema, recovery reset workflow, and mount_fingerprint contract, solver still must trace multi-surface provenance through Go sources and held-out tier orderings."
+          },
+          {
+            "id": "hidden_instance",
+            "name": "Hidden-instance",
+            "verdict": "PASS",
+            "reasoning": "Public tiers tier_alpha and tier_beta are named; held-out orderings are behavioral combinations, not guessing one corrupt file among hundreds."
+          },
+          {
+            "id": "single_artifact_repair",
+            "name": "Single-artifact repair",
+            "verdict": "PASS",
+            "reasoning": "Editing one fstab row or replaying one mount slice is insufficient; verifier reruns full ladder with reordered and duplicated recovery."
+          },
+          {
+            "id": "generalization",
+            "name": "Generalization",
+            "verdict": "PASS",
+            "reasoning": "Fix must express general remount robustness across ro-rw toggles, bind moves, and propagation changes, not hardcode public tier_alpha/tier_beta outcomes."
+          },
+          {
+            "id": "prompt_honesty",
+            "name": "Prompt-honesty",
+            "verdict": "PASS",
+            "reasoning": "Honest constraint-complete prompt exposes checked behavior without naming row_merge_a, opt_sync_b, lane_notify_c, or broken remount phase."
+          },
+          {
+            "id": "cheating_vs_difficulty",
+            "name": "Cheating-vs-difficulty",
+            "verdict": "PASS",
+            "reasoning": "Anti-static-output rules are guardrails; difficulty comes from adversarial variant ladder and coordinated mount generalization."
+          },
+          {
+            "id": "mechanical_fix_filter",
+            "name": "Mechanical-fix filter",
+            "verdict": "PASS",
+            "reasoning": "Not a deps/timeout/footer task; core challenge is mount-variant generalization in Go orchestrator sources."
+          },
+          {
+            "id": "localized_fix",
+            "name": "Localized-fix",
+            "verdict": "PASS",
+            "reasoning": "Three distinct pkg roots on fix frontier; p8 stub trap and second-pass guard block one-helper patches."
+          },
+          {
+            "id": "oracle_locality",
+            "name": "Oracle-locality",
+            "verdict": "PASS",
+            "reasoning": "Oracle coordinates go build plus three symbol edits across tab, unit, cons; not a single-file wholesale rewrite."
+          },
+          {
+            "id": "small_declarative_cluster",
+            "name": "Small declarative-cluster",
+            "verdict": "PASS",
+            "reasoning": "Solve is not one fstab knob or phase table; requires runtime behavior changes across table merge, unit sync, and consumer notification paths."
+          },
+          {
+            "id": "grep_collapse",
+            "name": "Grep-collapse",
+            "verdict": "PASS",
+            "reasoning": "Instruction nouns banned from fix-path symbols via code_forbidden_tokens; opaque row_merge_a-style names on frontier."
+          },
+          {
+            "id": "pre_factored_helper",
+            "name": "Pre-factored-helper",
+            "verdict": "PASS",
+            "reasoning": "Fix symbols row_merge_a, opt_sync_b, lane_notify_c are opaque; decoys stub_* rhyme structurally without matching prompt bullets."
+          },
+          {
+            "id": "recipe_discount",
+            "name": "Recipe-discount",
+            "verdict": "PASS",
+            "reasoning": "Not safe-extraction, jail hardening, or policy-knob transcription; domain-specific mount-variant generalization."
+          },
+          {
+            "id": "security_aura_discount",
+            "name": "Security-aura discount",
+            "verdict": "PASS",
+            "reasoning": "Mount orchestration semantics, not security theater."
+          },
+          {
+            "id": "orthogonal_checklist",
+            "name": "Orthogonal-checklist",
+            "verdict": "PASS",
+            "reasoning": "Fstab row merge, unit option carry, and consumer lane refresh interact; fixing one layer breaks others without coordinated model."
+          },
+          {
+            "id": "harness_discount",
+            "name": "Harness-discount",
+            "verdict": "PASS",
+            "reasoning": "Docker/pytest harness adds realism but hardness is in mount coupling and variant ladder, not container count."
+          },
+          {
+            "id": "one_pass_solvability",
+            "name": "One-pass solvability",
+            "verdict": "PASS",
+            "reasoning": "Agent must run lad_check ladder, compare mount_fingerprint vs baseline, and experiment across log tails and held-out tier orderings before patching."
+          },
+          {
+            "id": "hard_only_gate",
+            "name": "Hard-only gate",
+            "verdict": "PASS",
+            "reasoning": "Residual-hardness remains after full disclosure; targeted at <=20% worst-model pass rate per Part E."
+          },
+          {
+            "id": "discovery_budget_test",
+            "name": "Discovery/design budget test",
+            "verdict": "PASS",
+            "reasoning": "Four discovery items listed in discovery_budget covering unit/fstab disagreement, consumer stale rows, propagation refresh ordering, and remote option arm divergence."
+          },
+          {
+            "id": "instruction_specificity_test",
+            "name": "Instruction specificity test",
+            "verdict": "PASS",
+            "reasoning": "adversarial_generalization with constraint-complete framing; public remount contract complete but solution route and broken phase hidden."
+          },
+          {
+            "id": "topology_distribution_test",
+            "name": "Topology distribution test",
+            "verdict": "PASS",
+            "reasoning": "Three implementation topologies enumerated in topology_enumeration; each requires >=3 coordinated components and no single location passes full verifier."
+          }
+        ],
+        "rubric_axes": [
+          {
+            "id": "verifiable",
+            "name": "Verifiable",
+            "verdict": "PASS",
+            "reasoning": "Deterministic lad_check ladder with mount_fingerprint and numeric band assertions; fixed seeds and idempotent reset commands."
+          },
+          {
+            "id": "well_specified",
+            "name": "Well-specified",
+            "verdict": "PASS",
+            "reasoning": "Public contract names command, output path, public tiers, and ladder_report schema in pact_m3.md."
+          },
+          {
+            "id": "solvable",
+            "name": "Solvable",
+            "verdict": "PASS",
+            "reasoning": "Expert with production mount orchestration experience can generalize remount behavior in hours; minimized Go workspace well under 100k LOC."
+          },
+          {
+            "id": "difficult",
+            "name": "Difficult",
+            "verdict": "PASS",
+            "reasoning": "Requires professional systems-administration debugging; undergrads cannot one-shot without deep codebase engagement and variant experiments."
+          },
+          {
+            "id": "interesting",
+            "name": "Interesting",
+            "verdict": "PASS",
+            "reasoning": "Mirrors paid work on fstab/systemd mount-unit drift, bind propagation, and remount ladder correctness in production fleets."
+          },
+          {
+            "id": "outcome_verified",
+            "name": "Outcome-verified",
+            "verdict": "PASS",
+            "reasoning": "Grades regenerated ladder_report.json and cross-run mount fingerprints, not patch process or tool choice."
+          }
+        ],
+        "instruction_completeness_test": {
+          "verdict": "PASS",
+          "reasoning": "Instruction states remount ladder contract and public checker command but not which table/unit/consumer surface must generalize or how to reconcile provenance; codebase experiments and held-out tier runs required."
+        },
+        "discovery_budget": [
+          {
+            "discovery": "Fstab generator emits nofail and remote option strings that systemd unit synthesizer normalizes differently per variant arm, making interim rows look aligned.",
+            "planned_location": "environment/pkg/tab/merge_a.go row_merge_a and environment/pkg/unit/sync_b.go opt_sync_b",
+            "why_instruction_must_not_reveal": "Naming the disagreeing surface collapses search to one obvious merge or sync edit."
+          },
+          {
+            "discovery": "Bind relocation updates mount table rows but consumer registry retains stale lane attachments that pass public tiers until propagation refresh runs.",
+            "planned_location": "environment/pkg/cons/notify_c.go lane_notify_c propagation fan-out",
+            "why_instruction_must_not_reveal": "Disclosing consumer lane authority selects notify_c without table/unit coupling search."
+          },
+          {
+            "discovery": "Read-only to read-write toggle without unit option replay accepts smoke paths unless mount slice bytes and JSON logs agree on mount_fingerprint.",
+            "planned_location": "environment/pkg/tab/merge_a.go row serialization boundary plus environment/fixtures/blk/*.mnt slices",
+            "why_instruction_must_not_reveal": "Revealing ro-rw phase selects merge_a without unit/consumer coordination."
+          },
+          {
+            "discovery": "Repeat migration removes anchor bytes consumed on the next recovery pass, passing first remount while repeat mig8 poisons rerun safety.",
+            "planned_location": "environment/migrations/mig8.sh documented recovery plus environment/pkg/cons/notify_c.go anchor preservation hooks",
+            "why_instruction_must_not_reveal": "Migration path naming is a forbidden category leak for filesystem_state_reconstruction."
+          }
+        ],
+        "instruction_specificity": {
+          "level": "constraint-complete",
+          "reasoning": "Public prompt states required remount ladder behavior across ro-rw toggles, bind moves, propagation changes, and repeated recovery without naming broken merge phase, unit sync path, or fix symbols."
+        },
+        "attack_path": {
+          "summary": "Agent hardcodes public tier_alpha/tier_beta mount_fingerprint filters, passes p8 stub trap but fails held-out tier reorderings and second-pass migration poison tests.",
+          "reasoning": "Fixture-specific blocklist aligns public examples while partial log tails, stale consumer rows, and anchor-destructive migration still diverge on duplicated recovery and bind-move variants."
+        },
+        "smallest_plausible_patch": {
+          "summary": "Coordinate row_merge_a fstab merge, opt_sync_b unit option reconciliation, and lane_notify_c consumer propagation refresh before remount replay.",
+          "reasoning": "Still spans three pkg roots and rebuild/checker rerun; not a one-line nofail flag or delete-row shortcut."
+        },
+        "collapse_audit": {
+          "verdict": "PASS",
+          "reasoning": "Post-disclosure residual work requires tracing multi-surface mount provenance through Go sources and held-out tier experiments, not mapping one public bullet to one obvious function.",
+          "residual_hardness": "After lad_check command, ladder_report schema, and recovery reset workflow are public, solver must infer general remount robustness across reordered bind moves, duplicated passes, and migration-repeat cycles.",
+          "red_flags": []
+        },
+        "topology_enumeration": [
+          {
+            "id": "T1",
+            "summary": "Table-first generalization",
+            "locations": [
+              "environment/pkg/tab/merge_a.go",
+              "environment/pkg/unit/sync_b.go",
+              "environment/pkg/cons/notify_c.go",
+              "environment/cmd/lad_check/engine.go"
+            ],
+            "why_no_single_location_suffices": "Merging fstab rows without unit sync leaves divergent option strings; consumer lanes still stale so held-out reorder and second-pass tests fail."
+          },
+          {
+            "id": "T2",
+            "summary": "Unit-sync-first generalization",
+            "locations": [
+              "environment/pkg/unit/sync_b.go",
+              "environment/pkg/tab/merge_a.go",
+              "environment/pkg/cons/notify_c.go",
+              "environment/fixtures/blk/*.mnt"
+            ],
+            "why_no_single_location_suffices": "Unit-only fix clears public tiers but partial table tails and anchor-destructive migration break tier_gamma/tier_delta held-out orderings."
+          },
+          {
+            "id": "T3",
+            "summary": "Consumer-lane-first generalization",
+            "locations": [
+              "environment/pkg/cons/notify_c.go",
+              "environment/pkg/tab/merge_a.go",
+              "environment/pkg/unit/sync_b.go",
+              "environment/docs/pact_m3.md"
+            ],
+            "why_no_single_location_suffices": "Consumer-only refresh passes first recovery but fstab/unit disagreement and partial mount slices still diverge on duplicated pass per test_second_pass_guard."
+          }
+        ],
+        "construction_manifest": {
+          "symbol_table": [
+            {
+              "path": "environment/pkg/tab/merge_a.go",
+              "symbol": "row_merge_a",
+              "kind": "function",
+              "signature": "func RowMergeA(slice *MountSlice, sink *TableSink) error",
+              "purpose": "Serializes mount slice bytes and table tail into on-disk row sink"
+            },
+            {
+              "path": "environment/pkg/unit/sync_b.go",
+              "symbol": "opt_sync_b",
+              "kind": "function",
+              "signature": "func OptSyncB(slots *OptionSlots, slice *MountSlice) error",
+              "purpose": "Reconciles unit option slots from loaded mount slice view"
+            },
+            {
+              "path": "environment/pkg/cons/notify_c.go",
+              "symbol": "lane_notify_c",
+              "kind": "function",
+              "signature": "func LaneNotifyC(arena *LaneArena, anchors AnchorSet) error",
+              "purpose": "Refreshes consumer lane attachments while preserving remount anchor set"
+            }
+          ],
+          "flipping_point_contract": {
+            "locations": [
+              {
+                "id": "A",
+                "path": "environment/pkg/tab/merge_a.go",
+                "controls_tests": [
+                  "test_harness_exit_zero",
+                  "test_fingerprint_stable",
+                  "test_public_tier_guard"
+                ]
+              },
+              {
+                "id": "B",
+                "path": "environment/pkg/unit/sync_b.go",
+                "controls_tests": [
+                  "test_unit_obligations",
+                  "test_dual_path_bytes",
+                  "test_p8_row_trap"
+                ]
+              },
+              {
+                "id": "C",
+                "path": "environment/pkg/cons/notify_c.go",
+                "controls_tests": [
+                  "test_second_pass_guard",
+                  "test_anchor_preserve_guard"
+                ]
+              }
+            ],
+            "no_single_location_flips_majority": true,
+            "concentration_cap": 0.5
+          },
+          "decoy_manifest": [
+            {
+              "path": "environment/pkg/tab/stub_merge.go",
+              "kind": "module",
+              "rhymes_with": "row_merge_a",
+              "non_fix_purpose": "Legacy table writer for offline benchmarks without tail merge"
+            },
+            {
+              "path": "environment/pkg/unit/stub_sync.go",
+              "kind": "helper",
+              "rhymes_with": "opt_sync_b",
+              "non_fix_purpose": "No-op option refresh for builds without slot reconciliation"
+            },
+            {
+              "path": "environment/pkg/cons/stub_notify.go",
+              "kind": "helper",
+              "rhymes_with": "lane_notify_c",
+              "non_fix_purpose": "Formats p8 interim rows without preserving anchor bytes"
+            }
+          ],
+          "code_forbidden_tokens": [
+            "orchestrator",
+            "remount",
+            "variant",
+            "ladders",
+            "read-only",
+            "read-write",
+            "toggles",
+            "bind",
+            "relocation",
+            "propagation",
+            "stale",
+            "consumers",
+            "attachments",
+            "checker",
+            "tier_alpha",
+            "tier_beta",
+            "tier_gamma",
+            "tier_delta",
+            "reordered",
+            "sequences",
+            "duplicated",
+            "recovery",
+            "passes",
+            "ladder_report",
+            "mount_fingerprint",
+            "uninterrupted",
+            "recovered",
+            "idempotent",
+            "sampled",
+            "traces",
+            "fragments",
+            "authoritative",
+            "interim",
+            "cross-check",
+            "fstab",
+            "systemd",
+            "nofail",
+            "remote",
+            "filesystem",
+            "lad_check",
+            "hardcoding",
+            "modifications",
+            "workspace"
+          ]
+        },
+        "naming_pass": {
+          "instruction_nouns_extracted": [
+            "orchestrator",
+            "remount",
+            "variant",
+            "ladders",
+            "read-only",
+            "read-write",
+            "toggles",
+            "bind",
+            "relocation",
+            "propagation",
+            "stale",
+            "consumers",
+            "attachments",
+            "checker",
+            "tier_alpha",
+            "tier_beta",
+            "tier_gamma",
+            "tier_delta",
+            "reordered",
+            "sequences",
+            "duplicated",
+            "recovery",
+            "passes",
+            "ladder_report",
+            "mount_fingerprint",
+            "uninterrupted",
+            "recovered",
+            "idempotent",
+            "sampled",
+            "traces",
+            "fragments",
+            "authoritative",
+            "interim",
+            "cross-check",
+            "fstab",
+            "systemd",
+            "nofail",
+            "remote",
+            "filesystem",
+            "lad_check",
+            "hardcoding",
+            "modifications",
+            "workspace"
+          ],
+          "renames_during_drafting": [
+            {
+              "original": "test_mount_fingerprint_stable",
+              "renamed_to": "test_fingerprint_stable",
+              "reason": "mount_fingerprint is an instruction noun banned from test names"
+            },
+            {
+              "original": "notify_recovery_c",
+              "renamed_to": "lane_notify_c",
+              "reason": "recovery is an instruction noun banned from fix-path symbols"
+            },
+            {
+              "original": "test_ladder_harness_exit",
+              "renamed_to": "test_harness_exit_zero",
+              "reason": "ladders and checker are instruction nouns banned from test names"
+            }
+          ],
+          "test_names_audited": [
+            "test_harness_exit_zero",
+            "test_fingerprint_stable",
+            "test_public_tier_guard",
+            "test_unit_obligations",
+            "test_dual_path_bytes",
+            "test_p8_row_trap",
+            "test_second_pass_guard",
+            "test_anchor_preserve_guard"
+          ],
+          "concentration_math": {
+            "total_tests": 8,
+            "per_location": [
+              {
+                "location_id": "A",
+                "test_count": 3,
+                "ratio": 0.375
+              },
+              {
+                "location_id": "B",
+                "test_count": 3,
+                "ratio": 0.375
+              },
+              {
+                "location_id": "C",
+                "test_count": 2,
+                "ratio": 0.25
+              }
+            ]
+          },
+          "recomputed_concentration": {
+            "total_tests": 8,
+            "concentration_cap": 0.5,
+            "per_location": [
+              {
+                "location_id": "A",
+                "test_count": 3,
+                "ratio": 0.375
+              },
+              {
+                "location_id": "B",
+                "test_count": 3,
+                "ratio": 0.375
+              },
+              {
+                "location_id": "C",
+                "test_count": 2,
+                "ratio": 0.25
+              }
+            ]
+          }
+        },
+        "difficulty_mechanism_plan": [
+          {
+            "mechanism": "false_green_intermediate_states",
+            "placement": "fixtures/q8/p8_stub.json interim rows and partial tier_alpha smoke tallies",
+            "why_model_misses_it": "Models declare done early when public tiers show healthy interim rows",
+            "fairness_guardrail": "Verifier requires terminal mount_fingerprint convergence in ladder_report.json"
+          },
+          {
+            "mechanism": "cross_file_cross_format_invariants",
+            "placement": "fstab table rows, unit option JSON, and binary mount slices under fixtures/blk",
+            "why_model_misses_it": "Models fix single file format while breaking cross-format mount_fingerprint agreement",
+            "fairness_guardrail": "Invariants tie JSON logs to binary outputs per pact_m3.md"
+          },
+          {
+            "mechanism": "rollback_recovery_requirements",
+            "placement": "destructive migration step migrations/mig8.sh with documented idempotent recovery",
+            "why_model_misses_it": "Models repeat destructive remount command without anchor preservation",
+            "fairness_guardrail": "Idempotent recovery path documented publicly in pact_m3.md"
+          },
+          {
+            "mechanism": "partial_observability_experiment_design",
+            "placement": "sampled traces only under fixtures/logs with authoritative bytes in fixtures/blk",
+            "why_model_misses_it": "Models infer mount state from incomplete logs rather than required experiments",
+            "fairness_guardrail": "Public contract lists required tier replay experiments and lad_check command"
+          }
+        ],
+        "calibration_plan": {
+          "oracle_runs": 3,
+          "no_op_runs": 3,
+          "target_agent_runs": 5,
+          "comparator_agent_runs": 5,
+          "human_sanity": "Systems engineer reproduces failing lad_check locally using bundled log tails and mount slices only",
+          "shortcut_audit": "Block hardcoded ladder_report.json, blocklist filters matching only public tiers, test edits, stale-doc shortcuts",
+          "ablation_plan": "Remove false-green interim layer, then cross-format fingerprint layer, then duplicate-pass layer; expect monotonic difficulty drop",
+          "pass_rate_target": {
+            "hard_max_pct": 20,
+            "too_easy_threshold_pct": 80,
+            "basis": "Part E Hard threshold on worst-model accuracy; verifier-offline via Dockerfile-baked go/pytest with no runtime installs in test.sh under allow_internet=false; post-upload difficulty classification after platform agent runs"
+          }
+        },
+        "verifier_scoring_plan": {
+          "metrics": [
+            {
+              "metric": "functional_correctness",
+              "weight": 0.45,
+              "criterion": "lad_check ladder exit 0 and mount_fingerprint matches baseline within documented bands"
+            },
+            {
+              "metric": "hidden_invariants",
+              "weight": 0.25,
+              "criterion": "mount_fingerprint cross-recovered-path agreement and duplicate-pass monotonicity"
+            },
+            {
+              "metric": "state_hygiene",
+              "weight": 0.15,
+              "criterion": "idempotent reset preserves fixture mount slice integrity after mig8.sh"
+            },
+            {
+              "metric": "interface_correctness",
+              "weight": 0.1,
+              "criterion": "ladder_report.json conforms to pact_m3.md schema"
+            },
+            {
+              "metric": "deliverable_completeness",
+              "weight": 0.05,
+              "criterion": "all public and held-out tier rows present in terminal report artifact"
+            }
+          ],
+          "overall_threshold": 0.999,
+          "reward_output": "reward.txt",
+          "binary_threshold_rule": "reward.txt=1 only when weighted score >= 0.90 with no zero in functional_correctness or hidden_invariants"
+        },
+        "subtype_milestone_plan": {
+          "subcategories": [
+            "tool_specific"
+          ],
+          "milestone_count": 0,
+          "sequential_dependency": "Conceptually staged remount variant phases delivered as one adversarial_generalization task",
+          "local_only_data": true,
+          "sidecar_or_protocol_notes": "Single-container local verifier; Go module tree and lad_check baked in Dockerfile"
+        },
+        "platform_files": [
+          {
+            "path": "task.toml",
+            "role": "metadata; must set [environment] allow_internet = false"
+          },
+          {
+            "path": "instruction.md",
+            "role": "natural constraint-complete public prompt derived from Public contract"
+          },
+          {
+            "path": "output_contract.toml",
+            "role": "local output declaration for ladder_report.json"
+          },
+          {
+            "path": "tests/test.sh",
+            "role": "verifier entrypoint; invoke pre-installed pytest only"
+          },
+          {
+            "path": "tests/test_outputs.py",
+            "role": "domain verifier (8 tests)"
+          },
+          {
+            "path": "solution/solve.sh",
+            "role": "oracle coordinating row_merge_a, opt_sync_b, lane_notify_c"
+          },
+          {
+            "path": "environment/Dockerfile",
+            "role": "build definition; pre-install pinned go, pytest, lad_check"
+          },
+          {
+            "path": "construction_manifest.json",
+            "role": "local authoring artifact mirroring symbol table"
+          }
+        ],
+        "task_files": [
+          {
+            "path": "environment/go.mod",
+            "role": "Go module root"
+          },
+          {
+            "path": "environment/go.sum",
+            "role": "Go module checksums"
+          },
+          {
+            "path": "environment/pkg/tab/merge_a.go",
+            "role": "fix frontier A"
+          },
+          {
+            "path": "environment/pkg/tab/stub_merge.go",
+            "role": "decoy table writer"
+          },
+          {
+            "path": "environment/pkg/tab/types.go",
+            "role": "mount slice types"
+          },
+          {
+            "path": "environment/pkg/tab/replay.go",
+            "role": "table replay helpers"
+          },
+          {
+            "path": "environment/pkg/unit/sync_b.go",
+            "role": "fix frontier B"
+          },
+          {
+            "path": "environment/pkg/unit/stub_sync.go",
+            "role": "decoy option helper"
+          },
+          {
+            "path": "environment/pkg/unit/types.go",
+            "role": "option slot types"
+          },
+          {
+            "path": "environment/pkg/unit/vault.go",
+            "role": "unit option reader"
+          },
+          {
+            "path": "environment/pkg/cons/notify_c.go",
+            "role": "fix frontier C"
+          },
+          {
+            "path": "environment/pkg/cons/stub_notify.go",
+            "role": "decoy notify helper"
+          },
+          {
+            "path": "environment/pkg/cons/arena.go",
+            "role": "lane arena state"
+          },
+          {
+            "path": "environment/pkg/cons/anchors.go",
+            "role": "remount anchor set types"
+          },
+          {
+            "path": "environment/cmd/lad_daemon/main.go",
+            "role": "orchestrator daemon entry"
+          },
+          {
+            "path": "environment/cmd/lad_daemon/run.go",
+            "role": "remount phase driver"
+          },
+          {
+            "path": "environment/cmd/lad_check/main.go",
+            "role": "checker CLI entry"
+          },
+          {
+            "path": "environment/cmd/lad_check/engine.go",
+            "role": "mount fingerprint and band validation"
+          },
+          {
+            "path": "environment/profiles/tier_alpha.json",
+            "role": "public tier definition"
+          },
+          {
+            "path": "environment/profiles/tier_beta.json",
+            "role": "public tier definition"
+          },
+          {
+            "path": "environment/profiles/tier_gamma.json",
+            "role": "held-out tier definition (reordered bind move)"
+          },
+          {
+            "path": "environment/profiles/tier_delta.json",
+            "role": "held-out tier definition (duplicated recovery pass)"
+          },
+          {
+            "path": "environment/docs/pact_m3.md",
+            "role": "report schema, mount_fingerprint rule, band classes, recovery command"
+          },
+          {
+            "path": "environment/docs/slice_layout.md",
+            "role": "public mount slice byte layout"
+          },
+          {
+            "path": "environment/migrations/mig8.sh",
+            "role": "destructive remount reset with documented recovery"
+          },
+          {
+            "path": "environment/fixtures/logs/ta_tail.txt",
+            "role": "partial table log excerpt"
+          },
+          {
+            "path": "environment/fixtures/logs/tb_tail.txt",
+            "role": "partial unit log excerpt"
+          },
+          {
+            "path": "environment/fixtures/blk/tc.mnt",
+            "role": "binary mount slice"
+          },
+          {
+            "path": "environment/fixtures/blk/td.mnt",
+            "role": "binary mount slice"
+          },
+          {
+            "path": "environment/fixtures/q8/p8_stub.json",
+            "role": "false-green p8 interim rows"
+          },
+          {
+            "path": "environment/fixtures/seed/arena_seed.bin",
+            "role": "idempotent scratch seed bytes for mig8 recovery"
+          },
+          {
+            "path": "environment/scripts/build_all.sh",
+            "role": "go build entry for module tree"
+          },
+          {
+            "path": "environment/scripts/drive_ladder.sh",
+            "role": "tier matrix driver for checker"
+          }
+        ],
+        "fix_frontier": {
+          "count": 3,
+          "distribution": "pkg/tab fstab table, pkg/unit mount unit sync, pkg/cons consumer lane roots",
+          "naming_policy": "Opaque symbols from construction manifest symbol_table only",
+          "forbidden_stems": [
+            "orchestrator",
+            "remount",
+            "variant",
+            "ladders",
+            "bind",
+            "propagation",
+            "stale",
+            "consumers",
+            "checker",
+            "tier_alpha",
+            "tier_beta",
+            "mount_fingerprint",
+            "fstab",
+            "systemd",
+            "recovery",
+            "lad_check",
+            "workspace"
+          ],
+          "helpers_policy": "Decoys may rhyme structurally; oracle must not edit decoy bodies",
+          "symbol_thin_preferred": true
+        },
+        "contract_surface": {
+          "boolean_fields_max": 0,
+          "direct_boolean_assertions_max": 0,
+          "preferred_assertion_styles": [
+            "mount fingerprints",
+            "checker exit codes",
+            "numeric band fields",
+            "schema keys",
+            "cross-recovered-path invariants"
+          ],
+          "forbidden_assertion_styles": [
+            "boolean answer keys",
+            "scenario->field->expected tables",
+            "fields ending in _ok/_valid/_passes"
+          ]
+        },
+        "task_shape": {
+          "type": "adversarial_generalization",
+          "instruction_framing": "constraint-complete",
+          "hardness_source": "adversarial generalization",
+          "collapse_risk": "hardcoded blocklist passes visible fixtures only"
+        },
+        "category_profile": {
+          "challenge_family": "mount variant robustness",
+          "profile_name": "filesystem_state_reconstruction",
+          "allowed_instruction_disclosures": "Observable symptoms, public commands, verifier contracts for mount variant robustness, remount ladder tiers, and mount_fingerprint schema.",
+          "forbidden_instruction_leaks": "Root cause, fix location, patch recipe, oracle transcript, inode/source-of-truth choice, or reconstruction algorithm.",
+          "category_specific_hardness_bar": "Three or more coupled subsystems (fstab table, unit synthesizer, consumer registry) must align for remount ladder generalization.",
+          "category_specific_verifier_risks": "False greens from local checks or golden fixtures; one manifest repair shortcuts.",
+          "coverage_role": "Strengthens filesystem_state_reconstruction coverage via fstab variant remount ladder adversarial generalization."
+        },
+        "satisfiability_risk": {
+          "rc2_planned_name_risk": "low \u2014 opaque fix-path symbols and neutral path tokens (pact_m3, blk, q8, vault, replay) precommitted",
+          "gx9_contract_risk": "low \u2014 contract uses digests and numeric band fields, not boolean verdict tables",
+          "cr1_symbol_frontier_risk": "low \u2014 fix frontier spread across tab, unit, cons package roots",
+          "hidden_contract_risk": "medium \u2014 some invariants live only in cross-artifact mount_fingerprint behavior tied across JSON logs and binary slices"
+        },
+        "actionability_plan": {
+          "verifier_command_visible": "lad_check --matrix-full documented in instruction.md with output path /app/output/ladder_report.json",
+          "source_fix_intent_visible": "yes at product level \u2014 produce remount workflow surviving variant ladder without algorithm or patch recipe",
+          "generated_output_rule_visible": "ladder_report.json path and schema public; static hand-written report insufficient",
+          "exact_formula_home": "environment/docs/pact_m3.md for mount_fingerprint sha256 and numeric band classes",
+          "schema_home": "instruction.md plus environment/docs/pact_m3.md"
+        },
+        "waiver_plan": {
+          "waivers_expected": false,
+          "waiver_rationale": "Hardness from coupled mount behavior across table, unit, and consumer surfaces, not harness brittleness"
+        },
+        "reference_pattern": {
+          "justification_if_none": "No promoted reference in docs/reference_tasks/index.json covers Go adversarial_generalization fstab remount ladder; bind-propagation-orphan-inodes is repair_existing_system Rust and not promoted"
+        },
+        "realism_source": {
+          "source_type": "real_system",
+          "evidence_basis": "open-source issue",
+          "upstream_or_synthetic_rationale": "Production system-administration pattern where fstab generator and systemd mount units disagree on options, nofail mounts mask ordering bugs, and remote filesystem arms diverge; minimized to local Go mount orchestrator lab",
+          "minimization_preserves": "Causal coupling in fstab variant remount ladder across table merge, unit sync, consumer propagation, and verifier-visible mount_fingerprint identity",
+          "synthetic_exception_review": "not required"
+        }
+      },
+      "evidence_errors": [],
+      "evidence_warnings": [],
+      "blocking_failures": [],
+      "strict": true
+    }
+  ],
+  "schema_path": "specs/validation_schema.json",
+  "emit_legacy_reviewer": false
+}

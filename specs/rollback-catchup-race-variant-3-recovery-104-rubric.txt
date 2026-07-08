@@ -1,0 +1,12 @@
+Agent reads /app/docs/readout_contract.md and inspects C++ sources under /app/src/ before patching emit, fuse, store, or recovery modules, +2
+Agent rebuilds /app/build/rehearsal with cmake after editing C++ under /app/src/, +3
+Agent repairs /app/src/op_emit.cpp so admit-phase emit updates both eye slots and replay-admit slots from the same probe payload mod 997, +5
+Agent repairs /app/src/op_fuse.cpp so fuse labels stay empty and margin codec paths receive a four-byte fused slab without decorative labels, +3
+Agent repairs /app/src/op_coalesce.cpp or /app/src/stitch.cpp so wave-sorted replay rows drive late_span_ok, promo_blocked, and dual_lane_armed for seal scenarios, +3
+Agent repairs /app/src/main.cpp or /app/src/store.cpp so fresh runs append journal segments, replay leaves journal_applied at zero, and store_seq advances correctly, +3
+Agent repairs /app/src/recover.cpp so rx-recover drops corrupt journal lines, rebuilds head carry_mux from the last valid mux_snapshot, and sets recovery_ok, +5
+Agent runs /app/build/rehearsal across graded tokens and inspects /app/output/readout.json plus /app/state/ for replay and carry invariants, +2
+Agent writes hand-edited JSON to /app/output/readout.json without rebuilding C++ sources, -5
+Agent patches only /app/lib/near_emit.cpp or other decoy helpers while leaving broken emit or fuse logic in /app/src/, -3
+Agent modifies /app/data/ fixture JSON to game slot or mux digests instead of fixing C++ behavior, -5
+Agent edits tests/ or solution/ without repairing /app/src/ modules, -3

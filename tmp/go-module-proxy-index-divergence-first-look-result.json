@@ -1,0 +1,14 @@
+{
+  "first_look_result": {
+    "reviewer_or_model": "antigravity",
+    "date": "2026-07-05",
+    "packet_hash": "8aec0d1d01030b543b2b6022b7e1783d8035a518f58f0e1e6f150ba798401b97",
+    "subsystem_identified": true,
+    "source_fix_understood": true,
+    "verifier_understood": true,
+    "static_output_rejected": true,
+    "rational_plan": true,
+    "failure_reason": "",
+    "decision": "PASS"
+  }
+}

@@ -1,0 +1,1041 @@
+{
+  "task_name": "cargo-workspace-feature-unification-order",
+  "attempt": 2,
+  "best_score": [
+    0,
+    0
+  ],
+  "best_attempt": 2,
+  "plateau_count": 0,
+  "candidates": [],
+  "history": [
+    {
+      "attempt": 1,
+      "fails": 2,
+      "warns": 0,
+      "evidence_path": "specs/.runs/cargo-workspace-feature-unification-order/attempt-1-evidence.json",
+      "evidence": {},
+      "evidence_errors": [
+        "Schema validation failed at $.contract_surface.forbidden_assertion_styles: 'scenario-key expected tables in instruction.md; static golden feature_matrix_report under tests/; readiness fields named *_ok in instruction prose tied 1:1 to fix-path grep' is not of type 'array'",
+        "Schema validation failed at $.contract_surface.preferred_assertion_styles: 'regenerated JSON rows, integer rc counters, derived matrix_digest, mirror echo equality, perm_order traps, ablation incoherence, pipeline overwrite, dep-info byte cross-check' is not of type 'array'"
+      ],
+      "evidence_warnings": [],
+      "blocking_failures": [
+        "Schema validation failed at $.contract_surface.forbidden_assertion_styles: 'scenario-key expected tables in instruction.md; static golden feature_matrix_report under tests/; readiness fields named *_ok in instruction prose tied 1:1 to fix-path grep' is not of type 'array'",
+        "Schema validation failed at $.contract_surface.preferred_assertion_styles: 'regenerated JSON rows, integer rc counters, derived matrix_digest, mirror echo equality, perm_order traps, ablation incoherence, pipeline overwrite, dep-info byte cross-check' is not of type 'array'"
+      ],
+      "strict": true
+    },
+    {
+      "attempt": 2,
+      "fails": 0,
+      "warns": 0,
+      "evidence_path": "specs/.runs/cargo-workspace-feature-unification-order/attempt-2-evidence.json",
+      "evidence": {
+        "hardness_axes": [
+          {
+            "id": "discover",
+            "name": "Discover",
+            "verdict": "PASS",
+            "reasoning": "Solver must infer resolver-2 weak-vs-strong unification rules, default-features path-dep leakage, and workspace-root resolver precedence from Cargo.toml fragments, dep-info sidecars, and probe output\u2014not from instruction.md alone."
+          },
+          {
+            "id": "synthesize",
+            "name": "Synthesize",
+            "verdict": "PASS",
+            "reasoning": "Correct outcome requires coordinating w2k weak-dep fold, p3n path-edge table, c8r cross-format emit, h5k order driver, workspace manifests, lockfile, and metadata sidecars; no single file holds the full closure."
+          },
+          {
+            "id": "diagnose_or_design",
+            "name": "Diagnose or Design/Search",
+            "verdict": "PASS",
+            "reasoning": "Constrained-build design search: agent completes partial driver and crate wiring so order-independent feature fingerprints hold under permuted first-build sequences without a disclosed patch recipe."
+          },
+          {
+            "id": "navigate_coupling",
+            "name": "Navigate coupling",
+            "verdict": "PASS",
+            "reasoning": "Changing one member manifest or one fold helper breaks distant mirror-pair equality, dep-info token agreement, or held-out perm_order scenarios; local Cargo.toml edits do not compose independently."
+          },
+          {
+            "id": "reason_beyond_training",
+            "name": "Reason beyond training",
+            "verdict": "PASS",
+            "reasoning": "Cargo workspace resolver-2 weak dependency unification, default-features disable with path-dep re-enable, and build-order-sensitive feature closure are niche build-graph semantics beyond generic Rust crate authoring."
+          }
+        ],
+        "anti_trivialization_checks": [
+          {
+            "id": "disclosure_collapse",
+            "name": "Disclosure-collapse",
+            "verdict": "PASS",
+            "reasoning": "After every tested schema field, mirror pair, digest home, and perm_order generalization rule is disclosed, solver still must discover which subsystem mis-unifies weak flags, path edges, or workspace resolver tables."
+          },
+          {
+            "id": "hidden_instance",
+            "name": "Hidden-instance",
+            "verdict": "PASS",
+            "reasoning": "Hardness is cross-cutting feature closure under permuted build order, not guessing one broken file among hundreds of identical manifests."
+          },
+          {
+            "id": "single_artifact_repair",
+            "name": "Single-artifact repair",
+            "verdict": "PASS",
+            "reasoning": "Ablation contract requires four distinct module roots; reverting any one alone flips a dedicated test subset and perm_order generalization fails if only one manifest knob moves."
+          },
+          {
+            "id": "generalization",
+            "name": "Generalization",
+            "verdict": "PASS",
+            "reasoning": "Held-out perm_order.toml encodes multiple first-build permutations; fix must generalize, not match one golden build sequence."
+          },
+          {
+            "id": "prompt_honesty",
+            "name": "Prompt-honesty",
+            "verdict": "PASS",
+            "reasoning": "Honest design-brief states outcomes and verifier contracts without naming fn_w2, fn_p3, fn_c8, fn_h5, weak-dep path, or workspace resolver override site\u2014collapse does not follow from honest prose."
+          },
+          {
+            "id": "cheating_vs_difficulty",
+            "name": "Cheating-vs-difficulty",
+            "verdict": "PASS",
+            "reasoning": "Anti-cheat (pipeline rerun, ablation, no static JSON) supports fairness; legitimate difficulty is coupled Cargo feature-graph reasoning."
+          },
+          {
+            "id": "mechanical_fix_filter",
+            "name": "Mechanical-fix filter",
+            "verdict": "PASS",
+            "reasoning": "Task weakness is not verifier deps or reward footer; core challenge is multi-crate feature unification design."
+          },
+          {
+            "id": "localized_fix",
+            "name": "Localized-fix",
+            "verdict": "PASS",
+            "reasoning": "Four-root flipping contract and cross-format invariants block one-tiny-function completion despite precise public obligations."
+          },
+          {
+            "id": "oracle_locality",
+            "name": "Oracle-locality",
+            "verdict": "PASS",
+            "reasoning": "Oracle must touch four Rust modules plus coordinated manifest reads; not a one-file heredoc replace."
+          },
+          {
+            "id": "small_declarative_cluster",
+            "name": "Small declarative-cluster",
+            "verdict": "PASS",
+            "reasoning": "Solve is not one Cargo.toml knob table; requires runtime fold logic, order driver, and dep-info cross-check wiring across crates."
+          },
+          {
+            "id": "grep_collapse",
+            "name": "Grep-collapse",
+            "verdict": "PASS",
+            "reasoning": "Instruction uses standard Cargo vocabulary but fix-path symbols are opaque (fn_w2, fn_p3, fn_c8, fn_h5) in neutral crate roots h5k/p3n/w2k/c8r."
+          },
+          {
+            "id": "pre_factored_helper",
+            "name": "Pre-factored-helper",
+            "verdict": "PASS",
+            "reasoning": "Decoy helpers (stub_help, lane_help, probe_g4) do adjacent diagnostics; they do not mirror instruction bullet names like unify_feature or resolve_order."
+          },
+          {
+            "id": "recipe_discount",
+            "name": "Recipe-discount",
+            "verdict": "PASS",
+            "reasoning": "Not a textbook safe-extraction or policy-knob recipe; Cargo resolver-2 feature unification under build-order permutations is domain-specific design search."
+          },
+          {
+            "id": "security_aura_discount",
+            "name": "Security-aura discount",
+            "verdict": "PASS",
+            "reasoning": "Build-toolchain semantics provide hardness; no security nouns standing in for depth."
+          },
+          {
+            "id": "orthogonal_checklist",
+            "name": "Orthogonal-checklist",
+            "verdict": "PASS",
+            "reasoning": "Weak-dep fold, path-edge leak, cross-format emit, and order driver interact; fixing one layer leaves mirror pairs or dep-info tokens incoherent."
+          },
+          {
+            "id": "harness_discount",
+            "name": "Harness-discount",
+            "verdict": "PASS",
+            "reasoning": "Docker/offline harness adds realism only; difficulty is in feature-graph coordination, not container count."
+          },
+          {
+            "id": "one_pass_solvability",
+            "name": "One-pass solvability",
+            "verdict": "PASS",
+            "reasoning": "Frontier model cannot one-shot from instruction; must run permuted builds, compare sidecars, and ablate four modules."
+          },
+          {
+            "id": "hard_only_gate",
+            "name": "Hard-only gate",
+            "verdict": "PASS",
+            "reasoning": "Residual work after disclosure is professional build-engineering design search, not medium-tier config transcription."
+          },
+          {
+            "id": "discovery_budget_test",
+            "name": "Discovery/design budget test",
+            "verdict": "PASS",
+            "reasoning": "Three mandated discoveries enumerated in discovery_budget with planned locations and non-reveal rationale."
+          },
+          {
+            "id": "instruction_specificity_test",
+            "name": "Instruction specificity test",
+            "verdict": "PASS",
+            "reasoning": "Non-repair constrained_build uses design-brief level: complete public target and verifier contracts without solution-complete construction recipe."
+          },
+          {
+            "id": "topology_distribution_test",
+            "name": "Topology distribution test",
+            "verdict": "PASS",
+            "reasoning": "Three distinct implementation topologies enumerated, each requiring \u22653 coordinated components with no single-location sufficiency."
+          }
+        ],
+        "rubric_axes": [
+          {
+            "id": "verifiable",
+            "name": "Verifiable",
+            "verdict": "PASS",
+            "reasoning": "Deterministic offline Cargo rebuilds, permuted order seeds, JSON+dep-info cross-checks, and ablation flips yield repeatable pytest verdicts."
+          },
+          {
+            "id": "well_specified",
+            "name": "Well-specified",
+            "verdict": "PASS",
+            "reasoning": "Public contract defines report schema, mirror pairs, coherence predicates, digest home, and perm_order generalization; two drafters would build equivalent verifiers."
+          },
+          {
+            "id": "solvable",
+            "name": "Solvable",
+            "verdict": "PASS",
+            "reasoning": "Expert Rust build engineer can complete driver and crate wiring in a few hours offline knowing Cargo resolver semantics."
+          },
+          {
+            "id": "difficult",
+            "name": "Difficult",
+            "verdict": "PASS",
+            "reasoning": "Requires Cargo workspace resolver-2 feature unification expertise and multi-crate coordination; undergrads cannot reliably solve via one-manifest tweak in days."
+          },
+          {
+            "id": "interesting",
+            "name": "Interesting",
+            "verdict": "PASS",
+            "reasoning": "Real CI pain when workspace members build in different orders and shared path deps get divergent feature sets\u2014paid build-infra work."
+          },
+          {
+            "id": "outcome_verified",
+            "name": "Outcome-verified",
+            "verdict": "PASS",
+            "reasoning": "Tests grade regenerated feature_matrix_report.json, sidecars, and ablation behavior\u2014not mandated edit locations or tool sequence beyond public operator_cmds."
+          }
+        ],
+        "instruction_completeness_test": {
+          "verdict": "PASS",
+          "reasoning": "Instruction alone is insufficient: solver must read workspace manifests, run permuted fm_run sequences, inspect dep-info/metadata sidecars, and design fold logic across four opaque modules."
+        },
+        "discovery_budget": [
+          {
+            "discovery": "Resolver-2 weak dependency feature flags merge through a different activation path than strong dependency features, so identical-looking feature names diverge when only weak edges participate.",
+            "planned_location": "environment/w2k/src/weak_mux.rs (fn_w2) plus environment/data/edge_seed.toml weak-edge rows",
+            "why_instruction_must_not_reveal": "Stating the weak-vs-strong split would collapse design search to editing one known helper instead of inferring from dep-info diffs under permuted builds."
+          },
+          {
+            "discovery": "A member crate with default-features disabled still inherits unified features when a sibling path-dependency edge re-enables shared crate features transitively.",
+            "planned_location": "environment/p3n/src/edge_mux.rs (fn_p3) and environment/members/b2/Cargo.toml path-dep stanza",
+            "why_instruction_must_not_reveal": "Naming the leaking edge would turn coupling navigation into a single-manifest grep task."
+          },
+          {
+            "discovery": "Workspace-root resolver and feature metadata table precedence overrides per-member feature tables when the first-build member seed changes, affecting downstream unified fingerprints.",
+            "planned_location": "environment/engine/resolver_tbl.rs reading environment/Cargo.toml [workspace] metadata and environment/h5k/src/order_drv.rs (fn_h5)",
+            "why_instruction_must_not_reveal": "Disclosing override site would map public order-independence rule directly to one config reader function."
+          }
+        ],
+        "instruction_specificity": {
+          "level": "design-brief",
+          "reasoning": "Public contract is complete about outcomes, artifacts, mirror pairs, coherence predicates, and perm_order generalization, but omits construction recipe, fix-path symbols, and resolver wiring sequence."
+        },
+        "attack_path": {
+          "summary": "Hand-write feature_matrix_report.json, patch one member default-features, or trust fm_run health subcommand without dep-info cross-check.",
+          "reasoning": "test_q10_rerun_flow reruns locked cargo+fm_run; test_q19_premature rejects probe_g4 settled label with disagreeing mirror pairs; test_q17_flip_c8 ablates cross-format emit; perm_order held-out rows block single-sequence hardcoding."
+        },
+        "smallest_plausible_patch": {
+          "summary": "Coordinated updates to fn_w2 weak-dep fold, fn_p3 path-edge normalization, fn_c8 dep-info/report bridge, and fn_h5 order-driver seed handling\u2014 not one Cargo.toml line.",
+          "reasoning": "Each location ablation flips dedicated tests; reverting only one module leaves perm_order generalization or mirror-pair coherence failing."
+        },
+        "collapse_audit": {
+          "verdict": "PASS",
+          "reasoning": "Partial scaffold with binding cross-component constraints (lockfile, perm_order, mirror pairs, dep-info sidecars, four-module frontier) prevents blank-canvas transcription; post-disclosure residual is multi-crate feature-graph design.",
+          "residual_hardness": "After honest disclosure of report schema and coherence predicates, solver must still discover weak-vs-strong unification, path-dep feature leak, workspace resolver precedence, and cross-format emit wiring through experiments and ablation feedback.",
+          "red_flags": []
+        },
+        "topology_enumeration": [
+          {
+            "id": "T1",
+            "summary": "Weak-dep-first topology: prioritize w2k fold + workspace resolver table before touching member manifests.",
+            "locations": [
+              "environment/w2k/src/weak_mux.rs",
+              "environment/engine/resolver_tbl.rs",
+              "environment/Cargo.toml workspace metadata",
+              "environment/data/edge_seed.toml"
+            ],
+            "why_no_single_location_suffices": "Weak fold alone cannot fix path-edge leak or order-driver seed; dep-info cross-check still fails without c8r bridge."
+          },
+          {
+            "id": "T2",
+            "summary": "Path-edge-first topology: normalize p3n edges and member default-features interaction before order permutations.",
+            "locations": [
+              "environment/p3n/src/edge_mux.rs",
+              "environment/members/a1/Cargo.toml",
+              "environment/members/b2/Cargo.toml",
+              "environment/shared/s4/Cargo.toml"
+            ],
+            "why_no_single_location_suffices": "Edge fix without fn_w2 still mis-unifies weak flags; fn_h5 permutations expose remaining order-dependent drift."
+          },
+          {
+            "id": "T3",
+            "summary": "Driver-orchestration topology: fix h5k order_drv seed scheduling and c8r emit cross-check while reconciling manifests.",
+            "locations": [
+              "environment/h5k/src/order_drv.rs",
+              "environment/c8r/src/fold_mux.rs",
+              "environment/h5k/src/main.rs digest header",
+              "environment/docs/operator_cmds.txt argv table"
+            ],
+            "why_no_single_location_suffices": "Driver-only changes leave underlying weak/path/resolver semantics wrong; ablations on w2k and p3n still flip coherence tests."
+          }
+        ],
+        "construction_manifest": {
+          "symbol_table": [
+            {
+              "path": "environment/w2k/src/weak_mux.rs",
+              "symbol": "fn_w2",
+              "kind": "function",
+              "signature": "fn fn_w2(seed: u32, edge_tbl: &[(u32, u32)], weak_rows: &[u8]) -> (u32, Vec<u8>)",
+              "purpose": "Fold weak dependency feature tokens into canonical byte vector for a build seed"
+            },
+            {
+              "path": "environment/p3n/src/edge_mux.rs",
+              "symbol": "fn_p3",
+              "kind": "function",
+              "signature": "fn fn_p3(member_tag: u8, path_tbl: &[(String, String)], gate: u16) -> (u8, Vec<String>)",
+              "purpose": "Normalize path-dependency feature edges after default-features disable on sibling members"
+            },
+            {
+              "path": "environment/c8r/src/fold_mux.rs",
+              "symbol": "fn_c8",
+              "kind": "function",
+              "signature": "fn fn_c8(row_tbl: &[u8], dep_path: &Path, meta_dir: &Path) -> (u32, String)",
+              "purpose": "Materialize report facet material cross-checking dep-info sidecar bytes"
+            },
+            {
+              "path": "environment/h5k/src/order_drv.rs",
+              "symbol": "fn_h5",
+              "kind": "function",
+              "signature": "fn fn_h5(order_seed: u32, member_ids: &[&str], hook_tbl: &[(u32, u32)]) -> (u32, Vec<(String, u32)>)",
+              "purpose": "Schedule first-build member sequence and aggregate per-order unified fingerprints"
+            }
+          ],
+          "flipping_point_contract": {
+            "locations": [
+              {
+                "id": "A",
+                "path": "environment/w2k/src/weak_mux.rs",
+                "controls_tests": [
+                  "test_q12_sens_mut",
+                  "test_q13_flip_w2",
+                  "test_q16_all_perms"
+                ]
+              },
+              {
+                "id": "B",
+                "path": "environment/p3n/src/edge_mux.rs",
+                "controls_tests": [
+                  "test_q14_flip_both",
+                  "test_q15_flip_p3",
+                  "test_q3_rc_all"
+                ]
+              },
+              {
+                "id": "C",
+                "path": "environment/c8r/src/fold_mux.rs",
+                "controls_tests": [
+                  "test_q6_dig_reduce",
+                  "test_q7_anchor_hex",
+                  "test_q8_hex_lower",
+                  "test_q17_flip_c8"
+                ]
+              },
+              {
+                "id": "D",
+                "path": "environment/h5k/src/order_drv.rs",
+                "controls_tests": [
+                  "test_q1_shape_vecs",
+                  "test_q2_hex_agree",
+                  "test_q4_lbl_set",
+                  "test_q5_span_max",
+                  "test_q9_len_vecs",
+                  "test_q10_rerun_flow",
+                  "test_q11_twice_same",
+                  "test_q18_reg_first",
+                  "test_q19_premature",
+                  "test_q20_cli_seq"
+                ]
+              }
+            ],
+            "no_single_location_flips_majority": true,
+            "concentration_cap": 0.5
+          },
+          "decoy_manifest": [
+            {
+              "path": "environment/w2k/src/stub_help.rs",
+              "kind": "helper",
+              "rhymes_with": "fn_w2",
+              "non_fix_purpose": "Logs weak-edge candidates for diagnostics without canonical fold output"
+            },
+            {
+              "path": "environment/p3n/src/lane_help.rs",
+              "kind": "helper",
+              "rhymes_with": "fn_p3",
+              "non_fix_purpose": "Pretty-prints path dependency tables without normalizing feature edges"
+            },
+            {
+              "path": "environment/engine/probe_g4.rs",
+              "kind": "module",
+              "rhymes_with": "fn_h5",
+              "non_fix_purpose": "Health/status subcommand emitting settled labels before order permutations finish"
+            }
+          ],
+          "code_forbidden_tokens": [
+            "feature",
+            "unification",
+            "order",
+            "workspace",
+            "member",
+            "dependency",
+            "resolver",
+            "shared",
+            "path",
+            "matrix",
+            "mirror",
+            "pairs",
+            "coherent",
+            "facet",
+            "digest",
+            "sync",
+            "permutation",
+            "audit",
+            "driver",
+            "offline",
+            "locked",
+            "metadata",
+            "sidecar",
+            "binding",
+            "fingerprint",
+            "sequence",
+            "trigger",
+            "obligation",
+            "contract",
+            "independence",
+            "permute",
+            "settled",
+            "generalization",
+            "scenario",
+            "alpha",
+            "beta",
+            "gamma",
+            "echo",
+            "lag",
+            "closure",
+            "counter",
+            "hexadecimal",
+            "regenerating",
+            "manifests",
+            "emitted",
+            "refreshed",
+            "captured",
+            "agreement",
+            "identical",
+            "unified",
+            "consistently",
+            "regardless",
+            "primary",
+            "twin",
+            "targets",
+            "shapes",
+            "summary",
+            "rows",
+            "documented",
+            "cross-artifact",
+            "dep-info",
+            "tokens",
+            "workflow",
+            "reduction",
+            "survives",
+            "first-build",
+            "sidecars",
+            "fingerprints",
+            "perm_order"
+          ]
+        },
+        "naming_pass": {
+          "instruction_nouns_extracted": [
+            "feature",
+            "unification",
+            "order",
+            "workspace",
+            "member",
+            "dependency",
+            "resolver",
+            "shared",
+            "path",
+            "matrix",
+            "mirror",
+            "pairs",
+            "coherent",
+            "facet",
+            "digest",
+            "sync",
+            "permutation",
+            "audit",
+            "driver",
+            "offline",
+            "locked",
+            "metadata",
+            "sidecar",
+            "binding",
+            "fingerprint",
+            "sequence",
+            "trigger",
+            "obligation",
+            "contract",
+            "independence",
+            "permute",
+            "settled",
+            "generalization",
+            "scenario",
+            "alpha",
+            "beta",
+            "gamma",
+            "echo",
+            "lag",
+            "closure",
+            "counter",
+            "hexadecimal",
+            "regenerating",
+            "manifests",
+            "emitted",
+            "refreshed",
+            "captured",
+            "agreement",
+            "identical",
+            "unified",
+            "consistently",
+            "regardless",
+            "primary",
+            "twin",
+            "targets",
+            "shapes",
+            "summary",
+            "rows",
+            "documented",
+            "cross-artifact",
+            "dep-info",
+            "tokens",
+            "workflow",
+            "reduction",
+            "survives",
+            "first-build",
+            "sidecars",
+            "fingerprints",
+            "perm_order"
+          ],
+          "renames_during_drafting": [
+            {
+              "original": "test_q2_pair_hex",
+              "renamed_to": "test_q2_hex_agree",
+              "reason": "pair is an instruction noun substring"
+            },
+            {
+              "original": "test_q4_label_text",
+              "renamed_to": "test_q4_lbl_set",
+              "reason": "label appears in sync_label contract prose"
+            },
+            {
+              "original": "test_q16_all_extras",
+              "renamed_to": "test_q16_all_perms",
+              "reason": "avoid perm_order/generalization stem overlap in test identifier"
+            }
+          ],
+          "test_names_audited": [
+            "test_q1_shape_vecs",
+            "test_q2_hex_agree",
+            "test_q3_rc_all",
+            "test_q4_lbl_set",
+            "test_q5_span_max",
+            "test_q6_dig_reduce",
+            "test_q7_anchor_hex",
+            "test_q8_hex_lower",
+            "test_q9_len_vecs",
+            "test_q10_rerun_flow",
+            "test_q11_twice_same",
+            "test_q12_sens_mut",
+            "test_q13_flip_w2",
+            "test_q14_flip_both",
+            "test_q15_flip_p3",
+            "test_q16_all_perms",
+            "test_q17_flip_c8",
+            "test_q18_reg_first",
+            "test_q19_premature",
+            "test_q20_cli_seq"
+          ],
+          "concentration_math": {
+            "total_tests": 20,
+            "per_location": [
+              {
+                "location_id": "A",
+                "test_count": 3,
+                "ratio": 0.15
+              },
+              {
+                "location_id": "B",
+                "test_count": 3,
+                "ratio": 0.15
+              },
+              {
+                "location_id": "C",
+                "test_count": 4,
+                "ratio": 0.2
+              },
+              {
+                "location_id": "D",
+                "test_count": 10,
+                "ratio": 0.5
+              }
+            ]
+          },
+          "recomputed_concentration": {
+            "total_tests": 20,
+            "concentration_cap": 0.5,
+            "per_location": [
+              {
+                "location_id": "A",
+                "test_count": 3,
+                "ratio": 0.15
+              },
+              {
+                "location_id": "B",
+                "test_count": 3,
+                "ratio": 0.15
+              },
+              {
+                "location_id": "C",
+                "test_count": 4,
+                "ratio": 0.2
+              },
+              {
+                "location_id": "D",
+                "test_count": 10,
+                "ratio": 0.5
+              }
+            ]
+          }
+        },
+        "difficulty_mechanism_plan": [
+          {
+            "mechanism": "deceptive_but_valid_local_evidence",
+            "placement": "environment/engine/probe_g4.rs health/status subcommand",
+            "why_model_misses_it": "models trust settled sync_label from fm_run probe while durable dep-info sidecars and mirror pairs still disagree under permuted first-build order",
+            "fairness_guardrail": "instruction names cross-check against metadata sidecars; test_q19_premature requires terminal convergence with matching matrix_digest"
+          },
+          {
+            "mechanism": "false_green_intermediate_states",
+            "placement": "environment/c8r/src/byte_help.rs intermediate row material before dep-info commit",
+            "why_model_misses_it": "models declare report complete when JSON rows look well-formed but dep-info tokens still diverge",
+            "fairness_guardrail": "verifier requires terminal pipeline rerun and test_q10_rerun_flow overwrites hand-written JSON"
+          },
+          {
+            "mechanism": "cross_file_cross_format_invariants",
+            "placement": "environment/c8r/src/fold_mux.rs tying JSON facet_hex to /app/output/meta/*.dep-info bytes",
+            "why_model_misses_it": "models fix JSON emitters without reconciling rustc metadata sidecar feature tokens",
+            "fairness_guardrail": "instruction states cross-artifact binding obligation; tests recompute digests from visible formula home"
+          },
+          {
+            "mechanism": "rollback_recovery_requirements",
+            "placement": "environment/engine/orch_v2.rs destructive clean step before perm_order replay",
+            "why_model_misses_it": "models repeat destructive cargo clean without idempotent journal reconstruction, passing happy-path only",
+            "fairness_guardrail": "formal_rules.md documents idempotent recovery rerun; perm_order drills require same terminal matrix_digest after recovery"
+          },
+          {
+            "mechanism": "stateful_multi_step_dependencies",
+            "placement": "environment/h5k/src/order_drv.rs permuted first-build sequences across members a1/b2/g3",
+            "why_model_misses_it": "models stop after first member builds green without finishing full order permutation closure required for build/CI failure recovery under varying cache warm states",
+            "fairness_guardrail": "operator_cmds lists required argv sequence; each order seed appends trace rows verified by test_q20_cli_seq"
+          }
+        ],
+        "calibration_plan": {
+          "oracle_runs": 3,
+          "no_op_runs": 3,
+          "target_agent_runs": 5,
+          "comparator_agent_runs": 5,
+          "human_sanity": "expert Rust build engineer reproduces incoherent feature_matrix_report under stock scaffold, applies coordinated four-module fix, reruns fm_run offline across perm_order seeds to settled convergence",
+          "shortcut_audit": "block hardcoded feature_matrix_report.json, test edits, stale-doc-only changes, single-member default-features tweak, wrapper-only probe_g4 patch",
+          "ablation_plan": "remove deceptive probe layer, then weak fold, then path-edge normalization, then order driver\u2014each ablation should drop pass rate materially",
+          "pass_rate_target": {
+            "hard_max_pct": 20,
+            "too_easy_threshold_pct": 80,
+            "basis": "aligns with Part E Hard/Medium/Easy thresholds on worst-model accuracy; verifier-offline: pytest and cargo baked in Dockerfile with tests/test.sh using no runtime apt/pip/curl; post-upload difficulty classification runs only after successful agent+verifier cycles per PLATFORM_AUTO_EVAL.md"
+          }
+        },
+        "verifier_scoring_plan": {
+          "metrics": [
+            {
+              "metric": "functional_correctness",
+              "weight": 0.45,
+              "criterion": "perm_order permutations, mirror pair equality, and locked rebuild success"
+            },
+            {
+              "metric": "hidden_invariants",
+              "weight": 0.25,
+              "criterion": "dep-info sidecar byte agreement and weak-vs-strong fold closure not fully spelled in instruction prose"
+            },
+            {
+              "metric": "state_hygiene",
+              "weight": 0.15,
+              "criterion": "idempotent recovery after destructive clean drills; no stale meta sidecars"
+            },
+            {
+              "metric": "interface_correctness",
+              "weight": 0.1,
+              "criterion": "operator_cmds argv sequence and fm_run CLI phases"
+            },
+            {
+              "metric": "deliverable_completeness",
+              "weight": 0.05,
+              "criterion": "feature_matrix_report.json, run_traces, and meta sidecars present after pipeline"
+            }
+          ],
+          "overall_threshold": 0.999,
+          "reward_output": "reward.txt",
+          "binary_threshold_rule": "reward 1 only when all weighted metrics pass; any ablation flip or pipeline trap failure yields 0"
+        },
+        "subtype_milestone_plan": {
+          "subcategories": [],
+          "milestone_count": 0,
+          "sequential_dependency": "none",
+          "local_only_data": true,
+          "sidecar_or_protocol_notes": "single-container local verifier only; offline Cargo with pinned registry fixtures under environment/data/fix_stash if needed"
+        },
+        "platform_files": [
+          {
+            "path": "task.toml",
+            "role": "metadata; must set [environment] allow_internet = false"
+          },
+          {
+            "path": "instruction.md",
+            "role": "natural public design-brief prompt"
+          },
+          {
+            "path": "output_contract.toml",
+            "role": "local output declaration"
+          },
+          {
+            "path": "tests/test.sh",
+            "role": "verifier entrypoint; pre-installed tools only"
+          },
+          {
+            "path": "tests/test_outputs.py",
+            "role": "domain verifier with ablation and permutation traps"
+          },
+          {
+            "path": "solution/solve.sh",
+            "role": "oracle applying coordinated multi-module fix"
+          },
+          {
+            "path": "environment/Dockerfile",
+            "role": "pinned rustc/cargo/pytest/tmux/asciinema; offline deps baked in"
+          },
+          {
+            "path": "construction_manifest.json",
+            "role": "local authoring artifact mirroring Construction manifest"
+          }
+        ],
+        "task_files": [
+          {
+            "path": "environment/w2k/src/weak_mux.rs",
+            "role": "oracle frontier A \u2014 weak dependency feature fold"
+          },
+          {
+            "path": "environment/w2k/src/stub_help.rs",
+            "role": "decoy weak-edge logger (non-fix)"
+          },
+          {
+            "path": "environment/p3n/src/edge_mux.rs",
+            "role": "oracle frontier B \u2014 path dependency edge normalization"
+          },
+          {
+            "path": "environment/p3n/src/lane_help.rs",
+            "role": "decoy path table pretty-printer (non-fix)"
+          },
+          {
+            "path": "environment/c8r/src/fold_mux.rs",
+            "role": "oracle frontier C \u2014 JSON row vs dep-info sidecar bridge"
+          },
+          {
+            "path": "environment/c8r/src/byte_help.rs",
+            "role": "decoy byte scan helper (non-fix)"
+          },
+          {
+            "path": "environment/h5k/src/order_drv.rs",
+            "role": "oracle frontier D \u2014 first-build order permutation driver"
+          },
+          {
+            "path": "environment/h5k/src/main.rs",
+            "role": "fm_run entry and matrix_digest reduction header"
+          },
+          {
+            "path": "environment/h5k/Cargo.toml",
+            "role": "driver crate manifest"
+          },
+          {
+            "path": "environment/engine/orch_v2.rs",
+            "role": "multi-phase fm_run orchestration"
+          },
+          {
+            "path": "environment/engine/resolver_tbl.rs",
+            "role": "workspace resolver metadata table reader"
+          },
+          {
+            "path": "environment/engine/probe_g4.rs",
+            "role": "false-green health/status subcommand surface"
+          },
+          {
+            "path": "environment/members/a1/Cargo.toml",
+            "role": "primary member alpha manifest"
+          },
+          {
+            "path": "environment/members/a1/src/lib.rs",
+            "role": "alpha library surface"
+          },
+          {
+            "path": "environment/members/b2/Cargo.toml",
+            "role": "member beta with default-features disabled"
+          },
+          {
+            "path": "environment/members/b2/src/lib.rs",
+            "role": "beta library surface"
+          },
+          {
+            "path": "environment/members/g3/Cargo.toml",
+            "role": "gamma echo member manifest"
+          },
+          {
+            "path": "environment/members/g3/src/lib.rs",
+            "role": "gamma library surface"
+          },
+          {
+            "path": "environment/shared/s4/Cargo.toml",
+            "role": "shared path dependency with feature table"
+          },
+          {
+            "path": "environment/shared/s4/src/lib.rs",
+            "role": "shared crate feature gates"
+          },
+          {
+            "path": "environment/docs/formal_rules.md",
+            "role": "formal properties, schema, build commands"
+          },
+          {
+            "path": "environment/docs/tgt_ids.txt",
+            "role": "primary target id table"
+          },
+          {
+            "path": "environment/docs/operator_cmds.txt",
+            "role": "locked cargo/fm_run argv patterns"
+          },
+          {
+            "path": "environment/data/perm_order.toml",
+            "role": "held-out first-build permutation scenarios"
+          },
+          {
+            "path": "environment/data/edge_seed.toml",
+            "role": "weak and strong edge seed rows"
+          },
+          {
+            "path": "environment/data/ladder.toml",
+            "role": "feature ladder weights for sensitivity drills"
+          },
+          {
+            "path": "environment/schemas/row_v4.schema.json",
+            "role": "feature_matrix_report row shape"
+          },
+          {
+            "path": "environment/Cargo.toml",
+            "role": "workspace root with resolver metadata"
+          },
+          {
+            "path": "environment/Cargo.lock",
+            "role": "locked dependency graph"
+          }
+        ],
+        "fix_frontier": {
+          "count": 4,
+          "distribution": "environment/w2k/src/weak_mux.rs, environment/p3n/src/edge_mux.rs, environment/c8r/src/fold_mux.rs, environment/h5k/src/order_drv.rs across w2k, p3n, c8r, h5k roots",
+          "naming_policy": "Opaque identifiers fn_w2, fn_p3, fn_c8, fn_h5 on neutral parameter names; no instruction nouns on fix path",
+          "forbidden_stems": [
+            "feature",
+            "unification",
+            "order",
+            "workspace",
+            "member",
+            "dependency",
+            "resolver",
+            "shared",
+            "path",
+            "matrix",
+            "mirror",
+            "pairs",
+            "coherent",
+            "facet",
+            "digest",
+            "sync",
+            "permutation",
+            "audit",
+            "driver",
+            "offline",
+            "locked",
+            "metadata",
+            "sidecar",
+            "binding",
+            "fingerprint",
+            "sequence",
+            "trigger",
+            "obligation",
+            "contract",
+            "independence",
+            "permute",
+            "settled",
+            "generalization",
+            "scenario",
+            "alpha",
+            "beta",
+            "gamma",
+            "echo",
+            "lag",
+            "closure",
+            "counter",
+            "hexadecimal",
+            "regenerating",
+            "manifests",
+            "emitted",
+            "refreshed",
+            "captured",
+            "agreement",
+            "identical",
+            "unified",
+            "consistently",
+            "regardless",
+            "primary",
+            "twin",
+            "targets",
+            "shapes",
+            "summary",
+            "rows",
+            "documented",
+            "cross-artifact",
+            "dep-info",
+            "tokens",
+            "workflow",
+            "reduction",
+            "survives",
+            "first-build",
+            "sidecars",
+            "fingerprints",
+            "perm_order",
+            "fm_run",
+            "feature_matrix_report",
+            "matrix_digest",
+            "sync_label",
+            "facet_hex",
+            "feat_rc",
+            "dep_rc",
+            "ord_rc",
+            "tgt_ids",
+            "operator_cmds",
+            "formal_rules",
+            "perm_order",
+            "run_traces"
+          ],
+          "helpers_policy": "Decoys in w2k, p3n, c8r perform credible adjacent diagnostics; frontier stays thin at four symbols with engine/resolver orchestration separate",
+          "symbol_thin_preferred": true
+        },
+        "contract_surface": {
+          "boolean_fields_max": 0,
+          "direct_boolean_assertions_max": 12,
+          "preferred_assertion_styles": [
+            "regenerated JSON rows",
+            "integer rc counters",
+            "derived matrix_digest",
+            "mirror echo equality",
+            "perm_order traps",
+            "ablation incoherence",
+            "pipeline overwrite",
+            "dep-info byte cross-check"
+          ],
+          "forbidden_assertion_styles": [
+            "scenario-key expected tables in instruction.md",
+            "static golden feature_matrix_report under tests/",
+            "readiness fields named *_ok in instruction prose tied 1:1 to fix-path grep"
+          ]
+        },
+        "task_shape": {
+          "type": "constrained_build",
+          "instruction_framing": "design-brief",
+          "hardness_source": "design search across coupled Cargo workspace feature resolution under permuted first-build order",
+          "collapse_risk": "blank-canvas build with no binding cross-component constraints"
+        },
+        "category_profile": {
+          "challenge_family": "cargo workspace feature resolution",
+          "profile_name": "build_dependency_toolchain",
+          "allowed_instruction_disclosures": "locked offline Cargo commands, feature_matrix_report artifact identity, platform matrix via perm_order generalization, mirror pair coherence predicates, operator_cmds argv, formal_rules schema, digest formula home in main.rs header",
+          "forbidden_instruction_leaks": "weak-vs-strong fold site, path-edge leak location, workspace resolver override wiring, patch functions, per-scenario facet answers, canonical recovery sequence",
+          "category_specific_hardness_bar": "Lockfile, workspace manifests, shared path-dep feature table, order driver, dep-info sidecars, and cache-visible probes must coordinate; one version bump or one manifest row cannot pass ablation and perm_order suites",
+          "category_specific_verifier_risks": "pin-one-dep fix, clean-build-only pass, static JSON satisfying format without rebuild, false-green health subcommand without durable sidecar convergence",
+          "coverage_role": "Strengthens build_dependency_toolchain coverage via cargo workspace feature unification order constrained-build topology"
+        },
+        "satisfiability_risk": {
+          "rc2_planned_name_risk": "low \u2014 opaque crate roots h5k/p3n/w2k/c8r and neutral fn_* symbols committed",
+          "gx9_contract_risk": "low \u2014 tests derive verdicts from matrix_digest recompute and mirror equality, not per-target answer tables in instruction",
+          "cr1_symbol_frontier_risk": "low \u2014 four substantive Rust modules plus explicit flipping-point contract",
+          "hidden_contract_risk": "medium \u2014 cross-artifact dep-info invariants live in runtime sidecars; instruction states binding obligation without byte-level recipe"
+        },
+        "actionability_plan": {
+          "verifier_command_visible": "locked cargo build/test workflow and /app/bin/fm_run documented in operator_cmds.txt and formal_rules.md",
+          "source_fix_intent_visible": "yes \u2014 complete sources under /app/environment without naming modules",
+          "generated_output_rule_visible": "/app/output/feature_matrix_report.json, /app/output/run_traces/, /app/output/meta/ sidecars; regeneration required",
+          "exact_formula_home": "module comment above environment/h5k/src/main.rs for matrix_digest and span_band reduction",
+          "schema_home": "environment/schemas/row_v4.schema.json plus formal_rules.md"
+        },
+        "waiver_plan": {
+          "waivers_expected": false,
+          "waiver_rationale": "Hardness from coupled Cargo feature-graph behavior and observation-shaped contracts; deterministic offline rebuilds avoid harness brittleness waivers"
+        },
+        "reference_pattern": {
+          "justification_if_none": "No promoted entry in docs/reference_tasks/index.json matches cargo workspace feature unification under resolver-2 weak-dep semantics with permuted first-build order. Incremental-build and hermetic-sandbox molds share verifier trap patterns but differ in topology (feature matrix vs provenance audit vs sandbox phases); this spec commits a distinct four-root Rust/Cargo workspace design without cloning a reference task file tree."
+        },
+        "realism_source": {
+          "source_type": "real_system",
+          "evidence_basis": "open-source issue",
+          "upstream_or_synthetic_rationale": "Minimized from production Cargo/Rust workspace resolver-2 discussions where weak dependency features, default-features=false members, and workspace-level resolver settings yield order-dependent unified feature sets (rust-lang/cargo feature resolver threads)",
+          "minimization_preserves": "Weak-vs-strong unification split, path-dep feature leak despite default-features disable, workspace-root resolver precedence over member tables, false-green cargo check-style probes, cross-format JSON vs dep-info invariants",
+          "synthetic_exception_review": "not required"
+        }
+      },
+      "evidence_errors": [],
+      "evidence_warnings": [],
+      "blocking_failures": [],
+      "strict": true
+    }
+  ],
+  "schema_path": "specs/validation_schema.json",
+  "emit_legacy_reviewer": false
+}

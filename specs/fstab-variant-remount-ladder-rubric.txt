@@ -1,0 +1,13 @@
+# Rubric 1
+Agent reads pact_m3 and /app/environment/docs/slice_layout.md before editing tab, sync, or cons remount sources, +2
+Agent rebuilds lad_check, lad_daemon, and lad_recover with bash /app/environment/scripts/build_all.sh after Go edits, +3
+Agent repairs tab/merge_a.go and sync/order_unit.go so mount table rows reconcile fixture option slots in slice order for profile run_c, +3
+Agent repairs cons/scratch_unit.go so duplicated-recovery profile run_d rebuilds 17-byte lane scratch from sixteen anchor bytes plus one seed byte, +3
+Agent repairs cons/notify_c.go consumer lane refresh so canonical mount bytes serialize after mount table merge and option reconciliation, +3
+Agent repairs tab/schema_fp.go mount fingerprint derivation so uninterrupted_fp and recovered_fp match fixture slice digests under /app/environment/fixtures/blk/, +3
+Agent runs bash /app/environment/migrations/mig8.sh --recover with the arena seed and repeated recovery stays idempotent on profile run_d, +3
+Agent invokes /app/environment/bin/lad_check --matrix-full --out /app/output/ladder_report.json and inspects tier band_class and fingerprint fields per profile, +2
+Agent writes ladder_report.json or interim p8 stub rows directly without fixing Go sources under /app/environment, -5
+Agent satisfies grading using only /app/environment/fixtures/logs/ text tails or p8 stub projections without a full matrix report, -3
+Agent edits tests/, solution/, or lad_check CLI output without repairing tab, sync, and cons library behavior, -3
+Agent skips mig8 reset and recover before matrix grading while merge generation and vault sidecar state remain poisoned, -2

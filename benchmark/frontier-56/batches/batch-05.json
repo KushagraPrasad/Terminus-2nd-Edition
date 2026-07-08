@@ -1,0 +1,53 @@
+{
+  "batch": 5,
+  "tasks": [
+    {
+      "registry_id": "checkpoint-resume-optimizer-state",
+      "task_dir": "checkpoint-bridge",
+      "spec_stem": "checkpoint-resume-optimizer-state",
+      "linked": true
+    },
+    {
+      "registry_id": "ood-detection-variant-ladder",
+      "task_dir": "ood-detection-variant-ladder",
+      "spec_stem": "ood-detection-variant-ladder",
+      "linked": true
+    },
+    {
+      "registry_id": "mixed-precision-replay-ladder",
+      "task_dir": "mixed-precision-replay-ladder",
+      "spec_stem": "mixed-precision-replay-ladder",
+      "linked": true
+    },
+    {
+      "registry_id": "sampler-shard-divergence-repair",
+      "task_dir": "sampler-shard-divergence-repair",
+      "spec_stem": "sampler-shard-divergence-repair",
+      "linked": true
+    },
+    {
+      "registry_id": "fft-resume-corruption",
+      "task_dir": "cascade-compaction",
+      "spec_stem": "fft-resume-corruption",
+      "linked": true
+    },
+    {
+      "registry_id": "symplectic-integrator-energy-drift",
+      "task_dir": null,
+      "spec_stem": "stream-window-aggregate-drift",
+      "linked": false
+    },
+    {
+      "registry_id": "interval-arithmetic-proof-contract",
+      "task_dir": null,
+      "spec_stem": "differentiable-pipeline-invariant-proof",
+      "linked": false
+    },
+    {
+      "registry_id": "monte-carlo-stratified-overlap",
+      "task_dir": null,
+      "spec_stem": null,
+      "linked": false
+    }
+  ]
+}

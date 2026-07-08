@@ -1,0 +1,53 @@
+{
+  "batch": 6,
+  "tasks": [
+    {
+      "registry_id": "mac-policy-boolean-precedence",
+      "task_dir": null,
+      "spec_stem": "cross-runtime-float-policy-drift-016",
+      "linked": false
+    },
+    {
+      "registry_id": "supply-chain-sig-chain-gap",
+      "task_dir": null,
+      "spec_stem": null,
+      "linked": false
+    },
+    {
+      "registry_id": "privilege-graph-acyclic-proof",
+      "task_dir": null,
+      "spec_stem": "differentiable-pipeline-invariant-proof",
+      "linked": false
+    },
+    {
+      "registry_id": "revocation-cache-authority-split",
+      "task_dir": "path-authority-split",
+      "spec_stem": "revocation-cache-authority-split-012",
+      "linked": true
+    },
+    {
+      "registry_id": "minimal-http-router-under-size-cap",
+      "task_dir": null,
+      "spec_stem": "minimal-http-router-under-size-cap",
+      "linked": false
+    },
+    {
+      "registry_id": "typestate-protocol-proof",
+      "task_dir": null,
+      "spec_stem": "typestate-protocol-proof",
+      "linked": false
+    },
+    {
+      "registry_id": "wire-protocol-from-pcap-inference",
+      "task_dir": "wire-protocol-from-pcap-inference",
+      "spec_stem": "wire-protocol-from-pcap-inference",
+      "linked": true
+    },
+    {
+      "registry_id": "async-fault-injection-ladder",
+      "task_dir": "async-fault-injection-ladder",
+      "spec_stem": "async-fault-injection-ladder",
+      "linked": true
+    }
+  ]
+}

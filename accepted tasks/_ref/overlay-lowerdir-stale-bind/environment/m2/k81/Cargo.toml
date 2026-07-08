@@ -1,0 +1,17 @@
+[package]
+name = "rm12"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[[bin]]
+name = "mk"
+path = "src/main.rs"
+
+[dependencies]
+layer_core = { path = "../../p7/layer_core" }
+yb44 = { path = "../../p7/y4" }
+yc55 = { path = "../../p7/y5" }
+yd66 = { path = "../../p7/y6" }
+serde = { version = "=1.0.228", features = ["derive"] }
+serde_json = "=1.0.149"

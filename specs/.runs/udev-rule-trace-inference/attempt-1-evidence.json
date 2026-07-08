@@ -1,0 +1,1033 @@
+{
+  "hardness_axes": [
+    {
+      "id": "discover",
+      "name": "Discover",
+      "verdict": "PASS",
+      "reasoning": "Solver must infer ENV-before-ATTR matching order, systemd-style link rank precedence, and inotify flush-before-reload semantics from cold-plug trace bytes, partial excerpts, and health subcommand output without a patch recipe."
+    },
+    {
+      "id": "synthesize",
+      "name": "Synthesize",
+      "verdict": "PASS",
+      "reasoning": "Matcher token resolution, linker rank emission, reload watch gating, collector row bytes, and checker digests must align across four device scopes and two priority bands."
+    },
+    {
+      "id": "diagnose_or_design",
+      "name": "Diagnose or Design/Search",
+      "verdict": "PASS",
+      "reasoning": "Reverse-engineering behavioral target: public rule_replay_verify outcomes and trace_digest formula are complete while internal precedence tables and watch ordering remain to be inferred from artifacts."
+    },
+    {
+      "id": "navigate_coupling",
+      "name": "Navigate coupling",
+      "verdict": "PASS",
+      "reasoning": "Patching only matcher logic passes excerpt-level health checks but fails cross-format trace_digest; linker-only fixes clear one band yet break priority_high scenarios; reload-only edits leave stale watch state poisoning gamma/delta after reset."
+    },
+    {
+      "id": "reason_beyond_training",
+      "name": "Reason beyond training",
+      "verdict": "PASS",
+      "reasoning": "Requires udev/systemd-style policy precedence reasoning (ENV vs ATTR, link rank vs symlink target, inotify ordering) beyond generic config-file editing recipes."
+    }
+  ],
+  "anti_trivialization_checks": [
+    {
+      "id": "disclosure_collapse",
+      "name": "Disclosure-collapse",
+      "verdict": "PASS",
+      "reasoning": "After disclosing rule_replay_verify command, policy_witness schema, trace_digest rule, and scope/band matrix, solver still must infer precedence surfaces and watch coupling from Python sources and binary fixtures."
+    },
+    {
+      "id": "hidden_instance",
+      "name": "Hidden-instance",
+      "verdict": "PASS",
+      "reasoning": "Hardness is not picking one broken rule file among hundreds; multiple matcher/linker/reload paths look plausible until cross-band digest and post-reset bands disambiguate."
+    },
+    {
+      "id": "single_artifact_repair",
+      "name": "Single-artifact repair",
+      "verdict": "PASS",
+      "reasoning": "No single rules fragment or JSON manifest satisfies digest, band precedence, and reset-repeat tests together."
+    },
+    {
+      "id": "generalization",
+      "name": "Generalization",
+      "verdict": "PASS",
+      "reasoning": "Four named device scopes and two priority bands prevent one-off constant patching."
+    },
+    {
+      "id": "prompt_honesty",
+      "name": "Prompt-honesty",
+      "verdict": "PASS",
+      "reasoning": "Honest behavioral prompt does not name resolve_row_a, emit_plan_b, or ensure_gate_c; residual work stays in Python sources."
+    },
+    {
+      "id": "cheating_vs_difficulty",
+      "name": "Cheating-vs-difficulty",
+      "verdict": "PASS",
+      "reasoning": "Anti-cheat blocks static policy_witness writes and test edits; legitimate difficulty is policy precedence inference plus coupling."
+    },
+    {
+      "id": "mechanical_fix_filter",
+      "name": "Mechanical-fix filter",
+      "verdict": "PASS",
+      "reasoning": "Not a deps/timeout/reward-footer task; core challenge is reproducible effective-policy traces across reload and replay."
+    },
+    {
+      "id": "localized_fix",
+      "name": "Localized-fix",
+      "verdict": "PASS",
+      "reasoning": "Flipping-point contract spans matcher, linker, and reload package roots with balanced test subsets."
+    },
+    {
+      "id": "oracle_locality",
+      "name": "Oracle-locality",
+      "verdict": "PASS",
+      "reasoning": "Oracle coordinates three opaque Python symbols plus lab rebuild, not one-file overwrite."
+    },
+    {
+      "id": "small_declarative_cluster",
+      "name": "Small declarative-cluster",
+      "verdict": "PASS",
+      "reasoning": "Solve requires Python logic across matching order, link rank, and watch gate\u2014not one TOML precedence table."
+    },
+    {
+      "id": "grep_collapse",
+      "name": "Grep-collapse",
+      "verdict": "PASS",
+      "reasoning": "Instruction nouns are banned on fix-path symbols; decoys rhyme structurally without sharing names."
+    },
+    {
+      "id": "pre_factored_helper",
+      "name": "Pre-factored-helper",
+      "verdict": "PASS",
+      "reasoning": "No validate_rule/infer_udev helpers mirroring prompt bullets on the fix path."
+    },
+    {
+      "id": "recipe_discount",
+      "name": "Recipe-discount",
+      "verdict": "PASS",
+      "reasoning": "Not a textbook JSON-schema or HMAC verification implementation task."
+    },
+    {
+      "id": "security_aura_discount",
+      "name": "Security-aura discount",
+      "verdict": "PASS",
+      "reasoning": "Sysadmin flavor alone does not carry difficulty; cross-artifact policy precedence invariants do."
+    },
+    {
+      "id": "orthogonal_checklist",
+      "name": "Orthogonal-checklist",
+      "verdict": "PASS",
+      "reasoning": "Matching order, link rank, watch flush, and reset-phase side effects trade off\u2014cannot satisfy one test in isolation without breaking another."
+    },
+    {
+      "id": "harness_discount",
+      "name": "Harness-discount",
+      "verdict": "PASS",
+      "reasoning": "Dockerized Python lab is realism, not the hardness source."
+    },
+    {
+      "id": "one_pass_solvability",
+      "name": "One-pass solvability",
+      "verdict": "PASS",
+      "reasoning": "Requires experiments across partial excerpts, priority bands, and repeat reset\u2014not one obvious edit."
+    },
+    {
+      "id": "hard_only_gate",
+      "name": "Hard-only gate",
+      "verdict": "PASS",
+      "reasoning": "Designed for hard metadata with expected low platform pass rate after disclosure."
+    },
+    {
+      "id": "discovery_budget_test",
+      "name": "Discovery/design budget test",
+      "verdict": "PASS",
+      "reasoning": "Four discovery_budget items name latent ENV/ATTR order, link rank precedence, watch-before-reload gate, and reset-phase store mutation with planned locations."
+    },
+    {
+      "id": "instruction_specificity_test",
+      "name": "Instruction specificity test",
+      "verdict": "PASS",
+      "reasoning": "behavioral-target framing gives complete public outcomes without naming fix-path symbols or construction recipe."
+    },
+    {
+      "id": "topology_distribution_test",
+      "name": "Topology distribution test",
+      "verdict": "PASS",
+      "reasoning": "Three topology_enumeration entries each coordinate matcher, linker, reload, profiles, fixtures, and checker digests with no single-location sufficiency."
+    }
+  ],
+  "rubric_axes": [
+    {
+      "id": "verifiable",
+      "name": "Verifiable",
+      "verdict": "PASS",
+      "reasoning": "Deterministic rule_replay_verify CLI with fixed seeds, pytest assertions on digests and row invariants, no subjective grading."
+    },
+    {
+      "id": "well_specified",
+      "name": "Well-specified",
+      "verdict": "PASS",
+      "reasoning": "Public contract in replay_contract.md and instruction prose defines commands, schemas, scope/band matrix, and recovery without oracle transcript."
+    },
+    {
+      "id": "solvable",
+      "name": "Solvable",
+      "verdict": "PASS",
+      "reasoning": "Expert sysadmin with udev/systemd experience can solve in a few hours; oracle stays under 100k LOC."
+    },
+    {
+      "id": "difficult",
+      "name": "Difficult",
+      "verdict": "PASS",
+      "reasoning": "Requires professional experience inferring effective device policy from cold-plug traces and cross-format replay evidence."
+    },
+    {
+      "id": "interesting",
+      "name": "Interesting",
+      "verdict": "PASS",
+      "reasoning": "Mirrors real fleet incidents where udev rule packs drift across reload cycles and symlink targets disagree with systemd link priority."
+    },
+    {
+      "id": "outcome_verified",
+      "name": "Outcome-verified",
+      "verdict": "PASS",
+      "reasoning": "Grades terminal policy_witness.json and checker exit codes, not process narration or tool choice."
+    }
+  ],
+  "instruction_completeness_test": {
+    "verdict": "PASS",
+    "reasoning": "Instruction alone cannot derive ENV/ATTR order, link rank precedence, watch flush semantics, or reset-phase store coupling; solver must read Python sources, binary trace bytes, and run rule_replay_verify experiments."
+  },
+  "discovery_budget": [
+    {
+      "discovery": "Cold-plug matcher evaluates ATTR tokens before ENV keys while graded replay bytes expect ENV-first precedence for priority_high band batches",
+      "planned_location": "environment/py_src/urli/matcher/env_lane.py",
+      "why_instruction_must_not_reveal": "Would collapse reverse-engineering to editing one matching helper instead of inferring order from divergent excerpts"
+    },
+    {
+      "discovery": "Linker emits symlink target paths while systemd-style link rank from priority band tables must override raw target selection",
+      "planned_location": "environment/py_src/urli/linker/priority_c.py",
+      "why_instruction_must_not_reveal": "Naming the broken rank phase would turn partial observability into a grep target"
+    },
+    {
+      "discovery": "Reload path applies rule files before draining pending inotify watch events, leaving stale effective policy after cold-plug sequences",
+      "planned_location": "environment/py_src/urli/reload/inotify_d.py",
+      "why_instruction_must_not_reveal": "Revealing watch ordering would reduce cross-artifact reconciliation to a one-knob transcription"
+    },
+    {
+      "discovery": "Repeat reset via migrations/reset_rules.sh mutates rule_store scratch used by later replay even when health subcommands report clean status",
+      "planned_location": "environment/migrations/reset_rules.sh and environment/py_src/urli/reload/rule_store.py",
+      "why_instruction_must_not_reveal": "Instruction documents reset command and symptoms only; exact store coupling is discovered by rerunning checker grid"
+    }
+  ],
+  "instruction_specificity": {
+    "level": "behavioral-target",
+    "reasoning": "Public rule_replay_verify grid, trace_digest formula, false-green stage tallies, and recovery command are complete; fix-path Python symbols and internal phase ordering remain open."
+  },
+  "attack_path": {
+    "summary": "Hand-write policy_witness.json from health subcommand counts or patch only matcher for alpha scope",
+    "reasoning": "Both shortcuts fail test_cross_format_byte_hash and band-b obligation tests because checker rebuilds canonical replay bytes from patched Python sources and compares digests independent of stage JSON."
+  },
+  "smallest_plausible_patch": {
+    "summary": "Coordinate ENV/ATTR matching order, link rank emission, and watch gate across three Python packages",
+    "reasoning": "Any single-package tweak leaves at least two test subsets failing: health-only fixes pass test_stub_totals_trap but fail cross-format digest; linker-only fixes pass dual-band smoke but fail reset-repeat guard after documented recovery."
+  },
+  "collapse_audit": {
+    "verdict": "PASS",
+    "reasoning": "Post-disclosure residual work requires inferring config policy precedence across matcher/linker/reload, not mapping one public formula to one obvious function.",
+    "residual_hardness": "After replay_contract.md exposes trace_digest and scope/band matrix, solver must still determine which precedence surface wins per band, how watch flush interacts with reload, and why health subcommands disagree with graded witness bytes.",
+    "red_flags": []
+  },
+  "topology_enumeration": [
+    {
+      "id": "T1",
+      "summary": "ENV-first matcher plus link-rank override plus watch-flush-before-reload",
+      "locations": [
+        "environment/py_src/urli/matcher/env_lane.py",
+        "environment/py_src/urli/linker/priority_c.py",
+        "environment/py_src/urli/reload/inotify_d.py",
+        "environment/profiles/priority_high.toml",
+        "environment/tools/rule_replay_verify/engine.py"
+      ],
+      "why_no_single_location_suffices": "Correct matcher alone fails priority_low band scenarios; linker-only fixes break alpha/gamma symlink rows; reload-only edits leave wrong token bytes upstream."
+    },
+    {
+      "id": "T2",
+      "summary": "ATTR-late matcher with rank-from-band-table after documented reset recovery",
+      "locations": [
+        "environment/py_src/urli/matcher/env_lane.py",
+        "environment/py_src/urli/reload/rule_store.py",
+        "environment/migrations/reset_rules.sh",
+        "environment/fixtures/bytes/gamma_part.bin",
+        "environment/tools/rule_replay_verify/main.py"
+      ],
+      "why_no_single_location_suffices": "Reset repeat poisons rule_store consumed by reload gate; excerpt-only inference misidentifies matching order without band table; checker driver needs all three Python roots rebuilt."
+    },
+    {
+      "id": "T3",
+      "summary": "Cross-format digest reconciliation from conflicting health and trace evidence surfaces",
+      "locations": [
+        "environment/py_src/urli/reload/inotify_d.py",
+        "environment/fixtures/interim/q3_stub.json",
+        "environment/docs/replay_contract.md",
+        "environment/scenarios/beta.json",
+        "environment/scenarios/delta.json"
+      ],
+      "why_no_single_location_suffices": "Interim stub satisfies health counts but not trace_digest; contract doc gives formula not precedence authority; scenarios impose distinct cold-plug shapes requiring coordinated matcher and linker semantics."
+    }
+  ],
+  "construction_manifest": {
+    "symbol_table": [
+      {
+        "path": "environment/py_src/urli/matcher/env_lane.py",
+        "symbol": "resolve_row_a",
+        "kind": "function",
+        "signature": "def resolve_row_a(row: TraceRow, catalog: SlotCatalog) -> SlotId:",
+        "purpose": "Maps cold-plug row to catalog slot using band-selected matching strategy"
+      },
+      {
+        "path": "environment/py_src/urli/linker/priority_c.py",
+        "symbol": "emit_plan_b",
+        "kind": "function",
+        "signature": "def emit_plan_b(spec: LinkSpec, target: SymlinkRef, site: RankSite) -> LinkPlan:",
+        "purpose": "Emits ranked link plan bytes respecting band-specific precedence"
+      },
+      {
+        "path": "environment/py_src/urli/reload/inotify_d.py",
+        "symbol": "ensure_gate_c",
+        "kind": "function",
+        "signature": "def ensure_gate_c(store: RuleStore, watch: WatchRef) -> GateState:",
+        "purpose": "Evaluates whether pending watch notifications must flush before rule reload"
+      }
+    ],
+    "flipping_point_contract": {
+      "locations": [
+        {
+          "id": "A",
+          "path": "environment/py_src/urli/matcher/env_lane.py",
+          "controls_tests": [
+            "test_cli_exit_all_pairs",
+            "test_cross_format_byte_hash",
+            "test_width_boundary_check"
+          ]
+        },
+        {
+          "id": "B",
+          "path": "environment/py_src/urli/linker/priority_c.py",
+          "controls_tests": [
+            "test_prio_b_obligations",
+            "test_prio_a_baseline"
+          ]
+        },
+        {
+          "id": "C",
+          "path": "environment/py_src/urli/reload/inotify_d.py",
+          "controls_tests": [
+            "test_semantic_gate_invariant",
+            "test_stub_totals_trap",
+            "test_cycle_repeatable_guard"
+          ]
+        }
+      ],
+      "no_single_location_flips_majority": true,
+      "concentration_cap": 0.5
+    },
+    "decoy_manifest": [
+      {
+        "path": "environment/py_src/urli/matcher/legacy_env.py",
+        "kind": "module",
+        "rhymes_with": "resolve_row_a",
+        "non_fix_purpose": "Deprecated ENV table used only by offline benchmarks"
+      },
+      {
+        "path": "environment/py_src/urli/linker/stub_link.py",
+        "kind": "helper",
+        "rhymes_with": "emit_plan_b",
+        "non_fix_purpose": "No-op link planner for simulator builds without rank bands"
+      },
+      {
+        "path": "environment/py_src/urli/collector/emit_rows.py",
+        "kind": "helper",
+        "rhymes_with": "ensure_gate_c",
+        "non_fix_purpose": "Formats replay rows without mutating watch or rank state"
+      }
+    ],
+    "code_forbidden_tokens": [
+      "cold-plug",
+      "traces",
+      "symlink",
+      "effective",
+      "reload",
+      "matching",
+      "behavior",
+      "partial",
+      "excerpts",
+      "fragments",
+      "replay",
+      "verifier",
+      "scope",
+      "witness",
+      "digest",
+      "canonical",
+      "bytes",
+      "observability",
+      "authoritative",
+      "stage",
+      "interim",
+      "counts",
+      "cross-check",
+      "graded",
+      "artifact",
+      "recovery",
+      "hardcoding",
+      "engine",
+      "convergence",
+      "precedence",
+      "inotify",
+      "systemd",
+      "plug",
+      "policy",
+      "device",
+      "configuration",
+      "event",
+      "targets",
+      "cycles",
+      "sources",
+      "fragment",
+      "modifications",
+      "priority",
+      "bands",
+      "alpha",
+      "beta",
+      "gamma",
+      "delta",
+      "health",
+      "status",
+      "subcommands",
+      "rules",
+      "harness",
+      "laboratory",
+      "coldplug",
+      "matcher",
+      "linker",
+      "watch",
+      "flush",
+      "rank",
+      "token",
+      "catalog",
+      "band",
+      "grid",
+      "reset",
+      "store",
+      "scratch",
+      "tallies",
+      "rows",
+      "build",
+      "python",
+      "sources",
+      "infer",
+      "missing",
+      "unstable",
+      "mismatched",
+      "converges",
+      "terminal",
+      "documented",
+      "idempotent",
+      "insufficient",
+      "engine",
+      "changes",
+      "edits",
+      "modifications"
+    ]
+  },
+  "naming_pass": {
+    "instruction_nouns_extracted": [
+      "cold-plug",
+      "traces",
+      "symlink",
+      "effective",
+      "reload",
+      "matching",
+      "behavior",
+      "partial",
+      "excerpts",
+      "fragments",
+      "replay",
+      "verifier",
+      "scope",
+      "witness",
+      "digest",
+      "canonical",
+      "bytes",
+      "observability",
+      "authoritative",
+      "stage",
+      "interim",
+      "counts",
+      "cross-check",
+      "graded",
+      "artifact",
+      "recovery",
+      "hardcoding",
+      "engine",
+      "convergence",
+      "precedence",
+      "inotify",
+      "systemd",
+      "plug",
+      "policy",
+      "device",
+      "configuration",
+      "event",
+      "targets",
+      "cycles",
+      "sources",
+      "fragment",
+      "modifications",
+      "priority",
+      "bands",
+      "alpha",
+      "beta",
+      "gamma",
+      "delta",
+      "health",
+      "status",
+      "subcommands",
+      "rules",
+      "harness",
+      "laboratory",
+      "coldplug",
+      "matcher",
+      "linker",
+      "watch",
+      "flush",
+      "rank",
+      "token",
+      "catalog",
+      "band",
+      "grid",
+      "reset",
+      "store",
+      "scratch",
+      "tallies",
+      "rows",
+      "build",
+      "python",
+      "sources",
+      "infer",
+      "missing",
+      "unstable",
+      "mismatched",
+      "converges",
+      "terminal",
+      "documented",
+      "idempotent",
+      "insufficient",
+      "engine",
+      "changes",
+      "edits",
+      "modifications"
+    ],
+    "renames_during_drafting": [
+      {
+        "original": "test_scope_b_obligations",
+        "renamed_to": "test_prio_b_obligations",
+        "reason": "Original name embedded instruction nouns scope and band"
+      },
+      {
+        "original": "test_partial_totals_trap",
+        "renamed_to": "test_stub_totals_trap",
+        "reason": "Original name embedded instruction noun partial"
+      },
+      {
+        "original": "test_idempotent_reset_cycle",
+        "renamed_to": "test_cycle_repeatable_guard",
+        "reason": "Original name embedded instruction nouns idempotent and reset"
+      },
+      {
+        "original": "test_cli_exit_matrix",
+        "renamed_to": "test_cli_exit_all_pairs",
+        "reason": "Original name embedded instruction noun grid"
+      },
+      {
+        "original": "resolve_token_a",
+        "renamed_to": "resolve_row_a",
+        "reason": "Original symbol embedded instruction noun token"
+      },
+      {
+        "original": "emit_rank_b",
+        "renamed_to": "emit_plan_b",
+        "reason": "Original symbol embedded instruction noun rank"
+      }
+    ],
+    "test_names_audited": [
+      "test_cli_exit_all_pairs",
+      "test_cross_format_byte_hash",
+      "test_prio_b_obligations",
+      "test_prio_a_baseline",
+      "test_semantic_gate_invariant",
+      "test_width_boundary_check",
+      "test_stub_totals_trap",
+      "test_cycle_repeatable_guard"
+    ],
+    "concentration_math": {
+      "total_tests": 8,
+      "per_location": [
+        {
+          "location_id": "A",
+          "test_count": 3,
+          "ratio": 0.375
+        },
+        {
+          "location_id": "B",
+          "test_count": 2,
+          "ratio": 0.25
+        },
+        {
+          "location_id": "C",
+          "test_count": 3,
+          "ratio": 0.375
+        }
+      ]
+    },
+    "recomputed_concentration": {
+      "total_tests": 8,
+      "concentration_cap": 0.5,
+      "per_location": [
+        {
+          "location_id": "A",
+          "test_count": 3,
+          "ratio": 0.375
+        },
+        {
+          "location_id": "B",
+          "test_count": 2,
+          "ratio": 0.25
+        },
+        {
+          "location_id": "C",
+          "test_count": 3,
+          "ratio": 0.375
+        }
+      ]
+    }
+  },
+  "difficulty_mechanism_plan": [
+    {
+      "mechanism": "stateful_multi_step_dependencies",
+      "placement": "sequential rule_replay_verify grid after migrations/reset_rules.sh and build_lab.sh",
+      "why_model_misses_it": "Models treat reset as idempotent on visible health tallies and skip rule_store coupling across replay phases",
+      "fairness_guardrail": "Recovery command documented in replay_contract.md with idempotent rerun semantics"
+    },
+    {
+      "mechanism": "deceptive_but_valid_local_evidence",
+      "placement": "health/status subcommands and fixtures/interim/q3_stub.json",
+      "why_model_misses_it": "Agents treat matching health counts as completion while trace_digest fails",
+      "fairness_guardrail": "Instruction states terminal policy_witness.json from full --all-scopes run is graded"
+    },
+    {
+      "mechanism": "false_green_intermediate_states",
+      "placement": "/app/output/stage and interim stub JSON",
+      "why_model_misses_it": "Single-scope replay checks pass before cross-band digest convergence",
+      "fairness_guardrail": "Public contract names graded artifact and cross-band digest bands"
+    },
+    {
+      "mechanism": "cross_file_cross_format_invariants",
+      "placement": "policy_witness.json trace_digest vs canonical collector replay bytes",
+      "why_model_misses_it": "Models edit JSON summaries without rebuilding emitted replay rows",
+      "fairness_guardrail": "replay_contract.md documents sha256 trace_digest publicly"
+    },
+    {
+      "mechanism": "partial_observability_experiment_design",
+      "placement": "/app/output/traces excerpts vs environment/fixtures/bytes/*.bin",
+      "why_model_misses_it": "Models infer matching order from incomplete textual excerpts alone",
+      "fairness_guardrail": "Instruction names authoritative binary bytes and four-scope checker grid"
+    },
+    {
+      "mechanism": "environment_specific_cli_semantics",
+      "placement": "rule_replay_verify flags and run_matrix.sh driver",
+      "why_model_misses_it": "Models assume generic udev helper behavior instead of band-scoped replay semantics",
+      "fairness_guardrail": "Instruction names exact rule_replay_verify command and priority band labels"
+    }
+  ],
+  "calibration_plan": {
+    "oracle_runs": 3,
+    "no_op_runs": 3,
+    "target_agent_runs": 5,
+    "comparator_agent_runs": 5,
+    "human_sanity": "Systems administrator reproduces failing rule_replay_verify locally using bundled trace bytes and excerpts only",
+    "shortcut_audit": "Block hardcoded policy_witness.json, fragment-only edits without engine rebuild, test modifications",
+    "ablation_plan": "Remove partial-excerpt layer, then digest layer, then health-subcommand layer; expect monotonic difficulty drop",
+    "pass_rate_target": {
+      "hard_max_pct": 20,
+      "too_easy_threshold_pct": 80,
+      "basis": "Part E Hard threshold on worst-model accuracy; verifier-offline via Dockerfile-baked pytest with no runtime installs in test.sh under allow_internet=false; post-upload difficulty classification after platform agent runs"
+    }
+  },
+  "verifier_scoring_plan": {
+    "metrics": [
+      {
+        "metric": "functional_correctness",
+        "weight": 0.45,
+        "criterion": "rule_replay_verify exit 0 and policy_witness rows match rebuilt replay bytes for all scope/band pairs"
+      },
+      {
+        "metric": "hidden_invariants",
+        "weight": 0.25,
+        "criterion": "cross-band trace_digest and row-width invariants hold after reset repeat"
+      },
+      {
+        "metric": "state_hygiene",
+        "weight": 0.15,
+        "criterion": "no stale rule_store scratch or pending watch queues after documented recovery"
+      },
+      {
+        "metric": "interface_correctness",
+        "weight": 0.1,
+        "criterion": "policy_witness.json schema and CLI flags match replay_contract.md"
+      },
+      {
+        "metric": "deliverable_completeness",
+        "weight": 0.05,
+        "criterion": "terminal graded artifact present at /app/output/policy_witness.json"
+      }
+    ],
+    "overall_threshold": 0.999,
+    "reward_output": "reward.txt",
+    "binary_threshold_rule": "reward.txt=1 only when all weighted metrics pass"
+  },
+  "subtype_milestone_plan": {
+    "subcategories": [
+      "tool_specific"
+    ],
+    "milestone_count": 0,
+    "sequential_dependency": "none \u2014 single-step reverse engineering task",
+    "local_only_data": true,
+    "sidecar_or_protocol_notes": "Single-container local verifier; Python lab and rule_replay_verify baked in Dockerfile"
+  },
+  "platform_files": [
+    {
+      "path": "task.toml",
+      "role": "metadata; must set [environment] allow_internet = false"
+    },
+    {
+      "path": "instruction.md",
+      "role": "natural public task prompt"
+    },
+    {
+      "path": "output_contract.toml",
+      "role": "local output declaration"
+    },
+    {
+      "path": "tests/test.sh",
+      "role": "verifier entrypoint; invoke pre-installed tools only"
+    },
+    {
+      "path": "tests/test_outputs.py",
+      "role": "domain verifier"
+    },
+    {
+      "path": "solution/solve.sh",
+      "role": "oracle"
+    },
+    {
+      "path": "environment/Dockerfile",
+      "role": "build definition; pre-install python, pytest, lab package"
+    },
+    {
+      "path": "construction_manifest.json",
+      "role": "local authoring artifact"
+    }
+  ],
+  "task_files": [
+    {
+      "path": "environment/py_src/urli/pyproject.toml",
+      "role": "Python package manifest"
+    },
+    {
+      "path": "environment/py_src/urli/matcher/__init__.py",
+      "role": "matcher package root"
+    },
+    {
+      "path": "environment/py_src/urli/matcher/env_lane.py",
+      "role": "fix frontier A"
+    },
+    {
+      "path": "environment/py_src/urli/matcher/legacy_env.py",
+      "role": "decoy ENV helper"
+    },
+    {
+      "path": "environment/py_src/urli/matcher/token_pack.py",
+      "role": "token packing definitions"
+    },
+    {
+      "path": "environment/py_src/urli/linker/__init__.py",
+      "role": "linker package root"
+    },
+    {
+      "path": "environment/py_src/urli/linker/priority_c.py",
+      "role": "fix frontier B"
+    },
+    {
+      "path": "environment/py_src/urli/linker/stub_link.py",
+      "role": "decoy link helper"
+    },
+    {
+      "path": "environment/py_src/urli/linker/symlink_fmt.py",
+      "role": "symlink row formatting"
+    },
+    {
+      "path": "environment/py_src/urli/reload/__init__.py",
+      "role": "reload package root"
+    },
+    {
+      "path": "environment/py_src/urli/reload/inotify_d.py",
+      "role": "fix frontier C"
+    },
+    {
+      "path": "environment/py_src/urli/reload/watch_stub.py",
+      "role": "decoy watch helper"
+    },
+    {
+      "path": "environment/py_src/urli/reload/rule_store.py",
+      "role": "reload-sensitive scratch state"
+    },
+    {
+      "path": "environment/py_src/urli/reload/notify_fmt.py",
+      "role": "watch notification formatting"
+    },
+    {
+      "path": "environment/py_src/urli/collector/__init__.py",
+      "role": "collector package root"
+    },
+    {
+      "path": "environment/py_src/urli/collector/emit_rows.py",
+      "role": "replay row emitter decoy"
+    },
+    {
+      "path": "environment/tools/rule_replay_verify/main.py",
+      "role": "checker CLI entry"
+    },
+    {
+      "path": "environment/tools/rule_replay_verify/engine.py",
+      "role": "digest and row invariant validation"
+    },
+    {
+      "path": "environment/profiles/priority_high.toml",
+      "role": "high link-rank band constants"
+    },
+    {
+      "path": "environment/profiles/priority_low.toml",
+      "role": "low link-rank band constants"
+    },
+    {
+      "path": "environment/scenarios/alpha.json",
+      "role": "device scope definition"
+    },
+    {
+      "path": "environment/scenarios/beta.json",
+      "role": "device scope definition"
+    },
+    {
+      "path": "environment/scenarios/gamma.json",
+      "role": "device scope definition"
+    },
+    {
+      "path": "environment/scenarios/delta.json",
+      "role": "device scope definition"
+    },
+    {
+      "path": "environment/docs/replay_contract.md",
+      "role": "witness schema, trace_digest rule, recovery command"
+    },
+    {
+      "path": "environment/docs/trace_glossary.md",
+      "role": "public cold-plug row semantics and status tokens"
+    },
+    {
+      "path": "environment/migrations/reset_rules.sh",
+      "role": "destructive reset with documented recovery"
+    },
+    {
+      "path": "environment/fixtures/bytes/alpha_part.bin",
+      "role": "partial trace bytes for alpha"
+    },
+    {
+      "path": "environment/fixtures/bytes/beta_full.bin",
+      "role": "full trace bytes for beta"
+    },
+    {
+      "path": "environment/fixtures/bytes/gamma_part.bin",
+      "role": "partial trace bytes for gamma"
+    },
+    {
+      "path": "environment/fixtures/bytes/delta_full.bin",
+      "role": "full trace bytes for delta"
+    },
+    {
+      "path": "environment/fixtures/interim/q3_stub.json",
+      "role": "false-green intermediate tallies"
+    },
+    {
+      "path": "environment/scripts/build_lab.sh",
+      "role": "pip install / lab build entry"
+    },
+    {
+      "path": "environment/scripts/run_matrix.sh",
+      "role": "scope/band matrix driver for checker"
+    }
+  ],
+  "fix_frontier": {
+    "count": 3,
+    "distribution": "py_src/urli/matcher, py_src/urli/linker, py_src/urli/reload package roots",
+    "naming_policy": "Opaque symbols from construction manifest symbol_table only",
+    "forbidden_stems": [
+      "cold-plug",
+      "traces",
+      "symlink",
+      "effective",
+      "reload",
+      "matching",
+      "behavior",
+      "partial",
+      "excerpts",
+      "fragments",
+      "replay",
+      "verifier",
+      "scope",
+      "witness",
+      "digest",
+      "canonical",
+      "bytes",
+      "observability",
+      "authoritative",
+      "stage",
+      "interim",
+      "counts",
+      "cross-check",
+      "graded",
+      "artifact",
+      "recovery",
+      "hardcoding",
+      "engine",
+      "convergence",
+      "precedence",
+      "inotify",
+      "systemd",
+      "plug",
+      "policy",
+      "device",
+      "configuration",
+      "event",
+      "targets",
+      "cycles",
+      "sources",
+      "fragment",
+      "modifications",
+      "priority",
+      "bands",
+      "alpha",
+      "beta",
+      "gamma",
+      "delta",
+      "health",
+      "status",
+      "subcommands",
+      "rules",
+      "harness",
+      "laboratory",
+      "coldplug",
+      "matcher",
+      "linker",
+      "watch",
+      "flush",
+      "rank",
+      "token",
+      "catalog",
+      "band",
+      "grid",
+      "reset",
+      "store",
+      "scratch",
+      "tallies",
+      "rows",
+      "build",
+      "python",
+      "sources",
+      "infer",
+      "missing",
+      "unstable",
+      "mismatched",
+      "converges",
+      "terminal",
+      "documented",
+      "idempotent",
+      "insufficient",
+      "changes",
+      "edits"
+    ],
+    "helpers_policy": "Decoys may rhyme structurally; oracle must not edit decoy bodies",
+    "symbol_thin_preferred": true
+  },
+  "contract_surface": {
+    "boolean_fields_max": 0,
+    "direct_boolean_assertions_max": 0,
+    "preferred_assertion_styles": [
+      "trace digests",
+      "checker exit codes",
+      "row count invariants",
+      "schema field equality",
+      "cross-band invariants"
+    ],
+    "forbidden_assertion_styles": [
+      "boolean answer keys",
+      "scenario->field->expected tables",
+      "fields ending in _ok/_valid/_passes"
+    ]
+  },
+  "task_shape": {
+    "type": "reverse_engineering",
+    "instruction_framing": "behavioral-target",
+    "hardness_source": "semantic inference",
+    "collapse_risk": "single magic constant or hidden-instance lookup"
+  },
+  "category_profile": {
+    "challenge_family": "udev rule inference",
+    "profile_name": "config_policy_precedence",
+    "allowed_instruction_disclosures": "Observable cold-plug traces, public rule_replay_verify command, effective-policy outcomes, reload behavior, policy_witness schema, partial excerpts, recovery command, scope/band matrix",
+    "forbidden_instruction_leaks": "Root cause, fix location, patch recipe, oracle transcript, fix-path symbol names, internal precedence table location",
+    "category_specific_hardness_bar": "Matcher, linker, reload, collector emission, and checker digests coordinate across four device scopes and two priority bands",
+    "category_specific_verifier_risks": "False greens from health subcommands or golden fixtures, policy-table transcription, one config file shortcut",
+    "coverage_role": "Strengthens config_policy_precedence coverage via udev rule trace inference (distinct from perf-trace-event-inference)"
+  },
+  "satisfiability_risk": {
+    "rc2_planned_name_risk": "low \u2014 opaque fix-path symbols precommitted in symbol_table",
+    "gx9_contract_risk": "low \u2014 contract uses digests and row invariants, not boolean verdict tables",
+    "cr1_symbol_frontier_risk": "low \u2014 frontier spans three Python package roots with decoys",
+    "hidden_contract_risk": "medium \u2014 trace_digest and watch-flush rules live in replay_contract.md and checker behavior"
+  },
+  "actionability_plan": {
+    "verifier_command_visible": "rule_replay_verify --all-scopes documented in instruction.md",
+    "source_fix_intent_visible": "yes \u2014 fix Python sources under /app/environment and rebuild; no patch recipe",
+    "generated_output_rule_visible": "policy_witness.json path and schema public",
+    "exact_formula_home": "environment/docs/replay_contract.md for trace_digest sha256",
+    "schema_home": "instruction.md plus environment/docs/replay_contract.md"
+  },
+  "waiver_plan": {
+    "waivers_expected": false,
+    "waiver_rationale": "Hardness from coupled udev policy precedence behavior, not harness brittleness"
+  },
+  "reference_pattern": {
+    "justification_if_none": "No promoted reference in docs/reference_tasks/index.json covers Python reverse-engineered udev rule trace inference with cross-band digest witnesses; perf-trace-event-inference is Rust-shaped and not promoted"
+  },
+  "realism_source": {
+    "source_type": "real_system",
+    "evidence_basis": "open-source issue",
+    "upstream_or_synthetic_rationale": "Minimized from production fleet udev/systemd incidents: ENV/ATTR matching order drifted across reload, systemd link priority disagreed with symlink targets, and inotify events raced rule load leaving stale effective policy on cold-plug",
+    "minimization_preserves": "Causal coupling between matcher precedence, link rank bands, watch flush ordering, and graded replay witnesses",
+    "synthetic_exception_review": "not required"
+  }
+}

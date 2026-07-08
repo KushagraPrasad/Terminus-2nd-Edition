@@ -1,0 +1,14 @@
+# Rubric 1
+Agent reads /app/environment/docs/mount_contract.md and compares identity_manifest rows against consumer_trace for drift_metric and tuple_stamp disagreement, +2
+Agent rebuilds the Rust crate with bash /app/environment/scripts/build_driver.sh and reinstalls /app/bin/layer-driver after src edits, +3
+Agent repairs src/gate/cache.rs, orphan.rs, and observer.rs so superseded path keys evict stale cached tuples and orphan generation floors advance, +5
+Agent repairs src/relay/rank_table.rs, holdback.rs, and queue.rs so journal flush events sort by mode_rank, wave_seq, and gen_b in rank-first order, +3
+Agent repairs src/pipeline/probe.rs holdback release policy so alternating waves do not reverse rank order on flush, +3
+Agent repairs src/split/barrier.rs so split_commit records satisfy committed_gen at least barrier_gen for each era path, +3
+Agent repairs src/persist/recovery.rs gate cache domain seeding and purge so checkpoint gate_epoch and manifest_sha256 stay stable across reruns, +3
+Agent reruns bash /app/environment/scripts/run_driver.sh to regenerate identity_manifest.json, event_journal.json, and consumer_trace.json, +2
+Agent writes expected JSON directly under /app/output without fixing Rust sources under /app/environment/src/, -5
+Agent replaces /app/bin/layer-driver with a shell or Python shim instead of a release-compiled binary, -5
+Agent modifies /app/environment/fixtures/waves/ or /app/environment/fixtures/r6anchor/ to game tuple stamps or integrity digests, -5
+Agent edits tests/, solution/, or only run_driver.sh instead of repairing the Rust pipeline under /app/environment, -3
+Agent skips a release rebuild after changing environment/src so the driver binary stays stale, -2

@@ -1,0 +1,238 @@
+{
+  "offline-lockfile-rehydration-gap": {
+    "task": "bind-propagation-orphan-inodes",
+    "spec": "bind-propagation-orphan-inodes"
+  },
+  "abi-rebuild-drift-detector": {
+    "task": "abi-rebuild-drift",
+    "spec": "abi-rebuild-drift"
+  },
+  "hermetic-sandbox-build-contract": {
+    "task": "offline-rescue-chroot-contract",
+    "spec": "hermetic-sandbox-build-contract"
+  },
+  "incremental-build-shadow-artifacts": {
+    "task": "live-migration-shadow-state-variant-2",
+    "spec": "incremental-build-shadow-artifacts-023"
+  },
+  "distributed-compile-cache-invalidation": {
+    "task": "checkpoint-bridge",
+    "spec": "checkpoint-resume-optimizer-state"
+  },
+  "move-budget-sokoban-variant-ladder": {
+    "task": "move-budget-solver",
+    "spec": "move-budget-solver"
+  },
+  "procedural-level-seed-replay": {
+    "task": "scheduler-seed-replay-injector",
+    "spec": "scheduler-seed-replay-injector"
+  },
+  "game-logic-invariant-model-check": {
+    "task": "happens-before-model-check",
+    "spec": "game-logic-invariant-model-check"
+  },
+  "fft-resume-corruption": {
+    "task": "cascade-compaction",
+    "spec": "fft-resume-corruption"
+  },
+  "device-node-lineage-mismatch": {
+    "task": "bind-propagation-orphan-inodes",
+    "spec": "bind-propagation-orphan-inodes"
+  },
+  "input-remap-variant-ladder": {
+    "task": "input-remap-variant-ladder",
+    "spec": "input-remap-variant-ladder"
+  },
+  "crypto-agility-variant-ladder": {
+    "task": "codec-framing-variant-ladder",
+    "spec": "codec-framing-variant-ladder"
+  },
+  "threshold-signature-shard-mismatch": {
+    "task": "sampler-shard-divergence-repair",
+    "spec": "sampler-shard-divergence-repair"
+  },
+  "journal-replay-generation-skew": {
+    "task": "journal-replay-divergence",
+    "spec": "journal-replay-generation-skew-031"
+  },
+  "heisenbug-variant-ladder": {
+    "task": "codec-framing-variant-ladder",
+    "spec": "codec-framing-variant-ladder"
+  },
+  "plugin-registry-authority-split": {
+    "task": "path-authority-split",
+    "spec": "revocation-cache-authority-split-012"
+  },
+  "cross-module-float-policy-drift": {
+    "task": "initramfs-module-order-drift",
+    "spec": "initramfs-module-order-drift"
+  },
+  "checkpoint-resume-optimizer-state": {
+    "task": "checkpoint-bridge",
+    "spec": "checkpoint-resume-optimizer-state"
+  },
+  "revocation-cache-authority-split": {
+    "task": "path-authority-split",
+    "spec": "revocation-cache-authority-split-012"
+  },
+  "namespace-restore-replay-loop": {
+    "task": "namespace-mount-leakage",
+    "spec": "namespace-restore-replay-loop-028"
+  },
+  "overlay-lowerdir-stale-bind": {
+    "task": "overlay-lowerdir-ghosts",
+    "spec": "bind-propagation-orphan-inodes"
+  },
+  "quota-rollback-skew-variant": {
+    "task": "rollback-catchup-race-variant-3-recovery-104",
+    "spec": "quota-rollback-skew-variant-1"
+  },
+  "pipeline-dag-checkpoint-resume": {
+    "task": "checkpoint-bridge",
+    "spec": "checkpoint-bridge"
+  },
+  "bazel-query-graph-stale-edge": {
+    "task": "overlayfs-stale-lowerdir-replay",
+    "spec": "query-plan-cost-model-optimize"
+  },
+  "encrypted-backup-header-parse": {
+    "task": "ledger-compaction",
+    "spec": "fft-resume-corruption"
+  },
+  "notebook-cell-reorder-provenance": {
+    "task": "leakage-resistant-splitter",
+    "spec": "data-lineage-invariant-proof"
+  },
+  "shell-task-env-inheritance-trap": {
+    "task": "offline-rescue-chroot-contract",
+    "spec": "offline-rescue-chroot-contract"
+  },
+  "service-mesh-config-precedence": {
+    "task": "namespace-authority-divergence",
+    "spec": "mount-propagation-formal-model"
+  },
+  "monte-carlo-stratified-overlap": {
+    "task": "pathfinding-memory-optimize-grid",
+    "spec": "bisect-budget-optimizer"
+  },
+  "supply-chain-sig-chain-gap": {
+    "task": "stencil-equivalence-certificate",
+    "spec": "stencil-equivalence-certificate"
+  },
+  "minimal-http-router-under-size-cap": {
+    "task": "allocator-pool-size-optimize",
+    "spec": "minimal-http-router-under-size-cap"
+  },
+  "mac-policy-boolean-precedence": {
+    "task": "path-authority-split",
+    "spec": "revocation-cache-authority-split-012"
+  },
+  "core-dump-stack-inference": {
+    "task": "heap-corruption-trace-inference",
+    "spec": "core-dump-stack-inference"
+  },
+  "ci-matrix-cache-poisoning": {
+    "task": "migration-window-poisoning-15",
+    "spec": "revocation-cache-authority-split-012"
+  },
+  "pipeline-stage-ordering-trap": {
+    "task": "systemd-dependency-ghosting",
+    "spec": "differentiable-pipeline-invariant-proof"
+  },
+  "aead-nonce-reuse-recovery": {
+    "task": "journal-vacuum-resurrection",
+    "spec": "journal-replay-divergence"
+  },
+  "data-contract-validator-builder": {
+    "task": "minimal-repro-harness-builder",
+    "spec": "minimal-repro-harness-builder"
+  },
+  "cross-compile-sysroot-skew": {
+    "task": "offline-rescue-chroot-contract",
+    "spec": "offline-rescue-chroot-contract"
+  },
+  "passkey-challenge-replay": {
+    "task": "rollback-catchup-race-variant-3-recovery-104",
+    "spec": "quota-rollback-skew-variant-1"
+  },
+  "unit-conversion-pipeline-drift": {
+    "task": "initramfs-module-order-drift",
+    "spec": "unit-conversion-pipeline-drift"
+  },
+  "data-lineage-invariant-proof": {
+    "task": "data-lineage-invariant-proof",
+    "spec": "data-lineage-invariant-proof"
+  },
+  "stream-window-aggregate-drift": {
+    "task": "stream-window-aggregate-drift",
+    "spec": "stream-window-aggregate-drift"
+  },
+  "pii-redaction-variant-ladder": {
+    "task": "pii-redaction-variant-ladder",
+    "spec": "pii-redaction-variant-ladder"
+  },
+  "regex-extraction-trace-inference": {
+    "task": "regex-extraction-trace-inference",
+    "spec": "regex-extraction-trace-inference"
+  },
+  "happens-before-model-check": {
+    "task": "happens-before-model-check",
+    "spec": "happens-before-model-check"
+  },
+  "monorepo-import-cycle-repair": {
+    "task": "monorepo-import-cycle-repair",
+    "spec": "monorepo-import-cycle-repair"
+  },
+  "ood-detection-variant-ladder": {
+    "task": "ood-detection-variant-ladder",
+    "spec": "ood-detection-variant-ladder"
+  },
+  "mixed-precision-replay-ladder": {
+    "task": "mixed-precision-replay-ladder",
+    "spec": "mixed-precision-replay-ladder"
+  },
+  "sampler-shard-divergence-repair": {
+    "task": "sampler-shard-divergence-repair",
+    "spec": "sampler-shard-divergence-repair"
+  },
+  "symplectic-integrator-energy-drift": {
+    "task": "symplectic-integrator-energy-drift",
+    "spec": "symplectic-integrator-energy-drift"
+  },
+  "interval-arithmetic-proof-contract": {
+    "task": "interval-arithmetic-proof-contract",
+    "spec": "interval-arithmetic-proof-contract"
+  },
+  "privilege-graph-acyclic-proof": {
+    "task": "privilege-graph-acyclic-proof",
+    "spec": "privilege-graph-acyclic-proof"
+  },
+  "typestate-protocol-proof": {
+    "task": "typestate-protocol-proof",
+    "spec": "typestate-protocol-proof"
+  },
+  "wire-protocol-from-pcap-inference": {
+    "task": "wire-protocol-from-pcap-inference",
+    "spec": "wire-protocol-from-pcap-inference"
+  },
+  "async-fault-injection-ladder": {
+    "task": "async-fault-injection-ladder",
+    "spec": "async-fault-injection-ladder"
+  },
+  "mount-propagation-formal-model": {
+    "task": "mount-propagation-formal-model",
+    "spec": "mount-propagation-formal-model"
+  },
+  "fstab-variant-remount-ladder": {
+    "task": "fstab-variant-remount-ladder",
+    "spec": "fstab-variant-remount-ladder"
+  },
+  "cgroup-pressure-metric-desync": {
+    "task": "cgroup-pressure-metric-desync",
+    "spec": "cgroup-pressure-metric-desync"
+  },
+  "watchdog-restart-boundary-debug": {
+    "task": "watchdog-restart-boundary-debug",
+    "spec": "watchdog-restart-boundary-debug"
+  }
+}

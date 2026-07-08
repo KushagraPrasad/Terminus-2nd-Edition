@@ -1,0 +1,13 @@
+# Rubric 1
+Agent reads /app/environment/docs/ and inspects coord/rq/, core/rq/, and profiles/ before patching queue, seal, or checkpoint logic, +2
+Agent runs bash /app/environment/scripts/build_workspace.sh after Rust edits and invokes /app/bin/rq_verify on x86 and arm64 profiles, +3
+Agent repairs coord/rq/lane_fold.rs and portable_hooks.rs so sync trace payloads derive from profile fence tokens via lane_fold::sync_payload rather than raw fence_level bytes, +5
+Agent repairs core/rq/payload_ring.rs and ops.rs so enqueue and dequeue use PayloadRing try_push and try_pop without Mutex<VecDeque> on the hot path, +3
+Agent repairs core/rq/ops.rs seal ordering so BarrierSite::BeforeSeal runs before the Seal event record and ready/sealed flags use Acquire/Release visibility, +3
+Agent repairs core/rq/seal_pipeline.rs so sealed journal bodies are written before replay_seal::commit_boundary advances the replay cursor, +3
+Agent repairs coord lane_stamp, lane_mix, and ticket_lattice folding so checkpoints mix lane epoch, replay_seq, and portable fold_salt from the active profile token, +3
+Agent runs /app/bin/rq_verify --all-scenarios and inspects version 4 /app/output/witness.json rows against sealed journals under /app/output/journals/, +2
+Agent writes hand-edited JSON to /app/output/witness.json without rebuilding Rust sources under /app/environment, -5
+Agent reintroduces a process-wide mutex around PayloadRing or items.lock() for payload enqueue and dequeue, -3
+Agent modifies /app/environment/fixtures/replay_anchor_v2.bin or scenario JSON under /app/environment/scenarios/ instead of fixing library behavior, -5
+Agent edits tests/, solution/, or tracer-only modules without repairing core queue and seal sources under /app/environment, -3

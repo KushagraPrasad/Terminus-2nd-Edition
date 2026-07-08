@@ -1,0 +1,38 @@
+{
+  "checks": [
+    {
+      "command": "cargo",
+      "locations": [
+        "solution/solve.sh:29"
+      ],
+      "message": "cargo is invoked and an obvious provider is present",
+      "providers": [
+        "cargo",
+        "python3",
+        "rustc"
+      ],
+      "remediation": "",
+      "status": "PASS"
+    }
+  ],
+  "commands": [
+    {
+      "command": "cargo",
+      "line": "cargo build --release",
+      "location": "solution/solve.sh:29"
+    }
+  ],
+  "providers": [
+    "cargo",
+    "python3",
+    "rustc"
+  ],
+  "status": "PASS",
+  "strict": false,
+  "summary": {
+    "fail": 0,
+    "pass": 1,
+    "warn": 0
+  },
+  "task_dir": "tasks/wal-segment-pruner-drift"
+}

@@ -1,0 +1,897 @@
+{
+  "hardness_axes": [
+    {
+      "id": "discover",
+      "name": "Discover",
+      "verdict": "PASS",
+      "reasoning": "Durable lockfile index authority vs runtime slot surface, replay ordering inside mux_order, and emit_c4 cross-format rules must be inferred from Cargo sources and rebuild experiments, not from instruction.md alone."
+    },
+    {
+      "id": "synthesize",
+      "name": "Synthesize",
+      "verdict": "PASS",
+      "reasoning": "Driver units, pack refresh, op_c3 fold, mux replay ordering, and emit layer interact; no single crate exposes the full rehydration_report contract or held-out permutation survival."
+    },
+    {
+      "id": "diagnose_or_design",
+      "name": "Diagnose or Design/Search",
+      "verdict": "PASS",
+      "reasoning": "adversarial_generalization constraint-complete framing gives complete output schema and generalization obligation while withholding which subsystem mis-orders replay or skips lock witness cross-checks."
+    },
+    {
+      "id": "navigate_coupling",
+      "name": "Navigate coupling",
+      "verdict": "PASS",
+      "reasoning": "Flipping-point contract spreads controls across m4/k83, p9/y5, p9/y4, and p9/core with overlapping false-green and permutation traps."
+    },
+    {
+      "id": "reason_beyond_training",
+      "name": "Reason beyond training",
+      "verdict": "PASS",
+      "reasoning": "Offline lockfile rehydration with scheduler replay ordering under locked Cargo workspaces is operations-domain reasoning, not a textbook algorithm."
+    }
+  ],
+  "anti_trivialization_checks": [
+    {
+      "id": "disclosure_collapse",
+      "name": "Disclosure-collapse",
+      "verdict": "PASS",
+      "reasoning": "Even with full report schema disclosed, choosing index authority and replay order remains non-trivial inference."
+    },
+    {
+      "id": "hidden_instance",
+      "name": "Hidden-instance",
+      "verdict": "PASS",
+      "reasoning": "No single corrupted unit row; multiple units and held-out permutations disagree until global semantics align."
+    },
+    {
+      "id": "single_artifact_repair",
+      "name": "Single-artifact repair",
+      "verdict": "PASS",
+      "reasoning": "Static JSON, Cargo.lock swap, or one TOML edit cannot satisfy ablation, permutation, and pipeline overwrite tests."
+    },
+    {
+      "id": "generalization",
+      "name": "Generalization",
+      "verdict": "PASS",
+      "reasoning": "Verifier exercises primary units, echo pairs, held-out replay_matrix permutations, and consecutive runs."
+    },
+    {
+      "id": "prompt_honesty",
+      "name": "Prompt-honesty",
+      "verdict": "PASS",
+      "reasoning": "Honest constraint contract does not name broken functions, replay phase ordering, or authority split."
+    },
+    {
+      "id": "cheating_vs_difficulty",
+      "name": "Cheating-vs-difficulty",
+      "verdict": "PASS",
+      "reasoning": "Hardness is semantic reconciliation and adversarial permutation survival, not anti-cheat alone."
+    },
+    {
+      "id": "mechanical_fix_filter",
+      "name": "Mechanical-fix filter",
+      "verdict": "PASS",
+      "reasoning": "Not a timeout/deps-only task."
+    },
+    {
+      "id": "localized_fix",
+      "name": "Localized-fix",
+      "verdict": "PASS",
+      "reasoning": "Four-location flipping contract blocks one-function exploit."
+    },
+    {
+      "id": "oracle_locality",
+      "name": "Oracle-locality",
+      "verdict": "PASS",
+      "reasoning": "Oracle coordinates four modules plus patch, not one-file wholesale replace."
+    },
+    {
+      "id": "small_declarative_cluster",
+      "name": "Small declarative-cluster",
+      "verdict": "PASS",
+      "reasoning": "Fix is procedural across Rust modules, not one manifest table."
+    },
+    {
+      "id": "grep_collapse",
+      "name": "Grep-collapse",
+      "verdict": "PASS",
+      "reasoning": "Instruction domain nouns banned from fix-path symbols; opaque m4/p9 roots."
+    },
+    {
+      "id": "pre_factored_helper",
+      "name": "Pre-factored-helper",
+      "verdict": "PASS",
+      "reasoning": "Decoys rhyme structurally without validate/repair stems matching prompt bullets."
+    },
+    {
+      "id": "recipe_discount",
+      "name": "Recipe-discount",
+      "verdict": "PASS",
+      "reasoning": "No standard recipe for lockfile rehydration replay ordering in this bespoke workspace."
+    },
+    {
+      "id": "security_aura_discount",
+      "name": "Security-aura discount",
+      "verdict": "PASS",
+      "reasoning": "Residual work is scheduler/lockfile recovery semantics, not security theater."
+    },
+    {
+      "id": "orthogonal_checklist",
+      "name": "Orthogonal-checklist",
+      "verdict": "PASS",
+      "reasoning": "Authority, replay order, cross-format emit, and permutation generalization trade off rather than independent bullets."
+    },
+    {
+      "id": "harness_discount",
+      "name": "Harness-discount",
+      "verdict": "PASS",
+      "reasoning": "Cargo/docker realism is scaffolding; assessed hardness is cross-crate coupling and held-out permutations."
+    },
+    {
+      "id": "one_pass_solvability",
+      "name": "One-pass solvability",
+      "verdict": "PASS",
+      "reasoning": "Cannot infer index-vs-slot precedence or replay order without rebuild, echo-pair comparison, and permutation tests."
+    },
+    {
+      "id": "hard_only_gate",
+      "name": "Hard-only gate",
+      "verdict": "PASS",
+      "reasoning": "Targets senior sysadmin/build engineers managing offline rehydration and scheduler replay, not undergrad single-patch tasks."
+    },
+    {
+      "id": "discovery_budget_test",
+      "name": "Discovery/design budget test",
+      "verdict": "PASS",
+      "reasoning": "discovery_budget lists three concrete discoveries beyond instruction surface."
+    },
+    {
+      "id": "instruction_specificity_test",
+      "name": "Instruction specificity test",
+      "verdict": "PASS",
+      "reasoning": "instruction_specificity.level is constraint-complete with solution strategy open."
+    },
+    {
+      "id": "topology_distribution_test",
+      "name": "Topology distribution test",
+      "verdict": "PASS",
+      "reasoning": "topology_enumeration documents three multi-site coordination patterns."
+    }
+  ],
+  "rubric_axes": [
+    {
+      "id": "verifiable",
+      "name": "Verifiable",
+      "verdict": "PASS",
+      "reasoning": "Deterministic cargo rebuild, rh driver run, JSON assertions, permutation suite, and ablation patches."
+    },
+    {
+      "id": "well_specified",
+      "name": "Well-specified",
+      "verdict": "PASS",
+      "reasoning": "Public rehydration_report schema, coherence rules, and generalization obligation are complete; fix sites withheld."
+    },
+    {
+      "id": "solvable",
+      "name": "Solvable",
+      "verdict": "PASS",
+      "reasoning": "Expert can close four-crate semantics within hours using overlay mold."
+    },
+    {
+      "id": "difficult",
+      "name": "Difficult",
+      "verdict": "PASS",
+      "reasoning": "Requires concurrency ordering, lockfile rehydration, and multi-crate Cargo literacy."
+    },
+    {
+      "id": "interesting",
+      "name": "Interesting",
+      "verdict": "PASS",
+      "reasoning": "False-green scheduler/lockfile probes occur in real offline rehydration and replay postmortems."
+    },
+    {
+      "id": "outcome_verified",
+      "name": "Outcome-verified",
+      "verdict": "PASS",
+      "reasoning": "Grades regenerated report, permutation survival, and rebuild pipeline, not a mandated edit recipe."
+    }
+  ],
+  "instruction_completeness_test": {
+    "verdict": "PASS",
+    "reasoning": "Complete report contract and generalization rule do not reveal index authority, replay ordering site, or emit bypass; solver must read workspace and run experiments."
+  },
+  "discovery_budget": [
+    {
+      "discovery": "Durable lockfile index in p9/y6/index_w remains authoritative for replay ordering while m4 driver and p9/core/slot_v answer runtime-visible unit state first after partial rehydration.",
+      "planned_location": "environment/p9/y6/src/index_w.rs vs environment/p9/core/src/slot_v.rs and environment/m4/k83/src/main.rs",
+      "why_instruction_must_not_reveal": "Naming the authority split collapses search to wiring index reads into the driver."
+    },
+    {
+      "discovery": "mux_order marks sched_rc/lock_rc true on an intermediate replay pass before phase_b/scheduler ordering finishes, producing false-green closure while echo pairs disagree.",
+      "planned_location": "environment/m4/k83/src/mux_order.rs and environment/p9/y6/src/phase_b.rs",
+      "why_instruction_must_not_reveal": "Disclosing replay phase ordering reveals the false-green mechanism directly."
+    },
+    {
+      "discovery": "emit_c4 fast path materializes JSON facets without cross-checking lock_snapshot.json against environment/data TOML/TSV seeds and pack-merged storage.",
+      "planned_location": "environment/p9/core/src/emit_c4.rs with environment/data/lock_snapshot.json",
+      "why_instruction_must_not_reveal": "Pointing at the bypass path turns cross-format invariant into a one-file guard add."
+    }
+  ],
+  "instruction_specificity": {
+    "level": "constraint-complete",
+    "reasoning": "Instruction states complete rehydration_report schema, build/replay commands, coherence predicates, and adversarial generalization obligation but withholds implementation mapping and broken subsystem identities."
+  },
+  "attack_path": {
+    "summary": "Agents may hardcode run_digest, hand-write JSON, patch only slot_v, or fix primary units while ignoring held-out replay_matrix permutations.",
+    "reasoning": "Cheap wins satisfy superficial shape tests until pipeline overwrite, permutation, echo-pair, and ablation suites exercise rebuild semantics."
+  },
+  "smallest_plausible_patch": {
+    "summary": "Coordinate op_c3 lineage fold, pack_refresh storage refresh, mux_order ordering, and emit_c4 lock witness cross-check.",
+    "reasoning": "Each change sounds local but flipping-point shows isolated reverts fail distinct test subsets."
+  },
+  "collapse_audit": {
+    "verdict": "PASS",
+    "reasoning": "Residual hardness stays in inferring authority and replay order under a complete public contract plus held-out permutations.",
+    "residual_hardness": "After honest schema disclosure, solver still reconciles index vs slot, false-green closure, cross-format regeneration, and permutation generalization across four crates.",
+    "red_flags": []
+  },
+  "topology_enumeration": [
+    {
+      "id": "topo_authority",
+      "summary": "Authority topology coordinates lockfile index, pack refresh, and driver unit wiring.",
+      "locations": [
+        "environment/p9/y6/src/index_w.rs",
+        "environment/p9/y4/src/pack_refresh.rs",
+        "environment/m4/k83/src/main.rs"
+      ],
+      "why_no_single_location_suffices": "Index-only edits leave pack storage stale; pack-only fixes ignore probe/index precedence; driver-only tweaks cannot fix durable index."
+    },
+    {
+      "id": "topo_replay_order",
+      "summary": "Replay-order topology coordinates mux_order, phase_b primitive, and op_c3 fold.",
+      "locations": [
+        "environment/m4/k83/src/mux_order.rs",
+        "environment/p9/y6/src/phase_b.rs",
+        "environment/p9/y5/src/op_c3.rs"
+      ],
+      "why_no_single_location_suffices": "Mux ordering without phase_b helper reverts; op_c3 fold alone cannot fix premature closure flags or permutation failures."
+    },
+    {
+      "id": "topo_cross_format",
+      "summary": "Cross-format topology coordinates emit_c4, lock witness, and data seeds.",
+      "locations": [
+        "environment/p9/core/src/emit_c4.rs",
+        "environment/data/lock_snapshot.json",
+        "environment/p9/y5/src/body.rs"
+      ],
+      "why_no_single_location_suffices": "Emit-only guards miss pack bytes; witness-only edits without emit cross-check leave lock_rc/unit_rc skew."
+    }
+  ],
+  "construction_manifest": {
+    "symbol_table": [
+      {
+        "path": "environment/p9/y5/src/op_c3.rs",
+        "symbol": "op_c3",
+        "kind": "function",
+        "signature": "pub fn op_c3(step_ix: usize, family_ix: u32, prev_family: u32) -> u64",
+        "purpose": "Folds step and family tags into stamp bits for facets."
+      },
+      {
+        "path": "environment/p9/y4/src/pack_refresh.rs",
+        "symbol": "pack_refresh",
+        "kind": "function",
+        "signature": "pub fn pack_refresh(state: &mut PackState, incoming: &PackState, stamp_b: u32) -> u32",
+        "purpose": "Merges incoming pack bytes into durable storage during bind steps."
+      },
+      {
+        "path": "environment/m4/k83/src/mux_order.rs",
+        "symbol": "mux_order",
+        "kind": "function",
+        "signature": "pub fn mux_order(gate_first: bool, side: impl FnMut(), gate: impl FnMut()) -> u32",
+        "purpose": "Orders side-effect callbacks during per-unit combine steps under replay."
+      },
+      {
+        "path": "environment/p9/y6/src/phase_b.rs",
+        "symbol": "phase_b",
+        "kind": "function",
+        "signature": "pub fn phase_b(gate_first: bool, mut side: impl FnMut(), mut gate: impl FnMut()) -> u32",
+        "purpose": "Low-level side/gate ordering primitive used by mux_order."
+      },
+      {
+        "path": "environment/p9/core/src/emit_c4.rs",
+        "symbol": "emit_c4",
+        "kind": "function",
+        "signature": "pub fn emit_c4(units: &[UnitRow], seeds: &SeedBundle, lock_witness: &LockWitness) -> Vec<EmittedRow>",
+        "purpose": "Materializes report rows from unit state, seeds, and lock witness."
+      }
+    ],
+    "flipping_point_contract": {
+      "locations": [
+        {
+          "id": "A",
+          "path": "environment/p9/y5/src/op_c3.rs",
+          "controls_tests": [
+            "test_h3_table_layout",
+            "test_h10_hex_format",
+            "test_h9_digest_anchor",
+            "test_h8_digest_contract",
+            "test_h15_fold_ablation"
+          ]
+        },
+        {
+          "id": "B",
+          "path": "environment/p9/y4/src/pack_refresh.rs",
+          "controls_tests": [
+            "test_h16_dual_ablation",
+            "test_h5_flags_zero"
+          ]
+        },
+        {
+          "id": "C",
+          "path": "environment/m4/k83/src/mux_order.rs",
+          "controls_tests": [
+            "test_h4_pair_agreement",
+            "test_h6_status_line",
+            "test_h7_span_band",
+            "test_h17_order_ablation",
+            "test_h18_held_perms",
+            "test_h20_cmd_surface"
+          ]
+        },
+        {
+          "id": "D",
+          "path": "environment/p9/core/src/emit_c4.rs",
+          "controls_tests": [
+            "test_h12_overwrite_trap",
+            "test_h13_repeat_stable",
+            "test_h14_ladder_mutate",
+            "test_h11_row_count",
+            "test_h19_emit_ablation"
+          ]
+        }
+      ],
+      "no_single_location_flips_majority": true,
+      "concentration_cap": 0.5
+    },
+    "decoy_manifest": [
+      {
+        "path": "environment/p9/y4/src/hold_buf.rs",
+        "kind": "module",
+        "rhymes_with": "pack_refresh",
+        "non_fix_purpose": "Buffers transient pack slices without durable refresh."
+      },
+      {
+        "path": "environment/p9/y6/src/stride_scan.rs",
+        "kind": "module",
+        "rhymes_with": "phase_b",
+        "non_fix_purpose": "Scans index windows for offline benchmarks."
+      },
+      {
+        "path": "environment/p9/core/src/mesh.rs",
+        "kind": "module",
+        "rhymes_with": "emit_c4",
+        "non_fix_purpose": "Builds adjacency meshes for docs examples only."
+      }
+    ],
+    "code_forbidden_tokens": [
+      "offline",
+      "lockfile",
+      "rehydration",
+      "scheduler",
+      "replay",
+      "ordering",
+      "mismatch",
+      "authority",
+      "recovery",
+      "partial",
+      "green",
+      "intermediate",
+      "verifier",
+      "invariant",
+      "regeneration",
+      "cross-format",
+      "generalization",
+      "permutations",
+      "matrix",
+      "units",
+      "closure",
+      "echoes",
+      "mirror",
+      "pairs",
+      "steady",
+      "coherent",
+      "locked",
+      "sources",
+      "rebuild",
+      "manual",
+      "static",
+      "operator",
+      "argv",
+      "probes",
+      "aggregate",
+      "disagree",
+      "stamps",
+      "facet",
+      "material",
+      "sync",
+      "drift",
+      "bind",
+      "upper",
+      "worker",
+      "primary",
+      "held-out",
+      "sufficient",
+      "coherence",
+      "survives",
+      "deterministic",
+      "rehydration_report",
+      "unit_ids",
+      "replay_cmds",
+      "build_hints",
+      "facet_hex",
+      "run_digest",
+      "band_span",
+      "sync_label",
+      "drift_code",
+      "sched_rc",
+      "lock_rc",
+      "unit_rc",
+      "rows_total",
+      "bind_echo",
+      "upper_echo",
+      "worker_echo",
+      "lock_snapshot",
+      "replay_matrix"
+    ]
+  },
+  "naming_pass": {
+    "instruction_nouns_extracted": [
+      "offline",
+      "lockfile",
+      "rehydration",
+      "scheduler",
+      "replay",
+      "ordering",
+      "mismatch",
+      "authority",
+      "recovery",
+      "partial",
+      "green",
+      "intermediate",
+      "verifier",
+      "invariant",
+      "regeneration",
+      "cross-format",
+      "generalization",
+      "permutations",
+      "matrix",
+      "units",
+      "closure",
+      "echoes",
+      "mirror",
+      "pairs",
+      "steady",
+      "coherent",
+      "locked",
+      "sources",
+      "rebuild",
+      "manual",
+      "static",
+      "operator",
+      "argv",
+      "probes",
+      "aggregate",
+      "disagree",
+      "stamps",
+      "facet",
+      "material",
+      "sync",
+      "drift",
+      "bind",
+      "upper",
+      "worker",
+      "primary",
+      "held-out",
+      "sufficient",
+      "coherence",
+      "survives",
+      "deterministic",
+      "rehydration_report",
+      "unit_ids",
+      "replay_cmds",
+      "build_hints",
+      "facet_hex",
+      "run_digest",
+      "band_span",
+      "sync_label",
+      "drift_code",
+      "sched_rc",
+      "lock_rc",
+      "unit_rc",
+      "rows_total",
+      "bind_echo",
+      "upper_echo",
+      "worker_echo",
+      "lock_snapshot",
+      "replay_matrix"
+    ],
+    "renames_during_drafting": [
+      {
+        "original": "tie.rs / fold_key",
+        "renamed_to": "op_c3.rs / op_c3",
+        "reason": "Overlay fold stem collides with digest/trace vocabulary; neutral opaque symbol."
+      },
+      {
+        "original": "hold.rs / merge_pack",
+        "renamed_to": "pack_refresh.rs / pack_refresh",
+        "reason": "Distinct from overlay while preserving durable merge semantics."
+      },
+      {
+        "original": "gate_mux / mk",
+        "renamed_to": "mux_order / rh",
+        "reason": "Neutral driver and mux names unrelated to instruction nouns."
+      },
+      {
+        "original": "layer_report",
+        "renamed_to": "rehydration_report",
+        "reason": "Distinct deliverable aligned to lockfile rehydration seed."
+      }
+    ],
+    "test_names_audited": [
+      "test_h3_table_layout",
+      "test_h4_pair_agreement",
+      "test_h5_flags_zero",
+      "test_h6_status_line",
+      "test_h7_span_band",
+      "test_h8_digest_contract",
+      "test_h9_digest_anchor",
+      "test_h10_hex_format",
+      "test_h11_row_count",
+      "test_h12_overwrite_trap",
+      "test_h13_repeat_stable",
+      "test_h14_ladder_mutate",
+      "test_h15_fold_ablation",
+      "test_h16_dual_ablation",
+      "test_h17_order_ablation",
+      "test_h18_held_perms",
+      "test_h19_emit_ablation",
+      "test_h20_cmd_surface"
+    ],
+    "concentration_math": {
+      "total_tests": 18,
+      "per_location": [
+        {
+          "location_id": "A",
+          "test_count": 5,
+          "ratio": 0.2777777777777778
+        },
+        {
+          "location_id": "B",
+          "test_count": 2,
+          "ratio": 0.1111111111111111
+        },
+        {
+          "location_id": "C",
+          "test_count": 6,
+          "ratio": 0.3333333333333333
+        },
+        {
+          "location_id": "D",
+          "test_count": 5,
+          "ratio": 0.2777777777777778
+        }
+      ]
+    },
+    "recomputed_concentration": {
+      "total_tests": 18,
+      "concentration_cap": 0.5,
+      "per_location": [
+        {
+          "location_id": "A",
+          "test_count": 5,
+          "ratio": 0.2777777777777778
+        },
+        {
+          "location_id": "B",
+          "test_count": 2,
+          "ratio": 0.1111111111111111
+        },
+        {
+          "location_id": "C",
+          "test_count": 6,
+          "ratio": 0.3333333333333333
+        },
+        {
+          "location_id": "D",
+          "test_count": 5,
+          "ratio": 0.2777777777777778
+        }
+      ]
+    }
+  },
+  "difficulty_mechanism_plan": [
+    {
+      "mechanism": "environment_specific_cli_semantics",
+      "placement": "replay_cmds.txt argv consumed by rh replay hook",
+      "why_model_misses_it": "runs generic cargo loops without documented replay argv",
+      "fairness_guardrail": "replay_cmds ships in docs"
+    },
+    {
+      "mechanism": "deceptive_but_valid_local_evidence",
+      "placement": "mux_order intermediate closure counters",
+      "why_model_misses_it": "stops at steady sync_label with disagreeing echo pairs",
+      "fairness_guardrail": "tests require pair agreement"
+    },
+    {
+      "mechanism": "cross_file_cross_format_invariants",
+      "placement": "emit_c4 vs lock_snapshot and data seeds",
+      "why_model_misses_it": "JSON shape passes without witness cross-check",
+      "fairness_guardrail": "pipeline rebuild tests"
+    },
+    {
+      "mechanism": "stateful_multi_step_dependencies",
+      "placement": "cargo rebuild then rh then JSON report",
+      "why_model_misses_it": "patches without locked rebuild graph",
+      "fairness_guardrail": "build_hints document commands"
+    },
+    {
+      "mechanism": "false_green_intermediate_states",
+      "placement": "closure counters before replay completes",
+      "why_model_misses_it": "aggregate line masks per-row drift on echoes",
+      "fairness_guardrail": "ablation on mux_order/phase_b"
+    },
+    {
+      "mechanism": "rollback_recovery_requirements",
+      "placement": "pack_refresh after partial rehydration; index_w vs slot_v",
+      "why_model_misses_it": "unit_rc reads 1 while lock_rc/sched_rc diverge",
+      "fairness_guardrail": "dual-crate ablation"
+    }
+  ],
+  "calibration_plan": {
+    "oracle_runs": 3,
+    "no_op_runs": 3,
+    "target_agent_runs": 5,
+    "comparator_agent_runs": 5,
+    "human_sanity": "derive run_digest from main.rs header; run replay_cmds sequence",
+    "shortcut_audit": "static JSON, pytest edits, digest hardcode, Cargo.lock swap, skip cargo; verifier-offline pytest/cargo in Dockerfile; post-upload Part E reclassification if worst-model accuracy exceeds 20%",
+    "ablation_plan": "revert each flipping location; remove permutation tests expect easier pass rate",
+    "pass_rate_target": {
+      "hard_max_pct": 20,
+      "too_easy_threshold_pct": 80,
+      "basis": "frontier agents; Part E post-upload classification"
+    }
+  },
+  "verifier_scoring_plan": {
+    "metrics": [
+      {
+        "metric": "functional_correctness",
+        "weight": 0.45,
+        "criterion": "rehydration_report rows and summary match coherent predicates after rebuild+rh on primary units"
+      },
+      {
+        "metric": "hidden_invariants",
+        "weight": 0.25,
+        "criterion": "echo pairs, digest anchor, held-out permutation and ablation traps"
+      },
+      {
+        "metric": "state_hygiene",
+        "weight": 0.15,
+        "criterion": "consecutive identical runs and pipeline overwrite of manual JSON"
+      },
+      {
+        "metric": "interface_correctness",
+        "weight": 0.1,
+        "criterion": "facet_hex format, band_span, rows_total typing"
+      },
+      {
+        "metric": "deliverable_completeness",
+        "weight": 0.05,
+        "criterion": "output path and unit table coverage"
+      }
+    ],
+    "overall_threshold": 0.999,
+    "reward_output": "reward.txt",
+    "binary_threshold_rule": "reward.txt is 1 only when all semantic pytest passes including test_h18_held_perms"
+  },
+  "subtype_milestone_plan": {
+    "subcategories": [],
+    "milestone_count": 0,
+    "sequential_dependency": "single-step cross-test coupling via permutations and ablations",
+    "local_only_data": true,
+    "sidecar_or_protocol_notes": "fixtures under environment/data only"
+  },
+  "platform_files": [
+    {
+      "path": "task.toml",
+      "role": "metadata"
+    },
+    {
+      "path": "instruction.md",
+      "role": "natural public task prompt"
+    },
+    {
+      "path": "output_contract.toml",
+      "role": "local output declaration"
+    },
+    {
+      "path": "tests/test.sh",
+      "role": "verifier entrypoint"
+    },
+    {
+      "path": "tests/test_outputs.py",
+      "role": "domain verifier"
+    },
+    {
+      "path": "solution/solve.sh",
+      "role": "oracle"
+    },
+    {
+      "path": "environment/Dockerfile",
+      "role": "build definition"
+    },
+    {
+      "path": "construction_manifest.json",
+      "role": "local authoring artifact"
+    }
+  ],
+  "task_files": [
+    {
+      "path": "environment/m4/k83/src/main.rs",
+      "role": "driver and summary reduction"
+    },
+    {
+      "path": "environment/m4/k83/src/mux_order.rs",
+      "role": "oracle frontier C"
+    },
+    {
+      "path": "environment/p9/y5/src/op_c3.rs",
+      "role": "oracle frontier A"
+    },
+    {
+      "path": "environment/p9/y4/src/pack_refresh.rs",
+      "role": "oracle frontier B"
+    },
+    {
+      "path": "environment/p9/core/src/emit_c4.rs",
+      "role": "oracle frontier D"
+    },
+    {
+      "path": "environment/p9/y6/src/index_w.rs",
+      "role": "durable authority witness"
+    },
+    {
+      "path": "environment/p9/y6/src/phase_b.rs",
+      "role": "ordering primitive"
+    },
+    {
+      "path": "environment/data/replay_matrix.toml",
+      "role": "held-out permutation table"
+    },
+    {
+      "path": "environment/docs/unit_ids.txt",
+      "role": "primary unit id table"
+    },
+    {
+      "path": "environment/docs/replay_cmds.txt",
+      "role": "operator replay argv patterns"
+    }
+  ],
+  "fix_frontier": {
+    "count": 4,
+    "distribution": "Four Rust modules under m4/k83, p9/y5, p9/y4, p9/core",
+    "naming_policy": "Opaque symbols on neutral crate roots; instruction nouns banned on fix path",
+    "forbidden_stems": [
+      "rehydration",
+      "lockfile",
+      "scheduler",
+      "offline",
+      "replay",
+      "ordering",
+      "mismatch",
+      "authority",
+      "recovery",
+      "partial",
+      "green",
+      "intermediate",
+      "verifier",
+      "invariant",
+      "regeneration",
+      "cross-format",
+      "generalization",
+      "permutations",
+      "matrix",
+      "units",
+      "closure",
+      "echoes",
+      "mirror",
+      "pairs",
+      "steady",
+      "coherent",
+      "locked",
+      "sources",
+      "rebuild",
+      "manual",
+      "static",
+      "operator",
+      "argv",
+      "probes",
+      "aggregate",
+      "disagree",
+      "stamps",
+      "facet",
+      "material",
+      "sync",
+      "drift",
+      "bind",
+      "upper",
+      "worker",
+      "primary",
+      "held-out",
+      "sufficient",
+      "coherence",
+      "survives",
+      "deterministic"
+    ],
+    "helpers_policy": "Rhyming decoys perform real non-fix work",
+    "symbol_thin_preferred": true
+  },
+  "contract_surface": {
+    "boolean_fields_max": 0,
+    "direct_boolean_assertions_max": 0,
+    "preferred_assertion_styles": [
+      "regenerated JSON rows",
+      "derived run_digest",
+      "echo pair equality",
+      "held-out permutation traps",
+      "ablation incoherence",
+      "pipeline overwrite"
+    ],
+    "forbidden_assertion_styles": [
+      "scenario-key expected tables",
+      "static golden report in tests"
+    ]
+  },
+  "task_shape": {
+    "type": "adversarial_generalization",
+    "instruction_framing": "constraint-complete",
+    "hardness_source": "adversarial generalization",
+    "collapse_risk": "leaking canonical recovery path, replay phase, or authority choice collapses to one-crate patch"
+  },
+  "category_profile": {
+    "challenge_family": "scheduler_replay_lockfile_mismatch",
+    "profile_name": "concurrency_ordering",
+    "allowed_instruction_disclosures": "Concurrent scheduler replay, public ordering invariant via report predicates, replay_cmds.txt, locked build, durable rehydration_report outcomes, mirror pairs, run_digest formula home",
+    "forbidden_instruction_leaks": "Queue/lock locations, exact interleaving, patch functions, index vs slot authority, emit bypass, full replay_matrix row enumeration, per-unit facet answers",
+    "category_specific_hardness_bar": "Two or more schedulers/queues plus persistence coordinate with offline lockfile index; one lock or one sort must not suffice",
+    "category_specific_verifier_risks": "flaky sleeps, single trace, serialization-only pass, false-green partial replay",
+    "coverage_role": "Adds concurrency_ordering under system-administration for offline lockfile rehydration with scheduler replay mismatch on approved overlay mold"
+  },
+  "satisfiability_risk": {
+    "rc2_planned_name_risk": "Low with m4/p9 neutral roots",
+    "gx9_contract_risk": "Medium \u2014 mitigate via independent run_digest recompute",
+    "cr1_symbol_frontier_risk": "Low with explicit four-location contract",
+    "hidden_contract_risk": "Medium \u2014 held-out permutations in replay_matrix.toml; instruction states existence and generalization rule only"
+  },
+  "actionability_plan": {
+    "verifier_command_visible": "cargo build --release --locked; /app/target/release/rh; replay_cmds.txt; build_hints.txt",
+    "source_fix_intent_visible": "Sources under /app must emit rehydration_report.json with permutation generalization",
+    "generated_output_rule_visible": "Mirror pairs, coherence predicates, regeneration requirement",
+    "exact_formula_home": "main.rs module comment for band_span and run_digest",
+    "schema_home": "instruction public contract"
+  },
+  "waiver_plan": {
+    "waivers_expected": false,
+    "waiver_rationale": "Local deterministic rebuilds and seeded permutations; no hidden formulas"
+  },
+  "reference_pattern": {
+    "justification_if_none": "Construction follows approved accepted tasks/_ref/overlay-lowerdir-stale-bind/ for verifier shape, ablations, and Cargo workspace mold; reframed to adversarial_generalization + concurrency_ordering + system-administration. No promoted index entry matches this combo."
+  },
+  "realism_source": {
+    "source_type": "real_system",
+    "evidence_basis": "Minimized overlay lowerdir stale-bind approved reference and offline lockfile rehydration / scheduler replay postmortem patterns",
+    "upstream_or_synthetic_rationale": "Preserves Cargo lockfile and scheduler replay semantics without proprietary cluster code",
+    "minimization_preserves": "Authority split, false-green closure, cross-format emit bypass, held-out permutation matrix",
+    "synthetic_exception_review": "Not required"
+  }
+}

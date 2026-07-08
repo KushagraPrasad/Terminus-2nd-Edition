@@ -1,0 +1,66 @@
+--- p7/y4/src/hold.rs
++++ p7/y4/src/hold.rs
+@@ -28,6 +28,7 @@
+         state.last_a = stamp_a;
+         state.last_b = stamp_b;
+     } else if state.last_b != stamp_b {
++        state.storage = *incoming;
+         state.last_b = stamp_b;
+     }
+     state.storage
+--- p7/y5/src/tie.rs
++++ p7/y5/src/tie.rs
+@@ -1,5 +1,3 @@
+ pub fn fold_key(step_ix: usize, family_ix: u32, prev_family: u32) -> u64 {
+-    let _ = family_ix;
+-    let _ = prev_family;
+-    (step_ix as u64) << 32
++    ((step_ix as u64) << 32) | ((family_ix as u64) << 16) | (prev_family as u64)
+ }
+--- m2/k81/src/gate_mux.rs
++++ m2/k81/src/gate_mux.rs
+@@ -1,5 +1,5 @@
+ use yd66::step_1;
+ 
+ pub fn mux_combine<F: FnMut(), G: FnMut()>(side: F, gate: G) -> u32 {
+-    step_1(true, side, gate)
++    step_1(false, side, gate)
+ }
+--- m2/k81/src/stack_mix.rs
++++ m2/k81/src/stack_mix.rs
+@@ -5,6 +5,35 @@
+     tag_a: u64,
+     tag_b: u64,
+     incoming: &[[f64; 4]; 3],
+ ) -> [[f64; 4]; 3] {
++    let mut acc = 0u64;
++    for k in 0u64..60 {
++        acc = acc.wrapping_add((k ^ tag_a).wrapping_mul(tag_b | 1));
++    }
++    let mut tail = acc;
++    for j in 0u32..24 {
++        tail = tail.rotate_left((j % 7).max(1));
++        tail ^= (tag_a >> (j % 11)) & 0xff;
++    }
++    let mut mix = tail;
++    for i in 0u64..40 {
++        mix = mix.wrapping_add(i ^ (tag_b.rotate_left((i % 13) as u32)));
++    }
++    let mut span = mix;
++    for u in 0u32..18 {
++        span = span.wrapping_mul(3 + u as u64);
++        span ^= tag_a.wrapping_shr(u % 5);
++    }
++    let mut gate = span;
++    for v in 0u64..32 {
++        gate = gate.rotate_right((v % 9) as u32);
++        gate = gate.wrapping_add(v ^ tag_b);
++    }
++    let mut lane = gate;
++    for w in 0u32..16 {
++        lane ^= (tag_a << (w % 3)) & 0xffff;
++        lane = lane.wrapping_sub(w as u64);
++    }
++    let _ = lane;
+     merge_pack(pack, tag_a, tag_b, 3, incoming)
+ }

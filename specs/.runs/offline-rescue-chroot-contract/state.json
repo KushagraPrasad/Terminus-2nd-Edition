@@ -1,0 +1,820 @@
+{
+  "task_name": "offline-rescue-chroot-contract",
+  "attempt": 1,
+  "best_score": [
+    0,
+    0
+  ],
+  "best_attempt": 1,
+  "plateau_count": 0,
+  "candidates": [],
+  "history": [
+    {
+      "attempt": 1,
+      "fails": 0,
+      "warns": 0,
+      "evidence_path": "specs/.runs/offline-rescue-chroot-contract/attempt-1-evidence.json",
+      "evidence": {
+        "hardness_axes": [
+          {
+            "id": "discover",
+            "name": "Discover",
+            "verdict": "PASS",
+            "reasoning": "Solver must infer pivot-vs-bind rebinding rules per storage backend, ld.so cache prefix targeting, and backend-specific device node sets from bundled contracts and fixtures; none of these coupling choices are stated as a construction recipe in instruction.md."
+          },
+          {
+            "id": "synthesize",
+            "name": "Synthesize",
+            "verdict": "PASS",
+            "reasoning": "Valid pack emission requires coordinating path rebinding logic, rescue-targeted dynamic linker cache generation, and minimal device node assembly across four offline profiles with cross-artifact digest binding."
+          },
+          {
+            "id": "diagnose_or_design",
+            "name": "Diagnose or Design/Search",
+            "verdict": "PASS",
+            "reasoning": "constrained_build design-brief: agent performs design search under public capability/size limits and verifier contracts without a prescribed module topology or algorithm steps."
+          },
+          {
+            "id": "navigate_coupling",
+            "name": "Navigate coupling",
+            "verdict": "PASS",
+            "reasoning": "Choosing host-style bind shortcuts breaks pivot rebinding invariants; host-targeted ld.so caches pass local probes but fail witness cross-checks; wrong device cardinality passes one backend profile while failing others."
+          },
+          {
+            "id": "reason_beyond_training",
+            "name": "Reason beyond training",
+            "verdict": "PASS",
+            "reasoning": "Requires offline rescue packaging semantics (pivot_root vs recursive bind cliffs, ld.so cache invalidation for non-host root prefixes, storage-backend-specific minimal devnode sets) beyond generic tarball extraction recipes."
+          }
+        ],
+        "anti_trivialization_checks": [
+          {
+            "id": "disclosure_collapse",
+            "name": "Disclosure-collapse",
+            "verdict": "PASS",
+            "reasoning": "After every tested formula, schema field, and profile matrix row is disclosed, the agent still must discover which rebinding topology applies per backend and align JSON pack metadata with binary cache bytes\u2014no single public bullet maps to one obvious function."
+          },
+          {
+            "id": "hidden_instance",
+            "name": "Hidden-instance",
+            "verdict": "PASS",
+            "reasoning": "All four backend profiles are named in the public checker matrix; difficulty is coupling across modules, not guessing which single fixture is active."
+          },
+          {
+            "id": "single_artifact_repair",
+            "name": "Single-artifact repair",
+            "verdict": "PASS",
+            "reasoning": "Build shape requires three agent-implemented bash modules plus entry wiring; patching one manifest or helper cannot satisfy all profile witnesses."
+          },
+          {
+            "id": "generalization",
+            "name": "Generalization",
+            "verdict": "PASS",
+            "reasoning": "rc_verify exercises nvme, luks, zfs, and legacy profiles with distinct device and rebinding constraints rather than one golden instance."
+          },
+          {
+            "id": "prompt_honesty",
+            "name": "Prompt-honesty",
+            "verdict": "PASS",
+            "reasoning": "Honest disclosure of externally tested behavior does not collapse to a single-file edit because backend-specific overrides live in fixtures the agent must reconcile."
+          },
+          {
+            "id": "cheating_vs_difficulty",
+            "name": "Cheating-vs-difficulty",
+            "verdict": "PASS",
+            "reasoning": "Anti-cheating (no host-root mutation, no static pack writes) supports fairness but hardness comes from multi-subsystem design search and cross-format invariants."
+          },
+          {
+            "id": "mechanical_fix_filter",
+            "name": "Mechanical-fix filter",
+            "verdict": "PASS",
+            "reasoning": "No verifier-dep or timeout-only weakness; core challenge is rescue packaging coupling."
+          },
+          {
+            "id": "localized_fix",
+            "name": "Localized-fix",
+            "verdict": "PASS",
+            "reasoning": "Fix frontier spans bind_ctl_k, cache_m, and assemble_p across r4/k2, w2/m2, and r5/p2; isolated edits fail distinct test subsets."
+          },
+          {
+            "id": "oracle_locality",
+            "name": "Oracle-locality",
+            "verdict": "PASS",
+            "reasoning": "Oracle coordinates substantive bash across three modules with profile loops and digest binding, not a one-file heredoc swap."
+          },
+          {
+            "id": "small_declarative_cluster",
+            "name": "Small declarative-cluster",
+            "verdict": "PASS",
+            "reasoning": "Solve is not filling one policy table; it implements procedural rebinding, cache retargeting, and devnode emission with cross-checks."
+          },
+          {
+            "id": "grep_collapse",
+            "name": "Grep-collapse",
+            "verdict": "PASS",
+            "reasoning": "Instruction nouns are banned from fix-path symbols; opaque op_a/phase_b/reconcile_c names do not grep from public prose."
+          },
+          {
+            "id": "pre_factored_helper",
+            "name": "Pre-factored-helper",
+            "verdict": "PASS",
+            "reasoning": "Decoy helpers rhyme structurally but implement host-bind shortcuts and stage-only reporting that fail cross-profile checks."
+          },
+          {
+            "id": "recipe_discount",
+            "name": "Recipe-discount",
+            "verdict": "PASS",
+            "reasoning": "Generic offline chroot tar recipes do not cover pivot/bind cliffs, ld.so prefix retargeting, or per-backend devnode minimality enforced jointly by witnesses and pack_digest."
+          },
+          {
+            "id": "security_aura_discount",
+            "name": "Security-aura discount",
+            "verdict": "PASS",
+            "reasoning": "Rescue/sysadmin flavor alone does not pass; residual work is build-graph and cache invalidation coordination."
+          },
+          {
+            "id": "orthogonal_checklist",
+            "name": "Orthogonal-checklist",
+            "verdict": "PASS",
+            "reasoning": "Rebinding choice constrains cache paths; cache bytes constrain pack_digest; device sets trade off across backends\u2014requirements are coupled, not independent bullets."
+          },
+          {
+            "id": "harness_discount",
+            "name": "Harness-discount",
+            "verdict": "PASS",
+            "reasoning": "Docker offline fixtures add realism but hardness is cross-module invariant design, not container complexity."
+          },
+          {
+            "id": "one_pass_solvability",
+            "name": "One-pass solvability",
+            "verdict": "PASS",
+            "reasoning": "Frontier model cannot one-shot pass without running rc_verify across profiles and reconciling binary cache headers with JSON pack rows."
+          },
+          {
+            "id": "hard_only_gate",
+            "name": "Hard-only gate",
+            "verdict": "PASS",
+            "reasoning": "Coupled offline rescue packaging with cache invalidation and multi-component interaction targets hard band, not respectable medium checklist work."
+          },
+          {
+            "id": "discovery_budget_test",
+            "name": "Discovery/design budget test",
+            "verdict": "PASS",
+            "reasoning": "Three non-trivial discoveries documented in discovery_budget: pivot-vs-bind topology per backend, ld.so cache prefix retargeting, backend-specific minimal devnode sets."
+          },
+          {
+            "id": "instruction_specificity_test",
+            "name": "Instruction specificity test",
+            "verdict": "PASS",
+            "reasoning": "Non-repair constrained_build uses design-brief framing: public targets and verifier contracts are complete but construction route remains open."
+          },
+          {
+            "id": "topology_distribution_test",
+            "name": "Topology distribution test",
+            "verdict": "PASS",
+            "reasoning": "Three distinct implementation topologies enumerated (pivot-root, bind-mount rescue, hybrid staging); each requires three or more coordinated artifacts and no single module suffices for all profiles."
+          }
+        ],
+        "rubric_axes": [
+          {
+            "id": "verifiable",
+            "name": "Verifiable",
+            "verdict": "PASS",
+            "reasoning": "Deterministic rc_verify CLI with structured pack_out.json, run_report.json, and witness numeric fields; repeated runs stable offline."
+          },
+          {
+            "id": "well_specified",
+            "name": "Well-specified",
+            "verdict": "PASS",
+            "reasoning": "Public contract names checker command, four profiles, output schemas in run_contract.md, and capability/size limits without oracle steps."
+          },
+          {
+            "id": "solvable",
+            "name": "Solvable",
+            "verdict": "PASS",
+            "reasoning": "Expert sysadmin or build engineer can implement offline rescue packer in a few hours using bundled fixtures and contracts only."
+          },
+          {
+            "id": "difficult",
+            "name": "Difficult",
+            "verdict": "PASS",
+            "reasoning": "Requires professional packaging experience coordinating pivot semantics, linker cache invalidation, and storage-specific device minimality."
+          },
+          {
+            "id": "interesting",
+            "name": "Interesting",
+            "verdict": "PASS",
+            "reasoning": "Mirrors production initramfs/rescue image workflows paid ops teams maintain for offline recovery."
+          },
+          {
+            "id": "outcome_verified",
+            "name": "Outcome-verified",
+            "verdict": "PASS",
+            "reasoning": "Grades terminal pack and replay witnesses via rc_verify, not prescribed tooling or edit process."
+          }
+        ],
+        "instruction_completeness_test": {
+          "verdict": "PASS",
+          "reasoning": "Instruction.md states public targets and constraints but does not specify pivot/bind selection per backend, ld.so prefix derivation, or devnode cardinality\u2014solver must engage environment contracts and fixtures."
+        },
+        "discovery_budget": [
+          {
+            "discovery": "Active-root rebinding must use pivot_root preparation for nvme/luks profiles but recursive bind rescue paths for legacy/zfs per pivot_bind.md backend matrix\u2014not interchangeable shortcuts.",
+            "planned_location": "environment/r4/k2/bind_ctl_k.sh plus environment/r4/pivot_bind.md and environment/r1/backends/*.json",
+            "why_instruction_must_not_reveal": "Revealing the per-backend topology table as a recipe would collapse design search to transcription; instruction names outcomes only."
+          },
+          {
+            "discovery": "Generated ld.so cache bytes must use the rescue root prefix from pack metadata, not the host fixture prefix, or pack_digest cross-check fails despite local cache probe success.",
+            "planned_location": "environment/w2/m2/cache_m.sh with validation in environment/r5/grid_engine.sh and environment/r2/cache_templates/",
+            "why_instruction_must_not_reveal": "Stating the exact prefix rewrite rule would reduce cache invalidation reasoning to a single string substitution."
+          },
+          {
+            "discovery": "Minimal device node set cardinality and major/minor pairs vary by storage backend overrides in backend_overrides.json; copying the nvme set to luks/zfs fails witness rows.",
+            "planned_location": "environment/r5/p2/assemble_p.sh and environment/r3/dev_spec/backend_overrides.json",
+            "why_instruction_must_not_reveal": "Enumerating per-backend node lists in instruction.md would be answer recital (GX9 risk)."
+          }
+        ],
+        "instruction_specificity": {
+          "level": "design-brief",
+          "reasoning": "Public contract is constraint-complete about checker command, profiles, artifacts, capability/size limits, and recovery obligations, but omits module boundaries and construction algorithms."
+        },
+        "attack_path": {
+          "summary": "Agent writes host-bind chroot script, copies host ld.so cache, emits generic devnodes, trusts health subcommand and stage report.",
+          "reasoning": "Each shortcut passes a local probe: legacy_bind.sh rhymes with bind_ctl_k; host cache template validates locally; stub devnode manifest satisfies one profile; rc_verify --stage-only and health/status subcommands report success before pack_digest and terminal --all-profiles convergence."
+        },
+        "smallest_plausible_patch": {
+          "summary": "Not a single-knob fix\u2014smallest success still requires coordinated edits to rebinding helper, cache emitter, and devnode assembler plus idempotent recovery after mig7.sh.",
+          "reasoning": "Flipping only bind logic fixes pivot profiles but leaves cache prefix on host; fixing cache alone still fails luks devnode witness; device-only fix cannot satisfy zfs bind-path requirement."
+        },
+        "collapse_audit": {
+          "verdict": "PASS",
+          "reasoning": "Post-disclosure residual work is multi-module design search aligning rebinding topology, cache invalidation for rescue prefix, and backend devnode sets with JSON/binary cross-format invariants\u2014not mapping one bullet to one obvious file.",
+          "residual_hardness": "After honest disclosure, solver must experiment with rc_verify per profile, derive pivot vs bind from contracts, retarget ld.so cache generation, and align pack_digest across JSON and binary artifacts while avoiding destructive migration traps.",
+          "red_flags": [
+            "Blank-canvas collapse risk mitigated by read-only host fixture, four-profile matrix, cross-format pack_digest, and false-green health/status paths",
+            "Standard chroot recipe discounted by backend-specific topology and cache invalidation coupling"
+          ]
+        },
+        "topology_enumeration": [
+          {
+            "id": "T1",
+            "summary": "Pivot-root rescue topology: prepare bind mounts then pivot_root into staged rescue tree",
+            "locations": [
+              "environment/r4/k2/bind_ctl_k.sh",
+              "environment/r4/pivot_bind.md",
+              "environment/r0/host_root_fixture/",
+              "environment/r6/fixtures/nvme_witness.json"
+            ],
+            "why_no_single_location_suffices": "Pivot prep without rescue-targeted cache (cache_m) or backend devnodes (assemble_p) fails luks/zfs witness rows even when pivot syscall path is correct."
+          },
+          {
+            "id": "T2",
+            "summary": "Recursive bind-mount rescue topology for legacy/zfs profiles without pivot",
+            "locations": [
+              "environment/r4/k2/bind_ctl_k.sh",
+              "environment/r1/backends/zfs.json",
+              "environment/r1/backends/legacy.json",
+              "environment/r5/grid_engine.sh"
+            ],
+            "why_no_single_location_suffices": "Bind-only path still requires assemble_p devnode overrides and cache_m prefix retargeting; grid_engine ties bind manifest hashes into pack_digest."
+          },
+          {
+            "id": "T3",
+            "summary": "Hybrid staging topology: tmpfs stage, populate cache and devnodes, then atomic switch via documented recovery-safe sequence",
+            "locations": [
+              "environment/w2/m2/cache_m.sh",
+              "environment/r5/p2/assemble_p.sh",
+              "environment/r7/mig7.sh",
+              "environment/r4/run_contract.md"
+            ],
+            "why_no_single_location_suffices": "Staging without documented idempotent recovery after mig7.sh corrupts fixtures; atomic switch still fails if pack_digest omits binary cache header bytes."
+          }
+        ],
+        "construction_manifest": {
+          "symbol_table": [
+            {
+              "path": "environment/r4/k2/bind_ctl_k.sh",
+              "symbol": "op_a",
+              "kind": "function",
+              "signature": "op_a()",
+              "purpose": "Emits bind/pivot manifest rows consumed by pack assembly per active profile"
+            },
+            {
+              "path": "environment/w2/m2/cache_m.sh",
+              "symbol": "phase_b",
+              "kind": "function",
+              "signature": "phase_b()",
+              "purpose": "Writes rescue-prefix ld.so cache bytes referenced by pack metadata"
+            },
+            {
+              "path": "environment/r5/p2/assemble_p.sh",
+              "symbol": "reconcile_c",
+              "kind": "function",
+              "signature": "reconcile_c()",
+              "purpose": "Materializes backend-specific minimal devnode records and invokes apply_ctl"
+            }
+          ],
+          "flipping_point_contract": {
+            "locations": [
+              {
+                "id": "A",
+                "path": "environment/r4/k2/bind_ctl_k.sh",
+                "controls_tests": [
+                  "test_t01_terminal",
+                  "test_t07_b0_touch",
+                  "test_t08_cross_fmt"
+                ]
+              },
+              {
+                "id": "B",
+                "path": "environment/w2/m2/cache_m.sh",
+                "controls_tests": [
+                  "test_t03_p9_deep",
+                  "test_t04_smoke_guard"
+                ]
+              },
+              {
+                "id": "C",
+                "path": "environment/r5/p2/assemble_p.sh",
+                "controls_tests": [
+                  "test_t02_artifact_align",
+                  "test_t05_visibility",
+                  "test_t06_w3_idem"
+                ]
+              }
+            ],
+            "no_single_location_flips_majority": true,
+            "concentration_cap": 0.5
+          },
+          "decoy_manifest": [
+            {
+              "path": "environment/r4/legacy_bind.sh",
+              "kind": "helper",
+              "rhymes_with": "op_a",
+              "non_fix_purpose": "Host-only recursive bind shortcuts for simulator builds"
+            },
+            {
+              "path": "environment/r5/stage_only.sh",
+              "kind": "module",
+              "rhymes_with": "reconcile_c",
+              "non_fix_purpose": "Writes stage summaries without pack_digest cross-check"
+            }
+          ],
+          "code_forbidden_tokens": [
+            "rescue",
+            "chroot",
+            "rebind",
+            "pivot",
+            "bind",
+            "ldso",
+            "cache",
+            "device",
+            "nodes",
+            "storage",
+            "backend",
+            "capability",
+            "offline",
+            "active",
+            "migration",
+            "recovery",
+            "rollback",
+            "health",
+            "status",
+            "intermediate",
+            "digest",
+            "verification",
+            "profiles",
+            "witness"
+          ]
+        },
+        "naming_pass": {
+          "instruction_nouns_extracted": [
+            "rescue",
+            "chroot",
+            "rebind",
+            "pivot",
+            "bind",
+            "ldso",
+            "cache",
+            "device",
+            "nodes",
+            "storage",
+            "backend",
+            "capability",
+            "offline",
+            "active",
+            "migration",
+            "recovery",
+            "rollback",
+            "health",
+            "status",
+            "intermediate",
+            "digest",
+            "verification",
+            "profiles",
+            "witness"
+          ],
+          "renames_during_drafting": [
+            {
+              "original": "bind_rescue_paths.sh",
+              "renamed_to": "environment/r4/k2/bind_ctl_k.sh",
+              "reason": "stem bind and rescue collide with instruction nouns"
+            },
+            {
+              "original": "ldso_cache_builder.sh",
+              "renamed_to": "environment/w2/m2/cache_m.sh",
+              "reason": "stems ldso and cache collide with instruction nouns"
+            },
+            {
+              "original": "device_node_emitter.sh",
+              "renamed_to": "environment/r5/p2/assemble_p.sh",
+              "reason": "stems device and nodes collide with instruction nouns"
+            }
+          ],
+          "test_names_audited": [
+            "test_t01_terminal",
+            "test_t02_artifact_align",
+            "test_t03_p9_deep",
+            "test_t04_smoke_guard",
+            "test_t05_visibility",
+            "test_t06_w3_idem",
+            "test_t07_b0_touch",
+            "test_t08_cross_fmt"
+          ],
+          "concentration_math": {
+            "total_tests": 8,
+            "per_location": [
+              {
+                "location_id": "A",
+                "test_count": 3,
+                "ratio": 0.375
+              },
+              {
+                "location_id": "B",
+                "test_count": 2,
+                "ratio": 0.25
+              },
+              {
+                "location_id": "C",
+                "test_count": 3,
+                "ratio": 0.375
+              }
+            ]
+          },
+          "recomputed_concentration": {
+            "total_tests": 8,
+            "concentration_cap": 0.5,
+            "per_location": [
+              {
+                "location_id": "A",
+                "test_count": 3,
+                "ratio": 0.375
+              },
+              {
+                "location_id": "B",
+                "test_count": 2,
+                "ratio": 0.25
+              },
+              {
+                "location_id": "C",
+                "test_count": 3,
+                "ratio": 0.375
+              }
+            ]
+          }
+        },
+        "difficulty_mechanism_plan": [
+          {
+            "mechanism": "deceptive_but_valid_local_evidence",
+            "placement": "environment/r5/rc_verify health and status subcommands",
+            "why_model_misses_it": "Models trust misleading local success from health probes that skip pack_digest and full profile matrix",
+            "fairness_guardrail": "Instruction requires terminal --all-profiles run; grid_engine cross-checks durable pack_out.json against run_report.json"
+          },
+          {
+            "mechanism": "false_green_intermediate_states",
+            "placement": "/app/output/stage summaries via environment/r5/stage_only.sh",
+            "why_model_misses_it": "Models declare done when intermediate report files show passing rows before terminal convergence",
+            "fairness_guardrail": "Verifier requires full profile matrix pack_digest match documented in run_contract.md"
+          },
+          {
+            "mechanism": "cross_file_cross_format_invariants",
+            "placement": "pack_out.json metadata vs environment/r2 cache byte headers in grid_engine",
+            "why_model_misses_it": "Models fix single JSON file without aligning binary ld.so cache bytes to rescue prefix",
+            "fairness_guardrail": "pack_digest formula and witness numeric fields are public in run_contract.md"
+          },
+          {
+            "mechanism": "rollback_recovery_requirements",
+            "placement": "environment/r7/mig7.sh destructive migration of fixture store",
+            "why_model_misses_it": "Models repeat destructive migration and corrupt backend fixtures needed for luks/zfs witnesses",
+            "fairness_guardrail": "Idempotent recovery path documented publicly in run_contract.md before re-verification"
+          },
+          {
+            "mechanism": "environment_specific_cli_semantics",
+            "placement": "environment/r5/rc_verify flags and environment/r4/pivot_bind.md backend matrix",
+            "why_model_misses_it": "Models assume generic mount --bind semantics apply uniformly across all four profiles",
+            "fairness_guardrail": "Instruction names exact rc_verify command and references pivot_bind.md for externally tested rebinding outcomes"
+          }
+        ],
+        "calibration_plan": {
+          "oracle_runs": 3,
+          "no_op_runs": 3,
+          "target_agent_runs": 5,
+          "comparator_agent_runs": 5,
+          "human_sanity": "Expert sysadmin reproduces four-profile pack locally using bash toolchain and rc_verify only offline",
+          "shortcut_audit": "Block hardcoded pack_out.json, host fixture mutation, stage-only shortcuts, health-subcommand-only success, test edits",
+          "ablation_plan": "Remove deceptive health layer, then pack_digest cross-format layer, then rollback recovery; expect monotonic difficulty drop",
+          "pass_rate_target": {
+            "hard_max_pct": 20,
+            "too_easy_threshold_pct": 80,
+            "basis": "Part E Hard threshold on worst-model accuracy; verifier-offline via Dockerfile-baked pytest; post-upload difficulty classification after platform agent runs"
+          }
+        },
+        "verifier_scoring_plan": {
+          "metrics": [
+            {
+              "metric": "functional_correctness",
+              "weight": 0.45,
+              "criterion": "All four profiles pass rc_verify terminal matrix"
+            },
+            {
+              "metric": "hidden_invariants",
+              "weight": 0.25,
+              "criterion": "pack_digest binds JSON rows to binary cache and bind manifest hashes"
+            },
+            {
+              "metric": "state_hygiene",
+              "weight": 0.15,
+              "criterion": "Host fixture untouched; recovery after mig7.sh preserves witnesses"
+            },
+            {
+              "metric": "interface_correctness",
+              "weight": 0.1,
+              "criterion": "pack_out.json and run_report.json match public schemas"
+            },
+            {
+              "metric": "deliverable_completeness",
+              "weight": 0.05,
+              "criterion": "Required output paths present with non-empty witness-aligned rows"
+            }
+          ],
+          "overall_threshold": 0.999,
+          "reward_output": "reward.txt",
+          "binary_threshold_rule": "reward.txt=1 only when all weighted metrics pass"
+        },
+        "subtype_milestone_plan": {
+          "subcategories": [],
+          "milestone_count": 0,
+          "sequential_dependency": "none",
+          "local_only_data": true,
+          "sidecar_or_protocol_notes": "Single-container local verifier only; offline fixtures pre-bundled"
+        },
+        "platform_files": [
+          {
+            "path": "task.toml",
+            "role": "metadata; must set [environment] allow_internet = false"
+          },
+          {
+            "path": "instruction.md",
+            "role": "natural public design-brief prompt"
+          },
+          {
+            "path": "output_contract.toml",
+            "role": "local output declaration for pack_out.json and run_report.json"
+          },
+          {
+            "path": "tests/test.sh",
+            "role": "verifier entrypoint; invoke pre-installed pytest only"
+          },
+          {
+            "path": "tests/test_outputs.py",
+            "role": "domain verifier (8 tests)"
+          },
+          {
+            "path": "solution/solve.sh",
+            "role": "bash oracle coordinating op_a, phase_b, reconcile_c"
+          },
+          {
+            "path": "environment/Dockerfile",
+            "role": "build definition; bake bash, fakeroot helpers, pytest offline"
+          },
+          {
+            "path": "construction_manifest.json",
+            "role": "local authoring artifact mirroring symbol table"
+          }
+        ],
+        "task_files": [
+          {
+            "path": "environment/r0/host_root_fixture/etc/os-release",
+            "role": "read-only host root identity fixture"
+          },
+          {
+            "path": "environment/r0/host_root_fixture/bin/sh",
+            "role": "minimal host shell stub"
+          },
+          {
+            "path": "environment/r0/host_root_fixture/lib/ld-linux-x86-64.so.2",
+            "role": "host dynamic linker stub for prefix contrast"
+          },
+          {
+            "path": "environment/r1/backends/nvme.json",
+            "role": "nvme profile descriptor for rc_verify"
+          },
+          {
+            "path": "environment/r1/backends/luks.json",
+            "role": "luks profile descriptor"
+          },
+          {
+            "path": "environment/r1/backends/zfs.json",
+            "role": "zfs profile descriptor"
+          },
+          {
+            "path": "environment/r1/backends/legacy.json",
+            "role": "legacy profile descriptor"
+          },
+          {
+            "path": "environment/r2/cache_templates/host.ldso.bin",
+            "role": "host-prefix linker cache bytes"
+          },
+          {
+            "path": "environment/r2/cache_templates/rescue.ldso.bin",
+            "role": "rescue-prefix reference cache bytes"
+          },
+          {
+            "path": "environment/r3/dev_spec/minimal_nodes.json",
+            "role": "baseline devnode schema"
+          },
+          {
+            "path": "environment/r3/dev_spec/backend_overrides.json",
+            "role": "per-backend devnode cardinality and majors"
+          },
+          {
+            "path": "environment/r4/pivot_bind.md",
+            "role": "public pivot vs bind rules and capability matrix references"
+          },
+          {
+            "path": "environment/r4/capability_matrix.md",
+            "role": "size and capability limits for offline pack"
+          },
+          {
+            "path": "environment/r4/run_contract.md",
+            "role": "pack_out.json / run_report.json schemas and pack_digest formula"
+          },
+          {
+            "path": "environment/r4/legacy_bind.sh",
+            "role": "decoy host-bind-only helper"
+          },
+          {
+            "path": "environment/r5/rc_verify",
+            "role": "checker CLI with health/status subcommands"
+          },
+          {
+            "path": "environment/r5/grid_engine.sh",
+            "role": "pack_digest and witness validation"
+          },
+          {
+            "path": "environment/r5/stage_only.sh",
+            "role": "decoy stage reporter without digest cross-check"
+          },
+          {
+            "path": "environment/r5/apply_ctl.sh",
+            "role": "offline replay driver applying pack to fixtures"
+          },
+          {
+            "path": "environment/r6/fixtures/nvme_witness.json",
+            "role": "nvme witness rows"
+          },
+          {
+            "path": "environment/r6/fixtures/luks_witness.json",
+            "role": "luks witness rows"
+          },
+          {
+            "path": "environment/r6/fixtures/zfs_witness.json",
+            "role": "zfs witness rows"
+          },
+          {
+            "path": "environment/r6/fixtures/legacy_witness.json",
+            "role": "legacy witness rows"
+          },
+          {
+            "path": "environment/r7/mig7.sh",
+            "role": "destructive migration with documented idempotent recovery"
+          },
+          {
+            "path": "environment/r4/k2/bind_ctl_k.sh",
+            "role": "agent build module A (op_a)"
+          },
+          {
+            "path": "environment/w2/m2/cache_m.sh",
+            "role": "agent build module B (phase_b)"
+          },
+          {
+            "path": "environment/r5/p2/assemble_p.sh",
+            "role": "agent build module C (reconcile_c)"
+          },
+          {
+            "path": "environment/w2/run_entry.sh",
+            "role": "wires three modules into pipeline entrypoint"
+          }
+        ],
+        "fix_frontier": {
+          "count": 3,
+          "distribution": "environment/r4/k2, environment/w2/m2, environment/r5/p2 across three bash module roots plus run_entry wiring",
+          "naming_policy": "Opaque symbols from construction manifest symbol_table only",
+          "forbidden_stems": [
+            "rescue",
+            "chroot",
+            "rebind",
+            "pivot",
+            "bind",
+            "ldso",
+            "cache",
+            "device",
+            "nodes",
+            "storage",
+            "backend",
+            "capability",
+            "offline",
+            "active",
+            "migration",
+            "recovery",
+            "rollback",
+            "health",
+            "status",
+            "intermediate",
+            "digest",
+            "verification",
+            "profiles",
+            "witness"
+          ],
+          "helpers_policy": "Decoys may rhyme structurally; oracle must not modify decoy bodies to pass",
+          "symbol_thin_preferred": true
+        },
+        "contract_surface": {
+          "boolean_fields_max": 0,
+          "direct_boolean_assertions_max": 0,
+          "preferred_assertion_styles": [
+            "pack_digest equality",
+            "checker exit codes",
+            "witness numeric fields",
+            "schema keys",
+            "cross-run invariants",
+            "binary header bytes"
+          ],
+          "forbidden_assertion_styles": [
+            "boolean answer keys",
+            "scenario->field->expected tables",
+            "fields ending in _ok/_valid/_passes"
+          ]
+        },
+        "task_shape": {
+          "type": "constrained_build",
+          "instruction_framing": "design-brief",
+          "hardness_source": "design search",
+          "collapse_risk": "blank-canvas build with no binding cross-component constraints"
+        },
+        "category_profile": {
+          "challenge_family": "rescue environment packaging",
+          "profile_name": "build_dependency_toolchain",
+          "allowed_instruction_disclosures": "Observable packaging requirements, public rc_verify command, four offline profiles, capability/size limits, output schemas, recovery command, witness outcomes",
+          "forbidden_instruction_leaks": "Per-backend pivot/bind choice table as recipe, exact ld.so prefix rewrite steps, per-backend devnode major/minor lists, oracle transcript",
+          "category_specific_hardness_bar": "Lockfiles/fixtures, generated ld.so cache bytes, rebinding graph, and cache invalidation coordinate across four offline profiles",
+          "category_specific_verifier_risks": "False greens from local health/status subcommands, golden pack fixtures, clean-host-only checks",
+          "coverage_role": "Strengthens build_dependency_toolchain via offline rescue chroot packaging with multi-backend matrix"
+        },
+        "satisfiability_risk": {
+          "rc2_planned_name_risk": "low \u2014 opaque build-path symbols precommitted in symbol_table",
+          "gx9_contract_risk": "low \u2014 contract uses pack_digest rows and numeric witnesses, not boolean verdict tables",
+          "cr1_symbol_frontier_risk": "low \u2014 frontier spans three bash module roots with decoys",
+          "hidden_contract_risk": "medium \u2014 pack_digest binds JSON metadata to binary cache headers and bind manifest hashes in grid_engine behavior"
+        },
+        "actionability_plan": {
+          "verifier_command_visible": "rc_verify --all-profiles with pack-out and report-out paths in instruction.md",
+          "source_fix_intent_visible": "yes \u2014 build bash under environment/w2; do not mutate environment/r0/host_root_fixture",
+          "generated_output_rule_visible": "pack_out.json and run_report.json schemas and pack_digest rule public in run_contract.md",
+          "exact_formula_home": "environment/r4/run_contract.md for pack_digest and witness tolerance rules",
+          "schema_home": "environment/r4/run_contract.md plus instruction.md output paths"
+        },
+        "waiver_plan": {
+          "waivers_expected": false,
+          "waiver_rationale": "Hardness from coupled offline packaging behavior and cache invalidation, not harness brittleness"
+        },
+        "reference_pattern": {
+          "justification_if_none": "No promoted reference tasks in docs/reference_tasks/index.json; offline rescue chroot packaging with pivot/bind and ld.so retargeting is a distinct build_dependency_toolchain pattern without a promoted clone source."
+        },
+        "realism_source": {
+          "source_type": "real_system",
+          "evidence_basis": "open-source issue",
+          "upstream_or_synthetic_rationale": "Production system-administration pattern for initramfs/rescue image packaging: pivot_root vs bind rescue paths, ld.so cache targeting non-host root, and storage-backend-specific minimal devnodes",
+          "minimization_preserves": "Causal coupling in offline rescue packaging across rebinding topology, linker cache invalidation, and backend device minimality",
+          "synthetic_exception_review": "not required"
+        }
+      },
+      "evidence_errors": [],
+      "evidence_warnings": [],
+      "blocking_failures": [],
+      "strict": true
+    }
+  ],
+  "schema_path": "specs/validation_schema.json",
+  "emit_legacy_reviewer": false
+}

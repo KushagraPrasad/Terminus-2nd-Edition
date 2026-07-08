@@ -1,0 +1,91 @@
+# First-Look Dry-Run Packet
+
+## Prompt
+You can see instruction.md and ls -R environment/, but not tests.
+Where would you start looking, what command would you run, and what kind of bug do you expect?
+
+## instruction.md
+I need the local lease recovery coordinator in `/app` repaired. The command under test is:
+
+```bash
+go run /app/cmd/reconcile --root <coordinator-root> --now 1700000000 --out /app/out/report.json
+```
+
+Please fix the implementation so it can reconcile a crash-recovered coordinator root with multiple shard files and worker journals. The Go source files inside the partition subsystem under `/app/partition/` and the reconciliation subsystem under `/app/reconcile/` must be modified/repaired so that all verifier checks pass.
+
+The system is defined by the following specifications:
+
+### Shard Configuration
+Shard files are JSON files under `<coordinator-root>/shards/` representing partitions (e.g. `00.json`, `01.json`). Each shard file has the following schema:
+- `shard`: String (e.g. `"00"`)
+- `jobs`: An array of job objects:
+  - `id`: String (unique job identifier)
+  - `state`: String (`queued`, `leased`, or `done`)
+  - `owner`: String (worker ID, empty if not leased)
+  - `epoch`: Integer (generation number of current lease)
+  - `lease_until`: Integer (Unix timestamp representing lease deadline)
+
+### Reconciler Output Report
+Upon completion, the coordinator writes a JSON summary to `/app/out/report.json` (or the path specified by the `--out` CLI flag) with the schema:
+- `schema_version`: Integer (always `1`)
+- `shards`: An array of summaries sorted by shard ID:
+  - `shard`: String (shard ID)
+  - `queued`: Integer (number of jobs in `queued` state)
+  - `leased`: Integer (number of jobs in `leased` state)
+  - `done`: Integer (number of jobs in `done` state)
+- `applied_events`: Integer (count of successfully processed/applied events)
+- `duplicate_events`: Integer (count of ignored duplicate event IDs)
+- `invalid_events`: Integer (count of skipped invalid events)
+- `expired_jobs`: Integer (count of leased jobs that were expired back to `queued`)
+- `moved_jobs`: Integer (count of job copies removed from non-canonical shards)
+
+### Recovery Specifications
+For detailed event execution semantics, state transition rules, duplicate resolution policies using FNV-1a 32-bit hashing, and atomicity requirements, refer to the contract documentation at `/app/docs/recovery_contract.md`.
+
+Keep the CLI flags, shard JSON schema, and report JSON schema stable. Do not hardcode the sample data or assume a fixed number of shards. Static or manual output writes are insufficient; the reconciliation module library behavior and functions must be correct.
+
+## ls -R environment/
+environment/:
+app/
+Dockerfile
+
+environment/app/:
+cmd/
+docs/
+internal/
+partition/
+reconcile/
+go.mod
+
+environment/app/cmd/:
+reconcile/
+
+environment/app/docs/:
+recovery_contract.md
+
+environment/app/internal/:
+model/
+store/
+
+environment/app/partition/:
+resolver.go
+
+environment/app/reconcile/:
+reconcile.go
+state_machine.go
+
+environment/app/cmd/reconcile/:
+main.go
+
+environment/app/internal/model/:
+types.go
+
+environment/app/internal/store/:
+store.go
+
+## Excluded
+- tests/
+- solution/
+- construction_manifest.json
+- quality_check_adjudication.json
+- waivers.json

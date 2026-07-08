@@ -1,0 +1,53 @@
+{
+  "batch": 4,
+  "tasks": [
+    {
+      "registry_id": "core-dump-stack-inference",
+      "task_dir": "heap-corruption-trace-inference",
+      "spec_stem": "core-dump-stack-inference",
+      "linked": true
+    },
+    {
+      "registry_id": "happens-before-model-check",
+      "task_dir": "happens-before-model-check",
+      "spec_stem": "happens-before-model-check",
+      "linked": true
+    },
+    {
+      "registry_id": "journal-replay-generation-skew",
+      "task_dir": "journal-replay-divergence",
+      "spec_stem": "journal-replay-generation-skew-031",
+      "linked": true
+    },
+    {
+      "registry_id": "heisenbug-variant-ladder",
+      "task_dir": "codec-framing-variant-ladder",
+      "spec_stem": "codec-framing-variant-ladder",
+      "linked": true
+    },
+    {
+      "registry_id": "plugin-registry-authority-split",
+      "task_dir": "path-authority-split",
+      "spec_stem": "revocation-cache-authority-split-012",
+      "linked": true
+    },
+    {
+      "registry_id": "cross-module-float-policy-drift",
+      "task_dir": "initramfs-module-order-drift",
+      "spec_stem": "cross-runtime-float-policy-drift-016",
+      "linked": true
+    },
+    {
+      "registry_id": "service-mesh-config-precedence",
+      "task_dir": null,
+      "spec_stem": null,
+      "linked": false
+    },
+    {
+      "registry_id": "monorepo-import-cycle-repair",
+      "task_dir": null,
+      "spec_stem": "archive-repair",
+      "linked": false
+    }
+  ]
+}

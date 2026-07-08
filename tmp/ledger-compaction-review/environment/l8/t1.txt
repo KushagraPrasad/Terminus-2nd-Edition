@@ -1,0 +1,3 @@
+clean run: local smoke can report all sources as readable
+restart run: source files remain readable after a second invocation
+rollback run: retired rows remain present in input data for audit purposes

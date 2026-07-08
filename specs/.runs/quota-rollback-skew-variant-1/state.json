@@ -1,0 +1,741 @@
+{
+  "task_name": "quota-rollback-skew-variant-1",
+  "attempt": 1,
+  "best_score": [
+    0,
+    0
+  ],
+  "best_attempt": 1,
+  "plateau_count": 0,
+  "candidates": [],
+  "history": [
+    {
+      "attempt": 1,
+      "fails": 0,
+      "warns": 0,
+      "evidence_path": "specs/.runs/quota-rollback-skew-variant-1/attempt-1-evidence.json",
+      "evidence": {
+        "hardness_axes": [
+          {
+            "id": "discover",
+            "name": "Discover",
+            "verdict": "PASS",
+            "reasoning": "Solvers must read reconciliation sources, replay traces, and divergent summaries in code to learn which authority feeds the verifier-facing digest versus which path stays internally coherent after partial rollback."
+          },
+          {
+            "id": "synthesize",
+            "name": "Synthesize",
+            "verdict": "PASS",
+            "reasoning": "Correctness couples durable accounting, coordinator-visible emission, and cleanup-window ordering; no single subsystem\u2019s local invariant implies global agreement across generations."
+          },
+          {
+            "id": "diagnose_or_design",
+            "name": "Diagnose or Design/Search",
+            "verdict": "PASS",
+            "reasoning": "Repair-shaped brief stays symptoms-only; the broken wiring between replay boundaries and trusted surfaces must be diagnosed from behavior and artifacts, not from a named root cause in the prompt."
+          },
+          {
+            "id": "navigate_coupling",
+            "name": "Navigate coupling",
+            "verdict": "PASS",
+            "reasoning": "Tightening one read path can break idempotent reruns or shadow reconciliation that other tests still rely on; fixes must propagate across emit, ingest, and digest assembly."
+          },
+          {
+            "id": "reason_beyond_training",
+            "name": "Reason beyond training",
+            "verdict": "PASS",
+            "reasoning": "Not a textbook JSON validator or HMAC exercise; difficulty is operational lineage under rollback with asymmetric observability, closer to distributed control-plane bugs than course algorithms."
+          }
+        ],
+        "anti_trivialization_checks": [
+          {
+            "id": "disclosure_collapse",
+            "name": "Disclosure-collapse",
+            "verdict": "PASS",
+            "reasoning": "After every tested digest field, merge rule, and CLI step is disclosed, the solver still must determine which reconciliation stage wrongly trusts reconstructed summaries and how that couples to cleanup ordering."
+          },
+          {
+            "id": "hidden_instance",
+            "name": "Hidden-instance",
+            "verdict": "PASS",
+            "reasoning": "Failure is behavioral across schedules and generations, not guessing which of hundreds of opaque records is the single broken row."
+          },
+          {
+            "id": "single_artifact_repair",
+            "name": "Single-artifact repair",
+            "verdict": "PASS",
+            "reasoning": "Patching one manifest or one digest template alone cannot satisfy cross-generation invariants plus regeneration and idempotence traps declared in the test plan."
+          },
+          {
+            "id": "generalization",
+            "name": "Generalization",
+            "verdict": "PASS",
+            "reasoning": "Verifier spans multiple replay windows, partial restore profiles, and repeated driver invocations rather than one frozen scenario id."
+          },
+          {
+            "id": "prompt_honesty",
+            "name": "Prompt-honesty",
+            "verdict": "PASS",
+            "reasoning": "An honest symptoms-first prompt does not shrink the search space to a single knob; it names user-visible disagreement patterns without mapping them to file clusters."
+          },
+          {
+            "id": "cheating_vs_difficulty",
+            "name": "Cheating-vs-difficulty",
+            "verdict": "PASS",
+            "reasoning": "Hardness is not from hiding the contract; anti-cheating lints are orthogonal and the design keeps requirements visible while the causal chain remains latent."
+          },
+          {
+            "id": "mechanical_fix_filter",
+            "name": "Mechanical-fix filter",
+            "verdict": "PASS",
+            "reasoning": "Core risk is semantic authority skew, not dependency bumps, timeouts, or reward footer formatting."
+          },
+          {
+            "id": "localized_fix",
+            "name": "Localized-fix",
+            "verdict": "PASS",
+            "reasoning": "Flipping-point contract spreads meaningful control across three roots; reverting any one file is designed to fail a non-trivial test subset."
+          },
+          {
+            "id": "oracle_locality",
+            "name": "Oracle-locality",
+            "verdict": "PASS",
+            "reasoning": "Oracle plan coordinates coordinated edits across ingest, emit, and digest assembly rather than wholesale replacing one short helper."
+          },
+          {
+            "id": "small_declarative_cluster",
+            "name": "Small declarative-cluster",
+            "verdict": "PASS",
+            "reasoning": "No single literal precedence table encodes the full bug; runtime behavior and regeneration matter as much as static tables."
+          },
+          {
+            "id": "grep_collapse",
+            "name": "Grep-collapse",
+            "verdict": "PASS",
+            "reasoning": "Instruction vocabulary targets operations symptoms; fix-path stems and symbols are intentionally decoupled from those stems per naming pass."
+          },
+          {
+            "id": "pre_factored_helper",
+            "name": "Pre-factored-helper",
+            "verdict": "PASS",
+            "reasoning": "Decoys mirror shapes without spelling validate/canon/patch helpers that mirror prompt bullets."
+          },
+          {
+            "id": "recipe_discount",
+            "name": "Recipe-discount",
+            "verdict": "PASS",
+            "reasoning": "Not a safe-extractor, policy-knob transcription, or textbook crypto pipeline."
+          },
+          {
+            "id": "security_aura_discount",
+            "name": "Security-aura discount",
+            "verdict": "PASS",
+            "reasoning": "No exploit-string checklist; workload semantics drive difficulty."
+          },
+          {
+            "id": "orthogonal_checklist",
+            "name": "Orthogonal-checklist",
+            "verdict": "PASS",
+            "reasoning": "Requirements trade off across rollback windows, digest provenance, and regeneration coupling rather than independent toggles."
+          },
+          {
+            "id": "harness_discount",
+            "name": "Harness-discount",
+            "verdict": "PASS",
+            "reasoning": "Docker supplies a realistic shell; challenge depth is reconciliation skew, not container count."
+          },
+          {
+            "id": "one_pass_solvability",
+            "name": "One-pass solvability",
+            "verdict": "PASS",
+            "reasoning": "Even with all files open, mapping symptoms to the wrong authority path yields plausible false greens until later generations."
+          },
+          {
+            "id": "hard_only_gate",
+            "name": "Hard-only gate",
+            "verdict": "PASS",
+            "reasoning": "Residual work after disclosure remains expert distributed-systems debugging, not a medium classroom exercise."
+          },
+          {
+            "id": "discovery_budget_test",
+            "name": "Discovery/design budget test",
+            "verdict": "PASS",
+            "reasoning": "discovery_budget lists three non-trivial discoveries all sourced from code/runtime, not the public prompt alone."
+          },
+          {
+            "id": "instruction_specificity_test",
+            "name": "Instruction specificity test",
+            "verdict": "PASS",
+            "reasoning": "task_shape is repair with symptoms-only specificity; no spec-complete algorithm drop in the prompt."
+          },
+          {
+            "id": "topology_distribution_test",
+            "name": "Topology distribution test",
+            "verdict": "PASS",
+            "reasoning": "topology_enumeration lists three distinct coordination topologies each spanning at least three loci with no single sufficient component."
+          }
+        ],
+        "rubric_axes": [
+          {
+            "id": "verifiable",
+            "name": "Verifiable",
+            "verdict": "PASS",
+            "reasoning": "Deterministic Python verifier over regenerated JSON digests and CLI transcripts with fixed seeds for replay."
+          },
+          {
+            "id": "well_specified",
+            "name": "Well-specified",
+            "verdict": "PASS",
+            "reasoning": "Public contract names commands, artifact paths, digest fields, and merge semantics while leaving causal wiring to the codebase."
+          },
+          {
+            "id": "solvable",
+            "name": "Solvable",
+            "verdict": "PASS",
+            "reasoning": "Expert can navigate bounded Python services within a few hours once the authority bug is recognized."
+          },
+          {
+            "id": "difficult",
+            "name": "Difficult",
+            "verdict": "PASS",
+            "reasoning": "Combines delayed false greens, multi-authority skew, and rollback ordering typical of senior SRE/reconciliation work."
+          },
+          {
+            "id": "interesting",
+            "name": "Interesting",
+            "verdict": "PASS",
+            "reasoning": "Directly mirrors paid incident classes in quota and admission control planes after partial recovery."
+          },
+          {
+            "id": "outcome_verified",
+            "name": "Outcome-verified",
+            "verdict": "PASS",
+            "reasoning": "Grades regenerated artifacts and invariants, not tool choice or patch narration."
+          }
+        ],
+        "instruction_completeness_test": {
+          "verdict": "PASS",
+          "reasoning": "Symptoms-only instruction cannot be executed to a fix without reading reconciliation sources, replay traces, and digest assembly to learn which stage trusts the wrong surface."
+        },
+        "discovery_budget": [
+          {
+            "discovery": "Which ingest stage still reconciles against a shadow snapshot while the active ledger already advanced, producing immediate healthy envelopes that later disagree.",
+            "planned_location": "environment/l7w/a9f.py plus adjacent ingest helpers",
+            "why_instruction_must_not_reveal": "Naming the shadow-vs-active split collapses diagnosis to a single conditional and trivializes the distributed skew story."
+          },
+          {
+            "discovery": "How cleanup window ordering mutates durable lineage keys so replay boundaries reattach counters from an older generation without failing fast-path probes.",
+            "planned_location": "environment/q3p/b2c.py orchestration and merge hooks",
+            "why_instruction_must_not_reveal": "Stating the exact ordering bug maps directly to a sort or gate insertion recipe."
+          },
+          {
+            "discovery": "Where the inspection driver assembles verifier-facing digests from reconstructed summaries instead of canonical artifacts, so tests that only skim surface health stay green.",
+            "planned_location": "environment/r8s/d4e.py digest assembly",
+            "why_instruction_must_not_reveal": "Pointing at digest assembly as the sole bug site erases the need to prove cross-authority coupling."
+          }
+        ],
+        "instruction_specificity": {
+          "level": "symptoms-only",
+          "reasoning": "Public prompt describes intermittent false clears, cross-view disagreement after merge windows, and regeneration obligations without naming broken functions or internal phase names."
+        },
+        "attack_path": {
+          "summary": "Greedy shortcut aligns short-lived probes with one authority while leaving digest assembly on a cheaper reconstructed path; partial rollback exacerbates lineage drift.",
+          "reasoning": "Agents that only normalize immediate health signals or flush caches can satisfy early probes yet still emit digests sourced from the wrong reconstruction tier after cleanup, so the attack path rewards shallow reconciliation fixes."
+        },
+        "smallest_plausible_patch": {
+          "summary": "Still requires coordinated changes across ingest selection, cleanup ordering hooks, and digest assembly rather than a one-line table edit.",
+          "reasoning": "Any single-file tweak that flips one boolean source without touching the other two stages fails at least one flipping-point-controlled test group, preserving non-locality."
+        },
+        "collapse_audit": {
+          "verdict": "PASS",
+          "reasoning": "Part A: post-disclosure work remains diagnosing which authority path should bind under rollback and proving it through multi-run artifacts, not mapping each bullet to one obvious helper. Residual coupling across three roots blocks one-shot transcription.",
+          "residual_hardness": "Solvers must integrate replay lifecycle semantics with digest provenance and idempotent regeneration, falsifying several locally plausible single-stage hypotheses before the full fix passes.",
+          "red_flags": [
+            "Watch RC2: keep path stems clear of instruction tokens.",
+            "Watch GX9: keep scenario tables out of instruction; derive expectations from visible digest math only."
+          ]
+        },
+        "topology_enumeration": [
+          {
+            "id": "topo_a",
+            "summary": "Shadow-weighted ingest vs live ledger advance",
+            "locations": [
+              "environment/l7w/a9f.py ingest selection",
+              "environment/q3p/b2c.py merge window coordinator",
+              "environment/r8s/d4e.py digest assembly inputs"
+            ],
+            "why_no_single_location_suffices": "Fixing only ingest ignores stale digest reconstruction; fixing only digest masks upstream lineage drift; coordinator alone cannot emit correct digests without both sides."
+          },
+          {
+            "id": "topo_b",
+            "summary": "Cleanup ordering alters durable lineage keys",
+            "locations": [
+              "environment/q3p/b2c.py cleanup scheduler",
+              "environment/l7w/a9f.py durable counter persistence",
+              "environment/r8s/d4e.py digest key derivation"
+            ],
+            "why_no_single_location_suffices": "Reordering cleanup without aligning digest derivation yields new false agreements; adjusting keys alone breaks idempotent reruns unless scheduler coupling is fixed."
+          },
+          {
+            "id": "topo_c",
+            "summary": "Verifier pipeline depends on regenerated coordinator digest",
+            "locations": [
+              "environment/r8s/d4e.py digest emission",
+              "tests/test_outputs.py verifier harness",
+              "environment/bin/run_inspection.sh driver wiring"
+            ],
+            "why_no_single_location_suffices": "Static JSON writes or test-only shortcuts fail regeneration traps; driver-only fixes leave digest assembly inconsistent with ingest truth."
+          }
+        ],
+        "construction_manifest": {
+          "symbol_table": [
+            {
+              "path": "environment/l7w/a9f.py",
+              "symbol": "fn_u7",
+              "kind": "function",
+              "signature": "def fn_u7(ctx, batch, tier):",
+              "purpose": "Selects reconciliation inputs for ingest batches before persistence."
+            },
+            {
+              "path": "environment/q3p/b2c.py",
+              "symbol": "fn_v2",
+              "kind": "function",
+              "signature": "def fn_v2(window, events, ledger):",
+              "purpose": "Orders merge and cleanup transitions across replay windows."
+            },
+            {
+              "path": "environment/r8s/d4e.py",
+              "symbol": "fn_w4",
+              "kind": "function",
+              "signature": "def fn_w4(rows, bases, mode):",
+              "purpose": "Builds coordinator-visible digest rows from supplied bases and modes."
+            }
+          ],
+          "flipping_point_contract": {
+            "locations": [
+              {
+                "id": "A",
+                "path": "environment/l7w/a9f.py",
+                "controls_tests": [
+                  "test_z1_orbit_alignment",
+                  "test_z2_anchor_repeat"
+                ]
+              },
+              {
+                "id": "B",
+                "path": "environment/q3p/b2c.py",
+                "controls_tests": [
+                  "test_h3_numeric_agreement",
+                  "test_p9_sequence_stability"
+                ]
+              },
+              {
+                "id": "C",
+                "path": "environment/r8s/d4e.py",
+                "controls_tests": [
+                  "test_k7_lane_regen_trace"
+                ]
+              }
+            ],
+            "no_single_location_flips_majority": true,
+            "concentration_cap": 0.5
+          },
+          "decoy_manifest": [
+            {
+              "path": "environment/l7w/decoy_g1.py",
+              "kind": "module",
+              "rhymes_with": "fn_u7",
+              "non_fix_purpose": "Implements alternate batching heuristics for cold-cache simulations unrelated to digest authority."
+            },
+            {
+              "path": "environment/q3p/decoy_g2.py",
+              "kind": "helper",
+              "rhymes_with": "fn_v2",
+              "non_fix_purpose": "Provides deterministic toy merge demos for docs examples without participating in live driver paths."
+            }
+          ],
+          "code_forbidden_tokens": [
+            "tenants",
+            "probes",
+            "accounting",
+            "rollup",
+            "resynchronization",
+            "admission",
+            "quotas",
+            "workloads",
+            "holdings"
+          ]
+        },
+        "naming_pass": {
+          "instruction_nouns_extracted": [
+            "tenants",
+            "probes",
+            "accounting",
+            "rollup",
+            "resynchronization",
+            "admission",
+            "quotas",
+            "workloads",
+            "holdings"
+          ],
+          "renames_during_drafting": [
+            {
+              "original": "environment/zone_emit/body.py",
+              "renamed_to": "environment/q3p/b2c.py",
+              "reason": "Stem tokenized to emit-related fragments that could overlap future instruction edits about emissions; replaced with opaque zone code."
+            }
+          ],
+          "test_names_audited": [
+            "test_z1_orbit_alignment",
+            "test_z2_anchor_repeat",
+            "test_h3_numeric_agreement",
+            "test_p9_sequence_stability",
+            "test_k7_lane_regen_trace"
+          ],
+          "concentration_math": {
+            "total_tests": 5,
+            "per_location": [
+              {
+                "location_id": "A",
+                "test_count": 2,
+                "ratio": 0.4
+              },
+              {
+                "location_id": "B",
+                "test_count": 2,
+                "ratio": 0.4
+              },
+              {
+                "location_id": "C",
+                "test_count": 1,
+                "ratio": 0.2
+              }
+            ]
+          },
+          "recomputed_concentration": {
+            "total_tests": 5,
+            "concentration_cap": 0.5,
+            "per_location": [
+              {
+                "location_id": "A",
+                "test_count": 2,
+                "ratio": 0.4
+              },
+              {
+                "location_id": "B",
+                "test_count": 2,
+                "ratio": 0.4
+              },
+              {
+                "location_id": "C",
+                "test_count": 1,
+                "ratio": 0.2
+              }
+            ]
+          }
+        },
+        "difficulty_mechanism_plan": [
+          {
+            "mechanism": "false_green_intermediate_states",
+            "placement": "environment/l7w/a9f.py short-horizon probe path vs durable accounting path",
+            "why_model_misses_it": "Models often patch the first green surface without proving later-generation digests still disagree.",
+            "fairness_guardrail": "Instruction states the delayed disagreement symptom; traces expose both horizons."
+          },
+          {
+            "mechanism": "rollback_recovery_requirements",
+            "placement": "environment/q3p/b2c.py cleanup and replay boundary hooks",
+            "why_model_misses_it": "Rollback reorders events so naive idempotence keys reuse stale generations.",
+            "fairness_guardrail": "Partial restore profile and deterministic seeds are public fixtures."
+          },
+          {
+            "mechanism": "cross_file_cross_format_invariants",
+            "placement": "environment/r8s/d4e.py digest assembly crossing JSON rows and log trace tokens",
+            "why_model_misses_it": "Digest math looks locally consistent while violating cross-format bindings to ledger fixtures.",
+            "fairness_guardrail": "Schemas and docs publish the cross-field obligations tested."
+          },
+          {
+            "mechanism": "deceptive_but_valid_local_evidence",
+            "placement": "decoy modules under environment/l7w and environment/q3p",
+            "why_model_misses_it": "Plausible duplicate APIs tempt edits away from the true coupling surface.",
+            "fairness_guardrail": "Decoys are imported only from doc examples, not the driver path, discoverable via entrypoint graph reading."
+          }
+        ],
+        "calibration_plan": {
+          "oracle_runs": 3,
+          "no_op_runs": 3,
+          "target_agent_runs": 5,
+          "comparator_agent_runs": 5,
+          "human_sanity": "Engineer can diff two digest generations after scripted replays and spot inconsistent lineage keys without reading tests.",
+          "shortcut_audit": "Watch static JSON writes, test-only shims, broad cache wipes, and single-location reverts that clear one symptom class.",
+          "ablation_plan": "Drop digest assembly checks, drop regeneration, or drop replay sequencing separately; each should ease agent success disproportionately if mechanisms matter.",
+          "pass_rate_target": {
+            "hard_max_pct": 20,
+            "too_easy_threshold_pct": 80,
+            "basis": "stronger frontier target agent per repo calibration defaults"
+          }
+        },
+        "verifier_scoring_plan": {
+          "metrics": [
+            {
+              "metric": "functional_correctness",
+              "weight": 0.45,
+              "criterion": "Digest numeric bands and holdings align across windows after driver reruns."
+            },
+            {
+              "metric": "hidden_invariants",
+              "weight": 0.25,
+              "criterion": "Cross-generation lineage keys and merge-window counters stay coherent under partial restore."
+            },
+            {
+              "metric": "state_hygiene",
+              "weight": 0.15,
+              "criterion": "No stale reconstructed summaries feed final digest rows; idempotent reruns converge."
+            },
+            {
+              "metric": "interface_correctness",
+              "weight": 0.1,
+              "criterion": "CLI exit codes and stderr banners match documented operator expectations."
+            },
+            {
+              "metric": "deliverable_completeness",
+              "weight": 0.05,
+              "criterion": "Regenerated JSON includes all required observation blocks and trace handles."
+            }
+          ],
+          "overall_threshold": 0.999,
+          "reward_output": "reward.txt",
+          "binary_threshold_rule": "reward is 1 only when every weighted metric meets its threshold simultaneously after regeneration."
+        },
+        "subtype_milestone_plan": {
+          "subcategories": [],
+          "milestone_count": 0,
+          "sequential_dependency": "Not applicable; single-step task with no milestone chain.",
+          "local_only_data": true,
+          "sidecar_or_protocol_notes": "No auxiliary databases; all data lives under environment/fixtures with local JSON and logs only."
+        },
+        "platform_files": [
+          {
+            "path": "task.toml",
+            "role": "metadata"
+          },
+          {
+            "path": "instruction.md",
+            "role": "natural public task prompt"
+          },
+          {
+            "path": "output_contract.toml",
+            "role": "local output declaration"
+          },
+          {
+            "path": "tests/test.sh",
+            "role": "verifier entrypoint"
+          },
+          {
+            "path": "tests/test_outputs.py",
+            "role": "domain verifier"
+          },
+          {
+            "path": "solution/solve.sh",
+            "role": "oracle"
+          },
+          {
+            "path": "environment/Dockerfile",
+            "role": "build definition"
+          },
+          {
+            "path": "construction_manifest.json",
+            "role": "local authoring artifact"
+          }
+        ],
+        "task_files": [
+          {
+            "path": "environment/l7w/a9f.py",
+            "role": "ingest reconciliation and batch selection"
+          },
+          {
+            "path": "environment/l7w/decoy_g1.py",
+            "role": "decoy batching module"
+          },
+          {
+            "path": "environment/q3p/b2c.py",
+            "role": "merge window and cleanup orchestration"
+          },
+          {
+            "path": "environment/q3p/decoy_g2.py",
+            "role": "decoy merge toy helper"
+          },
+          {
+            "path": "environment/r8s/d4e.py",
+            "role": "digest assembly for coordinator reports"
+          },
+          {
+            "path": "environment/r8s/__init__.py",
+            "role": "package marker"
+          },
+          {
+            "path": "environment/l7w/__init__.py",
+            "role": "package marker"
+          },
+          {
+            "path": "environment/q3p/__init__.py",
+            "role": "package marker"
+          },
+          {
+            "path": "environment/bin/run_inspection.sh",
+            "role": "driver entrypoint invoked by tests"
+          },
+          {
+            "path": "environment/docs/op_handbook.md",
+            "role": "solver-visible semantics for reconciliation windows"
+          },
+          {
+            "path": "environment/docs/c_fields.md",
+            "role": "solver-visible coordinator row schema prose"
+          },
+          {
+            "path": "environment/fixtures/window_a.json",
+            "role": "seed fixture for first replay window"
+          },
+          {
+            "path": "environment/fixtures/window_b.json",
+            "role": "seed fixture for second replay window"
+          },
+          {
+            "path": "environment/fixtures/pr_prof.json",
+            "role": "partial replay stress profile"
+          },
+          {
+            "path": "environment/fixtures/c9_policy.json",
+            "role": "cleanup window parameters"
+          },
+          {
+            "path": "environment/fixtures/ledger_baseline.json",
+            "role": "durable accounting baseline"
+          },
+          {
+            "path": "environment/fixtures/alt_snapshot.json",
+            "role": "secondary snapshot inputs"
+          },
+          {
+            "path": "environment/fixtures/v9_expect.json",
+            "role": "expected regen markers"
+          },
+          {
+            "path": "environment/logging/trace_format.txt",
+            "role": "trace line format reference"
+          },
+          {
+            "path": "environment/logging/sample_traces.log",
+            "role": "example traces for orientation"
+          },
+          {
+            "path": "environment/schemas/c_row.schema.json",
+            "role": "JSON schema fragment for coordinator rows"
+          },
+          {
+            "path": "environment/schemas/mv_event.schema.json",
+            "role": "JSON schema fragment for window events"
+          },
+          {
+            "path": "environment/tooling/merge_c.py",
+            "role": "CLI helper used by driver"
+          },
+          {
+            "path": "environment/tooling/replay_c.py",
+            "role": "CLI helper for replay checks"
+          },
+          {
+            "path": "environment/etc/service.env",
+            "role": "non-secret defaults for driver"
+          },
+          {
+            "path": "environment/etc/version.txt",
+            "role": "pinned tool version string"
+          }
+        ],
+        "fix_frontier": {
+          "count": 3,
+          "distribution": "One module under environment/l7w for ingest selection, one under environment/q3p for cleanup ordering, one under environment/r8s for digest assembly; decoys colocated without sharing symbols.",
+          "naming_policy": "Opaque stems and single-letter-heavy filenames; no instruction nouns in paths or symbols.",
+          "forbidden_stems": [
+            "tenants",
+            "probes",
+            "accounting",
+            "rollup",
+            "resynchronization",
+            "admission",
+            "quotas",
+            "workloads",
+            "holdings"
+          ],
+          "helpers_policy": "Decoys perform credible adjacent work; fix symbols stay thin and split across files.",
+          "symbol_thin_preferred": true
+        },
+        "contract_surface": {
+          "boolean_fields_max": 2,
+          "direct_boolean_assertions_max": 2,
+          "preferred_assertion_styles": [
+            "trace-derived numeric bands",
+            "cross-run digest equality on derived fields",
+            "regeneration fingerprint checks",
+            "idempotent rerun counters"
+          ],
+          "forbidden_assertion_styles": [
+            "scenario-key-expected boolean tables",
+            "raw truth bits without observations",
+            "instruction-only literals not homed in env/docs"
+          ]
+        },
+        "task_shape": {
+          "type": "repair_existing_system",
+          "instruction_framing": "symptoms-only",
+          "hardness_source": "diagnosis",
+          "collapse_risk": "Naming the restore boundary, shadow tier, or digest file explicitly could reduce the task to a one-file conditional flip."
+        },
+        "category_profile": {
+          "challenge_family": "distributed_reconciliation",
+          "bug_family": "quota_rollback_skew",
+          "profile_name": "distributed_reconciliation",
+          "allowed_instruction_disclosures": "Conflicting authority symptoms, merge window behavior class, inspection command, regenerated digest path, idempotence expectation, partial restore scenario class.",
+          "forbidden_instruction_leaks": "Canonical source choice, shadow-vs-active function names, cleanup ordering patch site, digest assembly algorithm recipe, exact file paths on the fix frontier.",
+          "category_specific_hardness_bar": "Multiple truth surfaces with replay lineage, idempotent reruns, and stale metadata must interact; no single precedence table suffices.",
+          "category_specific_verifier_risks": "Golden merged fixtures, count-only health checks, scenario-to-answer tables, instruction-saturated GX9 triples.",
+          "coverage_role": "Adds a rollback-heavy reconciliation skew variant adjacent to policy drift references while staying in the distributed reconciliation family."
+        },
+        "satisfiability_risk": {
+          "rc2_planned_name_risk": "medium \u2014 strict opaque stems and noun ban reduce grep collapse; risk rises if Step 2b reintroduces descriptive directory names.",
+          "gx9_contract_risk": "medium \u2014 digest fields are rich; author must keep instruction descriptive without co-locating scenario/key/value answer triples.",
+          "cr1_symbol_frontier_risk": "low \u2014 three thin symbols across files with helpers kept in decoys.",
+          "hidden_contract_risk": "low \u2014 formulas and schemas duplicated into op_handbook.md and c_fields.md as solver-visible homes."
+        },
+        "actionability_plan": {
+          "verifier_command_visible": "instruction names bundled driver (/app/environment/bin/run_inspection.sh) and output digest path under /app/output/",
+          "source_fix_intent_visible": "instruction states Python sources under /app/environment must be repaired, not hand-written outputs",
+          "generated_output_rule_visible": "tests delete and regenerate the digest JSON via the normal driver before assertions",
+          "exact_formula_home": "row delta and window formulas live in environment/docs/c_fields.md and schema fragments",
+          "schema_home": "environment/schemas/*.schema.json plus c_fields.md for nested field meanings"
+        },
+        "waiver_plan": {
+          "waivers_expected": false,
+          "waiver_rationale": "Design avoids known never-waivable failures; expect no waivers if naming and GX6/GX9 hygiene hold during Step 2b."
+        },
+        "reference_pattern": {
+          "reference_task_id": "layered-policy-reload-drift"
+        },
+        "realism_source": {
+          "source_type": "synthetic_exception",
+          "evidence_basis": "synthesized Option-B survivor seed from internal hardness exploration (no upstream CVE attached)",
+          "upstream_or_synthetic_rationale": "Compresses recurring incident motifs: reconcilers reading shadow tiers, cleanup windows reordering lineage, and verifier scripts trusting summaries instead of canonical artifacts.",
+          "minimization_preserves": "Asymmetric authorities, delayed false greens, rollback-sensitive lineage, and regeneration-dependent verification.",
+          "synthetic_exception_review": "Category profile locked to distributed_reconciliation; actionability satisfied by docs plus schemas; output contract stays observation-shaped; extra scrutiny on GX9/GX10 and boolean field caps; no Greek or rubric-shaped module names."
+        }
+      },
+      "evidence_errors": [],
+      "evidence_warnings": [],
+      "blocking_failures": [],
+      "strict": true
+    }
+  ],
+  "schema_path": "specs/validation_schema.json",
+  "emit_legacy_reviewer": false
+}

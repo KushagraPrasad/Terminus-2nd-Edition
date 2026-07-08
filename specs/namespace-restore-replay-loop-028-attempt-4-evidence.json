@@ -1,0 +1,888 @@
+{
+  "hardness_axes": [
+    {
+      "id": "discover",
+      "name": "Discover",
+      "verdict": "PASS",
+      "reasoning": "Durable checkpoint authority vs runtime probe surface, loop_order replay ordering, and inv_stamp cross-format rules must be inferred from Rust sources and rebuild experiments."
+    },
+    {
+      "id": "synthesize",
+      "name": "Synthesize",
+      "verdict": "PASS",
+      "reasoning": "Driver, pack_sync refresh, key_fold fold, loop_order combine ordering, and inv_stamp emit layer interact; no single crate exposes restore_loop_report contract."
+    },
+    {
+      "id": "diagnose_or_design",
+      "name": "Diagnose or Design/Search",
+      "verdict": "PASS",
+      "reasoning": "constraint-complete optimization framing gives obligations and invalidation_span target while withholding defective merge rule, combine ordering, or emit bypass."
+    },
+    {
+      "id": "navigate_coupling",
+      "name": "Navigate coupling",
+      "verdict": "PASS",
+      "reasoning": "Flipping-point contract spreads controls across p7/y5, p7/y4, and m2/k81 with overlapping false-green and checkpoint traps."
+    },
+    {
+      "id": "reason_beyond_training",
+      "name": "Reason beyond training",
+      "verdict": "PASS",
+      "reasoning": "Numeric cache invalidation under namespace-restore replay loops is HPC control-plane domain reasoning, not a textbook recipe."
+    }
+  ],
+  "anti_trivialization_checks": [
+    {
+      "id": "disclosure_collapse",
+      "name": "Disclosure-collapse",
+      "verdict": "PASS",
+      "reasoning": "Even with full report schema disclosed, choosing checkpoint authority and replay order remains non-trivial inference."
+    },
+    {
+      "id": "hidden_instance",
+      "name": "Hidden-instance",
+      "verdict": "PASS",
+      "reasoning": "No single corrupted scenario row; multiple restore cycles disagree until global semantics align."
+    },
+    {
+      "id": "single_artifact_repair",
+      "name": "Single-artifact repair",
+      "verdict": "PASS",
+      "reasoning": "Static JSON or one TOML edit cannot satisfy ablation and pipeline overwrite tests."
+    },
+    {
+      "id": "generalization",
+      "name": "Generalization",
+      "verdict": "PASS",
+      "reasoning": "Verifier exercises base scenarios, echo pairs, restore cycles, and consecutive runs."
+    },
+    {
+      "id": "prompt_honesty",
+      "name": "Prompt-honesty",
+      "verdict": "PASS",
+      "reasoning": "Honest constraint contract does not name broken functions, replay phase ordering, or authority split."
+    },
+    {
+      "id": "cheating_vs_difficulty",
+      "name": "Cheating-vs-difficulty",
+      "verdict": "PASS",
+      "reasoning": "Hardness is semantic reconciliation and optimization under constraints, not anti-cheat alone."
+    },
+    {
+      "id": "mechanical_fix_filter",
+      "name": "Mechanical-fix filter",
+      "verdict": "PASS",
+      "reasoning": "Not a timeout/deps-only task."
+    },
+    {
+      "id": "localized_fix",
+      "name": "Localized-fix",
+      "verdict": "PASS",
+      "reasoning": "Three-location flipping contract blocks one-function exploit."
+    },
+    {
+      "id": "oracle_locality",
+      "name": "Oracle-locality",
+      "verdict": "PASS",
+      "reasoning": "Oracle coordinates three modules plus patch, not one-file wholesale replace."
+    },
+    {
+      "id": "small_declarative_cluster",
+      "name": "Small declarative-cluster",
+      "verdict": "PASS",
+      "reasoning": "Fix is procedural across Rust modules, not one manifest table."
+    },
+    {
+      "id": "grep_collapse",
+      "name": "Grep-collapse",
+      "verdict": "PASS",
+      "reasoning": "Instruction domain nouns banned from fix-path symbols; opaque m2/p7 roots."
+    },
+    {
+      "id": "pre_factored_helper",
+      "name": "Pre-factored-helper",
+      "verdict": "PASS",
+      "reasoning": "Decoys rhyme structurally without validate/repair stems matching prompt bullets."
+    },
+    {
+      "id": "recipe_discount",
+      "name": "Recipe-discount",
+      "verdict": "PASS",
+      "reasoning": "No standard recipe for namespace-restore numeric cache invalidation in this bespoke workspace."
+    },
+    {
+      "id": "security_aura_discount",
+      "name": "Security-aura discount",
+      "verdict": "PASS",
+      "reasoning": "Residual work is authority/invalidation semantics, not security theater."
+    },
+    {
+      "id": "orthogonal_checklist",
+      "name": "Orthogonal-checklist",
+      "verdict": "PASS",
+      "reasoning": "Authority, replay order, cross-format emit, and invalidation_span optimization trade off."
+    },
+    {
+      "id": "harness_discount",
+      "name": "Harness-discount",
+      "verdict": "PASS",
+      "reasoning": "Cargo/docker realism is scaffolding; assessed hardness is cross-crate coupling."
+    },
+    {
+      "id": "one_pass_solvability",
+      "name": "One-pass solvability",
+      "verdict": "PASS",
+      "reasoning": "Cannot infer checkpoint precedence or loop_order without rebuild, echo-pair comparison, and restore-loop tests."
+    },
+    {
+      "id": "hard_only_gate",
+      "name": "Hard-only gate",
+      "verdict": "PASS",
+      "reasoning": "Targets senior HPC control-plane engineers, not undergrad single-patch tasks."
+    },
+    {
+      "id": "discovery_budget_test",
+      "name": "Discovery/design budget test",
+      "verdict": "PASS",
+      "reasoning": "discovery_budget lists three concrete discoveries beyond instruction surface."
+    },
+    {
+      "id": "instruction_specificity_test",
+      "name": "Instruction specificity test",
+      "verdict": "PASS",
+      "reasoning": "instruction_specificity.level is constraint-complete with solution strategy open."
+    },
+    {
+      "id": "topology_distribution_test",
+      "name": "Topology distribution test",
+      "verdict": "PASS",
+      "reasoning": "topology_enumeration documents three multi-site coordination patterns."
+    }
+  ],
+  "rubric_axes": [
+    {
+      "id": "verifiable",
+      "name": "Verifiable",
+      "verdict": "PASS",
+      "reasoning": "Deterministic cargo rebuild, driver run, JSON assertions, ablation suite."
+    },
+    {
+      "id": "well_specified",
+      "name": "Well-specified",
+      "verdict": "PASS",
+      "reasoning": "Public restore_loop_report schema and three obligations complete; fix sites withheld."
+    },
+    {
+      "id": "solvable",
+      "name": "Solvable",
+      "verdict": "PASS",
+      "reasoning": "Expert can close three-crate semantics within hours using overlay mold."
+    },
+    {
+      "id": "difficult",
+      "name": "Difficult",
+      "verdict": "PASS",
+      "reasoning": "Requires security_authority_split reconciliation and numeric cache invalidation literacy."
+    },
+    {
+      "id": "interesting",
+      "name": "Interesting",
+      "verdict": "PASS",
+      "reasoning": "False-green probes after namespace restore occur in real simulation control planes."
+    },
+    {
+      "id": "outcome_verified",
+      "name": "Outcome-verified",
+      "verdict": "PASS",
+      "reasoning": "Grades regenerated report and pipeline traps, not mandated edit recipe."
+    }
+  ],
+  "instruction_completeness_test": {
+    "verdict": "PASS",
+    "reasoning": "Complete report contract and optimization target do not reveal checkpoint authority default, replay phase ordering, or slot_emit bypass."
+  },
+  "discovery_budget": [
+    {
+      "discovery": "Durable checkpoint bytes in p7/y4/hold remain authoritative for merge decisions while m2 driver and p7/layer_core/probe answer runtime-visible cache state first after partial namespace restore.",
+      "planned_location": "environment/p7/y4/src/hold.rs vs environment/p7/layer_core/src/probe.rs and environment/m2/k81/src/main.rs",
+      "why_instruction_must_not_reveal": "Naming the authority split collapses search to wiring checkpoint reads into the driver."
+    },
+    {
+      "discovery": "loop_order marks closure booleans true on an intermediate replay pass before side/gate ordering finishes, producing false-green row state while echo pairs disagree.",
+      "planned_location": "environment/m2/k81/src/gate_mux.rs and environment/p7/y6/src/stride.rs",
+      "why_instruction_must_not_reveal": "Disclosing replay phase ordering reveals the false-green mechanism directly."
+    },
+    {
+      "discovery": "slot_emit fast path materializes JSON facets without cross-checking checkpoint.toml against ladder/seed pack bytes through inv_stamp reducer.",
+      "planned_location": "environment/p7/y6/src/slot_emit.rs with environment/data/checkpoint.toml",
+      "why_instruction_must_not_reveal": "Pointing at the bypass path turns cross-format invariant into a one-file guard add."
+    }
+  ],
+  "instruction_specificity": {
+    "level": "constraint-complete",
+    "reasoning": "Instruction states complete restore_loop_report schema, three obligations, optimization target, and rebuild commands but withholds implementation mapping."
+  },
+  "attack_path": {
+    "summary": "Agents may hardcode loop_digest, hand-write JSON, patch only probe surface, or fix row flags without echo-pair agreement.",
+    "reasoning": "Cheap wins fail pipeline overwrite, checkpoint trap, ablation, and restore-loop ordering tests."
+  },
+  "smallest_plausible_patch": {
+    "summary": "Coordinate key_fold lineage fold, pack_sync storage refresh, and loop_order gate ordering.",
+    "reasoning": "Each change sounds local but flipping-point shows isolated reverts fail distinct test subsets."
+  },
+  "collapse_audit": {
+    "verdict": "PASS",
+    "reasoning": "Residual hardness stays in inferring authority and replay order under complete public contract.",
+    "residual_hardness": "After honest schema disclosure, solver reconciles checkpoint vs probe, false-green closure, cross-format regeneration, and invalidation_span optimization across three crates.",
+    "red_flags": []
+  },
+  "topology_enumeration": [
+    {
+      "id": "topo_authority",
+      "summary": "Authority topology coordinates checkpoint pack merge, probe diagnostics, and driver wiring.",
+      "locations": [
+        "environment/p7/y4/src/hold.rs",
+        "environment/p7/layer_core/src/probe.rs",
+        "environment/m2/k81/src/main.rs"
+      ],
+      "why_no_single_location_suffices": "Probe-only edits ignore checkpoint precedence; merge-only fixes ignore probe/index wiring; driver-only tweaks cannot fix durable pack semantics."
+    },
+    {
+      "id": "topo_replay_loop",
+      "summary": "Replay-loop topology coordinates loop_order, stride helper, and key_fold material.",
+      "locations": [
+        "environment/m2/k81/src/gate_mux.rs",
+        "environment/p7/y6/src/stride.rs",
+        "environment/p7/y5/src/tie.rs"
+      ],
+      "why_no_single_location_suffices": "Ordering without stride helper reverts; key_fold alone cannot fix premature closure flags or restore-cycle failures."
+    },
+    {
+      "id": "topo_cross_format",
+      "summary": "Cross-format topology coordinates inv_stamp reducer, checkpoint fixtures, and ladder seeds.",
+      "locations": [
+        "environment/p7/layer_core/src/inv_stamp.rs",
+        "environment/data/checkpoint.toml",
+        "environment/data/ladder.toml"
+      ],
+      "why_no_single_location_suffices": "Emit-only guards miss pack bytes; checkpoint-only edits without inv_stamp cross-check leave skew_code divergence on echo lanes."
+    }
+  ],
+  "construction_manifest": {
+    "symbol_table": [
+      {
+        "path": "environment/p7/y5/src/tie.rs",
+        "symbol": "key_fold",
+        "kind": "function",
+        "signature": "key_fold(step_ix: usize, family_ix: u32, prev_family: u32) -> u64",
+        "purpose": "Derives cache_key_hex material from step and cross-partition generation tuple"
+      },
+      {
+        "path": "environment/p7/y4/src/hold.rs",
+        "symbol": "pack_sync",
+        "kind": "function",
+        "signature": "pack_sync(state: &mut PackState, incoming: &PackState, stamp_b: u64)",
+        "purpose": "Merges incoming durable pack into active state under checkpoint authority"
+      },
+      {
+        "path": "environment/m2/k81/src/gate_mux.rs",
+        "symbol": "loop_order",
+        "kind": "function",
+        "signature": "loop_order<F: FnMut(), G: FnMut()>(side: F, gate: G) -> u32",
+        "purpose": "Invokes side and gate callbacks in seeded combine order during restore replay loops"
+      }
+    ],
+    "flipping_point_contract": {
+      "locations": [
+        {
+          "id": "A",
+          "path": "environment/p7/y5/src/tie.rs",
+          "controls_tests": [
+            "test_nrl_r1_table",
+            "test_nrl_r2_pair",
+            "test_nrl_r8_m6_chars",
+            "test_nrl_r12_m7_shift",
+            "test_nrl_r13_p1_body",
+            "test_nrl_r7_m5_anchor",
+            "test_nrl_r16_k7_trap"
+          ]
+        },
+        {
+          "id": "B",
+          "path": "environment/p7/y4/src/hold.rs",
+          "controls_tests": [
+            "test_nrl_r5_m3_zero",
+            "test_nrl_r9_m8_count",
+            "test_nrl_r14_p2_dual",
+            "test_nrl_r4_m2_label",
+            "test_nrl_r10_m10_fresh",
+            "test_nrl_r16_k7_trap"
+          ]
+        },
+        {
+          "id": "C",
+          "path": "environment/m2/k81/src/gate_mux.rs",
+          "controls_tests": [
+            "test_nrl_r11_m9_twice",
+            "test_nrl_r19_m1_view",
+            "test_nrl_r15_p3_combo",
+            "test_nrl_r3_m1_flags",
+            "test_nrl_r6_m4_rule",
+            "test_nrl_r17_k8_trap",
+            "test_nrl_r18_k9_side"
+          ]
+        }
+      ],
+      "no_single_location_flips_majority": true,
+      "concentration_cap": 0.5
+    },
+    "decoy_manifest": [
+      {
+        "path": "environment/p7/y6/src/slot_emit.rs",
+        "kind": "module",
+        "rhymes_with": "inv_stamp",
+        "non_fix_purpose": "Fast slot emit used in fastpath trap; must not satisfy obligation 3 alone"
+      },
+      {
+        "path": "environment/p7/y6/src/stride.rs",
+        "kind": "helper",
+        "rhymes_with": "loop_order",
+        "non_fix_purpose": "Alternate ordering helper used in ablation traps"
+      },
+      {
+        "path": "environment/p7/layer_core/src/probe.rs",
+        "kind": "helper",
+        "rhymes_with": "pack_sync",
+        "non_fix_purpose": "Runtime-visible cache probe for diagnostics; not durable checkpoint authority"
+      },
+      {
+        "path": "environment/p7/y5/src/stamp_help.rs",
+        "kind": "helper",
+        "rhymes_with": "key_fold",
+        "non_fix_purpose": "Widening utilities for non-fix stamp experiments"
+      }
+    ],
+    "code_forbidden_tokens": [
+      "namespace",
+      "restore",
+      "replay",
+      "loop",
+      "cache",
+      "invalidation",
+      "divergence",
+      "numeric",
+      "durable",
+      "runtime",
+      "authority",
+      "partial",
+      "recovery",
+      "checkpoint",
+      "probe",
+      "regeneration",
+      "cross",
+      "format",
+      "invariant",
+      "enforcement",
+      "mirror",
+      "echo",
+      "coherent",
+      "settled",
+      "span",
+      "digest",
+      "scenario",
+      "obligation",
+      "optimization",
+      "cluster",
+      "partition",
+      "generation",
+      "skew",
+      "loop_status",
+      "invalidation_span",
+      "loop_digest",
+      "cache_key",
+      "pipeline",
+      "lowerdir",
+      "upper",
+      "worker",
+      "closure",
+      "lane",
+      "material",
+      "cycle",
+      "diagnostics",
+      "override",
+      "marks",
+      "reconciliation",
+      "canonical",
+      "phase",
+      "bypass",
+      "corruption",
+      "intermediate",
+      "green",
+      "visible",
+      "locally",
+      "hidden",
+      "surfaces",
+      "align",
+      "sources",
+      "release",
+      "build",
+      "published",
+      "write",
+      "output",
+      "static",
+      "manual",
+      "verifier",
+      "rebuild",
+      "reducer",
+      "slot",
+      "fold",
+      "sync",
+      "merge",
+      "re-materialize",
+      "incoherent",
+      "hexadecimal",
+      "rows",
+      "summary",
+      "rows_total",
+      "skew_code",
+      "cache_key_hex",
+      "restore_loop",
+      "tampered",
+      "idempotent",
+      "consecutive",
+      "ladder",
+      "channel",
+      "weights",
+      "seed",
+      "notes",
+      "operator",
+      "docs",
+      "contract",
+      "build_hints",
+      "cycle_ids",
+      "pytest",
+      "cargo",
+      "argv",
+      "hints",
+      "ablation",
+      "patch",
+      "oracle",
+      "workspace",
+      "driver",
+      "report",
+      "scientific",
+      "computing"
+    ]
+  },
+  "naming_pass": {
+    "instruction_nouns_extracted": [
+      "namespace",
+      "restore",
+      "replay",
+      "loop",
+      "cache",
+      "invalidation",
+      "divergence",
+      "numeric",
+      "durable",
+      "runtime",
+      "authority",
+      "partial",
+      "recovery",
+      "checkpoint",
+      "probe",
+      "regeneration",
+      "cross",
+      "format",
+      "invariant",
+      "enforcement",
+      "mirror",
+      "echo",
+      "coherent",
+      "settled",
+      "span",
+      "digest",
+      "scenario",
+      "obligation",
+      "optimization",
+      "cluster",
+      "partition",
+      "generation",
+      "skew",
+      "loop_status",
+      "invalidation_span",
+      "loop_digest",
+      "cache_key",
+      "pipeline",
+      "lowerdir",
+      "upper",
+      "worker",
+      "closure",
+      "lane",
+      "material",
+      "cycle",
+      "diagnostics",
+      "override",
+      "marks",
+      "reconciliation",
+      "canonical",
+      "phase",
+      "bypass",
+      "corruption",
+      "intermediate",
+      "green",
+      "visible",
+      "locally",
+      "hidden",
+      "surfaces",
+      "align",
+      "sources",
+      "release",
+      "build",
+      "published",
+      "write",
+      "output",
+      "static",
+      "manual",
+      "verifier",
+      "rebuild",
+      "reducer",
+      "slot",
+      "fold",
+      "sync",
+      "merge",
+      "re-materialize",
+      "incoherent",
+      "hexadecimal",
+      "rows",
+      "summary",
+      "rows_total",
+      "skew_code",
+      "cache_key_hex",
+      "restore_loop",
+      "tampered",
+      "idempotent",
+      "consecutive",
+      "ladder",
+      "channel",
+      "weights",
+      "seed",
+      "notes",
+      "operator",
+      "docs",
+      "contract",
+      "build_hints",
+      "cycle_ids",
+      "pytest",
+      "cargo",
+      "argv",
+      "hints",
+      "ablation",
+      "patch",
+      "oracle",
+      "workspace",
+      "driver",
+      "report",
+      "scientific",
+      "computing"
+    ],
+    "renames_during_drafting": [
+      {
+        "original": "fold_key / merge_pack / mux_combine",
+        "renamed_to": "key_fold / pack_sync / loop_order",
+        "reason": "Distinct opaque symbols from sibling overlay-reframed tasks while preserving structural fix pattern."
+      },
+      {
+        "original": "matrix_report / mix_stamp / cat_lane",
+        "renamed_to": "restore_loop_report / inv_stamp / slot_emit",
+        "reason": "Reframe to namespace-restore replay-loop and numeric cache invalidation vocabulary."
+      },
+      {
+        "original": "test_*_checkpoint_trap / test_*_restore_cycle",
+        "renamed_to": "test_nrl_r16_k7_trap / test_nrl_r18_k9_side",
+        "reason": "Avoid instruction noun substrings in pytest identifiers."
+      }
+    ],
+    "test_names_audited": [
+      "test_nrl_r1_table",
+      "test_nrl_r2_pair",
+      "test_nrl_r3_m1_flags",
+      "test_nrl_r4_m2_label",
+      "test_nrl_r5_m3_zero",
+      "test_nrl_r6_m4_rule",
+      "test_nrl_r7_m5_anchor",
+      "test_nrl_r8_m6_chars",
+      "test_nrl_r9_m8_count",
+      "test_nrl_r10_m10_fresh",
+      "test_nrl_r11_m9_twice",
+      "test_nrl_r12_m7_shift",
+      "test_nrl_r13_p1_body",
+      "test_nrl_r14_p2_dual",
+      "test_nrl_r15_p3_combo",
+      "test_nrl_r16_k7_trap",
+      "test_nrl_r17_k8_trap",
+      "test_nrl_r18_k9_side",
+      "test_nrl_r19_m1_view"
+    ],
+    "concentration_math": {
+      "total_tests": 19,
+      "per_location": [
+        {
+          "location_id": "A",
+          "test_count": 7,
+          "ratio": 0.3684210526315789
+        },
+        {
+          "location_id": "B",
+          "test_count": 6,
+          "ratio": 0.3157894736842105
+        },
+        {
+          "location_id": "C",
+          "test_count": 7,
+          "ratio": 0.3684210526315789
+        }
+      ]
+    }
+  },
+  "difficulty_mechanism_plan": [
+    {
+      "mechanism": "false_green_intermediate_states",
+      "placement": "per-row closure booleans vs summary loop_status during replay-loop ordering",
+      "why_model_misses_it": "agents stop after row-level greens without mirror/loop_digest cross-check",
+      "fairness_guardrail": "mirror pairs and loop_digest contract in instruction"
+    },
+    {
+      "mechanism": "rollback_recovery_requirements",
+      "placement": "ladder.toml scenarios spanning namespace restore, checkpoint replay, echo lanes",
+      "why_model_misses_it": "fixing one lane table without merge ordering leaves stale generations",
+      "fairness_guardrail": "deterministic cycle_ids.txt"
+    },
+    {
+      "mechanism": "deceptive_but_valid_local_evidence",
+      "placement": "slot_emit vs inv_stamp; runtime probe shows coherent generation locally",
+      "why_model_misses_it": "summary looks settled while cache_key_hex diverges on echo lanes",
+      "fairness_guardrail": "obligation 3 and cross-lane tests"
+    },
+    {
+      "mechanism": "cross_file_cross_format_invariants",
+      "placement": "JSON report vs TOML ladder/checkpoint vs pack bytes",
+      "why_model_misses_it": "editing one format leaves orphans passing shallow row flags",
+      "fairness_guardrail": "loop_contract.md cross-format rules"
+    }
+  ],
+  "calibration_plan": {
+    "oracle_runs": 3,
+    "no_op_runs": 3,
+    "target_agent_runs": 5,
+    "comparator_agent_runs": 5,
+    "human_sanity": "expert satisfies three obligations using loop_contract.md within a few hours",
+    "shortcut_audit": "static JSON, test deletion, digest hardcode, reward writes; verifier-offline pytest/cargo in Dockerfile; post-upload Part E if worst-model accuracy exceeds 20%",
+    "ablation_plan": "revert key_fold, pack_sync, loop_order independently; expect disjoint test subset failures",
+    "pass_rate_target": {
+      "hard_max_pct": 20,
+      "too_easy_threshold_pct": 80,
+      "basis": "Part E worst-model accuracy on platform"
+    }
+  },
+  "verifier_scoring_plan": {
+    "metrics": [
+      {
+        "metric": "functional_correctness",
+        "weight": 0.45,
+        "criterion": "restore_loop_report rows and summary match coherent predicates after rebuild+driver"
+      },
+      {
+        "metric": "hidden_invariants",
+        "weight": 0.25,
+        "criterion": "echo pairs, loop_digest anchor, checkpoint and ablation traps"
+      },
+      {
+        "metric": "state_hygiene",
+        "weight": 0.15,
+        "criterion": "consecutive identical runs and pipeline overwrite of manual JSON"
+      },
+      {
+        "metric": "interface_correctness",
+        "weight": 0.1,
+        "criterion": "cache_key_hex format, invalidation_span, rows_total typing"
+      },
+      {
+        "metric": "deliverable_completeness",
+        "weight": 0.05,
+        "criterion": "output path and cycle_ids coverage"
+      }
+    ],
+    "overall_threshold": 0.999,
+    "reward_output": "reward.txt",
+    "binary_threshold_rule": "reward 1 only when all pytest cases pass"
+  },
+  "subtype_milestone_plan": {
+    "subcategories": [],
+    "milestone_count": 0,
+    "sequential_dependency": "n/a single-step",
+    "local_only_data": true,
+    "sidecar_or_protocol_notes": "single-container Rust workspace"
+  },
+  "platform_files": [
+    {
+      "path": "task.toml",
+      "role": "metadata; allow_internet=false"
+    },
+    {
+      "path": "instruction.md",
+      "role": "public prompt"
+    },
+    {
+      "path": "output_contract.toml",
+      "role": "local output declaration"
+    },
+    {
+      "path": "tests/test.sh",
+      "role": "verifier entrypoint"
+    },
+    {
+      "path": "tests/test_outputs.py",
+      "role": "domain verifier"
+    },
+    {
+      "path": "solution/solve.sh",
+      "role": "oracle"
+    },
+    {
+      "path": "environment/Dockerfile",
+      "role": "build definition"
+    },
+    {
+      "path": "construction_manifest.json",
+      "role": "authoring artifact"
+    }
+  ],
+  "task_files": [
+    {
+      "path": "environment/m2/k81/src/main.rs",
+      "role": "driver"
+    },
+    {
+      "path": "environment/p7/y5/src/tie.rs",
+      "role": "oracle A"
+    },
+    {
+      "path": "environment/p7/y4/src/hold.rs",
+      "role": "oracle B"
+    },
+    {
+      "path": "environment/m2/k81/src/gate_mux.rs",
+      "role": "oracle C"
+    },
+    {
+      "path": "environment/p7/layer_core/src/inv_stamp.rs",
+      "role": "slow reducer"
+    },
+    {
+      "path": "environment/p7/y6/src/slot_emit.rs",
+      "role": "fast-path trap"
+    },
+    {
+      "path": "environment/data/checkpoint.toml",
+      "role": "checkpoint fixtures"
+    },
+    {
+      "path": "environment/docs/loop_contract.md",
+      "role": "contract docs"
+    }
+  ],
+  "fix_frontier": {
+    "count": 3,
+    "distribution": "p7/y5/tie.rs, p7/y4/hold.rs, m2/k81/gate_mux.rs",
+    "naming_policy": "opaque key_fold pack_sync loop_order",
+    "forbidden_stems": [
+      "namespace",
+      "restore",
+      "replay",
+      "loop",
+      "cache",
+      "invalidation",
+      "divergence",
+      "numeric",
+      "durable",
+      "runtime",
+      "authority",
+      "partial",
+      "recovery",
+      "checkpoint",
+      "probe",
+      "regeneration",
+      "cross",
+      "format",
+      "invariant",
+      "enforcement",
+      "mirror",
+      "echo",
+      "coherent",
+      "settled",
+      "span",
+      "digest",
+      "scenario",
+      "obligation",
+      "optimization",
+      "cluster"
+    ],
+    "helpers_policy": "slot_emit stride probe stamp_help decoys",
+    "symbol_thin_preferred": true
+  },
+  "contract_surface": {
+    "boolean_fields_max": 1,
+    "direct_boolean_assertions_max": 12,
+    "preferred_assertion_styles": [
+      "loop_digest recomputation",
+      "cache_key_hex mirror pairs",
+      "ablation traps"
+    ],
+    "forbidden_assertion_styles": [
+      "scenario boolean answer tables"
+    ]
+  },
+  "task_shape": {
+    "type": "optimization_under_constraints",
+    "instruction_framing": "constraint-complete",
+    "hardness_source": "constrained optimization",
+    "collapse_risk": "leaking canonical recovery path collapses to one-file repair"
+  },
+  "category_profile": {
+    "challenge_family": "numeric_cache_invalidation_divergence",
+    "profile_name": "security_authority_split",
+    "allowed_instruction_disclosures": "assets, obligations, optimization target, report schema, mirror pairs, loop_digest header, driver command",
+    "forbidden_instruction_leaks": "patch sites, replay phase ordering, fast-path module name, canonical recovery path",
+    "category_specific_hardness_bar": "encode/decode/enforce authorities reconcile across partitions under namespace-restore replay loops",
+    "category_specific_verifier_risks": "toy checklist, golden report leakage, process-only assertions without durable invalidation checks",
+    "coverage_role": "scientific-computing optimization_under_constraints under security_authority_split distinct from revocation-cache-012 and cross-runtime-float-016"
+  },
+  "satisfiability_risk": {
+    "rc2_planned_name_risk": "medium \u2014 opaque m2/p7 paths",
+    "gx9_contract_risk": "low \u2014 derived loop_digest",
+    "cr1_symbol_frontier_risk": "low \u2014 three modules",
+    "hidden_contract_risk": "medium \u2014 ablation tests mitigate"
+  },
+  "actionability_plan": {
+    "verifier_command_visible": "cargo build + mk driver + pytest",
+    "source_fix_intent_visible": "align sources to satisfy obligations",
+    "generated_output_rule_visible": "/app/output/restore_loop_report.json",
+    "exact_formula_home": "main.rs header + loop_contract.md",
+    "schema_home": "instruction.md + output_contract.toml"
+  },
+  "waiver_plan": {
+    "waivers_expected": false,
+    "waiver_rationale": "overlay mold avoids hidden-instance puzzles"
+  },
+  "reference_pattern": {
+    "justification_if_none": "Construction follows approved overlay-lowerdir-stale-bind mold reframed to optimization_under_constraints + security_authority_split; no promoted reference matches."
+  },
+  "realism_source": {
+    "source_type": "synthetic_exception",
+    "evidence_basis": "Minimized HPC namespace-restore cache invalidation postmortems",
+    "upstream_or_synthetic_rationale": "Controlled false-green with deterministic replay",
+    "minimization_preserves": "split authority, false-green intermediate state, fast-path bypass",
+    "synthetic_exception_review": "Difficulty from coupled semantics not obscure facts"
+  }
+}

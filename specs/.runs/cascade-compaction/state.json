@@ -1,0 +1,742 @@
+{
+  "task_name": "cascade-compaction",
+  "attempt": 1,
+  "best_score": [
+    0,
+    0
+  ],
+  "best_attempt": 1,
+  "plateau_count": 0,
+  "candidates": [],
+  "history": [
+    {
+      "attempt": 1,
+      "fails": 0,
+      "warns": 0,
+      "evidence_path": "specs/.runs/cascade-compaction/attempt-1-evidence.json",
+      "evidence": {
+        "hardness_axes": [
+          {
+            "id": "discover",
+            "name": "Discover",
+            "verdict": "PASS",
+            "reasoning": "Solvers must infer which persistence stage owns generation continuity, which surface is authoritative when health summaries and manifest digests disagree, and how rollback interacts with the replay cursor by reading code and running crash drills\u2014not from the public formal contract alone."
+          },
+          {
+            "id": "synthesize",
+            "name": "Synthesize",
+            "verdict": "PASS",
+            "reasoning": "Formal properties couple epoch advancement, manifest-chain authority, and cursor sealing across runtime, persist, and reconcile roots; satisfying one invariant in isolation leaves false-green intermediate states."
+          },
+          {
+            "id": "diagnose_or_design",
+            "name": "Diagnose or Design/Search",
+            "verdict": "PASS",
+            "reasoning": "Constraint-complete instruction states durability obligations and verifier-visible schemas while withholding which implementation paths violate monotonic generation, authority selection, or rollback-safe replay ordering."
+          },
+          {
+            "id": "navigate_coupling",
+            "name": "Navigate coupling",
+            "verdict": "PASS",
+            "reasoning": "Advancing epochs without sealing breaks manifest authority tests; fixing authority without cursor discipline breaks idempotent recovery; rollback tweaks without epoch alignment fail restart-boundary cases."
+          },
+          {
+            "id": "reason_beyond_training",
+            "name": "Reason beyond training",
+            "verdict": "PASS",
+            "reasoning": "Hardness is crash-consistent namespace compaction with conflicting observability surfaces\u2014operations-domain formal reasoning\u2014not textbook JSON validation or HMAC recipes."
+          }
+        ],
+        "anti_trivialization_checks": [
+          {
+            "id": "disclosure_collapse",
+            "name": "Disclosure-collapse",
+            "verdict": "PASS",
+            "reasoning": "After every tested invariant, schema field, and driver step is disclosed, the solver still must locate which module breaks generation monotonicity, manifest authority, or rollback-safe cursor semantics."
+          },
+          {
+            "id": "hidden_instance",
+            "name": "Hidden-instance",
+            "verdict": "PASS",
+            "reasoning": "Difficulty is global invariant violation across crash/replay phases, not identifying one secret corrupted row among hundreds."
+          },
+          {
+            "id": "single_artifact_repair",
+            "name": "Single-artifact repair",
+            "verdict": "PASS",
+            "reasoning": "Hand-editing compaction_trace.json or one manifest stub cannot pass regeneration, idempotence, and cross-boundary generation tests together."
+          },
+          {
+            "id": "generalization",
+            "name": "Generalization",
+            "verdict": "PASS",
+            "reasoning": "Verifier spans multiple crash profiles, restart boundaries, and conflicting-summary scenarios rather than one frozen fixture id."
+          },
+          {
+            "id": "prompt_honesty",
+            "name": "Prompt-honesty",
+            "verdict": "PASS",
+            "reasoning": "Honest constraint-complete wording names formal properties and artifacts without mapping each property to a single file cluster."
+          },
+          {
+            "id": "cheating_vs_difficulty",
+            "name": "Cheating-vs-difficulty",
+            "verdict": "PASS",
+            "reasoning": "Hardness comes from reconciling false-green observability with durable invariants, not from hiding the public contract."
+          },
+          {
+            "id": "mechanical_fix_filter",
+            "name": "Mechanical-fix filter",
+            "verdict": "PASS",
+            "reasoning": "Core risk is semantic crash-consistency coupling, not dependency bumps or timeout tuning."
+          },
+          {
+            "id": "localized_fix",
+            "name": "Localized-fix",
+            "verdict": "PASS",
+            "reasoning": "Flipping-point contract spreads control across persist, runtime, and reconcile modules with overlapping behavioral traps."
+          },
+          {
+            "id": "oracle_locality",
+            "name": "Oracle-locality",
+            "verdict": "PASS",
+            "reasoning": "Oracle coordinates three opaque behavioral symbols plus driver-visible regeneration rather than replacing one tiny artifact wholesale."
+          },
+          {
+            "id": "small_declarative_cluster",
+            "name": "Small declarative-cluster",
+            "verdict": "PASS",
+            "reasoning": "No single YAML/table encodes the fix; procedural replay, sealing, and authority selection interact across modules."
+          },
+          {
+            "id": "grep_collapse",
+            "name": "Grep-collapse",
+            "verdict": "PASS",
+            "reasoning": "Instruction uses standard operations vocabulary while fix-path symbols and test names avoid instruction noun tokens."
+          },
+          {
+            "id": "pre_factored_helper",
+            "name": "Pre-factored-helper",
+            "verdict": "PASS",
+            "reasoning": "Decoys rhyme structurally with frontier helpers but do not expose validate/restore/canon completion stubs keyed to prompt bullets."
+          },
+          {
+            "id": "recipe_discount",
+            "name": "Recipe-discount",
+            "verdict": "PASS",
+            "reasoning": "No standard library recipe satisfies manifest-authority plus cursor idempotence without reading bespoke replay logic."
+          },
+          {
+            "id": "security_aura_discount",
+            "name": "Security-aura discount",
+            "verdict": "PASS",
+            "reasoning": "Residual work is crash-consistency formal reasoning, not credential or syscall theatrics."
+          },
+          {
+            "id": "orthogonal_checklist",
+            "name": "Orthogonal-checklist",
+            "verdict": "PASS",
+            "reasoning": "Generation monotonicity, authority selection, and rollback-safe replay trade off rather than forming independent checklist bullets."
+          },
+          {
+            "id": "harness_discount",
+            "name": "Harness-discount",
+            "verdict": "PASS",
+            "reasoning": "Docker scaffolding adds realism but assessed hardness is cross-phase invariant coupling."
+          },
+          {
+            "id": "one_pass_solvability",
+            "name": "One-pass solvability",
+            "verdict": "PASS",
+            "reasoning": "A single reading pass cannot determine sealing order, authority precedence, and cursor truncation rules without executing staged crash drills."
+          },
+          {
+            "id": "hard_only_gate",
+            "name": "Hard-only gate",
+            "verdict": "PASS",
+            "reasoning": "Targets senior operators reconciling namespace compaction recovery under conflicting observability\u2014not an undergraduate single-function patch."
+          },
+          {
+            "id": "discovery_budget_test",
+            "name": "Discovery/design budget test",
+            "verdict": "PASS",
+            "reasoning": "discovery_budget lists three concrete codebase discoveries required beyond the formal contract surface."
+          },
+          {
+            "id": "instruction_specificity_test",
+            "name": "Instruction specificity test",
+            "verdict": "PASS",
+            "reasoning": "instruction_specificity.level is constraint-complete: formal properties and schemas are visible while implementation coordinates remain open."
+          },
+          {
+            "id": "topology_distribution_test",
+            "name": "Topology distribution test",
+            "verdict": "PASS",
+            "reasoning": "topology_enumeration documents three distinct multi-site coordination patterns each requiring three collaborating locations."
+          }
+        ],
+        "rubric_axes": [
+          {
+            "id": "verifiable",
+            "name": "Verifiable",
+            "verdict": "PASS",
+            "reasoning": "Tests compare regenerated trace rows, ledger digests, and cross-boundary generation stamps via deterministic crash fixtures."
+          },
+          {
+            "id": "well_specified",
+            "name": "Well-specified",
+            "verdict": "PASS",
+            "reasoning": "invariant_contract.md plus instruction disclose schemas, driver steps, and formal properties without naming patch coordinates."
+          },
+          {
+            "id": "solvable",
+            "name": "Solvable",
+            "verdict": "PASS",
+            "reasoning": "Expert implementer can close crash-consistency gaps across three Python modules within bounded local tooling."
+          },
+          {
+            "id": "difficult",
+            "name": "Difficult",
+            "verdict": "PASS",
+            "reasoning": "Requires long-horizon reasoning across conflicting truth surfaces and destructive replay semantics under disclosed invariants."
+          },
+          {
+            "id": "interesting",
+            "name": "Interesting",
+            "verdict": "PASS",
+            "reasoning": "Namespace compaction recovery after partial crashes is paid operations work in control planes and storage engines."
+          },
+          {
+            "id": "outcome_verified",
+            "name": "Outcome-verified",
+            "verdict": "PASS",
+            "reasoning": "Grades regenerated traces and derived invariants rather than mandating a single edit recipe or tool chain."
+          }
+        ],
+        "instruction_completeness_test": {
+          "verdict": "PASS",
+          "reasoning": "Instruction alone cannot reveal which module breaks generation monotonicity, manifest authority selection, or rollback-safe cursor sealing without reading implementation and executing crash drills."
+        },
+        "discovery_budget": [
+          {
+            "discovery": "Stale active generation stamps survive a scripted restart boundary because epoch advancement does not invalidate the prior registry snapshot.",
+            "planned_location": "environment/runtime/epoch_gate.py",
+            "why_instruction_must_not_reveal": "Naming the registry locus collapses search to one conditional increment without cross-boundary reasoning."
+          },
+          {
+            "discovery": "Intermediate health summaries can read green while the compaction manifest digest chain remains authoritative for verifier comparisons.",
+            "planned_location": "environment/reconcile/merge_fold.py and environment/tools/health_probe.py",
+            "why_instruction_must_not_reveal": "Disclosing the authoritative surface lets agents patch one comparison branch without reconciling cross-format invariants."
+          },
+          {
+            "discovery": "Rollback phases truncate the replay cursor before tail segments seal, breaking idempotent recovery even when surface checks pass.",
+            "planned_location": "environment/persist/cursor_mux.py",
+            "why_instruction_must_not_reveal": "Pinpointing the truncation site reveals replay ordering and collapses coordinated repair to a single file."
+          }
+        ],
+        "instruction_specificity": {
+          "level": "constraint-complete",
+          "reasoning": "Public prompt states formal durability properties, driver outputs, and schema homes while withholding broken module coordinates and replay-phase recipes."
+        },
+        "attack_path": {
+          "summary": "Agents may chase health summaries or bump generation counters locally while leaving manifest authority and cursor sealing inconsistent.",
+          "reasoning": "False-green intermediate evidence mirrors production compaction stacks; cheap wins fail cross-boundary and idempotence tests until three roots align."
+        },
+        "smallest_plausible_patch": {
+          "summary": "Align epoch advancement with sealed segments, treat manifest digests as authoritative over summaries, and guard rollback from truncating unsealed cursor tails.",
+          "reasoning": "Sounds like three small conditionals but flipping-point isolation shows each edit alone fails subsets exercising restart, authority, and idempotence."
+        },
+        "collapse_audit": {
+          "verdict": "PASS",
+          "reasoning": "Post-disclosure residual work maps properties to interacting behaviors across persist, runtime, and reconcile rather than one obvious function per rule.",
+          "residual_hardness": "After honest invariant disclosure, solvers still derive sealing order, authority precedence among disagreeing surfaces, and rollback-safe replay coupling through experiments.",
+          "red_flags": []
+        },
+        "topology_enumeration": [
+          {
+            "id": "topo_generation_boundary",
+            "summary": "Generation monotonicity coordinates epoch registry, manifest sealing, and recovery driver emission.",
+            "locations": [
+              "environment/runtime/epoch_gate.py",
+              "environment/persist/cursor_mux.py",
+              "environment/tools/run_recovery.py"
+            ],
+            "why_no_single_location_suffices": "Epoch fixes without sealing fail manifest-chain tests; cursor-only tweaks break restart-boundary generation agreement."
+          },
+          {
+            "id": "topo_authority_selection",
+            "summary": "Authority selection spans reconcile folding, health probe summaries, and persisted manifest chains.",
+            "locations": [
+              "environment/reconcile/merge_fold.py",
+              "environment/tools/health_probe.py",
+              "environment/persist/cursor_mux.py"
+            ],
+            "why_no_single_location_suffices": "Treating summaries as canonical fails digest-chain tests; manifest-only edits leave false-green probes passing prematurely."
+          },
+          {
+            "id": "topo_rollback_replay",
+            "summary": "Rollback-safe replay couples cursor mux, epoch gates, and reconcile tail handling.",
+            "locations": [
+              "environment/persist/cursor_mux.py",
+              "environment/runtime/epoch_gate.py",
+              "environment/reconcile/merge_fold.py"
+            ],
+            "why_no_single_location_suffices": "Rollback guards without epoch alignment resurrect stale generations; reconcile-only tail fixes leave cursor truncation breaking idempotence."
+          }
+        ],
+        "construction_manifest": {
+          "symbol_table": [
+            {
+              "path": "environment/persist/cursor_mux.py",
+              "symbol": "fn_k2",
+              "kind": "function",
+              "signature": "fn_k2(buf: list[dict], mark_a: int, mark_b: int) -> dict",
+              "purpose": "Advances replay cursor state and records sealed tail segments for recovery reruns."
+            },
+            {
+              "path": "environment/runtime/epoch_gate.py",
+              "symbol": "fn_h8",
+              "kind": "function",
+              "signature": "fn_h8(ctx: dict, gen_a: int, gen_b: int) -> int",
+              "purpose": "Computes active generation stamps after restart boundaries using registry snapshots."
+            },
+            {
+              "path": "environment/reconcile/merge_fold.py",
+              "symbol": "fn_w4",
+              "kind": "function",
+              "signature": "fn_w4(rows: list[tuple[str, str]], tag_p: str, tag_q: str) -> dict",
+              "purpose": "Folds competing observation rows into manifest-chain digests used by verification."
+            }
+          ],
+          "flipping_point_contract": {
+            "locations": [
+              {
+                "id": "A",
+                "path": "environment/persist/cursor_mux.py",
+                "controls_tests": [
+                  "test_bv_m2_emit",
+                  "test_triad_bv8a"
+                ]
+              },
+              {
+                "id": "B",
+                "path": "environment/runtime/epoch_gate.py",
+                "controls_tests": [
+                  "test_hn_q4_pair",
+                  "test_triad_hn8b"
+                ]
+              },
+              {
+                "id": "C",
+                "path": "environment/reconcile/merge_fold.py",
+                "controls_tests": [
+                  "test_wk_p8_cycle",
+                  "test_triad_wk8c"
+                ]
+              }
+            ],
+            "no_single_location_flips_majority": true,
+            "concentration_cap": 0.5
+          },
+          "decoy_manifest": [
+            {
+              "path": "environment/persist/lane_buffer.py",
+              "kind": "module",
+              "rhymes_with": "fn_k2",
+              "non_fix_purpose": "Buffers ephemeral lane events for offline benchmarks unrelated to sealed recovery tails."
+            },
+            {
+              "path": "environment/reconcile/rank_probe.py",
+              "kind": "module",
+              "rhymes_with": "fn_w4",
+              "non_fix_purpose": "Ranks diagnostic tuples for support tooling without participating in manifest-chain authority."
+            }
+          ],
+          "code_forbidden_tokens": [
+            "authoritative",
+            "boundaries",
+            "cascade",
+            "chain",
+            "compaction",
+            "cursor",
+            "digests",
+            "driver",
+            "durability",
+            "epoch",
+            "generation",
+            "health",
+            "idempotent",
+            "invariant",
+            "ledgers",
+            "manifest",
+            "namespace",
+            "records",
+            "recovery",
+            "replay",
+            "restart",
+            "rollback",
+            "sealed",
+            "segments",
+            "summaries",
+            "tail",
+            "trace",
+            "truncate"
+          ]
+        },
+        "naming_pass": {
+          "instruction_nouns_extracted": [
+            "authoritative",
+            "boundaries",
+            "cascade",
+            "chain",
+            "compaction",
+            "cursor",
+            "digests",
+            "driver",
+            "durability",
+            "epoch",
+            "generation",
+            "health",
+            "idempotent",
+            "invariant",
+            "ledgers",
+            "manifest",
+            "namespace",
+            "records",
+            "recovery",
+            "replay",
+            "restart",
+            "rollback",
+            "sealed",
+            "segments",
+            "summaries",
+            "tail",
+            "trace",
+            "truncate"
+          ],
+          "renames_during_drafting": [
+            {
+              "original": "test_compaction_restart_idempotent",
+              "renamed_to": "test_bv_m2_emit",
+              "reason": "Planned test name contained forbidden instruction nouns compaction and restart."
+            },
+            {
+              "original": "test_manifest_authority_cycle",
+              "renamed_to": "test_wk_p8_cycle",
+              "reason": "Removed manifest and authority stems from test identifier."
+            }
+          ],
+          "test_names_audited": [
+            "test_bv_m2_emit",
+            "test_hn_q4_pair",
+            "test_wk_p8_cycle",
+            "test_triad_bv8a",
+            "test_triad_hn8b",
+            "test_triad_wk8c"
+          ],
+          "concentration_math": {
+            "total_tests": 6,
+            "per_location": [
+              {
+                "location_id": "A",
+                "test_count": 2,
+                "ratio": 0.3333333333333333
+              },
+              {
+                "location_id": "B",
+                "test_count": 2,
+                "ratio": 0.3333333333333333
+              },
+              {
+                "location_id": "C",
+                "test_count": 2,
+                "ratio": 0.3333333333333333
+              }
+            ]
+          },
+          "recomputed_concentration": {
+            "total_tests": 6,
+            "concentration_cap": 0.5,
+            "per_location": [
+              {
+                "location_id": "A",
+                "test_count": 2,
+                "ratio": 0.3333333333333333
+              },
+              {
+                "location_id": "B",
+                "test_count": 2,
+                "ratio": 0.3333333333333333
+              },
+              {
+                "location_id": "C",
+                "test_count": 2,
+                "ratio": 0.3333333333333333
+              }
+            ]
+          }
+        },
+        "difficulty_mechanism_plan": [
+          {
+            "mechanism": "rollback_recovery_requirements",
+            "placement": "environment/persist/cursor_mux.py with crash fixtures under environment/fixtures/crash_profiles/",
+            "why_model_misses_it": "Agents patch forward progress without ensuring rollback leaves replay cursors able to re-apply sealed tails idempotently.",
+            "fairness_guardrail": "Crash profiles are deterministic and bundled locally; invariant_contract.md states idempotence obligations."
+          },
+          {
+            "mechanism": "cross_file_cross_format_invariants",
+            "placement": "environment/reconcile/merge_fold.py versus environment/tools/health_probe.py and trace JSON under /app/output/",
+            "why_model_misses_it": "Models trust human-readable summaries instead of manifest digest chains required by formal properties.",
+            "fairness_guardrail": "Authority rule is disclosed; tests compare derived digests from emitted artifacts."
+          },
+          {
+            "mechanism": "partial_observability_experiment_design",
+            "placement": "health_probe summaries versus compaction_trace.json rows after scripted crashes",
+            "why_model_misses_it": "Intermediate probes look healthy before generation and sealing invariants converge across restart boundaries.",
+            "fairness_guardrail": "All observability surfaces are local; verifier reruns driver after deleting outputs."
+          },
+          {
+            "mechanism": "stateful_multi_step_dependencies",
+            "placement": "multi-phase run_recovery.py workflow with persisted state under environment/state/",
+            "why_model_misses_it": "Single-pass edits fix one phase while leaving stale registry snapshots for the next restart drill.",
+            "fairness_guardrail": "State transitions are deterministic and exposed through visible commands and ledgers."
+          },
+          {
+            "mechanism": "false_green_intermediate_states",
+            "placement": "environment/tools/health_probe.py before manifest-chain tests in pytest ordering",
+            "why_model_misses_it": "Agents stop after a passing health summary without validating cross-boundary generation monotonicity.",
+            "fairness_guardrail": "Final verifier contract requires trace-derived invariants, not probe booleans alone."
+          }
+        ],
+        "calibration_plan": {
+          "oracle_runs": 3,
+          "no_op_runs": 3,
+          "target_agent_runs": 5,
+          "comparator_agent_runs": 5,
+          "human_sanity": "One careful human can satisfy invariants using only invariant_contract.md, bundled fixtures, and run_recovery.py without web access.",
+          "shortcut_audit": "Watch for hand-written JSON, static manifest copies, test edits, and reward-file writes bypassing driver regeneration.",
+          "ablation_plan": "Remove manifest-authority layer, then rollback idempotence layer, then false-green probes; expect interpretable difficulty drops.",
+          "pass_rate_target": {
+            "hard_max_pct": 20,
+            "too_easy_threshold_pct": 80,
+            "basis": "stronger target agent trials on comparable state-recovery formal tasks"
+          }
+        },
+        "verifier_scoring_plan": {
+          "metrics": [
+            {
+              "metric": "functional_correctness",
+              "weight": 0.45,
+              "criterion": "Regenerated traces and ledgers match formal properties across crash profiles."
+            },
+            {
+              "metric": "hidden_invariants",
+              "weight": 0.25,
+              "criterion": "Cross-boundary generation monotonicity and manifest-chain authority hold without boolean answer keys."
+            },
+            {
+              "metric": "state_hygiene",
+              "weight": 0.15,
+              "criterion": "Idempotent reruns and rollback drills leave no stale cursor or registry snapshots."
+            },
+            {
+              "metric": "interface_correctness",
+              "weight": 0.1,
+              "criterion": "Driver CLI and schema fields match invariant_contract.md."
+            },
+            {
+              "metric": "deliverable_completeness",
+              "weight": 0.05,
+              "criterion": "All declared output artifacts exist after normal pipeline execution."
+            }
+          ],
+          "overall_threshold": 0.999,
+          "reward_output": "reward.txt",
+          "binary_threshold_rule": "reward.txt is 1 only when every semantic pytest case passes."
+        },
+        "subtype_milestone_plan": {
+          "subcategories": [],
+          "milestone_count": 0,
+          "sequential_dependency": "Single-step task; dependencies encoded as stateful driver/output invariants across crash phases.",
+          "local_only_data": true,
+          "sidecar_or_protocol_notes": "All fixtures and protocols are local; no runtime web fetching."
+        },
+        "platform_files": [
+          {
+            "path": "task.toml",
+            "role": "metadata"
+          },
+          {
+            "path": "instruction.md",
+            "role": "natural public task prompt"
+          },
+          {
+            "path": "output_contract.toml",
+            "role": "local output declaration"
+          },
+          {
+            "path": "tests/test.sh",
+            "role": "verifier entrypoint"
+          },
+          {
+            "path": "tests/test_outputs.py",
+            "role": "domain verifier"
+          },
+          {
+            "path": "solution/solve.sh",
+            "role": "oracle"
+          },
+          {
+            "path": "environment/Dockerfile",
+            "role": "build definition"
+          },
+          {
+            "path": "construction_manifest.json",
+            "role": "local authoring artifact"
+          }
+        ],
+        "task_files": [
+          {
+            "path": "environment/persist/cursor_mux.py",
+            "role": "replay cursor and sealed tail recording"
+          },
+          {
+            "path": "environment/persist/lane_buffer.py",
+            "role": "decoy lane buffering"
+          },
+          {
+            "path": "environment/runtime/epoch_gate.py",
+            "role": "generation stamp registry across restarts"
+          },
+          {
+            "path": "environment/reconcile/merge_fold.py",
+            "role": "manifest-chain digest folding"
+          },
+          {
+            "path": "environment/reconcile/rank_probe.py",
+            "role": "decoy diagnostic ranking"
+          },
+          {
+            "path": "environment/tools/run_recovery.py",
+            "role": "published recovery driver CLI"
+          },
+          {
+            "path": "environment/tools/health_probe.py",
+            "role": "intermediate health summaries"
+          },
+          {
+            "path": "environment/docs/invariant_contract.md",
+            "role": "formal properties and schema references"
+          },
+          {
+            "path": "environment/schemas/trace_row.schema.json",
+            "role": "trace row JSON schema"
+          },
+          {
+            "path": "environment/fixtures/crash_profiles/",
+            "role": "deterministic crash/restart scenarios"
+          }
+        ],
+        "fix_frontier": {
+          "count": 3,
+          "distribution": "One opaque function each under environment/persist, environment/runtime, and environment/reconcile.",
+          "naming_policy": "Opaque identifiers (fn_k2, fn_h8, fn_w4) with neutral parameter names; no instruction nouns on fix path.",
+          "forbidden_stems": [
+            "authoritative",
+            "boundaries",
+            "cascade",
+            "chain",
+            "compaction",
+            "cursor",
+            "digests",
+            "driver",
+            "durability",
+            "epoch",
+            "generation",
+            "health",
+            "idempotent",
+            "invariant",
+            "ledgers",
+            "manifest",
+            "namespace",
+            "records",
+            "recovery",
+            "replay",
+            "restart",
+            "rollback",
+            "sealed",
+            "segments",
+            "summaries",
+            "tail",
+            "trace",
+            "truncate"
+          ],
+          "helpers_policy": "Decoys perform credible adjacent work; frontier stays thin at three symbols.",
+          "symbol_thin_preferred": true
+        },
+        "contract_surface": {
+          "boolean_fields_max": 0,
+          "direct_boolean_assertions_max": 2,
+          "preferred_assertion_styles": [
+            "trace row digests",
+            "ledger run fingerprints",
+            "cross-boundary generation stamp monotonicity",
+            "manifest-chain equality"
+          ],
+          "forbidden_assertion_styles": [
+            "readiness boolean verdict fields",
+            "scenario-key-expected tables in instruction"
+          ]
+        },
+        "task_shape": {
+          "type": "formal_reasoning",
+          "instruction_framing": "constraint-complete",
+          "hardness_source": "formal correctness",
+          "collapse_risk": "Leaking replay-phase ordering or the authoritative manifest path collapses the task to a one-file conditional repair."
+        },
+        "category_profile": {
+          "challenge_family": "namespace restore",
+          "profile_name": "state_recovery_crash_consistency",
+          "allowed_instruction_disclosures": "Crash/restart workflow, durability obligations, recovery driver command class, expected trace and ledger artifacts, formal invariants and schema homes.",
+          "forbidden_instruction_leaks": "Journal/checkpoint internals, broken recovery phase identity, corruption source coordinates, replay ordering recipe, fix-path symbol names.",
+          "category_specific_hardness_bar": "Partial writes, replay, cleanup, and rerun safety must coordinate across restart boundaries with conflicting observability.",
+          "category_specific_verifier_risks": "Nondeterministic crash timing, one hidden snapshot shortcuts, verifier reading private internals instead of emitted traces.",
+          "coverage_role": "Adds formal_reasoning depth to state_recovery_crash_consistency under system-administration with namespace-restore topology distinct from filesystem reconstruction repair tasks."
+        },
+        "satisfiability_risk": {
+          "rc2_planned_name_risk": "medium \u2014 many instruction nouns require strict opaque stems and audited test names.",
+          "gx9_contract_risk": "low \u2014 tests derive verdicts from trace rows and digests rather than boolean answer keys.",
+          "cr1_symbol_frontier_risk": "medium \u2014 three thin symbols plus documented decoys must stay explicit in manifest.",
+          "hidden_contract_risk": "low \u2014 invariant_contract.md and run_recovery.py document formulas and driver steps mirrored in tests."
+        },
+        "actionability_plan": {
+          "verifier_command_visible": "Instruction cites python recovery driver under environment/tools/run_recovery.py and output roots under /app/output/.",
+          "source_fix_intent_visible": "Prompt requires repairing implementation under /app/environment without naming frontier files.",
+          "generated_output_rule_visible": "Instruction mandates deleting then rebuilding compaction_trace.json and ledgers via the normal driver pipeline.",
+          "exact_formula_home": "environment/docs/invariant_contract.md defines digest-chain and monotonicity rules exercised by tests.",
+          "schema_home": "environment/schemas/trace_row.schema.json plus invariant_contract.md; output_contract.toml lists artifact paths only."
+        },
+        "waiver_plan": {
+          "waivers_expected": false,
+          "waiver_rationale": "Design keeps contracts observation-shaped with solver-visible formal homes; waivers should be unnecessary if Step 2b follows manifest."
+        },
+        "reference_pattern": {
+          "justification_if_none": "Promoted reference layered-policy-reload-drift targets config_policy_precedence observation reloads, not formal_reasoning namespace-restore crash consistency; no promoted reference_task_id in docs/reference_tasks/index.json applies."
+        },
+        "realism_source": {
+          "source_type": "real_system",
+          "evidence_basis": "Minimized from etcd/kubernetes-style namespace compaction and WAL recovery incident patterns where health checks green before durable invariants hold.",
+          "upstream_or_synthetic_rationale": "Preserves conflicting observability surfaces and restart-boundary generation skew seen in real control-plane compaction stacks without cloning a single CVE.",
+          "minimization_preserves": "False-green summaries, manifest authority, sealed-segment replay, and rollback-sensitive cursor semantics.",
+          "synthetic_exception_review": "Not required for real_system sourcing; formal contract is disclosed while implementation coordinates remain discoverable."
+        }
+      },
+      "evidence_errors": [],
+      "evidence_warnings": [],
+      "blocking_failures": [],
+      "strict": true
+    }
+  ],
+  "schema_path": "specs/validation_schema.json",
+  "emit_legacy_reviewer": false
+}

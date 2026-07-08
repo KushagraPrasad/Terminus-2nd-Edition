@@ -1,0 +1,7 @@
+{
+  "actors": [
+    {"actor_id": "svc-reader", "revoked": false},
+    {"actor_id": "svc-writer", "revoked": false},
+    {"actor_id": "svc-audit", "revoked": false}
+  ]
+}

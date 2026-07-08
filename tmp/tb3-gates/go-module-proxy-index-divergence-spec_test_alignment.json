@@ -1,0 +1,13 @@
+{
+  "findings": [],
+  "requirements_checked": 9,
+  "status": "PASS",
+  "strict": true,
+  "summary": {
+    "fail": 0,
+    "pass": 1,
+    "warn": 0
+  },
+  "task_dir": "tasks/go-module-proxy-index-divergence",
+  "test_files_checked": 1
+}

@@ -1,0 +1,5 @@
+Release profile is used for the driver binary at /app/target/release/mk.
+The verifier cargo invocation is: cargo build --release --locked (run from /app).
+The standard test runner invokes pytest from /opt/verifier-venv on /tests/test_outputs.py with --ctrf /logs/verifier/ctrf.json for structured logs.
+Before cargo, pytest may run this no-op argv prefix for CI contract anchoring: /bin/true /app/environment/p7
+Ablation tests may temporarily patch `/app/m2/k81/src/gate_mux.rs`, `/app/p7/y4/src/hold.rs`, `/app/p7/y5/src/tie.rs`, or `/app/p7/y6/src/stride.rs`.

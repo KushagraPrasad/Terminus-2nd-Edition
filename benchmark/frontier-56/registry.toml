@@ -1,0 +1,847 @@
+# Frontier 56 benchmark registry — Phase 4 locked roster
+
+[meta]
+version = 1
+target_count = 56
+family_cap = 2
+locked = true
+
+[[tasks]]
+id = "offline-lockfile-rehydration-gap"
+title = "Offline lockfile rehydration gap"
+benchmark_category = "build-dependency"
+portal_category = "build-and-dependency-management"
+architecture_family = "offline_lockfile_rehydration"
+task_shape = "repair_existing_system"
+language = "rust"
+topology = "offline lockfile rehydration"
+closest_neighbor = "data-lineage-invariant-proof"
+closest_neighbor_similarity = 0.0000
+status = "task"
+failure_modes = ["resolver edge misread", "patch override ordering bug", "stale vendor tarball hash"]
+differences = "architecture:offline_lockfile_rehydration vs data_lineage_invariant_proof; topology:offline lockfile rehydration vs data lineage invariant proof"
+
+[[tasks]]
+id = "abi-rebuild-drift-detector"
+title = "ABI rebuild drift detector"
+benchmark_category = "build-dependency"
+portal_category = "build-and-dependency-management"
+architecture_family = "abi_rebuild_drift"
+task_shape = "repair_existing_system"
+language = "cpp"
+topology = "ABI rebuild drift"
+closest_neighbor = "core-dump-stack-inference"
+closest_neighbor_similarity = 0.0000
+status = "task"
+failure_modes = ["header generation skip", "LTO symbol visibility drift", "padding layout mismatch"]
+differences = "architecture:abi_rebuild_drift vs core_dump_stack_inference; topology:ABI rebuild drift vs core dump stack inference"
+
+[[tasks]]
+id = "hermetic-sandbox-build-contract"
+title = "Hermetic sandbox build contract"
+benchmark_category = "build-dependency"
+portal_category = "build-and-dependency-management"
+architecture_family = "hermetic_sandbox_build"
+task_shape = "constrained_build"
+language = "rust"
+topology = "hermetic sandbox build"
+closest_neighbor = "bazel-query-graph-stale-edge"
+closest_neighbor_similarity = 0.0000
+status = "task"
+failure_modes = ["proc macro host leak", "feature unification ordering", "timestamp nondeterminism"]
+differences = "architecture:hermetic_sandbox_build vs bazel_query_stale_edge; topology:hermetic sandbox build vs bazel query stale edge"
+
+[[tasks]]
+id = "bazel-query-graph-stale-edge"
+title = "Bazel query graph stale edge"
+benchmark_category = "build-dependency"
+portal_category = "build-and-dependency-management"
+architecture_family = "bazel_query_stale_edge"
+task_shape = "repair_existing_system"
+language = "java"
+topology = "bazel query stale edge"
+closest_neighbor = "hermetic-sandbox-build-contract"
+closest_neighbor_similarity = 0.0000
+status = "task"
+failure_modes = ["config transition cache", "aspect stale output", "runfiles manifest drift"]
+differences = "architecture:bazel_query_stale_edge vs hermetic_sandbox_build; topology:bazel query stale edge vs hermetic sandbox build"
+
+[[tasks]]
+id = "incremental-build-shadow-artifacts"
+title = "Incremental build shadow artifacts"
+benchmark_category = "build-management"
+portal_category = "build-and-dependency-management"
+architecture_family = "incremental_shadow_artifacts"
+task_shape = "repair_existing_system"
+language = "cpp"
+topology = "incremental shadow artifacts"
+closest_neighbor = "game-logic-invariant-model-check"
+closest_neighbor_similarity = 0.0000
+status = "task"
+failure_modes = ["depfile missing edge", "ccache key omission", "restat false negative"]
+differences = "architecture:incremental_shadow_artifacts vs game_logic_model_check; topology:incremental shadow artifacts vs game logic model check"
+
+[[tasks]]
+id = "distributed-compile-cache-invalidation"
+title = "Distributed compile cache invalidation"
+benchmark_category = "build-management"
+portal_category = "build-and-dependency-management"
+architecture_family = "dist_compile_cache_invalidation"
+task_shape = "repair_existing_system"
+language = "rust"
+topology = "dist compile cache invalidation"
+closest_neighbor = "input-remap-variant-ladder"
+closest_neighbor_similarity = 0.0000
+status = "task"
+failure_modes = ["define omission in hash", "platform tag coarse", "poisoned remote upload"]
+differences = "architecture:dist_compile_cache_invalidation vs input_remap_variant_ladder; topology:dist compile cache invalidation vs input remap variant ladder"
+
+[[tasks]]
+id = "ci-matrix-cache-poisoning"
+title = "CI matrix cache poisoning"
+benchmark_category = "build-management"
+portal_category = "build-and-dependency-management"
+architecture_family = "ci_matrix_cache_poison"
+task_shape = "repair_existing_system"
+language = "go"
+topology = "CI matrix cache poison"
+closest_neighbor = "move-budget-sokoban-variant-ladder"
+closest_neighbor_similarity = 0.0000
+status = "task"
+failure_modes = ["cache key collision", "restore-key fallback", "cross-leg artifact bleed"]
+differences = "architecture:ci_matrix_cache_poison vs move_budget_sokoban_ladder; topology:CI matrix cache poison vs move budget sokoban ladder"
+
+[[tasks]]
+id = "pipeline-stage-ordering-trap"
+title = "Pipeline stage ordering trap"
+benchmark_category = "build-management"
+portal_category = "build-and-dependency-management"
+architecture_family = "pipeline_stage_ordering"
+task_shape = "repair_existing_system"
+language = "java"
+topology = "pipeline stage ordering"
+closest_neighbor = "procedural-level-seed-replay"
+closest_neighbor_similarity = 0.0000
+status = "task"
+failure_modes = ["needs edge bypass", "promotion race", "floating tag consumption"]
+differences = "architecture:pipeline_stage_ordering vs procedural_level_replay; topology:pipeline stage ordering vs procedural level replay"
+
+[[tasks]]
+id = "move-budget-sokoban-variant-ladder"
+title = "Move budget Sokoban variant ladder"
+benchmark_category = "challenging-games"
+portal_category = "games"
+architecture_family = "move_budget_sokoban_ladder"
+task_shape = "adversarial_generalization"
+language = "rust"
+topology = "move budget sokoban ladder"
+closest_neighbor = "ci-matrix-cache-poisoning"
+closest_neighbor_similarity = 0.0000
+status = "task"
+failure_modes = ["push priority misread", "undo depth miscount", "goal predicate variant"]
+differences = "architecture:move_budget_sokoban_ladder vs ci_matrix_cache_poison; topology:move budget sokoban ladder vs CI matrix cache poison"
+
+[[tasks]]
+id = "procedural-level-seed-replay"
+title = "Procedural level seed replay"
+benchmark_category = "challenging-games"
+portal_category = "games"
+architecture_family = "procedural_level_replay"
+task_shape = "repair_existing_system"
+language = "cpp"
+topology = "procedural level replay"
+closest_neighbor = "pipeline-stage-ordering-trap"
+closest_neighbor_similarity = 0.0000
+status = "task"
+failure_modes = ["RNG stream split error", "biome cache stale", "spawn order inversion"]
+differences = "architecture:procedural_level_replay vs pipeline_stage_ordering; topology:procedural level replay vs pipeline stage ordering"
+
+[[tasks]]
+id = "game-logic-invariant-model-check"
+title = "Game logic invariant model check"
+benchmark_category = "challenging-games"
+portal_category = "games"
+architecture_family = "game_logic_model_check"
+task_shape = "formal_reasoning"
+language = "rust"
+topology = "game logic model check"
+closest_neighbor = "incremental-build-shadow-artifacts"
+closest_neighbor_similarity = 0.0000
+status = "task"
+failure_modes = ["resolution order gap", "phase counter drift", "undo state incomplete"]
+differences = "architecture:game_logic_model_check vs incremental_shadow_artifacts; topology:game logic model check vs incremental shadow artifacts"
+
+[[tasks]]
+id = "input-remap-variant-ladder"
+title = "Input remap variant ladder"
+benchmark_category = "challenging-games"
+portal_category = "games"
+architecture_family = "input_remap_variant_ladder"
+task_shape = "adversarial_generalization"
+language = "go"
+topology = "input remap variant ladder"
+closest_neighbor = "distributed-compile-cache-invalidation"
+closest_neighbor_similarity = 0.0000
+status = "task"
+failure_modes = ["chord timeout drift", "deadzone order bug", "focus buffer loss"]
+differences = "architecture:input_remap_variant_ladder vs dist_compile_cache_invalidation; topology:input remap variant ladder vs dist compile cache invalidation"
+
+[[tasks]]
+id = "aead-nonce-reuse-recovery"
+title = "AEAD nonce reuse recovery"
+benchmark_category = "cryptography"
+portal_category = "security"
+architecture_family = "aead_nonce_reuse_recovery"
+task_shape = "repair_existing_system"
+language = "rust"
+topology = "AEAD nonce reuse recovery"
+closest_neighbor = "move-budget-sokoban-variant-ladder"
+closest_neighbor_similarity = 0.0000
+status = "task"
+failure_modes = ["counter rewind", "fsync ordering", "parallel counter race"]
+differences = "architecture:aead_nonce_reuse_recovery vs move_budget_sokoban_ladder; topology:AEAD nonce reuse recovery vs move budget sokoban ladder"
+
+[[tasks]]
+id = "crypto-agility-variant-ladder"
+title = "Crypto agility variant ladder"
+benchmark_category = "cryptography"
+portal_category = "security"
+architecture_family = "crypto_agility_ladder"
+task_shape = "adversarial_generalization"
+language = "rust"
+topology = "crypto agility ladder"
+closest_neighbor = "shell-task-env-inheritance-trap"
+closest_neighbor_similarity = 0.0000
+status = "task"
+failure_modes = ["PSS salt mismatch", "EdDSA context omission", "hybrid KEM composition"]
+differences = "architecture:crypto_agility_ladder vs shell_env_inheritance; topology:crypto agility ladder vs shell env inheritance"
+
+[[tasks]]
+id = "threshold-signature-shard-mismatch"
+title = "Threshold signature shard mismatch"
+benchmark_category = "cryptography"
+portal_category = "security"
+architecture_family = "threshold_sig_shard_mismatch"
+task_shape = "repair_existing_system"
+language = "go"
+topology = "threshold sig shard mismatch"
+closest_neighbor = "distributed-compile-cache-invalidation"
+closest_neighbor_similarity = 0.0000
+status = "task"
+failure_modes = ["shard index swap", "retired custodian count", "HKDF info mismatch"]
+differences = "architecture:threshold_sig_shard_mismatch vs dist_compile_cache_invalidation; topology:threshold sig shard mismatch vs dist compile cache invalidation"
+
+[[tasks]]
+id = "encrypted-backup-header-parse"
+title = "Encrypted backup header parse"
+benchmark_category = "cryptography"
+portal_category = "security"
+architecture_family = "encrypted_backup_header"
+task_shape = "repair_existing_system"
+language = "go"
+topology = "encrypted backup header"
+closest_neighbor = "pipeline-stage-ordering-trap"
+closest_neighbor_similarity = 0.0000
+status = "task"
+failure_modes = ["endianness drift", "AAD scope error", "compression MAC scope"]
+differences = "architecture:encrypted_backup_header vs pipeline_stage_ordering; topology:encrypted backup header vs pipeline stage ordering"
+
+[[tasks]]
+id = "data-lineage-invariant-proof"
+title = "Data lineage invariant proof"
+benchmark_category = "data-processing"
+portal_category = "data-processing"
+architecture_family = "data_lineage_invariant_proof"
+task_shape = "formal_reasoning"
+language = "java"
+topology = "data lineage invariant proof"
+closest_neighbor = "offline-lockfile-rehydration-gap"
+closest_neighbor_similarity = 0.0000
+status = "task"
+failure_modes = ["view grain hide", "late dimension skew", "surrogate key reuse"]
+differences = "architecture:data_lineage_invariant_proof vs offline_lockfile_rehydration; topology:data lineage invariant proof vs offline lockfile rehydration"
+
+[[tasks]]
+id = "stream-window-aggregate-drift"
+title = "Stream window aggregate drift"
+benchmark_category = "data-processing"
+portal_category = "data-processing"
+architecture_family = "stream_window_aggregate_drift"
+task_shape = "repair_existing_system"
+language = "java"
+topology = "stream window aggregate drift"
+closest_neighbor = "move-budget-sokoban-variant-ladder"
+closest_neighbor_similarity = 0.0000
+status = "task"
+failure_modes = ["watermark semantics", "processing time gap", "retraction omission"]
+differences = "architecture:stream_window_aggregate_drift vs move_budget_sokoban_ladder; topology:stream window aggregate drift vs move budget sokoban ladder"
+
+[[tasks]]
+id = "pii-redaction-variant-ladder"
+title = "PII redaction variant ladder"
+benchmark_category = "data-processing"
+portal_category = "data-processing"
+architecture_family = "pii_redaction_ladder"
+task_shape = "adversarial_generalization"
+language = "python"
+topology = "PII redaction ladder"
+closest_neighbor = "incremental-build-shadow-artifacts"
+closest_neighbor_similarity = 0.0000
+status = "task"
+failure_modes = ["regex overlap leak", "JSON validity break", "salt instability"]
+differences = "architecture:pii_redaction_ladder vs incremental_shadow_artifacts; topology:PII redaction ladder vs incremental shadow artifacts"
+
+[[tasks]]
+id = "regex-extraction-trace-inference"
+title = "Regex extraction trace inference"
+benchmark_category = "data-processing"
+portal_category = "data-processing"
+architecture_family = "regex_extraction_inference"
+task_shape = "reverse_engineering"
+language = "rust"
+topology = "regex extraction inference"
+closest_neighbor = "distributed-compile-cache-invalidation"
+closest_neighbor_similarity = 0.0000
+status = "task"
+failure_modes = ["capture optional drift", "multiline anchor", "unicode property gap"]
+differences = "architecture:regex_extraction_inference vs dist_compile_cache_invalidation; topology:regex extraction inference vs dist compile cache invalidation"
+
+[[tasks]]
+id = "data-contract-validator-builder"
+title = "Data contract validator builder"
+benchmark_category = "data-scripting"
+portal_category = "data-processing"
+architecture_family = "data_contract_validator_build"
+task_shape = "constrained_build"
+language = "go"
+topology = "data contract validator build"
+closest_neighbor = "distributed-compile-cache-invalidation"
+closest_neighbor_similarity = 0.0000
+status = "task"
+failure_modes = ["default version drift", "enum extension rule", "bound inclusivity"]
+differences = "architecture:data_contract_validator_build vs dist_compile_cache_invalidation; topology:data contract validator build vs dist compile cache invalidation"
+
+[[tasks]]
+id = "notebook-cell-reorder-provenance"
+title = "Notebook cell reorder provenance"
+benchmark_category = "data-scripting"
+portal_category = "data-processing"
+architecture_family = "notebook_cell_provenance"
+task_shape = "repair_existing_system"
+language = "python"
+topology = "notebook cell provenance"
+closest_neighbor = "data-contract-validator-builder"
+closest_neighbor_similarity = 0.0000
+status = "task"
+failure_modes = ["cell id instability", "execution count reuse", "widget serialize order"]
+differences = "architecture:notebook_cell_provenance vs data_contract_validator_build; topology:notebook cell provenance vs data contract validator build"
+
+[[tasks]]
+id = "pipeline-dag-checkpoint-resume"
+title = "Pipeline DAG checkpoint resume"
+benchmark_category = "data-scripting"
+portal_category = "data-processing"
+architecture_family = "pipeline_dag_checkpoint"
+task_shape = "repair_existing_system"
+language = "python"
+topology = "pipeline DAG checkpoint"
+closest_neighbor = "hermetic-sandbox-build-contract"
+closest_neighbor_similarity = 0.0000
+status = "task"
+failure_modes = ["checkpoint identity weak", "idempotency scope", "fan-out omission"]
+differences = "architecture:pipeline_dag_checkpoint vs hermetic_sandbox_build; topology:pipeline DAG checkpoint vs hermetic sandbox build"
+
+[[tasks]]
+id = "shell-task-env-inheritance-trap"
+title = "Shell task env inheritance trap"
+benchmark_category = "data-scripting"
+portal_category = "data-processing"
+architecture_family = "shell_env_inheritance"
+task_shape = "repair_existing_system"
+language = "bash"
+topology = "shell env inheritance"
+closest_neighbor = "bazel-query-graph-stale-edge"
+closest_neighbor_similarity = 0.0000
+status = "task"
+failure_modes = ["function shadow builtin", "BASH_ENV side effect", "ERR trap scope"]
+differences = "architecture:shell_env_inheritance vs bazel_query_stale_edge; topology:shell env inheritance vs bazel query stale edge"
+
+[[tasks]]
+id = "core-dump-stack-inference"
+title = "Core dump stack inference"
+benchmark_category = "debugging"
+portal_category = "debugging"
+architecture_family = "core_dump_stack_inference"
+task_shape = "reverse_engineering"
+language = "cpp"
+topology = "core dump stack inference"
+closest_neighbor = "abi-rebuild-drift-detector"
+closest_neighbor_similarity = 0.0000
+status = "task"
+failure_modes = ["unwind trampoline gap", "CFI missing", "alt stack confusion"]
+differences = "architecture:core_dump_stack_inference vs abi_rebuild_drift; topology:core dump stack inference vs ABI rebuild drift"
+
+[[tasks]]
+id = "happens-before-model-check"
+title = "Happens-before model check"
+benchmark_category = "debugging"
+portal_category = "debugging"
+architecture_family = "happens_before_model_check"
+task_shape = "formal_reasoning"
+language = "cpp"
+topology = "happens before model check"
+closest_neighbor = "distributed-compile-cache-invalidation"
+closest_neighbor_similarity = 0.0000
+status = "approved"
+failure_modes = ["relaxed atomic cycle", "fence portability", "lazy init publish"]
+differences = "architecture:happens_before_model_check vs dist_compile_cache_invalidation; topology:happens before model check vs dist compile cache invalidation"
+
+[[tasks]]
+id = "journal-replay-generation-skew"
+title = "Journal replay generation skew"
+benchmark_category = "debugging"
+portal_category = "debugging"
+architecture_family = "journal_replay_generation_skew"
+task_shape = "repair_existing_system"
+language = "rust"
+topology = "journal replay generation skew"
+closest_neighbor = "ci-matrix-cache-poisoning"
+closest_neighbor_similarity = 0.0000
+status = "task"
+failure_modes = ["generation skew", "combine order bug", "echo lane stale read"]
+differences = "architecture:journal_replay_generation_skew vs ci_matrix_cache_poison; topology:journal replay generation skew vs CI matrix cache poison"
+
+[[tasks]]
+id = "heisenbug-variant-ladder"
+title = "Heisenbug variant ladder"
+benchmark_category = "debugging"
+portal_category = "debugging"
+architecture_family = "heisenbug_variant_ladder"
+task_shape = "adversarial_generalization"
+language = "rust"
+topology = "heisenbug variant ladder"
+closest_neighbor = "offline-lockfile-rehydration-gap"
+closest_neighbor_similarity = 0.0000
+status = "task"
+failure_modes = ["timing mask", "layout drift", "signal mask diff"]
+differences = "architecture:heisenbug_variant_ladder vs offline_lockfile_rehydration; topology:heisenbug variant ladder vs offline lockfile rehydration"
+
+[[tasks]]
+id = "plugin-registry-authority-split"
+title = "Plugin registry authority split"
+benchmark_category = "large-codebase"
+portal_category = "software-engineering"
+architecture_family = "plugin_registry_authority_split"
+task_shape = "repair_existing_system"
+language = "java"
+topology = "plugin registry authority split"
+closest_neighbor = "move-budget-sokoban-variant-ladder"
+closest_neighbor_similarity = 0.0000
+status = "task"
+failure_modes = ["capability revoke miss", "index reuse", "signature cache skip"]
+differences = "architecture:plugin_registry_authority_split vs move_budget_sokoban_ladder; topology:plugin registry authority split vs move budget sokoban ladder"
+
+[[tasks]]
+id = "cross-module-float-policy-drift"
+title = "Cross-module float policy drift"
+benchmark_category = "large-codebase"
+portal_category = "software-engineering"
+architecture_family = "cross_module_float_policy"
+task_shape = "repair_existing_system"
+language = "python"
+topology = "cross module float policy"
+closest_neighbor = "aead-nonce-reuse-recovery"
+closest_neighbor_similarity = 0.0000
+status = "approved"
+failure_modes = ["Kahan path split", "decimal context order", "json round per module"]
+differences = "architecture:cross_module_float_policy vs aead_nonce_reuse_recovery; topology:cross module float policy vs AEAD nonce reuse recovery"
+
+[[tasks]]
+id = "service-mesh-config-precedence"
+title = "Service mesh config precedence"
+benchmark_category = "large-codebase"
+portal_category = "software-engineering"
+architecture_family = "service_mesh_config_precedence"
+task_shape = "repair_existing_system"
+language = "go"
+topology = "service mesh config precedence"
+closest_neighbor = "encrypted-backup-header-parse"
+closest_neighbor_similarity = 0.0000
+status = "task"
+failure_modes = ["precedence table split", "namespace move stale", "timeout inherit wrong"]
+differences = "architecture:service_mesh_config_precedence vs encrypted_backup_header; topology:service mesh config precedence vs encrypted backup header"
+
+[[tasks]]
+id = "monorepo-import-cycle-repair"
+title = "Monorepo import cycle repair"
+benchmark_category = "large-codebase"
+portal_category = "software-engineering"
+architecture_family = "monorepo_import_cycle_repair"
+task_shape = "repair_existing_system"
+language = "python"
+topology = "monorepo import cycle repair"
+closest_neighbor = "abi-rebuild-drift-detector"
+closest_neighbor_similarity = 0.0000
+status = "task"
+failure_modes = ["TYPE_CHECKING mask", "namespace shadow", "editable path wrong"]
+differences = "architecture:monorepo_import_cycle_repair vs abi_rebuild_drift; topology:monorepo import cycle repair vs ABI rebuild drift"
+
+[[tasks]]
+id = "checkpoint-resume-optimizer-state"
+title = "Checkpoint resume optimizer state"
+benchmark_category = "machine-learning"
+portal_category = "machine-learning"
+architecture_family = "checkpoint_optimizer_resume"
+task_shape = "repair_existing_system"
+language = "python"
+topology = "checkpoint optimizer resume"
+closest_neighbor = "hermetic-sandbox-build-contract"
+closest_neighbor_similarity = 0.0000
+status = "task"
+failure_modes = ["bias correction step", "fp16 master miss", "LR wall clock"]
+differences = "architecture:checkpoint_optimizer_resume vs hermetic_sandbox_build; topology:checkpoint optimizer resume vs hermetic sandbox build"
+
+[[tasks]]
+id = "ood-detection-variant-ladder"
+title = "OOD detection variant ladder"
+benchmark_category = "machine-learning"
+portal_category = "machine-learning"
+architecture_family = "ood_detection_ladder"
+task_shape = "adversarial_generalization"
+language = "python"
+topology = "OOD detection ladder"
+closest_neighbor = "incremental-build-shadow-artifacts"
+closest_neighbor_similarity = 0.0000
+status = "task"
+failure_modes = ["scaling leak", "temperature val leak", "ensemble ignore"]
+differences = "architecture:ood_detection_ladder vs incremental_shadow_artifacts; topology:OOD detection ladder vs incremental shadow artifacts"
+
+[[tasks]]
+id = "mixed-precision-replay-ladder"
+title = "Mixed precision replay ladder"
+benchmark_category = "machine-learning"
+portal_category = "machine-learning"
+architecture_family = "mixed_precision_replay_ladder"
+task_shape = "adversarial_generalization"
+language = "cpp"
+topology = "mixed precision replay ladder"
+closest_neighbor = "abi-rebuild-drift-detector"
+closest_neighbor_similarity = 0.0000
+status = "task"
+failure_modes = ["scaler order", "TF32 rank split", "allreduce order"]
+differences = "architecture:mixed_precision_replay_ladder vs abi_rebuild_drift; topology:mixed precision replay ladder vs ABI rebuild drift"
+
+[[tasks]]
+id = "sampler-shard-divergence-repair"
+title = "Sampler shard divergence repair"
+benchmark_category = "machine-learning"
+portal_category = "machine-learning"
+architecture_family = "sampler_shard_divergence"
+task_shape = "repair_existing_system"
+language = "python"
+topology = "sampler shard divergence"
+closest_neighbor = "hermetic-sandbox-build-contract"
+closest_neighbor_similarity = 0.0000
+status = "task"
+failure_modes = ["shard offset stall", "drop_last mismatch", "seed split error"]
+differences = "architecture:sampler_shard_divergence vs hermetic_sandbox_build; topology:sampler shard divergence vs hermetic sandbox build"
+
+[[tasks]]
+id = "fft-resume-corruption"
+title = "FFT resume corruption"
+benchmark_category = "scientific-computing-analysis"
+portal_category = "scientific-computing"
+architecture_family = "fft_resume_corruption"
+task_shape = "repair_existing_system"
+language = "cpp"
+topology = "FFT resume corruption"
+closest_neighbor = "hermetic-sandbox-build-contract"
+closest_neighbor_similarity = 0.0000
+status = "task"
+failure_modes = ["wisdom stale", "plan reuse wrong", "padding ignore"]
+differences = "architecture:fft_resume_corruption vs hermetic_sandbox_build; topology:FFT resume corruption vs hermetic sandbox build"
+
+[[tasks]]
+id = "symplectic-integrator-energy-drift"
+title = "Symplectic integrator energy drift"
+benchmark_category = "scientific-computing-analysis"
+portal_category = "scientific-computing"
+architecture_family = "symplectic_energy_drift"
+task_shape = "repair_existing_system"
+language = "fortran"
+topology = "symplectic energy drift"
+closest_neighbor = "pipeline-stage-ordering-trap"
+closest_neighbor_similarity = 0.0000
+status = "task"
+failure_modes = ["splitting order", "stale gradient", "momentum phase"]
+differences = "architecture:symplectic_energy_drift vs pipeline_stage_ordering; topology:symplectic energy drift vs pipeline stage ordering"
+
+[[tasks]]
+id = "interval-arithmetic-proof-contract"
+title = "Interval arithmetic proof contract"
+benchmark_category = "scientific-computing-analysis"
+portal_category = "scientific-computing"
+architecture_family = "interval_arithmetic_proof"
+task_shape = "formal_reasoning"
+language = "cpp"
+topology = "interval arithmetic proof"
+closest_neighbor = "incremental-build-shadow-artifacts"
+closest_neighbor_similarity = 0.0000
+status = "task"
+failure_modes = ["dependency blowup", "monotonicity miss", "rounding mix"]
+differences = "architecture:interval_arithmetic_proof vs incremental_shadow_artifacts; topology:interval arithmetic proof vs incremental shadow artifacts"
+
+[[tasks]]
+id = "monte-carlo-stratified-overlap"
+title = "Monte Carlo stratified overlap"
+benchmark_category = "scientific-computing-analysis"
+portal_category = "scientific-computing"
+architecture_family = "monte_carlo_stratified"
+task_shape = "repair_existing_system"
+language = "cpp"
+topology = "monte carlo stratified"
+closest_neighbor = "hermetic-sandbox-build-contract"
+closest_neighbor_similarity = 0.0000
+status = "task"
+failure_modes = ["strata overlap", "antithetic correlation", "RNG reuse"]
+differences = "architecture:monte_carlo_stratified vs hermetic_sandbox_build; topology:monte carlo stratified vs hermetic sandbox build"
+
+[[tasks]]
+id = "mac-policy-boolean-precedence"
+title = "MAC policy boolean precedence"
+benchmark_category = "security"
+portal_category = "security"
+architecture_family = "mac_boolean_precedence"
+task_shape = "repair_existing_system"
+language = "java"
+topology = "MAC boolean precedence"
+closest_neighbor = "ood-detection-variant-ladder"
+closest_neighbor_similarity = 0.0000
+status = "approved"
+failure_modes = ["boolean stack order", "dontaudit mask", "default version drift"]
+differences = "architecture:mac_boolean_precedence vs ood_detection_ladder; topology:MAC boolean precedence vs OOD detection ladder"
+
+[[tasks]]
+id = "supply-chain-sig-chain-gap"
+title = "Supply chain sig chain gap"
+benchmark_category = "security"
+portal_category = "security"
+architecture_family = "supply_chain_sig_gap"
+task_shape = "repair_existing_system"
+language = "rust"
+topology = "supply chain sig gap"
+closest_neighbor = "procedural-level-seed-replay"
+closest_neighbor_similarity = 0.0000
+status = "task"
+failure_modes = ["predicate hash", "rekor skip", "timestamp gap"]
+differences = "architecture:supply_chain_sig_gap vs procedural_level_replay; topology:supply chain sig gap vs procedural level replay"
+
+[[tasks]]
+id = "privilege-graph-acyclic-proof"
+title = "Privilege graph acyclic proof"
+benchmark_category = "security"
+portal_category = "security"
+architecture_family = "privilege_graph_proof"
+task_shape = "formal_reasoning"
+language = "java"
+topology = "privilege graph proof"
+closest_neighbor = "incremental-build-shadow-artifacts"
+closest_neighbor_similarity = 0.0000
+status = "task"
+failure_modes = ["grant expiry order", "inheritance cycle", "revoke propagation"]
+differences = "architecture:privilege_graph_proof vs incremental_shadow_artifacts; topology:privilege graph proof vs incremental shadow artifacts"
+
+[[tasks]]
+id = "revocation-cache-authority-split"
+title = "Revocation cache authority split"
+benchmark_category = "security"
+portal_category = "security"
+architecture_family = "revocation_cache_split"
+task_shape = "repair_existing_system"
+language = "go"
+topology = "revocation cache split"
+closest_neighbor = "hermetic-sandbox-build-contract"
+closest_neighbor_similarity = 0.0000
+status = "task"
+failure_modes = ["TTL propagation gap", "negative cache stale", "CRL fragment stale"]
+differences = "architecture:revocation_cache_split vs hermetic_sandbox_build; topology:revocation cache split vs hermetic sandbox build"
+
+[[tasks]]
+id = "minimal-http-router-under-size-cap"
+title = "Minimal HTTP router under size cap"
+benchmark_category = "software-engineering"
+portal_category = "software-engineering"
+architecture_family = "minimal_http_router_cap"
+task_shape = "constrained_build"
+language = "go"
+topology = "minimal HTTP router cap"
+closest_neighbor = "incremental-build-shadow-artifacts"
+closest_neighbor_similarity = 0.0000
+status = "task"
+failure_modes = ["route table tradeoff", "decode alloc", "buffer sharing"]
+differences = "architecture:minimal_http_router_cap vs incremental_shadow_artifacts; topology:minimal HTTP router cap vs incremental shadow artifacts"
+
+[[tasks]]
+id = "typestate-protocol-proof"
+title = "Typestate protocol proof"
+benchmark_category = "software-engineering"
+portal_category = "software-engineering"
+architecture_family = "typestate_protocol_proof"
+task_shape = "formal_reasoning"
+language = "rust"
+topology = "typestate protocol proof"
+closest_neighbor = "pipeline-stage-ordering-trap"
+closest_neighbor_similarity = 0.0000
+status = "task"
+failure_modes = ["error path gap", "erasure loss", "macro guard skip"]
+differences = "architecture:typestate_protocol_proof vs pipeline_stage_ordering; topology:typestate protocol proof vs pipeline stage ordering"
+
+[[tasks]]
+id = "wire-protocol-from-pcap-inference"
+title = "Wire protocol from pcap inference"
+benchmark_category = "software-engineering"
+portal_category = "software-engineering"
+architecture_family = "wire_protocol_pcap_inference"
+task_shape = "reverse_engineering"
+language = "cpp"
+topology = "wire protocol pcap inference"
+closest_neighbor = "offline-lockfile-rehydration-gap"
+closest_neighbor_similarity = 0.0000
+status = "task"
+failure_modes = ["framing ambiguity", "optional encoding", "checksum unknown"]
+differences = "architecture:wire_protocol_pcap_inference vs offline_lockfile_rehydration; topology:wire protocol pcap inference vs offline lockfile rehydration"
+
+[[tasks]]
+id = "async-fault-injection-ladder"
+title = "Async fault injection ladder"
+benchmark_category = "software-engineering"
+portal_category = "software-engineering"
+architecture_family = "async_fault_injection_ladder"
+task_shape = "adversarial_generalization"
+language = "rust"
+topology = "async fault injection ladder"
+closest_neighbor = "incremental-build-shadow-artifacts"
+closest_neighbor_similarity = 0.0000
+status = "task"
+failure_modes = ["cancel propagation", "select bias", "timeout drop race"]
+differences = "architecture:async_fault_injection_ladder vs incremental_shadow_artifacts; topology:async fault injection ladder vs incremental shadow artifacts"
+
+[[tasks]]
+id = "mount-propagation-formal-model"
+title = "Mount propagation formal model"
+benchmark_category = "system-configuration"
+portal_category = "system-administration"
+architecture_family = "mount_propagation_formal"
+task_shape = "formal_reasoning"
+language = "rust"
+topology = "mount propagation formal"
+closest_neighbor = "offline-lockfile-rehydration-gap"
+closest_neighbor_similarity = 0.0000
+status = "task"
+failure_modes = ["flag composition", "bind duplicate events", "pivot partial reset"]
+differences = "architecture:mount_propagation_formal vs offline_lockfile_rehydration; topology:mount propagation formal vs offline lockfile rehydration"
+
+[[tasks]]
+id = "fstab-variant-remount-ladder"
+title = "Fstab variant remount ladder"
+benchmark_category = "system-configuration"
+portal_category = "system-administration"
+architecture_family = "fstab_remount_ladder"
+task_shape = "adversarial_generalization"
+language = "bash"
+topology = "fstab remount ladder"
+closest_neighbor = "ci-matrix-cache-poisoning"
+closest_neighbor_similarity = 0.0000
+status = "task"
+failure_modes = ["generator disagree", "nofail mask", "remote option drift"]
+differences = "architecture:fstab_remount_ladder vs ci_matrix_cache_poison; topology:fstab remount ladder vs CI matrix cache poison"
+
+[[tasks]]
+id = "namespace-restore-replay-loop"
+title = "Namespace restore replay loop"
+benchmark_category = "system-configuration"
+portal_category = "system-administration"
+architecture_family = "namespace_restore_replay"
+task_shape = "repair_existing_system"
+language = "python"
+topology = "namespace restore replay"
+closest_neighbor = "game-logic-invariant-model-check"
+closest_neighbor_similarity = 0.0000
+status = "task"
+failure_modes = ["dev node stale", "propagation cache", "PrivateDevices interact"]
+differences = "architecture:namespace_restore_replay vs game_logic_model_check; topology:namespace restore replay vs game logic model check"
+
+[[tasks]]
+id = "cgroup-pressure-metric-desync"
+title = "Cgroup pressure metric desync"
+benchmark_category = "system-configuration"
+portal_category = "system-administration"
+architecture_family = "cgroup_pressure_desync"
+task_shape = "repair_existing_system"
+language = "go"
+topology = "cgroup pressure desync"
+closest_neighbor = "hermetic-sandbox-build-contract"
+closest_neighbor_similarity = 0.0000
+status = "task"
+failure_modes = ["pressure window stale", "psi precedence", "hierarchy skip"]
+differences = "architecture:cgroup_pressure_desync vs hermetic_sandbox_build; topology:cgroup pressure desync vs hermetic sandbox build"
+
+[[tasks]]
+id = "device-node-lineage-mismatch"
+title = "Device node lineage mismatch"
+benchmark_category = "troubleshooting"
+portal_category = "debugging"
+architecture_family = "device_node_lineage"
+task_shape = "repair_existing_system"
+language = "cpp"
+topology = "device node lineage"
+closest_neighbor = "encrypted-backup-header-parse"
+closest_neighbor_similarity = 0.0000
+status = "task"
+failure_modes = ["mknod cache stale", "udev order", "stat cache race"]
+differences = "architecture:device_node_lineage vs encrypted_backup_header; topology:device node lineage vs encrypted backup header"
+
+[[tasks]]
+id = "overlay-lowerdir-stale-bind"
+title = "Overlay lowerdir stale bind"
+benchmark_category = "troubleshooting"
+portal_category = "debugging"
+architecture_family = "overlay_lowerdir_stale_bind"
+task_shape = "repair_existing_system"
+language = "rust"
+topology = "overlay lowerdir stale bind"
+closest_neighbor = "move-budget-sokoban-variant-ladder"
+closest_neighbor_similarity = 0.0000
+status = "task"
+failure_modes = ["whiteout propagation", "index semantics", "workdir race"]
+differences = "architecture:overlay_lowerdir_stale_bind vs move_budget_sokoban_ladder; topology:overlay lowerdir stale bind vs move budget sokoban ladder"
+
+[[tasks]]
+id = "watchdog-restart-boundary-debug"
+title = "Watchdog restart boundary debug"
+benchmark_category = "troubleshooting"
+portal_category = "debugging"
+architecture_family = "watchdog_restart_boundary"
+task_shape = "repair_existing_system"
+language = "go"
+topology = "watchdog restart boundary"
+closest_neighbor = "offline-lockfile-rehydration-gap"
+closest_neighbor_similarity = 0.0000
+status = "task"
+failure_modes = ["heartbeat early", "dependent mask", "grace latch"]
+differences = "architecture:watchdog_restart_boundary vs offline_lockfile_rehydration; topology:watchdog restart boundary vs offline lockfile rehydration"
+
+[[tasks]]
+id = "quota-rollback-skew-variant"
+title = "Quota rollback skew variant"
+benchmark_category = "troubleshooting"
+portal_category = "debugging"
+architecture_family = "quota_rollback_skew"
+task_shape = "repair_existing_system"
+language = "cpp"
+topology = "quota rollback skew"
+closest_neighbor = "pipeline-stage-ordering-trap"
+closest_neighbor_similarity = 0.0000
+status = "task"
+failure_modes = ["inheritance diff", "projid cache", "reparent hook skip"]
+differences = "architecture:quota_rollback_skew vs pipeline_stage_ordering; topology:quota rollback skew vs pipeline stage ordering"

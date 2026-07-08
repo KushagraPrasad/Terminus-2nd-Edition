@@ -1,0 +1,866 @@
+{
+  "hardness_axes": [
+    {
+      "id": "discover",
+      "name": "Discover",
+      "verdict": "PASS",
+      "reasoning": "Solver must infer which journal tail, cache epoch, and cleanup anchor surfaces control grain_digest agreement across held-out crash schedules; behavioral contract alone does not name broken recovery coupling."
+    },
+    {
+      "id": "synthesize",
+      "name": "Synthesize",
+      "verdict": "PASS",
+      "reasoning": "Robust repair coordinates seg_flush_a journal serialization, epoch_drop_b cache invalidation, and purge_safe_c cleanup across three Go package roots plus the public rvl_check ladder driver."
+    },
+    {
+      "id": "diagnose_or_design",
+      "name": "Diagnose or Design/Search",
+      "verdict": "PASS",
+      "reasoning": "Instruction is behavioral-target: required idempotent repair across crash variants without naming journal phase, cleanup path, or generalization recipe; agent must design cross-surface invariant."
+    },
+    {
+      "id": "navigate_coupling",
+      "name": "Navigate coupling",
+      "verdict": "PASS",
+      "reasoning": "Cleanup-only or cache-only local fixes pass public wave_a/wave_b smoke while held-out reorderings, duplicated passes, and repeat cleanup poison rerun safety."
+    },
+    {
+      "id": "reason_beyond_training",
+      "name": "Reason beyond training",
+      "verdict": "PASS",
+      "reasoning": "Requires incremental-build crash-recovery idempotence coupling beyond generic CRUD, JSON schema, or textbook atomic-rename recipes."
+    }
+  ],
+  "anti_trivialization_checks": [
+    {
+      "id": "disclosure_collapse",
+      "name": "Disclosure-collapse",
+      "verdict": "PASS",
+      "reasoning": "After disclosing rvl_check command, ladder_report schema, recovery reset workflow, and grain_digest contract, solver still must trace multi-surface provenance through Go sources and held-out wave orderings."
+    },
+    {
+      "id": "hidden_instance",
+      "name": "Hidden-instance",
+      "verdict": "PASS",
+      "reasoning": "Public waves wave_a and wave_b are named; held-out orderings are behavioral combinations, not guessing one corrupt file among hundreds."
+    },
+    {
+      "id": "single_artifact_repair",
+      "name": "Single-artifact repair",
+      "verdict": "PASS",
+      "reasoning": "Deleting one stale store file or replaying one grain snapshot is insufficient; verifier reruns full ladder with reordered and duplicated recovery."
+    },
+    {
+      "id": "generalization",
+      "name": "Generalization",
+      "verdict": "PASS",
+      "reasoning": "Fix must express general repair idempotence across crash-point variants, not hardcode public wave_a/wave_b outcomes."
+    },
+    {
+      "id": "prompt_honesty",
+      "name": "Prompt-honesty",
+      "verdict": "PASS",
+      "reasoning": "Honest behavioral-target prompt exposes checked behavior without naming seg_flush_a, epoch_drop_b, purge_safe_c, or broken journal phase."
+    },
+    {
+      "id": "cheating_vs_difficulty",
+      "name": "Cheating-vs-difficulty",
+      "verdict": "PASS",
+      "reasoning": "Anti-static-output rules are guardrails; difficulty comes from adversarial variant ladder and coordinated repair generalization."
+    },
+    {
+      "id": "mechanical_fix_filter",
+      "name": "Mechanical-fix filter",
+      "verdict": "PASS",
+      "reasoning": "Not a deps/timeout/footer task; core challenge is crash-consistency repair generalization in Go orchestrator sources."
+    },
+    {
+      "id": "localized_fix",
+      "name": "Localized-fix",
+      "verdict": "PASS",
+      "reasoning": "Three distinct pkg roots on fix frontier; stub-row trap and second-pass guard block one-helper patches."
+    },
+    {
+      "id": "oracle_locality",
+      "name": "Oracle-locality",
+      "verdict": "PASS",
+      "reasoning": "Oracle coordinates go build plus three symbol edits across jnl, cch, cln; not a single-file wholesale rewrite."
+    },
+    {
+      "id": "small_declarative_cluster",
+      "name": "Small declarative-cluster",
+      "verdict": "PASS",
+      "reasoning": "Solve is not one JSON knob or phase table; requires runtime behavior changes across journal, cache epoch, and cleanup paths."
+    },
+    {
+      "id": "grep_collapse",
+      "name": "Grep-collapse",
+      "verdict": "PASS",
+      "reasoning": "Instruction nouns banned from fix-path symbols via code_forbidden_tokens; opaque seg_flush_a-style names on frontier."
+    },
+    {
+      "id": "pre_factored_helper",
+      "name": "Pre-factored-helper",
+      "verdict": "PASS",
+      "reasoning": "Fix symbols seg_flush_a, epoch_drop_b, purge_safe_c are opaque; decoys stub_* rhyme structurally without matching prompt bullets."
+    },
+    {
+      "id": "recipe_discount",
+      "name": "Recipe-discount",
+      "verdict": "PASS",
+      "reasoning": "Not safe-extraction, jail hardening, or policy-knob transcription; domain-specific crash-recovery variant generalization."
+    },
+    {
+      "id": "security_aura_discount",
+      "name": "Security-aura discount",
+      "verdict": "PASS",
+      "reasoning": "Build-orchestrator durability semantics, not security theater."
+    },
+    {
+      "id": "orthogonal_checklist",
+      "name": "Orthogonal-checklist",
+      "verdict": "PASS",
+      "reasoning": "Journal partial-write, stale epoch carry, and cleanup anchor removal interact; fixing one layer breaks others without coordinated model."
+    },
+    {
+      "id": "harness_discount",
+      "name": "Harness-discount",
+      "verdict": "PASS",
+      "reasoning": "Docker/pytest harness adds realism but hardness is in orchestrator coupling and variant ladder, not container count."
+    },
+    {
+      "id": "one_pass_solvability",
+      "name": "One-pass solvability",
+      "verdict": "PASS",
+      "reasoning": "Agent must run rvl_check ladder, compare grain_digest vs baseline, and experiment across log tails and held-out wave orderings before patching."
+    },
+    {
+      "id": "hard_only_gate",
+      "name": "Hard-only gate",
+      "verdict": "PASS",
+      "reasoning": "Residual-hardness remains after full disclosure; targeted at <=20% worst-model pass rate per Part E."
+    },
+    {
+      "id": "discovery_budget_test",
+      "name": "Discovery/design budget test",
+      "verdict": "PASS",
+      "reasoning": "Four discovery items listed in discovery_budget covering epoch authority, journal tail partial writes, cleanup anchor preservation, and duplicate-pass ordering."
+    },
+    {
+      "id": "instruction_specificity_test",
+      "name": "Instruction specificity test",
+      "verdict": "PASS",
+      "reasoning": "adversarial_generalization with behavioral-target framing; public repair behavior complete but solution route and broken phase hidden."
+    },
+    {
+      "id": "topology_distribution_test",
+      "name": "Topology distribution test",
+      "verdict": "PASS",
+      "reasoning": "Three implementation topologies enumerated in topology_enumeration; each requires >=3 coordinated components and no single location passes full verifier."
+    }
+  ],
+  "rubric_axes": [
+    {
+      "id": "verifiable",
+      "name": "Verifiable",
+      "verdict": "PASS",
+      "reasoning": "Deterministic rvl_check ladder with grain_digest and numeric band assertions; fixed seeds and idempotent reset commands."
+    },
+    {
+      "id": "well_specified",
+      "name": "Well-specified",
+      "verdict": "PASS",
+      "reasoning": "Public contract names command, output path, public waves, and ladder_report schema in ladder_contract.md."
+    },
+    {
+      "id": "solvable",
+      "name": "Solvable",
+      "verdict": "PASS",
+      "reasoning": "Expert with incremental-build crash-recovery experience can generalize repair in hours; minimized Go workspace well under 100k LOC."
+    },
+    {
+      "id": "difficult",
+      "name": "Difficult",
+      "verdict": "PASS",
+      "reasoning": "Requires professional build-system debugging; undergrads cannot one-shot without deep codebase engagement and variant experiments."
+    },
+    {
+      "id": "interesting",
+      "name": "Interesting",
+      "verdict": "PASS",
+      "reasoning": "Mirrors paid work on production build orchestrator interrupted-run recovery and idempotent cleanup correctness."
+    },
+    {
+      "id": "outcome_verified",
+      "name": "Outcome-verified",
+      "verdict": "PASS",
+      "reasoning": "Grades regenerated ladder_report.json and cross-run grain digests, not patch process or tool choice."
+    }
+  ],
+  "instruction_completeness_test": {
+    "verdict": "PASS",
+    "reasoning": "Instruction states behavioral target and public checker contract but not which journal/cache/cleanup surface must generalize or how to reconcile provenance; codebase experiments and held-out wave runs required."
+  },
+  "discovery_budget": [
+    {
+      "discovery": "Cache epoch table reuses stale generation tags while on-disk grains appear newer, making interim tallies look current.",
+      "planned_location": "environment/pkg/cch/drop_b.go epoch_drop_b and epoch slot bookkeeping",
+      "why_instruction_must_not_reveal": "Naming stale epoch surface collapses search to one obvious helper edit."
+    },
+    {
+      "discovery": "Journal tail writes leave partial header bytes that replay accepts for public waves but poison grain_digest on reordered crash schedules.",
+      "planned_location": "environment/pkg/jnl/flush_a.go seg_flush_a serialization boundary",
+      "why_instruction_must_not_reveal": "Disclosing partial-write phase selects flush_a without cache/cleanup coupling search."
+    },
+    {
+      "discovery": "Cleanup removes replay anchor files consumed on the next repair pass, passing first recovery while repeat cleanup fails rerun safety.",
+      "planned_location": "environment/pkg/cln/purge_c.go purge_safe_c anchor preservation logic",
+      "why_instruction_must_not_reveal": "Cleanup path naming is a forbidden category leak for state_recovery_crash_consistency."
+    },
+    {
+      "discovery": "Duplicate recovery passes reorder segment replay differently unless idempotence token is derived from provenance not wave id.",
+      "planned_location": "environment/cmd/rvl_check/engine.go ladder schedule interpreter plus pkg/jnl replay hooks",
+      "why_instruction_must_not_reveal": "Revealing duplicate-pass ordering rule reduces adversarial generalization to transcription."
+    }
+  ],
+  "instruction_specificity": {
+    "level": "behavioral-target",
+    "reasoning": "Public prompt states required robust repair behavior across crash variants, stale store epochs, and repeated passes without naming broken recovery phase, journal layout, or fix symbols."
+  },
+  "attack_path": {
+    "summary": "Agent hardcodes public wave_a/wave_b grain_digest filters, passes stub-row trap but fails held-out wave reorderings and second-pass cleanup poison tests.",
+    "reasoning": "Fixture-specific response aligns public examples while journal partial tails, stale epochs, and anchor-destructive cleanup still diverge on duplicated recovery and partial replay variants."
+  },
+  "smallest_plausible_patch": {
+    "summary": "Coordinate seg_flush_a tail flush, epoch_drop_b generation invalidation on grain load, and purge_safe_c anchor-preserving cleanup before replay.",
+    "reasoning": "Still spans three pkg roots and rebuild/checker rerun; not a one-line constant or delete-store shortcut."
+  },
+  "collapse_audit": {
+    "verdict": "PASS",
+    "reasoning": "Post-disclosure residual work requires tracing multi-surface provenance through Go sources and held-out wave experiments, not mapping one public bullet to one obvious function.",
+    "residual_hardness": "After rvl_check command, ladder_report schema, and recovery reset workflow are public, solver must infer general repair idempotence rule across reordered crash schedules, duplicated passes, and cleanup-repeat cycles.",
+    "red_flags": []
+  },
+  "topology_enumeration": [
+    {
+      "id": "T1",
+      "summary": "Journal-first generalization",
+      "locations": [
+        "environment/pkg/jnl/flush_a.go",
+        "environment/pkg/cch/drop_b.go",
+        "environment/pkg/cln/purge_c.go",
+        "environment/cmd/rvl_check/engine.go"
+      ],
+      "why_no_single_location_suffices": "Flushing journals without epoch invalidation leaves stale store entries; cleanup still deletes anchors so held-out reorder and second-pass tests fail."
+    },
+    {
+      "id": "T2",
+      "summary": "Cache-epoch-first generalization",
+      "locations": [
+        "environment/pkg/cch/drop_b.go",
+        "environment/pkg/jnl/flush_a.go",
+        "environment/pkg/cln/purge_c.go",
+        "environment/fixtures/grains/*.grn"
+      ],
+      "why_no_single_location_suffices": "Epoch-only fix clears public waves but partial journal tails and anchor-destructive cleanup break wave_c/wave_d held-out orderings."
+    },
+    {
+      "id": "T3",
+      "summary": "Cleanup-safe-first generalization",
+      "locations": [
+        "environment/pkg/cln/purge_c.go",
+        "environment/pkg/jnl/flush_a.go",
+        "environment/pkg/cch/drop_b.go",
+        "environment/docs/ladder_contract.md"
+      ],
+      "why_no_single_location_suffices": "Cleanup-only fix passes first recovery but stale epochs and partial journal tails still diverge on duplicated pass and partial replay per test_second_pass_guard."
+    }
+  ],
+  "construction_manifest": {
+    "symbol_table": [
+      {
+        "path": "environment/pkg/jnl/flush_a.go",
+        "symbol": "seg_flush_a",
+        "kind": "function",
+        "signature": "func SegFlushA(grain *GrainBlob, sink *SegmentSink) error",
+        "purpose": "Serializes grain bytes and journal tail into on-disk segment sink"
+      },
+      {
+        "path": "environment/pkg/cch/drop_b.go",
+        "symbol": "epoch_drop_b",
+        "kind": "function",
+        "signature": "func EpochDropB(slots *EpochSlots, grain *GrainBlob) error",
+        "purpose": "Invalidates cache epoch slots from loaded grain view"
+      },
+      {
+        "path": "environment/pkg/cln/purge_c.go",
+        "symbol": "purge_safe_c",
+        "kind": "function",
+        "signature": "func PurgeSafeC(arena *ScratchArena, anchors AnchorSet) error",
+        "purpose": "Removes stale scratch bytes while preserving replay anchor set"
+      }
+    ],
+    "flipping_point_contract": {
+      "locations": [
+        {
+          "id": "A",
+          "path": "environment/pkg/jnl/flush_a.go",
+          "controls_tests": [
+            "test_harness_exit_zero",
+            "test_byte_fingerprint_stable",
+            "test_public_run_guard"
+          ]
+        },
+        {
+          "id": "B",
+          "path": "environment/pkg/cch/drop_b.go",
+          "controls_tests": [
+            "test_epoch_obligations",
+            "test_dual_order_bytes",
+            "test_stub_row_trap"
+          ]
+        },
+        {
+          "id": "C",
+          "path": "environment/pkg/cln/purge_c.go",
+          "controls_tests": [
+            "test_second_pass_guard",
+            "test_anchor_preserve_guard"
+          ]
+        }
+      ],
+      "no_single_location_flips_majority": true,
+      "concentration_cap": 0.5
+    },
+    "decoy_manifest": [
+      {
+        "path": "environment/pkg/jnl/stub_flush.go",
+        "kind": "module",
+        "rhymes_with": "seg_flush_a",
+        "non_fix_purpose": "Legacy segment writer for offline benchmarks without tail flush"
+      },
+      {
+        "path": "environment/pkg/cch/stub_drop.go",
+        "kind": "helper",
+        "rhymes_with": "epoch_drop_b",
+        "non_fix_purpose": "No-op epoch refresh for builds without store invalidation"
+      },
+      {
+        "path": "environment/pkg/cln/stub_purge.go",
+        "kind": "helper",
+        "rhymes_with": "purge_safe_c",
+        "non_fix_purpose": "Formats interim tally rows without preserving anchor bytes"
+      }
+    ],
+    "code_forbidden_tokens": [
+      "orchestrator",
+      "durability",
+      "rebuild",
+      "crash",
+      "injection",
+      "pipeline",
+      "phases",
+      "stale",
+      "intermediate",
+      "store",
+      "epochs",
+      "repair",
+      "passes",
+      "divergent",
+      "graded",
+      "ladder",
+      "checker",
+      "waves",
+      "wave_a",
+      "wave_b",
+      "grain_digest",
+      "uninterrupted",
+      "recovered",
+      "idempotent",
+      "reset",
+      "cleanup",
+      "partial",
+      "writes",
+      "poison",
+      "rerun",
+      "safety",
+      "observability",
+      "tails",
+      "fragments",
+      "journal",
+      "grains",
+      "interim",
+      "tallies",
+      "reorderings",
+      "schedule",
+      "duplicated",
+      "segment",
+      "replay",
+      "filters",
+      "rvl_check",
+      "ladder_report",
+      "hardcoding",
+      "modifications",
+      "workspace"
+    ]
+  },
+  "naming_pass": {
+    "instruction_nouns_extracted": [
+      "orchestrator",
+      "durability",
+      "rebuild",
+      "crash",
+      "injection",
+      "pipeline",
+      "phases",
+      "stale",
+      "intermediate",
+      "store",
+      "epochs",
+      "repair",
+      "passes",
+      "divergent",
+      "graded",
+      "ladder",
+      "checker",
+      "waves",
+      "wave_a",
+      "wave_b",
+      "grain_digest",
+      "uninterrupted",
+      "recovered",
+      "idempotent",
+      "reset",
+      "cleanup",
+      "partial",
+      "writes",
+      "poison",
+      "rerun",
+      "safety",
+      "observability",
+      "tails",
+      "fragments",
+      "journal",
+      "grains",
+      "interim",
+      "tallies",
+      "reorderings",
+      "schedule",
+      "duplicated",
+      "segment",
+      "replay",
+      "filters",
+      "rvl_check",
+      "ladder_report",
+      "hardcoding",
+      "modifications",
+      "workspace"
+    ],
+    "renames_during_drafting": [
+      {
+        "original": "purge_recovery_c",
+        "renamed_to": "purge_safe_c",
+        "reason": "repair is an instruction noun banned from fix-path symbols"
+      },
+      {
+        "original": "test_grain_digest_stable",
+        "renamed_to": "test_byte_fingerprint_stable",
+        "reason": "grain_digest and grains are instruction nouns"
+      },
+      {
+        "original": "test_ladder_harness_exit",
+        "renamed_to": "test_harness_exit_zero",
+        "reason": "ladder is an instruction noun banned from test names"
+      }
+    ],
+    "test_names_audited": [
+      "test_harness_exit_zero",
+      "test_byte_fingerprint_stable",
+      "test_public_run_guard",
+      "test_epoch_obligations",
+      "test_dual_order_bytes",
+      "test_stub_row_trap",
+      "test_second_pass_guard",
+      "test_anchor_preserve_guard"
+    ],
+    "concentration_math": {
+      "total_tests": 8,
+      "per_location": [
+        {
+          "location_id": "A",
+          "test_count": 3,
+          "ratio": 0.375
+        },
+        {
+          "location_id": "B",
+          "test_count": 3,
+          "ratio": 0.375
+        },
+        {
+          "location_id": "C",
+          "test_count": 2,
+          "ratio": 0.25
+        }
+      ]
+    },
+    "recomputed_concentration": {
+      "total_tests": 8,
+      "concentration_cap": 0.5,
+      "per_location": [
+        {
+          "location_id": "A",
+          "test_count": 3,
+          "ratio": 0.375
+        },
+        {
+          "location_id": "B",
+          "test_count": 3,
+          "ratio": 0.375
+        },
+        {
+          "location_id": "C",
+          "test_count": 2,
+          "ratio": 0.25
+        }
+      ]
+    }
+  },
+  "difficulty_mechanism_plan": [
+    {
+      "mechanism": "deceptive_but_valid_local_evidence",
+      "placement": "fixtures/logs tails and fixtures/interim/p5_stub.json remain internally consistent but non-canonical",
+      "why_model_misses_it": "Models trust first green interim tally surface over grain_digest cross-checks",
+      "fairness_guardrail": "Instruction names all evidence surfaces without picking authority"
+    },
+    {
+      "mechanism": "partial_observability_experiment_design",
+      "placement": "log tails reveal only projections of journal state; full bytes in fixtures/grains",
+      "why_model_misses_it": "Models need active experiments across crash schedules rather than reading one tail",
+      "fairness_guardrail": "Evidence surfaces and rvl_check replay command are public"
+    },
+    {
+      "mechanism": "cross_file_cross_format_invariants",
+      "placement": "journal segments, epoch store, and interim JSON must agree on grain_digest",
+      "why_model_misses_it": "Models fix one format while breaking another",
+      "fairness_guardrail": "Schemas and output paths disclosed in ladder_contract.md"
+    },
+    {
+      "mechanism": "rollback_recovery_requirements",
+      "placement": "repeat variant recovery and partial replay paths via migrations/rst5.sh",
+      "why_model_misses_it": "Models make one successful run but not idempotent recovery across repeated cleanup",
+      "fairness_guardrail": "Reset and rerun commands visible in ladder_contract.md"
+    }
+  ],
+  "calibration_plan": {
+    "oracle_runs": 3,
+    "no_op_runs": 3,
+    "target_agent_runs": 5,
+    "comparator_agent_runs": 5,
+    "human_sanity": "Build engineer reproduces failing rvl_check locally using bundled log tails and grain slices only",
+    "shortcut_audit": "Block hardcoded ladder_report.json, cleanup-only edits without journal/epoch coordination, test modifications",
+    "ablation_plan": "Remove deceptive interim layer, then grain_digest layer, then duplicate-pass layer; expect monotonic difficulty drop",
+    "pass_rate_target": {
+      "hard_max_pct": 20,
+      "too_easy_threshold_pct": 80,
+      "basis": "Part E Hard threshold on worst-model accuracy; verifier-offline via Dockerfile-baked go/pytest with no runtime installs in test.sh under allow_internet=false; post-upload difficulty classification after platform agent runs"
+    }
+  },
+  "verifier_scoring_plan": {
+    "metrics": [
+      {
+        "metric": "functional_correctness",
+        "weight": 0.45,
+        "criterion": "rvl_check ladder exit 0 and grain_digest matches baseline within documented bands"
+      },
+      {
+        "metric": "hidden_invariants",
+        "weight": 0.25,
+        "criterion": "grain_digest cross-recovered-path agreement and duplicate-pass monotonicity"
+      },
+      {
+        "metric": "state_hygiene",
+        "weight": 0.15,
+        "criterion": "idempotent reset preserves fixture grain integrity after rst5.sh"
+      },
+      {
+        "metric": "interface_correctness",
+        "weight": 0.1,
+        "criterion": "ladder_report.json conforms to ladder_contract.md schema"
+      },
+      {
+        "metric": "deliverable_completeness",
+        "weight": 0.05,
+        "criterion": "all public and held-out wave rows present in terminal report artifact"
+      }
+    ],
+    "overall_threshold": 0.999,
+    "reward_output": "reward.txt",
+    "binary_threshold_rule": "reward.txt=1 only when weighted score >= 0.90 with no zero in functional_correctness or hidden_invariants"
+  },
+  "subtype_milestone_plan": {
+    "subcategories": [
+      "tool_specific"
+    ],
+    "milestone_count": 0,
+    "sequential_dependency": "Conceptually staged variant recovery phases delivered as one adversarial_generalization task",
+    "local_only_data": true,
+    "sidecar_or_protocol_notes": "Single-container local verifier; Go module tree and rvl_check baked in Dockerfile"
+  },
+  "platform_files": [
+    {
+      "path": "task.toml",
+      "role": "metadata; must set [environment] allow_internet = false"
+    },
+    {
+      "path": "instruction.md",
+      "role": "natural behavioral-target public prompt derived from Public contract"
+    },
+    {
+      "path": "output_contract.toml",
+      "role": "local output declaration for ladder_report.json"
+    },
+    {
+      "path": "tests/test.sh",
+      "role": "verifier entrypoint; invoke pre-installed pytest only"
+    },
+    {
+      "path": "tests/test_outputs.py",
+      "role": "domain verifier (8 tests)"
+    },
+    {
+      "path": "solution/solve.sh",
+      "role": "oracle coordinating seg_flush_a, epoch_drop_b, purge_safe_c"
+    },
+    {
+      "path": "environment/Dockerfile",
+      "role": "build definition; pre-install pinned go, pytest, rvl_check"
+    },
+    {
+      "path": "construction_manifest.json",
+      "role": "local authoring artifact mirroring symbol table"
+    }
+  ],
+  "task_files": [
+    {
+      "path": "environment/go.mod",
+      "role": "Go module root"
+    },
+    {
+      "path": "environment/go.sum",
+      "role": "Go module checksums"
+    },
+    {
+      "path": "environment/pkg/jnl/flush_a.go",
+      "role": "fix frontier A"
+    },
+    {
+      "path": "environment/pkg/jnl/stub_flush.go",
+      "role": "decoy segment writer"
+    },
+    {
+      "path": "environment/pkg/jnl/types.go",
+      "role": "journal grain types"
+    },
+    {
+      "path": "environment/pkg/jnl/replay.go",
+      "role": "segment replay helpers"
+    },
+    {
+      "path": "environment/pkg/cch/drop_b.go",
+      "role": "fix frontier B"
+    },
+    {
+      "path": "environment/pkg/cch/stub_drop.go",
+      "role": "decoy epoch helper"
+    },
+    {
+      "path": "environment/pkg/cch/types.go",
+      "role": "epoch slot types"
+    },
+    {
+      "path": "environment/pkg/cch/store.go",
+      "role": "intermediate store reader"
+    },
+    {
+      "path": "environment/pkg/cln/purge_c.go",
+      "role": "fix frontier C"
+    },
+    {
+      "path": "environment/pkg/cln/stub_purge.go",
+      "role": "decoy purge helper"
+    },
+    {
+      "path": "environment/pkg/cln/arena.go",
+      "role": "scratch arena state"
+    },
+    {
+      "path": "environment/pkg/cln/anchors.go",
+      "role": "replay anchor set types"
+    },
+    {
+      "path": "environment/cmd/rvl_daemon/main.go",
+      "role": "orchestrator daemon entry"
+    },
+    {
+      "path": "environment/cmd/rvl_daemon/run.go",
+      "role": "pipeline phase driver"
+    },
+    {
+      "path": "environment/cmd/rvl_check/main.go",
+      "role": "checker CLI entry"
+    },
+    {
+      "path": "environment/cmd/rvl_check/engine.go",
+      "role": "grain digest and band validation"
+    },
+    {
+      "path": "environment/profiles/wave_a.json",
+      "role": "public wave definition"
+    },
+    {
+      "path": "environment/profiles/wave_b.json",
+      "role": "public wave definition"
+    },
+    {
+      "path": "environment/profiles/wave_c.json",
+      "role": "held-out wave definition"
+    },
+    {
+      "path": "environment/profiles/wave_d.json",
+      "role": "held-out wave definition"
+    },
+    {
+      "path": "environment/docs/ladder_contract.md",
+      "role": "report schema, grain_digest rule, band classes"
+    },
+    {
+      "path": "environment/docs/grain_layout.md",
+      "role": "public grain byte layout"
+    },
+    {
+      "path": "environment/migrations/rst5.sh",
+      "role": "destructive cleanup with documented recovery"
+    },
+    {
+      "path": "environment/fixtures/logs/wa_tail.txt",
+      "role": "partial journal log excerpt"
+    },
+    {
+      "path": "environment/fixtures/logs/wb_tail.txt",
+      "role": "partial journal log excerpt"
+    },
+    {
+      "path": "environment/fixtures/grains/wc.grn",
+      "role": "binary grain slice"
+    },
+    {
+      "path": "environment/fixtures/grains/wd.grn",
+      "role": "binary grain slice"
+    },
+    {
+      "path": "environment/fixtures/interim/p5_stub.json",
+      "role": "false-green interim tallies"
+    },
+    {
+      "path": "environment/fixtures/reset/arena_seed.bin",
+      "role": "idempotent scratch reset bytes"
+    },
+    {
+      "path": "environment/scripts/build_all.sh",
+      "role": "go build entry for module tree"
+    },
+    {
+      "path": "environment/scripts/drive_ladder.sh",
+      "role": "wave matrix driver for checker"
+    }
+  ],
+  "fix_frontier": {
+    "count": 3,
+    "distribution": "pkg/jnl journal, pkg/cch cache epoch, pkg/cln cleanup coordinator roots",
+    "naming_policy": "Opaque symbols from construction manifest symbol_table only",
+    "forbidden_stems": [
+      "orchestrator",
+      "durability",
+      "rebuild",
+      "crash",
+      "injection",
+      "pipeline",
+      "stale",
+      "store",
+      "epochs",
+      "repair",
+      "ladder",
+      "checker",
+      "waves",
+      "grain_digest",
+      "cleanup",
+      "partial",
+      "replay",
+      "journal",
+      "grains",
+      "segment",
+      "rvl_check",
+      "workspace"
+    ],
+    "helpers_policy": "Decoys may rhyme structurally; oracle must not edit decoy bodies",
+    "symbol_thin_preferred": true
+  },
+  "contract_surface": {
+    "boolean_fields_max": 0,
+    "direct_boolean_assertions_max": 0,
+    "preferred_assertion_styles": [
+      "grain digests",
+      "checker exit codes",
+      "numeric band fields",
+      "schema keys",
+      "cross-recovered-path invariants"
+    ],
+    "forbidden_assertion_styles": [
+      "boolean answer keys",
+      "scenario->field->expected tables",
+      "fields ending in _ok/_valid/_passes"
+    ]
+  },
+  "task_shape": {
+    "type": "adversarial_generalization",
+    "instruction_framing": "behavioral-target",
+    "hardness_source": "adversarial generalization",
+    "collapse_risk": "If visible examples can be hardcoded or blocked with shallow filters, the task collapses into fixture chasing."
+  },
+  "category_profile": {
+    "challenge_family": "debug repair variants",
+    "profile_name": "state_recovery_crash_consistency",
+    "allowed_instruction_disclosures": "Crash or restart workflow, durability guarantee, recovery command, and expected observable state.",
+    "forbidden_instruction_leaks": "Journal or checkpoint internals, broken recovery phase, source of corruption, or named snapshot to replay.",
+    "category_specific_hardness_bar": "Fix coordinates partial writes, replay, cleanup, and rerun safety.",
+    "category_specific_verifier_risks": "Nondeterministic crash timing, one hidden snapshot, and verifier reads of internals.",
+    "coverage_role": "Adds debug repair variants coverage through adversarial_generalization without duplicating neighboring topology families."
+  },
+  "satisfiability_risk": {
+    "rc2_planned_name_risk": "low \u2014 opaque fix-path symbols precommitted in symbol_table",
+    "gx9_contract_risk": "low \u2014 contract uses digests and numeric band fields, not boolean verdict tables",
+    "cr1_symbol_frontier_risk": "medium \u2014 Step 2b must keep oracle-touched helpers symbol-thin across three pkg roots",
+    "hidden_contract_risk": "low \u2014 grain_digest and band rules live in ladder_contract.md before drafting"
+  },
+  "actionability_plan": {
+    "verifier_command_visible": "rvl_check --ladder-full documented in instruction.md with output path /app/output/ladder_report.json",
+    "source_fix_intent_visible": "yes at product level \u2014 produce robust repair behavior for crash variants, stale store, and repeated recovery without algorithm or proof recipe",
+    "generated_output_rule_visible": "ladder_report.json path and schema public; static hand-written report insufficient",
+    "exact_formula_home": "environment/docs/ladder_contract.md for grain_digest sha256 and numeric band classes",
+    "schema_home": "instruction.md plus environment/docs/ladder_contract.md"
+  },
+  "waiver_plan": {
+    "waivers_expected": false,
+    "waiver_rationale": "Disclosure can expose commands, schemas, and invariants without naming solution route; no harness brittleness expected"
+  },
+  "reference_pattern": {
+    "justification_if_none": "No promoted reference task was included with the attachment bundle; checkpoint-restart-drift is repair_existing_system-shaped Rust and not promoted as a reference id."
+  },
+  "realism_source": {
+    "source_type": "real_constraint",
+    "evidence_basis": "tool behavior",
+    "upstream_or_synthetic_rationale": "Grounded in Bazel/Ninja-class interrupted incremental build recovery where stale action cache and partial output cleanup break idempotent rerun; minimized to local Go orchestrator lab preserving repair idempotence coupling across journal, store epoch, and cleanup surfaces",
+    "minimization_preserves": "Repair idempotence coupling across failure fixtures, recovery logs, output checks, rerun safety, and verifier-visible artifact identity",
+    "synthetic_exception_review": "not required for real_constraint source"
+  }
+}

@@ -1,0 +1,831 @@
+{
+  "hardness_axes": [
+    {
+      "id": "discover",
+      "name": "Discover",
+      "verdict": "PASS",
+      "reasoning": "Durable lockfile index authority vs runtime slot surface, reschedule ordering inside mux_order, and emit_c4 cross-format rules must be inferred from Cargo sources and rebuild experiments."
+    },
+    {
+      "id": "synthesize",
+      "name": "Synthesize",
+      "verdict": "PASS",
+      "reasoning": "Driver units, pack refresh, op_c3 fold, mux reschedule ordering, and materialization layer interact across crates."
+    },
+    {
+      "id": "diagnose_or_design",
+      "name": "Diagnose or Design/Search",
+      "verdict": "PASS",
+      "reasoning": "adversarial_generalization constraint-complete framing gives complete output schema while withholding broken subsystem identities."
+    },
+    {
+      "id": "navigate_coupling",
+      "name": "Navigate coupling",
+      "verdict": "PASS",
+      "reasoning": "Four-location flipping contract with false-green and held-out permutation traps."
+    },
+    {
+      "id": "reason_beyond_training",
+      "name": "Reason beyond training",
+      "verdict": "PASS",
+      "reasoning": "Offline lockfile rehydration with scheduler reschedule ordering is operations-domain reasoning."
+    }
+  ],
+  "anti_trivialization_checks": [
+    {
+      "id": "disclosure_collapse",
+      "name": "Disclosure-collapse",
+      "verdict": "PASS",
+      "reasoning": "Schema disclosure does not reveal authority or ordering fix sites."
+    },
+    {
+      "id": "hidden_instance",
+      "name": "Hidden-instance",
+      "verdict": "PASS",
+      "reasoning": "Multiple units and held-out permutations must align globally."
+    },
+    {
+      "id": "single_artifact_repair",
+      "name": "Single-artifact repair",
+      "verdict": "PASS",
+      "reasoning": "Static JSON or lockfile swap cannot pass ablation and permutation suites."
+    },
+    {
+      "id": "generalization",
+      "name": "Generalization",
+      "verdict": "PASS",
+      "reasoning": "Held-out perm_table permutations require generalized fix."
+    },
+    {
+      "id": "prompt_honesty",
+      "name": "Prompt-honesty",
+      "verdict": "PASS",
+      "reasoning": "Honest contract withholds fix coordinates."
+    },
+    {
+      "id": "cheating_vs_difficulty",
+      "name": "Cheating-vs-difficulty",
+      "verdict": "PASS",
+      "reasoning": "Hardness is semantic reconciliation, not anti-cheat alone."
+    },
+    {
+      "id": "mechanical_fix_filter",
+      "name": "Mechanical-fix filter",
+      "verdict": "PASS",
+      "reasoning": "Not deps/timeout-only."
+    },
+    {
+      "id": "localized_fix",
+      "name": "Localized-fix",
+      "verdict": "PASS",
+      "reasoning": "Four-location flipping contract."
+    },
+    {
+      "id": "oracle_locality",
+      "name": "Oracle-locality",
+      "verdict": "PASS",
+      "reasoning": "Oracle spans four modules."
+    },
+    {
+      "id": "small_declarative_cluster",
+      "name": "Small declarative-cluster",
+      "verdict": "PASS",
+      "reasoning": "Procedural cross-crate fix."
+    },
+    {
+      "id": "grep_collapse",
+      "name": "Grep-collapse",
+      "verdict": "PASS",
+      "reasoning": "Instruction nouns banned on fix path."
+    },
+    {
+      "id": "pre_factored_helper",
+      "name": "Pre-factored-helper",
+      "verdict": "PASS",
+      "reasoning": "Decoys without validate/repair stems."
+    },
+    {
+      "id": "recipe_discount",
+      "name": "Recipe-discount",
+      "verdict": "PASS",
+      "reasoning": "No textbook recipe for this workspace."
+    },
+    {
+      "id": "security_aura_discount",
+      "name": "Security-aura discount",
+      "verdict": "PASS",
+      "reasoning": "Sysadmin/build semantics, not security theater."
+    },
+    {
+      "id": "orthogonal_checklist",
+      "name": "Orthogonal-checklist",
+      "verdict": "PASS",
+      "reasoning": "Coupled authority, ordering, cross-format, permutations."
+    },
+    {
+      "id": "harness_discount",
+      "name": "Harness-discount",
+      "verdict": "PASS",
+      "reasoning": "Cargo/docker is scaffolding."
+    },
+    {
+      "id": "one_pass_solvability",
+      "name": "One-pass solvability",
+      "verdict": "PASS",
+      "reasoning": "Requires rebuild experiments and permutation tests."
+    },
+    {
+      "id": "hard_only_gate",
+      "name": "Hard-only gate",
+      "verdict": "PASS",
+      "reasoning": "Senior sysadmin difficulty target."
+    },
+    {
+      "id": "discovery_budget_test",
+      "name": "Discovery/design budget test",
+      "verdict": "PASS",
+      "reasoning": "Three discoveries listed."
+    },
+    {
+      "id": "instruction_specificity_test",
+      "name": "Instruction specificity test",
+      "verdict": "PASS",
+      "reasoning": "constraint-complete level."
+    },
+    {
+      "id": "topology_distribution_test",
+      "name": "Topology distribution test",
+      "verdict": "PASS",
+      "reasoning": "Three topologies enumerated."
+    }
+  ],
+  "rubric_axes": [
+    {
+      "id": "verifiable",
+      "name": "Verifiable",
+      "verdict": "PASS",
+      "reasoning": "Deterministic rebuild, driver, JSON, permutations, ablations."
+    },
+    {
+      "id": "well_specified",
+      "name": "Well-specified",
+      "verdict": "PASS",
+      "reasoning": "Complete public contract; fix sites withheld."
+    },
+    {
+      "id": "solvable",
+      "name": "Solvable",
+      "verdict": "PASS",
+      "reasoning": "Expert solvable via overlay mold."
+    },
+    {
+      "id": "difficult",
+      "name": "Difficult",
+      "verdict": "PASS",
+      "reasoning": "Concurrency ordering + lockfile rehydration literacy."
+    },
+    {
+      "id": "interesting",
+      "name": "Interesting",
+      "verdict": "PASS",
+      "reasoning": "Real offline rehydration/reschedule postmortem patterns."
+    },
+    {
+      "id": "outcome_verified",
+      "name": "Outcome-verified",
+      "verdict": "PASS",
+      "reasoning": "Grades regenerated report and permutation survival."
+    }
+  ],
+  "instruction_completeness_test": {
+    "verdict": "PASS",
+    "reasoning": "Contract complete but authority and ordering sites hidden."
+  },
+  "discovery_budget": [
+    {
+      "discovery": "Durable lockfile index in p9/y6/index_w remains authoritative for reschedule ordering while m4 driver and p9/core/slot_v answer runtime-visible unit state first after partial rehydration.",
+      "planned_location": "environment/p9/y6/src/index_w.rs vs environment/p9/core/src/slot_v.rs and environment/m4/k83/src/main.rs",
+      "why_instruction_must_not_reveal": "Naming authority split collapses search."
+    },
+    {
+      "discovery": "mux_order marks sched_rc/lock_rc true on an intermediate reschedule pass before phase_b ordering finishes, producing false-green closure while echo pairs disagree.",
+      "planned_location": "environment/m4/k83/src/mux_order.rs and environment/p9/y6/src/phase_b.rs",
+      "why_instruction_must_not_reveal": "Disclosing phase ordering reveals false-green mechanism."
+    },
+    {
+      "discovery": "emit_c4 fast path materializes JSON facets without cross-checking lock_snapshot.json against environment/data TOML/TSV seeds and pack-merged storage.",
+      "planned_location": "environment/p9/core/src/emit_c4.rs with environment/data/lock_snapshot.json",
+      "why_instruction_must_not_reveal": "Pointing at bypass path collapses to one-file guard add."
+    }
+  ],
+  "instruction_specificity": {
+    "level": "constraint-complete",
+    "reasoning": "Complete schema and generalization obligation; solution mapping open."
+  },
+  "attack_path": {
+    "summary": "Hardcode digest, hand-write JSON, fix primary units only, or patch slot_v alone.",
+    "reasoning": "Fails permutation, pipeline, and ablation suites."
+  },
+  "smallest_plausible_patch": {
+    "summary": "Coordinate op_c3, pack_refresh, mux_order, emit_c4.",
+    "reasoning": "Isolated reverts fail distinct test subsets."
+  },
+  "collapse_audit": {
+    "verdict": "PASS",
+    "reasoning": "Residual hardness in authority, ordering, cross-format, permutations.",
+    "residual_hardness": "Four-crate reconciliation under complete public contract.",
+    "red_flags": []
+  },
+  "topology_enumeration": [
+    {
+      "id": "topo_authority",
+      "summary": "Authority topology: index_w, pack_refresh, driver.",
+      "locations": [
+        "environment/p9/y6/src/index_w.rs",
+        "environment/p9/y4/src/pack_refresh.rs",
+        "environment/m4/k83/src/main.rs"
+      ],
+      "why_no_single_location_suffices": "Each leg alone leaves stale or wrong authority."
+    },
+    {
+      "id": "topo_replay_order",
+      "summary": "Reschedule-order topology: mux_order, phase_b, op_c3.",
+      "locations": [
+        "environment/m4/k83/src/mux_order.rs",
+        "environment/p9/y6/src/phase_b.rs",
+        "environment/p9/y5/src/op_c3.rs"
+      ],
+      "why_no_single_location_suffices": "Ordering without fold or helper reverts."
+    },
+    {
+      "id": "topo_cross_format",
+      "summary": "Cross-format topology: emit_c4, lock witness, seeds.",
+      "locations": [
+        "environment/p9/core/src/emit_c4.rs",
+        "environment/data/lock_snapshot.json",
+        "environment/p9/y5/src/body.rs"
+      ],
+      "why_no_single_location_suffices": "Emit-only or witness-only insufficient."
+    }
+  ],
+  "construction_manifest": {
+    "symbol_table": [
+      {
+        "path": "environment/p9/y5/src/op_c3.rs",
+        "symbol": "op_c3",
+        "kind": "function",
+        "signature": "pub fn op_c3(step_ix: usize, family_ix: u32, prev_family: u32) -> u64",
+        "purpose": "Folds step and family tags into stamp bits."
+      },
+      {
+        "path": "environment/p9/y4/src/pack_refresh.rs",
+        "symbol": "pack_refresh",
+        "kind": "function",
+        "signature": "pub fn pack_refresh(state: &mut PackState, incoming: &PackState, stamp_b: u32) -> u32",
+        "purpose": "Merges pack bytes into durable storage."
+      },
+      {
+        "path": "environment/m4/k83/src/mux_order.rs",
+        "symbol": "mux_order",
+        "kind": "function",
+        "signature": "pub fn mux_order(gate_first: bool, side: impl FnMut(), gate: impl FnMut()) -> u32",
+        "purpose": "Orders callbacks during unit combine steps."
+      },
+      {
+        "path": "environment/p9/y6/src/phase_b.rs",
+        "symbol": "phase_b",
+        "kind": "function",
+        "signature": "pub fn phase_b(gate_first: bool, mut side: impl FnMut(), mut gate: impl FnMut()) -> u32",
+        "purpose": "Side/gate ordering primitive for mux_order."
+      },
+      {
+        "path": "environment/p9/core/src/emit_c4.rs",
+        "symbol": "emit_c4",
+        "kind": "function",
+        "signature": "pub fn emit_c4(units: &[UnitRow], seeds: &SeedBundle, lock_witness: &LockWitness) -> Vec<EmittedRow>",
+        "purpose": "Materializes report rows from unit state and witnesses."
+      }
+    ],
+    "flipping_point_contract": {
+      "locations": [
+        {
+          "id": "A",
+          "path": "environment/p9/y5/src/op_c3.rs",
+          "controls_tests": [
+            "test_h3_unit_layout",
+            "test_h10_hex_format",
+            "test_h9_digest_anchor",
+            "test_h8_digest_contract",
+            "test_h15_fold_ablation"
+          ]
+        },
+        {
+          "id": "B",
+          "path": "environment/p9/y4/src/pack_refresh.rs",
+          "controls_tests": [
+            "test_h16_dual_ablation",
+            "test_h5_flags_zero"
+          ]
+        },
+        {
+          "id": "C",
+          "path": "environment/m4/k83/src/mux_order.rs",
+          "controls_tests": [
+            "test_h4_pair_agreement",
+            "test_h6_status_line",
+            "test_h7_span_band",
+            "test_h17_mux_ablation",
+            "test_h18_held_perms",
+            "test_h20_cmd_surface"
+          ]
+        },
+        {
+          "id": "D",
+          "path": "environment/p9/core/src/emit_c4.rs",
+          "controls_tests": [
+            "test_h12_overwrite_trap",
+            "test_h13_repeat_stable",
+            "test_h14_step_mutate",
+            "test_h11_total_count",
+            "test_h19_c4_ablation"
+          ]
+        }
+      ],
+      "no_single_location_flips_majority": true,
+      "concentration_cap": 0.5
+    },
+    "decoy_manifest": [
+      {
+        "path": "environment/p9/y4/src/hold_buf.rs",
+        "kind": "module",
+        "rhymes_with": "pack_refresh",
+        "non_fix_purpose": "Transient pack buffer diagnostics."
+      },
+      {
+        "path": "environment/p9/y6/src/stride_scan.rs",
+        "kind": "module",
+        "rhymes_with": "phase_b",
+        "non_fix_purpose": "Offline index window scans."
+      },
+      {
+        "path": "environment/p9/core/src/mesh.rs",
+        "kind": "module",
+        "rhymes_with": "emit_c4",
+        "non_fix_purpose": "Docs-only adjacency meshes."
+      }
+    ],
+    "code_forbidden_tokens": [
+      "offline",
+      "lockfile",
+      "rehydration",
+      "scheduler",
+      "reschedule",
+      "ordering",
+      "mismatch",
+      "authority",
+      "recovery",
+      "partial",
+      "green",
+      "intermediate",
+      "verifier",
+      "invariant",
+      "regeneration",
+      "cross-format",
+      "generalization",
+      "permutations",
+      "table",
+      "units",
+      "closure",
+      "echoes",
+      "mirror",
+      "pairs",
+      "steady",
+      "coherent",
+      "locked",
+      "sources",
+      "rebuild",
+      "manual",
+      "static",
+      "argv",
+      "probes",
+      "aggregate",
+      "disagree",
+      "stamps",
+      "facet",
+      "material",
+      "sync",
+      "drift",
+      "bind",
+      "upper",
+      "worker",
+      "primary",
+      "held-out",
+      "sufficient",
+      "coherence",
+      "survives",
+      "deterministic",
+      "rehydration_report",
+      "unit_ids",
+      "cmd_seq",
+      "build_hints",
+      "facet_hex",
+      "run_digest",
+      "band_span",
+      "sync_label",
+      "drift_code",
+      "sched_rc",
+      "lock_rc",
+      "unit_rc",
+      "rows_total",
+      "bind_echo",
+      "upper_echo",
+      "worker_echo",
+      "lock_snapshot",
+      "perm_table"
+    ]
+  },
+  "naming_pass": {
+    "instruction_nouns_extracted": [
+      "offline",
+      "lockfile",
+      "rehydration",
+      "scheduler",
+      "reschedule",
+      "ordering",
+      "mismatch",
+      "authority",
+      "recovery",
+      "partial",
+      "green",
+      "intermediate",
+      "verifier",
+      "invariant",
+      "regeneration",
+      "cross-format",
+      "generalization",
+      "permutations",
+      "table",
+      "units",
+      "closure",
+      "echoes",
+      "mirror",
+      "pairs",
+      "steady",
+      "coherent",
+      "locked",
+      "sources",
+      "rebuild",
+      "manual",
+      "static",
+      "argv",
+      "probes",
+      "aggregate",
+      "disagree",
+      "stamps",
+      "facet",
+      "material",
+      "sync",
+      "drift",
+      "bind",
+      "upper",
+      "worker",
+      "primary",
+      "held-out",
+      "sufficient",
+      "coherence",
+      "survives",
+      "deterministic",
+      "rehydration_report",
+      "unit_ids",
+      "cmd_seq",
+      "build_hints",
+      "facet_hex",
+      "run_digest",
+      "band_span",
+      "sync_label",
+      "drift_code",
+      "sched_rc",
+      "lock_rc",
+      "unit_rc",
+      "rows_total",
+      "bind_echo",
+      "upper_echo",
+      "worker_echo",
+      "lock_snapshot",
+      "perm_table"
+    ],
+    "renames_during_drafting": [
+      {
+        "original": "replay_matrix.toml",
+        "renamed_to": "perm_table.toml",
+        "reason": "Avoid matrix/replay instruction nouns pointing at oracle data paths."
+      },
+      {
+        "original": "replay_cmds.txt",
+        "renamed_to": "cmd_seq.txt",
+        "reason": "Neutral operator doc name."
+      },
+      {
+        "original": "layer_report / mk",
+        "renamed_to": "rehydration_report / rh",
+        "reason": "Distinct deliverable from overlay reference."
+      }
+    ],
+    "test_names_audited": [
+      "test_h3_unit_layout",
+      "test_h4_pair_agreement",
+      "test_h5_flags_zero",
+      "test_h6_status_line",
+      "test_h7_span_band",
+      "test_h8_digest_contract",
+      "test_h9_digest_anchor",
+      "test_h10_hex_format",
+      "test_h11_total_count",
+      "test_h12_overwrite_trap",
+      "test_h13_repeat_stable",
+      "test_h14_step_mutate",
+      "test_h15_fold_ablation",
+      "test_h16_dual_ablation",
+      "test_h17_mux_ablation",
+      "test_h18_held_perms",
+      "test_h19_c4_ablation",
+      "test_h20_cmd_surface"
+    ],
+    "concentration_math": {
+      "total_tests": 18,
+      "per_location": [
+        {
+          "location_id": "A",
+          "test_count": 5,
+          "ratio": 0.2777777777777778
+        },
+        {
+          "location_id": "B",
+          "test_count": 2,
+          "ratio": 0.1111111111111111
+        },
+        {
+          "location_id": "C",
+          "test_count": 6,
+          "ratio": 0.3333333333333333
+        },
+        {
+          "location_id": "D",
+          "test_count": 5,
+          "ratio": 0.2777777777777778
+        }
+      ]
+    },
+    "recomputed_concentration": {
+      "total_tests": 18,
+      "concentration_cap": 0.5,
+      "per_location": [
+        {
+          "location_id": "A",
+          "test_count": 5,
+          "ratio": 0.2777777777777778
+        },
+        {
+          "location_id": "B",
+          "test_count": 2,
+          "ratio": 0.1111111111111111
+        },
+        {
+          "location_id": "C",
+          "test_count": 6,
+          "ratio": 0.3333333333333333
+        },
+        {
+          "location_id": "D",
+          "test_count": 5,
+          "ratio": 0.2777777777777778
+        }
+      ]
+    }
+  },
+  "difficulty_mechanism_plan": [
+    {
+      "mechanism": "environment_specific_cli_semantics",
+      "placement": "cmd_seq.txt",
+      "why_model_misses_it": "skips documented argv",
+      "fairness_guardrail": "docs ship in environment"
+    },
+    {
+      "mechanism": "deceptive_but_valid_local_evidence",
+      "placement": "mux_order intermediate counters",
+      "why_model_misses_it": "steady sync_label masks echo drift",
+      "fairness_guardrail": "pair agreement tests"
+    },
+    {
+      "mechanism": "cross_file_cross_format_invariants",
+      "placement": "emit_c4 vs lock_snapshot",
+      "why_model_misses_it": "JSON shape without witness check",
+      "fairness_guardrail": "pipeline rebuild tests"
+    },
+    {
+      "mechanism": "stateful_multi_step_dependencies",
+      "placement": "cargo then rh then JSON",
+      "why_model_misses_it": "patches without locked rebuild",
+      "fairness_guardrail": "build_hints"
+    },
+    {
+      "mechanism": "false_green_intermediate_states",
+      "placement": "premature closure counters",
+      "why_model_misses_it": "aggregate line masks per-row skew",
+      "fairness_guardrail": "mux ablation"
+    },
+    {
+      "mechanism": "rollback_recovery_requirements",
+      "placement": "pack_refresh; index_w vs slot_v",
+      "why_model_misses_it": "unit_rc green while lock_rc diverges",
+      "fairness_guardrail": "dual ablation"
+    }
+  ],
+  "calibration_plan": {
+    "oracle_runs": 3,
+    "no_op_runs": 3,
+    "target_agent_runs": 5,
+    "comparator_agent_runs": 5,
+    "human_sanity": "derive run_digest; run cmd_seq",
+    "shortcut_audit": "static JSON, digest hardcode, Cargo.lock swap; verifier-offline; post-upload Part E",
+    "ablation_plan": "revert each flipping location; remove permutation tests",
+    "pass_rate_target": {
+      "hard_max_pct": 20,
+      "too_easy_threshold_pct": 80,
+      "basis": "frontier agents"
+    }
+  },
+  "verifier_scoring_plan": {
+    "metrics": [
+      {
+        "metric": "functional_correctness",
+        "weight": 0.45,
+        "criterion": "coherent report after rebuild+rh"
+      },
+      {
+        "metric": "hidden_invariants",
+        "weight": 0.25,
+        "criterion": "echo pairs, permutations, ablations"
+      },
+      {
+        "metric": "state_hygiene",
+        "weight": 0.15,
+        "criterion": "consecutive runs and overwrite trap"
+      },
+      {
+        "metric": "interface_correctness",
+        "weight": 0.1,
+        "criterion": "facet_hex and band_span typing"
+      },
+      {
+        "metric": "deliverable_completeness",
+        "weight": 0.05,
+        "criterion": "output path coverage"
+      }
+    ],
+    "overall_threshold": 0.999,
+    "reward_output": "reward.txt",
+    "binary_threshold_rule": "reward.txt is 1 only when all pytest passes including test_h18_held_perms"
+  },
+  "subtype_milestone_plan": {
+    "subcategories": [],
+    "milestone_count": 0,
+    "sequential_dependency": "single-step permutation coupling",
+    "local_only_data": true,
+    "sidecar_or_protocol_notes": "environment/data only"
+  },
+  "platform_files": [
+    {
+      "path": "task.toml",
+      "role": "metadata"
+    },
+    {
+      "path": "instruction.md",
+      "role": "prompt"
+    },
+    {
+      "path": "output_contract.toml",
+      "role": "output declaration"
+    },
+    {
+      "path": "tests/test.sh",
+      "role": "verifier entrypoint"
+    },
+    {
+      "path": "tests/test_outputs.py",
+      "role": "domain verifier"
+    },
+    {
+      "path": "solution/solve.sh",
+      "role": "oracle"
+    },
+    {
+      "path": "environment/Dockerfile",
+      "role": "build definition"
+    },
+    {
+      "path": "construction_manifest.json",
+      "role": "authoring artifact"
+    }
+  ],
+  "task_files": [
+    {
+      "path": "environment/m4/k83/src/main.rs",
+      "role": "driver"
+    },
+    {
+      "path": "environment/m4/k83/src/mux_order.rs",
+      "role": "frontier C"
+    },
+    {
+      "path": "environment/p9/y5/src/op_c3.rs",
+      "role": "frontier A"
+    },
+    {
+      "path": "environment/p9/y4/src/pack_refresh.rs",
+      "role": "frontier B"
+    },
+    {
+      "path": "environment/p9/core/src/emit_c4.rs",
+      "role": "frontier D"
+    },
+    {
+      "path": "environment/data/perm_table.toml",
+      "role": "held-out permutations"
+    },
+    {
+      "path": "environment/docs/cmd_seq.txt",
+      "role": "CLI argv doc"
+    }
+  ],
+  "fix_frontier": {
+    "count": 4,
+    "distribution": "m4/k83, p9/y5, p9/y4, p9/core",
+    "naming_policy": "Opaque symbols; instruction nouns banned on fix path",
+    "forbidden_stems": [
+      "rehydration",
+      "lockfile",
+      "scheduler",
+      "offline",
+      "reschedule",
+      "ordering"
+    ],
+    "helpers_policy": "Rhyming decoys do real non-fix work",
+    "symbol_thin_preferred": true
+  },
+  "contract_surface": {
+    "boolean_fields_max": 0,
+    "direct_boolean_assertions_max": 0,
+    "preferred_assertion_styles": [
+      "regenerated JSON",
+      "derived run_digest",
+      "echo pairs",
+      "permutation traps"
+    ],
+    "forbidden_assertion_styles": [
+      "boolean answer grids"
+    ]
+  },
+  "task_shape": {
+    "type": "adversarial_generalization",
+    "instruction_framing": "constraint-complete",
+    "hardness_source": "adversarial generalization",
+    "collapse_risk": "leaking recovery path or authority collapses to local patch"
+  },
+  "category_profile": {
+    "challenge_family": "scheduler_replay_lockfile_mismatch",
+    "profile_name": "concurrency_ordering",
+    "allowed_instruction_disclosures": "Reschedule ops, ordering invariant, cmd_seq, locked build, report outcomes",
+    "forbidden_instruction_leaks": "Queue locations, interleaving recipe, authority choice, perm_table rows",
+    "category_specific_hardness_bar": "Two schedulers/queues plus persistence coordinate with lockfile index",
+    "category_specific_verifier_risks": "serialization-only pass, false-green partial reschedule",
+    "coverage_role": "concurrency_ordering under system-administration"
+  },
+  "satisfiability_risk": {
+    "rc2_planned_name_risk": "Low with m4/p9 roots",
+    "gx9_contract_risk": "Medium \u2014 independent run_digest recompute",
+    "cr1_symbol_frontier_risk": "Low \u2014 four-location contract",
+    "hidden_contract_risk": "Medium \u2014 held-out perm_table permutations"
+  },
+  "actionability_plan": {
+    "verifier_command_visible": "cargo build --release --locked; rh; cmd_seq.txt; build_hints.txt",
+    "source_fix_intent_visible": "Sources must emit rehydration_report.json with permutation generalization",
+    "generated_output_rule_visible": "Mirror pairs and coherence predicates",
+    "exact_formula_home": "main.rs header",
+    "schema_home": "instruction public contract"
+  },
+  "waiver_plan": {
+    "waivers_expected": false,
+    "waiver_rationale": "Deterministic offline rebuilds"
+  },
+  "reference_pattern": {
+    "justification_if_none": "Follows approved overlay-lowerdir-stale-bind mold; no promoted index match for this profile combo."
+  },
+  "realism_source": {
+    "source_type": "real_system",
+    "evidence_basis": "Overlay reference + offline lockfile rehydration postmortems",
+    "upstream_or_synthetic_rationale": "Cargo lockfile and scheduler reschedule semantics",
+    "minimization_preserves": "Authority split, false-green closure, cross-format bypass, permutations",
+    "synthetic_exception_review": "Not required"
+  }
+}

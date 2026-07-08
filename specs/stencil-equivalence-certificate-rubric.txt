@@ -1,0 +1,12 @@
+# Rubric 1
+Agent reads /app/environment/app/docs/surface_limits.md, journal_contract.md, and epoch_seal.md before patching C++ observation code, +2
+Agent rebuilds the observation binary with make -C /app/environment after C++ edits under /app/environment/app/, +3
+Agent repairs grid indexing and neighbor modules so wrap and reflect halo rules match non-square pane fixtures and bench rtol/atol tolerances, +3
+Agent repairs linkage and strip_echo recurrence so strip_echo derives from finalized linkage digest and tier-one tag count per surface_limits and compare.py, +3
+Agent repairs seal_chain row_seal generation so ordered_slots sorted by ascending slot_id and tag produce contract row_seal digests, +3
+Agent repairs session_store and emit cache paths so replay serves cached row_seal and site_rows halos without re-deriving seals from live rows or growing journal_applied, +3
+Agent runs python3 /app/environment/runner.py --emit with fixture stems from /app/environment/app/data/ and inspects observation_runs and session_meta fields, +2
+Agent writes hand-edited JSON to /app/output/stencil_emit.json or bypasses runner.py emission, -5
+Agent patches only app/bench/compare.py while leaving broken grid, seal, or session_store logic in the C++ pipeline, -3
+Agent edits tests/, solution/, or runner wrappers without repairing C++ sources that build the observation binary, -3
+Agent re-derives row_seal from live site_rows on replay markers instead of returning the cached observation run seal, -2

@@ -1,0 +1,27 @@
+{
+  "corpus_size": 302,
+  "by_source": {
+    "seed-bank": 150,
+    "spec": 78,
+    "task": 74
+  },
+  "saturated_tokens": [
+    "replay",
+    "checkpoint",
+    "recovery",
+    "journal",
+    "cache",
+    "mount",
+    "rollback",
+    "overlay",
+    "rollback_recovery_requirements",
+    "replays",
+    "state_recovery_crash_consistency",
+    "journals",
+    "cached",
+    "checkpointed",
+    "replayed",
+    "checkpoints"
+  ],
+  "recommendation": "Reject new candidates >75% similar to any existing spec/task"
+}

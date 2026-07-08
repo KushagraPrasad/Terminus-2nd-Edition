@@ -1,0 +1,9 @@
+{
+  "bias": 100,
+  "slot_index": {
+    "slot-a": 0,
+    "slot-b": 1,
+    "slot-c": 0,
+    "slot-d": 1
+  }
+}

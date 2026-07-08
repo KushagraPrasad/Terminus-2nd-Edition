@@ -1,0 +1,222 @@
+{
+  "attempt": 1,
+  "timestamp": "2026-06-08T12:00:00Z",
+  "decision": "GO",
+  "hardness_axes": {
+    "discover": {
+      "status": "PASS",
+      "explanation": "Agent must discover from code/docs that three authority surfaces exist (registry, udev, hwdb), that simple precedence fails, and that provenance chains are required. Not stated in instruction."
+    },
+    "synthesize": {
+      "status": "PASS",
+      "explanation": "Solution spans reconciliation engine, lineage tracker, and replay verifier. No single module contains complete solution."
+    },
+    "diagnose_or_design": {
+      "status": "PASS",
+      "explanation": "Agent must design conflict-resolution strategy and provenance-preservation approach. Not a simple bug fix."
+    },
+    "navigate_coupling": {
+      "status": "PASS",
+      "explanation": "Changes in reconciliation affect lineage requirements; replay depends on both. Distributed coordination required."
+    },
+    "reason_beyond_training": {
+      "status": "PASS",
+      "explanation": "Udev alias migration with generation-aware provenance is not a common textbook problem. Requires systems reasoning."
+    }
+  },
+  "anti_trivialization_checks": {
+    "disclosure_collapse": {
+      "status": "PASS",
+      "explanation": "Instruction reveals behavioral target but not merge algorithm or fix locations."
+    },
+    "hidden_instance": {
+      "status": "PASS",
+      "explanation": "No single broken file/record/artifact; distributed across reconciliation, lineage, replay."
+    },
+    "single_artifact_repair": {
+      "status": "PASS",
+      "explanation": "Fix spans 3+ modules with interdependent logic."
+    },
+    "generalization": {
+      "status": "PASS",
+      "explanation": "Solution must work across held-out boot sequences, not just visible fixtures."
+    },
+    "prompt_honesty": {
+      "status": "PASS",
+      "explanation": "Honest prompt describes reconciliation behavior without revealing implementation."
+    },
+    "cheating_vs_difficulty": {
+      "status": "PASS",
+      "explanation": "Difficulty from distributed reasoning, not anti-cheating measures."
+    },
+    "mechanical_fix_filter": {
+      "status": "PASS",
+      "explanation": "Core hardness is reconciliation design, not verifier setup."
+    },
+    "localized_fix": {
+      "status": "PASS",
+      "explanation": "Fix not localized to single function; spans 3 modules."
+    },
+    "oracle_locality": {
+      "status": "PASS",
+      "explanation": "Oracle modifies code across 3 roots (reconcile, lineage, replay)."
+    },
+    "small_declarative_cluster": {
+      "status": "PASS",
+      "explanation": "Not a single config block or table; requires algorithmic implementation."
+    },
+    "grep_collapse": {
+      "status": "PASS",
+      "explanation": "Fix-path symbols use opaque identifiers (op_a, track_b, verify_c) not in instruction."
+    },
+    "pre_factored_helper": {
+      "status": "PASS",
+      "explanation": "No helper names like validate/extract/install mirroring prompt bullets."
+    },
+    "recipe_discount": {
+      "status": "PASS",
+      "explanation": "Not a standard recipe; requires custom reconciliation logic."
+    },
+    "security_aura_discount": {
+      "status": "PASS",
+      "explanation": "Device management context provides realism, not difficulty."
+    },
+    "orthogonal_checklist": {
+      "status": "PASS",
+      "explanation": "Requirements are coupled: provenance needs reconciliation, idempotency needs replay."
+    },
+    "harness_discount": {
+      "status": "PASS",
+      "explanation": "Docker complexity is realism; hardness from algorithm design."
+    },
+    "one_pass_solvability": {
+      "status": "PASS",
+      "explanation": "Requires reading code, designing approach, implementing across modules."
+    },
+    "hard_only_gate": {
+      "status": "PASS",
+      "explanation": "Clearly hard: distributed reconciliation with idempotency and conflict lineage."
+    },
+    "discovery_design_budget": {
+      "status": "PASS",
+      "explanation": "Three non-trivial discoveries required: (1) three authority surfaces must all be considered, (2) simple precedence fails for conflicting generations, (3) provenance chains needed for idempotency. Each requires code reading and inference."
+    },
+    "instruction_specificity": {
+      "status": "PASS",
+      "level": "behavioral-target",
+      "explanation": "Non-repair shape uses behavioral-target framing: public target visible, solution strategy open."
+    },
+    "topology_distribution": {
+      "status": "PASS",
+      "explanation": "Three distinct topologies: (A) precedence-based reconciliation with tie-breaking, (B) provenance-chain tracking with verification, (C) idempotent replay with delta detection. Each requires 3+ coordinated components."
+    }
+  },
+  "rubric_axes": {
+    "verifiable": {
+      "status": "PASS",
+      "explanation": "Deterministic pytest assertions on generated observations.json"
+    },
+    "well_specified": {
+      "status": "PASS",
+      "explanation": "Two readers would produce equivalent reconcilers based on instruction."
+    },
+    "solvable": {
+      "status": "PASS",
+      "explanation": "Expert can design reconciliation in hours; solution < 10k lines."
+    },
+    "difficult": {
+      "status": "PASS",
+      "explanation": "Requires distributed systems reasoning; not undergrad course project."
+    },
+    "interesting": {
+      "status": "PASS",
+      "explanation": "Real udev alias migration issues affect production Linux systems."
+    },
+    "outcome_verified": {
+      "status": "PASS",
+      "explanation": "Grades results (observations.json with traces), not process."
+    }
+  },
+  "instruction_completeness_test": {
+    "agent_can_solve_from_instruction_only": false,
+    "explanation": "Instruction describes required behavior but agent must read code/docs to discover authority surfaces, conflict patterns, and design reconciliation approach."
+  },
+  "discovery_budget": [
+    {
+      "item": "Three authority surfaces must all be considered",
+      "location": "src/udev/mod.rs, src/registry/mod.rs, docs/reconciliation_contract.md",
+      "why_not_in_instruction": "Instruction mentions 'multiple authorities' but discovering which three and their semantics requires code reading"
+    },
+    {
+      "item": "Simple precedence fails for conflicting generations",
+      "location": "fixtures/boot-sequence-*.yaml, src/reconcile/mod.rs",
+      "why_not_in_instruction": "Conflict behavior must be inferred from fixture patterns, not stated"
+    },
+    {
+      "item": "Provenance chains needed for idempotency verification",
+      "location": "src/lineage/mod.rs, src/replay/mod.rs",
+      "why_not_in_instruction": "The need for lineage tracking emerges from design, not recipe"
+    }
+  ],
+  "attack_path": {
+    "smallest_plausible_patch": "Modify reconcile module to use generation-aware merge, add provenance tracking in lineage module, add delta detection in replay module",
+    "estimated_patch_complexity": "high",
+    "why_not_trivial": "Requires understanding distributed reconciliation semantics, not simple code change"
+  },
+  "smallest_plausible_patch": {
+    "lines_of_code_estimate": 80,
+    "components_touched": 3,
+    "explanation": "Minimum viable fix touches reconciliation logic, lineage tracking, and replay verification. Cannot be smaller without breaking key requirements."
+  },
+  "collapse_audit": {
+    "overall": "PASS",
+    "risk_assessment": "Low collapse risk. Three distinct fix locations required. Decoy modules provide distractors. Opaque symbol names prevent grep-to-fix."
+  },
+  "topology_enumeration": [
+    {
+      "name": "Precedence-based reconciliation with tie-breaking",
+      "components": ["src/reconcile/mod.rs (op_a)", "src/core/types (Candidate, Selection)", "docs/reconciliation_contract.md"],
+      "why_not_single_component": "Reconciliation needs type definitions and documented behavior from multiple sources"
+    },
+    {
+      "name": "Provenance-chain tracking with verification",
+      "components": ["src/lineage/mod.rs (track_b, verify_c)", "src/registry/mod.rs (for persistence)", "fixtures/ (for generation data)"],
+      "why_not_single_component": "Tracking needs persistence layer and fixture data for history"
+    },
+    {
+      "name": "Idempotent replay with delta detection",
+      "components": ["src/replay/mod.rs (step_d)", "src/main.rs (orchestration)", "output observations.json"],
+      "why_not_single_component": "Replay needs main orchestration and output comparison"
+    }
+  ],
+  "construction_manifest": {
+    "platform_files": 8,
+    "task_files": 18,
+    "fix_frontier_symbols": 6,
+    "decoy_symbols": 3,
+    "forbidden_tokens_count": 18
+  },
+  "naming_pass": {
+    "instruction_nouns_extracted": ["device", "alias", "migration", "reconciliation", "provenance", "authority", "boot", "generation", "runtime", "config", "hwdb", "udev", "persist", "conflict", "resolution", "merge", "tombstone", "lineage"],
+    "renames_during_drafting": [],
+    "concentration_math": {
+      "cap": 0.5,
+      "max_observed": 0.33,
+      "explanation": "No location controls more than 33% of tests (max 2 of 6 tests per location)"
+    },
+    "test_names_audited": [
+      "test_observations_schema_valid",
+      "test_reconciliation_produces_all_devices",
+      "test_alias_provenance_chain_complete",
+      "test_lineage_verified_derived_from_chain",
+      "test_convergence_rerun_delta_zero",
+      "test_idempotency_verified_true",
+      "test_conflicts_detected_accurate",
+      "test_resolution_strategy_documented",
+      "test_authority_precedence_inferred",
+      "test_boot_sequence_r1_r2_divergence",
+      "test_tombstone_preservation",
+      "test_partial_revert_breaks_lineage"
+    ]
+  }
+}

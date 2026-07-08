@@ -1,0 +1,20 @@
+{
+  "artifacts": {
+    "slot-a": {
+      "byte_hex": "00aa00aa00aa00aa00aa00aa00aa00aa00aa00aa00aa00aa00aa00aa00aa00aa",
+      "shadow_slice": "01ab01ab01ab01ab01ab01ab01ab01ab01ab01ab01ab01ab01ab01ab01ab01ab"
+    },
+    "slot-b": {
+      "byte_hex": "11bb11bb11bb11bb11bb11bb11bb11bb11bb11bb11bb11bb11bb11bb11bb11bb",
+      "shadow_slice": "12bc12bc12bc12bc12bc12bc12bc12bc12bc12bc12bc12bc12bc12bc12bc12bc"
+    },
+    "slot-c": {
+      "byte_hex": "22cc22cc22cc22cc22cc22cc22cc22cc22cc22cc22cc22cc22cc22cc22cc22cc",
+      "shadow_slice": "23cd23cd23cd23cd23cd23cd23cd23cd23cd23cd23cd23cd23cd23cd23cd23cd"
+    },
+    "slot-d": {
+      "byte_hex": "33dd33dd33dd33dd33dd33dd33dd33dd33dd33dd33dd33dd33dd33dd33dd33dd",
+      "shadow_slice": "34de34de34de34de34de34de34de34de34de34de34de34de34de34de34de34de"
+    }
+  }
+}

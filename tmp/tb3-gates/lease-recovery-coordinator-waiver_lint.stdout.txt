@@ -1,0 +1,47 @@
+{
+  "author": {
+    "author_email": "anonymous",
+    "author_name": "anonymous",
+    "identifier": "anonymous <anonymous>",
+    "waiver_count_for_task": 2
+  },
+  "final_approval": true,
+  "log_entry": {
+    "author": "anonymous <anonymous>",
+    "status": "PASS",
+    "task": "lease-recovery-coordinator",
+    "waiver_count": 2
+  },
+  "metadata_sources": [
+    "waivers.json"
+  ],
+  "source_findings": [],
+  "status": "PASS",
+  "summary": {
+    "fail": 0,
+    "pass": 2,
+    "waiver_count": 2,
+    "warn": 0
+  },
+  "task_dir": "tasks/lease-recovery-coordinator",
+  "waivers": [
+    {
+      "check": "rc2",
+      "findings": [],
+      "index": 0,
+      "policy": "usually_waivable",
+      "scope": "reconcile.go",
+      "severity": "PASS",
+      "source": "waivers.json"
+    },
+    {
+      "check": "rc2",
+      "findings": [],
+      "index": 1,
+      "policy": "usually_waivable",
+      "scope": "state_machine.go",
+      "severity": "PASS",
+      "source": "waivers.json"
+    }
+  ]
+}

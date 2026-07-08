@@ -1,0 +1,152 @@
+{
+  "items": [
+    {
+      "classification": "visible_requirement_found",
+      "home": "instruction.md",
+      "kind": "direct_library_call",
+      "location": "tests/test_outputs.py:3",
+      "remediation": "No public-contract change needed.",
+      "severity": "PASS",
+      "value": "__future__"
+    },
+    {
+      "classification": "visible_requirement_found",
+      "home": "instruction.md",
+      "kind": "command_chain",
+      "location": "tests/test_outputs.py:40",
+      "remediation": "Name the verifier-rerun command or pipeline in instruction.md or visible docs.",
+      "severity": "PASS",
+      "value": "python3 /app/environment/runner.py --write /app/output/recovery_transcript.json"
+    },
+    {
+      "classification": "visible_requirement_found",
+      "home": "instruction.md",
+      "kind": "output_key",
+      "location": "tests/test_outputs.py:78",
+      "remediation": "Give asserted output keys a visible schema home.",
+      "severity": "PASS",
+      "value": "digest_line"
+    },
+    {
+      "classification": "visible_requirement_found",
+      "home": "instruction.md",
+      "kind": "output_key",
+      "location": "tests/test_outputs.py:89",
+      "remediation": "Give asserted output keys a visible schema home.",
+      "severity": "PASS",
+      "value": "digest_line"
+    },
+    {
+      "classification": "visible_requirement_found",
+      "home": "instruction.md",
+      "kind": "output_key",
+      "location": "tests/test_outputs.py:96",
+      "remediation": "Give asserted output keys a visible schema home.",
+      "severity": "PASS",
+      "value": "anchor_head"
+    },
+    {
+      "classification": "visible_requirement_found",
+      "home": "environment/studio/app/docs/contract.md",
+      "kind": "string_literal",
+      "location": "tests/test_outputs.py:74",
+      "remediation": "Document externally tested string/profile values, or derive them from visible formulas/invariants.",
+      "severity": "PASS",
+      "value": "alpha"
+    },
+    {
+      "classification": "visible_requirement_found",
+      "home": "instruction.md",
+      "kind": "output_key",
+      "location": "tests/test_outputs.py:78",
+      "remediation": "Give asserted output keys a visible schema home.",
+      "severity": "PASS",
+      "value": "artifact"
+    },
+    {
+      "classification": "visible_requirement_found",
+      "home": "environment/studio/app/docs/contract.md",
+      "kind": "string_literal",
+      "location": "tests/test_outputs.py:85",
+      "remediation": "Document externally tested string/profile values, or derive them from visible formulas/invariants.",
+      "severity": "PASS",
+      "value": "beta"
+    },
+    {
+      "classification": "visible_requirement_found",
+      "home": "instruction.md",
+      "kind": "output_key",
+      "location": "tests/test_outputs.py:89",
+      "remediation": "Give asserted output keys a visible schema home.",
+      "severity": "PASS",
+      "value": "artifact"
+    },
+    {
+      "classification": "visible_requirement_found",
+      "home": "instruction.md",
+      "kind": "output_key",
+      "location": "tests/test_outputs.py:96",
+      "remediation": "Give asserted output keys a visible schema home.",
+      "severity": "PASS",
+      "value": "digest_line"
+    },
+    {
+      "classification": "visible_requirement_found",
+      "home": "instruction.md",
+      "kind": "output_key",
+      "location": "tests/test_outputs.py:130",
+      "remediation": "Give asserted output keys a visible schema home.",
+      "severity": "PASS",
+      "value": "merge_lane"
+    },
+    {
+      "classification": "visible_requirement_found",
+      "home": "instruction.md",
+      "kind": "cli_flag",
+      "location": "tests/test_outputs.py:44",
+      "remediation": "Document tested CLI flags or argument splits.",
+      "severity": "PASS",
+      "value": "--write"
+    },
+    {
+      "classification": "visible_requirement_found",
+      "home": "instruction.md",
+      "kind": "regenerated_output_path",
+      "location": "tests/test_outputs.py:45",
+      "remediation": "Document regenerated output paths.",
+      "severity": "PASS",
+      "value": "/app/output/recovery_transcript.json"
+    },
+    {
+      "classification": "visible_requirement_found",
+      "home": "environment/studio/app/docs/contract.md",
+      "kind": "cli_flag",
+      "location": "tests/test.sh:4",
+      "remediation": "Document tested CLI flags or argument splits.",
+      "severity": "PASS",
+      "value": "--no-install-recommends"
+    },
+    {
+      "classification": "visible_requirement_found",
+      "home": "instruction.md",
+      "kind": "cli_flag",
+      "location": "tests/test.sh:18",
+      "remediation": "Document tested CLI flags or argument splits.",
+      "severity": "PASS",
+      "value": "--ctrf"
+    }
+  ],
+  "remediation_examples": [
+    "Instruction.md: 'The digest field is a 64-character sha256 hex string.'",
+    "Instruction.md: 'drift is observed - baseline for each record.'",
+    "Visible environment docstring: 'build_report() must satisfy the same public report contract as the CLI.'"
+  ],
+  "status": "PASS",
+  "strict": true,
+  "summary": {
+    "fail": 0,
+    "pass": 15,
+    "warn": 0
+  },
+  "task_dir": "tasks/bootloader-generation-confusion-variant-1"
+}

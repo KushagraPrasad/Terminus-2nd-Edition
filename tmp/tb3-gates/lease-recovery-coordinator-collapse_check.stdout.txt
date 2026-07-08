@@ -1,0 +1,373 @@
+{
+  "oracle_targets": [
+    "partition/resolver.go",
+    "reconcile/reconcile.go",
+    "reconcile/state_machine.go"
+  ],
+  "oracle_loc_non_boilerplate": 223,
+  "touched_roots": [
+    "partition",
+    "reconcile"
+  ],
+  "frontier_concentration": {
+    "total_targets": 3,
+    "unique_roots": 2,
+    "dominant_root": "reconcile",
+    "dominant_root_count": 2,
+    "dominant_root_share": 0.67,
+    "subsystem_root": "reconcile",
+    "subsystem_share": 0.67,
+    "roots": [
+      {
+        "root": "reconcile",
+        "count": 2,
+        "share": 0.67
+      },
+      {
+        "root": "partition",
+        "count": 1,
+        "share": 0.33
+      }
+    ]
+  },
+  "results": [
+    {
+      "check": "rc1_oracle_simplification",
+      "severity": "WARN",
+      "detail": "No comparable file deltas from 3 parsed oracle targets"
+    },
+    {
+      "check": "rc2_oracle_predictability",
+      "severity": "WARN",
+      "predictable_files": 2,
+      "unpredictable_files": 1,
+      "predict_ratio": 0.67,
+      "target_dirs": [
+        "partition",
+        "reconcile"
+      ],
+      "dir_keyword_overlap": [
+        "reconcile"
+      ],
+      "signal_keyword_counts": {
+        "instruction": 60,
+        "visible_file_names": 21,
+        "test_names": 0
+      },
+      "predictable": [
+        {
+          "file": "reconcile/reconcile.go",
+          "keywords": [
+            "reconcile"
+          ],
+          "signals": [
+            "instruction"
+          ],
+          "signal_matches": {
+            "instruction": [
+              "reconcile"
+            ]
+          }
+        },
+        {
+          "file": "reconcile/state_machine.go",
+          "keywords": [
+            "reconcile"
+          ],
+          "signals": [
+            "instruction"
+          ],
+          "signal_matches": {
+            "instruction": [
+              "reconcile"
+            ]
+          }
+        }
+      ],
+      "unpredictable": [
+        "partition/resolver.go"
+      ],
+      "semantic_predictable_diagnostic": [],
+      "oracle_targets": [
+        "partition/resolver.go",
+        "reconcile/reconcile.go",
+        "reconcile/state_machine.go"
+      ],
+      "touched_roots": [
+        "partition",
+        "reconcile"
+      ],
+      "frontier_concentration": {
+        "total_targets": 3,
+        "unique_roots": 2,
+        "dominant_root": "reconcile",
+        "dominant_root_count": 2,
+        "dominant_root_share": 0.67,
+        "subsystem_root": "reconcile",
+        "subsystem_share": 0.67,
+        "roots": [
+          {
+            "root": "reconcile",
+            "count": 2,
+            "share": 0.67
+          },
+          {
+            "root": "partition",
+            "count": 1,
+            "share": 0.33
+          }
+        ]
+      },
+      "detail": "2/3 oracle targets predictable from instruction/file-name/test-name signals (67%). Roots: partition, reconcile. Dir-keyword overlap: reconcile.",
+      "redesign_hint": "RC2 menu: generic-rename package roots before freezing the manifest; move fix material into realistic common files; separate instruction nouns from path tokens; request waiver only for realistic source-preserving names; avoid decoy dilution."
+    },
+    {
+      "check": "rc3_verifier_shallowness",
+      "severity": "PASS",
+      "value_checks": 61,
+      "format_checks": 0,
+      "structure_checks": 1,
+      "exitcode_checks": 0,
+      "total": 62,
+      "shallow_ratio": 0.02,
+      "detail": "61 value, 0 format, 1 structure, 0 exit-code (2% shallow)"
+    },
+    {
+      "check": "rc4_tamper_surface",
+      "severity": "PASS",
+      "issue_count": 0,
+      "issues": [],
+      "detail": "No tamper surfaces detected"
+    },
+    {
+      "check": "rc5_reference_artifacts",
+      "severity": "PASS",
+      "issue_count": 0,
+      "issues": [],
+      "detail": "No answer artifacts found on solver-visible file surfaces (instruction.md/tests/environment)"
+    },
+    {
+      "check": "rc6_instruction_specificity",
+      "severity": "WARN",
+      "level": "cause-revealing",
+      "triggered_families": [
+        "C:api_enumerations"
+      ],
+      "strong_families": [],
+      "trigger_count": 1,
+      "strong_count": 0,
+      "signals_summary": {
+        "algorithm_mentions": {},
+        "cli_flags": [
+          "--now",
+          "--out",
+          "--root"
+        ],
+        "all_caps_tokens": [],
+        "dense_identifier_clusters": 0,
+        "binding_phrase_count": 0,
+        "scope_closure_count": 0,
+        "tolerance_phrase_count": 0
+      },
+      "word_count": 155,
+      "detail": "Instruction classified cause-revealing (1 families triggered, 0 strong). 3 CLI flag(s): --now, --out, --root"
+    },
+    {
+      "check": "rc7_oracle_triviality",
+      "severity": "PASS",
+      "oracle_loc": 223,
+      "oracle_targets": 3,
+      "band": "substantive",
+      "dominant_root": "reconcile",
+      "dominant_root_share": 0.67,
+      "detail": "Oracle is 223 non-boilerplate line(s) across 3 target(s) (substantive; dominant root reconcile at 67%). 80+ lines clears the A12 mechanical floor; other RCs still govern."
+    },
+    {
+      "check": "rc8_frontier_concentration",
+      "severity": "PASS",
+      "dominant_root": "reconcile",
+      "dominant_root_share": 0.67,
+      "subsystem_root": "reconcile",
+      "subsystem_share": 0.67,
+      "num_targets": 3,
+      "avg_target_loc": 0.0,
+      "oracle_targets": [
+        "partition/resolver.go",
+        "reconcile/reconcile.go",
+        "reconcile/state_machine.go"
+      ],
+      "detail": "3 oracle target(s) in subsystem `reconcile` (subsystem share 67%, avg LOC/target 0). Distribution and target size within tolerance."
+    },
+    {
+      "check": "cr1_symbol_table_compliance",
+      "severity": "WARN",
+      "declared_count": 4,
+      "shipped_symbols_in_frontier": 0,
+      "declared_missing": [
+        "ApplyEvent",
+        "CanonicalShard",
+        "ResolveDuplicates",
+        "Run"
+      ],
+      "instruction_collisions": [],
+      "helper_instruction_collisions": [],
+      "undeclared_on_fix_path": [],
+      "undeclared_co_resident_helpers": [],
+      "declared_co_resident_helpers": [],
+      "detail": "4 declared symbol(s) not found in shipped code: ['ApplyEvent', 'CanonicalShard', 'ResolveDuplicates', 'Run']",
+      "redesign_hint": "CR1 menu: make oracle-touched files symbol-thin; move helpers into sibling files; declare co_resident_helpers/allowed_top_level_symbols; inline small helpers if natural."
+    },
+    {
+      "check": "cr2_flipping_point_contract",
+      "severity": "PASS",
+      "location_count": 3,
+      "distinct_roots": [
+        "partition",
+        "reconcile"
+      ],
+      "max_location_share": 0.47,
+      "concentration_cap": 0.5,
+      "total_tests": 15,
+      "detail": "3 locations across 2 roots; max single-location share 47% under 50% cap."
+    },
+    {
+      "check": "cr7_grep_resistance",
+      "severity": "WARN",
+      "detail": "No parseable oracle frontier; symbols couldn't be extracted."
+    },
+    {
+      "check": "cr8_no_central_orchestration",
+      "severity": "PASS",
+      "symbol_count": 4,
+      "orchestration_offenders": [],
+      "max_symbols_in_single_file": 1,
+      "detail": "Scanned 10 files for references to 4 manifest symbols. 1 file(s) reference at least one fix-path symbol; max references in a single file: 1. No central orchestration detected."
+    },
+    {
+      "check": "cr9_test_contract_traceability",
+      "severity": "WARN",
+      "test_file": "tests\\test_outputs.py",
+      "field_access_count": 11,
+      "contract_literal_count": 4,
+      "missing_fields": [],
+      "missing_literals": [
+        "i77"
+      ],
+      "detail": "Scanned test_outputs.py: 11 field access(es), 4 contract literal(s). 0 field(s) and 1 literal(s) lack a home in solver-visible material. 1-2 test tokens not found in solver-visible material. Verify these are domain values the solver can infer, not hidden-spec."
+    },
+    {
+      "check": "gx1_oracle_comment_leakage",
+      "severity": "PASS",
+      "detail": "No correctional-vocab comments in env; no env comments dropped by the oracle."
+    },
+    {
+      "check": "gx2_oracle_real_diff",
+      "severity": "PASS",
+      "detail": "No bulk-rewrite-of-tiny-diff inflation across 0 write(s).",
+      "writes": []
+    },
+    {
+      "check": "gx3_oracle_edit_distance",
+      "severity": "PASS",
+      "edit_distance": 214,
+      "breakdown": [
+        {
+          "file": "/app/partition/resolver.go",
+          "real_loc": 86,
+          "kind": "new_file"
+        },
+        {
+          "file": "/app/reconcile/state_machine.go",
+          "real_loc": 54,
+          "kind": "new_file"
+        },
+        {
+          "file": "/app/reconcile/reconcile.go",
+          "real_loc": 74,
+          "kind": "new_file"
+        }
+      ],
+      "detail": "Real oracle edit distance: 214 line(s) of added+removed non-comment content across 3 target(s) (substantive)."
+    },
+    {
+      "check": "gx4_no_op_rewrite",
+      "severity": "PASS",
+      "detail": "No no-op rewrites in oracle."
+    },
+    {
+      "check": "gx5_instruction_test_overlap",
+      "severity": "PASS",
+      "detail": "5/81 (6%) test tokens are instruction-only; the rest are in env or orphan.",
+      "instruction_only": [
+        "--out",
+        "--root",
+        "/app",
+        "report.json",
+        "validation"
+      ],
+      "instruction_and_env": [
+        "--now",
+        ".json",
+        "epoch",
+        "events",
+        "fail"
+      ],
+      "env_only_count": 25,
+      "orphan_count": 35,
+      "orphan_sample": [
+        "./cmd/reconcile",
+        "200",
+        "alp",
+        "bec",
+        "bet"
+      ]
+    },
+    {
+      "check": "gx6_causal_connective_density",
+      "severity": "PASS",
+      "detail": "1 connectives in 155 words (0.65/100w) \u2014 symptoms-only or actionability-level causation.",
+      "connectives_found": [
+        "so that"
+      ],
+      "connective_count": 1,
+      "patch_causal_count": 0,
+      "symptom_causal_count": 1,
+      "patch_causal_sentences": [],
+      "word_count": 155,
+      "density_per_100w": 0.65
+    },
+    {
+      "check": "gx7_test_literals_homed",
+      "severity": "WARN",
+      "detail": "1 path-literal(s), 0 module-alias value(s), 0 opaque-literal(s) have no home in solver-visible material (path literal not found in env or instruction).",
+      "orphan_path_literals": [
+        "report2.json"
+      ],
+      "orphan_alias_values": [],
+      "orphan_opaque_literals": [],
+      "orphan_count": 1,
+      "captured_total": 7
+    },
+    {
+      "check": "gx8_test_import_consistency",
+      "severity": "PASS",
+      "detail": "4 test import(s); all infra/stdlib."
+    },
+    {
+      "check": "gx9_instruction_contract_saturation",
+      "severity": "PASS",
+      "detail": "0/27 (0%) contract triples enumerated in instruction; below saturation.",
+      "remediation": "Redesign output contract; do not pad instruction or hide required behavior. Prefer observations/traces/artifacts and derived comparisons instead of boolean answer-key fields.",
+      "covered": 0,
+      "total": 27,
+      "saturated_examples": []
+    },
+    {
+      "check": "gx10_instruction_polarity_contradiction",
+      "severity": "PASS",
+      "detail": "No polarity contradictions detected in instruction.md."
+    }
+  ],
+  "fails": 0,
+  "warns": 7
+}

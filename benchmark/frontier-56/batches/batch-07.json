@@ -1,0 +1,53 @@
+{
+  "batch": 7,
+  "tasks": [
+    {
+      "registry_id": "mount-propagation-formal-model",
+      "task_dir": "mount-propagation-formal-model",
+      "spec_stem": "mount-propagation-formal-model",
+      "linked": true
+    },
+    {
+      "registry_id": "fstab-variant-remount-ladder",
+      "task_dir": "fstab-variant-remount-ladder",
+      "spec_stem": "fstab-variant-remount-ladder",
+      "linked": true
+    },
+    {
+      "registry_id": "namespace-restore-replay-loop",
+      "task_dir": "namespace-mount-leakage",
+      "spec_stem": "namespace-restore-replay-loop-028",
+      "linked": true
+    },
+    {
+      "registry_id": "cgroup-pressure-metric-desync",
+      "task_dir": "cgroup-pressure-metric-desync",
+      "spec_stem": "cgroup-pressure-metric-desync",
+      "linked": true
+    },
+    {
+      "registry_id": "device-node-lineage-mismatch",
+      "task_dir": "bind-propagation-orphan-inodes",
+      "spec_stem": "device-node-lineage-mismatch-variant-1",
+      "linked": true
+    },
+    {
+      "registry_id": "overlay-lowerdir-stale-bind",
+      "task_dir": "overlay-lowerdir-ghosts",
+      "spec_stem": "bind-propagation-orphan-inodes",
+      "linked": true
+    },
+    {
+      "registry_id": "watchdog-restart-boundary-debug",
+      "task_dir": "watchdog-restart-boundary-debug",
+      "spec_stem": "watchdog-restart-boundary-debug",
+      "linked": true
+    },
+    {
+      "registry_id": "quota-rollback-skew-variant",
+      "task_dir": "rollback-catchup-race-variant-3-recovery-104",
+      "spec_stem": "quota-rollback-skew-variant-1",
+      "linked": true
+    }
+  ]
+}

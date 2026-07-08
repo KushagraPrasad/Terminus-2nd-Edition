@@ -1,0 +1,806 @@
+{
+  "task_name": "archive-repair",
+  "attempt": 1,
+  "best_score": [
+    0,
+    0
+  ],
+  "best_attempt": 1,
+  "plateau_count": 0,
+  "candidates": [],
+  "history": [
+    {
+      "attempt": 1,
+      "fails": 0,
+      "warns": 0,
+      "evidence_path": "specs/.runs/archive-repair/attempt-1-evidence.json",
+      "evidence": {
+        "hardness_axes": [
+          {
+            "id": "discover",
+            "name": "Discover",
+            "verdict": "PASS",
+            "reasoning": "Solver must read split encode/decode/enforce modules, CLI transcripts, and cross-format fixtures to learn which authority surface is authoritative after restarts."
+          },
+          {
+            "id": "synthesize",
+            "name": "Synthesize",
+            "verdict": "PASS",
+            "reasoning": "Correct behavior requires coordinating rollback generation tags, canonical artifact selection, and downstream bind invariants across JSON, TOML, and sealed byte records."
+          },
+          {
+            "id": "diagnose_or_design",
+            "name": "Diagnose or Design/Search",
+            "verdict": "PASS",
+            "reasoning": "Reverse-engineering shape with constraint-complete public targets; agents infer enforcement paths from behavior without a named patch recipe."
+          },
+          {
+            "id": "navigate_coupling",
+            "name": "Navigate coupling",
+            "verdict": "PASS",
+            "reasoning": "Local fixes to one authority path break freshness linkage, principal transitions, or rollback manifest alignment tested in later waves."
+          },
+          {
+            "id": "reason_beyond_training",
+            "name": "Reason beyond training",
+            "verdict": "PASS",
+            "reasoning": "Combines policy reconciliation, split trust boundaries, and replay semantics beyond a single textbook ACL check or regex guard."
+          }
+        ],
+        "anti_trivialization_checks": [
+          {
+            "id": "disclosure_collapse",
+            "name": "Disclosure-collapse",
+            "verdict": "PASS",
+            "reasoning": "After digest and freshness rules are disclosed, work remains integrating three authorities and replay ordering, not transcribing one table."
+          },
+          {
+            "id": "hidden_instance",
+            "name": "Hidden-instance",
+            "verdict": "PASS",
+            "reasoning": "Failure is behavioral across scenarios, not identifying one corrupt file among hundreds."
+          },
+          {
+            "id": "single_artifact_repair",
+            "name": "Single-artifact repair",
+            "verdict": "PASS",
+            "reasoning": "Editing only the output trace or one manifest without source changes fails multi-wave and cross-format tests."
+          },
+          {
+            "id": "generalization",
+            "name": "Generalization",
+            "verdict": "PASS",
+            "reasoning": "Verifier spans multiple replay orderings, restart boundaries, and principal revocation cases."
+          },
+          {
+            "id": "prompt_honesty",
+            "name": "Prompt-honesty",
+            "verdict": "PASS",
+            "reasoning": "Honest constraint-complete prose names outcomes and commands but not which module mis-selects canonical surfaces."
+          },
+          {
+            "id": "cheating_vs_difficulty",
+            "name": "Cheating-vs-difficulty",
+            "verdict": "PASS",
+            "reasoning": "Regeneration deletes and provenance checks are standard fairness, not the core difficulty source."
+          },
+          {
+            "id": "mechanical_fix_filter",
+            "name": "Mechanical-fix filter",
+            "verdict": "PASS",
+            "reasoning": "Issue is authority reconciliation semantics, not timeouts or dependency pins."
+          },
+          {
+            "id": "localized_fix",
+            "name": "Localized-fix",
+            "verdict": "PASS",
+            "reasoning": "Three module roots on distinct package paths participate in the flipping contract."
+          },
+          {
+            "id": "oracle_locality",
+            "name": "Oracle-locality",
+            "verdict": "PASS",
+            "reasoning": "Planned oracle coordinates behavioral edits across rollback, selector, and bind modules."
+          },
+          {
+            "id": "small_declarative_cluster",
+            "name": "Small declarative-cluster",
+            "verdict": "PASS",
+            "reasoning": "No tiny policy table alone captures the fix; procedural flows across authorities interact."
+          },
+          {
+            "id": "grep_collapse",
+            "name": "Grep-collapse",
+            "verdict": "PASS",
+            "reasoning": "Instruction nouns are banned on fix-path symbols; neutral rx/vx/wx package tokens avoid domain grep to one file."
+          },
+          {
+            "id": "pre_factored_helper",
+            "name": "Pre-factored-helper",
+            "verdict": "PASS",
+            "reasoning": "No helper named validate_policy or reconcile_archive maps 1:1 to prompt bullets."
+          },
+          {
+            "id": "recipe_discount",
+            "name": "Recipe-discount",
+            "verdict": "PASS",
+            "reasoning": "Not a textbook jail hardening or HMAC recipe; requires runtime-specific authority inference."
+          },
+          {
+            "id": "security_aura_discount",
+            "name": "Security-aura discount",
+            "verdict": "PASS",
+            "reasoning": "Residual hardness is cross-authority reconciliation and false-green durability, not security vocabulary alone."
+          },
+          {
+            "id": "orthogonal_checklist",
+            "name": "Orthogonal-checklist",
+            "verdict": "PASS",
+            "reasoning": "Rollback tagging constrains which envelope the selector may trust and what bind must preserve across phases."
+          },
+          {
+            "id": "harness_discount",
+            "name": "Harness-discount",
+            "verdict": "PASS",
+            "reasoning": "Single-container Docker is isolation only; difficulty lives in code coupling."
+          },
+          {
+            "id": "one_pass_solvability",
+            "name": "One-pass solvability",
+            "verdict": "PASS",
+            "reasoning": "Agents must run scripted sequences, compare observation records, and revise hypotheses across restarts."
+          },
+          {
+            "id": "hard_only_gate",
+            "name": "Hard-only gate",
+            "verdict": "PASS",
+            "reasoning": "Matches professional policy-engine incident work, not an undergrad checklist exercise."
+          },
+          {
+            "id": "discovery_budget_test",
+            "name": "Discovery/design budget test",
+            "verdict": "PASS",
+            "reasoning": "Discovery budget lists three non-trivial obligations living in environment code paths."
+          },
+          {
+            "id": "instruction_specificity_test",
+            "name": "Instruction specificity test",
+            "verdict": "PASS",
+            "reasoning": "Non-repair reverse_engineering uses constraint-complete public contract; construction recipe stays hidden."
+          },
+          {
+            "id": "topology_distribution_test",
+            "name": "Topology distribution test",
+            "verdict": "PASS",
+            "reasoning": "Three implementation topologies each require three coordinated loci; no single locus suffices for all tests."
+          }
+        ],
+        "rubric_axes": [
+          {
+            "id": "verifiable",
+            "name": "Verifiable",
+            "verdict": "PASS",
+            "reasoning": "Deterministic pytest over regenerated audit traces, derived digests, and cross-run principal transitions."
+          },
+          {
+            "id": "well_specified",
+            "name": "Well-specified",
+            "verdict": "PASS",
+            "reasoning": "Public contract anchors on commands, trace schema, and documented freshness linkage without naming patch sites."
+          },
+          {
+            "id": "solvable",
+            "name": "Solvable",
+            "verdict": "PASS",
+            "reasoning": "Expert human can complete within hours given codebase and audit_contract.md."
+          },
+          {
+            "id": "difficult",
+            "name": "Difficult",
+            "verdict": "PASS",
+            "reasoning": "Split authorities plus false-green intermediate states exceed undergrad scope after honest disclosure."
+          },
+          {
+            "id": "interesting",
+            "name": "Interesting",
+            "verdict": "PASS",
+            "reasoning": "Mirrors paid work on hardened archive gateways and policy reconciliation after checkpointed replays."
+          },
+          {
+            "id": "outcome_verified",
+            "name": "Outcome-verified",
+            "verdict": "PASS",
+            "reasoning": "Grades regenerated observation records, not narrated repair steps or tool choices."
+          }
+        ],
+        "instruction_completeness_test": {
+          "verdict": "PASS",
+          "reasoning": "instruction.md states outcomes, commands, and schema homes, but choosing canonical surfaces and sequencing rollback binds requires reading code and running ark_run scenarios."
+        },
+        "discovery_budget": [
+          {
+            "discovery": "Stale generation counters survive a single process restart while health summaries already report allowed transitions.",
+            "planned_location": "environment/rx/rollback.py and callers in environment/app/entry.py",
+            "why_instruction_must_not_reveal": "Naming the stale counter location collapses search to one grep hit for generation state."
+          },
+          {
+            "discovery": "Which of the live catalog rows, sealed envelope index, or rollback manifest is authoritative when each surface is locally self-consistent.",
+            "planned_location": "environment/vx/selector.py with inputs from environment/vx/store.py",
+            "why_instruction_must_not_reveal": "Stating the canonical surface removes the authority-split inference burden."
+          },
+          {
+            "discovery": "How bind logic must preserve downstream freshness and principal-transition invariants across coupled replay and rollback phases without clobbering durable seals.",
+            "planned_location": "environment/wx/bind.py coordinated with environment/rx/rollback.py",
+            "why_instruction_must_not_reveal": "A bind-only recipe invites a one-module patch that fails restart-boundary tests."
+          }
+        ],
+        "instruction_specificity": {
+          "level": "constraint-complete",
+          "reasoning": "Public instruction names CLI, trace path, principal/freshness obligations, and schema homes; it does not reveal which authority module is wrong or patch order."
+        },
+        "attack_path": {
+          "summary": "Grepping instruction nouns on fix symbols is blocked; trusting health summaries alone fails late-wave linkage; static JSON fails regeneration traps.",
+          "reasoning": "Each shortcut leaves at least one flipping-contract test red while others may briefly pass."
+        },
+        "smallest_plausible_patch": {
+          "summary": "Requires aligning rollback generation persistence, canonical selector inputs, and cross-phase bind rules together.",
+          "reasoning": "Smallest honest English description spans three behavioral roots, not one permission bit or regex."
+        },
+        "collapse_audit": {
+          "verdict": "PASS",
+          "reasoning": "Post-disclosure residual requires reasoning about which authority feeds the verifier under replay, not mapping each public rule to one obvious function after formulas are visible in audit_contract.md.",
+          "residual_hardness": "Even knowing digest linkage formulas, the solver must decide when health summaries may diverge from durable seals and how rollback phases reorder generation markers.",
+          "red_flags": [
+            "avoid naming authoritative artifact path in instruction",
+            "avoid per-scenario allow/deny answer tables",
+            "watch summary-only tests without envelope provenance"
+          ]
+        },
+        "topology_enumeration": [
+          {
+            "id": "topo_rollback_first",
+            "summary": "Correct rollback generation tagging first, then retarget selector inputs, then align bind invariants.",
+            "locations": [
+              "environment/rx/rollback.py",
+              "environment/vx/selector.py",
+              "environment/wx/bind.py"
+            ],
+            "why_no_single_location_suffices": "Rollback-only fixes leave selector trusting the wrong catalog; selector-only fixes leave stale generation after restart; bind-only fixes cannot choose legal envelopes."
+          },
+          {
+            "id": "topo_selector_first",
+            "summary": "Establish canonical surface selection first, then fix generation persistence, then propagate bind rules.",
+            "locations": [
+              "environment/vx/selector.py",
+              "environment/rx/rollback.py",
+              "environment/wx/bind.py"
+            ],
+            "why_no_single_location_suffices": "Selector fixes without rollback still emit stale generation after restart; bind updates without rollback ordering still break rollback-phase tests."
+          },
+          {
+            "id": "topo_bind_first",
+            "summary": "Repair cross-phase bind invariants first and backtrack to selector precedence and rollback counters.",
+            "locations": [
+              "environment/wx/bind.py",
+              "environment/vx/selector.py",
+              "environment/rx/rollback.py"
+            ],
+            "why_no_single_location_suffices": "Bind cannot fix canonical choice if selector remains biased; rollback timing still poisons generation markers without rx changes."
+          }
+        ],
+        "construction_manifest": {
+          "symbol_table": [
+            {
+              "path": "environment/rx/rollback.py",
+              "symbol": "op_a",
+              "kind": "function",
+              "signature": "op_a(ctx, phase_id, seq_bundle)",
+              "purpose": "Tracks generation markers across replay and rollback segments for downstream readers."
+            },
+            {
+              "path": "environment/vx/selector.py",
+              "symbol": "reconcile_b",
+              "kind": "function",
+              "signature": "reconcile_b(store_handle, view_handle, mode_flag)",
+              "purpose": "Chooses reconciler inputs among catalog, envelope index, and manifest views."
+            },
+            {
+              "path": "environment/wx/bind.py",
+              "symbol": "phase_c",
+              "kind": "function",
+              "signature": "phase_c(trace_row, envelope_bytes, policy_id)",
+              "purpose": "Materializes externally visible digest rows and principal transition records."
+            }
+          ],
+          "flipping_point_contract": {
+            "locations": [
+              {
+                "id": "A",
+                "path": "environment/rx/rollback.py",
+                "controls_tests": [
+                  "test_m7_qz_emit",
+                  "test_n4_pl_pair"
+                ]
+              },
+              {
+                "id": "B",
+                "path": "environment/vx/selector.py",
+                "controls_tests": [
+                  "test_idempo_dup",
+                  "test_f2_kx_cycle"
+                ]
+              },
+              {
+                "id": "C",
+                "path": "environment/wx/bind.py",
+                "controls_tests": [
+                  "test_lane_bind",
+                  "test_fork_x9"
+                ]
+              }
+            ],
+            "no_single_location_flips_majority": true,
+            "concentration_cap": 0.5
+          },
+          "decoy_manifest": [
+            {
+              "path": "environment/rx/shadow_clip.py",
+              "kind": "module",
+              "rhymes_with": "op_a",
+              "non_fix_purpose": "Optional clip helper for diagnostics-only replay slices."
+            },
+            {
+              "path": "environment/vx/side_index.py",
+              "kind": "helper",
+              "rhymes_with": "reconcile_b",
+              "non_fix_purpose": "Maintains a historical side index not used for live canonical selection."
+            }
+          ],
+          "code_forbidden_tokens": [
+            "gateway",
+            "policy",
+            "checkpoint",
+            "replays",
+            "audit",
+            "restart",
+            "rollback",
+            "health",
+            "summaries",
+            "allowed",
+            "durable",
+            "seal",
+            "markers",
+            "trace",
+            "bundles",
+            "verifier",
+            "digest",
+            "catalog",
+            "envelope",
+            "manifest",
+            "linkage",
+            "waves",
+            "principal",
+            "transitions",
+            "freshness",
+            "tokens",
+            "generation",
+            "counts"
+          ]
+        },
+        "naming_pass": {
+          "instruction_nouns_extracted": [
+            "gateway",
+            "policy",
+            "checkpoint",
+            "replays",
+            "audit",
+            "restart",
+            "rollback",
+            "health",
+            "summaries",
+            "allowed",
+            "durable",
+            "seal",
+            "markers",
+            "trace",
+            "bundles",
+            "verifier",
+            "digest",
+            "catalog",
+            "envelope",
+            "manifest",
+            "linkage",
+            "waves",
+            "principal",
+            "transitions",
+            "freshness",
+            "tokens",
+            "generation",
+            "counts"
+          ],
+          "renames_during_drafting": [
+            {
+              "original": "test_audit_restart_generation",
+              "renamed_to": "test_m7_qz_emit",
+              "reason": "Original name embedded audit, restart, and generation instruction nouns."
+            }
+          ],
+          "test_names_audited": [
+            "test_m7_qz_emit",
+            "test_n4_pl_pair",
+            "test_idempo_dup",
+            "test_f2_kx_cycle",
+            "test_lane_bind",
+            "test_fork_x9"
+          ],
+          "concentration_math": {
+            "total_tests": 6,
+            "per_location": [
+              {
+                "location_id": "A",
+                "test_count": 2,
+                "ratio": 0.3333333333333333
+              },
+              {
+                "location_id": "B",
+                "test_count": 2,
+                "ratio": 0.3333333333333333
+              },
+              {
+                "location_id": "C",
+                "test_count": 2,
+                "ratio": 0.3333333333333333
+              }
+            ]
+          },
+          "recomputed_concentration": {
+            "total_tests": 6,
+            "concentration_cap": 0.5,
+            "per_location": [
+              {
+                "location_id": "A",
+                "test_count": 2,
+                "ratio": 0.3333333333333333
+              },
+              {
+                "location_id": "B",
+                "test_count": 2,
+                "ratio": 0.3333333333333333
+              },
+              {
+                "location_id": "C",
+                "test_count": 2,
+                "ratio": 0.3333333333333333
+              }
+            ]
+          }
+        },
+        "difficulty_mechanism_plan": [
+          {
+            "mechanism": "environment_specific_cli_semantics",
+            "placement": "ark_run scenario flags control restart injection and rollback phase ordering documented in audit_contract.md",
+            "why_model_misses_it": "models assume generic CLI success codes imply durable reconciliation",
+            "fairness_guardrail": "flag meanings and scenario matrix are fully documented locally"
+          },
+          {
+            "mechanism": "cross_file_cross_format_invariants",
+            "placement": "JSON audit traces, TOML bundles, and sealed byte envelopes must agree on digest linkage",
+            "why_model_misses_it": "editing one format leaves orphans that still pass shallow checks",
+            "fairness_guardrail": "cross-format rules are in audit_contract.md with worked examples"
+          },
+          {
+            "mechanism": "false_green_intermediate_states",
+            "placement": "early waves show allowed health summaries while durable seals and later-wave linkages disagree",
+            "why_model_misses_it": "agents stop after first green health summary without chaining reruns",
+            "fairness_guardrail": "failing behavior visible through documented command and trace fields"
+          },
+          {
+            "mechanism": "rollback_recovery_requirements",
+            "placement": "rollback phases require idempotent merges without clobbering durable seals or principal transitions",
+            "why_model_misses_it": "shortcut flush fixes one rerun but breaks another rollback scenario",
+            "fairness_guardrail": "deterministic fixtures with seeded ordering"
+          }
+        ],
+        "calibration_plan": {
+          "oracle_runs": 3,
+          "no_op_runs": 3,
+          "target_agent_runs": 5,
+          "comparator_agent_runs": 5,
+          "human_sanity": "Expert can trace three roots using audit traces and audit_contract.md within a few hours",
+          "shortcut_audit": "watch for static JSON writes, digest hardcoding, test edits, NOP oracle gaming",
+          "ablation_plan": "drop rollback fix alone, drop selector fix alone, drop bind fix alone to show partial failures",
+          "pass_rate_target": {
+            "hard_max_pct": 20,
+            "too_easy_threshold_pct": 80,
+            "basis": "stronger target agent on identical Harbor harness"
+          }
+        },
+        "verifier_scoring_plan": {
+          "metrics": [
+            {
+              "metric": "functional_correctness",
+              "weight": 0.45,
+              "criterion": "trace digests and principal transitions match regenerated derivations from public rules"
+            },
+            {
+              "metric": "hidden_invariants",
+              "weight": 0.25,
+              "criterion": "cross-wave freshness and generation invariants hold under reruns and rollback"
+            },
+            {
+              "metric": "state_hygiene",
+              "weight": 0.15,
+              "criterion": "no stale catalog fields after rollback completes"
+            },
+            {
+              "metric": "interface_correctness",
+              "weight": 0.1,
+              "criterion": "ark_run CLI and paths behave as documented across scenarios"
+            },
+            {
+              "metric": "deliverable_completeness",
+              "weight": 0.05,
+              "criterion": "all required trace sections populated without hand edits"
+            }
+          ],
+          "overall_threshold": 0.999,
+          "reward_output": "reward.txt",
+          "binary_threshold_rule": "reward.txt equals 1 only when every weighted semantic check passes in test_outputs.py"
+        },
+        "subtype_milestone_plan": {
+          "subcategories": [],
+          "milestone_count": 0,
+          "sequential_dependency": "single-step task; ordering expressed via stateful command sequences inside tests",
+          "local_only_data": true,
+          "sidecar_or_protocol_notes": "all fixtures and traces are local; single-container only; no network fetch"
+        },
+        "platform_files": [
+          {
+            "path": "task.toml",
+            "role": "Edition 2 metadata"
+          },
+          {
+            "path": "instruction.md",
+            "role": "natural public task prompt"
+          },
+          {
+            "path": "output_contract.toml",
+            "role": "repo-local output declaration"
+          },
+          {
+            "path": "tests/test.sh",
+            "role": "verifier entrypoint"
+          },
+          {
+            "path": "tests/test_outputs.py",
+            "role": "domain verifier"
+          },
+          {
+            "path": "solution/solve.sh",
+            "role": "oracle"
+          },
+          {
+            "path": "environment/Dockerfile",
+            "role": "build definition"
+          },
+          {
+            "path": "construction_manifest.json",
+            "role": "local authoring artifact"
+          }
+        ],
+        "task_files": [
+          {
+            "path": "environment/runner.py",
+            "role": "regenerates audit_trace.json through ark_run scenarios"
+          },
+          {
+            "path": "environment/app/__init__.py",
+            "role": "package marker"
+          },
+          {
+            "path": "environment/app/entry.py",
+            "role": "command dispatch and scenario orchestration"
+          },
+          {
+            "path": "environment/app/flow.py",
+            "role": "normalizes run records for audit traces"
+          },
+          {
+            "path": "environment/rx/__init__.py",
+            "role": "package marker"
+          },
+          {
+            "path": "environment/rx/rollback.py",
+            "role": "fix-frontier generation tracking across replay boundaries"
+          },
+          {
+            "path": "environment/rx/phase_hook.py",
+            "role": "rollback phase ordering hooks"
+          },
+          {
+            "path": "environment/rx/shadow_clip.py",
+            "role": "decoy clip helper"
+          },
+          {
+            "path": "environment/vx/__init__.py",
+            "role": "package marker"
+          },
+          {
+            "path": "environment/vx/selector.py",
+            "role": "fix-frontier canonical surface selection"
+          },
+          {
+            "path": "environment/vx/store.py",
+            "role": "durable envelope persistence"
+          },
+          {
+            "path": "environment/vx/side_index.py",
+            "role": "decoy side index helper"
+          },
+          {
+            "path": "environment/wx/__init__.py",
+            "role": "package marker"
+          },
+          {
+            "path": "environment/wx/bind.py",
+            "role": "fix-frontier digest and principal transition emission"
+          },
+          {
+            "path": "environment/wx/frame.py",
+            "role": "trace framing helpers"
+          },
+          {
+            "path": "environment/wx/archive_lane.py",
+            "role": "non-fix historical writer lane"
+          },
+          {
+            "path": "environment/app/core/__init__.py",
+            "role": "package marker"
+          },
+          {
+            "path": "environment/app/core/types.py",
+            "role": "shared value objects for principals and seals"
+          },
+          {
+            "path": "environment/app/core/checks.py",
+            "role": "consistency checks used by runner"
+          },
+          {
+            "path": "environment/app/readers/basefile.py",
+            "role": "fixture reader"
+          },
+          {
+            "path": "environment/app/readers/bundlefile.py",
+            "role": "policy bundle fixture reader"
+          },
+          {
+            "path": "environment/app/data/bundles.toml",
+            "role": "policy bundle fixture"
+          },
+          {
+            "path": "environment/app/data/principals.json",
+            "role": "principal and revocation fixture"
+          },
+          {
+            "path": "environment/app/docs/audit_contract.md",
+            "role": "solver-visible trace schema, digest rules, CLI semantics"
+          },
+          {
+            "path": "environment/app/docs/operators.md",
+            "role": "operational context without patch guidance"
+          },
+          {
+            "path": "environment/app/tools/inspect.py",
+            "role": "diagnostic helper"
+          },
+          {
+            "path": "environment/app/tools/sample_env.sh",
+            "role": "example setup"
+          }
+        ],
+        "fix_frontier": {
+          "count": 3,
+          "distribution": "one module each under environment/rx, environment/vx, and environment/wx",
+          "naming_policy": "opaque fix-path symbols per construction manifest; neutral rx/vx/wx package directories",
+          "forbidden_stems": [
+            "gateway",
+            "policy",
+            "checkpoint",
+            "replays",
+            "audit",
+            "restart",
+            "rollback",
+            "health",
+            "summaries",
+            "allowed",
+            "durable",
+            "seal",
+            "markers",
+            "trace",
+            "bundles",
+            "verifier",
+            "digest",
+            "catalog",
+            "envelope",
+            "manifest",
+            "linkage",
+            "waves",
+            "principal",
+            "transitions",
+            "freshness",
+            "tokens",
+            "generation",
+            "counts"
+          ],
+          "helpers_policy": "decoy modules perform plausible sibling work; fix-path symbols remain thin",
+          "symbol_thin_preferred": true
+        },
+        "contract_surface": {
+          "boolean_fields_max": 0,
+          "direct_boolean_assertions_max": 0,
+          "preferred_assertion_styles": [
+            "audit trace runs and waves",
+            "cross-run digest identities",
+            "principal transition chains",
+            "metamorphic clean-vs-replay comparisons",
+            "idempotence reruns",
+            "freshness token provenance"
+          ],
+          "forbidden_assertion_styles": [
+            "boolean answer keys",
+            "scenario-to-value truth tables in instruction",
+            "tests that only assert JSON presence"
+          ]
+        },
+        "task_shape": {
+          "type": "reverse_engineering",
+          "instruction_framing": "constraint-complete",
+          "hardness_source": "semantic inference across split encode/decode/enforce authorities with false-green durability",
+          "collapse_risk": "leaking replay ordering bug or authoritative artifact path collapses to one-file repair"
+        },
+        "category_profile": {
+          "challenge_family": "policy reconciliation",
+          "profile_name": "security_authority_split",
+          "allowed_instruction_disclosures": "assets, principals, allowed/denied outcomes, audit trace command and path, authority boundary description, externally tested freshness and digest linkage summarized without patch hints",
+          "forbidden_instruction_leaks": "vulnerable sink location, trust-boundary implementation file, exploit primitive, patch rule, sanitizer name, exact guard function, or which surface is canonical by default",
+          "category_specific_hardness_bar": "encode/decode/enforce authorities must reconcile under changing principals, freshness, and revocation across replay boundaries",
+          "category_specific_verifier_risks": "toy checklist, blocklist bypass, one exploit-string test, process-only assertions without durable seal checks",
+          "coverage_role": "Adds security_authority_split coverage with policy reconciliation and reverse_engineering shape distinct from config_policy_precedence references"
+        },
+        "satisfiability_risk": {
+          "rc2_planned_name_risk": "medium: neutral rx/vx/wx roots with decoys; instruction uses standard security vocabulary kept off fix path",
+          "gx9_contract_risk": "low: instruction discloses schema and derivation rules, not per-row expected literals",
+          "cr1_symbol_frontier_risk": "medium: three thin fix symbols with co-resident helpers listed in task_files",
+          "hidden_contract_risk": "low: verifier command, regeneration rule, and digest formulas planned in audit_contract.md and instruction summary"
+        },
+        "actionability_plan": {
+          "verifier_command_visible": "instruction.md names /app/bin/ark_run, /app/output/audit_trace.json, and pytest entry via tests/test.sh",
+          "source_fix_intent_visible": "instruction.md requires repairing /app/environment so the normal pipeline regenerates the trace",
+          "generated_output_rule_visible": "instruction.md states tests delete audit_trace.json and rerun generation across restart and rollback scenarios",
+          "exact_formula_home": "digest linkage, freshness token binding, and generation count rules in environment/app/docs/audit_contract.md mirrored at high level in instruction.md",
+          "schema_home": "audit trace top-level shape (runs, waves, principal_transitions, digest_records) in audit_contract.md"
+        },
+        "waiver_plan": {
+          "waivers_expected": false,
+          "waiver_rationale": "Design stays within standard collapse, actionability, and output-contract policy without checker false positives."
+        },
+        "reference_pattern": {
+          "reference_task_id": "layered-policy-reload-drift"
+        },
+        "realism_source": {
+          "source_type": "real_system",
+          "evidence_basis": "Minimized from operator incidents on hardened archive gateways where health probes green early while sealed generation state and audit digests diverge after checkpointed replays",
+          "upstream_or_synthetic_rationale": "Pattern matches internal postmortems on split authority stores in policy engines; local fixtures replace proprietary payloads",
+          "minimization_preserves": "False-green intermediate states, stale generation across one restart, conflicting artifact surfaces, and rollback/replay coupled invariants",
+          "synthetic_exception_review": "Not a synthetic_exception; real_system minimization with documented causal structure"
+        }
+      },
+      "evidence_errors": [],
+      "evidence_warnings": [],
+      "blocking_failures": [],
+      "strict": true
+    }
+  ],
+  "schema_path": "specs/validation_schema.json",
+  "emit_legacy_reviewer": false
+}

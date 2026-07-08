@@ -1,0 +1,3 @@
+[channel]
+id = "rollup"
+mode = "batch"

@@ -1,0 +1,13 @@
+# Rubric 1
+Agent reads /app/environment/docs/k4_contract.md and inspects forge/, lane/, frame/, and internal/loader sources before editing carry, phase, or hook scheduling, +2
+Agent rebuilds /app/environment/bin/m8_driver with bash /app/environment/scripts/build_driver.sh after Go edits under /app/environment, +3
+Agent repairs carry and index sources so P3 object_stamp uses the rolling in-run carry chain across wave_a, wave_b, and wave_c rather than stale on-disk carry, +5
+Agent repairs internal/loader scheduling so read_order respects dependency edges with deferred nodes revisited after prerequisites visit, +3
+Agent repairs lane/phase ordering so phase_journal lists blob lane B before object lane O on profile P3 when phase_hint is at least two, +3
+Agent repairs frame hook orchestration so hook_gen equals blob_epoch drives avail_metric 1.0 and loader trace reads align with manifest rows, +3
+Agent repairs internal/replay gate and internal/ledger rev logic so identical manifest fingerprints keep frozen_rev stable without extra rev bumps on carry reuse, +3
+Agent reruns bash /app/environment/run_driver.sh and inspects regenerated /app/output/staging_manifest.json, phase_journal.json, and loader_trace.json, +2
+Agent writes staging_manifest.json, phase_journal.json, or loader_trace.json directly under /app/output without fixing Go sources under /app/environment, -5
+Agent replaces /app/environment/bin/m8_driver with a shell or Python shim instead of a compiled Go binary from build_driver.sh, -5
+Agent modifies /app/environment/fixtures/k6preserve/ or /app/environment/fixtures/waves/ to game stamps, ordering, or witness notes, -5
+Agent edits tests/, solution/, or only run_driver.sh without repairing the Go pipeline under /app/environment, -3

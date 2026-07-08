@@ -1,0 +1,5 @@
+[segments]
+default = "ladder"
+
+[ladder]
+notes = "fixture table for bundled remat case ids"

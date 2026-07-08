@@ -1,0 +1,12 @@
+# Rubric 1
+Agent reads /app/environment/c4/k4_pack.md and /app/environment/c4/k4_rules.md before editing w2 packaging or v5 verification scripts, +2
+Agent repairs v5/p3/topo_gate.sh so zfs and legacy profiles reject pivot_a lane tags during probe grading while nvme keeps pivot topology, +3
+Agent repairs c4/k2/ctl_k.sh op_a so bind_rows target each profile root_prefix with pivot_a and pivot_b lanes instead of host fixture prefixes, +3
+Agent repairs w2/m2/m_phase.sh phase_b so each /app/output/work/<profile>/link.bin is 64 bytes with R0LD header, version 01 00, and null-terminated root_prefix at byte offset six, +3
+Agent repairs v5/p2/assemble_p.sh reconcile_c so devnode_count comes from /app/environment/d3/p1_overrides.json count or floor.json floor_nodes length when overrides are missing, +3
+Agent repairs w2/k3/bind_rows.sh and c4/k2/roll_k.sh so bind row counts and witness metric rolls match per-profile lane_count and observation sums, +3
+Agent runs bash /app/environment/m7/mig7.sh --idem-restore then bash /app/environment/w2/run_entry.sh and /app/environment/v5/rc_verify --all-profiles, +2
+Agent mutates the read-only host fixture tree under /app/environment/h0/fixture including etc/os-release identity, -5
+Agent writes pack_out.json or run_report.json directly under /app/output without running the w2 bash pipeline, -5
+Agent edits tests/, solution/, or rc_verify wrappers without repairing bash sources under /app/environment/w2 or /app/environment/c4, -3
+Agent skips mig7 idem-restore after destructive migration and grades the all-profiles matrix on poisoned override storage, -2

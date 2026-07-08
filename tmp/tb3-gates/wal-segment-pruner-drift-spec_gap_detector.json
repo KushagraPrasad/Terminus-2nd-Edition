@@ -1,0 +1,13 @@
+{
+  "findings": [],
+  "gap_count": 0,
+  "status": "PASS",
+  "strict": false,
+  "summary": {
+    "fail": 0,
+    "pass": 1,
+    "warn": 0
+  },
+  "task_dir": "tasks/wal-segment-pruner-drift",
+  "vague_requirement_count": 0
+}

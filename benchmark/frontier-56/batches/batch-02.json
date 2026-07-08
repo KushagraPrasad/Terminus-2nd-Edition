@@ -1,0 +1,53 @@
+{
+  "batch": 2,
+  "tasks": [
+    {
+      "registry_id": "move-budget-sokoban-variant-ladder",
+      "task_dir": "move-budget-solver",
+      "spec_stem": "move-budget-solver",
+      "linked": true
+    },
+    {
+      "registry_id": "procedural-level-seed-replay",
+      "task_dir": "scheduler-seed-replay-injector",
+      "spec_stem": "scheduler-seed-replay-injector",
+      "linked": true
+    },
+    {
+      "registry_id": "game-logic-invariant-model-check",
+      "task_dir": "happens-before-model-check",
+      "spec_stem": "game-logic-invariant-model-check",
+      "linked": true
+    },
+    {
+      "registry_id": "input-remap-variant-ladder",
+      "task_dir": "input-remap-variant-ladder",
+      "spec_stem": "input-remap-variant-ladder",
+      "linked": true
+    },
+    {
+      "registry_id": "aead-nonce-reuse-recovery",
+      "task_dir": null,
+      "spec_stem": "rollback-catchup-race-variant-3-recovery-104",
+      "linked": false
+    },
+    {
+      "registry_id": "crypto-agility-variant-ladder",
+      "task_dir": "codec-framing-variant-ladder",
+      "spec_stem": "codec-framing-variant-ladder",
+      "linked": true
+    },
+    {
+      "registry_id": "threshold-signature-shard-mismatch",
+      "task_dir": "sampler-shard-divergence-repair",
+      "spec_stem": "sampler-shard-divergence-repair",
+      "linked": true
+    },
+    {
+      "registry_id": "encrypted-backup-header-parse",
+      "task_dir": null,
+      "spec_stem": null,
+      "linked": false
+    }
+  ]
+}

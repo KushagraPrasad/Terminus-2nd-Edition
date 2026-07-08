@@ -1,0 +1,13 @@
+{
+  "phases": [
+    {
+      "label": "alpha",
+      "slots": [{ "artifact": "slot-a" }, { "artifact": "slot-b" }]
+    },
+    {
+      "label": "beta",
+      "cleanup": true,
+      "slots": [{ "artifact": "slot-c" }, { "artifact": "slot-d" }]
+    }
+  ]
+}

@@ -1,0 +1,548 @@
+{
+  "items": [
+    {
+      "classification": "visible_requirement_found",
+      "home": "instruction.md",
+      "kind": "direct_library_call",
+      "location": "tests/test_outputs.py:1",
+      "remediation": "No public-contract change needed.",
+      "severity": "PASS",
+      "value": "__future__"
+    },
+    {
+      "classification": "allowed_hidden_verification_detail",
+      "home": null,
+      "kind": "string_literal",
+      "location": "tests/test_outputs.py:112",
+      "remediation": "No public-contract change needed.",
+      "severity": "PASS",
+      "value": "00"
+    },
+    {
+      "classification": "visible_requirement_found",
+      "home": "environment/app/docs/recovery_contract.md",
+      "kind": "cardinality",
+      "location": "tests/test_outputs.py:259",
+      "remediation": "Document exact tested lengths, sizes, and cardinalities.",
+      "severity": "PASS",
+      "value": "10"
+    },
+    {
+      "classification": "visible_requirement_found",
+      "home": "environment/app/docs/recovery_contract.md",
+      "kind": "cardinality",
+      "location": "tests/test_outputs.py:286",
+      "remediation": "Document exact tested lengths, sizes, and cardinalities.",
+      "severity": "PASS",
+      "value": "1"
+    },
+    {
+      "classification": "allowed_hidden_verification_detail",
+      "home": null,
+      "kind": "string_literal",
+      "location": "tests/test_outputs.py:288",
+      "remediation": "No public-contract change needed.",
+      "severity": "PASS",
+      "value": "i77"
+    },
+    {
+      "classification": "visible_requirement_found",
+      "home": "environment/app/docs/recovery_contract.md",
+      "kind": "cardinality",
+      "location": "tests/test_outputs.py:304",
+      "remediation": "Document exact tested lengths, sizes, and cardinalities.",
+      "severity": "PASS",
+      "value": "1"
+    },
+    {
+      "classification": "allowed_hidden_verification_detail",
+      "home": null,
+      "kind": "string_literal",
+      "location": "tests/test_outputs.py:306",
+      "remediation": "No public-contract change needed.",
+      "severity": "PASS",
+      "value": "leased"
+    },
+    {
+      "classification": "allowed_hidden_verification_detail",
+      "home": null,
+      "kind": "string_literal",
+      "location": "tests/test_outputs.py:308",
+      "remediation": "No public-contract change needed.",
+      "severity": "PASS",
+      "value": "w1"
+    },
+    {
+      "classification": "visible_requirement_found",
+      "home": "environment/app/docs/recovery_contract.md",
+      "kind": "cardinality",
+      "location": "tests/test_outputs.py:309",
+      "remediation": "Document exact tested lengths, sizes, and cardinalities.",
+      "severity": "PASS",
+      "value": "0"
+    },
+    {
+      "classification": "allowed_hidden_verification_detail",
+      "home": null,
+      "kind": "string_literal",
+      "location": "tests/test_outputs.py:319",
+      "remediation": "No public-contract change needed.",
+      "severity": "PASS",
+      "value": "leased"
+    },
+    {
+      "classification": "allowed_hidden_verification_detail",
+      "home": null,
+      "kind": "string_literal",
+      "location": "tests/test_outputs.py:321",
+      "remediation": "No public-contract change needed.",
+      "severity": "PASS",
+      "value": "w1"
+    },
+    {
+      "classification": "allowed_hidden_verification_detail",
+      "home": null,
+      "kind": "string_literal",
+      "location": "tests/test_outputs.py:346",
+      "remediation": "No public-contract change needed.",
+      "severity": "PASS",
+      "value": "done"
+    },
+    {
+      "classification": "allowed_hidden_verification_detail",
+      "home": null,
+      "kind": "string_literal",
+      "location": "tests/test_outputs.py:348",
+      "remediation": "No public-contract change needed.",
+      "severity": "PASS",
+      "value": ""
+    },
+    {
+      "classification": "allowed_hidden_verification_detail",
+      "home": null,
+      "kind": "string_literal",
+      "location": "tests/test_outputs.py:360",
+      "remediation": "No public-contract change needed.",
+      "severity": "PASS",
+      "value": "queued"
+    },
+    {
+      "classification": "allowed_hidden_verification_detail",
+      "home": null,
+      "kind": "string_literal",
+      "location": "tests/test_outputs.py:362",
+      "remediation": "No public-contract change needed.",
+      "severity": "PASS",
+      "value": ""
+    },
+    {
+      "classification": "allowed_hidden_verification_detail",
+      "home": null,
+      "kind": "string_literal",
+      "location": "tests/test_outputs.py:379",
+      "remediation": "No public-contract change needed.",
+      "severity": "PASS",
+      "value": "w1"
+    },
+    {
+      "classification": "allowed_hidden_verification_detail",
+      "home": null,
+      "kind": "string_literal",
+      "location": "tests/test_outputs.py:393",
+      "remediation": "No public-contract change needed.",
+      "severity": "PASS",
+      "value": "done"
+    },
+    {
+      "classification": "allowed_hidden_verification_detail",
+      "home": null,
+      "kind": "string_literal",
+      "location": "tests/test_outputs.py:403",
+      "remediation": "No public-contract change needed.",
+      "severity": "PASS",
+      "value": "queued"
+    },
+    {
+      "classification": "allowed_hidden_verification_detail",
+      "home": null,
+      "kind": "string_literal",
+      "location": "tests/test_outputs.py:405",
+      "remediation": "No public-contract change needed.",
+      "severity": "PASS",
+      "value": ""
+    },
+    {
+      "classification": "visible_requirement_found",
+      "home": "environment/app/docs/recovery_contract.md",
+      "kind": "output_key",
+      "location": "tests/test_outputs.py:117",
+      "remediation": "Give asserted output keys a visible schema home.",
+      "severity": "PASS",
+      "value": "applied_events"
+    },
+    {
+      "classification": "visible_requirement_found",
+      "home": "environment/app/docs/recovery_contract.md",
+      "kind": "output_key",
+      "location": "tests/test_outputs.py:118",
+      "remediation": "Give asserted output keys a visible schema home.",
+      "severity": "PASS",
+      "value": "duplicate_events"
+    },
+    {
+      "classification": "visible_requirement_found",
+      "home": "environment/app/docs/recovery_contract.md",
+      "kind": "output_key",
+      "location": "tests/test_outputs.py:119",
+      "remediation": "Give asserted output keys a visible schema home.",
+      "severity": "PASS",
+      "value": "moved_jobs"
+    },
+    {
+      "classification": "visible_requirement_found",
+      "home": "environment/app/docs/recovery_contract.md",
+      "kind": "output_key",
+      "location": "tests/test_outputs.py:134",
+      "remediation": "Give asserted output keys a visible schema home.",
+      "severity": "PASS",
+      "value": "applied_events"
+    },
+    {
+      "classification": "visible_requirement_found",
+      "home": "environment/app/docs/recovery_contract.md",
+      "kind": "output_key",
+      "location": "tests/test_outputs.py:135",
+      "remediation": "Give asserted output keys a visible schema home.",
+      "severity": "PASS",
+      "value": "invalid_events"
+    },
+    {
+      "classification": "visible_requirement_found",
+      "home": "environment/app/docs/recovery_contract.md",
+      "kind": "output_key",
+      "location": "tests/test_outputs.py:157",
+      "remediation": "Give asserted output keys a visible schema home.",
+      "severity": "PASS",
+      "value": "applied_events"
+    },
+    {
+      "classification": "visible_requirement_found",
+      "home": "environment/app/docs/recovery_contract.md",
+      "kind": "output_key",
+      "location": "tests/test_outputs.py:158",
+      "remediation": "Give asserted output keys a visible schema home.",
+      "severity": "PASS",
+      "value": "invalid_events"
+    },
+    {
+      "classification": "visible_requirement_found",
+      "home": "environment/app/docs/recovery_contract.md",
+      "kind": "output_key",
+      "location": "tests/test_outputs.py:189",
+      "remediation": "Give asserted output keys a visible schema home.",
+      "severity": "PASS",
+      "value": "applied_events"
+    },
+    {
+      "classification": "visible_requirement_found",
+      "home": "environment/app/docs/recovery_contract.md",
+      "kind": "output_key",
+      "location": "tests/test_outputs.py:190",
+      "remediation": "Give asserted output keys a visible schema home.",
+      "severity": "PASS",
+      "value": "invalid_events"
+    },
+    {
+      "classification": "visible_requirement_found",
+      "home": "environment/app/docs/recovery_contract.md",
+      "kind": "output_key",
+      "location": "tests/test_outputs.py:191",
+      "remediation": "Give asserted output keys a visible schema home.",
+      "severity": "PASS",
+      "value": "expired_jobs"
+    },
+    {
+      "classification": "visible_requirement_found",
+      "home": "instruction.md",
+      "kind": "output_key",
+      "location": "tests/test_outputs.py:192",
+      "remediation": "Give asserted output keys a visible schema home.",
+      "severity": "PASS",
+      "value": "shards"
+    },
+    {
+      "classification": "visible_requirement_found",
+      "home": "environment/app/docs/recovery_contract.md",
+      "kind": "output_key",
+      "location": "tests/test_outputs.py:211",
+      "remediation": "Give asserted output keys a visible schema home.",
+      "severity": "PASS",
+      "value": "expired_jobs"
+    },
+    {
+      "classification": "visible_requirement_found",
+      "home": "environment/app/docs/recovery_contract.md",
+      "kind": "output_key",
+      "location": "tests/test_outputs.py:212",
+      "remediation": "Give asserted output keys a visible schema home.",
+      "severity": "PASS",
+      "value": "expired_jobs"
+    },
+    {
+      "classification": "visible_requirement_found",
+      "home": "environment/app/docs/recovery_contract.md",
+      "kind": "output_key",
+      "location": "tests/test_outputs.py:260",
+      "remediation": "Give asserted output keys a visible schema home.",
+      "severity": "PASS",
+      "value": "duplicate_events"
+    },
+    {
+      "classification": "visible_requirement_found",
+      "home": "environment/app/docs/recovery_contract.md",
+      "kind": "output_key",
+      "location": "tests/test_outputs.py:261",
+      "remediation": "Give asserted output keys a visible schema home.",
+      "severity": "PASS",
+      "value": "invalid_events"
+    },
+    {
+      "classification": "visible_requirement_found",
+      "home": "environment/app/docs/recovery_contract.md",
+      "kind": "output_key",
+      "location": "tests/test_outputs.py:262",
+      "remediation": "Give asserted output keys a visible schema home.",
+      "severity": "PASS",
+      "value": "moved_jobs"
+    },
+    {
+      "classification": "visible_requirement_found",
+      "home": "instruction.md",
+      "kind": "output_key",
+      "location": "tests/test_outputs.py:263",
+      "remediation": "Give asserted output keys a visible schema home.",
+      "severity": "PASS",
+      "value": "shards"
+    },
+    {
+      "classification": "visible_requirement_found",
+      "home": "environment/app/docs/recovery_contract.md",
+      "kind": "output_key",
+      "location": "tests/test_outputs.py:292",
+      "remediation": "Give asserted output keys a visible schema home.",
+      "severity": "PASS",
+      "value": "moved_jobs"
+    },
+    {
+      "classification": "visible_requirement_found",
+      "home": "environment/app/docs/recovery_contract.md",
+      "kind": "output_key",
+      "location": "tests/test_outputs.py:310",
+      "remediation": "Give asserted output keys a visible schema home.",
+      "severity": "PASS",
+      "value": "moved_jobs"
+    },
+    {
+      "classification": "visible_requirement_found",
+      "home": "environment/app/docs/recovery_contract.md",
+      "kind": "output_key",
+      "location": "tests/test_outputs.py:326",
+      "remediation": "Give asserted output keys a visible schema home.",
+      "severity": "PASS",
+      "value": "applied_events"
+    },
+    {
+      "classification": "visible_requirement_found",
+      "home": "environment/app/docs/recovery_contract.md",
+      "kind": "output_key",
+      "location": "tests/test_outputs.py:327",
+      "remediation": "Give asserted output keys a visible schema home.",
+      "severity": "PASS",
+      "value": "invalid_events"
+    },
+    {
+      "classification": "visible_requirement_found",
+      "home": "environment/app/docs/recovery_contract.md",
+      "kind": "output_key",
+      "location": "tests/test_outputs.py:337",
+      "remediation": "Give asserted output keys a visible schema home.",
+      "severity": "PASS",
+      "value": "applied_events"
+    },
+    {
+      "classification": "visible_requirement_found",
+      "home": "environment/app/docs/recovery_contract.md",
+      "kind": "output_key",
+      "location": "tests/test_outputs.py:351",
+      "remediation": "Give asserted output keys a visible schema home.",
+      "severity": "PASS",
+      "value": "applied_events"
+    },
+    {
+      "classification": "visible_requirement_found",
+      "home": "environment/app/docs/recovery_contract.md",
+      "kind": "output_key",
+      "location": "tests/test_outputs.py:365",
+      "remediation": "Give asserted output keys a visible schema home.",
+      "severity": "PASS",
+      "value": "applied_events"
+    },
+    {
+      "classification": "visible_requirement_found",
+      "home": "environment/app/docs/recovery_contract.md",
+      "kind": "output_key",
+      "location": "tests/test_outputs.py:380",
+      "remediation": "Give asserted output keys a visible schema home.",
+      "severity": "PASS",
+      "value": "applied_events"
+    },
+    {
+      "classification": "visible_requirement_found",
+      "home": "environment/app/docs/recovery_contract.md",
+      "kind": "output_key",
+      "location": "tests/test_outputs.py:381",
+      "remediation": "Give asserted output keys a visible schema home.",
+      "severity": "PASS",
+      "value": "duplicate_events"
+    },
+    {
+      "classification": "visible_requirement_found",
+      "home": "environment/app/docs/recovery_contract.md",
+      "kind": "output_key",
+      "location": "tests/test_outputs.py:394",
+      "remediation": "Give asserted output keys a visible schema home.",
+      "severity": "PASS",
+      "value": "applied_events"
+    },
+    {
+      "classification": "visible_requirement_found",
+      "home": "environment/app/docs/recovery_contract.md",
+      "kind": "output_key",
+      "location": "tests/test_outputs.py:395",
+      "remediation": "Give asserted output keys a visible schema home.",
+      "severity": "PASS",
+      "value": "invalid_events"
+    },
+    {
+      "classification": "visible_requirement_found",
+      "home": "environment/app/docs/recovery_contract.md",
+      "kind": "output_key",
+      "location": "tests/test_outputs.py:408",
+      "remediation": "Give asserted output keys a visible schema home.",
+      "severity": "PASS",
+      "value": "expired_jobs"
+    },
+    {
+      "classification": "visible_requirement_found",
+      "home": "environment/app/docs/recovery_contract.md",
+      "kind": "cardinality",
+      "location": "tests/test_outputs.py:291",
+      "remediation": "Document exact tested lengths, sizes, and cardinalities.",
+      "severity": "PASS",
+      "value": "0"
+    },
+    {
+      "classification": "visible_requirement_found",
+      "home": "instruction.md",
+      "kind": "output_key",
+      "location": "tests/test_outputs.py:259",
+      "remediation": "Give asserted output keys a visible schema home.",
+      "severity": "PASS",
+      "value": "id"
+    },
+    {
+      "classification": "visible_requirement_found",
+      "home": "instruction.md",
+      "kind": "output_key",
+      "location": "tests/test_outputs.py:116",
+      "remediation": "Give asserted output keys a visible schema home.",
+      "severity": "PASS",
+      "value": "id"
+    },
+    {
+      "classification": "visible_requirement_found",
+      "home": "instruction.md",
+      "kind": "output_key",
+      "location": "tests/test_outputs.py:187",
+      "remediation": "Give asserted output keys a visible schema home.",
+      "severity": "PASS",
+      "value": "id"
+    },
+    {
+      "classification": "visible_requirement_found",
+      "home": "instruction.md",
+      "kind": "output_key",
+      "location": "tests/test_outputs.py:264",
+      "remediation": "Give asserted output keys a visible schema home.",
+      "severity": "PASS",
+      "value": "id"
+    },
+    {
+      "classification": "visible_requirement_found",
+      "home": "instruction.md",
+      "kind": "cli_flag",
+      "location": "tests/test_outputs.py:56",
+      "remediation": "Document tested CLI flags or argument splits.",
+      "severity": "PASS",
+      "value": "--root"
+    },
+    {
+      "classification": "visible_requirement_found",
+      "home": "instruction.md",
+      "kind": "cli_flag",
+      "location": "tests/test_outputs.py:58",
+      "remediation": "Document tested CLI flags or argument splits.",
+      "severity": "PASS",
+      "value": "--now"
+    },
+    {
+      "classification": "visible_requirement_found",
+      "home": "instruction.md",
+      "kind": "cli_flag",
+      "location": "tests/test_outputs.py:60",
+      "remediation": "Document tested CLI flags or argument splits.",
+      "severity": "PASS",
+      "value": "--out"
+    },
+    {
+      "classification": "visible_requirement_found",
+      "home": "instruction.md",
+      "kind": "cli_flag",
+      "location": "tests/test_outputs.py:205",
+      "remediation": "Document tested CLI flags or argument splits.",
+      "severity": "PASS",
+      "value": "--root"
+    },
+    {
+      "classification": "visible_requirement_found",
+      "home": "instruction.md",
+      "kind": "cli_flag",
+      "location": "tests/test_outputs.py:205",
+      "remediation": "Document tested CLI flags or argument splits.",
+      "severity": "PASS",
+      "value": "--now"
+    },
+    {
+      "classification": "visible_requirement_found",
+      "home": "instruction.md",
+      "kind": "cli_flag",
+      "location": "tests/test_outputs.py:205",
+      "remediation": "Document tested CLI flags or argument splits.",
+      "severity": "PASS",
+      "value": "--out"
+    }
+  ],
+  "remediation_examples": [
+    "Instruction.md: 'The digest field is a 64-character sha256 hex string.'",
+    "Instruction.md: 'drift is observed - baseline for each record.'",
+    "Visible environment docstring: 'build_report() must satisfy the same public report contract as the CLI.'"
+  ],
+  "status": "PASS",
+  "strict": true,
+  "summary": {
+    "fail": 0,
+    "pass": 59,
+    "warn": 0
+  },
+  "task_dir": "tasks/lease-recovery-coordinator"
+}

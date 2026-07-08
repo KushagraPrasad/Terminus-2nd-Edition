@@ -1,0 +1,15 @@
+{
+  "mark": {
+    "label": "rollback",
+    "generation": 4
+  },
+  "rows": [
+    {
+      "id": "D400",
+      "generation": 4,
+      "value": 40,
+      "source": "audit",
+      "active": false
+    }
+  ]
+}

@@ -1,0 +1,1157 @@
+{
+  "hardness_axes": [
+    {
+      "id": "discover",
+      "name": "Discover",
+      "verdict": "PASS",
+      "reasoning": "Solver must infer inode-witness allowlist matching, sysroot bind ordering, registry stub shard selection, capture purge timing, and journal replay cursor from partial Python modules, fixture layouts, and phased CLI behavior\u2014not from instruction.md alone."
+    },
+    {
+      "id": "synthesize",
+      "name": "Synthesize",
+      "verdict": "PASS",
+      "reasoning": "Correct audit replay requires coordinating input filter, header isolation, offline registry stub, output capture, ELF-to-JSON digest bridge, durable phase journal, and false-green health probes across four opaque module roots."
+    },
+    {
+      "id": "diagnose_or_design",
+      "name": "Diagnose or Design/Search",
+      "verdict": "PASS",
+      "reasoning": "Constrained-build design search: public contract states every phase outcome but not which subsystem mis-orders binds, selects stub shards, or commits capture before journal convergence."
+    },
+    {
+      "id": "navigate_coupling",
+      "name": "Navigate coupling",
+      "verdict": "PASS",
+      "reasoning": "Local fixes to allowlist logic break sysroot isolation tests; stub-only fixes pass fetch rows but fail ELF cross-check; premature health gauge green masks incomplete journal replay."
+    },
+    {
+      "id": "reason_beyond_training",
+      "name": "Reason beyond training",
+      "verdict": "PASS",
+      "reasoning": "Hermetic build sandbox contracts (allowlist+sysroot+offline registry+capture manifest+audit digest replay) require build/CI failure-recovery reasoning beyond generic Dockerfile or pip-install recipes."
+    }
+  ],
+  "anti_trivialization_checks": [
+    {
+      "id": "disclosure_collapse",
+      "name": "Disclosure-collapse",
+      "verdict": "PASS",
+      "reasoning": "After contract_rules.md discloses schemas, mirror pairs, and digest formula home, solver still must discover inode witness matching, bind order, stub shard key, purge-after-commit ordering, and journal replay sequencing from code\u2014post-disclosure work is coupled design search, not 1:1 rule transcription."
+    },
+    {
+      "id": "hidden_instance",
+      "name": "Hidden-instance",
+      "verdict": "PASS",
+      "reasoning": "Hardness is cross-subsystem coordination across drill profiles and platform matrix rows, not guessing which single file among hundreds is broken."
+    },
+    {
+      "id": "single_artifact_repair",
+      "name": "Single-artifact repair",
+      "verdict": "PASS",
+      "reasoning": "Flipping-point contract requires four distinct module roots; one manifest or allowlist JSON edit cannot satisfy ablation and convergence suites."
+    },
+    {
+      "id": "generalization",
+      "name": "Generalization",
+      "verdict": "PASS",
+      "reasoning": "Verifier exercises multiple drill profiles in drill_profiles.toml and platform matrix variants; fix must generalize across rollback and replay permutations."
+    },
+    {
+      "id": "prompt_honesty",
+      "name": "Prompt-honesty",
+      "verdict": "PASS",
+      "reasoning": "Honest design-brief names obligations and artifacts without naming fn_r7/fn_n3/fn_w8/fn_t2 or the mis-ordered phase wiring; collapse does not occur from prompt honesty."
+    },
+    {
+      "id": "cheating_vs_difficulty",
+      "name": "Cheating-vs-difficulty",
+      "verdict": "PASS",
+      "reasoning": "Anti-cheating (offline-only, no manual JSON, pipeline rerun traps) supports fairness; legitimate difficulty remains in multi-phase coupling."
+    },
+    {
+      "id": "mechanical_fix_filter",
+      "name": "Mechanical-fix filter",
+      "verdict": "PASS",
+      "reasoning": "Task weakness is not verifier deps or reward footer formatting; core challenge is hermetic wrapper design coordination."
+    },
+    {
+      "id": "localized_fix",
+      "name": "Localized-fix",
+      "verdict": "PASS",
+      "reasoning": "No single obvious helper cluster satisfies mirror-pair ELF cross-check plus rollback convergence; four-root flipping contract blocks localization."
+    },
+    {
+      "id": "oracle_locality",
+      "name": "Oracle-locality",
+      "verdict": "PASS",
+      "reasoning": "Oracle coordinates substantive edits across r7k, n3p, w8q, t2m modules plus driver wiring\u2014 not one-file wholesale replace."
+    },
+    {
+      "id": "small_declarative_cluster",
+      "name": "Small declarative-cluster",
+      "verdict": "PASS",
+      "reasoning": "Solve is not one config block or manifest table; requires procedural phase orchestration and cross-format digest materialization."
+    },
+    {
+      "id": "grep_collapse",
+      "name": "Grep-collapse",
+      "verdict": "PASS",
+      "reasoning": "Instruction nouns (hermetic, sandbox, allowlist, sysroot) are banned from fix-path symbols; opaque fn_r7/fn_n3/fn_w8/fn_t2 prevent noun grep to patch site."
+    },
+    {
+      "id": "pre_factored_helper",
+      "name": "Pre-factored-helper",
+      "verdict": "PASS",
+      "reasoning": "Decoy helpers (path_help, mount_help, cache_help, hash_help) perform adjacent work; prompt bullets do not map 1:1 onto fix-path function names."
+    },
+    {
+      "id": "recipe_discount",
+      "name": "Recipe-discount",
+      "verdict": "PASS",
+      "reasoning": "Standard hermetic-build textbook recipe is discounted; residual hardness is authority splits, false-green health, and journal replay ordering under coupled phases."
+    },
+    {
+      "id": "security_aura_discount",
+      "name": "Security-aura discount",
+      "verdict": "PASS",
+      "reasoning": "Sandbox/isolation nouns do not substitute for engineering work; verifier checks behavioral digests and convergence, not security checklist completion."
+    },
+    {
+      "id": "orthogonal_checklist",
+      "name": "Orthogonal-checklist",
+      "verdict": "PASS",
+      "reasoning": "Phase outcomes trade off: early capture purge breaks rollback; wrong stub shard breaks fetch but also poisons attest rows; coupled insight clusters not independent bullets."
+    },
+    {
+      "id": "harness_discount",
+      "name": "Harness-discount",
+      "verdict": "PASS",
+      "reasoning": "Docker offline harness is realism; difficulty comes from wrapper logic and cross-artifact invariants, not container complexity alone."
+    },
+    {
+      "id": "one_pass_solvability",
+      "name": "One-pass solvability",
+      "verdict": "PASS",
+      "reasoning": "Frontier model cannot one-pass implement from instruction; must run phased driver, inspect journal/state, and ablate four modules to learn ordering constraints."
+    },
+    {
+      "id": "hard_only_gate",
+      "name": "Hard-only gate",
+      "verdict": "PASS",
+      "reasoning": "Coupled hermetic sandbox design with rollback recovery and cross-format attest is hard-tier, not medium respectability."
+    },
+    {
+      "id": "discovery_budget_test",
+      "name": "Discovery/design budget test",
+      "verdict": "PASS",
+      "reasoning": "Five non-trivial discoveries enumerated in discovery_budget with planned locations; each forces codebase engagement beyond instruction.md."
+    },
+    {
+      "id": "instruction_specificity_test",
+      "name": "Instruction specificity test",
+      "verdict": "PASS",
+      "reasoning": "Non-repair constrained_build uses design-brief framing: complete public target and constraints without solution-complete algorithms or patch coordinates."
+    },
+    {
+      "id": "topology_distribution_test",
+      "name": "Topology distribution test",
+      "verdict": "PASS",
+      "reasoning": "Three distinct implementation topologies enumerated, each requiring \u22653 coordinated components with no single-location sufficiency."
+    }
+  ],
+  "rubric_axes": [
+    {
+      "id": "verifiable",
+      "name": "Verifiable",
+      "verdict": "PASS",
+      "reasoning": "Deterministic offline pytest derives verdicts from regenerated audit_report.json, trace digests, ELF section hashes, and ablation flips."
+    },
+    {
+      "id": "well_specified",
+      "name": "Well-specified",
+      "verdict": "PASS",
+      "reasoning": "contract_rules.md, hook_cmds.txt, and pilot header define row/summary schema, mirror pairs, and digest reduction; two drafters produce equivalent verifiers."
+    },
+    {
+      "id": "solvable",
+      "name": "Solvable",
+      "verdict": "PASS",
+      "reasoning": "Expert build/CI engineer can complete hermetic wrapper in hours offline knowing phased sandbox patterns; solution well under 100k LOC."
+    },
+    {
+      "id": "difficult",
+      "name": "Difficult",
+      "verdict": "PASS",
+      "reasoning": "Requires professional build-system and reproducible-build experience; undergrad scaffold completion insufficient without cross-phase diagnosis."
+    },
+    {
+      "id": "interesting",
+      "name": "Interesting",
+      "verdict": "PASS",
+      "reasoning": "Hermetic sandbox audit replay is paid production work in supply-chain and reproducible-build pipelines."
+    },
+    {
+      "id": "outcome_verified",
+      "name": "Outcome-verified",
+      "verdict": "PASS",
+      "reasoning": "Tests grade regenerated artifacts and convergence; they do not mandate a single toolchain brand or patch recipe."
+    }
+  ],
+  "instruction_completeness_test": {
+    "verdict": "PASS",
+    "reasoning": "Instruction.md states public contract and phase obligations but not inode witness rules, bind order, stub shard selection, purge timing, or journal replay cursor\u2014solver must engage codebase, fixtures, and phased driver output."
+  },
+  "discovery_budget": [
+    {
+      "discovery": "Allowlist enforcement matches inode witness tuples from allowlist.json, not naive path-prefix strings; prefix-only filter passes local health but fails cross-mount drill rows.",
+      "planned_location": "environment/r7k/filter_mux.py with witness material in environment/r7k/witness_scan.py and environment/data/allowlist.json",
+      "why_instruction_must_not_reveal": "Revealing inode-vs-path rule collapses design search to editing one obvious string compare; instruction stays at allowlisted-inputs outcome level."
+    },
+    {
+      "discovery": "Sysroot header isolation requires bind overlay before compiler environment export; reversing order leaks host includes via CXXFLAGS while health subcommand still reports ready.",
+      "planned_location": "environment/n3p/root_mux.py coordinated with environment/engine/pipeline.py phase scheduling",
+      "why_instruction_must_not_reveal": "Naming bind-before-export ordering is a construction recipe; public contract only requires host headers hidden except declared sysroot."
+    },
+    {
+      "discovery": "Offline registry stub selects fixture shard by phase ordinal XOR digest prefix from phase journal, not lexicographically first fixture file.",
+      "planned_location": "environment/w8q/stub_mux.py with shard table in environment/w8q/shard_index.py and fixtures under environment/data/registry_fixtures/",
+      "why_instruction_must_not_reveal": "Disclosing shard key formula turns fetch phase into transcription; instruction only states pinned fixture responses without live network."
+    },
+    {
+      "discovery": "Output capture purges undeclared artifacts only after durable journal commit; early purge yields false-green intermediate manifest rows that diverge from ELF attest cross-check.",
+      "planned_location": "environment/t2m/cap_mux.py with commit gate in environment/engine/phase_journal.py",
+      "why_instruction_must_not_reveal": "Premature-purge timing is an implementation secret; instruction requires only declared artifacts in final capture with deterministic digests."
+    },
+    {
+      "discovery": "Rollback drills replay phase cursor from durable journal segments; rebuilding health gauge without journal reconstruction passes status subcommand but fails terminal convergence tests.",
+      "planned_location": "environment/engine/phase_journal.py versus false-green environment/engine/health_gauge.py",
+      "why_instruction_must_not_reveal": "Journal replay sequence is the hidden coordination burden; instruction names rollback recovery outcome, not cursor reconstruction recipe."
+    }
+  ],
+  "instruction_specificity": {
+    "level": "design-brief",
+    "reasoning": "Constrained_build task discloses phase obligations, artifact paths, schemas, mirror pairs, and digest formula home while withholding module-level construction route and mis-ordered wiring details."
+  },
+  "attack_path": {
+    "summary": "Agent patches only allowlist path checks and writes audit_report.json manually after one green hs_run status call.",
+    "reasoning": "test_p10_rerun_pipe reruns cmake+hs_run; test_p19_premature fails health-green with disagreeing mirror pairs; test_p17_flip_t2 breaks ELF cross-check; ablation flips on fn_r7/fn_n3/fn_w8/fn_t2 block single-module shortcuts."
+  },
+  "smallest_plausible_patch": {
+    "summary": "Coordinate inode-witness allowlist in fn_r7, bind-before-export in fn_n3, journal-keyed stub shard in fn_w8, post-commit purge plus ELF attest bridge in fn_t2, and pipeline phase ordering\u2014none alone passes majority tests.",
+    "reasoning": "Category one-shot collapse modes (one dep bump, one manifest row, delete cache) do not satisfy build_dependency_toolchain bar; flipping-point contract enforces four-root spread."
+  },
+  "collapse_audit": {
+    "verdict": "PASS",
+    "reasoning": "Existing 25+ file scaffold with partial wrapper, formal contract_rules.md, and multi-phase driver prevents blank-canvas transcription. Post-disclosure residual work is discovering phase authority splits and cross-format ties, not mapping each bullet to one obvious function.",
+    "residual_hardness": "Solver must reconcile input witness matching, sysroot bind order, offline stub shard selection, capture purge timing, journal replay cursor, and JSON-to-ELF digest invariants under rollback drills while deceptive health/status surfaces report local success.",
+    "red_flags": [
+      "Seed collapse_risk blank-canvas mitigated by committed partial codebase and four-root flipping contract",
+      "hidden_contract_risk medium\u2014cross-artifact invariants live in behavior; contract_rules.md names outcomes not wiring"
+    ]
+  },
+  "topology_enumeration": [
+    {
+      "id": "alpha",
+      "summary": "Input isolation topology: inode allowlist + sysroot overlay + pipeline phase gate + journal cursor",
+      "locations": [
+        "environment/r7k/filter_mux.py",
+        "environment/n3p/root_mux.py",
+        "environment/engine/pipeline.py",
+        "environment/engine/phase_journal.py"
+      ],
+      "why_no_single_location_suffices": "Filter without correct bind order still leaks host headers; root_mux alone cannot admit only allowlisted inputs; pipeline ordering without journal loses rollback convergence."
+    },
+    {
+      "id": "beta",
+      "summary": "Fetch and capture topology: stub shard selection + capture purge ring + registry fixtures + ELF attest materialization",
+      "locations": [
+        "environment/w8q/stub_mux.py",
+        "environment/t2m/cap_mux.py",
+        "environment/data/registry_fixtures/",
+        "environment/t2m/purge_ring.py"
+      ],
+      "why_no_single_location_suffices": "Stub returns metadata but wrong shard breaks downstream rows; capture without ELF cross-check passes JSON shape; fixtures alone do not enforce selection logic."
+    },
+    {
+      "id": "gamma",
+      "summary": "Rollback convergence topology: health gauge + phase journal replay + audit report reduction + drill profile permutations",
+      "locations": [
+        "environment/engine/health_gauge.py",
+        "environment/engine/phase_journal.py",
+        "environment/pilot/entry.py",
+        "environment/data/drill_profiles.toml"
+      ],
+      "why_no_single_location_suffices": "Health green before journal replay is false-green; pilot reduction without journal data yields wrong run_digest; drills expose ordering bugs invisible in single happy path."
+    }
+  ],
+  "construction_manifest": {
+    "symbol_table": [
+      {
+        "path": "environment/r7k/filter_mux.py",
+        "symbol": "fn_r7",
+        "kind": "function",
+        "signature": "fn_r7(witness_tbl: dict, mount_set: set) -> tuple[int, bytes]",
+        "purpose": "Fold allowlist witness tuples against observed mount inode set"
+      },
+      {
+        "path": "environment/n3p/root_mux.py",
+        "symbol": "fn_n3",
+        "kind": "function",
+        "signature": "fn_n3(sys_tbl: dict, env_map: dict) -> tuple[int, list]",
+        "purpose": "Apply sysroot overlay binds before exporting compiler search paths"
+      },
+      {
+        "path": "environment/w8q/stub_mux.py",
+        "symbol": "fn_w8",
+        "kind": "function",
+        "signature": "fn_w8(phase_tag: int, seed_hex: str, shard_tbl: dict) -> dict",
+        "purpose": "Select offline registry fixture shard for fetch phase"
+      },
+      {
+        "path": "environment/t2m/cap_mux.py",
+        "symbol": "fn_t2",
+        "kind": "function",
+        "signature": "fn_t2(manifest_tbl: dict, blob_paths: list, journal_ok: bool) -> tuple[int, dict]",
+        "purpose": "Purge undeclared outputs after journal commit and attach ELF section digests"
+      }
+    ],
+    "flipping_point_contract": {
+      "locations": [
+        {
+          "id": "A",
+          "path": "environment/r7k/filter_mux.py",
+          "controls_tests": [
+            "test_p1_shape_vecs",
+            "test_p2_pair_hex",
+            "test_p3_rc_fields",
+            "test_p4_label_text",
+            "test_p5_width_max"
+          ]
+        },
+        {
+          "id": "B",
+          "path": "environment/n3p/root_mux.py",
+          "controls_tests": [
+            "test_p6_reduce_hex",
+            "test_p7_anchor_hex",
+            "test_p8_hex_lower",
+            "test_p9_len_vecs"
+          ]
+        },
+        {
+          "id": "C",
+          "path": "environment/w8q/stub_mux.py",
+          "controls_tests": [
+            "test_p10_rerun_pipe",
+            "test_p11_twice_same",
+            "test_p12_sens_mut",
+            "test_p13_flip_w8",
+            "test_p14_flip_both"
+          ]
+        },
+        {
+          "id": "D",
+          "path": "environment/t2m/cap_mux.py",
+          "controls_tests": [
+            "test_p15_flip_t2",
+            "test_p16_all_perms",
+            "test_p17_flip_dur_seg",
+            "test_p18_reg_first",
+            "test_p19_premature",
+            "test_p20_cli_seq"
+          ]
+        }
+      ],
+      "no_single_location_flips_majority": true,
+      "concentration_cap": 0.5
+    },
+    "decoy_manifest": [
+      {
+        "path": "environment/r7k/path_help.py",
+        "kind": "helper",
+        "rhymes_with": "fn_r7",
+        "non_fix_purpose": "Normalizes relative path strings for logging without inode witness enforcement"
+      },
+      {
+        "path": "environment/n3p/mount_help.py",
+        "kind": "helper",
+        "rhymes_with": "fn_n3",
+        "non_fix_purpose": "Lists existing mount points for diagnostics without sysroot overlay ordering"
+      },
+      {
+        "path": "environment/w8q/cache_help.py",
+        "kind": "helper",
+        "rhymes_with": "fn_w8",
+        "non_fix_purpose": "Reads newest fixture file mtime for cache warming unrelated to shard selection"
+      },
+      {
+        "path": "environment/t2m/hash_help.py",
+        "kind": "helper",
+        "rhymes_with": "fn_t2",
+        "non_fix_purpose": "Hashes stdout logs for operator diagnostics without ELF section materialization"
+      }
+    ],
+    "code_forbidden_tokens": [
+      "hermetic",
+      "sandbox",
+      "build",
+      "contract",
+      "allowlisted",
+      "inputs",
+      "host",
+      "headers",
+      "sysroot",
+      "registry",
+      "fixture",
+      "dependency",
+      "metadata",
+      "network",
+      "captured",
+      "outputs",
+      "artifacts",
+      "deterministic",
+      "digests",
+      "audit",
+      "replay",
+      "phased",
+      "driver",
+      "offline",
+      "locked",
+      "workflow",
+      "trace",
+      "durable",
+      "state",
+      "mirror",
+      "pairs",
+      "coherent",
+      "lag",
+      "sched",
+      "lock",
+      "unit",
+      "facet",
+      "sync",
+      "steady",
+      "run_digest",
+      "manual",
+      "static",
+      "pipeline",
+      "regeneration",
+      "sources",
+      "rebuild",
+      "converge",
+      "rollback",
+      "recovery",
+      "attest",
+      "manifest",
+      "isolation",
+      "namespace",
+      "provenance",
+      "matrix",
+      "targets",
+      "operator",
+      "argv",
+      "hook",
+      "reduction",
+      "module",
+      "comment",
+      "rows",
+      "summary",
+      "unit_ids",
+      "hook_cmds",
+      "contract_rules",
+      "audit_report",
+      "run_traces",
+      "bind",
+      "bind_echo",
+      "upper",
+      "upper_echo",
+      "worker",
+      "worker_echo",
+      "facet_hex",
+      "sync_label",
+      "sched_rc",
+      "lock_rc",
+      "unit_rc",
+      "sixteen",
+      "hexadecimal",
+      "incoherent",
+      "drill",
+      "profiles",
+      "platform",
+      "journal",
+      "health",
+      "gauge",
+      "purge",
+      "shard",
+      "witness",
+      "overlay",
+      "capture",
+      "fetch",
+      "convergence",
+      "elf",
+      "section",
+      "compiler",
+      "include",
+      "paths",
+      "tarball",
+      "declared",
+      "terminal",
+      "status",
+      "subcommand",
+      "cmake",
+      "sample",
+      "proj",
+      "hs_run",
+      "production",
+      "supply",
+      "chain",
+      "reproducible",
+      "wrapper",
+      "complete",
+      "finishes",
+      "satisfies",
+      "properties",
+      "validating",
+      "insufficient",
+      "writes",
+      "emit",
+      "refreshed",
+      "shapes",
+      "defined",
+      "documented",
+      "primary",
+      "patterns",
+      "binds",
+      "matching",
+      "digit",
+      "lowercase",
+      "integer",
+      "vector",
+      "length",
+      "fingerprint",
+      "known",
+      "good",
+      "tampered",
+      "hand",
+      "written",
+      "consecutive",
+      "mutating",
+      "step",
+      "ladder",
+      "reverting",
+      "stock",
+      "decoy",
+      "helper",
+      "breaks",
+      "closure",
+      "extras",
+      "held",
+      "cross",
+      "format",
+      "precedes",
+      "runtime",
+      "reads",
+      "disagreeing",
+      "until",
+      "sequence",
+      "required",
+      "success"
+    ]
+  },
+  "naming_pass": {
+    "instruction_nouns_extracted": [
+      "hermetic",
+      "sandbox",
+      "build",
+      "contract",
+      "allowlisted",
+      "inputs",
+      "host",
+      "headers",
+      "sysroot",
+      "registry",
+      "fixture",
+      "dependency",
+      "metadata",
+      "network",
+      "captured",
+      "outputs",
+      "artifacts",
+      "deterministic",
+      "digests",
+      "audit",
+      "replay",
+      "phased",
+      "driver",
+      "offline",
+      "locked",
+      "workflow",
+      "trace",
+      "durable",
+      "state",
+      "mirror",
+      "pairs",
+      "coherent",
+      "lag",
+      "sched",
+      "lock",
+      "unit",
+      "facet",
+      "sync",
+      "steady",
+      "run_digest",
+      "manual",
+      "static",
+      "pipeline",
+      "regeneration",
+      "sources",
+      "rebuild",
+      "converge",
+      "rollback",
+      "recovery",
+      "attest",
+      "manifest",
+      "isolation",
+      "namespace",
+      "provenance",
+      "matrix",
+      "targets",
+      "operator",
+      "argv",
+      "hook",
+      "reduction",
+      "module",
+      "comment",
+      "rows",
+      "summary",
+      "unit_ids",
+      "hook_cmds",
+      "contract_rules",
+      "audit_report",
+      "run_traces",
+      "bind",
+      "bind_echo",
+      "upper",
+      "upper_echo",
+      "worker",
+      "worker_echo",
+      "facet_hex",
+      "sync_label",
+      "sched_rc",
+      "lock_rc",
+      "unit_rc",
+      "sixteen",
+      "hexadecimal",
+      "incoherent",
+      "drill",
+      "profiles",
+      "platform",
+      "journal",
+      "health",
+      "gauge",
+      "purge",
+      "shard",
+      "witness",
+      "overlay",
+      "capture",
+      "fetch",
+      "convergence",
+      "elf",
+      "section",
+      "compiler",
+      "include",
+      "paths",
+      "tarball",
+      "declared",
+      "terminal",
+      "status",
+      "subcommand",
+      "cmake",
+      "sample",
+      "proj",
+      "hs_run",
+      "production",
+      "supply",
+      "chain",
+      "reproducible",
+      "wrapper",
+      "complete",
+      "finishes",
+      "satisfies",
+      "properties",
+      "validating",
+      "insufficient",
+      "writes",
+      "emit",
+      "refreshed",
+      "shapes",
+      "defined",
+      "documented",
+      "primary",
+      "patterns",
+      "binds",
+      "matching",
+      "digit",
+      "lowercase",
+      "integer",
+      "vector",
+      "length",
+      "fingerprint",
+      "known",
+      "good",
+      "tampered",
+      "hand",
+      "written",
+      "consecutive",
+      "mutating",
+      "step",
+      "ladder",
+      "reverting",
+      "stock",
+      "decoy",
+      "helper",
+      "breaks",
+      "closure",
+      "extras",
+      "held",
+      "cross",
+      "format",
+      "precedes",
+      "runtime",
+      "reads",
+      "disagreeing",
+      "until",
+      "sequence",
+      "required",
+      "success"
+    ],
+    "renames_during_drafting": [
+      {
+        "original": "filter_allowlist",
+        "renamed_to": "fn_r7",
+        "reason": "Instruction noun allowlisted would grep-collapse to obvious fix symbol"
+      },
+      {
+        "original": "sysroot_overlay",
+        "renamed_to": "fn_n3",
+        "reason": "Instruction nouns sysroot and overlay banned from fix-path identifiers"
+      },
+      {
+        "original": "registry_stub_select",
+        "renamed_to": "fn_w8",
+        "reason": "Instruction nouns registry and fixture collide with planned helper stems"
+      },
+      {
+        "original": "capture_manifest_purge",
+        "renamed_to": "fn_t2",
+        "reason": "Instruction nouns capture, manifest, and purge must not appear on fix path"
+      }
+    ],
+    "test_names_audited": [
+      "test_p1_shape_vecs",
+      "test_p2_pair_hex",
+      "test_p3_rc_fields",
+      "test_p4_label_text",
+      "test_p5_width_max",
+      "test_p6_reduce_hex",
+      "test_p7_anchor_hex",
+      "test_p8_hex_lower",
+      "test_p9_len_vecs",
+      "test_p10_rerun_pipe",
+      "test_p11_twice_same",
+      "test_p12_sens_mut",
+      "test_p13_flip_w8",
+      "test_p14_flip_both",
+      "test_p15_flip_t2",
+      "test_p16_all_perms",
+      "test_p17_flip_dur_seg",
+      "test_p18_reg_first",
+      "test_p19_premature",
+      "test_p20_cli_seq"
+    ],
+    "concentration_math": {
+      "total_tests": 20,
+      "per_location": [
+        {
+          "location_id": "A",
+          "test_count": 5,
+          "ratio": 0.25
+        },
+        {
+          "location_id": "B",
+          "test_count": 4,
+          "ratio": 0.2
+        },
+        {
+          "location_id": "C",
+          "test_count": 5,
+          "ratio": 0.25
+        },
+        {
+          "location_id": "D",
+          "test_count": 6,
+          "ratio": 0.3
+        }
+      ]
+    },
+    "recomputed_concentration": {
+      "total_tests": 20,
+      "concentration_cap": 0.5,
+      "per_location": [
+        {
+          "location_id": "A",
+          "test_count": 5,
+          "ratio": 0.25
+        },
+        {
+          "location_id": "B",
+          "test_count": 4,
+          "ratio": 0.2
+        },
+        {
+          "location_id": "C",
+          "test_count": 5,
+          "ratio": 0.25
+        },
+        {
+          "location_id": "D",
+          "test_count": 6,
+          "ratio": 0.3
+        }
+      ]
+    }
+  },
+  "difficulty_mechanism_plan": [
+    {
+      "mechanism": "stateful_multi_step_dependencies",
+      "placement": "environment/engine/pipeline.py multi-phase CLI workflow across input/isolate/fetch/capture/attest",
+      "why_model_misses_it": "Models stop after first green status subcommand without finishing attest and convergence phases logged in journal",
+      "fairness_guardrail": "contract_rules.md lists phase outcomes; hook_cmds documents required argv sequence; each phase appends trace rows"
+    },
+    {
+      "mechanism": "deceptive_but_valid_local_evidence",
+      "placement": "environment/engine/health_gauge.py status subcommand",
+      "why_model_misses_it": "Models trust misleading local ready/steady labels while durable journal and mirror pairs still disagree",
+      "fairness_guardrail": "Verifier cross-checks health output against journal segments and echo pair facet_hex equality"
+    },
+    {
+      "mechanism": "false_green_intermediate_states",
+      "placement": "environment/t2m/purge_ring.py intermediate manifest rows before journal commit",
+      "why_model_misses_it": "Models declare capture done when manifest shape looks complete but ELF attest cross-check still fails",
+      "fairness_guardrail": "test_p19_premature requires terminal convergence with matching run_digest after full pipeline"
+    },
+    {
+      "mechanism": "cross_file_cross_format_invariants",
+      "placement": "environment/t2m/cap_mux.py JSON rows tied to sample_proj ELF section hashes and registry fixture bytes",
+      "why_model_misses_it": "Models fix JSON emitters without reconciling binary section digests and fixture shard metadata",
+      "fairness_guardrail": "Instruction names cross-format attest obligation; tests recompute digests from visible formula home"
+    },
+    {
+      "mechanism": "rollback_recovery_requirements",
+      "placement": "environment/engine/phase_journal.py rollback drills in drill_profiles.toml",
+      "why_model_misses_it": "Models skip journal cursor reconstruction after partial phase failure, passing happy path only",
+      "fairness_guardrail": "Drill profiles are named in instruction; verifier reruns rollback sequences deterministically offline"
+    }
+  ],
+  "calibration_plan": {
+    "oracle_runs": 3,
+    "no_op_runs": 3,
+    "target_agent_runs": 5,
+    "comparator_agent_runs": 5,
+    "human_sanity": "Expert build engineer reproduces incoherent audit_report under stock scaffold, applies coordinated four-module fix, reruns hs_run offline to steady convergence",
+    "shortcut_audit": "Block hardcoded audit_report.json, test edits, stale-doc-only changes, wrapper-only health subcommand patches, and single-manifest-row tweaks",
+    "ablation_plan": "Remove deceptive health layer, then journal replay, then stub shard selection, then bind ordering\u2014each ablation should drop pass rate materially",
+    "pass_rate_target": {
+      "hard_max_pct": 20,
+      "too_easy_threshold_pct": 80,
+      "basis": "Aligns with Part E Hard/Medium/Easy thresholds on worst-model accuracy; verifier-offline: pytest and cmake baked in Dockerfile with tests/test.sh using no runtime apt/pip/curl; post-upload difficulty classification runs only after successful agent+verifier cycles per PLATFORM_AUTO_EVAL.md"
+    }
+  },
+  "verifier_scoring_plan": {
+    "metrics": [
+      {
+        "metric": "functional_correctness",
+        "weight": 0.45,
+        "criterion": "Regenerated audit_report rows match coherent mirror-pair and rc predicates after full hs_run pipeline"
+      },
+      {
+        "metric": "hidden_invariants",
+        "weight": 0.25,
+        "criterion": "ELF section digests, journal replay cursor, and stub shard bytes align with JSON rows under drill permutations"
+      },
+      {
+        "metric": "state_hygiene",
+        "weight": 0.15,
+        "criterion": "No undeclared capture paths, no host header leakage artifacts, durable journal segments consistent across reruns"
+      },
+      {
+        "metric": "interface_correctness",
+        "weight": 0.1,
+        "criterion": "hook_cmds argv sequences and hs_run phase interfaces match contract_rules.md"
+      },
+      {
+        "metric": "deliverable_completeness",
+        "weight": 0.05,
+        "criterion": "audit_report.json, run_traces/, and refreshed state/ emitted with required schema fields"
+      }
+    ],
+    "overall_threshold": 0.999,
+    "reward_output": "reward.txt",
+    "binary_threshold_rule": "reward 1 only when all weighted metrics pass; any ablation flip or pipeline trap failure yields 0"
+  },
+  "subtype_milestone_plan": {
+    "subcategories": [],
+    "milestone_count": 0,
+    "sequential_dependency": "none",
+    "local_only_data": true,
+    "sidecar_or_protocol_notes": "single-container local verifier only; offline registry fixtures and drill profiles pre-bundled under environment/data/"
+  },
+  "platform_files": [
+    {
+      "path": "task.toml",
+      "role": "metadata; must set [environment] allow_internet = false and category = software-engineering"
+    },
+    {
+      "path": "instruction.md",
+      "role": "natural public design-brief prompt"
+    },
+    {
+      "path": "output_contract.toml",
+      "role": "local output declaration"
+    },
+    {
+      "path": "tests/test.sh",
+      "role": "verifier entrypoint; pre-installed pytest only"
+    },
+    {
+      "path": "tests/test_outputs.py",
+      "role": "domain verifier with ablation and pipeline traps"
+    },
+    {
+      "path": "solution/solve.sh",
+      "role": "oracle applying coordinated multi-module fix"
+    },
+    {
+      "path": "environment/Dockerfile",
+      "role": "pinned offline image with cmake, python3, pytest, tmux, asciinema"
+    },
+    {
+      "path": "construction_manifest.json",
+      "role": "local authoring artifact mirroring construction manifest"
+    }
+  ],
+  "task_files": [
+    {
+      "path": "environment/r7k/filter_mux.py",
+      "role": "oracle frontier A \u2014 inode witness allowlist fold"
+    },
+    {
+      "path": "environment/r7k/witness_scan.py",
+      "role": "witness tuple scanner feeding fn_r7"
+    },
+    {
+      "path": "environment/r7k/path_help.py",
+      "role": "decoy path normalizer"
+    },
+    {
+      "path": "environment/n3p/root_mux.py",
+      "role": "oracle frontier B \u2014 sysroot overlay bind ordering"
+    },
+    {
+      "path": "environment/n3p/bind_table.py",
+      "role": "sysroot bind ladder data loader"
+    },
+    {
+      "path": "environment/n3p/mount_help.py",
+      "role": "decoy mount listing helper"
+    },
+    {
+      "path": "environment/w8q/stub_mux.py",
+      "role": "oracle frontier C \u2014 offline registry shard selection"
+    },
+    {
+      "path": "environment/w8q/shard_index.py",
+      "role": "fixture shard index table"
+    },
+    {
+      "path": "environment/w8q/cache_help.py",
+      "role": "decoy fixture mtime cache helper"
+    },
+    {
+      "path": "environment/t2m/cap_mux.py",
+      "role": "oracle frontier D \u2014 post-commit capture and ELF attest bridge"
+    },
+    {
+      "path": "environment/t2m/purge_ring.py",
+      "role": "undeclared artifact purge ring buffer"
+    },
+    {
+      "path": "environment/t2m/hash_help.py",
+      "role": "decoy stdout hash helper"
+    },
+    {
+      "path": "environment/pilot/entry.py",
+      "role": "hs_run driver entry and summary reduction header"
+    },
+    {
+      "path": "environment/engine/pipeline.py",
+      "role": "multi-phase orchestration across input/isolate/fetch/capture/attest"
+    },
+    {
+      "path": "environment/engine/phase_journal.py",
+      "role": "durable phase cursor and rollback segments"
+    },
+    {
+      "path": "environment/engine/health_gauge.py",
+      "role": "false-green status subcommand surface"
+    },
+    {
+      "path": "environment/sample_proj/CMakeLists.txt",
+      "role": "small offline C++ sample under hermetic wrap"
+    },
+    {
+      "path": "environment/sample_proj/src/main.cpp",
+      "role": "sample compile target producing attestable ELF"
+    },
+    {
+      "path": "environment/docs/contract_rules.md",
+      "role": "formal properties, schema, build/replay commands"
+    },
+    {
+      "path": "environment/docs/unit_ids.txt",
+      "role": "primary unit id table"
+    },
+    {
+      "path": "environment/docs/hook_cmds.txt",
+      "role": "operator argv patterns for hs_run hooks"
+    },
+    {
+      "path": "environment/data/allowlist.json",
+      "role": "inode witness allowlist manifest"
+    },
+    {
+      "path": "environment/data/output_manifest.json",
+      "role": "declared capture artifact ids"
+    },
+    {
+      "path": "environment/data/drill_profiles.toml",
+      "role": "rollback drill permutation table"
+    },
+    {
+      "path": "environment/data/platform_matrix.toml",
+      "role": "offline platform variant matrix"
+    },
+    {
+      "path": "environment/data/registry_fixtures/index_a.json",
+      "role": "pinned registry fixture shard A"
+    },
+    {
+      "path": "environment/data/registry_fixtures/index_b.json",
+      "role": "pinned registry fixture shard B"
+    },
+    {
+      "path": "environment/schemas/audit_row.schema.json",
+      "role": "row shape for audit_report.json"
+    },
+    {
+      "path": "environment/state/journal_seg/.gitkeep",
+      "role": "durable journal segment placeholder"
+    }
+  ],
+  "fix_frontier": {
+    "count": 4,
+    "distribution": "environment/r7k/filter_mux.py, environment/n3p/root_mux.py, environment/w8q/stub_mux.py, environment/t2m/cap_mux.py across four opaque roots",
+    "naming_policy": "Opaque fn_r7/fn_n3/fn_w8/fn_t2 on neutral parameter names; no instruction nouns on fix path",
+    "forbidden_stems": [
+      "hermetic",
+      "sandbox",
+      "allowlist",
+      "sysroot",
+      "registry",
+      "capture",
+      "audit",
+      "manifest",
+      "rollback",
+      "journal",
+      "fixture",
+      "overlay",
+      "witness",
+      "shard",
+      "purge",
+      "attest",
+      "elf",
+      "hs_run",
+      "contract_rules",
+      "audit_report",
+      "run_traces",
+      "facet_hex",
+      "run_digest",
+      "sync_label",
+      "hook_cmds",
+      "unit_ids"
+    ],
+    "helpers_policy": "Decoys perform credible adjacent diagnostics; frontier stays thin at four symbols with pipeline/journal orchestration separate",
+    "symbol_thin_preferred": true
+  },
+  "contract_surface": {
+    "boolean_fields_max": 0,
+    "direct_boolean_assertions_max": 12,
+    "preferred_assertion_styles": [
+      "regenerated JSON rows",
+      "integer rc counters",
+      "derived run_digest",
+      "echo pair equality",
+      "drill permutation traps",
+      "ablation incoherence",
+      "pipeline overwrite",
+      "ELF section cross-check"
+    ],
+    "forbidden_assertion_styles": [
+      "scenario-key expected tables in instruction.md",
+      "static golden audit_report under tests/",
+      "readiness fields named *_ok in instruction prose tied 1:1 to fix-path grep"
+    ]
+  },
+  "task_shape": {
+    "type": "constrained_build",
+    "instruction_framing": "design-brief",
+    "hardness_source": "design search",
+    "collapse_risk": "blank-canvas build with no binding cross-component constraints"
+  },
+  "category_profile": {
+    "challenge_family": "hermetic build sandbox",
+    "profile_name": "build_dependency_toolchain",
+    "allowed_instruction_disclosures": "Build/test commands, artifact identities, platform matrix, reproducibility outputs, phased driver obligations, audit_report schema, mirror pairs, hook_cmds argv, contract_rules formal properties",
+    "forbidden_instruction_leaks": "Resolver bug site, cache path, generated-file source, exact package edge, inode-vs-path rule, bind order recipe, stub shard key, journal replay sequence, patch functions",
+    "category_specific_hardness_bar": "Lockfiles/fixtures, generated capture manifest, build graph phases, platform matrix, and cache/journal invalidation must coordinate; one version bump or one manifest row cannot pass ablation and drill suites",
+    "category_specific_verifier_risks": "Pin-one-dep fix, network reliance, clean-build-only tests, false-green health/status without durable journal convergence",
+    "coverage_role": "Strengthens build_dependency_toolchain coverage via hermetic sandbox build contract constrained-build topology"
+  },
+  "satisfiability_risk": {
+    "rc2_planned_name_risk": "low \u2014 opaque r7k/n3p/w8q/t2m roots and fn_* symbols committed in construction manifest",
+    "gx9_contract_risk": "low \u2014 tests derive verdicts from run_digest recompute, pair equality, and ELF cross-checks, not per-row answer tables in instruction",
+    "cr1_symbol_frontier_risk": "low \u2014 four substantive Python modules plus explicit flipping-point contract",
+    "hidden_contract_risk": "medium \u2014 cross-artifact invariants (journal vs capture vs ELF) live in behavior; contract_rules.md names outcomes not wiring"
+  },
+  "actionability_plan": {
+    "verifier_command_visible": "CMake build from /app/environment, /app/bin/hs_run driver, hook_cmds.txt argv sequences",
+    "source_fix_intent_visible": "yes \u2014 complete wrapper under /app/environment without naming modules",
+    "generated_output_rule_visible": "/app/output/audit_report.json path, mirror pair rules, regeneration requirement, run_traces directory",
+    "exact_formula_home": "module comment above environment/pilot/entry.py for run_digest and band_span reduction",
+    "schema_home": "environment/schemas/audit_row.schema.json plus contract_rules.md"
+  },
+  "waiver_plan": {
+    "waivers_expected": false,
+    "waiver_rationale": "Hardness from coupled phased behavior and cross-format invariants, not harness brittleness; offline fixtures and deterministic replays avoid waiver pressure"
+  },
+  "reference_pattern": {
+    "justification_if_none": "No promoted reference in docs/reference_tasks/index.json matches hermetic sandbox phased-wrapper constrained_build with Python multi-root flipping-point discipline; closest abi-rebuild-mismatch covers multi-crate regeneration not offline registry stub plus capture attest bridge"
+  },
+  "realism_source": {
+    "source_type": "real_system",
+    "evidence_basis": "open-source issue",
+    "upstream_or_synthetic_rationale": "Minimized from Bazel/BuildKit hermetic action sandbox and reproducible-build audit replay postmortems where allowlisted inputs, sysroot isolation, offline registry mirrors, and capture manifests must align for deterministic digests",
+    "minimization_preserves": "Causal coupling across input allowlist, header isolation, offline fetch stub, capture manifest, journal rollback, and JSON-to-ELF attest cross-check",
+    "synthetic_exception_review": "not required"
+  }
+}

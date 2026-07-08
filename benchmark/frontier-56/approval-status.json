@@ -1,0 +1,114 @@
+{
+  "tasks": {
+    "offline-lockfile-rehydration-gap": {
+      "registry_id": "offline-lockfile-rehydration-gap",
+      "status": "blocked_approve",
+      "steps": {
+        "task_gate": {
+          "pass": true,
+          "fails": []
+        },
+        "actionability_check": true,
+        "no_hidden_contracts": true,
+        "obfuscation_lint": true,
+        "spec_gap_detector": true,
+        "spec_test_alignment": true,
+        "check_task": true,
+        "harbor": true,
+        "package": true,
+        "approve_task": false
+      },
+      "oracle_job_dir": "/home/rohit/projects/airdawg/jobs/2026-06-16__23-16-18",
+      "nop_job_dir": "/home/rohit/projects/airdawg/jobs/2026-06-16__23-16-37",
+      "approve_tail": "Approval gate: FAIL\nMechanical status: FAIL\nTask dir: /home/rohit/projects/airdawg/tasks/bind-propagation-orphan-inodes\nSubmission zip: /home/rohit/projects/airdawg/Task_Ready_To_Submit/offline-lockfile-rehydration-gap.zip\n\nCheck summary (mechanical gate is authoritative):\n  - .step2b-checksum: PASS\n  - static checks: PASS\n  - scripts/collapse_check.py: WARN\n  - scripts/validate_submission_zip.py: PASS\n  - manifest verification: PASS\n  - source/zip match: PASS\n  - scripts/verifier_health.py: SKIPPED (opted out via --skip-verifier-health)\n  - scripts/quality_check_adjudicate.py: PASS\n  - spec_satisfiability.py: FAIL\n  - actionability_check.py: FAIL\n  - no_hidden_contracts.py: PASS\n  - obfuscation_lint.py: PASS\n  - first-look dry run: PASS\n  - final oracle evidence: PASS\n  - final NOP evidence: PASS\n  - category profile: FAIL\n  - reference pattern: FAIL\n  - waiver_lint.py: PASS\n\nWarnings:\n  - scripts/collapse_check.py returned WARN with 7 signal(s) that still need justification\n\nBlocking failures:\n  - spec_satisfiability.py failed: spec_satisfiability.py returned FAIL\n  - actionability_check.py failed: actionability_check.py report returned WARN, not PASS\n  - category profile failed: category_profile metadata is missing from spec, construction_manifest.json, or task.toml\n  - reference pattern failed: reference_task_check.py returned FAIL\n"
+    },
+    "cross-module-float-policy-drift": {
+      "registry_id": "cross-module-float-policy-drift",
+      "status": "approved",
+      "steps": {
+        "task_gate": {
+          "pass": true,
+          "fails": []
+        },
+        "actionability_check": true,
+        "no_hidden_contracts": true,
+        "obfuscation_lint": true,
+        "spec_gap_detector": true,
+        "spec_test_alignment": true,
+        "check_task": true,
+        "harbor": true,
+        "package": true,
+        "approve_task": true
+      },
+      "oracle_job_dir": "/home/rohit/projects/airdawg/jobs/2026-06-16__23-19-55",
+      "nop_job_dir": "/home/rohit/projects/airdawg/jobs/2026-06-16__23-20-18",
+      "approve_tail": "home/rohit/projects/airdawg/tasks/initramfs-module-order-drift\nSubmission zip: /home/rohit/projects/airdawg/Task_Ready_To_Submit/cross-module-float-policy-drift.zip\n\nCheck summary (mechanical gate is authoritative):\n  - .step2b-checksum: PASS\n  - static checks: WARN\n  - scripts/collapse_check.py: WARN\n  - scripts/validate_submission_zip.py: PASS\n  - manifest verification: PASS\n  - source/zip match: PASS\n  - scripts/verifier_health.py: SKIPPED (opted out via --skip-verifier-health)\n  - scripts/quality_check_adjudicate.py: PASS\n  - spec_satisfiability.py: PASS\n  - actionability_check.py: PASS\n  - no_hidden_contracts.py: PASS\n  - obfuscation_lint.py: PASS\n  - first-look dry run: PASS\n  - final oracle evidence: PASS\n  - final NOP evidence: PASS\n  - category profile: PASS\n  - reference pattern: PASS\n  - waiver_lint.py: PASS\n\nWarnings:\n  - static check warning: solve.sh or tests depend on build knobs the agent cannot discover. Each knob below is passed as a -D<NAME>=, --preset <NAME>, or exported env var, but <NAME> appears nowhere in instruction.md or inside environment/. Name the knob in instruction.md, or drop a comment naming it in a file the agent will read (CMakeLists.txt, a header, a README). Otherwise the oracle solution is unreachable and partial-fix tests penalise agents for a contract they were never told about:\n  'PATCH_DIR'  (referenced by: solve.sh)\n  - scripts/collapse_check.py returned WARN with 5 signal(s) that still need justification\n\nBlocking failures:\n  - none\n"
+    },
+    "mac-policy-boolean-precedence": {
+      "registry_id": "mac-policy-boolean-precedence",
+      "status": "approved",
+      "steps": {
+        "task_gate": {
+          "pass": true,
+          "fails": []
+        },
+        "actionability_check": true,
+        "no_hidden_contracts": true,
+        "obfuscation_lint": true,
+        "spec_gap_detector": true,
+        "spec_test_alignment": true,
+        "check_task": true,
+        "harbor": true,
+        "package": true,
+        "approve_task": true
+      },
+      "oracle_job_dir": "/home/rohit/projects/airdawg/jobs/2026-06-16__23-23-58",
+      "nop_job_dir": "/home/rohit/projects/airdawg/jobs/2026-06-16__23-24-19",
+      "approve_tail": " /home/rohit/projects/airdawg/tasks/initramfs-module-order-drift\nSubmission zip: /home/rohit/projects/airdawg/Task_Ready_To_Submit/mac-policy-boolean-precedence.zip\n\nCheck summary (mechanical gate is authoritative):\n  - .step2b-checksum: PASS\n  - static checks: WARN\n  - scripts/collapse_check.py: WARN\n  - scripts/validate_submission_zip.py: PASS\n  - manifest verification: PASS\n  - source/zip match: PASS\n  - scripts/verifier_health.py: SKIPPED (opted out via --skip-verifier-health)\n  - scripts/quality_check_adjudicate.py: PASS\n  - spec_satisfiability.py: PASS\n  - actionability_check.py: PASS\n  - no_hidden_contracts.py: PASS\n  - obfuscation_lint.py: PASS\n  - first-look dry run: PASS\n  - final oracle evidence: PASS\n  - final NOP evidence: PASS\n  - category profile: PASS\n  - reference pattern: PASS\n  - waiver_lint.py: PASS\n\nWarnings:\n  - static check warning: solve.sh or tests depend on build knobs the agent cannot discover. Each knob below is passed as a -D<NAME>=, --preset <NAME>, or exported env var, but <NAME> appears nowhere in instruction.md or inside environment/. Name the knob in instruction.md, or drop a comment naming it in a file the agent will read (CMakeLists.txt, a header, a README). Otherwise the oracle solution is unreachable and partial-fix tests penalise agents for a contract they were never told about:\n  'PATCH_DIR'  (referenced by: solve.sh)\n  - scripts/collapse_check.py returned WARN with 5 signal(s) that still need justification\n\nBlocking failures:\n  - none\n"
+    },
+    "supply-chain-sig-chain-gap": {
+      "registry_id": "supply-chain-sig-chain-gap",
+      "status": "blocked_approve",
+      "steps": {
+        "task_gate": {
+          "pass": true,
+          "fails": []
+        },
+        "actionability_check": true,
+        "no_hidden_contracts": true,
+        "obfuscation_lint": true,
+        "spec_gap_detector": true,
+        "spec_test_alignment": true,
+        "check_task": true,
+        "harbor": true,
+        "package": true,
+        "approve_task": false
+      },
+      "oracle_job_dir": "/home/rohit/projects/airdawg/jobs/2026-06-16__23-28-04",
+      "nop_job_dir": "/home/rohit/projects/airdawg/jobs/2026-06-16__23-28-27",
+      "approve_tail": "Approval gate: FAIL\nMechanical status: FAIL\nTask dir: /home/rohit/projects/airdawg/tasks/stencil-equivalence-certificate\nSubmission zip: /home/rohit/projects/airdawg/Task_Ready_To_Submit/supply-chain-sig-chain-gap.zip\n\nCheck summary (mechanical gate is authoritative):\n  - .step2b-checksum: PASS\n  - static checks: WARN\n  - scripts/collapse_check.py: WARN\n  - scripts/validate_submission_zip.py: PASS\n  - manifest verification: PASS\n  - source/zip match: PASS\n  - scripts/verifier_health.py: SKIPPED (opted out via --skip-verifier-health)\n  - scripts/quality_check_adjudicate.py: PASS\n  - spec_satisfiability.py: FAIL\n  - actionability_check.py: PASS\n  - no_hidden_contracts.py: PASS\n  - obfuscation_lint.py: PASS\n  - first-look dry run: PASS\n  - final oracle evidence: PASS\n  - final NOP evidence: PASS\n  - category profile: PASS\n  - reference pattern: PASS\n  - waiver_lint.py: PASS\n\nWarnings:\n  - static check warning: instruction.md is longer than the preferred 1 sentence to 3 paragraphs guidance\n  - scripts/collapse_check.py returned WARN with 8 signal(s) that still need justification\n\nBlocking failures:\n  - spec_satisfiability.py failed: spec_satisfiability.py returned FAIL\n"
+    },
+    "device-node-lineage-mismatch": {
+      "registry_id": "device-node-lineage-mismatch",
+      "status": "blocked_approve",
+      "steps": {
+        "task_gate": {
+          "pass": true,
+          "fails": []
+        },
+        "actionability_check": true,
+        "no_hidden_contracts": true,
+        "obfuscation_lint": true,
+        "spec_gap_detector": true,
+        "spec_test_alignment": true,
+        "check_task": true,
+        "harbor": true,
+        "package": true,
+        "approve_task": false
+      },
+      "oracle_job_dir": "/home/rohit/projects/airdawg/jobs/2026-06-16__23-32-18",
+      "nop_job_dir": "/home/rohit/projects/airdawg/jobs/2026-06-16__23-32-38",
+      "approve_tail": "Approval gate: FAIL\nMechanical status: FAIL\nTask dir: /home/rohit/projects/airdawg/tasks/bind-propagation-orphan-inodes\nSubmission zip: /home/rohit/projects/airdawg/Task_Ready_To_Submit/device-node-lineage-mismatch.zip\n\nCheck summary (mechanical gate is authoritative):\n  - .step2b-checksum: PASS\n  - static checks: PASS\n  - scripts/collapse_check.py: WARN\n  - scripts/validate_submission_zip.py: PASS\n  - manifest verification: PASS\n  - source/zip match: PASS\n  - scripts/verifier_health.py: SKIPPED (opted out via --skip-verifier-health)\n  - scripts/quality_check_adjudicate.py: PASS\n  - spec_satisfiability.py: FAIL\n  - actionability_check.py: FAIL\n  - no_hidden_contracts.py: PASS\n  - obfuscation_lint.py: PASS\n  - first-look dry run: PASS\n  - final oracle evidence: PASS\n  - final NOP evidence: PASS\n  - category profile: FAIL\n  - reference pattern: FAIL\n  - waiver_lint.py: PASS\n\nWarnings:\n  - scripts/collapse_check.py returned WARN with 7 signal(s) that still need justification\n\nBlocking failures:\n  - spec_satisfiability.py failed: spec_satisfiability.py returned FAIL\n  - actionability_check.py failed: actionability_check.py report returned WARN, not PASS\n  - category profile failed: category_profile metadata is missing from spec, construction_manifest.json, or task.toml\n  - reference pattern failed: reference_task_check.py returned FAIL\n"
+    }
+  }
+}

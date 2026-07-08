@@ -1,0 +1,14 @@
+user_visible_outputs = ["/app/output/report.json"]
+internal_harness_files = ["/tests/test.sh", "/tests/test_outputs.py"]
+
+[structured_outputs.report]
+target = "/app/output/report.json"
+format = "json"
+instruction_checks = [
+  "lane_window_consistency",
+  "commit_latch_visibility",
+  "map_epoch_roundtrip",
+  "alias_sort_stability",
+  "horizon_anchor_trace",
+  "probe_depth_agreement",
+]

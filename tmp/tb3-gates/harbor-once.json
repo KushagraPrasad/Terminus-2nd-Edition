@@ -1,0 +1,56 @@
+{
+  "runs": [
+    {
+      "command": [
+        "harbor",
+        "run",
+        "-p",
+        "tasks/bootloader-generation-confusion-variant-1",
+        "-a",
+        "oracle"
+      ],
+      "errors": 0,
+      "exit_code": 0,
+      "expected_mean": 1.0,
+      "job_dir": "/home/mrigank/terminus/new repo/Terminal/jobs/2026-05-13__16-50-23",
+      "mean": 1.0,
+      "message": "result.json matched expected score",
+      "name": "oracle",
+      "result_path": "/home/mrigank/terminus/new repo/Terminal/jobs/2026-05-13__16-50-23/result.json",
+      "reward_distribution": {
+        "1.0": 1
+      },
+      "status": "PASS",
+      "trials": 1
+    },
+    {
+      "command": [
+        "harbor",
+        "run",
+        "-p",
+        "tasks/bootloader-generation-confusion-variant-1",
+        "-a",
+        "nop"
+      ],
+      "errors": 0,
+      "exit_code": 0,
+      "expected_mean": 0.0,
+      "job_dir": "/home/mrigank/terminus/new repo/Terminal/jobs/2026-05-13__16-51-43",
+      "mean": 0.0,
+      "message": "result.json matched expected score",
+      "name": "nop",
+      "result_path": "/home/mrigank/terminus/new repo/Terminal/jobs/2026-05-13__16-51-43/result.json",
+      "reward_distribution": {
+        "0.0": 1
+      },
+      "status": "PASS",
+      "trials": 1
+    }
+  ],
+  "status": "PASS",
+  "summary": {
+    "fail": 0,
+    "pass": 2
+  },
+  "task_dir": "tasks/bootloader-generation-confusion-variant-1"
+}

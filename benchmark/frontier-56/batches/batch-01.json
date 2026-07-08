@@ -1,0 +1,53 @@
+{
+  "batch": 1,
+  "tasks": [
+    {
+      "registry_id": "abi-rebuild-drift-detector",
+      "task_dir": "abi-rebuild-drift",
+      "spec_stem": "abi-rebuild-drift",
+      "linked": true
+    },
+    {
+      "registry_id": "incremental-build-shadow-artifacts",
+      "task_dir": "live-migration-shadow-state-variant-2",
+      "spec_stem": "incremental-build-shadow-artifacts-023",
+      "linked": true
+    },
+    {
+      "registry_id": "input-remap-variant-ladder",
+      "task_dir": "input-remap-variant-ladder",
+      "spec_stem": "input-remap-variant-ladder",
+      "linked": true
+    },
+    {
+      "registry_id": "crypto-agility-variant-ladder",
+      "task_dir": "codec-framing-variant-ladder",
+      "spec_stem": "codec-framing-variant-ladder",
+      "linked": true
+    },
+    {
+      "registry_id": "stream-window-aggregate-drift",
+      "task_dir": "stream-window-aggregate-drift",
+      "spec_stem": "stream-window-aggregate-drift",
+      "linked": true
+    },
+    {
+      "registry_id": "pipeline-dag-checkpoint-resume",
+      "task_dir": "checkpoint-bridge",
+      "spec_stem": "checkpoint-resume-optimizer-state",
+      "linked": true
+    },
+    {
+      "registry_id": "happens-before-model-check",
+      "task_dir": "happens-before-model-check",
+      "spec_stem": "happens-before-model-check",
+      "linked": true
+    },
+    {
+      "registry_id": "cross-module-float-policy-drift",
+      "task_dir": "initramfs-module-order-drift",
+      "spec_stem": "cross-runtime-float-policy-drift-016",
+      "linked": true
+    }
+  ]
+}

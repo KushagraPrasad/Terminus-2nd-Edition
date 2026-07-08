@@ -1,0 +1,39 @@
+version = "2.0"
+
+[metadata]
+author_name = "anonymous"
+author_email = "anonymous"
+difficulty = "hard"
+category = "software-engineering"
+tags = ["recovery", "replay", "staging", "lineage", "coherence"]
+languages = ["python", "bash"]
+codebase_size = "small"
+number_of_milestones = 0
+subcategories = ["tool_specific"]
+expert_time_estimate_min = 45
+junior_time_estimate_min = 180
+
+[category_profile]
+challenge_family = "replay_transcript_repair"
+profile_name = "state_recovery_crash_consistency"
+allowed_instruction_disclosures = "symptom narrative, /app/environment repair scope, contract.md path, runner regeneration command, static-output rejection, and bundled fixture directory scope."
+forbidden_instruction_leaks = "exact patch files/functions, oracle target lists, per-scenario answer tables, and implementation recipes for digest/lane/tail helpers."
+category_specific_hardness_bar = "Agents must repair multi-module Python materialization (studio, journal_apply, co_emitters, wal_slots) so regenerated recovery_transcript.json matches contract-derived digests, lanes, tails, and span tokens."
+category_specific_verifier_risks = "Tests delete output and rerun the driver; direct library-import probes can fail when only the runner wrapper is patched."
+coverage_role = "Covers replay-heavy maintenance drift across digest, promotion-tail, and cross-span invariants in a small Python harness."
+
+[reference_pattern]
+reference_task_id = "async-pipeline-premature-completion"
+
+[agent]
+timeout_sec = 1800
+
+[verifier]
+timeout_sec = 600
+
+[environment]
+allow_internet = false
+build_timeout_sec = 600
+cpus = 2
+memory_mb = 4096
+storage_mb = 10240

@@ -1,0 +1,12 @@
+Agent reads /app/environment/docs/formal_rules.md and compares cc_run output against the six durability properties, +2
+Agent rebuilds /app/bin/cc_run with cmake after editing C++ sources under /app/environment, +3
+Agent inspects environment/n4q/mux_sel.cpp or fold_apply.cpp and repairs manifest fold selection so manifest_chain_hex stays row-key derived when summary surfaces disagree, +5
+Agent repairs environment/k7w/lane_mux.cpp so rollback phases preserve sealed replay cursor state instead of zeroing it, +3
+Agent repairs environment/m9p/stamp_mux.cpp so restart boundaries advance gen_stamp using the session generation floor, +3
+Agent repairs environment/engine/pipeline.cpp or session_registry.cpp so gen_high_water from /app/environment/state/session.registry carries across invocations, +3
+Agent repairs environment/pilot/entry.cpp so each driver invocation appends ledger records and updates session.registry without clobbering prior runs, +3
+Agent runs /app/bin/cc_run across profiles a through d and inspects /app/output/cc_report.json, /app/output/run_logs/, and session.registry for cross-artifact consistency, +2
+Agent writes expected JSON directly under /app/output without rebuilding sources and rerunning the driver pipeline, -5
+Agent edits environment/util/digest.cpp to change chain-fold sorting even though that helper already matches the formal rule, -3
+Agent patches only environment/tools/summary_mux.cpp formatting while leaving manifest authority selection on the competing summary path, -3
+Agent skips a cmake rebuild after changing environment C++ sources so /app/bin/cc_run stays stale, -2

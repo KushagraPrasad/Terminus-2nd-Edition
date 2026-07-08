@@ -1,0 +1,822 @@
+{
+  "hardness_axes": [
+    {
+      "id": "discover",
+      "name": "Discover",
+      "verdict": "PASS",
+      "reasoning": "Solver must infer which transition edges, bind duplicate paths, and pivot reset scopes are wrong from binary traces, checker diagnostics, and sampled logs\u2014not from instruction.md alone."
+    },
+    {
+      "id": "synthesize",
+      "name": "Synthesize",
+      "verdict": "PASS",
+      "reasoning": "Flag transition engine, bind event fan-in, pivot relationship reset, trace canonicalization, and witness validation must align across scenario bundles and two propagation profiles."
+    },
+    {
+      "id": "diagnose_or_design",
+      "name": "Diagnose or Design/Search",
+      "verdict": "PASS",
+      "reasoning": "Formal correctness burden: choose propagation updates and witness encodings that satisfy documented invariants under bind duplication and partial pivot reset without a disclosed proof recipe."
+    },
+    {
+      "id": "navigate_coupling",
+      "name": "Navigate coupling",
+      "verdict": "PASS",
+      "reasoning": "Fixing only transition flags can pass single-scenario smoke while bind delivery and pivot reset still break cross-scenario witness digests and replay obligations."
+    },
+    {
+      "id": "reason_beyond_training",
+      "name": "Reason beyond training",
+      "verdict": "PASS",
+      "reasoning": "Requires Linux mount propagation semantics (shared/private/slave composition, bind event duplication, pivot partial reset) beyond generic FSM transcription from training data."
+    }
+  ],
+  "anti_trivialization_checks": [
+    {
+      "id": "disclosure_collapse",
+      "name": "Disclosure-collapse",
+      "verdict": "PASS",
+      "reasoning": "After public invariants, checker command, witness schema, and recovery command are disclosed, the solver must still coordinate transition composition, bind deduplication keys, pivot edge retention, and cross-format trace digests\u2014no single disclosed rule maps to one obvious edit."
+    },
+    {
+      "id": "hidden_instance",
+      "name": "Hidden-instance",
+      "verdict": "PASS",
+      "reasoning": "Failures reproduce across six bundled scenario sequences and two propagation profiles, not one hidden broken fixture."
+    },
+    {
+      "id": "single_artifact_repair",
+      "name": "Single-artifact repair",
+      "verdict": "PASS",
+      "reasoning": "Oracle touches transition engine, bind delivery lane, pivot reset coordinator, and witness packer across four module roots."
+    },
+    {
+      "id": "generalization",
+      "name": "Generalization",
+      "verdict": "PASS",
+      "reasoning": "Verifier runs full --matrix all across profiles; fixes must generalize, not special-case one sequence."
+    },
+    {
+      "id": "prompt_honesty",
+      "name": "Prompt-honesty",
+      "verdict": "PASS",
+      "reasoning": "An honest constraint-complete prompt states outcomes and commands but not which subsystem owns each defect class or transition table row."
+    },
+    {
+      "id": "cheating_vs_difficulty",
+      "name": "Cheating-vs-difficulty",
+      "verdict": "PASS",
+      "reasoning": "Difficulty comes from coupled formal propagation reasoning, not hidden tests or asymmetric oracle access."
+    },
+    {
+      "id": "mechanical_fix_filter",
+      "name": "Mechanical-fix filter",
+      "verdict": "PASS",
+      "reasoning": "The idea is not salvageable by timeout tuning or reward formatting alone."
+    },
+    {
+      "id": "localized_fix",
+      "name": "Localized-fix",
+      "verdict": "PASS",
+      "reasoning": "Fixing only the checker, only one profile, or only transition tables leaves independent verifier failures on bind replay and pivot hygiene."
+    },
+    {
+      "id": "oracle_locality",
+      "name": "Oracle-locality",
+      "verdict": "PASS",
+      "reasoning": "Oracle coordinates four opaque fix-path symbols plus rebuild/verify orchestration; not a one-file table overwrite."
+    },
+    {
+      "id": "small_declarative_cluster",
+      "name": "Small declarative-cluster",
+      "verdict": "PASS",
+      "reasoning": "Solve is not a single TOML knob or witness template fill; it requires runtime code changes and experiment interpretation across artifacts."
+    },
+    {
+      "id": "grep_collapse",
+      "name": "Grep-collapse",
+      "verdict": "PASS",
+      "reasoning": "Instruction nouns are banned from fix-path symbols; public API and checker names remain the only searchable domain terms."
+    },
+    {
+      "id": "pre_factored_helper",
+      "name": "Pre-factored-helper",
+      "verdict": "PASS",
+      "reasoning": "No helper named validate_propagation or check_invariant on the fix frontier."
+    },
+    {
+      "id": "recipe_discount",
+      "name": "Recipe-discount",
+      "verdict": "PASS",
+      "reasoning": "Standard mount-namespace tutorials fail because bind duplicate paths, pivot partial reset, and cross-format witness digests interact across scenarios."
+    },
+    {
+      "id": "security_aura_discount",
+      "name": "Security-aura discount",
+      "verdict": "PASS",
+      "reasoning": "Hardness is formal mount propagation correctness, not security theater."
+    },
+    {
+      "id": "orthogonal_checklist",
+      "name": "Orthogonal-checklist",
+      "verdict": "PASS",
+      "reasoning": "Transition fixes can reintroduce bind duplicate violations; bind fixes can mask pivot reset gaps; witness encoding couples all three and forces backtracking."
+    },
+    {
+      "id": "harness_discount",
+      "name": "Harness-discount",
+      "verdict": "PASS",
+      "reasoning": "Docker and seeded replay schedulers provide realism but are not the core difficulty."
+    },
+    {
+      "id": "one_pass_solvability",
+      "name": "One-pass solvability",
+      "verdict": "PASS",
+      "reasoning": "Solver must run multi-profile verification, interpret partial logs, and iterate across at least four code roots."
+    },
+    {
+      "id": "hard_only_gate",
+      "name": "Hard-only gate",
+      "verdict": "PASS",
+      "reasoning": "Task targets expert mount-namespace formal verification with coupled proof obligations, not medium recipe work."
+    },
+    {
+      "id": "discovery_budget_test",
+      "name": "Discovery/design budget test",
+      "verdict": "PASS",
+      "reasoning": "Four non-obvious discoveries are enumerated below and live outside instruction.md."
+    },
+    {
+      "id": "instruction_specificity_test",
+      "name": "Instruction specificity test",
+      "verdict": "PASS",
+      "reasoning": "Instruction is constraint-complete about public invariants and checker contract but does not disclose transition implementation recipe or fix-path symbols."
+    },
+    {
+      "id": "topology_distribution_test",
+      "name": "Topology distribution test",
+      "verdict": "PASS",
+      "reasoning": "Three distinct proof/fix topologies are enumerated below; each requires three or more coordinated locations and no single location suffices."
+    }
+  ],
+  "rubric_axes": [
+    {
+      "id": "verifiable",
+      "name": "Verifiable",
+      "verdict": "PASS",
+      "reasoning": "Deterministic mp_verify matrix with seeded replay, witness schema checks, and digest recomputation on repeated runs."
+    },
+    {
+      "id": "well_specified",
+      "name": "Well-specified",
+      "verdict": "PASS",
+      "reasoning": "Public checker command, witness schema, propagation invariant statements, and recovery command give two drafters equivalent verifier intent."
+    },
+    {
+      "id": "solvable",
+      "name": "Solvable",
+      "verdict": "PASS",
+      "reasoning": "Expert with mount-namespace experience can fix the minimized simulator and checker in a few hours offline."
+    },
+    {
+      "id": "difficult",
+      "name": "Difficult",
+      "verdict": "PASS",
+      "reasoning": "Requires professional kernel/namespace propagation knowledge; undergrads cannot patch by table lookup alone after disclosure."
+    },
+    {
+      "id": "interesting",
+      "name": "Interesting",
+      "verdict": "PASS",
+      "reasoning": "Mount propagation bugs cause production container and initramfs failures; formal verification of namespace setup is paid work."
+    },
+    {
+      "id": "outcome_verified",
+      "name": "Outcome-verified",
+      "verdict": "PASS",
+      "reasoning": "Grades terminal witness artifacts and checker exit codes, not the agent's proof strategy or tool choices."
+    }
+  ],
+  "instruction_completeness_test": {
+    "verdict": "PASS",
+    "reasoning": "Instruction alone does not specify transition table composition for bind duplicates, pivot edge retention sets, or witness canonical byte layout; solver must engage codebase, traces, and checker behavior."
+  },
+  "discovery_budget": [
+    {
+      "discovery": "Bind mount duplicate event paths deduplicate on (parent_mnt_id, submount_gen) rather than dentry identity alone, so naive fan-in counting passes smoke but fails cross-scenario replay.",
+      "planned_location": "environment/bind/lane/delivery.c fold_event_r body and fixture-driven tests",
+      "why_instruction_must_not_reveal": "Revealing the dedup key would collapse bind delivery to a single obvious function edit without proof search across scenarios."
+    },
+    {
+      "discovery": "pivot_root clears propagation tree for the new root mount but retains bind-slave edges on pre-pivot subtrees documented only via checker replay, not the public invariant bullet list.",
+      "planned_location": "environment/coord/pivot/reset.c reset_edge_q and pivot_bind scenario bundle",
+      "why_instruction_must_not_reveal": "Naming the retained edge set would turn pivot reset into transcription of a table rather than formal reasoning under partial reset."
+    },
+    {
+      "discovery": "MS_SLAVE transitions compose differently when an intermediate mount is MS_PRIVATE versus MS_SHARED; the public glossary names flags but not the pairwise composition rule used by the engine.",
+      "planned_location": "environment/core/mp/transition.c apply_flag_n transition lattice",
+      "why_instruction_must_not_reveal": "Publishing the full composition matrix would satisfy post-disclosure collapse\u2014the instruction states outcomes, not the internal lattice."
+    },
+    {
+      "discovery": "Witness trace_digest excludes stage-only padding fields present in intermediate JSON under /app/output/stage, so hand-edited summaries fail even when local acyclic checks pass.",
+      "planned_location": "environment/tools/mp_verify/witness.c pack_witness_u and verify_contract.md cross-reference",
+      "why_instruction_must_not_reveal": "Disclosing the exact field omission list would map 1:1 to one packer function without cross-file coordination work."
+    }
+  ],
+  "instruction_specificity": {
+    "level": "constraint-complete",
+    "reasoning": "Public target, checker command, witness schema, propagation invariant vocabulary, and recovery workflow are complete; transition implementation and fix-path remain open."
+  },
+  "attack_path": {
+    "summary": "Agent writes witness.json from stage reports, patches checker only, or fills a transition table copied from docs without fixing bind delivery and pivot reset.",
+    "reasoning": "Each shortcut fails independent tests: digest cross-check, bind duplicate replay, pivot hygiene after recovery, and full matrix obligations under both profiles."
+  },
+  "smallest_plausible_patch": {
+    "summary": "Coordinate four opaque functions across transition, bind delivery, pivot reset, and witness packing so mp_verify --matrix all passes with matching trace digests.",
+    "reasoning": "Smallest success still spans four module roots and rebuild orchestration; a one-function table tweak cannot satisfy cross-format and cross-scenario tests."
+  },
+  "collapse_audit": {
+    "verdict": "PASS",
+    "reasoning": "Post-disclosure residual work requires discovering composition rules, bind dedup keys, pivot edge retention, and canonical trace bytes across interacting subsystems\u2014not mapping each public bullet to one obvious module.",
+    "residual_hardness": "Even with invariants and schema public, the solver must experiment with seeded scenarios, interpret partial logs, recover from destructive migration, and align four code roots under two propagation profiles.",
+    "red_flags": [
+      "Risk of spec-complete transition table in instruction\u2014mitigated by stating product invariants only",
+      "Risk of golden witness fixture\u2014mitigated by digest recomputation from canonical binary traces"
+    ]
+  },
+  "topology_enumeration": [
+    {
+      "id": "topology_transition_bind",
+      "summary": "Fix topology for shared/private/slave transition lattice interacting with bind duplicate delivery.",
+      "locations": [
+        "environment/core/mp/transition.c",
+        "environment/bind/lane/delivery.c",
+        "environment/scenarios/bind_fanin.json",
+        "environment/tools/mp_verify/engine.c"
+      ],
+      "why_no_single_location_suffices": "Correcting transition flags without bind dedup keys still yields valid local flags with invalid cross-mount event counts in witness rows."
+    },
+    {
+      "id": "topology_pivot_replay",
+      "summary": "Fix topology for pivot partial reset with replay-safe trace store and recovery workflow.",
+      "locations": [
+        "environment/coord/pivot/reset.c",
+        "environment/migrations/v2_trace.sh",
+        "environment/scenarios/pivot_bind.json",
+        "environment/docs/verify_contract.md"
+      ],
+      "why_no_single_location_suffices": "Pivot reset code alone cannot restore fixtures after destructive migration without idempotent recovery orchestration tested elsewhere."
+    },
+    {
+      "id": "topology_witness_cross_format",
+      "summary": "Fix topology for witness packing aligned with binary trace canonicalization across profiles.",
+      "locations": [
+        "environment/tools/mp_verify/witness.c",
+        "environment/tools/trace_extract/collector.c",
+        "environment/profiles/strict.toml",
+        "environment/profiles/relaxed.toml"
+      ],
+      "why_no_single_location_suffices": "Profile TOML alone cannot fix missing field omissions in witness packer or collector byte order."
+    }
+  ],
+  "construction_manifest": {
+    "symbol_table": [
+      {
+        "path": "environment/core/mp/transition.c",
+        "symbol": "apply_flag_n",
+        "kind": "function",
+        "signature": "int apply_flag_n(struct mp_ctx *ctx, uint32_t mnt_id, enum flag_action act, uint8_t target_flag)",
+        "purpose": "Applies propagation flag transitions for a mount node in the simulated tree."
+      },
+      {
+        "path": "environment/bind/lane/delivery.c",
+        "symbol": "fold_event_r",
+        "kind": "function",
+        "signature": "int fold_event_r(struct mp_ctx *ctx, const struct bind_event *ev, uint32_t parent_id, uint16_t submount_gen)",
+        "purpose": "Merges bind-related propagation events into the active delivery lane."
+      },
+      {
+        "path": "environment/coord/pivot/reset.c",
+        "symbol": "reset_edge_q",
+        "kind": "function",
+        "signature": "void reset_edge_q(struct mp_ctx *ctx, uint32_t root_id, enum pivot_scope scope)",
+        "purpose": "Rewrites propagation edges after a pivot operation for the given scope."
+      },
+      {
+        "path": "environment/tools/mp_verify/witness.c",
+        "symbol": "pack_witness_u",
+        "kind": "function",
+        "signature": "int pack_witness_u(const struct run_matrix *mx, struct witness_blob *out)",
+        "purpose": "Serializes terminal witness rows and canonical trace digests for grading."
+      }
+    ],
+    "flipping_point_contract": {
+      "locations": [
+        {
+          "id": "A",
+          "path": "environment/core/mp/transition.c",
+          "controls_tests": [
+            "test_m01",
+            "test_m02",
+            "test_m03"
+          ]
+        },
+        {
+          "id": "B",
+          "path": "environment/bind/lane/delivery.c",
+          "controls_tests": [
+            "test_m04",
+            "test_m05"
+          ]
+        },
+        {
+          "id": "C",
+          "path": "environment/coord/pivot/reset.c",
+          "controls_tests": [
+            "test_m06",
+            "test_m07",
+            "test_m08"
+          ]
+        },
+        {
+          "id": "D",
+          "path": "environment/tools/mp_verify/witness.c",
+          "controls_tests": [
+            "test_m09",
+            "test_m10"
+          ]
+        }
+      ],
+      "no_single_location_flips_majority": true,
+      "concentration_cap": 0.5
+    },
+    "decoy_manifest": [
+      {
+        "path": "environment/core/mp/legacy_transition.c",
+        "kind": "module",
+        "rhymes_with": "apply_flag_n",
+        "non_fix_purpose": "Deprecated transition path used only by offline benchmarks."
+      },
+      {
+        "path": "environment/bind/lane/stub_delivery.c",
+        "kind": "helper",
+        "rhymes_with": "fold_event_r",
+        "non_fix_purpose": "No-op delivery stubs for simulator builds."
+      },
+      {
+        "path": "environment/tools/trace_extract/collector.c",
+        "kind": "helper",
+        "rhymes_with": "pack_witness_u",
+        "non_fix_purpose": "Collects trace metadata without mutating propagation state."
+      }
+    ],
+    "code_forbidden_tokens": [
+      "propagation",
+      "invariant",
+      "sequence",
+      "scenario",
+      "shared",
+      "private",
+      "slave",
+      "bind",
+      "pivot",
+      "witness",
+      "trace",
+      "digest",
+      "migration",
+      "recovery",
+      "verification",
+      "mount"
+    ]
+  },
+  "naming_pass": {
+    "instruction_nouns_extracted": [
+      "propagation",
+      "invariant",
+      "sequence",
+      "scenario",
+      "shared",
+      "private",
+      "slave",
+      "bind",
+      "pivot",
+      "witness",
+      "trace",
+      "digest",
+      "migration",
+      "recovery",
+      "verification",
+      "mount"
+    ],
+    "renames_during_drafting": [
+      {
+        "original": "propagate_flags_update",
+        "renamed_to": "apply_flag_n",
+        "reason": "Original collided with instruction nouns propagation and mount."
+      },
+      {
+        "original": "bind_event_dup",
+        "renamed_to": "fold_event_r",
+        "reason": "Original collided with instruction noun bind."
+      },
+      {
+        "original": "pivot_tree_clear",
+        "renamed_to": "reset_edge_q",
+        "reason": "Original collided with instruction noun pivot."
+      }
+    ],
+    "test_names_audited": [
+      "test_m01",
+      "test_m02",
+      "test_m03",
+      "test_m04",
+      "test_m05",
+      "test_m06",
+      "test_m07",
+      "test_m08",
+      "test_m09",
+      "test_m10"
+    ],
+    "concentration_math": {
+      "total_tests": 10,
+      "per_location": [
+        {
+          "location_id": "A",
+          "test_count": 3,
+          "ratio": 0.3
+        },
+        {
+          "location_id": "B",
+          "test_count": 2,
+          "ratio": 0.2
+        },
+        {
+          "location_id": "C",
+          "test_count": 3,
+          "ratio": 0.3
+        },
+        {
+          "location_id": "D",
+          "test_count": 2,
+          "ratio": 0.2
+        }
+      ]
+    },
+    "recomputed_concentration": {
+      "total_tests": 10,
+      "concentration_cap": 0.5,
+      "per_location": [
+        {
+          "location_id": "A",
+          "test_count": 3,
+          "ratio": 0.3
+        },
+        {
+          "location_id": "B",
+          "test_count": 2,
+          "ratio": 0.2
+        },
+        {
+          "location_id": "C",
+          "test_count": 3,
+          "ratio": 0.3
+        },
+        {
+          "location_id": "D",
+          "test_count": 2,
+          "ratio": 0.2
+        }
+      ]
+    }
+  },
+  "difficulty_mechanism_plan": [
+    {
+      "mechanism": "rollback_recovery_requirements",
+      "placement": "environment/migrations/v2_trace.sh trace store",
+      "why_model_misses_it": "Agents rerun destructive migration and corrupt stored traces needed for replay scenarios",
+      "fairness_guardrail": "Idempotent recovery command documented in verify_contract.md"
+    },
+    {
+      "mechanism": "partial_observability_experiment_design",
+      "placement": "sampled textual logs vs full binary traces under fixtures/sample_traces",
+      "why_model_misses_it": "Agents infer propagation violations from incomplete log excerpts rather than required scenario experiments",
+      "fairness_guardrail": "Instruction lists required scenario/profile pairs and binary trace directory"
+    },
+    {
+      "mechanism": "environment_specific_cli_semantics",
+      "placement": "environment/scripts/build_all.sh and mp_verify wrapper flags",
+      "why_model_misses_it": "Agents assume generic GNU make/cmake behavior and skip profile matrix flags",
+      "fairness_guardrail": "Instruction names exact mp_verify command and rebuild prerequisite"
+    },
+    {
+      "mechanism": "rare_local_vocabulary",
+      "placement": "MS_SHARED/MS_PRIVATE/MS_SLAVE status tokens in fixtures and checker output",
+      "why_model_misses_it": "Agents misread domain-specific flag tokens as generic mount success markers",
+      "fairness_guardrail": "flag_glossary.md defines tokens with public fixture examples"
+    },
+    {
+      "mechanism": "false_green_intermediate_states",
+      "placement": "/app/output/stage partial mp_verify reports",
+      "why_model_misses_it": "Local acyclic propagation graphs pass early while terminal witness rows still fail linearization-style obligations",
+      "fairness_guardrail": "Instruction states terminal witness.json from full --matrix all run is graded"
+    },
+    {
+      "mechanism": "cross_file_cross_format_invariants",
+      "placement": "witness JSON vs canonical binary trace bytes",
+      "why_model_misses_it": "Agents patch JSON summaries without rebuilding canonical trace payloads checked by digest tests",
+      "fairness_guardrail": "verify_contract.md documents sha256 trace_digest over canonical binary bytes"
+    }
+  ],
+  "calibration_plan": {
+    "oracle_runs": 3,
+    "no_op_runs": 3,
+    "target_agent_runs": 5,
+    "comparator_agent_runs": 5,
+    "human_sanity": "Namespace engineer reproduces failing mp_verify locally using seeded scenarios only",
+    "shortcut_audit": "Block hardcoded witness JSON, checker-only patch, transition-table transcription without bind/pivot fixes, test edits",
+    "ablation_plan": "Remove partial-log layer, then cross-format digest layer, then profile matrix; expect monotonic difficulty drop",
+    "pass_rate_target": {
+      "hard_max_pct": 20,
+      "too_easy_threshold_pct": 80,
+      "basis": "Part E Hard threshold on worst-model accuracy; verifier-offline via Dockerfile-baked pytest; post-upload difficulty classification after platform agent runs"
+    }
+  },
+  "verifier_scoring_plan": {
+    "metrics": [
+      {
+        "metric": "functional_correctness",
+        "weight": 0.45,
+        "criterion": "mp_verify succeeds for all scenarios and profiles"
+      },
+      {
+        "metric": "hidden_invariants",
+        "weight": 0.25,
+        "criterion": "Witness digests match rebuilt binary traces and invariant rows"
+      },
+      {
+        "metric": "state_hygiene",
+        "weight": 0.15,
+        "criterion": "Migration recovery preserves trace store integrity"
+      },
+      {
+        "metric": "interface_correctness",
+        "weight": 0.1,
+        "criterion": "Public simulator API behavior matches docs/api.md under scripted sequences"
+      },
+      {
+        "metric": "deliverable_completeness",
+        "weight": 0.05,
+        "criterion": "witness.json present with required schema fields"
+      }
+    ],
+    "overall_threshold": 0.999,
+    "reward_output": "reward.txt",
+    "binary_threshold_rule": "reward.txt=1 only when all weighted metrics pass"
+  },
+  "subtype_milestone_plan": {
+    "subcategories": [],
+    "milestone_count": 0,
+    "sequential_dependency": "none",
+    "local_only_data": true,
+    "sidecar_or_protocol_notes": "Single-container local verifier with seeded replay scheduler only"
+  },
+  "platform_files": [
+    {
+      "path": "task.toml",
+      "role": "metadata; must set [environment] allow_internet = false"
+    },
+    {
+      "path": "instruction.md",
+      "role": "natural public task prompt derived from Public contract"
+    },
+    {
+      "path": "output_contract.toml",
+      "role": "local output declaration for witness.json"
+    },
+    {
+      "path": "tests/test.sh",
+      "role": "verifier entrypoint; invoke pre-installed pytest only"
+    },
+    {
+      "path": "tests/test_outputs.py",
+      "role": "domain verifier (10 tests)"
+    },
+    {
+      "path": "solution/solve.sh",
+      "role": "oracle coordinating four fix-path symbols"
+    },
+    {
+      "path": "environment/Dockerfile",
+      "role": "build definition; pre-install cmake, gcc, pytest, pinned deps"
+    },
+    {
+      "path": "construction_manifest.json",
+      "role": "local authoring artifact mirroring symbol table"
+    }
+  ],
+  "task_files": [
+    {
+      "path": "environment/core/mp/transition.c",
+      "role": "propagation flag transition engine (fix frontier A)"
+    },
+    {
+      "path": "environment/core/mp/transition.h",
+      "role": "transition engine headers"
+    },
+    {
+      "path": "environment/core/mp/legacy_transition.c",
+      "role": "decoy deprecated transition implementation"
+    },
+    {
+      "path": "environment/core/mp/tree.c",
+      "role": "simulated mount tree mutations"
+    },
+    {
+      "path": "environment/core/mp/scenario_runner.c",
+      "role": "scripted sequence replay driver"
+    },
+    {
+      "path": "environment/bind/lane/delivery.c",
+      "role": "bind event delivery lane (fix frontier B)"
+    },
+    {
+      "path": "environment/bind/lane/delivery.h",
+      "role": "delivery lane headers"
+    },
+    {
+      "path": "environment/bind/lane/stub_delivery.c",
+      "role": "decoy no-op delivery stubs"
+    },
+    {
+      "path": "environment/coord/pivot/reset.c",
+      "role": "pivot relationship reset (fix frontier C)"
+    },
+    {
+      "path": "environment/coord/pivot/reset.h",
+      "role": "pivot reset headers"
+    },
+    {
+      "path": "environment/coord/pivot/bind_matrix.c",
+      "role": "pivot/bind interaction helper"
+    },
+    {
+      "path": "environment/tools/mp_verify/main.c",
+      "role": "checker CLI entrypoint"
+    },
+    {
+      "path": "environment/tools/mp_verify/engine.c",
+      "role": "matrix runner and invariant validation"
+    },
+    {
+      "path": "environment/tools/mp_verify/witness.c",
+      "role": "witness packer (fix frontier D)"
+    },
+    {
+      "path": "environment/tools/mp_verify/witness.h",
+      "role": "witness blob headers"
+    },
+    {
+      "path": "environment/tools/trace_extract/collector.c",
+      "role": "binary trace collector/decoding"
+    },
+    {
+      "path": "environment/tools/trace_extract/collector.h",
+      "role": "trace collector headers"
+    },
+    {
+      "path": "environment/profiles/strict.toml",
+      "role": "strict propagation profile constants (CLI name strict)"
+    },
+    {
+      "path": "environment/profiles/relaxed.toml",
+      "role": "relaxed propagation profile constants (CLI name relaxed)"
+    },
+    {
+      "path": "environment/scenarios/bind_fanin.json",
+      "role": "bind duplicate delivery scenario"
+    },
+    {
+      "path": "environment/scenarios/pivot_bind.json",
+      "role": "pivot plus bind retention scenario"
+    },
+    {
+      "path": "environment/scenarios/slave_chain.json",
+      "role": "private/shared/slave composition scenario"
+    },
+    {
+      "path": "environment/scenarios/replay_matrix.json",
+      "role": "full matrix scenario index"
+    },
+    {
+      "path": "environment/docs/api.md",
+      "role": "public simulator API behavioral contract"
+    },
+    {
+      "path": "environment/docs/verify_contract.md",
+      "role": "witness schema, digest rule, recovery command"
+    },
+    {
+      "path": "environment/docs/flag_glossary.md",
+      "role": "MS_* status token glossary with fixture examples"
+    },
+    {
+      "path": "environment/migrations/v2_trace.sh",
+      "role": "destructive migration with documented idempotent recovery"
+    },
+    {
+      "path": "environment/scripts/build_all.sh",
+      "role": "build orchestration wrapper with task-specific semantics"
+    },
+    {
+      "path": "environment/fixtures/sample_traces/",
+      "role": "binary trace exemplars for observability drills"
+    },
+    {
+      "path": "environment/CMakeLists.txt",
+      "role": "top-level build definition"
+    }
+  ],
+  "fix_frontier": {
+    "count": 4,
+    "distribution": "core/mp, bind/lane, coord/pivot, tools/mp_verify module roots",
+    "naming_policy": "Opaque symbols from construction manifest symbol_table only",
+    "forbidden_stems": [
+      "propagation",
+      "invariant",
+      "sequence",
+      "scenario",
+      "shared",
+      "private",
+      "slave",
+      "bind",
+      "pivot",
+      "witness",
+      "trace",
+      "digest",
+      "migration",
+      "recovery",
+      "verification",
+      "mount"
+    ],
+    "helpers_policy": "Decoys may rhyme structurally; oracle must not touch decoy bodies",
+    "symbol_thin_preferred": true
+  },
+  "contract_surface": {
+    "boolean_fields_max": 0,
+    "direct_boolean_assertions_max": 0,
+    "preferred_assertion_styles": [
+      "witness digests",
+      "checker exit codes",
+      "trace-derived counts",
+      "schema field equality",
+      "cross-run invariants"
+    ],
+    "forbidden_assertion_styles": [
+      "boolean answer keys",
+      "scenario->field->expected tables",
+      "fields ending in _ok/_valid/_passes"
+    ]
+  },
+  "task_shape": {
+    "type": "formal_reasoning",
+    "instruction_framing": "constraint-complete",
+    "hardness_source": "formal correctness",
+    "collapse_risk": "transcribing provided algorithm without proof obligations"
+  },
+  "category_profile": {
+    "challenge_family": "mount propagation semantics",
+    "profile_name": "concurrency_ordering",
+    "allowed_instruction_disclosures": "Concurrent mount sequences, public ordering invariants, mp_verify command, scenario/profile matrix, witness schema, sampled logs, recovery command, MS_* glossary",
+    "forbidden_instruction_leaks": "Race window location, transition table recipe, bind dedup key, pivot edge retention set, oracle transcript, fix-path symbol names",
+    "category_specific_hardness_bar": "Transition engine, bind delivery, pivot reset, trace collector, and checker must coordinate across two profiles and six scenarios",
+    "category_specific_verifier_risks": "False greens from acyclic-only checks, single-trace assertions, golden witness fixtures, global serialization shortcuts",
+    "coverage_role": "Strengthens concurrency_ordering via mount propagation formal proof with cross-artifact witnesses"
+  },
+  "satisfiability_risk": {
+    "rc2_planned_name_risk": "low \u2014 opaque fix-path symbols precommitted in symbol_table",
+    "gx9_contract_risk": "low \u2014 contract uses digests and structured rows, not boolean verdict tables",
+    "cr1_symbol_frontier_risk": "low \u2014 frontier spans four module roots with decoys",
+    "hidden_contract_risk": "medium \u2014 binary trace digest rules and pivot edge retention live in cross-artifact behavior and verify_contract.md"
+  },
+  "actionability_plan": {
+    "verifier_command_visible": "mp_verify --matrix all --profiles strict,relaxed --witness-out /app/output/witness.json documented in instruction.md",
+    "source_fix_intent_visible": "yes \u2014 fix sources under /app/environment so rebuilt checker passes; no patch recipe",
+    "generated_output_rule_visible": "witness.json path and schema public; terminal matrix output is graded",
+    "exact_formula_home": "environment/docs/verify_contract.md for trace_digest sha256 and witness field rules",
+    "schema_home": "instruction.md plus environment/docs/verify_contract.md and flag_glossary.md"
+  },
+  "waiver_plan": {
+    "waivers_expected": false,
+    "waiver_rationale": "Hardness from coupled mount propagation behavior, not harness brittleness"
+  },
+  "reference_pattern": {
+    "justification_if_none": "No promoted reference task covers mount propagation formal proof with cross-profile witnesses and pivot/bind coupling"
+  },
+  "realism_source": {
+    "source_type": "real_system",
+    "evidence_basis": "open-source issue",
+    "upstream_or_synthetic_rationale": "Production system-administration pattern for mount propagation semantics: shared/private/slave composition, bind duplicate events, pivot partial reset",
+    "minimization_preserves": "Causal coupling in mount propagation formal proof across transition, delivery, reset, and witness surfaces",
+    "synthetic_exception_review": "not required"
+  }
+}

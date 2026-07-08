@@ -1,0 +1,754 @@
+{
+  "task_name": "bootloader-generation-confusion-variant-1",
+  "attempt": 1,
+  "best_score": [
+    0,
+    0
+  ],
+  "best_attempt": 1,
+  "plateau_count": 0,
+  "candidates": [],
+  "history": [
+    {
+      "attempt": 1,
+      "fails": 0,
+      "warns": 0,
+      "evidence_path": "specs/.runs/bootloader-generation-confusion-variant-1/attempt-1-evidence.json",
+      "evidence": {
+        "hardness_axes": [
+          {
+            "id": "discover",
+            "name": "Discover",
+            "verdict": "PASS",
+            "reasoning": "Solver must read staged versus live code paths, replay transcripts, and digest builders to learn which authority feeds surface checks versus durable promotion."
+          },
+          {
+            "id": "synthesize",
+            "name": "Synthesize",
+            "verdict": "PASS",
+            "reasoning": "Correctness couples journal ingest ordering, coordinator summaries, and verifier-facing digest materialization across replay windows."
+          },
+          {
+            "id": "diagnose_or_design",
+            "name": "Diagnose or Design/Search",
+            "verdict": "PASS",
+            "reasoning": "Repair shape with symptoms-only public prompt; root cause is which metadata generation trusts after resume boundaries."
+          },
+          {
+            "id": "navigate_coupling",
+            "name": "Navigate coupling",
+            "verdict": "PASS",
+            "reasoning": "Patching only summaries or only tail replay leaves cross-generation contradictions that downstream harness tests catch."
+          },
+          {
+            "id": "reason_beyond_training",
+            "name": "Reason beyond training",
+            "verdict": "PASS",
+            "reasoning": "Failure mixes operational recovery semantics with staged bundle bookkeeping; not a single-algorithm textbook exercise."
+          }
+        ],
+        "anti_trivialization_checks": [
+          {
+            "id": "disclosure_collapse",
+            "name": "Disclosure-collapse",
+            "verdict": "PASS",
+            "reasoning": "After honest disclosure of commands, artifact shapes, and cross-window invariants, the solver still must align authorities and ordering logic across three subsystems."
+          },
+          {
+            "id": "hidden_instance",
+            "name": "Hidden-instance",
+            "verdict": "PASS",
+            "reasoning": "No single corrupt file instance; defect is behavioral mismatch across phases and generations."
+          },
+          {
+            "id": "single_artifact_repair",
+            "name": "Single-artifact repair",
+            "verdict": "PASS",
+            "reasoning": "Flipping-point contract ties distinct roots; deleting one shadow file or checksum is insufficient."
+          },
+          {
+            "id": "generalization",
+            "name": "Generalization",
+            "verdict": "PASS",
+            "reasoning": "Verifier spans multiple replay schedules and promotion tails, not one hard-coded scenario row."
+          },
+          {
+            "id": "prompt_honesty",
+            "name": "Prompt-honesty",
+            "verdict": "PASS",
+            "reasoning": "Honest symptom description does not name the mistaken authority or cleanup ordering bug."
+          },
+          {
+            "id": "cheating_vs_difficulty",
+            "name": "Cheating-vs-difficulty",
+            "verdict": "PASS",
+            "reasoning": "Hardness comes from coordination and diagnosis; anti-cheat is regenerating outputs through the shipped runner only."
+          },
+          {
+            "id": "mechanical_fix_filter",
+            "name": "Mechanical-fix filter",
+            "verdict": "PASS",
+            "reasoning": "Not verifier wiring or timeout tuning; behavior is product recovery semantics."
+          },
+          {
+            "id": "localized_fix",
+            "name": "Localized-fix",
+            "verdict": "PASS",
+            "reasoning": "Three distributed modules per flipping contract; no one cluster satisfies majority of tests alone."
+          },
+          {
+            "id": "oracle_locality",
+            "name": "Oracle-locality",
+            "verdict": "PASS",
+            "reasoning": "Oracle will coordinate edits across roots with substantive behavioral changes, not one-file overwrite."
+          },
+          {
+            "id": "small_declarative_cluster",
+            "name": "Small declarative-cluster",
+            "verdict": "PASS",
+            "reasoning": "Core bug is procedural interaction between replay, promotion, and digest selection, not a tiny literal table transcription."
+          },
+          {
+            "id": "grep_collapse",
+            "name": "Grep-collapse",
+            "verdict": "PASS",
+            "reasoning": "Instruction domain nouns are banned on fix-path symbols per construction manifest; neutral module layout resists prompt-to-file grep."
+          },
+          {
+            "id": "pre_factored_helper",
+            "name": "Pre-factored-helper",
+            "verdict": "PASS",
+            "reasoning": "Decoys perform adjacent non-fix work; fix helpers are opaque and not prompt-aligned verb names."
+          },
+          {
+            "id": "recipe_discount",
+            "name": "Recipe-discount",
+            "verdict": "PASS",
+            "reasoning": "Not a textbook safe-extract or policy-knob fill; requires reasoning about generation lineage and replay cutovers."
+          },
+          {
+            "id": "security_aura_discount",
+            "name": "Security-aura discount",
+            "verdict": "PASS",
+            "reasoning": "Residual work is storage and recovery correctness, not credential theatrics."
+          },
+          {
+            "id": "orthogonal_checklist",
+            "name": "Orthogonal-checklist",
+            "verdict": "PASS",
+            "reasoning": "Promotion summaries, replay ordering, and digest choice trade off; partial fixes fail coupled invariants."
+          },
+          {
+            "id": "harness_discount",
+            "name": "Harness-discount",
+            "verdict": "PASS",
+            "reasoning": "Docker supplies runtime but difficulty is code-level authority confusion, not container novelty."
+          },
+          {
+            "id": "one_pass_solvability",
+            "name": "One-pass solvability",
+            "verdict": "PASS",
+            "reasoning": "Requires instrumented multi-phase runs and cross-checking disagreeing surfaces before editing."
+          },
+          {
+            "id": "hard_only_gate",
+            "name": "Hard-only gate",
+            "verdict": "PASS",
+            "reasoning": "Construction plan targets Edition-2 hard bar with observation contract, flipping points, and replay idempotence traps."
+          },
+          {
+            "id": "discovery_budget_test",
+            "name": "Discovery/design budget test",
+            "verdict": "PASS",
+            "reasoning": "discovery_budget lists three non-trivial discoveries tied to env modules the instruction must not spell out as recipes."
+          },
+          {
+            "id": "instruction_specificity_test",
+            "name": "Instruction specificity test",
+            "verdict": "PASS",
+            "reasoning": "repair_existing_system with symptoms-only level; no spec-complete recipe in the planned prompt."
+          },
+          {
+            "id": "topology_distribution_test",
+            "name": "Topology distribution test",
+            "verdict": "PASS",
+            "reasoning": "topology_enumeration gives three fix topologies each spanning three coordinated loci without a single sufficient component."
+          }
+        ],
+        "rubric_axes": [
+          {
+            "id": "verifiable",
+            "name": "Verifiable",
+            "verdict": "PASS",
+            "reasoning": "Deterministic replay harness, regenerated JSON transcripts, and pytest assertions on derived records."
+          },
+          {
+            "id": "well_specified",
+            "name": "Well-specified",
+            "verdict": "PASS",
+            "reasoning": "Public contract names command, artifact paths, cross-window invariants, and negative controls without oracle triples."
+          },
+          {
+            "id": "solvable",
+            "name": "Solvable",
+            "verdict": "PASS",
+            "reasoning": "Expert can diagnose authority skew and adjust ordering or source selection within a bounded Python codebase."
+          },
+          {
+            "id": "difficult",
+            "name": "Difficult",
+            "verdict": "PASS",
+            "reasoning": "Competent agents must integrate replay, promotion, and digest surfaces under honest disclosure."
+          },
+          {
+            "id": "interesting",
+            "name": "Interesting",
+            "verdict": "PASS",
+            "reasoning": "Mirrors real image-builder and firmware staging incidents where late generations disagree with early probes."
+          },
+          {
+            "id": "outcome_verified",
+            "name": "Outcome-verified",
+            "verdict": "PASS",
+            "reasoning": "Grades regenerated artifacts and invariants, not narrative of steps taken."
+          }
+        ],
+        "instruction_completeness_test": {
+          "verdict": "PASS",
+          "reasoning": "Symptoms and contract live in instruction; which subsystem wrongly trusts shadow summaries versus canonical digests must be learned from code and traces."
+        },
+        "discovery_budget": [
+          {
+            "discovery": "Which on-disk generation token the coordinator treats as authoritative when replay truncates mid-window versus when it completes.",
+            "planned_location": "environment/co_emitters/mid_slice.py",
+            "why_instruction_must_not_reveal": "Naming the mistaken branch collapses diagnosis to a one-line guard."
+          },
+          {
+            "discovery": "How tail replay reorders durable lineage updates relative to cleanup hooks that rewrite sidecar summaries.",
+            "planned_location": "environment/journal_tail/last_apply.py",
+            "why_instruction_must_not_reveal": "Stating replay interleaving explicitly becomes the patch recipe."
+          },
+          {
+            "discovery": "Where digest builders choose reconstructed summaries instead of canonical artifact bytes for verifier-visible material.",
+            "planned_location": "environment/wal_slots/first_delta.py",
+            "why_instruction_must_not_reveal": "Reveals the exact mistaken comparison surface and trivializes to swapping one call site."
+          }
+        ],
+        "instruction_specificity": {
+          "level": "symptoms-only",
+          "reasoning": "Public prompt describes intermittent agreement then late drift across replay windows without naming broken functions or ordering tables."
+        },
+        "attack_path": {
+          "summary": "Models may trust whichever digest or summary first agrees with surface probes, skip tail replay coupling, or flush summaries without fixing canonical selection.",
+          "reasoning": "Each shortcut leaves a distinct failing observation in the regenerated transcript under multi-phase harness runs."
+        },
+        "smallest_plausible_patch": {
+          "summary": "Tighten authority selection so replay boundaries and promotion phases read the same canonical lineage inputs when building verifier-facing digests and coordinator summaries.",
+          "reasoning": "Sounds localized but flipping contract forces coordinated behavior across ingest, coordinator, and digest builder with partial-revert traps."
+        },
+        "collapse_audit": {
+          "verdict": "PASS",
+          "reasoning": "Post-disclosure work remains integration of replay ordering, promotion bookkeeping, and digest provenance\u2014not one-function mapping.",
+          "residual_hardness": "Solver must align generation-scoped metadata with replay-truncated windows while keeping idempotent reruns and regenerated transcripts consistent.",
+          "red_flags": []
+        },
+        "topology_enumeration": [
+          {
+            "id": "topo-a",
+            "summary": "Fix via journal ingest prioritizing canonical bytes over reconstructed summaries during replay.",
+            "locations": [
+              "environment/wal_slots/first_delta.py",
+              "environment/co_emitters/mid_slice.py",
+              "environment/journal_tail/last_apply.py"
+            ],
+            "why_no_single_location_suffices": "Ingest alone cannot repair coordinator summaries that already cached wrong lineage; tail replay still reintroduces skew without tail changes."
+          },
+          {
+            "id": "topo-b",
+            "summary": "Fix via coordinator emission path that refreshes summaries from durable lineage after cleanup windows.",
+            "locations": [
+              "environment/co_emitters/mid_slice.py",
+              "environment/journal_tail/last_apply.py",
+              "environment/wal_slots/first_delta.py"
+            ],
+            "why_no_single_location_suffices": "Emitting summaries from corrected lineage still fails if digest builders read a different shadow slice during verification phases."
+          },
+          {
+            "id": "topo-c",
+            "summary": "Fix via digest builder choosing verifier-visible hashes tied to canonical artifacts rather than short-lived summaries.",
+            "locations": [
+              "environment/wal_slots/first_delta.py",
+              "environment/journal_tail/last_apply.py",
+              "environment/co_emitters/mid_slice.py"
+            ],
+            "why_no_single_location_suffices": "Digest correctness without replay-order repair still mutates evidence before validation in destructive replay steps."
+          }
+        ],
+        "construction_manifest": {
+          "symbol_table": [
+            {
+              "path": "environment/wal_slots/first_delta.py",
+              "symbol": "n_quench_u",
+              "kind": "function",
+              "signature": "n_quench_u(ctx, ledger, probe)",
+              "purpose": "Builds digest-facing records from mixed inputs before promotion."
+            },
+            {
+              "path": "environment/co_emitters/mid_slice.py",
+              "symbol": "n_stitch_v",
+              "kind": "function",
+              "signature": "n_stitch_v(ctx, slices, cursor)",
+              "purpose": "Merges coordinator-visible slices after partial replay."
+            },
+            {
+              "path": "environment/journal_tail/last_apply.py",
+              "symbol": "n_bind_w",
+              "kind": "function",
+              "signature": "n_bind_w(ctx, tail, staging)",
+              "purpose": "Applies tail replay mutations and cleanup side effects."
+            }
+          ],
+          "flipping_point_contract": {
+            "locations": [
+              {
+                "id": "A",
+                "path": "environment/wal_slots/first_delta.py",
+                "controls_tests": [
+                  "test_t01_flank_closure",
+                  "test_t02_flank_closure"
+                ]
+              },
+              {
+                "id": "B",
+                "path": "environment/co_emitters/mid_slice.py",
+                "controls_tests": [
+                  "test_t03_anchor_heads",
+                  "test_t04_emit_trace"
+                ]
+              },
+              {
+                "id": "C",
+                "path": "environment/journal_tail/last_apply.py",
+                "controls_tests": [
+                  "test_t05_rerun_stability",
+                  "test_t06_slot_crosscut"
+                ]
+              }
+            ],
+            "no_single_location_flips_majority": true,
+            "concentration_cap": 0.5
+          },
+          "decoy_manifest": [
+            {
+              "path": "environment/co_emitters/idle_prune.py",
+              "kind": "module",
+              "rhymes_with": "n_stitch_v",
+              "non_fix_purpose": "Prunes unrelated scratch slices for unrelated diagnostics."
+            },
+            {
+              "path": "environment/wal_slots/cold_mirror.py",
+              "kind": "helper",
+              "rhymes_with": "n_quench_u",
+              "non_fix_purpose": "Maintains cold-cache mirrors that never feed the verifier path."
+            },
+            {
+              "path": "environment/journal_tail/noop_pad.py",
+              "kind": "module",
+              "rhymes_with": "n_bind_w",
+              "non_fix_purpose": "Pads tail records for archival exports not consulted by tests."
+            }
+          ],
+          "code_forbidden_tokens": [
+            "workloads",
+            "promotions",
+            "digests",
+            "summaries",
+            "fingerprints",
+            "harness",
+            "coordinator",
+            "checkpoints",
+            "windows",
+            "bundles"
+          ]
+        },
+        "naming_pass": {
+          "instruction_nouns_extracted": [
+            "workloads",
+            "promotions",
+            "digests",
+            "summaries",
+            "fingerprints",
+            "harness",
+            "coordinator",
+            "checkpoints",
+            "windows",
+            "bundles"
+          ],
+          "renames_during_drafting": [
+            {
+              "original": "test_digest_emit_lane",
+              "renamed_to": "test_t04_emit_trace",
+              "reason": "Former name contained digest stem overlapping instruction token digests."
+            }
+          ],
+          "test_names_audited": [
+            "test_t01_flank_closure",
+            "test_t02_flank_closure",
+            "test_t03_anchor_heads",
+            "test_t04_emit_trace",
+            "test_t05_rerun_stability",
+            "test_t06_slot_crosscut"
+          ],
+          "concentration_math": {
+            "total_tests": 6,
+            "per_location": [
+              {
+                "location_id": "A",
+                "test_count": 2,
+                "ratio": 0.3333333333333333
+              },
+              {
+                "location_id": "B",
+                "test_count": 2,
+                "ratio": 0.3333333333333333
+              },
+              {
+                "location_id": "C",
+                "test_count": 2,
+                "ratio": 0.3333333333333333
+              }
+            ]
+          },
+          "recomputed_concentration": {
+            "total_tests": 6,
+            "concentration_cap": 0.5,
+            "per_location": [
+              {
+                "location_id": "A",
+                "test_count": 2,
+                "ratio": 0.3333333333333333
+              },
+              {
+                "location_id": "B",
+                "test_count": 2,
+                "ratio": 0.3333333333333333
+              },
+              {
+                "location_id": "C",
+                "test_count": 2,
+                "ratio": 0.3333333333333333
+              }
+            ]
+          }
+        },
+        "difficulty_mechanism_plan": [
+          {
+            "mechanism": "false_green_intermediate_states",
+            "placement": "environment/co_emitters/mid_slice.py and schedule fixtures",
+            "why_model_misses_it": "Early probes agree while later promotion phases expose stale coordinator slices.",
+            "fairness_guardrail": "Instruction states the observable two-phase disagreement without naming the branch mistake."
+          },
+          {
+            "mechanism": "rollback_recovery_requirements",
+            "placement": "environment/journal_tail/last_apply.py and harness reruns",
+            "why_model_misses_it": "Tail replay mutates evidence used by later validation unless ordering is coordinated.",
+            "fairness_guardrail": "Deterministic injected schedules and idempotent rerun checks remove flake."
+          },
+          {
+            "mechanism": "deceptive_but_valid_local_evidence",
+            "placement": "environment/wal_slots/first_delta.py versus studio summaries",
+            "why_model_misses_it": "Locally consistent summaries disagree with canonical artifact bytes.",
+            "fairness_guardrail": "Both surfaces are visible in-repo; solver chooses correct authority from behavior."
+          },
+          {
+            "mechanism": "cross_file_cross_format_invariants",
+            "placement": "JSON transcripts plus on-disk fixture bytes cross-checked in tests",
+            "why_model_misses_it": "Digest chain must align bytes, coordinator entries, and tail replay markers simultaneously.",
+            "fairness_guardrail": "contract.md defines cross-format checks referenced by instruction."
+          },
+          {
+            "mechanism": "stateful_multi_step_dependencies",
+            "placement": "environment/runner.py multi-phase scenario driver",
+            "why_model_misses_it": "Later phases depend on mutated state from earlier replay and cleanup windows.",
+            "fairness_guardrail": "Harness exposes deterministic phase labels in transcripts for debugging."
+          }
+        ],
+        "calibration_plan": {
+          "oracle_runs": 3,
+          "no_op_runs": 3,
+          "target_agent_runs": 5,
+          "comparator_agent_runs": 5,
+          "human_sanity": "Engineer with recovery background can trace two disagreeing authorities in under two hours given repo access.",
+          "shortcut_audit": "Watch for static JSON paste, test-only_digest math, broad env wipe shortcuts, or wrapper-only edits that break regeneration checks.",
+          "ablation_plan": "Drop tail replay coupling, drop digest authority swap, or freeze coordinator summaries and expect pass rates to rise toward easy while breaking subsets.",
+          "pass_rate_target": {
+            "hard_max_pct": 20,
+            "too_easy_threshold_pct": 80,
+            "basis": "stronger target agent on this harness class"
+          }
+        },
+        "verifier_scoring_plan": {
+          "metrics": [
+            {
+              "metric": "functional_correctness",
+              "weight": 0.45,
+              "criterion": "Transcript entries match contract.md digest and promotion rules across phases."
+            },
+            {
+              "metric": "hidden_invariants",
+              "weight": 0.25,
+              "criterion": "Cross-window lineage and tail replay markers stay coherent under reruns."
+            },
+            {
+              "metric": "state_hygiene",
+              "weight": 0.15,
+              "criterion": "Regenerated outputs pick up fixes; no stale hand-written transcripts survive deletion."
+            },
+            {
+              "metric": "interface_correctness",
+              "weight": 0.1,
+              "criterion": "CLI entrypoints and paths remain stable for the harness command."
+            },
+            {
+              "metric": "deliverable_completeness",
+              "weight": 0.05,
+              "criterion": "reward.txt present with binary scoring semantics unchanged."
+            }
+          ],
+          "overall_threshold": 0.999,
+          "reward_output": "reward.txt",
+          "binary_threshold_rule": "reward is 1 only when every pytest case passes after fresh transcript regeneration."
+        },
+        "subtype_milestone_plan": {
+          "subcategories": [
+            "tool_specific"
+          ],
+          "milestone_count": 0,
+          "sequential_dependency": "Single-step task; milestones not used.",
+          "local_only_data": true,
+          "sidecar_or_protocol_notes": "Fixtures bundled under environment/studio/app/data; no network or external APIs."
+        },
+        "platform_files": [
+          {
+            "path": "task.toml",
+            "role": "Edition 2 metadata"
+          },
+          {
+            "path": "instruction.md",
+            "role": "natural public task prompt"
+          },
+          {
+            "path": "output_contract.toml",
+            "role": "repo-local output declaration"
+          },
+          {
+            "path": "tests/test.sh",
+            "role": "verifier entrypoint"
+          },
+          {
+            "path": "tests/test_outputs.py",
+            "role": "domain verifier"
+          },
+          {
+            "path": "solution/solve.sh",
+            "role": "oracle"
+          },
+          {
+            "path": "environment/Dockerfile",
+            "role": "build definition"
+          },
+          {
+            "path": "construction_manifest.json",
+            "role": "local authoring artifact"
+          }
+        ],
+        "task_files": [
+          {
+            "path": "environment/runner.py",
+            "role": "ships repro command and regenerates observation transcript"
+          },
+          {
+            "path": "environment/wal_slots/first_delta.py",
+            "role": "fix-frontier digest builder"
+          },
+          {
+            "path": "environment/wal_slots/cold_mirror.py",
+            "role": "decoy cold-cache mirror"
+          },
+          {
+            "path": "environment/wal_slots/__init__.py",
+            "role": "package init"
+          },
+          {
+            "path": "environment/co_emitters/mid_slice.py",
+            "role": "fix-frontier coordinator merge"
+          },
+          {
+            "path": "environment/co_emitters/idle_prune.py",
+            "role": "decoy scratch pruner"
+          },
+          {
+            "path": "environment/co_emitters/__init__.py",
+            "role": "package init"
+          },
+          {
+            "path": "environment/journal_tail/last_apply.py",
+            "role": "fix-frontier tail replay applier"
+          },
+          {
+            "path": "environment/journal_tail/noop_pad.py",
+            "role": "decoy archival padder"
+          },
+          {
+            "path": "environment/journal_tail/__init__.py",
+            "role": "package init"
+          },
+          {
+            "path": "environment/studio/app/entry.py",
+            "role": "scenario orchestration"
+          },
+          {
+            "path": "environment/studio/app/flow.py",
+            "role": "normalizes run records"
+          },
+          {
+            "path": "environment/studio/app/core/types.py",
+            "role": "shared value objects"
+          },
+          {
+            "path": "environment/studio/app/core/checks.py",
+            "role": "non-frontier consistency helpers"
+          },
+          {
+            "path": "environment/studio/app/tools/inspect.py",
+            "role": "diagnostic helper"
+          },
+          {
+            "path": "environment/studio/app/tools/sample_env.sh",
+            "role": "example setup"
+          },
+          {
+            "path": "environment/studio/app/docs/contract.md",
+            "role": "visible schema and command documentation"
+          },
+          {
+            "path": "environment/studio/app/docs/operators.md",
+            "role": "operational context"
+          },
+          {
+            "path": "environment/studio/app/data/schedule.json",
+            "role": "replay schedule fixture"
+          },
+          {
+            "path": "environment/studio/app/data/promotion_tails.json",
+            "role": "promotion tail fixture"
+          },
+          {
+            "path": "environment/studio/app/data/digest_sources.json",
+            "role": "mixed authority fixture"
+          },
+          {
+            "path": "environment/studio/app/data/cleanup_windows.json",
+            "role": "cleanup window fixture"
+          },
+          {
+            "path": "environment/studio/app/emit/archive.py",
+            "role": "non-fix historical writer"
+          },
+          {
+            "path": "environment/studio/app/readers/basefile.py",
+            "role": "baseline reader"
+          },
+          {
+            "path": "environment/studio/app/readers/localfile.py",
+            "role": "workspace reader"
+          }
+        ],
+        "fix_frontier": {
+          "count": 3,
+          "distribution": "environment/wal_slots for digest builder, environment/co_emitters for coordinator merge, environment/journal_tail for tail replay application.",
+          "naming_policy": "Opaque fix-path symbols and neutral directory names; instruction domain nouns forbidden on fix-path code tokens per construction manifest.",
+          "forbidden_stems": [
+            "workloads",
+            "promotions",
+            "digests",
+            "summaries",
+            "fingerprints",
+            "harness",
+            "coordinator",
+            "checkpoints",
+            "windows",
+            "bundles"
+          ],
+          "helpers_policy": "Decoys and studio helpers do adjacent archival or diagnostic work without satisfying verifier invariants alone.",
+          "symbol_thin_preferred": true
+        },
+        "contract_surface": {
+          "boolean_fields_max": 0,
+          "direct_boolean_assertions_max": 0,
+          "preferred_assertion_styles": [
+            "run records",
+            "cross-phase transcript comparisons",
+            "derived digest chains",
+            "idempotent rerun checks",
+            "cleanup-window metamorphic checks"
+          ],
+          "forbidden_assertion_styles": [
+            "boolean answer keys",
+            "scenario-to-value truth tables",
+            "static copied transcripts",
+            "shape-only JSON asserts"
+          ]
+        },
+        "task_shape": {
+          "type": "repair_existing_system",
+          "instruction_framing": "symptoms-only",
+          "hardness_source": "diagnosis",
+          "collapse_risk": "Naming the restore boundary, trusted digest file, or cleanup phase ordering too directly reduces work to a tiny guard or config patch."
+        },
+        "category_profile": {
+          "challenge_family": "storage_recovery_lineage",
+          "profile_name": "state_recovery_crash_consistency",
+          "allowed_instruction_disclosures": "Crash/restart and replay workflows, durability expectations, recovery command, regenerated transcript path, cross-window invariants, idempotent rerun rule, and negative controls for static writes.",
+          "forbidden_instruction_leaks": "Journal layout details, exact cleanup hook ordering, shadow-versus-canonical file names, fix-path symbols, or patch recipe.",
+          "category_specific_hardness_bar": "Partial writes, replay, cleanup, and rerun safety must coordinate; no single stale file deletion suffices.",
+          "category_specific_verifier_risks": "Hidden snapshot expectations, ordering-flaky harness, verifier coupling to private fields.",
+          "coverage_role": "Adds a generation-confusion variant under recovery profile distinct from pure crash journaling tasks."
+        },
+        "satisfiability_risk": {
+          "rc2_planned_name_risk": "low \u2014 neutral roots and opaque symbols with noun ban on fix path.",
+          "gx9_contract_risk": "low \u2014 instruction avoids enumerating per-scenario expected field triples; tests derive from transcripts.",
+          "cr1_symbol_frontier_risk": "medium \u2014 three functions are the declared frontier; keep bodies thin helpers in sibling files.",
+          "hidden_contract_risk": "low \u2014 contract.md mirrors every tested field in solver-visible docs per actionability plan."
+        },
+        "actionability_plan": {
+          "verifier_command_visible": "instruction names the shipped python module command used in tests to regenerate the transcript.",
+          "source_fix_intent_visible": "instruction states fixes must live under /app/environment and flow through the runner, not hand-written outputs.",
+          "generated_output_rule_visible": "instruction names /app/output/recovery_transcript.json regeneration after deletion.",
+          "exact_formula_home": "digest distance and window overlap rules live in environment/studio/app/docs/contract.md and are cited from instruction at a high level without copying scenario tables.",
+          "schema_home": "top-level transcript schema documented in contract.md and mirrored in instruction prose shape."
+        },
+        "waiver_plan": {
+          "waivers_expected": false,
+          "waiver_rationale": "Synthetic but grounded profile; construction targets mechanical gates without checker false positives."
+        },
+        "reference_pattern": {
+          "reference_task_id": "layered-policy-reload-drift"
+        },
+        "realism_source": {
+          "source_type": "synthetic_exception",
+          "evidence_basis": "synthesized goal-sized Option B survivor seed described in Step-1 intake (no upstream ticket attached).",
+          "upstream_or_synthetic_rationale": "Compresses recurring industry incidents where staging probes agree while promotion-time digests disagree after replay-heavy maintenance.",
+          "minimization_preserves": "Multi-authority confusion, destructive replay windows, and late-generation divergence without tying to a proprietary vendor tree.",
+          "synthetic_exception_review": "Category profile state_recovery_crash_consistency chosen; observation-shaped outputs avoid boolean verdict fields; actionability places formulas in visible contract.md; extra scrutiny on decoys so they perform real non-fix work; waivers not anticipated."
+        }
+      },
+      "evidence_errors": [],
+      "evidence_warnings": [],
+      "blocking_failures": [],
+      "strict": true
+    }
+  ],
+  "schema_path": "specs/validation_schema.json",
+  "emit_legacy_reviewer": false
+}

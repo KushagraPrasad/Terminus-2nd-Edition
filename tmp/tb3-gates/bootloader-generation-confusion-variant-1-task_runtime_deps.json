@@ -1,0 +1,69 @@
+{
+  "checks": [
+    {
+      "command": "python3",
+      "locations": [
+        "tests/test.sh:4",
+        "solution/solve.sh:5",
+        "tests/test_outputs.py:42"
+      ],
+      "message": "python3 is invoked and an obvious provider is present",
+      "providers": [
+        "python3",
+        "uv",
+        "uvx"
+      ],
+      "remediation": "",
+      "status": "PASS"
+    },
+    {
+      "command": "uvx",
+      "locations": [
+        "tests/test.sh:14"
+      ],
+      "message": "uvx is invoked and an obvious provider is present",
+      "providers": [
+        "python3",
+        "uv",
+        "uvx"
+      ],
+      "remediation": "",
+      "status": "PASS"
+    }
+  ],
+  "commands": [
+    {
+      "command": "python3",
+      "line": "apt-get install -y --no-install-recommends ca-certificates=20230311+deb12u1 curl=7.88.1-10+deb12u14 python3=3.11.2-1+b1 && rm -rf /var/lib/apt/lists/*",
+      "location": "tests/test.sh:4"
+    },
+    {
+      "command": "uvx",
+      "line": "uvx \\",
+      "location": "tests/test.sh:14"
+    },
+    {
+      "command": "python3",
+      "line": "python3 <<'PY'",
+      "location": "solution/solve.sh:5"
+    },
+    {
+      "command": "python3",
+      "line": "\"python3\",",
+      "location": "tests/test_outputs.py:42"
+    }
+  ],
+  "providers": [
+    "python3",
+    "uv",
+    "uvx"
+  ],
+  "status": "PASS",
+  "strict": true,
+  "summary": {
+    "fail": 0,
+    "pass": 2,
+    "warn": 0
+  },
+  "task_dir": "tasks/bootloader-generation-confusion-variant-1"
+}

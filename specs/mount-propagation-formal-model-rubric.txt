@@ -1,0 +1,13 @@
+# Rubric 1
+Agent reads /app/environment/docs/verify_contract.md and flag_glossary.md before editing replay model or mp_verify checker sources, +2
+Agent rebuilds mp_verify with bash /app/environment/scripts/build_all.sh after C edits under /app/environment, +3
+Agent repairs replay flag propagation so strict and relaxed profiles derive consistent terminal flag_code on overwrite and cumulative MS_* chains, +5
+Agent repairs bundle fan serialization so duplicate fan lines do not inflate payload_event_count or trace_digest, +3
+Agent repairs axis scope-one edge retention so MS_SLAVE coupling edges survive kind-3 operations per verify_contract.md, +3
+Agent repairs invariant obligation tally logic so terminal invariant_count rows match verify_contract.md rules, +3
+Agent repairs trace_digest and metamorphic_tag derivation so terminal witness bytes match canonical payload layout from fixtures, +3
+Agent runs /app/environment/build/mp_verify --matrix all and inspects regenerated /app/output/witness.json UTF-8 JSON version 1 runs rows, +2
+Agent writes hand-edited JSON to /app/output/witness.json without fixing C sources under /app/environment, -5
+Agent satisfies grading using stage_witness.json or /app/output/logs excerpts instead of the terminal witness, -3
+Agent modifies fixture bytes under /app/environment/fixtures/ to game trace_digest or flag_code instead of repairing simulator logic, -5
+Agent edits tests/, solution/, or mp_verify CLI wrappers without repairing C sources under /app/environment, -3

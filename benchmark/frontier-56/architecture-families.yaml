@@ -1,0 +1,94 @@
+# Canonical architecture families for Frontier 56 benchmark.
+# No family may appear more than twice in the final 56-task roster.
+
+cap_per_family: 2
+
+families:
+  replay_recovery:
+    description: Crash/restart replay, checkpoint resume, deterministic re-execution
+  journal_reconstruction:
+    description: WAL/journal replay, log ordering, generation skew, compaction
+  vm_inference:
+    description: Bytecode/VM semantics inference, interpreter correctness
+  log_inference:
+    description: Infer behavior or state from partial logs, traces, dumps
+  protocol_implementation:
+    description: Wire protocols, framing, handshake, interoperability
+  compiler_systems:
+    description: IR lowering, codegen, linker, ABI, toolchain graphs
+  cache_invalidation:
+    description: Stale cache, TTL, coherence, negative cache traps
+  distributed_consistency:
+    description: Replica divergence, tombstones, merge, idempotency
+  state_migration:
+    description: Runtime/schema migration, shadow state, cutover
+  build_ci_failure:
+    description: Incremental builds, lockfiles, generated artifacts, CI graphs
+  security_auditing:
+    description: Authority split, revocation, trust boundaries, audit trails
+  ml_infrastructure:
+    description: Training pipelines, checkpointing, eval leakage, reproducibility
+  data_pipeline_recovery:
+    description: ETL recovery, lineage, streaming windows, corruption repair
+  formal_verification:
+    description: Model checking, proofs, invariant verification
+  numeric_policy:
+    description: Floating-point policy, reduction order, reproducibility
+  filesystem_state:
+    description: Mount/overlay/namespace state reconciliation
+  game_engine_semantics:
+    description: Rules inference, move budgets, state-space search
+  config_policy_precedence:
+    description: Layered config, precedence, effective policy derivation
+
+anti_template_dimensions:
+  - core_workflow
+  - milestone_structure
+  - state_model
+  - persistence_model
+  - recovery_strategy
+  - replay_strategy
+  - evaluation_methodology
+  - oracle_design
+  - validation_workflow
+  - failure_mode_family
+  - debugging_workflow
+  - system_architecture
+
+similarity_thresholds:
+  preferred_max: 0.60
+  acceptable_max: 0.70
+  review_max: 0.75
+  reject_above: 0.75
+
+benchmark_categories:
+  - build-dependency
+  - build-management
+  - challenging-games
+  - cryptography
+  - data-processing
+  - data-scripting
+  - debugging
+  - large-codebase
+  - machine-learning
+  - scientific-computing-analysis
+  - security
+  - software-engineering
+  - system-configuration
+  - troubleshooting
+
+portal_category_map:
+  build-dependency: build-and-dependency-management
+  build-management: build-and-dependency-management
+  challenging-games: games
+  cryptography: security
+  data-processing: data-processing
+  data-scripting: data-processing
+  debugging: debugging
+  large-codebase: varies
+  machine-learning: machine-learning
+  scientific-computing-analysis: scientific-computing
+  security: security
+  software-engineering: software-engineering
+  system-configuration: system-administration
+  troubleshooting: debugging

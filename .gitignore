@@ -1,0 +1,43 @@
+# Environment
+.env
+.env.*
+
+# Validation working state
+specs/.*.json
+tasks/*/.step2b-checksum
+tasks/*/.step2b-metrics.jsonl
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Local generated task/job artifacts
+jobs/
+revise task/
+collapsechurn.md
+/terminal-bench-3*.zip
+
+# Excluded folders (per user request)
+sample_task/
+sample_task_2/
+Task_Ready_To_Submit/
+approved_task/
+tasks/
+
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.venv-wsl/

@@ -1,0 +1,9 @@
+kit_id = "kit-alpha"
+catalog_body = "cat-alpha-v3"
+envelope_body = "env-alpha-sealed"
+slice_body = "slice-alpha-roll"
+
+kit_id = "kit-beta"
+catalog_body = "cat-beta-v2"
+envelope_body = "env-beta-sealed"
+slice_body = "slice-beta-roll"

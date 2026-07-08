@@ -1,0 +1,14 @@
+[workspace]
+resolver = "2"
+members = [
+    "p7/layer_core",
+    "p7/y4",
+    "p7/y5",
+    "p7/y6",
+    "m2/k81",
+]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+license = "MIT"

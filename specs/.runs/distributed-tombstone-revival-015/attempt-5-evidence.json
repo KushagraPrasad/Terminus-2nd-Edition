@@ -1,0 +1,758 @@
+{
+  "hardness_axes": [
+    {
+      "id": "discover",
+      "name": "Discover",
+      "verdict": "PASS",
+      "reasoning": "Durable catalog authority vs runtime probe answers, replay ordering, and emit cross-format rules must be inferred from Cargo sources and rebuild experiments, not from instruction.md alone."
+    },
+    {
+      "id": "synthesize",
+      "name": "Synthesize",
+      "verdict": "PASS",
+      "reasoning": "Driver waves, pack merge, stamp fold, lane mux ordering, and emit layer interact; no single crate exposes the full revival_report contract."
+    },
+    {
+      "id": "diagnose_or_design",
+      "name": "Diagnose or Design/Search",
+      "verdict": "PASS",
+      "reasoning": "reverse_engineering behavioral-target framing gives complete output schema while withholding which subsystem mis-orders replay or skips seed cross-checks."
+    },
+    {
+      "id": "navigate_coupling",
+      "name": "Navigate coupling",
+      "verdict": "PASS",
+      "reasoning": "Flipping-point contract spreads controls across m3/k82, p8/y5, p8/y4, and p8/core with overlapping false-green traps."
+    },
+    {
+      "id": "reason_beyond_training",
+      "name": "Reason beyond training",
+      "verdict": "PASS",
+      "reasoning": "Generation-skew recovery across tombstone catalogs and Cargo incremental rebuild semantics is operations-domain reasoning, not a textbook algorithm."
+    }
+  ],
+  "anti_trivialization_checks": [
+    {
+      "id": "disclosure_collapse",
+      "name": "Disclosure-collapse",
+      "verdict": "PASS",
+      "reasoning": "Even with full report schema disclosed, choosing catalog authority and replay order remains non-trivial inference."
+    },
+    {
+      "id": "hidden_instance",
+      "name": "Hidden-instance",
+      "verdict": "PASS",
+      "reasoning": "No single corrupted wave row; multiple waves disagree until global semantics align."
+    },
+    {
+      "id": "single_artifact_repair",
+      "name": "Single-artifact repair",
+      "verdict": "PASS",
+      "reasoning": "Static JSON or one TOML edit cannot satisfy ablation and pipeline overwrite tests."
+    },
+    {
+      "id": "generalization",
+      "name": "Generalization",
+      "verdict": "PASS",
+      "reasoning": "Verifier exercises all waves, echo pairs, consecutive runs, and source mutations."
+    },
+    {
+      "id": "prompt_honesty",
+      "name": "Prompt-honesty",
+      "verdict": "PASS",
+      "reasoning": "Honest behavioral contract does not name broken functions or replay phase ordering."
+    },
+    {
+      "id": "cheating_vs_difficulty",
+      "name": "Cheating-vs-difficulty",
+      "verdict": "PASS",
+      "reasoning": "Hardness is semantic reconciliation, not anti-cheat alone."
+    },
+    {
+      "id": "mechanical_fix_filter",
+      "name": "Mechanical-fix filter",
+      "verdict": "PASS",
+      "reasoning": "Not a timeout/deps-only task."
+    },
+    {
+      "id": "localized_fix",
+      "name": "Localized-fix",
+      "verdict": "PASS",
+      "reasoning": "Four-location flipping contract blocks one-function exploit."
+    },
+    {
+      "id": "oracle_locality",
+      "name": "Oracle-locality",
+      "verdict": "PASS",
+      "reasoning": "Oracle coordinates four modules plus patch, not one-file wholesale replace."
+    },
+    {
+      "id": "small_declarative_cluster",
+      "name": "Small declarative-cluster",
+      "verdict": "PASS",
+      "reasoning": "Fix is procedural across Rust modules, not one manifest table."
+    },
+    {
+      "id": "grep_collapse",
+      "name": "Grep-collapse",
+      "verdict": "PASS",
+      "reasoning": "Instruction domain nouns banned from fix-path symbols; opaque m3/p8 roots."
+    },
+    {
+      "id": "pre_factored_helper",
+      "name": "Pre-factored-helper",
+      "verdict": "PASS",
+      "reasoning": "Decoys rhyme structurally without validate/repair stems matching prompt bullets."
+    },
+    {
+      "id": "recipe_discount",
+      "name": "Recipe-discount",
+      "verdict": "PASS",
+      "reasoning": "No standard recipe for tombstone revival ordering in this bespoke workspace."
+    },
+    {
+      "id": "security_aura_discount",
+      "name": "Security-aura discount",
+      "verdict": "PASS",
+      "reasoning": "Residual work is build/recovery semantics, not security theater."
+    },
+    {
+      "id": "orthogonal_checklist",
+      "name": "Orthogonal-checklist",
+      "verdict": "PASS",
+      "reasoning": "Authority, replay order, and cross-format emit trade off rather than independent bullets."
+    },
+    {
+      "id": "harness_discount",
+      "name": "Harness-discount",
+      "verdict": "PASS",
+      "reasoning": "Cargo/docker realism is scaffolding; assessed hardness is cross-crate coupling."
+    },
+    {
+      "id": "one_pass_solvability",
+      "name": "One-pass solvability",
+      "verdict": "PASS",
+      "reasoning": "Cannot infer catalog-vs-probe precedence without rebuild and echo-pair comparison."
+    },
+    {
+      "id": "hard_only_gate",
+      "name": "Hard-only gate",
+      "verdict": "PASS",
+      "reasoning": "Targets senior build/recovery engineers, not undergrad single-patch tasks."
+    },
+    {
+      "id": "discovery_budget_test",
+      "name": "Discovery/design budget test",
+      "verdict": "PASS",
+      "reasoning": "discovery_budget lists three concrete discoveries beyond instruction surface."
+    },
+    {
+      "id": "instruction_specificity_test",
+      "name": "Instruction specificity test",
+      "verdict": "PASS",
+      "reasoning": "instruction_specificity.level is behavioral-target with solution strategy open."
+    },
+    {
+      "id": "topology_distribution_test",
+      "name": "Topology distribution test",
+      "verdict": "PASS",
+      "reasoning": "topology_enumeration documents three multi-site coordination patterns."
+    }
+  ],
+  "rubric_axes": [
+    {
+      "id": "verifiable",
+      "name": "Verifiable",
+      "verdict": "PASS",
+      "reasoning": "Deterministic cargo rebuild, driver run, JSON assertions, and ablation patches."
+    },
+    {
+      "id": "well_specified",
+      "name": "Well-specified",
+      "verdict": "PASS",
+      "reasoning": "Public revival_report schema and coherence rules are complete; fix sites withheld."
+    },
+    {
+      "id": "solvable",
+      "name": "Solvable",
+      "verdict": "PASS",
+      "reasoning": "Expert can close four-crate semantics within hours using overlay mold."
+    },
+    {
+      "id": "difficult",
+      "name": "Difficult",
+      "verdict": "PASS",
+      "reasoning": "Requires recovery-era generation reasoning and multi-crate Cargo literacy."
+    },
+    {
+      "id": "interesting",
+      "name": "Interesting",
+      "verdict": "PASS",
+      "reasoning": "False-green recovery probes occur in real distributed stores and overlay rebuild pipelines."
+    },
+    {
+      "id": "outcome_verified",
+      "name": "Outcome-verified",
+      "verdict": "PASS",
+      "reasoning": "Grades regenerated report and rebuild pipeline, not a mandated edit recipe."
+    }
+  ],
+  "instruction_completeness_test": {
+    "verdict": "PASS",
+    "reasoning": "Complete report contract does not reveal catalog authority, replay ordering, or emit bypass; solver must read workspace and run experiments."
+  },
+  "discovery_budget": [
+    {
+      "discovery": "Durable tombstone catalog in p8/y6 remains authoritative for revival ordering while m3 driver and p8/core probe surface answer runtime-visible state first after partial recovery.",
+      "planned_location": "environment/p8/y6/src/catalog.rs vs environment/p8/core/src/slot.rs and environment/m3/k82/src/main.rs",
+      "why_instruction_must_not_reveal": "Naming the authority split collapses search to flipping catalog reads into the driver."
+    },
+    {
+      "discovery": "lane_mux marks closure true on an intermediate replay pass before pace/tombstone ordering finishes, producing false-green store_ok/probe_ok while echo pairs disagree.",
+      "planned_location": "environment/m3/k82/src/lane_mux.rs and environment/p8/y6/src/pace.rs",
+      "why_instruction_must_not_reveal": "Disclosing replay phase ordering reveals the false-green mechanism directly."
+    },
+    {
+      "discovery": "op_b2 fast path materializes JSON facets without cross-checking environment/data TOML/TSV seeds against pack-merged storage.",
+      "planned_location": "environment/p8/core/src/emit_layer.rs with environment/data/*.toml",
+      "why_instruction_must_not_reveal": "Pointing at the bypass path turns cross-format invariant into a one-file guard add."
+    }
+  ],
+  "instruction_specificity": {
+    "level": "behavioral-target",
+    "reasoning": "Instruction states complete revival_report schema, build commands, and coherence predicates but withholds implementation mapping and broken subsystem identities."
+  },
+  "attack_path": {
+    "summary": "Agents may hardcode trace_digest, hand-write JSON, or patch only probe.rs while leaving catalog authority and lane_mux ordering broken.",
+    "reasoning": "Cheap wins satisfy superficial shape tests until pipeline overwrite, echo-pair, and ablation suites exercise rebuild semantics."
+  },
+  "smallest_plausible_patch": {
+    "summary": "Coordinate mix_key lineage fold, pack_bind storage refresh, lane_mux ordering, and emit_rows seed cross-check.",
+    "reasoning": "Each change sounds local but flipping-point shows isolated reverts fail distinct test subsets."
+  },
+  "collapse_audit": {
+    "verdict": "PASS",
+    "reasoning": "Residual hardness stays in inferring authority and replay order under a complete public report contract.",
+    "residual_hardness": "After honest schema disclosure, solver still reconciles catalog vs probe, false-green closure, and cross-format regeneration across four crates.",
+    "red_flags": []
+  },
+  "topology_enumeration": [
+    {
+      "id": "topo_authority",
+      "summary": "Authority topology coordinates catalog index, pack merge, and driver wave wiring.",
+      "locations": [
+        "environment/p8/y6/src/catalog.rs",
+        "environment/p8/y4/src/cell.rs",
+        "environment/m3/k82/src/main.rs"
+      ],
+      "why_no_single_location_suffices": "Catalog-only edits leave pack storage stale; cell-only fixes ignore probe/catalog precedence; driver-only tweaks cannot fix durable index."
+    },
+    {
+      "id": "topo_replay_order",
+      "summary": "Replay-order topology coordinates lane mux, pace primitive, and seal fold.",
+      "locations": [
+        "environment/m3/k82/src/lane_mux.rs",
+        "environment/p8/y6/src/pace.rs",
+        "environment/p8/y5/src/seal.rs"
+      ],
+      "why_no_single_location_suffices": "Mux ordering without pace helper reverts; seal fold alone cannot fix premature closure flags."
+    },
+    {
+      "id": "topo_cross_format",
+      "summary": "Cross-format topology coordinates emit layer, data seeds, and body materialization.",
+      "locations": [
+        "environment/p8/core/src/emit_layer.rs",
+        "environment/data/ladder.toml",
+        "environment/p8/y5/src/body.rs"
+      ],
+      "why_no_single_location_suffices": "Emit-only guards miss pack bytes; seed-only edits without emit cross-check leave gen_ok/store_ok skew."
+    }
+  ],
+  "construction_manifest": {
+    "symbol_table": [
+      {
+        "path": "environment/p8/y5/src/seal.rs",
+        "symbol": "op_a5",
+        "kind": "function",
+        "signature": "pub fn op_a5(step_ix: usize, family_ix: u32, prev_family: u32) -> u64",
+        "purpose": "Folds step and generation family tags into stamp bits for facets."
+      },
+      {
+        "path": "environment/p8/y4/src/cell.rs",
+        "symbol": "pack_bind",
+        "kind": "function",
+        "signature": "pub fn pack_bind(state: &mut PackState, incoming: &PackState, stamp_b: u32) -> u32",
+        "purpose": "Merges incoming pack bytes into durable storage during bind steps."
+      },
+      {
+        "path": "environment/m3/k82/src/lane_mux.rs",
+        "symbol": "lane_mux",
+        "kind": "function",
+        "signature": "pub fn lane_mux(gate_first: bool, side: impl FnMut(), gate: impl FnMut()) -> u32",
+        "purpose": "Orders side-effect callbacks during per-wave combine steps."
+      },
+      {
+        "path": "environment/p8/y6/src/pace.rs",
+        "symbol": "phase_a",
+        "kind": "function",
+        "signature": "pub fn phase_a(gate_first: bool, mut side: impl FnMut(), mut gate: impl FnMut()) -> u32",
+        "purpose": "Low-level side/gate ordering primitive used by lane_mux."
+      },
+      {
+        "path": "environment/p8/core/src/emit_layer.rs",
+        "symbol": "op_b2",
+        "kind": "function",
+        "signature": "pub fn op_b2(waves: &[WaveRow], seeds: &SeedBundle) -> Vec<EmittedRow>",
+        "purpose": "Materializes report rows from wave state and on-disk seed bundle."
+      }
+    ],
+    "flipping_point_contract": {
+      "locations": [
+        {
+          "id": "A",
+          "path": "environment/p8/y5/src/seal.rs",
+          "controls_tests": [
+            "test_q7_matrix_layout",
+            "test_q14_token_format",
+            "test_q13_token_anchor",
+            "test_q12_token_contract",
+            "test_q19_fold_ablation"
+          ]
+        },
+        {
+          "id": "B",
+          "path": "environment/p8/y4/src/cell.rs",
+          "controls_tests": [
+            "test_q20_dual_ablation",
+            "test_q9_flags_zero"
+          ]
+        },
+        {
+          "id": "C",
+          "path": "environment/m3/k82/src/lane_mux.rs",
+          "controls_tests": [
+            "test_q8_pair_agreement",
+            "test_q10_status_line",
+            "test_q11_band_match",
+            "test_q21_order_ablation"
+          ]
+        },
+        {
+          "id": "D",
+          "path": "environment/p8/core/src/emit_layer.rs",
+          "controls_tests": [
+            "test_q16_overwrite_trap",
+            "test_q17_repeat_stable",
+            "test_q18_bind_mutate",
+            "test_q15_total_int"
+          ]
+        }
+      ],
+      "no_single_location_flips_majority": true,
+      "concentration_cap": 0.5
+    },
+    "decoy_manifest": [
+      {
+        "path": "environment/p8/y4/src/hold.rs",
+        "kind": "module",
+        "rhymes_with": "pack_bind",
+        "non_fix_purpose": "Buffers transient pack slices for diagnostics without durable refresh."
+      },
+      {
+        "path": "environment/p8/y6/src/stride.rs",
+        "kind": "module",
+        "rhymes_with": "phase_a",
+        "non_fix_purpose": "Scans catalog windows for offline benchmarks."
+      },
+      {
+        "path": "environment/p8/core/src/mesh.rs",
+        "kind": "module",
+        "rhymes_with": "op_b2",
+        "non_fix_purpose": "Builds adjacency meshes for docs examples only."
+      }
+    ],
+    "code_forbidden_tokens": [
+      "partial",
+      "recovery",
+      "checkpoint",
+      "mount",
+      "settled",
+      "retired",
+      "generation",
+      "echo",
+      "closure",
+      "stamps",
+      "facets",
+      "aggregate",
+      "revival",
+      "quiesced",
+      "incoherent",
+      "static",
+      "manual",
+      "verifier",
+      "rebuild",
+      "mirror",
+      "pairs",
+      "reconcile",
+      "locked",
+      "sources"
+    ]
+  },
+  "naming_pass": {
+    "instruction_nouns_extracted": [
+      "partial",
+      "recovery",
+      "checkpoint",
+      "mount",
+      "settled",
+      "retired",
+      "generation",
+      "echo",
+      "closure",
+      "stamps",
+      "facets",
+      "aggregate",
+      "revival",
+      "quiesced",
+      "incoherent",
+      "static",
+      "manual",
+      "verifier",
+      "rebuild",
+      "mirror",
+      "pairs",
+      "reconcile",
+      "locked",
+      "sources"
+    ],
+    "renames_during_drafting": [
+      {
+        "original": "fold_key",
+        "renamed_to": "op_a5",
+        "reason": "Overlay reference stem fold collides with instruction digest/trace vocabulary during audit."
+      },
+      {
+        "original": "layer_report",
+        "renamed_to": "revival_report",
+        "reason": "Distinct deliverable from reference task while preserving JSON sweep shape."
+      },
+      {
+        "original": "mk",
+        "renamed_to": "tv",
+        "reason": "Neutral driver binary name unrelated to instruction nouns."
+      }
+    ],
+    "test_names_audited": [
+      "test_q7_matrix_layout",
+      "test_q8_pair_agreement",
+      "test_q9_flags_zero",
+      "test_q10_status_line",
+      "test_q11_band_match",
+      "test_q12_token_contract",
+      "test_q13_token_anchor",
+      "test_q14_token_format",
+      "test_q15_total_int",
+      "test_q16_overwrite_trap",
+      "test_q17_repeat_stable",
+      "test_q18_bind_mutate",
+      "test_q19_fold_ablation",
+      "test_q20_dual_ablation",
+      "test_q21_order_ablation"
+    ],
+    "concentration_math": {
+      "total_tests": 15,
+      "per_location": [
+        {
+          "location_id": "A",
+          "test_count": 5,
+          "ratio": 0.3333333333333333
+        },
+        {
+          "location_id": "B",
+          "test_count": 2,
+          "ratio": 0.13333333333333333
+        },
+        {
+          "location_id": "C",
+          "test_count": 4,
+          "ratio": 0.26666666666666666
+        },
+        {
+          "location_id": "D",
+          "test_count": 4,
+          "ratio": 0.26666666666666666
+        }
+      ]
+    },
+    "recomputed_concentration": {
+      "total_tests": 15,
+      "concentration_cap": 0.5,
+      "per_location": [
+        {
+          "location_id": "A",
+          "test_count": 5,
+          "ratio": 0.3333333333333333
+        },
+        {
+          "location_id": "B",
+          "test_count": 2,
+          "ratio": 0.13333333333333333
+        },
+        {
+          "location_id": "C",
+          "test_count": 4,
+          "ratio": 0.26666666666666666
+        },
+        {
+          "location_id": "D",
+          "test_count": 4,
+          "ratio": 0.26666666666666666
+        }
+      ]
+    }
+  },
+  "difficulty_mechanism_plan": [
+    {
+      "mechanism": "stateful_multi_step_dependencies",
+      "placement": "cargo rebuild then tv driver then JSON report",
+      "why_model_misses_it": "patches sources without locked rebuild graph",
+      "fairness_guardrail": "build_hints document commands"
+    },
+    {
+      "mechanism": "false_green_intermediate_states",
+      "placement": "lane_mux closure before replay completes",
+      "why_model_misses_it": "stops at quiesced summary with disagreeing echo pairs",
+      "fairness_guardrail": "tests require pair agreement"
+    },
+    {
+      "mechanism": "buried_local_constraints",
+      "placement": "op_a5 lineage fold in seal.rs",
+      "why_model_misses_it": "facet_hex looks valid while skew stays wrong",
+      "fairness_guardrail": "ablation test reverts fold"
+    },
+    {
+      "mechanism": "rollback_recovery_requirements",
+      "placement": "pack_bind durable refresh after partial recovery",
+      "why_model_misses_it": "slot_rc reads 1 while gen_rc/store_rc diverge",
+      "fairness_guardrail": "dual-crate ablation"
+    },
+    {
+      "mechanism": "cross_file_cross_format_invariants",
+      "placement": "op_b2 vs data/*.toml seeds",
+      "why_model_misses_it": "JSON shape passes without seed cross-check",
+      "fairness_guardrail": "pipeline rebuild tests"
+    }
+  ],
+  "calibration_plan": {
+    "oracle_runs": 3,
+    "no_op_runs": 3,
+    "target_agent_runs": 5,
+    "comparator_agent_runs": 5,
+    "human_sanity": "derive trace_digest from main.rs header without tests",
+    "shortcut_audit": "static JSON, pytest edits, digest hardcode, skip cargo; verifier-offline requires pytest/cargo baked in Dockerfile with no runtime installs in test.sh; post-upload Part E may reclassify if worst-model accuracy exceeds 20%",
+    "ablation_plan": "revert each flipping location in isolation",
+    "pass_rate_target": {
+      "hard_max_pct": 20,
+      "too_easy_threshold_pct": 80,
+      "basis": "frontier agents; Part E post-upload classification"
+    }
+  },
+  "verifier_scoring_plan": {
+    "metrics": [
+      {
+        "metric": "functional_correctness",
+        "weight": 0.45,
+        "criterion": "revival_report rows and summary match coherent predicates after rebuild+tv"
+      },
+      {
+        "metric": "hidden_invariants",
+        "weight": 0.25,
+        "criterion": "echo pairs, digest anchor, ablation incoherence traps"
+      },
+      {
+        "metric": "state_hygiene",
+        "weight": 0.15,
+        "criterion": "consecutive identical runs and pipeline overwrite of manual JSON"
+      },
+      {
+        "metric": "interface_correctness",
+        "weight": 0.1,
+        "criterion": "facet_hex format, span_band, rows_total typing"
+      },
+      {
+        "metric": "deliverable_completeness",
+        "weight": 0.05,
+        "criterion": "output path and wave table coverage"
+      }
+    ],
+    "overall_threshold": 0.999,
+    "reward_output": "reward.txt",
+    "binary_threshold_rule": "reward.txt is 1 only when all semantic pytest passes"
+  },
+  "subtype_milestone_plan": {
+    "subcategories": [],
+    "milestone_count": 0,
+    "sequential_dependency": "single-step cross-test coupling",
+    "local_only_data": true,
+    "sidecar_or_protocol_notes": "fixtures under environment/data only"
+  },
+  "platform_files": [
+    {
+      "path": "task.toml",
+      "role": "metadata"
+    },
+    {
+      "path": "instruction.md",
+      "role": "natural public task prompt"
+    },
+    {
+      "path": "output_contract.toml",
+      "role": "local output declaration"
+    },
+    {
+      "path": "tests/test.sh",
+      "role": "verifier entrypoint"
+    },
+    {
+      "path": "tests/test_outputs.py",
+      "role": "domain verifier"
+    },
+    {
+      "path": "solution/solve.sh",
+      "role": "oracle"
+    },
+    {
+      "path": "environment/Dockerfile",
+      "role": "build definition"
+    },
+    {
+      "path": "construction_manifest.json",
+      "role": "local authoring artifact"
+    }
+  ],
+  "task_files": [
+    {
+      "path": "environment/m3/k82/src/main.rs",
+      "role": "driver and summary reduction"
+    },
+    {
+      "path": "environment/m3/k82/src/lane_mux.rs",
+      "role": "oracle frontier C"
+    },
+    {
+      "path": "environment/p8/y5/src/seal.rs",
+      "role": "oracle frontier A"
+    },
+    {
+      "path": "environment/p8/y4/src/cell.rs",
+      "role": "oracle frontier B"
+    },
+    {
+      "path": "environment/p8/core/src/emit_layer.rs",
+      "role": "oracle frontier D"
+    },
+    {
+      "path": "environment/p8/y6/src/catalog.rs",
+      "role": "durable authority witness"
+    },
+    {
+      "path": "environment/p8/y6/src/pace.rs",
+      "role": "ordering primitive"
+    },
+    {
+      "path": "environment/data/ladder.toml",
+      "role": "store wave seeds"
+    },
+    {
+      "path": "environment/docs/wave_ids.txt",
+      "role": "wave id table"
+    },
+    {
+      "path": "environment/docs/build_hints.txt",
+      "role": "build argv notes"
+    }
+  ],
+  "fix_frontier": {
+    "count": 4,
+    "distribution": "Four Rust modules under m3/k82, p8/y5, p8/y4, p8/core",
+    "naming_policy": "Opaque symbols on neutral crate roots; instruction nouns banned on fix path",
+    "forbidden_stems": [
+      "revival",
+      "tombstone",
+      "generation",
+      "reconciliation",
+      "replay",
+      "recovery",
+      "authority",
+      "skew",
+      "quiesced",
+      "facet",
+      "digest",
+      "store",
+      "shard",
+      "sweep",
+      "echo",
+      "probe",
+      "reconcile"
+    ],
+    "helpers_policy": "Rhyming decoys perform real non-fix work",
+    "symbol_thin_preferred": true
+  },
+  "contract_surface": {
+    "boolean_fields_max": 0,
+    "direct_boolean_assertions_max": 0,
+    "preferred_assertion_styles": [
+      "regenerated JSON rows",
+      "derived trace_digest",
+      "echo pair equality",
+      "ablation incoherence",
+      "pipeline overwrite"
+    ],
+    "forbidden_assertion_styles": [
+      "scenario-key expected tables",
+      "static golden report in tests"
+    ]
+  },
+  "task_shape": {
+    "type": "reverse_engineering",
+    "instruction_framing": "behavioral-target",
+    "hardness_source": "semantic inference",
+    "collapse_risk": "leaking canonical recovery phase or authority choice collapses to one-crate patch"
+  },
+  "category_profile": {
+    "challenge_family": "generation_skew_recovery_toolchain",
+    "profile_name": "build_dependency_toolchain",
+    "allowed_instruction_disclosures": "Build commands, artifact identities, revival_report schema, wave table, coherence rules, trace_digest formula home in main.rs header",
+    "forbidden_instruction_leaks": "Catalog vs probe authority, replay ordering site, emit bypass path, per-wave facet answers",
+    "category_specific_hardness_bar": "Lockfile workspace, incremental rebuild, generated facets, and cache-visible probes must coordinate",
+    "category_specific_verifier_risks": "clean-build-only pass, static JSON, pin-one-dep shortcut, false-green closure",
+    "coverage_role": "Adds build_dependency_toolchain recovery skew coverage using approved overlay Cargo mold"
+  },
+  "satisfiability_risk": {
+    "rc2_planned_name_risk": "Low with m3/p8 neutral roots",
+    "gx9_contract_risk": "Medium \u2014 mitigate via independent trace_digest recompute",
+    "cr1_symbol_frontier_risk": "Low with explicit four-location contract",
+    "hidden_contract_risk": "Low \u2014 formulas visible in instruction and main.rs header"
+  },
+  "actionability_plan": {
+    "verifier_command_visible": "cargo build --release --locked; /app/target/release/tv; build_hints.txt",
+    "source_fix_intent_visible": "Make sources under /app emit revival_report.json",
+    "generated_output_rule_visible": "Mirror pairs, coherence predicates, regeneration requirement",
+    "exact_formula_home": "main.rs module comment for span_band and trace_digest",
+    "schema_home": "instruction public contract"
+  },
+  "waiver_plan": {
+    "waivers_expected": false,
+    "waiver_rationale": "Local deterministic rebuilds; no hidden formulas"
+  },
+  "reference_pattern": {
+    "reference_task_id": "async-pipeline-premature-completion"
+  },
+  "realism_source": {
+    "source_type": "real_system",
+    "evidence_basis": "Minimized overlay lowerdir stale-bind approved zip and distributed tombstone revival incident patterns",
+    "upstream_or_synthetic_rationale": "Preserves Cargo recovery semantics without proprietary cluster code",
+    "minimization_preserves": "Authority split, false-green closure, cross-format emit bypass, wave matrix",
+    "synthetic_exception_review": "Not required"
+  }
+}

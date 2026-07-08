@@ -1,0 +1,8 @@
+{
+  "tails": [
+    { "artifact": "slot-a", "gen": 1 },
+    { "artifact": "slot-b", "gen": 1 },
+    { "artifact": "slot-c", "gen": 2 },
+    { "artifact": "slot-d", "gen": 2 }
+  ]
+}

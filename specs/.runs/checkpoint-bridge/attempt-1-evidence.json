@@ -1,0 +1,649 @@
+{
+  "hardness_axes": [
+    {
+      "id": "discover",
+      "name": "Discover",
+      "verdict": "PASS",
+      "reasoning": "Solver must infer which artifact surface is authoritative, how generation state survives a restart boundary, and how rollback phases reorder lineage\u2014none of which are named as patch recipes in the constraint-complete instruction."
+    },
+    {
+      "id": "synthesize",
+      "name": "Synthesize",
+      "verdict": "PASS",
+      "reasoning": "Ingest tagging, surface selection, and row assembly must be coordinated with fixtures, schemas, and cross-format digest rules across three package roots."
+    },
+    {
+      "id": "diagnose_or_design",
+      "name": "Diagnose or Design/Search",
+      "verdict": "PASS",
+      "reasoning": "Constrained-build contract discloses acceptance behavior but requires design search to satisfy coupled invariants across replay and rollback without a provided algorithm."
+    },
+    {
+      "id": "navigate_coupling",
+      "name": "Navigate coupling",
+      "verdict": "PASS",
+      "reasoning": "Tightening health-summary paths without fixing selection or assembly breaks idempotent reruns, fork-branch comparisons, or digest-chain tests."
+    },
+    {
+      "id": "reason_beyond_training",
+      "name": "Reason beyond training",
+      "verdict": "PASS",
+      "reasoning": "Incremental rebuild drift with false-green summaries and competing artifact views is not reducible to a single textbook reconciliation recipe."
+    }
+  ],
+  "anti_trivialization_checks": [
+    {
+      "id": "disclosure_collapse",
+      "name": "Disclosure-collapse",
+      "verdict": "PASS",
+      "reasoning": "After all tested formulas and schemas are visible, residual work requires coordinating three behavioral roots and cross-format invariants\u2014not transcription."
+    },
+    {
+      "id": "hidden_instance",
+      "name": "Hidden-instance",
+      "verdict": "PASS",
+      "reasoning": "Multiple fixtures and scenario classes exercise the same bug class; no single hidden file/record is the difficulty."
+    },
+    {
+      "id": "single_artifact_repair",
+      "name": "Single-artifact repair",
+      "verdict": "PASS",
+      "reasoning": "Flipping contract spans three modules; one manifest or checksum flip cannot pass the union of tests."
+    },
+    {
+      "id": "generalization",
+      "name": "Generalization",
+      "verdict": "PASS",
+      "reasoning": "Tests cover distinct replay interleavings, rollback overlap, and fork branches\u2014not one named broken row."
+    },
+    {
+      "id": "prompt_honesty",
+      "name": "Prompt-honesty",
+      "verdict": "PASS",
+      "reasoning": "Honest constraint-complete prompt does not name canonical surface, generation-clearing site, or merge ordering."
+    },
+    {
+      "id": "cheating_vs_difficulty",
+      "name": "Cheating-vs-difficulty",
+      "verdict": "PASS",
+      "reasoning": "Anti-cheat (regen-only, no static JSON) supports fairness but difficulty comes from multi-authority coupling."
+    },
+    {
+      "id": "mechanical_fix_filter",
+      "name": "Mechanical-fix filter",
+      "verdict": "PASS",
+      "reasoning": "Not a deps/timeout/footer task; core weakness is semantic reconciliation drift."
+    },
+    {
+      "id": "localized_fix",
+      "name": "Localized-fix",
+      "verdict": "PASS",
+      "reasoning": "Three-root frontier with 33% test concentration each blocks single-function exploit."
+    },
+    {
+      "id": "oracle_locality",
+      "name": "Oracle-locality",
+      "verdict": "PASS",
+      "reasoning": "Oracle must touch generation tagging, surface selection, and row assembly\u2014not one wholesale file."
+    },
+    {
+      "id": "small_declarative_cluster",
+      "name": "Small declarative-cluster",
+      "verdict": "PASS",
+      "reasoning": "Solve is not one tiny policy table; behavior spans code paths and cross-format emission."
+    },
+    {
+      "id": "grep_collapse",
+      "name": "Grep-collapse",
+      "verdict": "PASS",
+      "reasoning": "Opaque package stems and code_forbidden_tokens block instruction-noun grep to fix symbols."
+    },
+    {
+      "id": "pre_factored_helper",
+      "name": "Pre-factored-helper",
+      "verdict": "PASS",
+      "reasoning": "Fix symbols are opaque (fn_k3, fn_r8, fn_x5); decoys absorb recipe-shaped names."
+    },
+    {
+      "id": "recipe_discount",
+      "name": "Recipe-discount",
+      "verdict": "PASS",
+      "reasoning": "Not a standard safe-extractor or jail recipe; requires reading driver, docs, and modules."
+    },
+    {
+      "id": "security_aura_discount",
+      "name": "Security-aura discount",
+      "verdict": "PASS",
+      "reasoning": "Debugging/reconciliation domain without security-keyword hardness inflation."
+    },
+    {
+      "id": "orthogonal_checklist",
+      "name": "Orthogonal-checklist",
+      "verdict": "PASS",
+      "reasoning": "Generation survival, canonical selection, and digest linkage trade off\u2014partial fixes fail distinct test clusters."
+    },
+    {
+      "id": "harness_discount",
+      "name": "Harness-discount",
+      "verdict": "PASS",
+      "reasoning": "Single-container local harness is realism, not the hardness source."
+    },
+    {
+      "id": "one_pass_solvability",
+      "name": "One-pass solvability",
+      "verdict": "PASS",
+      "reasoning": "Requires running replay/rollback scenarios and tracing cross-surface disagreement past false-green summaries."
+    },
+    {
+      "id": "hard_only_gate",
+      "name": "Hard-only gate",
+      "verdict": "PASS",
+      "reasoning": "Honestly hard: long-horizon reconciliation under destructive replay semantics."
+    },
+    {
+      "id": "discovery_budget_test",
+      "name": "Discovery/design budget test",
+      "verdict": "PASS",
+      "reasoning": "discovery_budget lists three non-trivial discoveries with planned locations and non-reveal rationale."
+    },
+    {
+      "id": "instruction_specificity_test",
+      "name": "Instruction specificity test",
+      "verdict": "PASS",
+      "reasoning": "constraint-complete for constrained_build: public target and tested rules without solution recipe."
+    },
+    {
+      "id": "topology_distribution_test",
+      "name": "Topology distribution test",
+      "verdict": "PASS",
+      "reasoning": "topology_enumeration lists three distinct topologies each with >=3 coordinated locations."
+    }
+  ],
+  "rubric_axes": [
+    {
+      "id": "verifiable",
+      "name": "Verifiable",
+      "verdict": "PASS",
+      "reasoning": "Deterministic driver, fixtures, and pytest derive verdicts from observation records."
+    },
+    {
+      "id": "well_specified",
+      "name": "Well-specified",
+      "verdict": "PASS",
+      "reasoning": "Command, output path, schemas, and field guide bound equivalent implementations."
+    },
+    {
+      "id": "solvable",
+      "name": "Solvable",
+      "verdict": "PASS",
+      "reasoning": "Expert human can satisfy contract in hours using local docs and code."
+    },
+    {
+      "id": "difficult",
+      "name": "Difficult",
+      "verdict": "PASS",
+      "reasoning": "Requires professional distributed-reconciliation reasoning, not undergrad checklist work."
+    },
+    {
+      "id": "interesting",
+      "name": "Interesting",
+      "verdict": "PASS",
+      "reasoning": "Mirrors real incremental build coordinator incidents with economic ops value."
+    },
+    {
+      "id": "outcome_verified",
+      "name": "Outcome-verified",
+      "verdict": "PASS",
+      "reasoning": "Grades regenerated report invariants, not prescribed edit sequence."
+    }
+  ],
+  "instruction_completeness_test": {
+    "verdict": "PASS",
+    "reasoning": "Instruction discloses acceptance contract but not authoritative surface, generation-clearing mechanism, or assembly recipe; solver must engage codebase, fixtures, and field_guide.md."
+  },
+  "discovery_budget": [
+    {
+      "discovery": "Stale generation tags survive one restart boundary while short-horizon summaries still look healthy",
+      "planned_location": "environment/c7k/p1m.py",
+      "why_instruction_must_not_reveal": "Naming the boundary-clearing site collapses search to one conditional in the tagging module."
+    },
+    {
+      "discovery": "Competing artifact views are each locally coherent but only one surface may feed externally tested rows",
+      "planned_location": "environment/m2p/q4n.py",
+      "why_instruction_must_not_reveal": "Stating which view wins reduces distributed_reconciliation to a one-line precedence flip."
+    },
+    {
+      "discovery": "Cross-format span digests must bind ledger bytes to report waves through rollback-overlap windows",
+      "planned_location": "environment/w9n/s2t.py",
+      "why_instruction_must_not_reveal": "Publishing the exact assembly recipe makes the task spec-complete implementation."
+    }
+  ],
+  "instruction_specificity": {
+    "level": "constraint-complete",
+    "reasoning": "Public contract states commands, outputs, invariants, and schema homes while withholding construction path and patch sites required for constrained_build hardness."
+  },
+  "attack_path": {
+    "summary": "Static report write or single-module generation bump",
+    "reasoning": "Blocked by regeneration rule, digest-chain derivation from docs, and three-root flipping subsets; health-summary-only patches fail later-wave tests."
+  },
+  "smallest_plausible_patch": {
+    "summary": "Flip one trust bit on summaries or bump one generation counter",
+    "reasoning": "Insufficient: selection and assembly tests require coordinated fixes across m2p and w9n; idempotence and fork-branch tests catch naive clears."
+  },
+  "collapse_audit": {
+    "verdict": "PASS",
+    "reasoning": "Post-disclosure residual work maps to interacting authorities and cross-format obligations, not one obvious function per rule.",
+    "residual_hardness": "After formulas and schemas are visible, solver must still discover authoritative surface, generation survival across boundaries, and rollback-safe assembly coordination.",
+    "red_flags": []
+  },
+  "topology_enumeration": [
+    {
+      "id": "T1",
+      "summary": "Fix generation tagging only",
+      "locations": [
+        "environment/c7k/p1m.py",
+        "environment/m2p/q4n.py",
+        "environment/w9n/s2t.py",
+        "environment/fixtures/pr_profile.json"
+      ],
+      "why_no_single_location_suffices": "Tagging-only fix leaves wrong canonical surface and breaks digest_chain and fork_branch tests."
+    },
+    {
+      "id": "T2",
+      "summary": "Fix surface selection only",
+      "locations": [
+        "environment/m2p/q4n.py",
+        "environment/c7k/p1m.py",
+        "environment/w9n/s2t.py",
+        "environment/fixtures/alt_view.json"
+      ],
+      "why_no_single_location_suffices": "Selection-only fix fails tseq_alpha and idempo_twice when generation tags remain stale across boundary."
+    },
+    {
+      "id": "T3",
+      "summary": "Fix row assembly only",
+      "locations": [
+        "environment/w9n/s2t.py",
+        "environment/m2p/q4n.py",
+        "environment/c7k/p1m.py",
+        "environment/schemas/ledger_row.schema.json"
+      ],
+      "why_no_single_location_suffices": "Assembly-only fix cannot pass restore_overlap without correct upstream generation and view choice."
+    }
+  ],
+  "construction_manifest": {
+    "symbol_table": [
+      {
+        "path": "environment/c7k/p1m.py",
+        "symbol": "fn_k3",
+        "kind": "function",
+        "signature": "def fn_k3(ctx, window, tier):",
+        "purpose": "Tags generation state across replay segments before persistence."
+      },
+      {
+        "path": "environment/m2p/q4n.py",
+        "symbol": "fn_r8",
+        "kind": "function",
+        "signature": "def fn_r8(views, ledger, mode):",
+        "purpose": "Selects reconciler inputs among competing artifact surfaces."
+      },
+      {
+        "path": "environment/w9n/s2t.py",
+        "symbol": "fn_x5",
+        "kind": "function",
+        "signature": "def fn_x5(rows, bases, mode):",
+        "purpose": "Builds report-visible rows and cross-format digest fields."
+      }
+    ],
+    "flipping_point_contract": {
+      "locations": [
+        {
+          "id": "A",
+          "path": "environment/c7k/p1m.py",
+          "controls_tests": [
+            "test_tseq_alpha",
+            "test_idempo_twice"
+          ]
+        },
+        {
+          "id": "B",
+          "path": "environment/m2p/q4n.py",
+          "controls_tests": [
+            "test_restore_overlap",
+            "test_fork_branch"
+          ]
+        },
+        {
+          "id": "C",
+          "path": "environment/w9n/s2t.py",
+          "controls_tests": [
+            "test_digest_chain",
+            "test_tseq_beta"
+          ]
+        }
+      ],
+      "no_single_location_flips_majority": true,
+      "concentration_cap": 0.5
+    },
+    "decoy_manifest": [
+      {
+        "path": "environment/c7k/decoy_h1.py",
+        "kind": "module",
+        "rhymes_with": "fn_k3",
+        "non_fix_purpose": "Alternate batching heuristics for cold-cache simulations."
+      },
+      {
+        "path": "environment/m2p/decoy_h2.py",
+        "kind": "helper",
+        "rhymes_with": "fn_r8",
+        "non_fix_purpose": "Toy merge demos for docs examples."
+      }
+    ],
+    "code_forbidden_tokens": [
+      "incremental",
+      "rebuild",
+      "bridge",
+      "checkpoint",
+      "coordinator",
+      "ledger",
+      "tombstone",
+      "generation",
+      "counters",
+      "spans",
+      "digests",
+      "restart",
+      "boundary",
+      "rollback",
+      "health",
+      "summaries",
+      "invariants",
+      "replay",
+      "artifacts",
+      "linkage",
+      "waves"
+    ]
+  },
+  "naming_pass": {
+    "instruction_nouns_extracted": [
+      "incremental",
+      "rebuild",
+      "bridge",
+      "checkpoint",
+      "coordinator",
+      "ledger",
+      "tombstone",
+      "generation",
+      "counters",
+      "spans",
+      "digests",
+      "restart",
+      "boundary",
+      "rollback",
+      "health",
+      "summaries",
+      "invariants",
+      "replay",
+      "artifacts",
+      "linkage",
+      "waves"
+    ],
+    "renames_during_drafting": [
+      {
+        "original": "test_restart_alpha",
+        "renamed_to": "test_tseq_alpha",
+        "reason": "Avoided forbidden instruction noun restart as substring in planned test name."
+      }
+    ],
+    "test_names_audited": [
+      "test_tseq_alpha",
+      "test_tseq_beta",
+      "test_idempo_twice",
+      "test_digest_chain",
+      "test_restore_overlap",
+      "test_fork_branch"
+    ],
+    "concentration_math": {
+      "total_tests": 6,
+      "per_location": [
+        {
+          "location_id": "A",
+          "test_count": 2,
+          "ratio": 0.3333333333333333
+        },
+        {
+          "location_id": "B",
+          "test_count": 2,
+          "ratio": 0.3333333333333333
+        },
+        {
+          "location_id": "C",
+          "test_count": 2,
+          "ratio": 0.3333333333333333
+        }
+      ]
+    },
+    "recomputed_concentration": {
+      "total_tests": 6,
+      "concentration_cap": 0.5,
+      "per_location": [
+        {
+          "location_id": "A",
+          "test_count": 2,
+          "ratio": 0.3333333333333333
+        },
+        {
+          "location_id": "B",
+          "test_count": 2,
+          "ratio": 0.3333333333333333
+        },
+        {
+          "location_id": "C",
+          "test_count": 2,
+          "ratio": 0.3333333333333333
+        }
+      ]
+    }
+  },
+  "difficulty_mechanism_plan": [
+    {
+      "mechanism": "stateful_multi_step_dependencies",
+      "placement": "c7k/p1m.py and run_cycle.sh sequences",
+      "why_model_misses_it": "stops after first passing window",
+      "fairness_guardrail": "documented scenario matrix"
+    },
+    {
+      "mechanism": "buried_local_constraints",
+      "placement": "m2p/q4n.py view selection",
+      "why_model_misses_it": "trusts wrong locally coherent view",
+      "fairness_guardrail": "acceptance rules in field_guide"
+    },
+    {
+      "mechanism": "rollback_recovery_requirements",
+      "placement": "m2p/q4n.py with rb_policy.json",
+      "why_model_misses_it": "naive idempotence keys reuse stale tags",
+      "fairness_guardrail": "public rollback fixtures"
+    },
+    {
+      "mechanism": "cross_file_cross_format_invariants",
+      "placement": "w9n/s2t.py JSON and log spans",
+      "why_model_misses_it": "one-format fixes orphan digests",
+      "fairness_guardrail": "schemas publish bindings"
+    },
+    {
+      "mechanism": "false_green_intermediate_states",
+      "placement": "driver health vs ledger paths",
+      "why_model_misses_it": "trusts summaries as final proof",
+      "fairness_guardrail": "instruction warns summaries insufficient"
+    }
+  ],
+  "calibration_plan": {
+    "oracle_runs": 3,
+    "no_op_runs": 3,
+    "target_agent_runs": 5,
+    "comparator_agent_runs": 5,
+    "human_sanity": "diff two report generations after replays",
+    "shortcut_audit": "static JSON, single-location reverts, test edits",
+    "ablation_plan": "drop regen, replay sequencing, or row assembly separately",
+    "pass_rate_target": {
+      "hard_max_pct": 20,
+      "too_easy_threshold_pct": 80,
+      "basis": "stronger target agent"
+    }
+  },
+  "verifier_scoring_plan": {
+    "metrics": [
+      {
+        "metric": "functional_correctness",
+        "weight": 0.45,
+        "criterion": "replay and rollback scenarios produce coherent report rows"
+      },
+      {
+        "metric": "hidden_invariants",
+        "weight": 0.25,
+        "criterion": "cross-format digest linkage and generation lineage"
+      },
+      {
+        "metric": "state_hygiene",
+        "weight": 0.15,
+        "criterion": "idempotent reruns without stale artifacts"
+      },
+      {
+        "metric": "interface_correctness",
+        "weight": 0.1,
+        "criterion": "CLI flags and schema conformance"
+      },
+      {
+        "metric": "deliverable_completeness",
+        "weight": 0.05,
+        "criterion": "report regenerated through driver only"
+      }
+    ],
+    "overall_threshold": 0.999,
+    "reward_output": "reward.txt",
+    "binary_threshold_rule": "reward.txt is 1 only when all semantic tests pass"
+  },
+  "subtype_milestone_plan": {
+    "subcategories": [],
+    "milestone_count": 0,
+    "sequential_dependency": "single-step stateful invariants",
+    "local_only_data": true,
+    "sidecar_or_protocol_notes": "local fixtures only; no network"
+  },
+  "platform_files": [
+    {
+      "path": "task.toml",
+      "role": "metadata"
+    },
+    {
+      "path": "instruction.md",
+      "role": "natural public task prompt"
+    },
+    {
+      "path": "output_contract.toml",
+      "role": "local output declaration"
+    },
+    {
+      "path": "tests/test.sh",
+      "role": "verifier entrypoint"
+    },
+    {
+      "path": "tests/test_outputs.py",
+      "role": "domain verifier"
+    },
+    {
+      "path": "solution/solve.sh",
+      "role": "oracle"
+    },
+    {
+      "path": "environment/Dockerfile",
+      "role": "build definition"
+    },
+    {
+      "path": "construction_manifest.json",
+      "role": "local authoring artifact"
+    }
+  ],
+  "task_files": [
+    {
+      "path": "environment/c7k/p1m.py",
+      "role": "fix-frontier generation tagging"
+    },
+    {
+      "path": "environment/m2p/q4n.py",
+      "role": "fix-frontier surface selection"
+    },
+    {
+      "path": "environment/w9n/s2t.py",
+      "role": "fix-frontier row assembly"
+    }
+  ],
+  "fix_frontier": {
+    "count": 3,
+    "distribution": "c7k generation tagging, m2p surface selection, w9n row assembly",
+    "naming_policy": "opaque stems; instruction nouns banned on fix path",
+    "forbidden_stems": [
+      "incremental",
+      "rebuild",
+      "bridge",
+      "checkpoint",
+      "coordinator"
+    ],
+    "helpers_policy": "decoys perform adjacent credible work",
+    "symbol_thin_preferred": true
+  },
+  "contract_surface": {
+    "boolean_fields_max": 0,
+    "direct_boolean_assertions_max": 0,
+    "preferred_assertion_styles": [
+      "trace-derived bands",
+      "cross-run equality",
+      "regen fingerprints"
+    ],
+    "forbidden_assertion_styles": [
+      "boolean answer keys",
+      "scenario truth tables"
+    ]
+  },
+  "task_shape": {
+    "type": "constrained_build",
+    "instruction_framing": "constraint-complete",
+    "hardness_source": "design search under distributed reconciliation constraints",
+    "collapse_risk": "leaking replay ordering or authoritative path enables one-file repair"
+  },
+  "category_profile": {
+    "challenge_family": "incremental_rebuild_drift",
+    "profile_name": "distributed_reconciliation",
+    "allowed_instruction_disclosures": "authorities, scenarios, driver, report path, idempotence class",
+    "forbidden_instruction_leaks": "canonical source, merge algorithm, patch sites",
+    "category_specific_hardness_bar": "multiple truth surfaces with idempotency and lineage",
+    "category_specific_verifier_risks": "golden fixtures, count-only checks, GX9 saturation",
+    "coverage_role": "constrained-build incremental rebuild drift in distributed_reconciliation"
+  },
+  "satisfiability_risk": {
+    "rc2_planned_name_risk": "medium \u2014 opaque stems and noun ban; risk if descriptive dirs reintroduced",
+    "gx9_contract_risk": "medium \u2014 rich rows need derivations not answer triples",
+    "cr1_symbol_frontier_risk": "medium \u2014 three thin symbols across roots",
+    "hidden_contract_risk": "low \u2014 formulas and schemas in field_guide and schema fragments"
+  },
+  "actionability_plan": {
+    "verifier_command_visible": "run_cycle.sh and rebuild_report.json with regen rule",
+    "source_fix_intent_visible": "repair /app/environment sources",
+    "generated_output_rule_visible": "tests delete report and rerun driver",
+    "exact_formula_home": "environment/docs/field_guide.md",
+    "schema_home": "environment/schemas/report_fragments/"
+  },
+  "waiver_plan": {
+    "waivers_expected": false,
+    "waiver_rationale": "no waivers expected with standard naming and observation contract"
+  },
+  "reference_pattern": {
+    "reference_task_id": "layered-policy-reload-drift"
+  },
+  "realism_source": {
+    "source_type": "synthetic_exception",
+    "evidence_basis": "build-farm incremental coordinator incident motifs",
+    "upstream_or_synthetic_rationale": "realistic reconciliation class, fully local",
+    "minimization_preserves": "false greens, competing views, replay/rollback lineage",
+    "synthetic_exception_review": "distributed_reconciliation profile; constraint-complete instruction; observation contract; GX9/GX10 scrutiny"
+  }
+}
