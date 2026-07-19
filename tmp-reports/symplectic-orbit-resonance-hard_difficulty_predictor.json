@@ -1,0 +1,42 @@
+{
+  "advanced_hardness_categories": [
+    "state recovery",
+    "replay semantics",
+    "multi-component interaction"
+  ],
+  "difficulty": "hard",
+  "failure_mode_count": 8,
+  "findings": [],
+  "is_python_task": false,
+  "languages": [
+    "cpp"
+  ],
+  "model_success_prediction": {
+    "justification": [
+      "8 documented failure modes reduce pass rate",
+      "Advanced categories: state recovery, replay semantics, multi-component interaction",
+      "4 adversarial mechanism layers"
+    ],
+    "predicted_claude_pass_rate": 2,
+    "predicted_gpt5_pass_rate": 3,
+    "predicted_worst_model_pass_rate": 3
+  },
+  "predicted_failure_modes": [
+    "mechanism:false_green_intermediate_states",
+    "\"Model fails to correct the Kahan accumulator logic which only drifts after millions of steps.\"",
+    "mechanism:stateful_multi_step_dependencies",
+    "\"Model assumes naive step size scaling without coordinate metric transformation.\"",
+    "mechanism:cross_file_cross_format_invariants",
+    "\"Model edits the leapfrog order but fails to update step size velocity scaling.\"",
+    "mechanism:rollback_recovery_requirements",
+    "\"Model misses coordinate transformations.\""
+  ],
+  "status": "PASS",
+  "strict": true,
+  "summary": {
+    "fail": 0,
+    "pass": 1,
+    "warn": 0
+  },
+  "task_dir": "tasks/symplectic-orbit-resonance"
+}

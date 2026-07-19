@@ -1,0 +1,26 @@
+{
+  "author": {
+    "author_email": "anonymous",
+    "author_name": "anonymous",
+    "identifier": "anonymous <anonymous>",
+    "waiver_count_for_task": 0
+  },
+  "final_approval": true,
+  "log_entry": {
+    "author": "anonymous <anonymous>",
+    "status": "PASS",
+    "task": "journaling-fs-split-write",
+    "waiver_count": 0
+  },
+  "metadata_sources": [],
+  "source_findings": [],
+  "status": "PASS",
+  "summary": {
+    "fail": 0,
+    "pass": 0,
+    "waiver_count": 0,
+    "warn": 0
+  },
+  "task_dir": "tasks/journaling-fs-split-write",
+  "waivers": []
+}

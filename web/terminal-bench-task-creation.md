@@ -20,17 +20,19 @@ Use this file as the canonical authoring reference inside the standalone `web` b
    not the verifier harness language. **9 families** are accepted (10 common
    `task.toml` tags):
 
-   | # | Family | Tags |
-   |---|--------|------|
-   | 1 | Python | `python` |
-   | 2 | JavaScript | `javascript` |
-   | 3 | TypeScript | `typescript` |
-   | 4 | Go | `go` |
-   | 5 | Rust | `rust` |
-   | 6 | Java | `java` |
-   | 7 | C / C++ | `c`, `cpp` |
-   | 8 | Ruby | `ruby` |
-   | 9 | Bash / Shell | `bash`, `shell` |
+   | # | Family | Tags | Session Status |
+   |---|--------|------|----------------|
+   | 1 | Python | `python` | 🚫 **BLOCKED** — not allowed for this session |
+   | 2 | JavaScript | `javascript` | ✅ Available |
+   | 3 | TypeScript | `typescript` | ✅ Available |
+   | 4 | Go | `go` | ⚠️ Already used ×2 (`go-module-proxy-index-divergence`, `incremental-build-graph-convergence`) |
+   | 5 | Rust | `rust` | ⚠️ Already used ×1 (`wal-segment-pruner-drift`) |
+   | 6 | Java | `java` | ✅ Available |
+   | 7 | C / C++ | `c`, `cpp` | ✅ Available |
+   | 8 | Ruby | `ruby` | ✅ Available |
+   | 9 | Bash / Shell | `bash`, `shell` | ✅ Available |
+
+   **Preferred for the 4th task:** Java, C/C++, TypeScript, or JavaScript — to maximize language diversity.
 
    Full rules, canonical Docker bases, and Python HARD gate:
    `../.cursor/rules/task-creation.mdc` § Accepted implementation languages.
@@ -42,17 +44,19 @@ Use this file as the canonical authoring reference inside the standalone `web` b
    The default Edition 2 path in this bundle pursues `hard` only, and the final label must still be supported empirically.
 
 4. **Category**
-   Allowed values (**7 only** — two categories are permanently blocked):
+   Allowed values (**7 only** — two categories are permanently blocked; three additional categories are blocked for this session):
    - `system-administration`
    - `build-and-dependency-management`
-   - `data-processing`
    - `games`
    - `machine-learning`
    - `security`
    - `scientific-computing`
 
-   **BLOCKED for new tasks:** `software-engineering`, `debugging`. Remap repair/debug
+   **PERMANENTLY BLOCKED for new tasks:** `software-engineering`, `debugging`. Remap repair/debug
    ideas to an accepted category + `repair_existing_system` when appropriate.
+
+   **SESSION BLOCKED (already used in submitted tasks):** `data-processing`, `build-and-dependency-management`.
+   Do not generate new tasks in these categories — use one of the remaining 5 categories above.
 
    Category is not enough for Step 1. Each seed also needs a `task_shape.type`
    and a `category_profile.profile_name` from `docs/CATEGORY_PROFILES.md` / the

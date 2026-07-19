@@ -24,6 +24,10 @@ GO — Attempt 1. Realized the wal-segment-pruner-drift repair idea as a single-
   3. Processing directory listings in raw inode/readdir order instead of sorting by epoch.
   4. Non-atomic epoch updates causing drift.
   5. Missing database/filesystem reconciliation for unreachable segments whose physical files are missing (crash-consistency bug).
+  6. Trusting a stale disk barrier cache over the authoritative SQLite barrier.
+  7. Including orphan or pruned files in the post-prune rolling digest.
+  8. Failure to converge when recovery and pruning are repeated across process restarts.
+  9. Treating replayed pending staging rows with the same transaction id as separate byte growth.
 
 ### Per-gate Pitfall Inventory
 - **Collapse Gate**: Symbols in `construction_manifest.json` are thin and mapped to standard Rust function names.
@@ -63,6 +67,10 @@ Standard task tree containing task.toml, instruction.md, environment/Dockerfile,
 - `test_sync_epoch_atomicity_and_idempotency`
 - `test_prune_respects_barrier_epoch`
 - `test_prune_database_consistency_reconciliation`
+- `test_recovery_converges_with_mixed_staging_records`
+- `test_recovery_deduplicates_replayed_transaction_ids`
+- `test_database_barrier_overrides_stale_disk_cache`
+- `test_recover_prune_digest_converges_across_restarts`
 
 ### Drafting guardrails
 Keep instruction.md symptom-focused. Describe symptoms and expected invariants, but do not outline the direct code patch locations.
@@ -114,8 +122,8 @@ Keep instruction.md symptom-focused. Describe symptoms and expected invariants, 
   role: Decoy Python dependency alignment script
 
 ### fix_frontier
-- count: 3
-- distribution: environment/buffer/buffer.rs, environment/graph/graph.rs, environment/timeline/timeline.rs
+- count: 4
+- distribution: environment/src/main.rs, environment/buffer/buffer.rs, environment/graph/graph.rs, environment/timeline/timeline.rs
 - naming_policy: standard Rust structure
 - forbidden_stems: []
 - helpers_policy: allowed
@@ -219,7 +227,7 @@ pass_rate_target:
   fairness_guardrail: Mismatch/overflow errors are logged cleanly in verifier checks.
 - mechanism: rollback_recovery_requirements
   placement: The system must recover correctly and idempotently from staging table across crash loops and pad under-sized files.
-  why_model_misses_it: Model implements a single-pass drain without checking if records are already committed or if files need zero-padding.
+  why_model_misses_it: Model implements a single-pass drain without checking if records are already committed, whether replayed transaction ids duplicate work, or if files need zero-padding.
   fairness_guardrail: Test suite implements multiple restarts and checks content offsets.
 - mechanism: environment_specific_cli_semantics
   placement: Processing directory entries relies on epoch order rather than raw readdir/inode order.
@@ -254,15 +262,29 @@ pass_rate_target:
   path: environment/buffer/buffer.rs
   controls_tests:
     - test_staging_drain_no_double_count
-    - test_sync_epoch_atomicity_and_idempotency
+    - test_staging_recovery_undersized_fill
+    - test_recovery_converges_with_mixed_staging_records
+    - test_recovery_deduplicates_replayed_transaction_ids
+    - test_recover_prune_digest_converges_across_restarts
 - location_id: graph_traversal
   path: environment/graph/graph.rs
   controls_tests:
     - test_reachability_chain_validation
+    - test_reachability_circular_dependencies
+    - test_recover_prune_digest_converges_across_restarts
 - location_id: segment_sorting
   path: environment/timeline/timeline.rs
   controls_tests:
     - test_epoch_ordered_digest
+    - test_sync_epoch_atomicity_and_idempotency
+    - test_recover_prune_digest_converges_across_restarts
+- location_id: prune_reconciliation
+  path: environment/src/main.rs
+  controls_tests:
+    - test_prune_respects_barrier_epoch
+    - test_prune_database_consistency_reconciliation
+    - test_database_barrier_overrides_stale_disk_cache
+    - test_recover_prune_digest_converges_across_restarts
 ```
 
 #### decoy_manifest

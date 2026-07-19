@@ -1,0 +1,7 @@
+{
+  "controls": [
+    {"run": "clean", "name": "bravo"},
+    {"run": "repeat", "name": "bravo"}
+  ],
+  "notes": "Rows listed here stay within local boundaries and are used as stability controls."
+}

@@ -1,0 +1,29 @@
+{
+  "surface": "beta",
+  "rows": [
+    {
+      "id": "A100",
+      "generation": 1,
+      "value": 10,
+      "source": "cache",
+      "active": true,
+      "signal": "green"
+    },
+    {
+      "id": "B200",
+      "generation": 1,
+      "value": 17,
+      "source": "cache",
+      "active": true,
+      "signal": "green"
+    },
+    {
+      "id": "C300",
+      "generation": 3,
+      "value": 30,
+      "source": "cache",
+      "active": true,
+      "signal": "green"
+    }
+  ]
+}

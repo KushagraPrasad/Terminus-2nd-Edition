@@ -1,0 +1,10 @@
+atlasd init SPACE CASE
+atlasd restore SPACE N
+atlasd restart SPACE
+atlasd partial SPACE N K
+atlasd clean SPACE
+atlasd finish SPACE N
+atlasd probe SPACE
+atlasd work SPACE
+atlasd show SPACE
+atlasd catalog SPACE

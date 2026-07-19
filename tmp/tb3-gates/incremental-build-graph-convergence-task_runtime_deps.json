@@ -1,0 +1,48 @@
+{
+  "checks": [
+    {
+      "command": "go",
+      "locations": [
+        "solution/solve.sh:308",
+        "tests/test_outputs.py:22",
+        "tests/test_outputs.py:62"
+      ],
+      "message": "go is invoked and an obvious provider is present",
+      "providers": [
+        "go",
+        "python3"
+      ],
+      "remediation": "",
+      "status": "PASS"
+    }
+  ],
+  "commands": [
+    {
+      "command": "go",
+      "line": "go build -o /usr/local/bin/build_engine .",
+      "location": "solution/solve.sh:308"
+    },
+    {
+      "command": "go",
+      "line": "subprocess.run([\"go\", \"build\", \"-o\", str(BINARY_PATH), \".\"], cwd=\"/app/environment\", check=True)",
+      "location": "tests/test_outputs.py:22"
+    },
+    {
+      "command": "go",
+      "line": "subprocess.run([\"go\", \"build\", \"-o\", str(BINARY_PATH), \".\"], cwd=\"/app/environment\", check=True)",
+      "location": "tests/test_outputs.py:62"
+    }
+  ],
+  "providers": [
+    "go",
+    "python3"
+  ],
+  "status": "PASS",
+  "strict": true,
+  "summary": {
+    "fail": 0,
+    "pass": 1,
+    "warn": 0
+  },
+  "task_dir": "tasks/incremental-build-graph-convergence"
+}

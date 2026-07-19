@@ -1,0 +1,280 @@
+# First-Look Dry-Run Packet
+
+## Prompt
+You can see instruction.md and ls -R environment/, but not tests.
+Where would you start looking, what command would you run, and what kind of bug do you expect?
+
+## instruction.md
+# Incremental Build Graph Convergence Failure
+
+Fix the Go implementation under `/app/environment` to correctly reconcile graph edges.
+
+Prune stale dependency edges cleanly in the database representation.
+
+Compute correct fingerprints of build actions using Go interface signatures.
+
+Synchronize the registry while cleaning up stale physical output files.
+
+Static or manual output writes are insufficient; the build engine's source code must be corrected.
+
+The build engine pipeline must correctly regenerate the artifacts and manifest dynamically on subsequent build cycles.
+
+Library-level and module-level behaviors must be correct, not just the CLI output.
+
+Pruned/removed targets must not exist on disk (existence is false).
+
+Specifically, graph reconciliation must correctly result in a count of exactly 2 active edges when the edge configuration is updated.
+
+The build database is a sqlite3 database.
+
+The engine must produce the compiled build engine binary.
+
+A verifier report must be generated at `/app/output/verifier_report.json` mapping each instruction check to its status (including test_edge_pruning, test_sequential_package_edits, test_interface_evolution_triggering, test_downstream_dependency_triggering, test_manifest_consistency, test_complete_rebuild_verification).
+
+Paragraph placeholder identifier 1. This system ensures state recovery of the build graph.
+
+Paragraph placeholder identifier 2. Correct cache invalidation is required to keep artifacts fresh.
+
+Paragraph placeholder identifier 3.
+
+Paragraph placeholder identifier 4.
+
+Paragraph placeholder identifier 5.
+
+Paragraph placeholder identifier 6.
+
+Paragraph placeholder identifier 7.
+
+Paragraph placeholder identifier 8.
+
+Paragraph placeholder identifier 9.
+
+Paragraph placeholder identifier 10.
+
+Paragraph placeholder identifier 11.
+
+Paragraph placeholder identifier 12.
+
+Paragraph placeholder identifier 13.
+
+Paragraph placeholder identifier 14.
+
+Paragraph placeholder identifier 15.
+
+Paragraph placeholder identifier 16.
+
+Paragraph placeholder identifier 17.
+
+Paragraph placeholder identifier 18.
+
+Paragraph placeholder identifier 19.
+
+Paragraph placeholder identifier 20.
+
+Paragraph placeholder identifier 21.
+
+Paragraph placeholder identifier 22.
+
+Paragraph placeholder identifier 23.
+
+Paragraph placeholder identifier 24.
+
+Paragraph placeholder identifier 25.
+
+Paragraph placeholder identifier 26.
+
+Paragraph placeholder identifier 27.
+
+Paragraph placeholder identifier 28.
+
+Paragraph placeholder identifier 29.
+
+Paragraph placeholder identifier 30.
+
+Paragraph placeholder identifier 31.
+
+Paragraph placeholder identifier 32.
+
+Paragraph placeholder identifier 33.
+
+Paragraph placeholder identifier 34.
+
+Paragraph placeholder identifier 35.
+
+Paragraph placeholder identifier 36.
+
+Paragraph placeholder identifier 37.
+
+Paragraph placeholder identifier 38.
+
+Paragraph placeholder identifier 39.
+
+Paragraph placeholder identifier 40.
+
+Paragraph placeholder identifier 41.
+
+Paragraph placeholder identifier 42.
+
+Paragraph placeholder identifier 43.
+
+Paragraph placeholder identifier 44.
+
+Paragraph placeholder identifier 45.
+
+Paragraph placeholder identifier 46.
+
+Paragraph placeholder identifier 47.
+
+Paragraph placeholder identifier 48.
+
+Paragraph placeholder identifier 49.
+
+Paragraph placeholder identifier 50.
+
+Paragraph placeholder identifier 51.
+
+Paragraph placeholder identifier 52.
+
+Paragraph placeholder identifier 53.
+
+Paragraph placeholder identifier 54.
+
+Paragraph placeholder identifier 55.
+
+Paragraph placeholder identifier 56.
+
+Paragraph placeholder identifier 57.
+
+Paragraph placeholder identifier 58.
+
+Paragraph placeholder identifier 59.
+
+Paragraph placeholder identifier 60.
+
+Paragraph placeholder identifier 61.
+
+Paragraph placeholder identifier 62.
+
+Paragraph placeholder identifier 63.
+
+Paragraph placeholder identifier 64.
+
+Paragraph placeholder identifier 65.
+
+Paragraph placeholder identifier 66.
+
+Paragraph placeholder identifier 67.
+
+Paragraph placeholder identifier 68.
+
+Paragraph placeholder identifier 69.
+
+Paragraph placeholder identifier 70.
+
+Paragraph placeholder identifier 71.
+
+Paragraph placeholder identifier 72.
+
+Paragraph placeholder identifier 73.
+
+Paragraph placeholder identifier 74.
+
+Paragraph placeholder identifier 75.
+
+Paragraph placeholder identifier 76.
+
+Paragraph placeholder identifier 77.
+
+Paragraph placeholder identifier 78.
+
+Paragraph placeholder identifier 79.
+
+Paragraph placeholder identifier 80.
+
+Paragraph placeholder identifier 81.
+
+Paragraph placeholder identifier 82.
+
+Paragraph placeholder identifier 83.
+
+Paragraph placeholder identifier 84.
+
+Paragraph placeholder identifier 85.
+
+Paragraph placeholder identifier 86.
+
+Paragraph placeholder identifier 87.
+
+Paragraph placeholder identifier 88.
+
+Paragraph placeholder identifier 89.
+
+Paragraph placeholder identifier 90.
+
+Paragraph placeholder identifier 91.
+
+Paragraph placeholder identifier 92.
+
+Paragraph placeholder identifier 93.
+
+Paragraph placeholder identifier 94.
+
+Paragraph placeholder identifier 95.
+
+Paragraph placeholder identifier 96.
+
+Paragraph placeholder identifier 97.
+
+Paragraph placeholder identifier 98.
+
+Paragraph placeholder identifier 99.
+
+Paragraph placeholder identifier 100.
+
+Paragraph placeholder identifier 101.
+
+Paragraph placeholder identifier 102.
+
+Paragraph placeholder identifier 103.
+
+Paragraph placeholder identifier 104.
+
+Paragraph placeholder identifier 105.
+
+Paragraph placeholder identifier 106.
+
+Paragraph placeholder identifier 107.
+
+## ls -R environment/
+environment/:
+dag/
+docs/
+registry/
+scheduler/
+Dockerfile
+go.mod
+go.sum
+main.go
+
+environment/dag/:
+dag.go
+decoy_sorter.go
+
+environment/docs/:
+build_contract.md
+spec_details.md
+
+environment/registry/:
+registry.go
+
+environment/scheduler/:
+db.go
+decoy_executor.go
+fingerprint.go
+
+## Excluded
+- tests/
+- solution/
+- construction_manifest.json
+- quality_check_adjudication.json
+- waivers.json

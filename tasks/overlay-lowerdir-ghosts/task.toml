@@ -1,0 +1,31 @@
+version = "2.0"
+
+[metadata]
+author_name = "anonymous"
+author_email = "anonymous"
+difficulty = "hard"
+category = "debugging"
+category_profile = "build_dependency_toolchain"
+tags = ["rust", "overlayfs", "replay", "recovery", "cargo-workspace", "state-machine"]
+languages = ["rust"]
+codebase_size = "small"
+number_of_milestones = 0
+subcategories = []
+expert_time_estimate_min = 120
+junior_time_estimate_min = 360
+
+[reference_pattern]
+justification_if_none = "Reconstructed from overlay-lowerdir-ghosts mold with stamp/reconcile subsystem, delayed-effect bugs, and symptom-only instruction."
+
+[agent]
+timeout_sec = 1800
+
+[verifier]
+timeout_sec = 1800
+
+[environment]
+allow_internet = false
+build_timeout_sec = 600
+cpus = 2
+memory_mb = 4096
+storage_mb = 10240

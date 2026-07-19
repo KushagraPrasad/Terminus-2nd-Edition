@@ -1,0 +1,2 @@
+Driver stages canned vectors from fixtures and emits /app/output/report.json.
+Flag semantics and helper contracts: /app/environment/docs/replay_audit_contract.md

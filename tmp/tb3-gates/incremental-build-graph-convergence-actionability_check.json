@@ -1,0 +1,92 @@
+{
+  "checks": [
+    {
+      "id": "source_fix_intent",
+      "locations": [],
+      "message": "No issues found.",
+      "name": "Source-fix intent",
+      "remediation": "State whether `/app/environment` source code must be fixed, or explicitly say output-only work is allowed.",
+      "severity": "PASS"
+    },
+    {
+      "id": "verifier_command_pipeline",
+      "locations": [],
+      "message": "No issues found.",
+      "name": "Verifier command/pipeline visibility",
+      "remediation": "Name the command or pipeline the verifier reruns at the public contract level, without naming the patch site.",
+      "severity": "PASS"
+    },
+    {
+      "id": "regenerated_vs_static_output",
+      "locations": [],
+      "message": "No issues found.",
+      "name": "Regenerated vs static output",
+      "remediation": "If tests regenerate outputs, say static/manual output writes are insufficient and the normal pipeline must regenerate the artifacts.",
+      "severity": "PASS"
+    },
+    {
+      "id": "inputs_profiles_argument_splits",
+      "locations": [],
+      "message": "No issues found.",
+      "name": "Inputs/profiles/argument splits",
+      "remediation": "Move tested profiles, labels, modes, argument splits, and CLI flags into instruction.md or visible environment docs/source help.",
+      "severity": "PASS"
+    },
+    {
+      "id": "schemas_types_cardinality",
+      "locations": [],
+      "message": "No issues found.",
+      "name": "Schemas/types/cardinality",
+      "remediation": "Give output keys, types, object/array distinctions, byte lengths, and cardinalities a visible contract home.",
+      "severity": "PASS"
+    },
+    {
+      "id": "formulas_constants",
+      "locations": [],
+      "message": "No issues found.",
+      "name": "Formulas/constants",
+      "remediation": "Disclose externally tested formulas, numeric constants, tolerances, byte sizes, digest algorithms, and profile constants at the contract level.",
+      "severity": "PASS"
+    },
+    {
+      "id": "direct_library_call_expectations",
+      "locations": [],
+      "message": "No issues found.",
+      "name": "Direct library-call expectations",
+      "remediation": "If tests call library functions directly, state that library/module-level behavior must be correct, not only the CLI output.",
+      "severity": "PASS"
+    },
+    {
+      "id": "subsystem_entry_point",
+      "locations": [],
+      "message": "No issues found.",
+      "name": "Subsystem-level entry point",
+      "remediation": "Give a fair subsystem, directory, or component scope; do not rely only on metaphors or exact patch paths.",
+      "severity": "PASS"
+    },
+    {
+      "id": "metaphor_only_requirements",
+      "locations": [],
+      "message": "No issues found.",
+      "name": "Metaphor-only requirements",
+      "remediation": "Replace coined metaphors with observable behavior, concrete artifacts, or standard domain vocabulary.",
+      "severity": "PASS"
+    },
+    {
+      "id": "active_misdirection",
+      "locations": [],
+      "message": "No issues found.",
+      "name": "Active misdirection",
+      "remediation": "If the instruction names a driver/entry point but tests bypass it, state naturally that driver-only changes are not enough.",
+      "severity": "PASS"
+    }
+  ],
+  "status": "PASS",
+  "strict": true,
+  "summary": {
+    "fail": 0,
+    "pass": 10,
+    "warn": 0
+  },
+  "task_dir": "tasks/incremental-build-graph-convergence"
+}

@@ -1,0 +1,26 @@
+user_visible_outputs = [
+  "/app/output/report.json",
+  "/app/bin/mwp_driver",
+  "/app/environment/docs/replay_audit_contract.md",
+  "/app/environment/config/migration_policy.toml",
+]
+
+internal_harness_files = [
+  "/app/build",
+  "/tests/probe.sh",
+  "/tests/probe.cpp",
+  "/tmp/probe.json",
+]
+
+[structured_outputs.report]
+target = "/app/output/report.json"
+format = "json"
+instruction_checks = [
+  "triage_ok",
+  "bundle_lane_ok",
+  "replay_fence_ok",
+  "overlap_quiet_ok",
+  "epoch_merge_ok",
+  "digest_line_ok",
+  "overlap_class_ok",
+]

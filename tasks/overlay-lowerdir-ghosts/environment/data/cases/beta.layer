@@ -1,0 +1,13 @@
+case beta
+gen 1
+file tone amber
+file bird owl
+file cost 3
+gen 2
+file tone silver
+file bird tern
+file cost 8
+gen 3
+file tone violet
+file bird rail
+file cost 13

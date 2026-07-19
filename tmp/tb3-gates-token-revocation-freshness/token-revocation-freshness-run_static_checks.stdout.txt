@@ -1,0 +1,24 @@
+PASS
+  - required task files present
+  - no legacy canary strings found
+  - task.toml Edition 2 gate passed
+  - task structure aligns with Edition 2 expectations
+  - tests/test.sh reward.txt block matches Edition 2 expectation
+  - tests/test.sh pre-pytest block preserves the internet-disabled semantics
+  - Dockerfile pre-installs verifier pytest tooling for offline runtime
+  - Dockerfile Edition 2 gate passed
+  - Dockerfile COPY/ADD sources resolve in the build context
+  - environment/ contains no build artifacts or reference outputs
+  - no CRLF line endings on shell scripts
+  - no heavy build steps detected in tests/; timeout-coherence rule not triggered
+  - no backticked field names in instruction.md; vocabulary check skipped
+  - no bespoke build knobs required by solve.sh or tests
+  - agent-target paths declared in tests/ are discoverable from instruction.md or environment/
+  - docker-compose checks skipped (no environment/docker-compose.yaml)
+  - instruction.md uses absolute in-container path references
+  - output contract matches the declared user-visible outputs and schema checks
+  - ruff check passed for verifier files
+  - ruff check passed for environment/
+  - environment/ contains no hidden-instruction patterns
+WARN
+  - instruction.md is longer than the preferred 1 sentence to 3 paragraphs guidance

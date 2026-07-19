@@ -1,0 +1,13 @@
+case gamma
+gen 1
+file tone cedar
+file bird kite
+file cost 5
+gen 2
+file tone maple
+file bird gull
+file cost 7
+gen 3
+file tone spruce
+file bird heron
+file cost 10

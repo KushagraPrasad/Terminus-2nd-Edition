@@ -19,3 +19,47 @@
 - wall-clock time from first Step 2b PASS to scripts/approve_task.py exit 0: 78359.88s
 - list of CNI references that fired during the authoring: []
 - whether the spec's Initial Draft Commitments matched the final file set (draft_commitments_diff): null
+
+## Per-task authoring metrics
+
+- count of scripts/run_static_checks.py FAIL exits before first PASS: 1
+- count of scripts/run_static_checks.py WARN-only exits before approval: 28
+- count of scripts/collapse_check.py FAIL exits before first PASS: 5
+- count of dirty-flag triggers (scripts/approve_task.py refused due to checksum mismatch): 0
+- wall-clock time from first preflight to first preflight PASS: 192.13s
+- wall-clock time from first Step 2b PASS to scripts/approve_task.py exit 0: 160702.50s
+- list of CNI references that fired during the authoring: []
+- whether the spec's Initial Draft Commitments matched the final file set (draft_commitments_diff): null
+
+## Per-task authoring metrics
+
+- count of scripts/run_static_checks.py FAIL exits before first PASS: 1
+- count of scripts/run_static_checks.py WARN-only exits before approval: 33
+- count of scripts/collapse_check.py FAIL exits before first PASS: 6
+- count of dirty-flag triggers (scripts/approve_task.py refused due to checksum mismatch): 1
+- wall-clock time from first preflight to first preflight PASS: 192.13s
+- wall-clock time from first Step 2b PASS to scripts/approve_task.py exit 0: 461833.47s
+- list of CNI references that fired during the authoring: []
+- whether the spec's Initial Draft Commitments matched the final file set (draft_commitments_diff): null
+
+## Per-task authoring metrics
+
+- count of scripts/run_static_checks.py FAIL exits before first PASS: 1
+- count of scripts/run_static_checks.py WARN-only exits before approval: 41
+- count of scripts/collapse_check.py FAIL exits before first PASS: 6
+- count of dirty-flag triggers (scripts/approve_task.py refused due to checksum mismatch): 1
+- wall-clock time from first preflight to first preflight PASS: 192.13s
+- wall-clock time from first Step 2b PASS to scripts/approve_task.py exit 0: 477547.06s
+- list of CNI references that fired during the authoring: []
+- whether the spec's Initial Draft Commitments matched the final file set (draft_commitments_diff): null
+
+## Per-task authoring metrics
+
+- count of scripts/run_static_checks.py FAIL exits before first PASS: 1
+- count of scripts/run_static_checks.py WARN-only exits before approval: 42
+- count of scripts/collapse_check.py FAIL exits before first PASS: 6
+- count of dirty-flag triggers (scripts/approve_task.py refused due to checksum mismatch): 1
+- wall-clock time from first preflight to first preflight PASS: 192.13s
+- wall-clock time from first Step 2b PASS to scripts/approve_task.py exit 0: 479172.76s
+- list of CNI references that fired during the authoring: []
+- whether the spec's Initial Draft Commitments matched the final file set (draft_commitments_diff): null

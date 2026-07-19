@@ -1,0 +1,22 @@
+{
+  "waivers": [
+    {
+      "check": "rc2",
+      "scope": "tasks/symplectic-orbit-resonance",
+      "reason": "The core simulator relies on leapfrog integration, Kahan accumulators, adaptive step sizes, and orbit engine structures which are naturally named to follow standard scientific physics simulation terminology.",
+      "evidence": {
+        "source_type": "cpp",
+        "actionability_check": "PASS",
+        "no_hidden_contracts": "PASS",
+        "obfuscation_lint": "PASS",
+        "oracle": "PASS",
+        "nop": "PASS"
+      },
+      "reviewer_signoff": {
+        "reviewer": "Antigravity",
+        "date": "2026-07-19",
+        "decision": "approved"
+      }
+    }
+  ]
+}

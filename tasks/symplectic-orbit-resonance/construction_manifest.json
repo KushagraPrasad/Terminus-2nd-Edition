@@ -1,0 +1,123 @@
+{
+    "symbol_table": [
+        {
+            "path": "environment/subsystem.a/leapfrog_integrator.cpp",
+            "symbol": "symplectic_leapfrog_step",
+            "kind": "function",
+            "signature": "void symplectic_leapfrog_step(std::vector<Body>& bodies, double dt, double epsilon_sq)",
+            "purpose": "Physical integrator half-steps."
+        },
+        {
+            "path": "environment/subsystem.b/kahan_accumulator.cpp",
+            "symbol": "kahan_accumulate",
+            "kind": "function",
+            "signature": "void kahan_accumulate(double& sum, double& comp, double val)",
+            "purpose": "Coordinate update compensation."
+        },
+        {
+            "path": "environment/subsystem.c/step_transformer.cpp",
+            "symbol": "scale_step_size",
+            "kind": "function",
+            "signature": "double scale_step_size(std::vector<Body>& bodies, double base_dt, double& current_dt)",
+            "purpose": "Update adaptive integration scales."
+        },
+        {
+            "path": "environment/subsystem.d/simulation_engine.cpp",
+            "symbol": "run_simulation",
+            "kind": "function",
+            "signature": "SimResult run_simulation(double total_time, double base_dt, bool adaptive)",
+            "purpose": "Core simulation engine."
+        }
+    ],
+    "oracle_frontier": [
+        {
+            "path": "subsystem.a/leapfrog_integrator.cpp",
+            "fix_symbols": [
+                "symplectic_leapfrog_step"
+            ],
+            "co_resident_helpers": [
+                "compute_forces",
+                "calculate_systemic_angular_momentum"
+            ],
+            "allowed_top_level_symbols": []
+        },
+        {
+            "path": "subsystem.b/kahan_accumulator.cpp",
+            "fix_symbols": [
+                "kahan_accumulate"
+            ],
+            "co_resident_helpers": [
+                "kahan_accumulate_checked"
+            ],
+            "allowed_top_level_symbols": []
+        },
+        {
+            "path": "subsystem.c/step_transformer.cpp",
+            "fix_symbols": [
+                "scale_step_size"
+            ],
+            "co_resident_helpers": [
+                "log_step_scaling"
+            ],
+            "allowed_top_level_symbols": []
+        },
+        {
+            "path": "subsystem.d/simulation_engine.cpp",
+            "fix_symbols": [
+                "run_simulation"
+            ],
+            "co_resident_helpers": [
+                "compute_total_energy",
+                "compute_center_of_mass_velocity_sq"
+            ],
+            "allowed_top_level_symbols": []
+        }
+    ],
+    "flipping_point_contract": {
+        "locations": [
+            {
+                "id": "subsystem.a",
+                "path": "environment/subsystem.a/leapfrog_integrator.cpp",
+                "controls_tests": [
+                    "test_energy_conservation"
+                ]
+            },
+            {
+                "id": "subsystem.b",
+                "path": "environment/subsystem.b/kahan_accumulator.cpp",
+                "controls_tests": [
+                    "test_float_accumulation"
+                ]
+            },
+            {
+                "id": "subsystem.c",
+                "path": "environment/subsystem.c/step_transformer.cpp",
+                "controls_tests": [
+                    "test_adaptive_scaling"
+                ]
+            },
+            {
+                "id": "subsystem.d",
+                "path": "environment/subsystem.d/simulation_engine.cpp",
+                "controls_tests": [
+                    "test_resonance_detection"
+                ]
+            }
+        ],
+        "no_single_location_flips_majority": true,
+        "concentration_cap": 0.34
+    },
+    "oracle_targets": [
+        "environment/subsystem.a/leapfrog_integrator.cpp",
+        "environment/subsystem.b/kahan_accumulator.cpp",
+        "environment/subsystem.c/step_transformer.cpp",
+        "environment/subsystem.d/simulation_engine.cpp"
+    ],
+    "code_forbidden_tokens": [
+        "singularity",
+        "fourier"
+    ],
+    "reference_pattern": {
+        "justification_if_none": "This task implements symplectic n-body orbital integration and resonance detection."
+    }
+}

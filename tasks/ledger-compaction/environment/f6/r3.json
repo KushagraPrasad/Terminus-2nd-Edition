@@ -1,0 +1,13 @@
+{
+  "rank": {
+    "anchor": 3,
+    "cache": 1,
+    "audit": 2
+  },
+  "labels": [
+    "clean",
+    "restart",
+    "rollback",
+    "idempotent"
+  ]
+}

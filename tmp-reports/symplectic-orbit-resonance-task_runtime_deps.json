@@ -1,0 +1,44 @@
+{
+  "checks": [
+    {
+      "command": "make",
+      "locations": [
+        "solution/solve.sh:47",
+        "solution/solve.sh:48"
+      ],
+      "message": "make is invoked and an obvious provider is present",
+      "providers": [
+        "gcc",
+        "make",
+        "python3"
+      ],
+      "remediation": "",
+      "status": "PASS"
+    }
+  ],
+  "commands": [
+    {
+      "command": "make",
+      "line": "make clean",
+      "location": "solution/solve.sh:47"
+    },
+    {
+      "command": "make",
+      "line": "make",
+      "location": "solution/solve.sh:48"
+    }
+  ],
+  "providers": [
+    "gcc",
+    "make",
+    "python3"
+  ],
+  "status": "PASS",
+  "strict": true,
+  "summary": {
+    "fail": 0,
+    "pass": 1,
+    "warn": 0
+  },
+  "task_dir": "tasks/symplectic-orbit-resonance"
+}

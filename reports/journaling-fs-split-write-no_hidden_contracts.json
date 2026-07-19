@@ -1,0 +1,35 @@
+{
+  "items": [
+    {
+      "classification": "visible_requirement_found",
+      "home": "instruction.md",
+      "kind": "command_chain",
+      "location": "tests/test_outputs.py:10",
+      "remediation": "Name the verifier-rerun command or pipeline in instruction.md or visible docs.",
+      "severity": "PASS",
+      "value": "/app/environment/fs_daemon disk.bin recover"
+    },
+    {
+      "classification": "allowed_hidden_verification_detail",
+      "home": null,
+      "kind": "string_literal",
+      "location": "tests/test_outputs.py:78",
+      "remediation": "No public-contract change needed.",
+      "severity": "PASS",
+      "value": "Write complete."
+    }
+  ],
+  "remediation_examples": [
+    "Instruction.md: 'The digest field is a 64-character sha256 hex string.'",
+    "Instruction.md: 'drift is observed - baseline for each record.'",
+    "Visible environment docstring: 'build_report() must satisfy the same public report contract as the CLI.'"
+  ],
+  "status": "PASS",
+  "strict": true,
+  "summary": {
+    "fail": 0,
+    "pass": 2,
+    "warn": 0
+  },
+  "task_dir": "tasks/journaling-fs-split-write"
+}

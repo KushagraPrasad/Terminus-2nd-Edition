@@ -1,0 +1,11 @@
+#!/bin/bash
+set -euo pipefail
+if [ "$#" -ne 2 ] || [ "$1" != "--write" ]; then
+  echo "usage: /app/environment/mig_exec --write /app/output/migration_observations.json" >&2
+  exit 2
+fi
+OUT="$2"
+mkdir -p /tmp/mig_state_build
+src=(/app/environment/app/main.cpp /app/environment/app/flow.cpp /app/environment/app/core/types.cpp /app/environment/app/core/ledger.cpp /app/environment/app/core/checks.cpp /app/environment/app/ops/tape.cpp /app/environment/app/ops/wash.cpp /app/environment/app/ops/probe.cpp /app/environment/app/ops/journal.cpp /app/environment/app/ops/reconcile.cpp /app/environment/app/io/packs.cpp /app/environment/app/io/store.cpp /app/environment/app/io/catalog.cpp /app/environment/app/emit/frame.cpp /app/environment/app/emit/write.cpp /app/environment/app/emit/archive.cpp)
+g++ -std=c++17 -O2 -Wall -Wextra -I/app/environment/app "${src[@]}" -o /tmp/mig_state_build/runner -lcrypto
+/tmp/mig_state_build/runner --write "$OUT" --root /app/environment/app

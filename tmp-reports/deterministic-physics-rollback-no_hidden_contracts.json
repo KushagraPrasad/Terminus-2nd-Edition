@@ -1,0 +1,62 @@
+{
+  "items": [
+    {
+      "classification": "visible_requirement_found",
+      "home": "instruction.md",
+      "kind": "expected_type",
+      "location": "tests/test_outputs.py:39",
+      "remediation": "Document the expected output type in instruction.md or visible environment docs/source help.",
+      "severity": "PASS",
+      "value": "dict"
+    },
+    {
+      "classification": "allowed_hidden_verification_detail",
+      "home": null,
+      "kind": "string_literal",
+      "location": "tests/test_outputs.py:44",
+      "remediation": "No public-contract change needed.",
+      "severity": "PASS",
+      "value": "25"
+    },
+    {
+      "classification": "visible_requirement_found",
+      "home": "instruction.md",
+      "kind": "expected_type",
+      "location": "tests/test_outputs.py:46",
+      "remediation": "Document the expected output type in instruction.md or visible environment docs/source help.",
+      "severity": "PASS",
+      "value": "int"
+    },
+    {
+      "classification": "visible_requirement_found",
+      "home": "instruction.md",
+      "kind": "expected_type",
+      "location": "tests/test_outputs.py:54",
+      "remediation": "Document the expected output type in instruction.md or visible environment docs/source help.",
+      "severity": "PASS",
+      "value": "int"
+    },
+    {
+      "classification": "visible_requirement_found",
+      "home": "instruction.md",
+      "kind": "expected_type",
+      "location": "tests/test_outputs.py:62",
+      "remediation": "Document the expected output type in instruction.md or visible environment docs/source help.",
+      "severity": "PASS",
+      "value": "int"
+    }
+  ],
+  "remediation_examples": [
+    "Instruction.md: 'The digest field is a 64-character sha256 hex string.'",
+    "Instruction.md: 'drift is observed - baseline for each record.'",
+    "Visible environment docstring: 'build_report() must satisfy the same public report contract as the CLI.'"
+  ],
+  "status": "PASS",
+  "strict": true,
+  "summary": {
+    "fail": 0,
+    "pass": 5,
+    "warn": 0
+  },
+  "task_dir": "tasks/deterministic-physics-rollback"
+}

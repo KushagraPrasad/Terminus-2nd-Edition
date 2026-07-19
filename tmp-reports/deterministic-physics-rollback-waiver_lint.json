@@ -1,0 +1,38 @@
+{
+  "author": {
+    "author_email": "anonymous@example.com",
+    "author_name": "anonymous",
+    "identifier": "anonymous <anonymous@example.com>",
+    "waiver_count_for_task": 1
+  },
+  "final_approval": true,
+  "log_entry": {
+    "author": "anonymous <anonymous@example.com>",
+    "status": "PASS",
+    "task": "deterministic-physics-rollback",
+    "waiver_count": 1
+  },
+  "metadata_sources": [
+    "waivers.json"
+  ],
+  "source_findings": [],
+  "status": "PASS",
+  "summary": {
+    "fail": 0,
+    "pass": 1,
+    "waiver_count": 1,
+    "warn": 0
+  },
+  "task_dir": "tasks/deterministic-physics-rollback",
+  "waivers": [
+    {
+      "check": "rc2",
+      "findings": [],
+      "index": 0,
+      "policy": "usually_waivable",
+      "scope": "tasks/deterministic-physics-rollback",
+      "severity": "PASS",
+      "source": "waivers.json"
+    }
+  ]
+}

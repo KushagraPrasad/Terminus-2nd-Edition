@@ -1,0 +1,12 @@
+user_visible_outputs = [
+    "/app/output/report.json",
+    "/app/docs/case_lane_ids.txt",
+    "/app/docs/build_hints.txt",
+]
+
+internal_harness_files = []
+
+[structured_outputs.report]
+target = "/app/output/report.json"
+format = "json"
+instruction_checks = ["rows", "summary", "trace_digest", "sync_status", "facet_hex"]

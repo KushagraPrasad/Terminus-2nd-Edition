@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": ["phase", "gen_stamp", "sealed_count", "lane_tag"],
+  "properties": {
+    "phase": { "type": "integer" },
+    "gen_stamp": { "type": "integer" },
+    "sealed_count": { "type": "integer" },
+    "lane_tag": { "type": "string" }
+  }
+}

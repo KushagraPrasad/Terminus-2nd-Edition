@@ -1,0 +1,82 @@
+{
+  "concern_count": 1,
+  "concerns": [
+    {
+      "category": "template_risk",
+      "finding": "template_risk=HIGH; closest peer=symplectic-orbit-resonance; overall_similarity=47.7%; axes: challenge_structure=94.6%, failure_modes=22.8%, solution_path=4.1%, test_pattern=100.0%, terminology_only=25.4%; VIOLATIONS: challenge_structure=94.6% exceeds 35% threshold; test_pattern=100.0% exceeds 35% threshold",
+      "question": "Does this task look like a template variant of a prior submission?",
+      "remediation": "Redesign challenge structure, failure modes, solution path, or verifier pattern before packaging. Similarity must be <= 25% overall and <= 35% per axis.",
+      "severity": "MEDIUM"
+    }
+  ],
+  "critical_count": 0,
+  "gate_results": {
+    "actionability_check.py": "PASS",
+    "collapse_check.py": null,
+    "hard_difficulty_predictor.py": "PASS",
+    "no_hidden_contracts.py": "PASS",
+    "post_disclosure_collapse.py": "PASS",
+    "sandbox_risk_gate.py": "PASS",
+    "spec_gap_detector.py": "PASS",
+    "spec_test_alignment.py": "PASS"
+  },
+  "high_count": 0,
+  "min_reviewer_confidence": 90,
+  "model_success_prediction": {
+    "justification": [
+      "8 documented failure modes reduce pass rate",
+      "Advanced categories: state recovery, cache invalidation, multi-component interaction",
+      "4 adversarial mechanism layers"
+    ],
+    "predicted_claude_pass_rate": 2,
+    "predicted_gpt5_pass_rate": 3,
+    "predicted_worst_model_pass_rate": 3
+  },
+  "scores": {
+    "difficulty_confidence": 85,
+    "hidden_contract_risk": 3,
+    "reviewer_confidence": 95,
+    "spec_clarity": 96
+  },
+  "status": "WARN",
+  "task_dir": "tasks/deterministic-physics-rollback",
+  "template_axis_violations": [
+    "challenge_structure=94.6% exceeds 35% threshold",
+    "test_pattern=100.0% exceeds 35% threshold"
+  ],
+  "template_risk": "HIGH",
+  "template_risk_peer": "symplectic-orbit-resonance",
+  "template_risk_reasons": [
+    "challenge_structure overlap 95% with tasks/symplectic-orbit-resonance",
+    "test_pattern overlap 100% with tasks/symplectic-orbit-resonance"
+  ],
+  "template_similarity_axes": {
+    "challenge_structure": 94.6,
+    "failure_modes": 22.8,
+    "solution_path": 4.1,
+    "terminology_only": 25.4,
+    "test_pattern": 100.0
+  },
+  "template_similarity_percent": 47.7,
+  "template_thresholds": {
+    "axis_max": 35.0,
+    "low_max": 10.0,
+    "medium_max": 15.0,
+    "review_max": 25.0
+  },
+  "template_top_peers": [
+    {
+      "overall_percent": 47.7,
+      "task": "symplectic-orbit-resonance"
+    },
+    {
+      "overall_percent": 27.0,
+      "task": "journaling-fs-split-write"
+    },
+    {
+      "overall_percent": 18.6,
+      "task": "token-revocation-freshness"
+    }
+  ],
+  "would_reject": false
+}

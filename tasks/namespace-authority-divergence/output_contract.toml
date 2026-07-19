@@ -1,0 +1,15 @@
+user_visible_outputs = [
+    "/app/output/recovery_transcript.json",
+    "/app/docs/contract.md",
+    "/app/docs/build_hints.txt",
+    "/app/bin/rx",
+]
+
+internal_harness_files = [
+    "/app/docs/build_hints.txt",
+]
+
+[structured_outputs.recovery_transcript]
+target = "/app/output/recovery_transcript.json"
+format = "json"
+instruction_checks = ["runs", "summary", "digest_line", "anchor_head", "merge_lane", "tail_seq", "tail_gen", "span_head", "roll_digest"]

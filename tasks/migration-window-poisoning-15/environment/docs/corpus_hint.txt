@@ -1,0 +1,1 @@
+Corpus slices are frozen; do not add new JSON under fixtures without updating the driver.

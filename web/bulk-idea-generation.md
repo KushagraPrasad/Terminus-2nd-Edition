@@ -52,15 +52,18 @@ Every retained seed must include:
 
 ## Accepted categories for the default full-seven sweep
 
-The default generator uses all **seven accepted** categories (two legacy categories are **blocked** for new tasks):
+The default generator uses all **seven accepted** categories (two legacy categories are **blocked** for new tasks, two additional categories are **session-blocked**):
 
-1. `system-administration`
-2. `build-and-dependency-management`
-3. `data-processing`
-4. `games`
-5. `machine-learning`
-6. `security`
-7. `scientific-computing`
+1. `system-administration` ✅
+2. `build-and-dependency-management` ⚠️ **SESSION BLOCKED** — already used in submitted tasks
+3. `data-processing` ⚠️ **SESSION BLOCKED** — already used (`wal-segment-pruner-drift`)
+4. `games` ✅
+5. `machine-learning` ✅
+6. `security` ✅
+7. `scientific-computing` ✅
+
+**Active session-available categories (for the 4th task):**
+`system-administration`, `games`, `machine-learning`, `security`, `scientific-computing`
 
 **BLOCKED — never use in new seeds or `task.toml`:**
 

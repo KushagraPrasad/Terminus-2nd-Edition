@@ -1,0 +1,1 @@
+v1 layout: u32_be record_count | u32_be bytes_len | payload bytes | u32_be crc32_be

@@ -1,0 +1,17 @@
+user_visible_outputs = [
+  "/app/logs/verifier/auth_audit_trace.json"
+]
+
+internal_harness_files = []
+
+[structured_outputs.auth_audit_trace]
+target = "/app/logs/verifier/auth_audit_trace.json"
+format = "json"
+value_contract = "object logging details of JWT authorization checks, cached keys, sync checkpoints, and db state verification traces"
+instruction_checks = [
+  "cache wildcard invalidation",
+  "clock skew offset verification",
+  "jwks key fallback on network timeout",
+  "database transaction crash persistence",
+  "monotonic epoch sequence validation"
+]

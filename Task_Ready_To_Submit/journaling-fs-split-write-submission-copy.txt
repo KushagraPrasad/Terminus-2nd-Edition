@@ -1,0 +1,50 @@
+================================================================================
+                           SUBMISSION PACKET & PORTAL DELIVERABLES
+================================================================================
+
+--------------------------------------------------------------------------------
+PART A — FINAL RUBRIC (Paste into portal Rubric Editor)
+--------------------------------------------------------------------------------
+# Rubric 1
+Agent implements multi-block WAL application to restore split writes correctly, +3
+Agent computes and verifies WAL block checksums dynamically to detect corrupt transactions, +3
+Agent handles recovery idempotently without corrupting adjacent block metadata, +3
+Agent preserves the secondary checksum tree perfectly during rollback, +3
+Agent ensures the daemon writes new data successfully after recovery without panicking, +3
+Agent hardcodes transaction ID outputs or bypasses C recovery implementations, -5
+Agent leaves test-only assertions or dummy debug helpers inside the daemon sources, -3
+Agent skips transaction verification bounds when parsing the journal log, -5
+
+--------------------------------------------------------------------------------
+PART B — PORTAL FORM FIELDS
+--------------------------------------------------------------------------------
+
+[B1. Does this task use an approved canonical base image?]
+Does this task use an approved canonical base image?: Yes
+
+[B2. Comments for Reviewer]
+Comments for Reviewer:
+Original systems programming repair task in C. Fixes the recovery logic in a journaling filesystem daemon to handle split-write crash conditions atomically and recover idempotently. The task verified that the secondary checksum tree is preserved perfectly during rollback, recovery is fully idempotent, and subsequent writes run cleanly. All strict gates passed local preflight successfully (`Preflight passed (Phase A + B + C + D + E + F)`), and final 10x oracle repeat and 20x verifier repeat checks passed successfully with 1.0 mean reward scores.
+
+[B3. Task Inspiration ID]
+(leave blank)
+
+--------------------------------------------------------------------------------
+STEP 6 — SUBMISSION EXPLANATIONS
+--------------------------------------------------------------------------------
+
+[1. Difficulty Explanation]
+The task requires writing low-level systems logic in C to verify checksums and copy blocks properly. The difficulty lies in implementing exact block boundary lookups, handling multi-block WAL records correctly, and keeping recovery idempotent without corrupting adjacent metadata in the secondary checksum tree or panicking on concurrent writes.
+
+[2. Solution Explanation]
+We resolved the issue by fixing the `verify_transaction_checksum` logic to read all transaction blocks and verify their cumulative checksum, updating `apply_transaction_blocks` to loop over all transaction blocks, ensuring transaction ID bounds are verified monotonic inside `journal_recover`, correcting the block offset multiplier logic in `inode_rollback`, and removing early state resets to allow clean subsequent daemon writes.
+
+[3. Verification Explanation]
+The verifier runs the compiled `fs_daemon` with various disk states. It asserts:
+1. A multi-block split-write transaction is rolled back correctly.
+2. The adjacent secondary checksum tree data remains intact.
+3. Writes can be issued successfully immediately following recovery.
+4. Multiple successive recoveries are idempotent.
+
+[4. Canonical Base Image]
+Does this task use an approved canonical base image?: Yes

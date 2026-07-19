@@ -1,0 +1,10 @@
+user_visible_outputs = ["stdout", "deterministic_hash"]
+internal_harness_files = []
+
+[structured_outputs]
+[structured_outputs.stdout]
+type = "string"
+description = "The output serialization"
+target = "deterministic_hash"
+format = "json"
+instruction_checks = ["Verifies the hash is correct"]

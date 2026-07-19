@@ -1,0 +1,5 @@
+A local recovery driver under `/app/environment` rebuilds workload rows from bundled checkpoint material and a persisted write log, then writes `/app/output/migration_observations.json`. Operators report that the first clean restore looks fine, but later replay, cleanup, and rerun sequences show crossed rows whose owners disagree with the active authority, tombstoned slots reappear, log entries miss their targets, artifact sidecars disagree with emitted rows, and the stable digest drifts between otherwise identical regenerations.
+
+Repair the C++ sources under `/app/environment` so `/app/environment/mig_exec --write /app/output/migration_observations.json` regenerates a correct report. The externally tested JSON layout covers runs with records, an artifacts index, and fingerprints with stable_digest and session_span_id; record fields include evidence, lineage, and boundary. The bundled operator and schema docs under the environment tree define the full contract.
+
+The verifier deletes the output file and reruns the public command; static or hand-written JSON will not pass. Do not edit tests, bypass the driver, or write reward files directly.

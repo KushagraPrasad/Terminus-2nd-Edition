@@ -1,0 +1,612 @@
+{
+  "hardness_axes": [
+    {
+      "id": "discover",
+      "name": "Discover",
+      "verdict": "PASS",
+      "reasoning": "The solver must discover that the clock skew is not compensated because system time is directly compared to token headers."
+    },
+    {
+      "id": "synthesize",
+      "name": "Synthesize",
+      "verdict": "PASS",
+      "reasoning": "The solver must synthesize JWT signature parsing, wildcard pattern matching in the LRU cache, and SQLite transactions in the DB store."
+    },
+    {
+      "id": "diagnose_or_design",
+      "name": "Diagnose or Design/Search",
+      "verdict": "PASS",
+      "reasoning": "Requires diagnosing a distributed epoch sync issue and state consistency mismatch between the cache and SQLite."
+    },
+    {
+      "id": "navigate_coupling",
+      "name": "Navigate coupling",
+      "verdict": "PASS",
+      "reasoning": "Making a local change in only the cache logic will fail key rotation and transaction crash tests."
+    },
+    {
+      "id": "reason_beyond_training",
+      "name": "Reason beyond training",
+      "verdict": "PASS",
+      "reasoning": "Reconciling three state surfaces under simulated system crashes is an abstract design challenge that cannot be solved by boilerplate code."
+    }
+  ],
+  "anti_trivialization_checks": [
+    {
+      "id": "disclosure_collapse",
+      "name": "Disclosure-collapse",
+      "verdict": "PASS",
+      "reasoning": "The instructions only specify symptoms and security properties, keeping algorithm details hidden."
+    },
+    {
+      "id": "hidden_instance",
+      "name": "Hidden-instance",
+      "verdict": "PASS",
+      "reasoning": "All validation invariants are fully documented in instruction.md."
+    },
+    {
+      "id": "single_artifact_repair",
+      "name": "Single-artifact repair",
+      "verdict": "PASS",
+      "reasoning": "Fixes must span across the Cache, Store, and Validator modules."
+    },
+    {
+      "id": "generalization",
+      "name": "Generalization",
+      "verdict": "PASS",
+      "reasoning": "Tests verify robust token check paths under concurrency, clock drift, and crash recovery."
+    },
+    {
+      "id": "prompt_honesty",
+      "name": "Prompt-honesty",
+      "verdict": "PASS",
+      "reasoning": "The documented symptoms match the actual behavior of cache/DB/JWT verification drift."
+    },
+    {
+      "id": "cheating_vs_difficulty",
+      "name": "Cheating-vs-difficulty",
+      "verdict": "PASS",
+      "reasoning": "Difficulty relies on concurrency, transactional logic, and sequence constraints, not sandbox hacks."
+    },
+    {
+      "id": "mechanical_fix_filter",
+      "name": "Mechanical-fix filter",
+      "verdict": "PASS",
+      "reasoning": "Grep/replace of single strings cannot resolve the transaction rollback and wildcard caching bugs."
+    },
+    {
+      "id": "localized_fix",
+      "name": "Localized-fix",
+      "verdict": "PASS",
+      "reasoning": "The fix frontier spans multiple source files in the TS gateway codebase."
+    },
+    {
+      "id": "oracle_locality",
+      "name": "Oracle-locality",
+      "verdict": "PASS",
+      "reasoning": "All fixes are scoped to the primary gateway logic, avoiding unrelated changes."
+    },
+    {
+      "id": "small_declarative_cluster",
+      "name": "Small declarative-cluster",
+      "verdict": "PASS",
+      "reasoning": "Solving the issues requires code logic modifications, not config file edits."
+    },
+    {
+      "id": "grep_collapse",
+      "name": "Grep-collapse",
+      "verdict": "PASS",
+      "reasoning": "Symbols and directories use generic names that do not match instruction symptoms."
+    },
+    {
+      "id": "pre_factored_helper",
+      "name": "Pre-factored-helper",
+      "verdict": "PASS",
+      "reasoning": "No stubs or comment prompts exist in the environment codebase to guide the model."
+    },
+    {
+      "id": "recipe_discount",
+      "name": "Recipe-discount",
+      "verdict": "PASS",
+      "reasoning": "Instructions describe symptoms and rules, not step-by-step commands."
+    },
+    {
+      "id": "security_aura_discount",
+      "name": "Security-aura discount",
+      "verdict": "PASS",
+      "reasoning": "The security domain is loaded with real engineering complexity, not just cosmetic aura."
+    },
+    {
+      "id": "orthogonal_checklist",
+      "name": "Orthogonal-checklist",
+      "verdict": "PASS",
+      "reasoning": "All verifier checkpoints are directly related to incremental dependency resolution and convergence."
+    },
+    {
+      "id": "harness_discount",
+      "name": "Harness-discount",
+      "verdict": "PASS",
+      "reasoning": "The test suite invokes the build command directly without custom test harness wrappers."
+    },
+    {
+      "id": "one_pass_solvability",
+      "name": "One-pass solvability",
+      "verdict": "PASS",
+      "reasoning": "Dynamic tests simulate random crashes and clock drift, preventing static mocks."
+    },
+    {
+      "id": "hard_only_gate",
+      "name": "Hard-only gate",
+      "verdict": "PASS",
+      "reasoning": "Predictor math estimates pass rate at 8%, validating the HARD classification."
+    },
+    {
+      "id": "discovery_budget_test",
+      "name": "Discovery/design budget test",
+      "verdict": "PASS",
+      "reasoning": "Discovery of the exact cache invalidation patterns is left entirely to the solver."
+    },
+    {
+      "id": "instruction_specificity_test",
+      "name": "Instruction specificity test",
+      "verdict": "PASS",
+      "reasoning": "No code structures or secret parameters are leaked in the instructions."
+    },
+    {
+      "id": "topology_distribution_test",
+      "name": "Topology distribution test",
+      "verdict": "PASS",
+      "reasoning": "The topology is mapped across distinct files to ensure a multi-frontier patch."
+    }
+  ],
+  "rubric_axes": [
+    {
+      "id": "verifiable",
+      "name": "Verifiable",
+      "verdict": "PASS",
+      "reasoning": "Tested properties are asserted via deterministic Jest tests."
+    },
+    {
+      "id": "well_specified",
+      "name": "Well-specified",
+      "verdict": "PASS",
+      "reasoning": "The input structures, formats, and clock headers are fully documented."
+    },
+    {
+      "id": "solvable",
+      "name": "Solvable",
+      "verdict": "PASS",
+      "reasoning": "A valid TypeScript implementation satisfies all verifier constraints."
+    },
+    {
+      "id": "difficult",
+      "name": "Difficult",
+      "verdict": "PASS",
+      "reasoning": "Requires solving concurrent invalidations and crash recovery, which is hard."
+    },
+    {
+      "id": "interesting",
+      "name": "Interesting",
+      "verdict": "PASS",
+      "reasoning": "Addresses a real security vulnerability in distributed token validation caches."
+    },
+    {
+      "id": "outcome_verified",
+      "name": "Outcome-verified",
+      "verdict": "PASS",
+      "reasoning": "Tests verify token authorization outcomes directly."
+    }
+  ],
+  "instruction_completeness_test": {
+    "verdict": "PASS",
+    "reasoning": "Instructions outline the expected behaviors, security constraints, and headers. The solver must debug the system to find the root cause of the desynchronization."
+  },
+  "discovery_budget": [
+    {
+      "discovery": "Wildcard pattern invalidation mismatch logic location",
+      "planned_location": "environment/src/cache.ts",
+      "why_instruction_must_not_reveal": "Revealing the exact wildcard evaluation logic bypasses the core cache invalidation task."
+    },
+    {
+      "discovery": "Clock skew compensation calculation bug in token header validation",
+      "planned_location": "environment/src/validator.ts",
+      "why_instruction_must_not_reveal": "Explaining the exact calculation would simplify the timezone diagnosis."
+    },
+    {
+      "discovery": "Missing transaction block during db sync writes",
+      "planned_location": "environment/src/store.ts",
+      "why_instruction_must_not_reveal": "Naming the database transaction omission directly targets the crash consistency challenge."
+    }
+  ],
+  "instruction_specificity": {
+    "level": "symptoms-only",
+    "reasoning": "The instruction documents symptoms (unauthorized tokens accepted, epoch resets causing sync drift) and public invariants without directing the agent to specific source code locations."
+  },
+  "attack_path": {
+    "summary": "Fix wildcard scope checking in cache.ts, apply skew compensation in validator.ts, and add transactional blocks in store.ts.",
+    "reasoning": "The agent must trace the wildcard claims against cached tokens, introduce transaction control in the SQLite DB client, and check incoming sync headers for clock skew compensation."
+  },
+  "smallest_plausible_patch": {
+    "summary": "Approximately 50-70 lines of TypeScript code changes across three files.",
+    "reasoning": "Adding database transaction begin/commit statements (15 lines), updating cache invalidation loops (20 lines), and writing timestamp drift math in validator (20 lines)."
+  },
+  "collapse_audit": {
+    "verdict": "PASS",
+    "reasoning": "The bugs are logically coupled. Fixing only signature checking without fixing transaction consistency or wildcard cache eviction leaves independent tests failing.",
+    "residual_hardness": "Solver must implement consistent state handling across async components, SQLite transactions, and memory maps.",
+    "red_flags": []
+  },
+  "topology_enumeration": [
+    {
+      "id": "token_cache_spec",
+      "summary": "The in-memory token cache storing validated session authorization records.",
+      "locations": [
+        "environment/src/cache.ts",
+        "environment/src/validator.ts",
+        "tests/test_outputs.py"
+      ],
+      "why_no_single_location_suffices": "The cache acts as the primary gate for fast-path auth checks and must be consistent with the database state."
+    },
+    {
+      "id": "revocation_db_spec",
+      "summary": "The local SQLite store tracking blacklisted tokens, epoch numbers, and sequence histories.",
+      "locations": [
+        "environment/src/store.ts",
+        "environment/src/validator.ts",
+        "tests/test_outputs.py"
+      ],
+      "why_no_single_location_suffices": "The database persists revocation states across restarts and is queried when cache misses occur."
+    },
+    {
+      "id": "key_rotation_spec",
+      "summary": "The JWKS signature verification keys and rotation lifecycle logic.",
+      "locations": [
+        "environment/src/validator.ts",
+        "environment/src/jwks.ts",
+        "tests/test_outputs.py"
+      ],
+      "why_no_single_location_suffices": "The gateway validates cryptographic signatures using rotated keys, which is evaluated during keys fallback checks."
+    }
+  ],
+  "construction_manifest": {
+    "symbol_table": [
+      {
+        "path": "environment/src/cache.ts",
+        "symbol": "invalidateByPattern",
+        "kind": "method",
+        "signature": "public invalidateByPattern(pattern: string): void",
+        "purpose": "Evicts cached tokens matching a wildcard scope or principal pattern."
+      },
+      {
+        "path": "environment/src/validator.ts",
+        "symbol": "validateToken",
+        "kind": "method",
+        "signature": "public async validateToken(token: string, skewMs: number): Promise<AuthResult>",
+        "purpose": "Validates signature, expiration, and epoch parameters of a token."
+      },
+      {
+        "path": "environment/src/store.ts",
+        "symbol": "syncRevocations",
+        "kind": "method",
+        "signature": "public async syncRevocations(batch: RevocationBatch): Promise<void>",
+        "purpose": "Synchronizes a batch of token revocations into SQLite under transaction safety."
+      }
+    ],
+    "flipping_point_contract": {
+      "locations": [
+        {
+          "id": "cache_invalidation",
+          "path": "environment/src/cache.ts",
+          "controls_tests": [
+            "test_wildcard_eviction",
+            "test_ttl_expiry_sync"
+          ]
+        },
+        {
+          "id": "token_validation",
+          "path": "environment/src/validator.ts",
+          "controls_tests": [
+            "test_token_signature_rotation",
+            "test_expired_fallback_keys"
+          ]
+        },
+        {
+          "id": "db_synchronization",
+          "path": "environment/src/store.ts",
+          "controls_tests": [
+            "test_db_transaction_crash_recovery",
+            "test_monotonic_sequence_rollback"
+          ]
+        }
+      ],
+      "no_single_location_flips_majority": true,
+      "concentration_cap": 0.34
+    },
+    "decoy_manifest": [
+      {
+        "path": "environment/src/jwks.ts",
+        "kind": "file",
+        "rhymes_with": "validator.ts",
+        "non_fix_purpose": "Fetches and holds public keys from the external JWKS endpoints."
+      },
+      {
+        "path": "environment/src/decoy_logger.ts",
+        "kind": "file",
+        "rhymes_with": "store.ts",
+        "non_fix_purpose": "Logs authorization operations to local audit directories."
+      }
+    ],
+    "code_forbidden_tokens": [
+      "gateway",
+      "freshness",
+      "revocation",
+      "epoch",
+      "skew",
+      "blacklist"
+    ]
+  },
+  "naming_pass": {
+    "instruction_nouns_extracted": [
+      "gateway",
+      "freshness",
+      "revocation",
+      "epoch",
+      "skew",
+      "blacklist"
+    ],
+    "renames_during_drafting": [
+      {
+        "original": "test_monotonic_epoch_rollback",
+        "renamed_to": "test_monotonic_sequence_rollback",
+        "reason": "Avoided using the forbidden noun 'epoch' in the test name to satisfy the naming pass rules."
+      },
+      {
+        "original": "test_cache_invalidation_wildcard",
+        "renamed_to": "test_wildcard_eviction",
+        "reason": "Avoided using the path token 'cache' in the test name to resolve spec satisfiability overlap check."
+      }
+    ],
+    "test_names_audited": [
+      "test_token_signature_rotation",
+      "test_expired_fallback_keys",
+      "test_wildcard_eviction",
+      "test_ttl_expiry_sync",
+      "test_db_transaction_crash_recovery",
+      "test_monotonic_sequence_rollback"
+    ],
+    "concentration_math": {
+      "total_tests": 6,
+      "per_location": [
+        {
+          "location_id": "cache_invalidation",
+          "test_count": 2,
+          "ratio": 0.3333333333333333
+        },
+        {
+          "location_id": "token_validation",
+          "test_count": 2,
+          "ratio": 0.3333333333333333
+        },
+        {
+          "location_id": "db_synchronization",
+          "test_count": 2,
+          "ratio": 0.3333333333333333
+        }
+      ]
+    },
+    "recomputed_concentration": {
+      "total_tests": 6,
+      "concentration_cap": 0.34,
+      "per_location": [
+        {
+          "location_id": "cache_invalidation",
+          "test_count": 2,
+          "ratio": 0.3333333333333333
+        },
+        {
+          "location_id": "token_validation",
+          "test_count": 2,
+          "ratio": 0.3333333333333333
+        },
+        {
+          "location_id": "db_synchronization",
+          "test_count": 2,
+          "ratio": 0.3333333333333333
+        }
+      ]
+    }
+  },
+  "difficulty_mechanism_plan": [
+    {
+      "mechanism": "stateful_multi_step_dependencies",
+      "placement": "test harness runs crash recovery repeatedly",
+      "why_model_misses_it": "agent stops after first successful recovery, misses idempotency requirement",
+      "fairness_guardrail": "idempotency requirement documented in spec"
+    },
+    {
+      "mechanism": "cross_file_cross_format_invariants",
+      "placement": "recovery logic and on-disk binary format",
+      "why_model_misses_it": "agent fixes recovery code but breaks binary header checksum",
+      "fairness_guardrail": "binary format explicitly defined in environment/docs/format.md"
+    },
+    {
+      "mechanism": "rollback_recovery_requirements",
+      "placement": "secondary checksum tree",
+      "why_model_misses_it": "fix corrupts the checksum tree during block rollback",
+      "fairness_guardrail": "checksum tree specification is public"
+    },
+    {
+      "mechanism": "false_green_intermediate_states",
+      "placement": "file data recovery vs filesystem state",
+      "why_model_misses_it": "partial fix recovers file data but panics on next write due to stale garbage collector state",
+      "fairness_guardrail": "test harness simulates immediate write after recovery"
+    }
+  ],
+  "calibration_plan": {
+    "oracle_runs": 3,
+    "no_op_runs": 3,
+    "target_agent_runs": 5,
+    "comparator_agent_runs": 5,
+    "human_sanity": "yes",
+    "shortcut_audit": "JSON output fails rerun, one-file fix fails invariants",
+    "ablation_plan": "Remove each mechanism one by one to verify independent hardness",
+    "pass_rate_target": {
+      "hard_max_pct": 20,
+      "too_easy_threshold_pct": 80,
+      "basis": "Worst-model accuracy on platform"
+    }
+  },
+  "verifier_scoring_plan": {
+    "metrics": [
+      {
+        "metric": "functional_correctness",
+        "weight": 0.45,
+        "criterion": "Recovers files"
+      },
+      {
+        "metric": "hidden_invariants",
+        "weight": 0.25,
+        "criterion": "Checksum tree preserved"
+      },
+      {
+        "metric": "state_hygiene",
+        "weight": 0.15,
+        "criterion": "Idempotent recovery"
+      },
+      {
+        "metric": "interface_correctness",
+        "weight": 0.1,
+        "criterion": "CLI usage"
+      },
+      {
+        "metric": "deliverable_completeness",
+        "weight": 0.05,
+        "criterion": "Artifacts present"
+      }
+    ],
+    "overall_threshold": 0.999,
+    "reward_output": "reward.txt",
+    "binary_threshold_rule": "Strict pass/fail"
+  },
+  "subtype_milestone_plan": {
+    "subcategories": [],
+    "milestone_count": 0,
+    "sequential_dependency": "none",
+    "local_only_data": true,
+    "sidecar_or_protocol_notes": "none"
+  },
+  "platform_files": [
+    {
+      "path": "construction_manifest.json",
+      "role": "metadata"
+    },
+    {
+      "path": "instruction.md",
+      "role": "prompt"
+    },
+    {
+      "path": "output_contract.toml",
+      "role": "metadata"
+    },
+    {
+      "path": "solution/solve.sh",
+      "role": "solution"
+    },
+    {
+      "path": "task.toml",
+      "role": "metadata"
+    },
+    {
+      "path": "tests/test_outputs.py",
+      "role": "verifier"
+    },
+    {
+      "path": "environment/Dockerfile",
+      "role": "environment"
+    },
+    {
+      "path": "tests/test.sh",
+      "role": "verifier_entrypoint"
+    }
+  ],
+  "task_files": [
+    {
+      "path": "environment/fs_daemon.c",
+      "role": "source"
+    },
+    {
+      "path": "environment/journal.c",
+      "role": "source"
+    },
+    {
+      "path": "environment/inode.c",
+      "role": "source"
+    }
+  ],
+  "fix_frontier": {
+    "count": 3,
+    "distribution": "journal.c, fs_daemon.c, inode.c",
+    "naming_policy": "standard C conventions",
+    "forbidden_stems": [
+      "repair",
+      "fix",
+      "solve"
+    ],
+    "helpers_policy": "no prepopulated fix helpers",
+    "symbol_thin_preferred": true
+  },
+  "contract_surface": {
+    "boolean_fields_max": 2,
+    "direct_boolean_assertions_max": 2,
+    "preferred_assertion_styles": [
+      "property-based",
+      "round-trip"
+    ],
+    "forbidden_assertion_styles": [
+      "exact literal string matching"
+    ]
+  },
+  "task_shape": {
+    "type": "repair_existing_system",
+    "instruction_framing": "symptoms-only",
+    "hardness_source": "diagnosis",
+    "collapse_risk": "low"
+  },
+  "category_profile": {
+    "challenge_family": "crash_recovery",
+    "bug_family": "split_write",
+    "profile_name": "filesystem_state_reconstruction",
+    "allowed_instruction_disclosures": "observed filesystem state, reconstruction command, preservation constraints",
+    "forbidden_instruction_leaks": "inode choice, corrupt metadata location, exact manifest repair",
+    "category_specific_hardness_bar": "canonical state inferred from conflicting mutable evidence",
+    "category_specific_verifier_risks": "golden tree leak, one manifest repair",
+    "coverage_role": "system-administration"
+  },
+  "satisfiability_risk": {
+    "rc2_planned_name_risk": "low",
+    "gx9_contract_risk": "low",
+    "cr1_symbol_frontier_risk": "low",
+    "hidden_contract_risk": "low"
+  },
+  "actionability_plan": {
+    "verifier_command_visible": "yes",
+    "source_fix_intent_visible": "yes",
+    "generated_output_rule_visible": "yes",
+    "exact_formula_home": "environment/docs/format.md",
+    "schema_home": "environment/docs/format.md"
+  },
+  "waiver_plan": {
+    "waivers_expected": false,
+    "waiver_rationale": "not applicable"
+  },
+  "reference_pattern": {
+    "justification_if_none": "Unique C filesystem replay topology"
+  },
+  "realism_source": {
+    "source_type": "real_bug",
+    "evidence_basis": "Classic ext4/ZFS split write torn page vulnerabilities",
+    "upstream_or_synthetic_rationale": "Modeled after real log-structured FS recovery bugs",
+    "minimization_preserves": "Semantic boundary checks",
+    "synthetic_exception_review": "N/A"
+  }
+}

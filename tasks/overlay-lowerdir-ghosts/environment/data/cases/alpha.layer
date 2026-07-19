@@ -1,0 +1,9 @@
+case alpha
+gen 1
+file tone crimson
+file bird ibis
+file cost 4
+gen 2
+file tone cobalt
+file bird wren
+file cost 9

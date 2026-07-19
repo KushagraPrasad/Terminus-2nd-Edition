@@ -1,0 +1,40 @@
+version = "2.0"
+
+[metadata]
+author_name = "anonymous"
+author_email = "anonymous@example.com"
+difficulty = "hard"
+category = "debugging"
+tags = ["recovery", "journal", "cpp", "determinism", "replay", "generators"]
+languages = ["cpp", "bash"]
+codebase_size = "small"
+number_of_milestones = 0
+subcategories = []
+expert_time_estimate_min = 120
+junior_time_estimate_min = 360
+
+[category_profile]
+challenge_family = "debugging"
+profile_name = "state_recovery_crash_consistency"
+allowed_instruction_disclosures = "subsystem scope under /app/environment, digest schema fields, generator_contract.md and runtime.toml contract sections, cmake rebuild under /app/build, scenario directory, and the requirement to regenerate qgh_digest.json from the native pipeline."
+forbidden_instruction_leaks = "exact patch files or functions, oracle sed/write recipes, per-scenario answer tables, and binding phrases that name the three fix loci."
+category_specific_hardness_bar = "Agents must reconcile stamp, seam, and carry contracts across journal_core, resume_lane, summary_ring, and the stage-two JSON handoff without hand-writing the digest."
+category_specific_verifier_risks = "Verifier rebuilds from source; partial fixes that correct merge stamps but ignore seam replay or carry binding still fail tamper and stress scenarios."
+coverage_role = "Exercises multi-module C++ generator repair with stage-one/stage-two replay coupling and regenerated digest validation."
+
+[reference_pattern]
+justification_if_none = "No promoted reference in docs/reference_tasks/index.json matches this two-stage QGH generator boundary task; the promoted async-pipeline entry covers xfer repair, not stamp/seam/carry generator contracts, so hardness is calibrated independently."
+
+[agent]
+timeout_sec = 1800
+
+[verifier]
+timeout_sec = 900
+
+[environment]
+allow_internet = false
+build_timeout_sec = 540
+cpus = 2
+memory_mb = 4096
+storage_mb = 10240
+workdir = "/app"

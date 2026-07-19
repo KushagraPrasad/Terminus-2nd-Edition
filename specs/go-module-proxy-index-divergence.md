@@ -225,6 +225,8 @@ Instruction must only mention CLI symptoms and proxy specifications. It must not
 - Static mock responses fail `test_latest_meta_invalidation` because the verifier updates versions dynamically.
 - Fixing the GC worker without invalidating `latest.meta` fails `test_latest_resolves_correctly`.
 - Fixing HTTP handler cache reads without cleaning up files from disk fails `test_gc_deletes_zips`.
+- Keeping `/@latest` tied only to the newest database row fails `test_latest_skips_incomplete_newest_release` when the newest row's files are missing and an older complete release exists.
+- Serving direct downloads from disk without rechecking the live index fails `test_download_rejects_index_stale_file` when a stale artifact remains after its index row disappears.
 
 ### Per-gate Pitfall Inventory
 
@@ -286,7 +288,9 @@ Instruction must only mention CLI symptoms and proxy specifications. It must not
   path: environment/goproxy/handler.go
   controls_tests:
     - test_latest_resolves_active_release
+    - test_latest_skips_incomplete_newest_release
     - test_latest_meta_cache_invalidation
+    - test_download_rejects_index_stale_file
 - location_id: index_query
   path: environment/goproxy/catalog.go
   controls_tests:

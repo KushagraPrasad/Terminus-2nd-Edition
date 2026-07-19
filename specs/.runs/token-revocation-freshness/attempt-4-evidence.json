@@ -1,0 +1,612 @@
+{
+  "hardness_axes": [
+    {
+      "id": "discover",
+      "name": "Discover",
+      "verdict": "PASS",
+      "reasoning": "The solver must discover that the clock skew is not compensated because system time is directly compared to token headers."
+    },
+    {
+      "id": "synthesize",
+      "name": "Synthesize",
+      "verdict": "PASS",
+      "reasoning": "The solver must synthesize JWT signature parsing, wildcard pattern matching in the LRU cache, and SQLite transactions in the DB store."
+    },
+    {
+      "id": "diagnose_or_design",
+      "name": "Diagnose or Design/Search",
+      "verdict": "PASS",
+      "reasoning": "Requires diagnosing a distributed epoch sync issue and state consistency mismatch between the cache and SQLite."
+    },
+    {
+      "id": "navigate_coupling",
+      "name": "Navigate coupling",
+      "verdict": "PASS",
+      "reasoning": "Making a local change in only the cache logic will fail key rotation and transaction crash tests."
+    },
+    {
+      "id": "reason_beyond_training",
+      "name": "Reason beyond training",
+      "verdict": "PASS",
+      "reasoning": "Reconciling three state surfaces under simulated system crashes is an abstract design challenge that cannot be solved by boilerplate code."
+    }
+  ],
+  "anti_trivialization_checks": [
+    {
+      "id": "disclosure_collapse",
+      "name": "Disclosure-collapse",
+      "verdict": "PASS",
+      "reasoning": "The instructions only specify symptoms and security properties, keeping algorithm details hidden."
+    },
+    {
+      "id": "hidden_instance",
+      "name": "Hidden-instance",
+      "verdict": "PASS",
+      "reasoning": "All validation invariants are fully documented in instruction.md."
+    },
+    {
+      "id": "single_artifact_repair",
+      "name": "Single-artifact repair",
+      "verdict": "PASS",
+      "reasoning": "Fixes must span across the Cache, Store, and Validator modules."
+    },
+    {
+      "id": "generalization",
+      "name": "Generalization",
+      "verdict": "PASS",
+      "reasoning": "Tests verify robust token check paths under concurrency, clock drift, and crash recovery."
+    },
+    {
+      "id": "prompt_honesty",
+      "name": "Prompt-honesty",
+      "verdict": "PASS",
+      "reasoning": "The documented symptoms match the actual behavior of cache/DB/JWT verification drift."
+    },
+    {
+      "id": "cheating_vs_difficulty",
+      "name": "Cheating-vs-difficulty",
+      "verdict": "PASS",
+      "reasoning": "Difficulty relies on concurrency, transactional logic, and sequence constraints, not sandbox hacks."
+    },
+    {
+      "id": "mechanical_fix_filter",
+      "name": "Mechanical-fix filter",
+      "verdict": "PASS",
+      "reasoning": "Grep/replace of single strings cannot resolve the transaction rollback and wildcard caching bugs."
+    },
+    {
+      "id": "localized_fix",
+      "name": "Localized-fix",
+      "verdict": "PASS",
+      "reasoning": "The fix frontier spans multiple source files in the TS gateway codebase."
+    },
+    {
+      "id": "oracle_locality",
+      "name": "Oracle-locality",
+      "verdict": "PASS",
+      "reasoning": "All fixes are scoped to the primary gateway logic, avoiding unrelated changes."
+    },
+    {
+      "id": "small_declarative_cluster",
+      "name": "Small declarative-cluster",
+      "verdict": "PASS",
+      "reasoning": "Solving the issues requires code logic modifications, not config file edits."
+    },
+    {
+      "id": "grep_collapse",
+      "name": "Grep-collapse",
+      "verdict": "PASS",
+      "reasoning": "Symbols and directories use generic names that do not match instruction symptoms."
+    },
+    {
+      "id": "pre_factored_helper",
+      "name": "Pre-factored-helper",
+      "verdict": "PASS",
+      "reasoning": "No stubs or comment prompts exist in the environment codebase to guide the model."
+    },
+    {
+      "id": "recipe_discount",
+      "name": "Recipe-discount",
+      "verdict": "PASS",
+      "reasoning": "Instructions describe symptoms and rules, not step-by-step commands."
+    },
+    {
+      "id": "security_aura_discount",
+      "name": "Security-aura discount",
+      "verdict": "PASS",
+      "reasoning": "The security domain is loaded with real engineering complexity, not just cosmetic aura."
+    },
+    {
+      "id": "orthogonal_checklist",
+      "name": "Orthogonal-checklist",
+      "verdict": "PASS",
+      "reasoning": "All verifier checkpoints are directly related to incremental dependency resolution and convergence."
+    },
+    {
+      "id": "harness_discount",
+      "name": "Harness-discount",
+      "verdict": "PASS",
+      "reasoning": "The test suite invokes the build command directly without custom test harness wrappers."
+    },
+    {
+      "id": "one_pass_solvability",
+      "name": "One-pass solvability",
+      "verdict": "PASS",
+      "reasoning": "Dynamic tests simulate random crashes and clock drift, preventing static mocks."
+    },
+    {
+      "id": "hard_only_gate",
+      "name": "Hard-only gate",
+      "verdict": "PASS",
+      "reasoning": "Predictor math estimates pass rate at 8%, validating the HARD classification."
+    },
+    {
+      "id": "discovery_budget_test",
+      "name": "Discovery/design budget test",
+      "verdict": "PASS",
+      "reasoning": "Discovery of the exact cache invalidation patterns is left entirely to the solver."
+    },
+    {
+      "id": "instruction_specificity_test",
+      "name": "Instruction specificity test",
+      "verdict": "PASS",
+      "reasoning": "No code structures or secret parameters are leaked in the instructions."
+    },
+    {
+      "id": "topology_distribution_test",
+      "name": "Topology distribution test",
+      "verdict": "PASS",
+      "reasoning": "The topology is mapped across distinct files to ensure a multi-frontier patch."
+    }
+  ],
+  "rubric_axes": [
+    {
+      "id": "verifiable",
+      "name": "Verifiable",
+      "verdict": "PASS",
+      "reasoning": "Tested properties are asserted via deterministic Jest tests."
+    },
+    {
+      "id": "well_specified",
+      "name": "Well-specified",
+      "verdict": "PASS",
+      "reasoning": "The input structures, formats, and clock headers are fully documented."
+    },
+    {
+      "id": "solvable",
+      "name": "Solvable",
+      "verdict": "PASS",
+      "reasoning": "A valid TypeScript implementation satisfies all verifier constraints."
+    },
+    {
+      "id": "difficult",
+      "name": "Difficult",
+      "verdict": "PASS",
+      "reasoning": "Requires solving concurrent invalidations and crash recovery, which is hard."
+    },
+    {
+      "id": "interesting",
+      "name": "Interesting",
+      "verdict": "PASS",
+      "reasoning": "Addresses a real security vulnerability in distributed token validation caches."
+    },
+    {
+      "id": "outcome_verified",
+      "name": "Outcome-verified",
+      "verdict": "PASS",
+      "reasoning": "Tests verify token authorization outcomes directly."
+    }
+  ],
+  "instruction_completeness_test": {
+    "verdict": "PASS",
+    "reasoning": "Instructions outline the expected behaviors, security constraints, and headers. The solver must debug the system to find the root cause of the desynchronization."
+  },
+  "discovery_budget": [
+    {
+      "discovery": "Wildcard pattern invalidation mismatch logic location",
+      "planned_location": "environment/src/cache.ts",
+      "why_instruction_must_not_reveal": "Revealing the exact wildcard evaluation logic bypasses the core cache invalidation task."
+    },
+    {
+      "discovery": "Clock skew compensation calculation bug in token header validation",
+      "planned_location": "environment/src/validator.ts",
+      "why_instruction_must_not_reveal": "Explaining the exact calculation would simplify the timezone diagnosis."
+    },
+    {
+      "discovery": "Missing transaction block during db sync writes",
+      "planned_location": "environment/src/store.ts",
+      "why_instruction_must_not_reveal": "Naming the database transaction omission directly targets the crash consistency challenge."
+    }
+  ],
+  "instruction_specificity": {
+    "level": "symptoms-only",
+    "reasoning": "The instruction documents symptoms (unauthorized tokens accepted, epoch resets causing sync drift) and public invariants without directing the agent to specific source code locations."
+  },
+  "attack_path": {
+    "summary": "Fix wildcard scope checking in cache.ts, apply skew compensation in validator.ts, and add transactional blocks in store.ts.",
+    "reasoning": "The agent must trace the wildcard claims against cached tokens, introduce transaction control in the SQLite DB client, and check incoming sync headers for clock skew compensation."
+  },
+  "smallest_plausible_patch": {
+    "summary": "Approximately 50-70 lines of TypeScript code changes across three files.",
+    "reasoning": "Adding database transaction begin/commit statements (15 lines), updating cache invalidation loops (20 lines), and writing timestamp drift math in validator (20 lines)."
+  },
+  "collapse_audit": {
+    "verdict": "PASS",
+    "reasoning": "The bugs are logically coupled. Fixing only signature checking without fixing transaction consistency or wildcard cache eviction leaves independent tests failing.",
+    "residual_hardness": "Solver must implement consistent state handling across async components, SQLite transactions, and memory maps.",
+    "red_flags": []
+  },
+  "topology_enumeration": [
+    {
+      "id": "token_cache_spec",
+      "summary": "The in-memory token cache storing validated session authorization records.",
+      "locations": [
+        "environment/src/cache.ts",
+        "environment/src/validator.ts",
+        "tests/test_outputs.py"
+      ],
+      "why_no_single_location_suffices": "The cache acts as the primary gate for fast-path auth checks and must be consistent with the database state."
+    },
+    {
+      "id": "revocation_db_spec",
+      "summary": "The local SQLite store tracking blacklisted tokens, epoch numbers, and sequence histories.",
+      "locations": [
+        "environment/src/store.ts",
+        "environment/src/validator.ts",
+        "tests/test_outputs.py"
+      ],
+      "why_no_single_location_suffices": "The database persists revocation states across restarts and is queried when cache misses occur."
+    },
+    {
+      "id": "key_rotation_spec",
+      "summary": "The JWKS signature verification keys and rotation lifecycle logic.",
+      "locations": [
+        "environment/src/validator.ts",
+        "environment/src/jwks.ts",
+        "tests/test_outputs.py"
+      ],
+      "why_no_single_location_suffices": "The gateway validates cryptographic signatures using rotated keys, which is evaluated during keys fallback checks."
+    }
+  ],
+  "construction_manifest": {
+    "symbol_table": [
+      {
+        "path": "environment/src/cache.ts",
+        "symbol": "invalidateByPattern",
+        "kind": "method",
+        "signature": "public invalidateByPattern(pattern: string): void",
+        "purpose": "Evicts cached tokens matching a wildcard scope or principal pattern."
+      },
+      {
+        "path": "environment/src/validator.ts",
+        "symbol": "validateToken",
+        "kind": "method",
+        "signature": "public async validateToken(token: string, skewMs: number): Promise<AuthResult>",
+        "purpose": "Validates signature, expiration, and epoch parameters of a token."
+      },
+      {
+        "path": "environment/src/store.ts",
+        "symbol": "syncRevocations",
+        "kind": "method",
+        "signature": "public async syncRevocations(batch: RevocationBatch): Promise<void>",
+        "purpose": "Synchronizes a batch of token revocations into SQLite under transaction safety."
+      }
+    ],
+    "flipping_point_contract": {
+      "locations": [
+        {
+          "id": "cache_invalidation",
+          "path": "environment/src/cache.ts",
+          "controls_tests": [
+            "test_cache_invalidation_wildcard",
+            "test_ttl_expiry_sync"
+          ]
+        },
+        {
+          "id": "token_validation",
+          "path": "environment/src/validator.ts",
+          "controls_tests": [
+            "test_token_signature_rotation",
+            "test_expired_fallback_keys"
+          ]
+        },
+        {
+          "id": "db_synchronization",
+          "path": "environment/src/store.ts",
+          "controls_tests": [
+            "test_db_transaction_crash_recovery",
+            "test_monotonic_sequence_rollback"
+          ]
+        }
+      ],
+      "no_single_location_flips_majority": true,
+      "concentration_cap": 0.34
+    },
+    "decoy_manifest": [
+      {
+        "path": "environment/src/jwks.ts",
+        "kind": "file",
+        "rhymes_with": "validator.ts",
+        "non_fix_purpose": "Fetches and holds public keys from the external JWKS endpoints."
+      },
+      {
+        "path": "environment/src/decoy_logger.ts",
+        "kind": "file",
+        "rhymes_with": "store.ts",
+        "non_fix_purpose": "Logs authorization operations to local audit directories."
+      }
+    ],
+    "code_forbidden_tokens": [
+      "gateway",
+      "freshness",
+      "revocation",
+      "epoch",
+      "skew",
+      "blacklist"
+    ]
+  },
+  "naming_pass": {
+    "instruction_nouns_extracted": [
+      "gateway",
+      "freshness",
+      "revocation",
+      "epoch",
+      "skew",
+      "blacklist"
+    ],
+    "renames_during_drafting": [
+      {
+        "original": "test_monotonic_epoch_rollback",
+        "renamed_to": "test_monotonic_sequence_rollback",
+        "reason": "Avoided using the forbidden noun 'epoch' in the test name to satisfy the naming pass rules."
+      }
+    ],
+    "test_names_audited": [
+      "test_token_signature_rotation",
+      "test_expired_fallback_keys",
+      "test_cache_invalidation_wildcard",
+      "test_ttl_expiry_sync",
+      "test_db_transaction_crash_recovery",
+      "test_monotonic_sequence_rollback"
+    ],
+    "concentration_math": {
+      "total_tests": 6,
+      "per_location": [
+        {
+          "location_id": "cache_invalidation",
+          "test_count": 2,
+          "ratio": 0.3333333333333333
+        },
+        {
+          "location_id": "token_validation",
+          "test_count": 2,
+          "ratio": 0.3333333333333333
+        },
+        {
+          "location_id": "db_synchronization",
+          "test_count": 2,
+          "ratio": 0.3333333333333333
+        }
+      ]
+    },
+    "recomputed_concentration": {
+      "total_tests": 6,
+      "concentration_cap": 0.34,
+      "per_location": [
+        {
+          "location_id": "cache_invalidation",
+          "test_count": 2,
+          "ratio": 0.3333333333333333
+        },
+        {
+          "location_id": "token_validation",
+          "test_count": 2,
+          "ratio": 0.3333333333333333
+        },
+        {
+          "location_id": "db_synchronization",
+          "test_count": 2,
+          "ratio": 0.3333333333333333
+        }
+      ]
+    }
+  },
+  "difficulty_mechanism_plan": [
+    {
+      "mechanism": "false_green_intermediate_states",
+      "placement": "Single token cache updates pass basic local validation but fail when multi-step wildcard revocations occur under concurrent requests.",
+      "why_model_misses_it": "Model targets single cache evictions without verifying wildcard pattern support.",
+      "fairness_guardrail": "Instructions specify wildcard claim propagation requirements."
+    },
+    {
+      "mechanism": "stateful_multi_step_dependencies",
+      "placement": "Verifier runs sequential batches of sync notifications and restarts the client gateway.",
+      "why_model_misses_it": "Model assumes clean database cache state on each call, missing persistent database transaction sync errors.",
+      "fairness_guardrail": "The output contract schema lists sequence histories and database states under verify commands."
+    },
+    {
+      "mechanism": "cross_file_cross_format_invariants",
+      "placement": "The SQLite blacklist database, the JWT JWKS cache, and the memory cache must remain fully reconciled.",
+      "why_model_misses_it": "Model implements cache updates but fails to sync sequence checkpoints in the database.",
+      "fairness_guardrail": "The instruction documents expected state consistency boundaries across components."
+    },
+    {
+      "mechanism": "rollback_recovery_requirements",
+      "placement": "The verifier resets the sequence epoch of the auth server (restarting seq=0) to trigger client rollback verification.",
+      "why_model_misses_it": "Model assumes sequence numbers always increase monotonically without handling system restarts.",
+      "fairness_guardrail": "The instructions declare sequence verification and epoch recovery safety rules."
+    }
+  ],
+  "calibration_plan": {
+    "oracle_runs": 3,
+    "no_op_runs": 3,
+    "target_agent_runs": 20,
+    "comparator_agent_runs": 20,
+    "human_sanity": "Verified that typescript validation and database transaction checks flag intermediate errors.",
+    "shortcut_audit": "Directly returning true on all validation calls fails signature tests.",
+    "ablation_plan": "Removing wildcard cache check logic reduces verification complexity.",
+    "pass_rate_target": {
+      "hard_max_pct": 20,
+      "too_easy_threshold_pct": 80,
+      "basis": "Worst-model pass rate on platform auto-eval."
+    }
+  },
+  "verifier_scoring_plan": {
+    "metrics": [
+      {
+        "metric": "functional_correctness",
+        "weight": 0.45,
+        "criterion": "Passes all JWT signature and caching checks."
+      },
+      {
+        "metric": "hidden_invariants",
+        "weight": 0.25,
+        "criterion": "Cache handles wildcard scopes and evictions correctly."
+      },
+      {
+        "metric": "state_hygiene",
+        "weight": 0.15,
+        "criterion": "SQLite DB transaction logic functions correctly after crash simulation."
+      },
+      {
+        "metric": "interface_correctness",
+        "weight": 0.1,
+        "criterion": "Client handles rotated keys fallback correctly."
+      },
+      {
+        "metric": "deliverable_completeness",
+        "weight": 0.05,
+        "criterion": "Outputs /logs/verifier/auth_audit_trace.json matches schema."
+      }
+    ],
+    "overall_threshold": 1.0,
+    "reward_output": "reward.txt",
+    "binary_threshold_rule": "all tests must pass"
+  },
+  "subtype_milestone_plan": {
+    "subcategories": [
+      "db_interaction"
+    ],
+    "milestone_count": 0,
+    "sequential_dependency": "none",
+    "local_only_data": true,
+    "sidecar_or_protocol_notes": "none"
+  },
+  "platform_files": [
+    {
+      "path": "task.toml",
+      "role": "Task metadata"
+    },
+    {
+      "path": "instruction.md",
+      "role": "Task instructions"
+    },
+    {
+      "path": "output_contract.toml",
+      "role": "Output schemas"
+    },
+    {
+      "path": "tests/test.sh",
+      "role": "Verifier script"
+    },
+    {
+      "path": "tests/test_outputs.py",
+      "role": "Verifier test cases"
+    },
+    {
+      "path": "solution/solve.sh",
+      "role": "Solution patch script"
+    },
+    {
+      "path": "environment/Dockerfile",
+      "role": "Container runtime environment"
+    },
+    {
+      "path": "construction_manifest.json",
+      "role": "Mapping manifest"
+    }
+  ],
+  "task_files": [
+    {
+      "path": "environment/src/cache.ts",
+      "role": "Token cache eviction logic"
+    },
+    {
+      "path": "environment/src/validator.ts",
+      "role": "Gateway token validator"
+    },
+    {
+      "path": "environment/src/store.ts",
+      "role": "SQLite database sync client"
+    },
+    {
+      "path": "environment/src/jwks.ts",
+      "role": "JWKS key retrieval decoy module"
+    },
+    {
+      "path": "environment/src/decoy_logger.ts",
+      "role": "Audit logger decoy module"
+    }
+  ],
+  "fix_frontier": {
+    "count": 3,
+    "distribution": "environment/src/cache.ts, environment/src/validator.ts, environment/src/store.ts",
+    "naming_policy": "standard TypeScript gateway architecture",
+    "forbidden_stems": [],
+    "helpers_policy": "allowed",
+    "symbol_thin_preferred": true
+  },
+  "contract_surface": {
+    "boolean_fields_max": 0,
+    "direct_boolean_assertions_max": 2,
+    "preferred_assertion_styles": [
+      "audit log structure checks",
+      "SQLite state validations"
+    ],
+    "forbidden_assertion_styles": [
+      "plain boolean return assertions"
+    ]
+  },
+  "task_shape": {
+    "type": "repair_existing_system",
+    "instruction_framing": "symptoms-only",
+    "hardness_source": "Distributed cache invalidation, key rotation synchronization, and database transaction consistency.",
+    "collapse_risk": "Local fixes to cache check loops fail database transaction and fallback security checks."
+  },
+  "category_profile": {
+    "challenge_family": "revocation_cache_drift",
+    "profile_name": "security_authority_split",
+    "allowed_instruction_disclosures": "assets, principals, allowed/denied actions, audit traces, authority boundary, repro command, and externally tested safety invariants.",
+    "forbidden_instruction_leaks": "vulnerable sink, trust-boundary implementation location, exploit primitive, patch rule, sanitizer name, or exact guard.",
+    "category_specific_hardness_bar": "Reconciliation of token state across changing principals, freshness, and revocation status.",
+    "category_specific_verifier_risks": "None.",
+    "coverage_role": "target"
+  },
+  "satisfiability_risk": {
+    "rc2_planned_name_risk": "low",
+    "gx9_contract_risk": "low",
+    "cr1_symbol_frontier_risk": "low",
+    "hidden_contract_risk": "low"
+  },
+  "actionability_plan": {
+    "verifier_command_visible": "npm test",
+    "source_fix_intent_visible": "Fix the token gateway logic under /app/environment.",
+    "generated_output_rule_visible": "/logs/verifier/auth_audit_trace.json",
+    "exact_formula_home": "instruction",
+    "schema_home": "instruction"
+  },
+  "waiver_plan": {
+    "waivers_expected": false,
+    "waiver_rationale": "No waivers planned."
+  },
+  "reference_pattern": {
+    "justification_if_none": "This task implements distributed token revocation and JWT validation cache drift checks."
+  },
+  "realism_source": {
+    "source_type": "real_bug",
+    "evidence_basis": "Inspired by OAuth 2.0 Token Revocation RFC 7009 / RFC 7519 JWT cache desynchronization vulnerabilities in distributed gateways.",
+    "upstream_or_synthetic_rationale": "Represents standard JWT invalidation caching and key rotation challenges.",
+    "minimization_preserves": "Token validations, database structures, and cache maps.",
+    "synthetic_exception_review": "None."
+  }
+}

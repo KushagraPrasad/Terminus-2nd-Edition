@@ -1,0 +1,7 @@
+The offline atlasd workspace under `/app` drifts after restore, restart, partial handoff, clean, finish, probe, work, show, and catalog runs. Counters in `/app/records/catalog.txt` can look aligned while probe still reports unhealthy, workload tokens disagree with the live active tree, and generation stamps under `/app/cells/GEN/.stamp` stop tracking partial progress.
+
+Repair sources under `/app` so the release build installs to `/app/bin/atlasd`. Driver-only changes are not enough: bugs can live in the atlasd driver module or workspace library modules, and those sources must be corrected when they still emit stale material. Static or CLI-only patches are insufficient.
+
+After long partial chains, restart reloads the wrong generation, partial replay grows duplicate `part:` audit lines, and finish stops converging basis when the handoff queue is already empty. Catalog rows expose active, basis, and pending counters. Verifier tests rebuild from sources and validate atlasd behavior. Sidecar and audit files must be read with read_text and compared after strip; queue and stamp paths must satisfy path.exists() on disk and must pass Path.is_file checks; init must reject filesystem layer paths with non-zero returncode; ablation fixtures may write_text into active/ before rebuild.
+
+The bundled workspace notes under `/app` document layout, token rules, handoff semantics (basis versus active, cumulative partial merge, queue and lineage behavior, probe health, and catalog fusion), stamp sidecars, and pytest argv details.

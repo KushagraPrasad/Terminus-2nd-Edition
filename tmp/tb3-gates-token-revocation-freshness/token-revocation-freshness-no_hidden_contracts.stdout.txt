@@ -1,0 +1,161 @@
+{
+  "items": [
+    {
+      "classification": "visible_requirement_found",
+      "home": "instruction.md",
+      "kind": "boolean_polarity",
+      "location": "tests/test_outputs.py:87",
+      "remediation": "Document exact boolean polarity.",
+      "severity": "PASS",
+      "value": "true"
+    },
+    {
+      "classification": "visible_requirement_found",
+      "home": "instruction.md",
+      "kind": "boolean_polarity",
+      "location": "tests/test_outputs.py:114",
+      "remediation": "Document exact boolean polarity.",
+      "severity": "PASS",
+      "value": "false"
+    },
+    {
+      "classification": "visible_requirement_found",
+      "home": "instruction.md",
+      "kind": "boolean_polarity",
+      "location": "tests/test_outputs.py:158",
+      "remediation": "Document exact boolean polarity.",
+      "severity": "PASS",
+      "value": "true"
+    },
+    {
+      "classification": "visible_requirement_found",
+      "home": "instruction.md",
+      "kind": "boolean_polarity",
+      "location": "tests/test_outputs.py:159",
+      "remediation": "Document exact boolean polarity.",
+      "severity": "PASS",
+      "value": "true"
+    },
+    {
+      "classification": "visible_requirement_found",
+      "home": "instruction.md",
+      "kind": "boolean_polarity",
+      "location": "tests/test_outputs.py:163",
+      "remediation": "Document exact boolean polarity.",
+      "severity": "PASS",
+      "value": "false"
+    },
+    {
+      "classification": "visible_requirement_found",
+      "home": "instruction.md",
+      "kind": "boolean_polarity",
+      "location": "tests/test_outputs.py:167",
+      "remediation": "Document exact boolean polarity.",
+      "severity": "PASS",
+      "value": "true"
+    },
+    {
+      "classification": "visible_requirement_found",
+      "home": "instruction.md",
+      "kind": "boolean_polarity",
+      "location": "tests/test_outputs.py:208",
+      "remediation": "Document exact boolean polarity.",
+      "severity": "PASS",
+      "value": "true"
+    },
+    {
+      "classification": "visible_requirement_found",
+      "home": "instruction.md",
+      "kind": "boolean_polarity",
+      "location": "tests/test_outputs.py:212",
+      "remediation": "Document exact boolean polarity.",
+      "severity": "PASS",
+      "value": "false"
+    },
+    {
+      "classification": "visible_requirement_found",
+      "home": "instruction.md",
+      "kind": "boolean_polarity",
+      "location": "tests/test_outputs.py:241",
+      "remediation": "Document exact boolean polarity.",
+      "severity": "PASS",
+      "value": "false"
+    },
+    {
+      "classification": "visible_requirement_found",
+      "home": "instruction.md",
+      "kind": "boolean_polarity",
+      "location": "tests/test_outputs.py:279",
+      "remediation": "Document exact boolean polarity.",
+      "severity": "PASS",
+      "value": "false"
+    },
+    {
+      "classification": "visible_requirement_found",
+      "home": "instruction.md",
+      "kind": "command_chain",
+      "location": "tests/test_outputs.py:54",
+      "remediation": "Name the verifier-rerun command or pipeline in instruction.md or visible docs.",
+      "severity": "PASS",
+      "value": "node /app/environment/dist/scenario.js scenario.json"
+    },
+    {
+      "classification": "visible_requirement_found",
+      "home": "instruction.md",
+      "kind": "cardinality",
+      "location": "tests/test_outputs.py:84",
+      "remediation": "Document exact tested lengths, sizes, and cardinalities.",
+      "severity": "PASS",
+      "value": "1"
+    },
+    {
+      "classification": "visible_requirement_found",
+      "home": "instruction.md",
+      "kind": "cardinality",
+      "location": "tests/test_outputs.py:111",
+      "remediation": "Document exact tested lengths, sizes, and cardinalities.",
+      "severity": "PASS",
+      "value": "1"
+    },
+    {
+      "classification": "allowed_hidden_verification_detail",
+      "home": null,
+      "kind": "string_literal",
+      "location": "tests/test_outputs.py:117",
+      "remediation": "No public-contract change needed.",
+      "severity": "PASS",
+      "value": "expire"
+    },
+    {
+      "classification": "allowed_hidden_verification_detail",
+      "home": null,
+      "kind": "string_literal",
+      "location": "tests/test_outputs.py:164",
+      "remediation": "No public-contract change needed.",
+      "severity": "PASS",
+      "value": "Token revoked"
+    },
+    {
+      "classification": "allowed_hidden_verification_detail",
+      "home": null,
+      "kind": "string_literal",
+      "location": "tests/test_outputs.py:238",
+      "remediation": "No public-contract change needed.",
+      "severity": "PASS",
+      "value": "error"
+    }
+  ],
+  "remediation_examples": [
+    "Instruction.md: 'The digest field is a 64-character sha256 hex string.'",
+    "Instruction.md: 'drift is observed - baseline for each record.'",
+    "Visible environment docstring: 'build_report() must satisfy the same public report contract as the CLI.'"
+  ],
+  "status": "PASS",
+  "strict": true,
+  "summary": {
+    "fail": 0,
+    "pass": 16,
+    "warn": 0
+  },
+  "task_dir": "tasks/token-revocation-freshness"
+}

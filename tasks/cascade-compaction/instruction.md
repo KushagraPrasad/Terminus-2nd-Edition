@@ -1,0 +1,5 @@
+The bundled cascade compaction stack under `/app/environment` fails the durability obligations in `/app/environment/docs/formal_rules.md`. Crash-profile runs show flat `gen_stamp` across restart boundaries, registry state that does not carry forward between invocations, overwritten report and ledger data, broken ledger-anchor chaining, and rollback that clears replay state that should persist.
+
+Run `/app/bin/cc_run` as documented in formal_rules.md to emit `/app/output/cc_report.json`, logs under `/app/output/run_logs/`, and an updated `/app/environment/state/session.registry` after each invocation. Report and ledger shapes are defined in formal_rules.md. Profile `d` combines restart-boundary and conflicting-summary behavior in one run.
+
+Repair C++ and helper code under `/app/environment` so module-level behavior and driver output satisfy all six properties in formal_rules.md. Rebuild `/app/bin/cc_run` from modified sources using the pipeline documented in formal_rules.md before validating output. Static or manual output writes are insufficient; copying outputs without running the normal driver pipeline will not pass.

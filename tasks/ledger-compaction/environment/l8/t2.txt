@@ -1,0 +1,3 @@
+The local report is consumed by downstream audit tooling as observations, not as precomputed verdicts.
+Record rows are compared through identifiers, numeric versions, numeric payloads, and source names.
+

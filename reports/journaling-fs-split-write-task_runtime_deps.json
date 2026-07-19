@@ -1,0 +1,60 @@
+{
+  "checks": [
+    {
+      "command": "gcc",
+      "locations": [
+        "environment/Makefile:1"
+      ],
+      "message": "gcc is invoked and an obvious provider is present",
+      "providers": [
+        "gcc",
+        "make",
+        "python",
+        "python3"
+      ],
+      "remediation": "",
+      "status": "PASS"
+    },
+    {
+      "command": "make",
+      "locations": [
+        "solution/solve.sh:17"
+      ],
+      "message": "make is invoked and an obvious provider is present",
+      "providers": [
+        "gcc",
+        "make",
+        "python",
+        "python3"
+      ],
+      "remediation": "",
+      "status": "PASS"
+    }
+  ],
+  "commands": [
+    {
+      "command": "make",
+      "line": "make",
+      "location": "solution/solve.sh:17"
+    },
+    {
+      "command": "gcc",
+      "line": "CC = gcc",
+      "location": "environment/Makefile:1"
+    }
+  ],
+  "providers": [
+    "gcc",
+    "make",
+    "python",
+    "python3"
+  ],
+  "status": "PASS",
+  "strict": true,
+  "summary": {
+    "fail": 0,
+    "pass": 2,
+    "warn": 0
+  },
+  "task_dir": "tasks/journaling-fs-split-write"
+}

@@ -1,0 +1,20 @@
+user_visible_outputs = [
+  "/app/outputs/artifact_manifest.json"
+]
+
+internal_harness_files = [
+  "/usr/local/bin/build_engine"
+]
+
+[structured_outputs.artifact_manifest]
+target = "/app/outputs/artifact_manifest.json"
+format = "json"
+value_contract = "object mapping active artifact paths to fingerprint hash strings"
+instruction_checks = [
+  "dependency edge reconciliation",
+  "cycle rejection",
+  "go interface fingerprint stability",
+  "non-go raw content fingerprinting",
+  "manifest fingerprint synchronization",
+  "stale output pruning"
+]

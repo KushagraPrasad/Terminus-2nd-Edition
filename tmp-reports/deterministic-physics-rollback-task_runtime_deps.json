@@ -1,0 +1,57 @@
+{
+  "checks": [
+    {
+      "command": "node",
+      "locations": [
+        "tests/test_outputs.py:24"
+      ],
+      "message": "node is invoked and an obvious provider is present",
+      "providers": [
+        "node",
+        "npm",
+        "python3"
+      ],
+      "remediation": "",
+      "status": "PASS"
+    },
+    {
+      "command": "npm",
+      "locations": [
+        "solution/solve.sh:157"
+      ],
+      "message": "npm is invoked and an obvious provider is present",
+      "providers": [
+        "node",
+        "npm",
+        "python3"
+      ],
+      "remediation": "",
+      "status": "PASS"
+    }
+  ],
+  "commands": [
+    {
+      "command": "npm",
+      "line": "npm run build",
+      "location": "solution/solve.sh:157"
+    },
+    {
+      "command": "node",
+      "line": "cmd = [\"node\", runner] + args",
+      "location": "tests/test_outputs.py:24"
+    }
+  ],
+  "providers": [
+    "node",
+    "npm",
+    "python3"
+  ],
+  "status": "PASS",
+  "strict": true,
+  "summary": {
+    "fail": 0,
+    "pass": 2,
+    "warn": 0
+  },
+  "task_dir": "tasks/deterministic-physics-rollback"
+}

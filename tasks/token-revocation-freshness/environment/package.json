@@ -1,0 +1,20 @@
+{
+  "name": "token-revocation-gateway",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "test": "node dist/scenario.js scenario.json"
+  },
+  "dependencies": {
+    "sqlite3": "5.1.7",
+    "jsonwebtoken": "9.0.2"
+  },
+  "devDependencies": {
+    "typescript": "5.3.3",
+    "@types/node": "18.19.18",
+    "@types/sqlite3": "3.1.11",
+    "@types/jsonwebtoken": "9.0.6"
+  }
+}

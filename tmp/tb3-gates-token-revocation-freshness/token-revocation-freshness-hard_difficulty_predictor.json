@@ -1,0 +1,41 @@
+{
+  "advanced_hardness_categories": [
+    "cache invalidation",
+    "multi-component interaction"
+  ],
+  "difficulty": "hard",
+  "failure_mode_count": 8,
+  "findings": [],
+  "is_python_task": false,
+  "languages": [
+    "typescript"
+  ],
+  "model_success_prediction": {
+    "justification": [
+      "8 documented failure modes reduce pass rate",
+      "Advanced categories: cache invalidation, multi-component interaction",
+      "4 adversarial mechanism layers"
+    ],
+    "predicted_claude_pass_rate": 5,
+    "predicted_gpt5_pass_rate": 6,
+    "predicted_worst_model_pass_rate": 6
+  },
+  "predicted_failure_modes": [
+    "mechanism:false_green_intermediate_states",
+    "\"Model targets single cache evictions without verifying wildcard pattern support.\"",
+    "mechanism:stateful_multi_step_dependencies",
+    "\"Model assumes clean database cache state on each call, missing persistent database transaction sync errors.\"",
+    "mechanism:cross_file_cross_format_invariants",
+    "\"Model implements cache updates but fails to sync sequence checkpoints in the database.\"",
+    "mechanism:rollback_recovery_requirements",
+    "\"Model assumes sequence numbers always increase monotonically without handling system restarts.\""
+  ],
+  "status": "PASS",
+  "strict": true,
+  "summary": {
+    "fail": 0,
+    "pass": 1,
+    "warn": 0
+  },
+  "task_dir": "tasks/token-revocation-freshness"
+}

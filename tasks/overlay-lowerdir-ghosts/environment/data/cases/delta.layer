@@ -1,0 +1,9 @@
+case delta
+gen 1
+file tone onyx
+file bird rook
+file cost 6
+gen 2
+file tone pearl
+file bird swan
+file cost 11

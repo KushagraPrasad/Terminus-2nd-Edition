@@ -1,0 +1,16 @@
+# run|mode|name|generation|active|bundle|summary|line|file|span
+clean|clean|alpha|1|owner-a|owner-a|owner-a|alpha/1|alpha.a|local
+clean|clean|bravo|1|owner-b|owner-b|owner-b|bravo/1|bravo.a|local
+clean|clean|yankee|1|owner-y|owner-y|owner-y|yankee/1|yankee.a|local
+later|replay|alpha|2|owner-a2|owner-a|owner-a|alpha/2|alpha.b|crossed
+later|replay|charlie|2|owner-c2|owner-c|owner-c|charlie/2|charlie.b|crossed
+later|replay|echo|2|owner-e2|owner-e|owner-e-stale|echo/2|echo.b|crossed
+later|replay|fox|2|owner-f2|owner-f|owner-f-stale|fox/2|fox.b|crossed
+sweep|cleanup|alpha|3|owner-a3|owner-a|owner-a|alpha/3|alpha.c|crossed
+sweep|cleanup|delta|3|owner-d3|owner-d|owner-d|delta/3|delta.c|removed
+sweep|cleanup|yankee|2|owner-y|owner-y|owner-y-stale|yankee/2|yankee.b|local
+repeat|rerun|alpha|3|owner-a3|owner-a|owner-a|alpha/3|alpha.c|crossed
+repeat|rerun|bravo|1|owner-b|owner-b|owner-b|bravo/1|bravo.a|local
+repeat|rerun|echo|3|owner-e3|owner-e|owner-e-stale|echo/3|echo.c|crossed
+repeat|rerun|fox|3|owner-f3|owner-f|owner-f-stale|fox/3|fox.c|crossed
+repeat|rerun|yankee|1|owner-y|owner-y|owner-y-stale|yankee/2|yankee.c|local

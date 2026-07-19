@@ -1,0 +1,8 @@
+user_visible_outputs = ["/app/output/rebuild_report.json"]
+internal_harness_files = ["/app/environment/exec/run_cycle.sh"]
+
+[structured_outputs.rebuild_report]
+target = "/app/output/rebuild_report.json"
+format = "json"
+# Keep the instruction symptoms-focused; detailed schema lives in the environment docs.
+instruction_checks = ["runs"]

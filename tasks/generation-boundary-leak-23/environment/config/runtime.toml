@@ -1,0 +1,29 @@
+[build]
+cmake_configure = "cmake -S /app/environment -B /app/build"
+cmake_build = "cmake --build /app/build -j 2"
+
+[packaging]
+apt_install_option = "--no-install-recommends"
+
+[scenarios]
+bundled = ["s1.json", "s2.json", "s3.json", "s4.json", "s5.json", "s6.json", "s7.json", "s8.json"]
+
+[paths]
+build_dir = "/app/build"
+cmake_cache_textfile = "/app/build/CMakeCache.txt"
+stage1_binary = "/app/build/genstage1"
+stage2_binary = "/app/build/genstage2"
+scenario_root = "/app/environment/harness/scenarios"
+scenario_canary = "/app/environment/harness/scenarios/s1.json"
+environment_root = "/app/environment"
+
+[contract]
+# Scenario JSON uses integer t_left, t_right, buf_len, epoch_tag, epoch, and carry_seed inputs.
+# Stage one emits merged as byte values plus seam0 and seam1 integers; stage two emits carry bytes.
+# stamp_lane64 forms stamp = (uint64(min_marker) << 32) ^ uint32(max_marker),
+# with min_marker in bits 63..32 and max_marker in bits 31..0, then writes
+# stamp as eight little-endian bytes.
+# extent_lane returns (floor(bytes/8), first_byte_value + 1) for generation tagging.
+# handle_lane seeds eight carry bytes, xors epoch into byte zero, then xors the first
+# stamp byte from fx_merge_z(epoch + stage1.seam0, right_operand) into byte zero.
+# right_operand is the carry-span byte at offset 1 plus stage1.seam1.

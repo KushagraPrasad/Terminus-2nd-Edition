@@ -1,0 +1,77 @@
+{
+  "symbol_table": [
+    {
+      "path": "environment/src/cache.ts",
+      "symbol": "invalidateByPattern",
+      "kind": "method",
+      "signature": "public invalidateByPattern(pattern: string): void",
+      "purpose": "Evicts cached tokens matching a wildcard scope or principal pattern."
+    },
+    {
+      "path": "environment/src/validator.ts",
+      "symbol": "validateToken",
+      "kind": "method",
+      "signature": "public async validateToken(token: string, skewMs: number): Promise<AuthResult>",
+      "purpose": "Validates signature, expiration, and epoch parameters of a token."
+    },
+    {
+      "path": "environment/src/store.ts",
+      "symbol": "syncRevocations",
+      "kind": "method",
+      "signature": "public async syncRevocations(batch: RevocationBatch): Promise<void>",
+      "purpose": "Synchronizes a batch of token revocations into SQLite under transaction safety."
+    }
+  ],
+  "flipping_point_contract": {
+    "locations": [
+      {
+        "id": "cache_invalidation",
+        "path": "environment/cache/cache.ts",
+        "controls_tests": [
+          "test_wildcard_eviction",
+          "test_ttl_expiry_sync"
+        ]
+      },
+      {
+        "id": "token_validation",
+        "path": "environment/validator/validator.ts",
+        "controls_tests": [
+          "test_token_signature_rotation",
+          "test_expired_fallback_keys"
+        ]
+      },
+      {
+        "id": "db_synchronization",
+        "path": "environment/store/store.ts",
+        "controls_tests": [
+          "test_db_transaction_crash_recovery",
+          "test_monotonic_sequence_rollback"
+        ]
+      }
+    ],
+    "no_single_location_flips_majority": true,
+    "concentration_cap": 0.34
+  },
+  "decoy_manifest": [
+    {
+      "path": "environment/src/jwks.ts",
+      "kind": "file",
+      "rhymes_with": "validator.ts",
+      "non_fix_purpose": "Fetches and holds public keys from the external JWKS endpoints."
+    },
+    {
+      "path": "environment/src/decoy_logger.ts",
+      "kind": "file",
+      "rhymes_with": "store.ts",
+      "non_fix_purpose": "Logs authorization operations to local audit directories."
+    }
+  ],
+  "code_forbidden_tokens": [
+    "gateway",
+    "freshness",
+    "revocation",
+    "epoch",
+    "skew",
+    "blacklist"
+  ]
+}

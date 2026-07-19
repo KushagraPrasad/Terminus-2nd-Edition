@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+        "target": "ES2022",
+        "module": "CommonJS",
+        "outDir": "./dist",
+        "rootDir": "./",
+        "strict": true,
+        "esModuleInterop": true,
+        "skipLibCheck": true,
+        "forceConsistentCasingInFileNames": true
+    },
+    "include": [
+        "subsystem.a/**/*",
+        "subsystem.b/**/*",
+        "subsystem.c/**/*",
+        "subsystem.d/**/*",
+        "core/**/*"
+    ]
+}

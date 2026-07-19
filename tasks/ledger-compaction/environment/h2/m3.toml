@@ -1,0 +1,6 @@
+["local-surfaces"]
+primary = "/app/environment/f6/r1.json"
+secondary = "/app/environment/f6/r2.json"
+restart = "/app/environment/g8/r1.json"
+rollback = "/app/environment/g8/r2.json"
+

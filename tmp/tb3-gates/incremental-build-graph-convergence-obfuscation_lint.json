@@ -1,0 +1,11 @@
+{
+  "findings": [],
+  "status": "PASS",
+  "strict": true,
+  "summary": {
+    "fail": 0,
+    "pass": 1,
+    "warn": 0
+  },
+  "task_dir": "tasks/incremental-build-graph-convergence"
+}

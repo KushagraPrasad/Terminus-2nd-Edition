@@ -1,0 +1,100 @@
+{
+  "symbol_table": [
+    {
+      "path": "environment/dag/dag.go",
+      "symbol": "ReconcileEdges",
+      "kind": "method",
+      "signature": "func (g *DependencyGraph) ReconcileEdges(newEdges []Edge) error",
+      "purpose": "Updates dependency graph edges, pruning stale links correctly."
+    },
+    {
+      "path": "environment/scheduler/fingerprint.go",
+      "symbol": "ComputeActionFingerprint",
+      "kind": "function",
+      "signature": "func ComputeActionFingerprint(action *Action) (string, error)",
+      "purpose": "Computes fingerprint of a build action, including Go interface signatures."
+    },
+    {
+      "path": "environment/registry/registry.go",
+      "symbol": "SyncRegistry",
+      "kind": "function",
+      "signature": "func SyncRegistry(dbPath string, manifestPath string) error",
+      "purpose": "Synchronizes current physical build outputs and registry manifest with database state."
+    }
+  ],
+  "oracle_frontier": [
+    {
+      "path": "dag/dag.go",
+      "fix_symbols": ["ReconcileEdges"]
+    },
+    {
+      "path": "scheduler/fingerprint.go",
+      "fix_symbols": ["ComputeActionFingerprint"]
+    },
+    {
+      "path": "registry/registry.go",
+      "fix_symbols": ["SyncRegistry"]
+    },
+    {
+      "path": "main.go",
+      "fix_symbols": [],
+      "allowed_top_level_symbols": ["main", "runBuild", "runClean"]
+    }
+  ],
+  "flipping_point_contract": {
+    "locations": [
+      {
+        "id": "graph_reconciliation",
+        "path": "environment/dag/dag.go",
+        "controls_tests": [
+          "test_edge_pruning",
+          "test_sequential_package_edits"
+        ]
+      },
+      {
+        "id": "action_fingerprinting",
+        "path": "environment/scheduler/fingerprint.go",
+        "controls_tests": [
+          "test_interface_evolution_triggering",
+          "test_downstream_dependency_triggering"
+        ]
+      },
+      {
+        "id": "manifest_synchronization",
+        "path": "environment/registry/registry.go",
+        "controls_tests": [
+          "test_manifest_consistency",
+          "test_complete_rebuild_verification"
+        ]
+      }
+    ],
+    "no_single_location_flips_majority": true,
+    "concentration_cap": 0.34
+  },
+  "decoy_manifest": [
+    {
+      "path": "environment/scheduler/decoy_executor.go",
+      "kind": "file",
+      "rhymes_with": "fingerprint.go",
+      "non_fix_purpose": "Coordinates build execution threads (decoy scheduler subsystem)."
+    },
+    {
+      "path": "environment/dag/decoy_sorter.go",
+      "kind": "file",
+      "rhymes_with": "dag.go",
+      "non_fix_purpose": "Performs topological sorting of graph nodes for execution queues."
+    },
+    {
+      "path": "environment/scheduler/db.go",
+      "kind": "file",
+      "rhymes_with": "fingerprint.go",
+      "non_fix_purpose": "Initializes SQLite connection pool and defines tables."
+    }
+  ],
+  "code_forbidden_tokens": [
+    "builder",
+    "convergence",
+    "fingerprints",
+    "packages"
+  ]
+}

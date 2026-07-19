@@ -1,0 +1,23 @@
+user_visible_outputs = ["/app/output/migration_observations.json"]
+internal_harness_files = [
+  "/app/environment/app/fixtures/packs.tsv",
+  "/app/environment/app/fixtures/wal.json",
+  "/app/environment/app/fixtures/tombstones.json",
+  "/app/environment/app/fixtures/ledger_seed.json",
+  "/app/environment/app/fixtures/control_sets.json",
+  "/app/environment/app/docs/report_schema.md",
+]
+
+[structured_outputs.migration_observations]
+target = "/app/output/migration_observations.json"
+format = "json"
+instruction_checks = [
+  "runs",
+  "artifacts",
+  "fingerprints",
+  "stable_digest",
+  "session_span_id",
+  "evidence",
+  "lineage",
+  "boundary",
+]

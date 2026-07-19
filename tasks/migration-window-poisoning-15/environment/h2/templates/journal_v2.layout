@@ -1,0 +1,1 @@
+v2 layout: identical framing to v1 with optional u16_be trailer_flags after crc.

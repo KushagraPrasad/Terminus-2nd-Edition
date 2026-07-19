@@ -1,0 +1,30 @@
+user_visible_outputs = [
+  "/app/output/cc_report.json",
+  "/app/output/run_logs/",
+  "/app/environment/state/session.registry",
+]
+
+internal_harness_files = [
+  "/app/environment/py/chain_fold.py",
+]
+
+[structured_outputs.cc_report]
+target = "/app/output/cc_report.json"
+format = "json"
+instruction_checks = [
+  "formal_rules.md",
+]
+
+[structured_outputs.ledger_run]
+target = "/app/output/run_logs/"
+format = "json"
+instruction_checks = [
+  "formal_rules.md",
+]
+
+[structured_outputs.session_registry]
+target = "/app/environment/state/session.registry"
+format = "json"
+instruction_checks = [
+  "formal_rules.md",
+]

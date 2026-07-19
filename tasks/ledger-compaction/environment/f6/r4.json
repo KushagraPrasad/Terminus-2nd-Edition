@@ -1,0 +1,12 @@
+{
+  "surface": "operator-sample",
+  "rows": [
+    {
+      "id": "S500",
+      "generation": 5,
+      "value": 50,
+      "source": "sample",
+      "active": true
+    }
+  ]
+}

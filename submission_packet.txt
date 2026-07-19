@@ -1,0 +1,57 @@
+================================================================================
+                           SUBMISSION PACKET & PORTAL DELIVERABLES
+================================================================================
+
+--------------------------------------------------------------------------------
+PART A — FINAL RUBRIC (Paste into portal Rubric Editor)
+--------------------------------------------------------------------------------
+# Rubric 1
+Agent parses wildcard invalidation patterns formatted as field:value to identify fields in the cache entry, +3
+Agent deletes matching cached entries during wildcard eviction, +2
+Agent rejects blacklist epoch syncs with sequence numbers less than or equal to the current database sequence, +3
+Agent applies blacklist sequence updates atomically in database transaction batches, +3
+Agent rejects expired JWKS fallback keys on network timeout and returns an error validation status, +3
+Agent checks token expiration against the request skew offset skewMs when provided, +3
+Agent handles LRU capacity cache eviction correctly by removing the oldest entries when capacity exceeds 1000 items, +3
+Agent hardcodes the output trace JSON file instead of patching the TypeScript source files, -5
+Agent bypasses blacklist sequence monotonic verification checks, -3
+Agent leaks cached decisions after matching wildcard revocation events, -5
+
+--------------------------------------------------------------------------------
+PART B — PORTAL FORM FIELDS
+--------------------------------------------------------------------------------
+
+[B1. Does this task use an approved canonical base image?]
+Does this task use an approved canonical base image?: Yes
+
+[B2. Comments for Reviewer]
+Comments for Reviewer:
+Fully addressed all previous suggestions and quality reports:
+1. Canonical Image: Migrated the Dockerfile to the canonical, digest-pinned Node 22 slim base (public.ecr.aws/docker/library/node:22-bookworm-slim@sha256:f3a68cf...).
+2. Pinned & Removed Redundant Code: Removed redundant solution files from solution/ to prevent leakage gate alarms; added missing 'test' script in package.json.
+3. Logical Fixes: Fixed the singular/plural spelling typo ('structures' to 'structure') inside validator.ts.
+4. Spec Gaps: Fully documented the wildcard parsing logic grammar (prefix = field selector matching) and JWKS fallback key expiration reason ('expire' check) in the instruction.md.
+5. Verifier Quality: Added test_clock_skew_rejection to test skewMs boundary logic negatively, and renamed test_ttl_expiry_sync to test_capacity_eviction to properly describe LRU capacity eviction.
+6. Auto-Gates: Passed the 10x oracle repeat and 20x verifier repeat checks with a mean score of 1.0. Re-ran check-task.sh and reviewer_simulation successfully.
+
+[B3. Task Inspiration ID]
+(leave blank)
+
+--------------------------------------------------------------------------------
+STEP 6 — SUBMISSION EXPLANATIONS
+--------------------------------------------------------------------------------
+
+[1. Difficulty Explanation]
+The task requires resolving multiple synchronization bugs concurrently across independent layers of an authorization gateway (in-memory JWT validation, SQLite blacklist storage, and asynchronous JWKS fallbacks). The difficulty lies in diagnosing and correcting logical edge-cases: parsing field:value wildcard pattern prefixes to dynamically inspect cached token objects, ensuring sequence sync advances monotonically inside atomic SQL transactions, and applying network timeout fallbacks and skewMs time bounds accurately without causing regressions in basic key rotations.
+
+[2. Solution Explanation]
+We resolved the issues by:
+1. Modifying cache.ts to support wildcard eviction by parsing invalidateByPattern prefix selectors (e.g. principal:user-100) and matching them against cache entry fields dynamically.
+2. Updating store.ts to wrap sync writes in transactions and verify sequence epoch strictly monotonically.
+3. Adjusting validator.ts to evaluate expiration boundaries against request skewMs offsets and fail closed when JWKS timeout fallbacks expire.
+
+[3. Verification Explanation]
+The verifier runs scenario files and parses the audit trace results array. Our test suite asserts the correctness of these operations. We verified the solution through robust integration tests: verifying normal rotated JWKS key verification, fail-closed timeouts on expired fallbacks, correct wildcard field-value eviction, LRU capacity bounds, atomicity rollbacks on write crashes, and negative clock-skew rejection.
+
+[4. Canonical Base Image]
+Does this task use an approved canonical base image?: Yes

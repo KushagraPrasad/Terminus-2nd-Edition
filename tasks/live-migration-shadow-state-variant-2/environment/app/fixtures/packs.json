@@ -1,0 +1,1 @@
+{"format":"pipe-delimited rows","source":"fixtures/packs.tsv","columns":["run","mode","name","generation","active","bundle","summary","line","file","span"]}

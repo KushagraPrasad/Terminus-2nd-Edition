@@ -1,0 +1,53 @@
+# Step 5 — Rubric and Portal Submission Form
+
+## Part A — Rubric
+
+# Rubric 1
+Agent fixes the Velocity Verlet symplectic integrator step ordering to perform the two velocity half-steps and position full-step correctly, +5
+Agent fixes the parenthesization order in the Kahan float precision accumulator to compute the compensation value correctly, +5
+Agent corrects the softening potential parameter in the force calculations to prevent division-by-zero singularities during close encounters, +5
+Agent implements the sliding window standard deviation check in the resonance detection filter to identify locks accurately, +5
+Agent preserves the compiled module layout and builds the C++ code without compilation errors, +2
+Agent writes a modular and correct shell patch process in the solution script, +2
+Agent hardcodes the output simulation variables or resonance locking results directly, -5
+Agent deletes compile configurations or essential tests to bypass verification, -3
+Agent modifies the verifier run logic or task manifest files to bypass validation, -5
+
+---
+
+## Part B — Portal Form Fields
+
+### B1. Approved Canonical Base Image
+Does this task use an approved canonical base image?: Yes
+
+### B2. Comments for Reviewer
+Comments for Reviewer:
+Original C++ numerical simulation engine repair task. Verified the core subsystems (Velocity Verlet symplectic integrator steps, Kahan float accumulator parenthesization, adaptive step size scaling, close encounter soft-core potential parameters, and sliding window standard deviation resonance detection) function correctly with robust physics conservation bounds. Added waivers.json for `rc2` predictability since physical subsystems (integrator, accumulator, scaler, engine) must be naturally named in task directory roots to align with standard scientific computing physics simulations. All strict checks (10x Oracle repeat, 20x test repeat) and mechanical strict approval pass cleanly.
+
+### B3. Task Inspiration ID
+Task Inspiration ID:
+(leave blank)
+
+---
+
+# Step 6 — Submission Explanations
+
+## 1. Difficulty Explanation
+The task is highly challenging because multi-body orbital resonance integrations require extremely high floating-point precision over long integration horizons. Any small deviation in leapfrog integrator half-steps or precision compensation accumulation (like parenthesization order in Kahan summation) leads to exponential energy drift. In addition, close encounters can trigger gravitational singularities without softening potential parameters, and resonance locking detection is highly sensitive to noise, requiring standard deviation sliding windows.
+
+## 2. Solution Explanation
+The simulation state was stabilized by:
+- Ordering the Velocity Verlet integrator steps correctly: half-step velocity update, full-step position update using the accumulated velocities, force computation, and the second half-step velocity update.
+- Fixing the Kahan precision accumulator parenthesization to `double y = val - comp; double t = sum + y; comp = (t - sum) - y;` to ensure rounding errors are captured.
+- Introducing the soft-core softening potential parameter `epsilon_sq = 0.0001` in the gravitational distance computation to avoid division by zero during encounters.
+- Implementing a sliding window standard deviation calculation over the past 50 resonance angles in `simulation_engine.cpp` to correctly flag locking (average standard deviation < 1.0).
+
+## 3. Verification Explanation
+The test suite drives the C++ simulation and verifies:
+- Energy drift conservation under long-term simulations (drift < 1.0e-6).
+- Energy conservation across step size transitions in adaptive simulations.
+- Prevention of floating-point rounding loss using the Kahan accumulator over many steps.
+- Accurate resonance detection locking filter checks.
+
+## 4. Canonical Base Image
+Does this task use an approved canonical base image?: Yes

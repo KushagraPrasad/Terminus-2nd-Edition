@@ -880,6 +880,31 @@ python3 scripts/harbor_gate.py tasks/<task-name> --oracle-repeat 10
 python3 scripts/harbor_gate.py tasks/<task-name> --test-repeat 20
 ```
 
+Verified on this machine inside WSL:
+
+```bash
+command -v harbor
+# /home/kusha/.local/bin/harbor
+
+harbor --version
+# 0.5.0+promptfix5
+```
+
+If you are launching from Windows, run the Harbor-backed oracle commands through WSL like this:
+
+```bash
+wsl bash -lc "cd /mnt/c/Users/kusha/OneDrive/Desktop/Projects/Dawgs/Terminal-main && python3 -m scripts.harbor_gate tasks/<task-name> --oracle"
+wsl bash -lc "cd /mnt/c/Users/kusha/OneDrive/Desktop/Projects/Dawgs/Terminal-main && python3 -m scripts.harbor_gate tasks/<task-name> --oracle --oracle-stress 3"
+wsl bash -lc "cd /mnt/c/Users/kusha/OneDrive/Desktop/Projects/Dawgs/Terminal-main && python3 -m scripts.harbor_gate tasks/<task-name> --oracle-repeat 10"
+```
+
+If you are already inside a WSL shell at the repo root, run:
+
+```bash
+python3 -m scripts.harbor_gate tasks/<task-name> --oracle
+python3 -m scripts.harbor_gate tasks/<task-name> --oracle --oracle-stress 3
+python3 -m scripts.harbor_gate tasks/<task-name> --oracle-repeat 10
+```
 ### Windows & WSL Line Ending (CRLF/LF) Pitfalls
 
 On Windows hosts, Git checkouts default to CRLF line endings (`\r\n`). If these files are copied into the Linux Docker container, this can lead to compile-time or testing failures (especially with the `patch` tool failing with `malformed patch` errors).
@@ -927,3 +952,4 @@ To pass the platform's upload CI static checks without warnings:
 Platform-side difficulty evaluation is run by the platform after upload and is
 not part of this repo's approval gate. Do not add paid/API model attempts to
 the required local workflow.
+

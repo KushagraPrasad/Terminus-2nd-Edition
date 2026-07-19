@@ -1,0 +1,75 @@
+{
+  "checks": [
+    {
+      "command": "node",
+      "locations": [
+        "tests/test_outputs.py:35",
+        "tests/test_outputs.py:46",
+        "tests/test_outputs.py:55",
+        "environment/src/scenario.ts:28"
+      ],
+      "message": "node is invoked and an obvious provider is present",
+      "providers": [
+        "node",
+        "npm",
+        "python3"
+      ],
+      "remediation": "",
+      "status": "PASS"
+    },
+    {
+      "command": "npm",
+      "locations": [
+        "solution/solve.sh:355"
+      ],
+      "message": "npm is invoked and an obvious provider is present",
+      "providers": [
+        "node",
+        "npm",
+        "python3"
+      ],
+      "remediation": "",
+      "status": "PASS"
+    }
+  ],
+  "commands": [
+    {
+      "command": "npm",
+      "line": "npm run build",
+      "location": "solution/solve.sh:355"
+    },
+    {
+      "command": "node",
+      "line": "res = subprocess.run([\"node\", \"-e\", js_cmd], capture_output=True, text=True, check=True, cwd=\"/app/environment\")",
+      "location": "tests/test_outputs.py:35"
+    },
+    {
+      "command": "node",
+      "line": "res = subprocess.run([\"node\", \"-e\", js_cmd], capture_output=True, text=True, check=True, cwd=\"/app/environment\")",
+      "location": "tests/test_outputs.py:46"
+    },
+    {
+      "command": "node",
+      "line": "[\"node\", \"/app/environment/dist/scenario.js\", \"scenario.json\"],",
+      "location": "tests/test_outputs.py:55"
+    },
+    {
+      "command": "node",
+      "line": "console.error(\"Usage: node dist/scenario.js <path_to_scenario_json>\");",
+      "location": "environment/src/scenario.ts:28"
+    }
+  ],
+  "providers": [
+    "node",
+    "npm",
+    "python3"
+  ],
+  "status": "PASS",
+  "strict": true,
+  "summary": {
+    "fail": 0,
+    "pass": 2,
+    "warn": 0
+  },
+  "task_dir": "tasks/token-revocation-freshness"
+}

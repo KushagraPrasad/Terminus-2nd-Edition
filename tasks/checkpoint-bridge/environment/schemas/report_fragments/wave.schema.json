@@ -1,0 +1,1 @@
+{"type":"object","required":["wave_id","health_status","gen_marker","seal_slot"]}

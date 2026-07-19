@@ -1,0 +1,13 @@
+{
+  "findings": [],
+  "requirements_checked": 10,
+  "status": "PASS",
+  "strict": true,
+  "summary": {
+    "fail": 0,
+    "pass": 1,
+    "warn": 0
+  },
+  "task_dir": "tasks/journaling-fs-split-write",
+  "test_files_checked": 1
+}

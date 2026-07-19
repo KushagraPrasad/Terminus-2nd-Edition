@@ -1,0 +1,1088 @@
+{
+  "task_dir": "/mnt/c/Users/kusha/OneDrive/Desktop/Projects/Dawgs/Terminal-main/tasks/token-revocation-freshness",
+  "zip_path": "/mnt/c/Users/kusha/OneDrive/Desktop/Projects/Dawgs/Terminal-main/Task_Ready_To_Submit/token-revocation-freshness.zip",
+  "strict": true,
+  "approved": true,
+  "decision": "PASS",
+  "mechanical_status": "WARN",
+  "blocking_failures": [],
+  "warnings": [
+    "static check warning: instruction.md is longer than the preferred 1 sentence to 3 paragraphs guidance",
+    "scripts/collapse_check.py returned WARN with 9 signal(s) that still need justification"
+  ],
+  "step2b_checksum": {
+    "ok": true,
+    "message": "checksum verified"
+  },
+  "static_checks": {
+    "passes": [
+      "required task files present",
+      "no legacy canary strings found",
+      "task.toml Edition 2 gate passed",
+      "task structure aligns with Edition 2 expectations",
+      "tests/test.sh reward.txt block matches Edition 2 expectation",
+      "tests/test.sh pre-pytest block preserves the internet-disabled semantics",
+      "Dockerfile pre-installs verifier pytest tooling for offline runtime",
+      "Dockerfile Edition 2 gate passed",
+      "Dockerfile COPY/ADD sources resolve in the build context",
+      "environment/ contains no build artifacts or reference outputs",
+      "no CRLF line endings on shell scripts",
+      "no heavy build steps detected in tests/; timeout-coherence rule not triggered",
+      "no backticked field names in instruction.md; vocabulary check skipped",
+      "no bespoke build knobs required by solve.sh or tests",
+      "agent-target paths declared in tests/ are discoverable from instruction.md or environment/",
+      "docker-compose checks skipped (no environment/docker-compose.yaml)",
+      "instruction.md uses absolute in-container path references",
+      "output contract matches the declared user-visible outputs and schema checks",
+      "environment/ contains no hidden-instruction patterns"
+    ],
+    "warnings": [
+      "instruction.md is longer than the preferred 1 sentence to 3 paragraphs guidance"
+    ],
+    "failures": []
+  },
+  "collapse_check": {
+    "status": "WARN",
+    "report": {
+      "oracle_targets": [
+        "environment/src/cache.ts",
+        "environment/src/store.ts",
+        "environment/src/validator.ts"
+      ],
+      "oracle_loc_non_boilerplate": 294,
+      "touched_roots": [
+        "environment/src"
+      ],
+      "frontier_concentration": {
+        "total_targets": 3,
+        "unique_roots": 1,
+        "dominant_root": "environment/src",
+        "dominant_root_count": 3,
+        "dominant_root_share": 1.0,
+        "subsystem_root": "<root>",
+        "subsystem_share": 1.0,
+        "roots": [
+          {
+            "root": "environment/src",
+            "count": 3,
+            "share": 1.0
+          }
+        ]
+      },
+      "results": [
+        {
+          "check": "rc1_oracle_simplification",
+          "severity": "PASS",
+          "net_delta": 40,
+          "files_simplified": 0,
+          "files_expanded": 3,
+          "total_files": 3,
+          "unresolved_targets": 0,
+          "comparisons": [
+            {
+              "file": "environment/src/cache.ts",
+              "env_lines": 64,
+              "oracle_lines": 87,
+              "delta": 23
+            },
+            {
+              "file": "environment/src/store.ts",
+              "env_lines": 107,
+              "oracle_lines": 118,
+              "delta": 11
+            },
+            {
+              "file": "environment/src/validator.ts",
+              "env_lines": 78,
+              "oracle_lines": 84,
+              "delta": 6
+            }
+          ],
+          "detail": "Net delta: +40 lines across 3 comparable oracle targets (0 simplified, 3 expanded, 0 unresolved, 294 transitive LOC)"
+        },
+        {
+          "check": "rc2_oracle_predictability",
+          "severity": "WARN",
+          "predictable_files": 3,
+          "unpredictable_files": 0,
+          "predict_ratio": 1.0,
+          "target_dirs": [
+            "environment/src"
+          ],
+          "dir_keyword_overlap": [],
+          "signal_keyword_counts": {
+            "instruction": 189,
+            "visible_file_names": 10,
+            "test_names": 22
+          },
+          "predictable": [
+            {
+              "file": "environment/src/cache.ts",
+              "keywords": [
+                "cache"
+              ],
+              "signals": [
+                "instruction"
+              ],
+              "signal_matches": {
+                "instruction": [
+                  "cache"
+                ]
+              }
+            },
+            {
+              "file": "environment/src/store.ts",
+              "keywords": [
+                "store"
+              ],
+              "signals": [
+                "instruction"
+              ],
+              "signal_matches": {
+                "instruction": [
+                  "store"
+                ]
+              }
+            },
+            {
+              "file": "environment/src/validator.ts",
+              "keywords": [
+                "validator"
+              ],
+              "signals": [
+                "instruction"
+              ],
+              "signal_matches": {
+                "instruction": [
+                  "validator"
+                ]
+              }
+            }
+          ],
+          "unpredictable": [],
+          "semantic_predictable_diagnostic": [],
+          "oracle_targets": [
+            "environment/src/cache.ts",
+            "environment/src/store.ts",
+            "environment/src/validator.ts"
+          ],
+          "touched_roots": [
+            "environment/src"
+          ],
+          "frontier_concentration": {
+            "total_targets": 3,
+            "unique_roots": 1,
+            "dominant_root": "environment/src",
+            "dominant_root_count": 3,
+            "dominant_root_share": 1.0,
+            "subsystem_root": "<root>",
+            "subsystem_share": 1.0,
+            "roots": [
+              {
+                "root": "environment/src",
+                "count": 3,
+                "share": 1.0
+              }
+            ]
+          },
+          "detail": "3/3 oracle targets predictable from instruction/file-name/test-name signals (100%). Roots: environment/src. Dir-keyword overlap: none.",
+          "redesign_hint": "RC2 menu: generic-rename package roots before freezing the manifest; move fix material into realistic common files; separate instruction nouns from path tokens; request waiver only for realistic source-preserving names; avoid decoy dilution."
+        },
+        {
+          "check": "rc3_verifier_shallowness",
+          "severity": "WARN",
+          "value_checks": 5,
+          "format_checks": 11,
+          "structure_checks": 1,
+          "exitcode_checks": 0,
+          "total": 17,
+          "shallow_ratio": 0.71,
+          "detail": "5 value, 11 format, 1 structure, 0 exit-code (71% shallow)"
+        },
+        {
+          "check": "rc4_tamper_surface",
+          "severity": "PASS",
+          "issue_count": 0,
+          "issues": [],
+          "detail": "No tamper surfaces detected"
+        },
+        {
+          "check": "rc5_reference_artifacts",
+          "severity": "PASS",
+          "issue_count": 0,
+          "issues": [],
+          "detail": "No answer artifacts found on solver-visible file surfaces (instruction.md/tests/environment)"
+        },
+        {
+          "check": "rc6_instruction_specificity",
+          "severity": "PASS",
+          "level": "symptoms-only",
+          "triggered_families": [],
+          "strong_families": [],
+          "trigger_count": 0,
+          "strong_count": 0,
+          "signals_summary": {
+            "algorithm_mentions": {},
+            "cli_flags": [],
+            "all_caps_tokens": [],
+            "dense_identifier_clusters": 0,
+            "binding_phrase_count": 0,
+            "scope_closure_count": 0,
+            "tolerance_phrase_count": 0
+          },
+          "word_count": 518,
+          "detail": "Instruction classified symptoms-only (0 families triggered, 0 strong). no specificity signals"
+        },
+        {
+          "check": "rc7_oracle_triviality",
+          "severity": "PASS",
+          "oracle_loc": 294,
+          "oracle_targets": 3,
+          "band": "substantive",
+          "dominant_root": "environment/src",
+          "dominant_root_share": 1.0,
+          "detail": "Oracle is 294 non-boilerplate line(s) across 3 target(s) (substantive; dominant root environment/src at 100%). 80+ lines clears the A12 mechanical floor; other RCs still govern."
+        },
+        {
+          "check": "rc8_frontier_concentration",
+          "severity": "WARN",
+          "dominant_root": "environment/src",
+          "dominant_root_share": 1.0,
+          "subsystem_root": "<root>",
+          "subsystem_share": 1.0,
+          "num_targets": 3,
+          "avg_target_loc": 83.0,
+          "oracle_targets": [
+            "environment/src/cache.ts",
+            "environment/src/store.ts",
+            "environment/src/validator.ts"
+          ],
+          "detail": "3 oracle target(s) in subsystem `<root>` (subsystem share 100%, avg LOC/target 83). Borderline concentration or small-file shape; worth a second look."
+        },
+        {
+          "check": "cr1_symbol_table_compliance",
+          "severity": "WARN",
+          "declared_count": 3,
+          "shipped_symbols_in_frontier": 0,
+          "declared_missing": [
+            "invalidateByPattern",
+            "syncRevocations",
+            "validateToken"
+          ],
+          "instruction_collisions": [],
+          "helper_instruction_collisions": [],
+          "undeclared_on_fix_path": [],
+          "undeclared_co_resident_helpers": [],
+          "declared_co_resident_helpers": [],
+          "detail": "3 declared symbol(s) not found in shipped code: ['invalidateByPattern', 'syncRevocations', 'validateToken']",
+          "redesign_hint": "CR1 menu: make oracle-touched files symbol-thin; move helpers into sibling files; declare co_resident_helpers/allowed_top_level_symbols; inline small helpers if natural."
+        },
+        {
+          "check": "cr2_flipping_point_contract",
+          "severity": "PASS",
+          "location_count": 3,
+          "distinct_roots": [
+            "cache",
+            "store",
+            "validator"
+          ],
+          "max_location_share": 0.33,
+          "concentration_cap": 0.34,
+          "total_tests": 6,
+          "detail": "3 locations across 3 roots; max single-location share 33% under 34% cap."
+        },
+        {
+          "check": "cr7_grep_resistance",
+          "severity": "WARN",
+          "detail": "No parseable oracle frontier; symbols couldn't be extracted."
+        },
+        {
+          "check": "cr8_no_central_orchestration",
+          "severity": "PASS",
+          "symbol_count": 3,
+          "orchestration_offenders": [],
+          "max_symbols_in_single_file": 1,
+          "detail": "Scanned 9 files for references to 3 manifest symbols. 1 file(s) reference at least one fix-path symbol; max references in a single file: 1. No central orchestration detected."
+        },
+        {
+          "check": "cr9_test_contract_traceability",
+          "severity": "PASS",
+          "test_file": "tests/test_outputs.py",
+          "field_access_count": 7,
+          "contract_literal_count": 1,
+          "missing_fields": [],
+          "missing_literals": [],
+          "detail": "Scanned test_outputs.py: 7 field access(es), 1 contract literal(s). 0 field(s) and 0 literal(s) lack a home in solver-visible material. All test-asserted tokens have a home in instruction or code stubs."
+        },
+        {
+          "check": "gx1_oracle_comment_leakage",
+          "severity": "WARN",
+          "detail": "15 comment(s) removed by oracle",
+          "vocab_at_frontier": [],
+          "removed_by_oracle": [
+            {
+              "file": "/app/environment/src/cache.ts",
+              "removed_comment": "Evict exact match only",
+              "vocab_hits": []
+            },
+            {
+              "file": "/app/environment/src/store.ts",
+              "removed_comment": "Apply sync batch updates",
+              "vocab_hits": []
+            },
+            {
+              "file": "/app/environment/src/store.ts",
+              "removed_comment": "Simulate crash hook for testing transaction atomicity",
+              "vocab_hits": []
+            },
+            {
+              "file": "/app/environment/src/store.ts",
+              "removed_comment": "Find all revocations",
+              "vocab_hits": []
+            },
+            {
+              "file": "/app/environment/src/store.ts",
+              "removed_comment": "Wildcard matching helper",
+              "vocab_hits": []
+            }
+          ],
+          "vocab_anywhere": []
+        },
+        {
+          "check": "gx2_oracle_real_diff",
+          "severity": "PASS",
+          "detail": "No bulk-rewrite-of-tiny-diff inflation across 3 write(s).",
+          "writes": [
+            {
+              "file": "/app/environment/src/cache.ts",
+              "body_lines": 106,
+              "body_loc": 87,
+              "env_loc": 64,
+              "added": 25,
+              "removed": 2,
+              "semantic_delta": 27,
+              "byte_identical": false,
+              "whitespace_only": false
+            },
+            {
+              "file": "/app/environment/src/store.ts",
+              "body_lines": 135,
+              "body_loc": 118,
+              "env_loc": 107,
+              "added": 24,
+              "removed": 13,
+              "semantic_delta": 37,
+              "byte_identical": false,
+              "whitespace_only": false
+            },
+            {
+              "file": "/app/environment/src/validator.ts",
+              "body_lines": 100,
+              "body_loc": 84,
+              "env_loc": 78,
+              "added": 7,
+              "removed": 1,
+              "semantic_delta": 8,
+              "byte_identical": false,
+              "whitespace_only": false
+            }
+          ]
+        },
+        {
+          "check": "gx3_oracle_edit_distance",
+          "severity": "WARN",
+          "edit_distance": 72,
+          "breakdown": [
+            {
+              "file": "/app/environment/src/cache.ts",
+              "real_loc": 27,
+              "kind": "rewrite",
+              "body_lines": 106
+            },
+            {
+              "file": "/app/environment/src/store.ts",
+              "real_loc": 37,
+              "kind": "rewrite",
+              "body_lines": 135
+            },
+            {
+              "file": "/app/environment/src/validator.ts",
+              "real_loc": 8,
+              "kind": "rewrite",
+              "body_lines": 100
+            }
+          ],
+          "detail": "Real oracle edit distance: 72 line(s) of added+removed non-comment content across 3 target(s) (borderline)."
+        },
+        {
+          "check": "gx4_no_op_rewrite",
+          "severity": "PASS",
+          "detail": "No no-op rewrites in oracle."
+        },
+        {
+          "check": "gx5_instruction_test_overlap",
+          "severity": "WARN",
+          "detail": "28/79 (35%) test tokens come from instruction-only \u2014 borderline; pair with RC6/CR9.",
+          "instruction_only": [
+            "/app/environment",
+            "/app/environment/dist/scenario.js",
+            "/app/logs/verifier/auth_audit_trace.json",
+            "gateway.db",
+            "jti-1",
+            "jti-2",
+            "jti-a",
+            "jti-b",
+            "jti-first",
+            "jti-other-",
+            "kid-exp-1",
+            "kid-rot-1",
+            "kid-wild-1",
+            "mock-public-key-for-kid-k",
+            "mock-public-key-for-kid-kid-exp-1"
+          ],
+          "instruction_and_env": [
+            "Token revoked",
+            "batch",
+            "checkDbRevoked",
+            "dbPath",
+            "error"
+          ],
+          "env_only_count": 2,
+          "orphan_count": 13,
+          "orphan_sample": [
+            "' }, algorithm: 'HS256' }))",
+            "' }, algorithm: 'HS256' }));console.log(JSON.stringify(tokens));",
+            "', { header: { kid: '",
+            ";const tokens = payloads.map(p => jwt.sign(p, '",
+            "Gateway did not output trace log. Stderr: "
+          ]
+        },
+        {
+          "check": "gx6_causal_connective_density",
+          "severity": "WARN",
+          "detail": "11 causal/temporal connectives in 518 words (2.12/100w) but no exact patch tokens/verbs \u2014 over-explained symptom causality; keep the warning unless the prose is needed for actionability.",
+          "connectives_found": [
+            "after",
+            "because",
+            "when",
+            "while"
+          ],
+          "connective_count": 11,
+          "patch_causal_count": 0,
+          "symptom_causal_count": 7,
+          "patch_causal_sentences": [],
+          "word_count": 518,
+          "density_per_100w": 2.12,
+          "redesign_hint": "GX6 menu: symptom causation is okay; patch causation is not; rewrite as observable behavior."
+        },
+        {
+          "check": "gx7_test_literals_homed",
+          "severity": "PASS",
+          "detail": "All 3 path-literal(s), 0 alias(es), 11 opaque(s) have homes in solver-visible material."
+        },
+        {
+          "check": "gx8_test_import_consistency",
+          "severity": "PASS",
+          "detail": "5 test import(s); all infra/stdlib."
+        },
+        {
+          "check": "gx9_instruction_contract_saturation",
+          "severity": "PASS",
+          "detail": "Only 1 extractable contract triple(s); too few to classify.",
+          "covered": 1,
+          "total": 1
+        },
+        {
+          "check": "gx10_instruction_polarity_contradiction",
+          "severity": "PASS",
+          "detail": "No polarity contradictions detected in instruction.md."
+        }
+      ],
+      "fails": 0,
+      "warns": 9
+    }
+  },
+  "zip_validation": {
+    "zip_path": "/mnt/c/Users/kusha/OneDrive/Desktop/Projects/Dawgs/Terminal-main/Task_Ready_To_Submit/token-revocation-freshness.zip",
+    "valid": true,
+    "member_count": 17,
+    "required_root_files": [
+      "instruction.md",
+      "task.toml"
+    ],
+    "required_root_dirs": [
+      "environment/",
+      "solution/",
+      "tests/"
+    ],
+    "root_files": [
+      "instruction.md",
+      "task.toml"
+    ],
+    "root_dirs": [
+      "environment/",
+      "solution/",
+      "tests/"
+    ],
+    "root_entries": [
+      "instruction.md",
+      "task.toml",
+      "environment/",
+      "solution/",
+      "tests/"
+    ],
+    "missing_root_files": [],
+    "missing_root_dirs": [],
+    "forbidden_root_files": [],
+    "forbidden_members": [],
+    "banned_ai_members": [],
+    "wrapping_folder": null,
+    "passes": [
+      "required archive-root files present",
+      "required archive-root directories present",
+      "no forbidden archive-root files present",
+      "no forbidden archive members present",
+      "no AI-scaffolding filenames present in the archive",
+      "archive contents are unpacked at the archive root"
+    ],
+    "warnings": [],
+    "failures": []
+  },
+  "manifest_verification": {
+    "valid": true,
+    "passes": [
+      "source task.toml present and parseable",
+      "zip task.toml present and parseable",
+      "source and zip task.toml manifests match",
+      "zip filename matches task directory name"
+    ],
+    "failures": [],
+    "task_dir_name": "token-revocation-freshness",
+    "zip_basename": "token-revocation-freshness"
+  },
+  "source_zip_verification": {
+    "valid": true,
+    "missing_in_zip": [],
+    "extra_in_zip": [],
+    "content_mismatches": [],
+    "source_file_count": 17,
+    "zip_file_count": 17,
+    "error": null
+  },
+  "verifier_health": {
+    "path": null,
+    "healthy": true,
+    "decision": "SKIPPED",
+    "status": "SKIPPED",
+    "reason": "opted out via --skip-verifier-health",
+    "blocking_failures": [],
+    "warnings": [],
+    "checks": {}
+  },
+  "quality_check_adjudication": {
+    "artifact_path": null,
+    "waiver_path": "/mnt/c/Users/kusha/OneDrive/Desktop/Projects/Dawgs/Terminal-main/tasks/token-revocation-freshness/quality_check_adjudication.json",
+    "waiver_present": false,
+    "gate": "PASS",
+    "required": false,
+    "blocking_failures": [],
+    "warnings": [],
+    "summary": {
+      "message": "no waiver file present; adjudication not required"
+    },
+    "findings": []
+  },
+  "hard_but_fair": {
+    "spec_satisfiability": {
+      "status": "PASS",
+      "path": "/mnt/c/Users/kusha/OneDrive/Desktop/Projects/Dawgs/Terminal-main/specs/token-revocation-freshness.md",
+      "warnings": [],
+      "blocking_failures": [],
+      "report": {
+        "spec": "/mnt/c/Users/kusha/OneDrive/Desktop/Projects/Dawgs/Terminal-main/specs/token-revocation-freshness.md",
+        "task_dir": "tasks/token-revocation-freshness",
+        "strict": true,
+        "status": "PASS",
+        "summary": {
+          "fail": 0,
+          "warn": 0,
+          "pass": 9
+        },
+        "checks": [
+          {
+            "id": "mandatory_platform_files",
+            "name": "Mandatory platform files",
+            "severity": "PASS",
+            "locations": [],
+            "message": "No issues found.",
+            "remediation": "Declare every platform file in platform_files: task.toml, instruction.md, output_contract.toml, tests/test.sh, tests/test_outputs.py, solution/solve.sh, environment/Dockerfile, construction_manifest.json."
+          },
+          {
+            "id": "forbidden_environment_paths",
+            "name": "Forbidden environment paths",
+            "severity": "PASS",
+            "locations": [],
+            "message": "No issues found.",
+            "remediation": "Move or rename generated/cache/build artifacts out of environment/ before authoring. Never plan environment/**/build, dist, target, node_modules, __pycache__, out, output, or bin paths."
+          },
+          {
+            "id": "planned_rc2_risk",
+            "name": "Planned RC2 oracle predictability risk",
+            "severity": "PASS",
+            "locations": [],
+            "message": "No issues found.",
+            "remediation": "Rename fix/oracle paths, symbols, tests, or output fields so visible nouns do not point to oracle targets. Keep commitments shape-level."
+          },
+          {
+            "id": "planned_gx9_risk",
+            "name": "Planned GX9 boolean answer-key risk",
+            "severity": "PASS",
+            "locations": [],
+            "message": "No issues found.",
+            "remediation": "Replace boolean verdict fields and answer tables with traces, observations, artifacts, computed values, or domain-specific records."
+          },
+          {
+            "id": "planned_cr1_symbol_frontier_risk",
+            "name": "Planned CR1/symbol-frontier risk",
+            "severity": "PASS",
+            "locations": [],
+            "message": "No issues found.",
+            "remediation": "Declare helpers_policy, keep the symbol table aligned with visible top-level symbols, and distribute real fix work instead of relying on one thin named frontier."
+          },
+          {
+            "id": "actionability_risk",
+            "name": "Actionability risk",
+            "severity": "PASS",
+            "locations": [],
+            "message": "No issues found.",
+            "remediation": "Fill actionability_plan with visible verifier command, source-fix intent, generated-output behavior, exact formula home, and schema home."
+          },
+          {
+            "id": "synthetic_realism_risk",
+            "name": "Synthetic realism risk",
+            "severity": "PASS",
+            "locations": [],
+            "message": "No issues found.",
+            "remediation": "Prefer real-bug evidence. Synthetic exceptions need explicit evidence basis and synthetic_exception_review evidence."
+          },
+          {
+            "id": "code_forbidden_tokens_risk",
+            "name": "code_forbidden_tokens risk",
+            "severity": "PASS",
+            "locations": [],
+            "message": "No issues found.",
+            "remediation": "Use task-specific forbidden nouns. Do not forbid common stdlib, builtin, or generic identifiers unless strict review accepts the cost."
+          },
+          {
+            "id": "research_difficulty_plan",
+            "name": "Research-backed difficulty plan",
+            "severity": "PASS",
+            "locations": [],
+            "message": "No issues found.",
+            "remediation": "Add difficulty_mechanism_plan with at least four allowed mechanisms, calibration_plan with oracle/no-op/agent/shortcut/ablation runs, and verifier_scoring_plan with weighted semantic metrics."
+          }
+        ]
+      }
+    },
+    "actionability": {
+      "name": "actionability_check.py",
+      "status": "PASS",
+      "path": "/mnt/c/Users/kusha/OneDrive/Desktop/Projects/Dawgs/Terminal-main/tmp/tb3-gates-token-revocation-freshness/token-revocation-freshness-actionability_check.json",
+      "missing": false,
+      "blocking_failures": [],
+      "warnings": [],
+      "report": {
+        "checks": [
+          {
+            "id": "source_fix_intent",
+            "locations": [],
+            "message": "No issues found.",
+            "name": "Source-fix intent",
+            "remediation": "State whether `/app/environment` source code must be fixed, or explicitly say output-only work is allowed.",
+            "severity": "PASS"
+          },
+          {
+            "id": "verifier_command_pipeline",
+            "locations": [],
+            "message": "No issues found.",
+            "name": "Verifier command/pipeline visibility",
+            "remediation": "Name the command or pipeline the verifier reruns at the public contract level, without naming the patch site.",
+            "severity": "PASS"
+          },
+          {
+            "id": "regenerated_vs_static_output",
+            "locations": [],
+            "message": "No issues found.",
+            "name": "Regenerated vs static output",
+            "remediation": "If tests regenerate outputs, say static/manual output writes are insufficient and the normal pipeline must regenerate the artifacts.",
+            "severity": "PASS"
+          },
+          {
+            "id": "inputs_profiles_argument_splits",
+            "locations": [],
+            "message": "No issues found.",
+            "name": "Inputs/profiles/argument splits",
+            "remediation": "Move tested profiles, labels, modes, argument splits, and CLI flags into instruction.md or visible environment docs/source help.",
+            "severity": "PASS"
+          },
+          {
+            "id": "schemas_types_cardinality",
+            "locations": [],
+            "message": "No issues found.",
+            "name": "Schemas/types/cardinality",
+            "remediation": "Give output keys, types, object/array distinctions, byte lengths, and cardinalities a visible contract home.",
+            "severity": "PASS"
+          },
+          {
+            "id": "formulas_constants",
+            "locations": [],
+            "message": "No issues found.",
+            "name": "Formulas/constants",
+            "remediation": "Disclose externally tested formulas, numeric constants, tolerances, byte sizes, digest algorithms, and profile constants at the contract level.",
+            "severity": "PASS"
+          },
+          {
+            "id": "direct_library_call_expectations",
+            "locations": [],
+            "message": "No issues found.",
+            "name": "Direct library-call expectations",
+            "remediation": "If tests call library functions directly, state that library/module-level behavior must be correct, not only the CLI output.",
+            "severity": "PASS"
+          },
+          {
+            "id": "subsystem_entry_point",
+            "locations": [],
+            "message": "No issues found.",
+            "name": "Subsystem-level entry point",
+            "remediation": "Give a fair subsystem, directory, or component scope; do not rely only on metaphors or exact patch paths.",
+            "severity": "PASS"
+          },
+          {
+            "id": "metaphor_only_requirements",
+            "locations": [],
+            "message": "No issues found.",
+            "name": "Metaphor-only requirements",
+            "remediation": "Replace coined metaphors with observable behavior, concrete artifacts, or standard domain vocabulary.",
+            "severity": "PASS"
+          },
+          {
+            "id": "active_misdirection",
+            "locations": [],
+            "message": "No issues found.",
+            "name": "Active misdirection",
+            "remediation": "If the instruction names a driver/entry point but tests bypass it, state naturally that driver-only changes are not enough.",
+            "severity": "PASS"
+          }
+        ],
+        "status": "PASS",
+        "strict": true,
+        "summary": {
+          "fail": 0,
+          "pass": 10,
+          "warn": 0
+        },
+        "task_dir": "tasks/token-revocation-freshness"
+      }
+    },
+    "no_hidden_contracts": {
+      "name": "no_hidden_contracts.py",
+      "status": "PASS",
+      "path": "/mnt/c/Users/kusha/OneDrive/Desktop/Projects/Dawgs/Terminal-main/tmp/tb3-gates-token-revocation-freshness/token-revocation-freshness-no_hidden_contracts.json",
+      "missing": false,
+      "blocking_failures": [],
+      "warnings": [],
+      "report": {
+        "items": [
+          {
+            "classification": "visible_requirement_found",
+            "home": "instruction.md",
+            "kind": "boolean_polarity",
+            "location": "tests/test_outputs.py:87",
+            "remediation": "Document exact boolean polarity.",
+            "severity": "PASS",
+            "value": "true"
+          },
+          {
+            "classification": "visible_requirement_found",
+            "home": "instruction.md",
+            "kind": "boolean_polarity",
+            "location": "tests/test_outputs.py:114",
+            "remediation": "Document exact boolean polarity.",
+            "severity": "PASS",
+            "value": "false"
+          },
+          {
+            "classification": "visible_requirement_found",
+            "home": "instruction.md",
+            "kind": "boolean_polarity",
+            "location": "tests/test_outputs.py:158",
+            "remediation": "Document exact boolean polarity.",
+            "severity": "PASS",
+            "value": "true"
+          },
+          {
+            "classification": "visible_requirement_found",
+            "home": "instruction.md",
+            "kind": "boolean_polarity",
+            "location": "tests/test_outputs.py:159",
+            "remediation": "Document exact boolean polarity.",
+            "severity": "PASS",
+            "value": "true"
+          },
+          {
+            "classification": "visible_requirement_found",
+            "home": "instruction.md",
+            "kind": "boolean_polarity",
+            "location": "tests/test_outputs.py:163",
+            "remediation": "Document exact boolean polarity.",
+            "severity": "PASS",
+            "value": "false"
+          },
+          {
+            "classification": "visible_requirement_found",
+            "home": "instruction.md",
+            "kind": "boolean_polarity",
+            "location": "tests/test_outputs.py:167",
+            "remediation": "Document exact boolean polarity.",
+            "severity": "PASS",
+            "value": "true"
+          },
+          {
+            "classification": "visible_requirement_found",
+            "home": "instruction.md",
+            "kind": "boolean_polarity",
+            "location": "tests/test_outputs.py:208",
+            "remediation": "Document exact boolean polarity.",
+            "severity": "PASS",
+            "value": "true"
+          },
+          {
+            "classification": "visible_requirement_found",
+            "home": "instruction.md",
+            "kind": "boolean_polarity",
+            "location": "tests/test_outputs.py:212",
+            "remediation": "Document exact boolean polarity.",
+            "severity": "PASS",
+            "value": "false"
+          },
+          {
+            "classification": "visible_requirement_found",
+            "home": "instruction.md",
+            "kind": "boolean_polarity",
+            "location": "tests/test_outputs.py:241",
+            "remediation": "Document exact boolean polarity.",
+            "severity": "PASS",
+            "value": "false"
+          },
+          {
+            "classification": "visible_requirement_found",
+            "home": "instruction.md",
+            "kind": "boolean_polarity",
+            "location": "tests/test_outputs.py:279",
+            "remediation": "Document exact boolean polarity.",
+            "severity": "PASS",
+            "value": "false"
+          },
+          {
+            "classification": "visible_requirement_found",
+            "home": "instruction.md",
+            "kind": "command_chain",
+            "location": "tests/test_outputs.py:54",
+            "remediation": "Name the verifier-rerun command or pipeline in instruction.md or visible docs.",
+            "severity": "PASS",
+            "value": "node /app/environment/dist/scenario.js scenario.json"
+          },
+          {
+            "classification": "visible_requirement_found",
+            "home": "instruction.md",
+            "kind": "cardinality",
+            "location": "tests/test_outputs.py:84",
+            "remediation": "Document exact tested lengths, sizes, and cardinalities.",
+            "severity": "PASS",
+            "value": "1"
+          },
+          {
+            "classification": "visible_requirement_found",
+            "home": "instruction.md",
+            "kind": "cardinality",
+            "location": "tests/test_outputs.py:111",
+            "remediation": "Document exact tested lengths, sizes, and cardinalities.",
+            "severity": "PASS",
+            "value": "1"
+          },
+          {
+            "classification": "allowed_hidden_verification_detail",
+            "home": null,
+            "kind": "string_literal",
+            "location": "tests/test_outputs.py:117",
+            "remediation": "No public-contract change needed.",
+            "severity": "PASS",
+            "value": "expire"
+          },
+          {
+            "classification": "allowed_hidden_verification_detail",
+            "home": null,
+            "kind": "string_literal",
+            "location": "tests/test_outputs.py:164",
+            "remediation": "No public-contract change needed.",
+            "severity": "PASS",
+            "value": "Token revoked"
+          },
+          {
+            "classification": "allowed_hidden_verification_detail",
+            "home": null,
+            "kind": "string_literal",
+            "location": "tests/test_outputs.py:238",
+            "remediation": "No public-contract change needed.",
+            "severity": "PASS",
+            "value": "error"
+          }
+        ],
+        "remediation_examples": [
+          "Instruction.md: 'The digest field is a 64-character sha256 hex string.'",
+          "Instruction.md: 'drift is observed - baseline for each record.'",
+          "Visible environment docstring: 'build_report() must satisfy the same public report contract as the CLI.'"
+        ],
+        "status": "PASS",
+        "strict": true,
+        "summary": {
+          "fail": 0,
+          "pass": 16,
+          "warn": 0
+        },
+        "task_dir": "tasks/token-revocation-freshness"
+      }
+    },
+    "obfuscation": {
+      "name": "obfuscation_lint.py",
+      "status": "PASS",
+      "path": "/mnt/c/Users/kusha/OneDrive/Desktop/Projects/Dawgs/Terminal-main/tmp/tb3-gates-token-revocation-freshness/token-revocation-freshness-obfuscation_lint.json",
+      "missing": false,
+      "blocking_failures": [],
+      "warnings": [],
+      "report": {
+        "findings": [],
+        "status": "PASS",
+        "strict": true,
+        "summary": {
+          "fail": 0,
+          "pass": 1,
+          "warn": 0
+        },
+        "task_dir": "tasks/token-revocation-freshness"
+      }
+    },
+    "first_look": {
+      "status": "PASS",
+      "path": "/mnt/c/Users/kusha/OneDrive/Desktop/Projects/Dawgs/Terminal-main/tmp/token-revocation-freshness-first-look-result.json",
+      "warnings": [],
+      "blocking_failures": [],
+      "result": {
+        "reviewer_or_model": "Codex dry run",
+        "date": "2026-07-17",
+        "packet_hash": "ba1df39bf88905bf5a988f2b17afd7ace48209da14951726ad93a45707c49a20",
+        "subsystem_identified": true,
+        "source_fix_understood": true,
+        "verifier_understood": true,
+        "static_output_rejected": true,
+        "rational_plan": true,
+        "failure_reason": "",
+        "decision": "PASS"
+      }
+    },
+    "final_oracle": {
+      "status": "PASS",
+      "path": "/mnt/c/Users/kusha/OneDrive/Desktop/Projects/Dawgs/Terminal-main/jobs/2026-07-17__21-22-01",
+      "expected_reward": 1.0,
+      "rewards": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "warnings": [],
+      "blocking_failures": []
+    },
+    "final_nop": {
+      "status": "PASS",
+      "path": "/mnt/c/Users/kusha/OneDrive/Desktop/Projects/Dawgs/Terminal-main/jobs/2026-07-17__21-24-04",
+      "expected_reward": 0.0,
+      "rewards": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "warnings": [],
+      "blocking_failures": []
+    },
+    "category_profile": {
+      "status": "PASS",
+      "homes": [
+        "/mnt/c/Users/kusha/OneDrive/Desktop/Projects/Dawgs/Terminal-main/specs/token-revocation-freshness.md"
+      ],
+      "profile": "declared-in-spec",
+      "warnings": [],
+      "blocking_failures": []
+    },
+    "reference_pattern": {
+      "status": "PASS",
+      "warnings": [],
+      "blocking_failures": [],
+      "report": {
+        "status": "PASS",
+        "strict": true,
+        "index_path": "docs/reference_tasks/index.json",
+        "summary": {
+          "promoted_references": 0,
+          "promotion_candidates": 0,
+          "mappings_checked": 2,
+          "fail": 0,
+          "warn": 0
+        },
+        "reference_ids": [],
+        "promotion_candidates": [],
+        "mappings": [
+          {
+            "path": "/mnt/c/Users/kusha/OneDrive/Desktop/Projects/Dawgs/Terminal-main/specs/token-revocation-freshness.md",
+            "source": "/mnt/c/Users/kusha/OneDrive/Desktop/Projects/Dawgs/Terminal-main/specs/token-revocation-freshness.md",
+            "reference_task_id": null,
+            "justification_if_none": "\"This task implements distributed token revocation and JWT validation cache drift checks.\""
+          },
+          {
+            "path": "/mnt/c/Users/kusha/OneDrive/Desktop/Projects/Dawgs/Terminal-main/tasks/token-revocation-freshness",
+            "source": "/mnt/c/Users/kusha/OneDrive/Desktop/Projects/Dawgs/Terminal-main/tasks/token-revocation-freshness/task.toml",
+            "reference_task_id": null,
+            "justification_if_none": "This task implements distributed token revocation and JWT validation cache drift checks."
+          }
+        ],
+        "findings": []
+      }
+    }
+  },
+  "waivers": {
+    "task_dir": "/mnt/c/Users/kusha/OneDrive/Desktop/Projects/Dawgs/Terminal-main/tasks/token-revocation-freshness",
+    "final_approval": true,
+    "status": "PASS",
+    "summary": {
+      "waiver_count": 0,
+      "fail": 0,
+      "warn": 0,
+      "pass": 0
+    },
+    "author": {
+      "author_name": "anonymous",
+      "author_email": "anonymous",
+      "identifier": "anonymous <anonymous>",
+      "waiver_count_for_task": 0
+    },
+    "metadata_sources": [],
+    "source_findings": [],
+    "waivers": [],
+    "log_entry": {
+      "task": "token-revocation-freshness",
+      "author": "anonymous <anonymous>",
+      "waiver_count": 0,
+      "status": "PASS"
+    },
+    "recalibration_log_path": null
+  }
+}

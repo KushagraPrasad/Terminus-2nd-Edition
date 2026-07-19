@@ -1,0 +1,41 @@
+{
+  "advanced_hardness_categories": [
+    "multi-component interaction"
+  ],
+  "difficulty": "hard",
+  "failure_mode_count": 8,
+  "findings": [],
+  "is_python_task": false,
+  "languages": [
+    "go",
+    "bash"
+  ],
+  "model_success_prediction": {
+    "justification": [
+      "8 documented failure modes reduce pass rate",
+      "Advanced categories: multi-component interaction",
+      "4 adversarial mechanism layers"
+    ],
+    "predicted_claude_pass_rate": 10,
+    "predicted_gpt5_pass_rate": 12,
+    "predicted_worst_model_pass_rate": 12
+  },
+  "predicted_failure_modes": [
+    "mechanism:false_green_intermediate_states",
+    "\"Model assumes a local test pass guarantees complete graph convergence.\"",
+    "mechanism:stateful_multi_step_dependencies",
+    "\"Model only fixes the first-step compilation or manifest edit.\"",
+    "mechanism:cross_file_cross_format_invariants",
+    "\"Model edits only one output instead of resolving scheduler/manifest code.\"",
+    "mechanism:deceptive_but_valid_local_evidence",
+    "\"Model rebuilds cleanly or clears caches to bypass debugging the graph walker.\""
+  ],
+  "status": "PASS",
+  "strict": true,
+  "summary": {
+    "fail": 0,
+    "pass": 1,
+    "warn": 0
+  },
+  "task_dir": "tasks/incremental-build-graph-convergence"
+}

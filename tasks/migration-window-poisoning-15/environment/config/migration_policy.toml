@@ -1,0 +1,36 @@
+# Migration-window numeric policy (read alongside replay_audit_contract.md).
+
+[schedule]
+accept_padded_json_arrays = true
+
+[lane_admission]
+require_strict_ascending_steps = true
+
+[overlap_class]
+left_stride = 1
+right_stride = 2
+
+[overlap_quiet]
+barrier_bit_weight = 2
+overlap_hint_does_not_satisfy_barrier = true
+normalize_tail_before_quiet_check = true
+
+[tail_hints]
+inactive_sentinel_non_positive = true
+coalesce_duplicate_positive = true
+emit_positive_ascending = true
+
+[replay_fence]
+marker_sequence_floor = 1000
+marker_low_bit_count = 5
+use_wall_timestamp_below_floor = true
+wall_timestamp_must_be_positive = true
+fold_first_payload_byte = true
+
+[digest_line]
+require_tally_green = true
+require_zero_pending = true
+require_zero_journal_drift = true
+
+[payload_shadow]
+include_trailing_bytes_beyond_shorter_side = true

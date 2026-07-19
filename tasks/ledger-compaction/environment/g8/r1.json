@@ -1,0 +1,15 @@
+{
+  "mark": {
+    "label": "restart",
+    "generation": 2
+  },
+  "rows": [
+    {
+      "id": "B200",
+      "generation": 2,
+      "value": 20,
+      "source": "anchor",
+      "active": true
+    }
+  ]
+}

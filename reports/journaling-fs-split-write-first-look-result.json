@@ -1,0 +1,14 @@
+{
+  "first_look_result": {
+    "reviewer_or_model": "human",
+    "date": "2026-07-18",
+    "packet_hash": "de95497022e972f30472bdca3b2ad1ad69a3aa2df538e8b9d3dd4b9aec6cce11",
+    "subsystem_identified": true,
+    "source_fix_understood": true,
+    "verifier_understood": true,
+    "static_output_rejected": true,
+    "rational_plan": true,
+    "failure_reason": null,
+    "decision": "PASS"
+  }
+}

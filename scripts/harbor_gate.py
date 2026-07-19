@@ -181,7 +181,7 @@ def run_harbor(name: str, task_dir: Path, expected_mean: float, extra: list[str]
     inner = [harbor_bin, "run", "-p", task_dir.as_posix(), *extra]
     working_socket = _find_working_socket()
     if working_socket:
-        inner = ["env", f"DOCKER_HOST={working_socket}"] + inner
+        inner = ["/usr/bin/env", f"DOCKER_HOST={working_socket}"] + inner
     # Harbor's Docker backend uses `docker compose exec -it`, which hangs without a PTY
     # when the outer process has no controlling terminal (CI, agents). Prefer `script`
     # unless opted out with HARBOR_NO_SCRIPT_PTY=1.

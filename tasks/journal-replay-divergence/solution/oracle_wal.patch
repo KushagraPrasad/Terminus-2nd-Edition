@@ -1,0 +1,13 @@
+--- p7/wal_store/src/lib.rs
++++ p7/wal_store/src/lib.rs
+@@ -11,8 +11,7 @@ pub fn append_segment(book: &mut WalBook, stamp: u64) {
+ }
+ 
+ pub fn replay_compact(book: &WalBook) -> Vec<u64> {
+-    let mut out = book.segments.clone();
+-    out.reverse();
+-    out
++    book.segments.clone()
+ }
+ 
+ pub fn replay_monotonic(segments: &[u64]) -> bool {

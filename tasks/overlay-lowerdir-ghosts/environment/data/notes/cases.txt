@@ -1,0 +1,2 @@
+alpha beta gamma delta are deterministic fixture names.
+Saved rows carry tone, bird, and cost fields.

@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "run_index",
+    "profile_id",
+    "fingerprint",
+    "final_sealed_count",
+    "ledger_anchor_hex"
+  ],
+  "properties": {
+    "run_index": { "type": "integer", "minimum": 0 },
+    "profile_id": { "type": "string" },
+    "fingerprint": { "type": "string", "minLength": 16, "maxLength": 16 },
+    "final_sealed_count": { "type": "integer", "minimum": 0 },
+    "ledger_anchor_hex": { "type": "string", "minLength": 16, "maxLength": 16 }
+  }
+}

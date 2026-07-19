@@ -1,0 +1,40 @@
+{
+  "surface": "alpha",
+  "rows": [
+    {
+      "id": "A100",
+      "generation": 1,
+      "value": 10,
+      "source": "anchor",
+      "active": true
+    },
+    {
+      "id": "B200",
+      "generation": 2,
+      "value": 20,
+      "source": "anchor",
+      "active": true
+    },
+    {
+      "id": "C300",
+      "generation": 3,
+      "value": 30,
+      "source": "anchor",
+      "active": true
+    }
+  ],
+  "marks": [
+    {
+      "label": "base",
+      "generation": 1
+    },
+    {
+      "label": "handoff",
+      "generation": 2
+    },
+    {
+      "label": "settled",
+      "generation": 3
+    }
+  ]
+}

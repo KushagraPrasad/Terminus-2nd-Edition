@@ -1,0 +1,179 @@
+{
+  "items": [
+    {
+      "classification": "visible_requirement_found",
+      "home": "instruction.md",
+      "kind": "direct_library_call",
+      "location": "tests/test_outputs.py:2",
+      "remediation": "No public-contract change needed.",
+      "severity": "PASS",
+      "value": "sqlite3"
+    },
+    {
+      "classification": "visible_requirement_found",
+      "home": "instruction.md",
+      "kind": "boolean_polarity",
+      "location": "tests/test_outputs.py:267",
+      "remediation": "Document exact boolean polarity.",
+      "severity": "PASS",
+      "value": "false"
+    },
+    {
+      "classification": "visible_requirement_found",
+      "home": "instruction.md",
+      "kind": "boolean_polarity",
+      "location": "tests/test_outputs.py:268",
+      "remediation": "Document exact boolean polarity.",
+      "severity": "PASS",
+      "value": "false"
+    },
+    {
+      "classification": "allowed_hidden_verification_detail",
+      "home": null,
+      "kind": "string_literal",
+      "location": "tests/test_outputs.py:24",
+      "remediation": "No public-contract change needed.",
+      "severity": "PASS",
+      "value": "Usage: build_engine"
+    },
+    {
+      "classification": "allowed_hidden_verification_detail",
+      "home": null,
+      "kind": "string_literal",
+      "location": "tests/test_outputs.py:30",
+      "remediation": "No public-contract change needed.",
+      "severity": "PASS",
+      "value": "call"
+    },
+    {
+      "classification": "visible_requirement_found",
+      "home": "instruction.md",
+      "kind": "cardinality",
+      "location": "tests/test_outputs.py:105",
+      "remediation": "Document exact tested lengths, sizes, and cardinalities.",
+      "severity": "PASS",
+      "value": "2"
+    },
+    {
+      "classification": "allowed_hidden_verification_detail",
+      "home": null,
+      "kind": "string_literal",
+      "location": "tests/test_outputs.py:112",
+      "remediation": "No public-contract change needed.",
+      "severity": "PASS",
+      "value": ".json"
+    },
+    {
+      "classification": "allowed_hidden_verification_detail",
+      "home": null,
+      "kind": "string_literal",
+      "location": "tests/test_outputs.py:149",
+      "remediation": "No public-contract change needed.",
+      "severity": "PASS",
+      "value": "artifact_manifest.json"
+    },
+    {
+      "classification": "visible_requirement_found",
+      "home": "instruction.md",
+      "kind": "cardinality",
+      "location": "tests/test_outputs.py:151",
+      "remediation": "Document exact tested lengths, sizes, and cardinalities.",
+      "severity": "PASS",
+      "value": "0"
+    },
+    {
+      "classification": "visible_requirement_found",
+      "home": "instruction.md",
+      "kind": "expected_type",
+      "location": "tests/test_outputs.py:152",
+      "remediation": "Document the expected output type in instruction.md or visible environment docs/source help.",
+      "severity": "PASS",
+      "value": "list"
+    },
+    {
+      "classification": "visible_requirement_found",
+      "home": "instruction.md",
+      "kind": "cardinality",
+      "location": "tests/test_outputs.py:153",
+      "remediation": "Document exact tested lengths, sizes, and cardinalities.",
+      "severity": "PASS",
+      "value": "0"
+    },
+    {
+      "classification": "allowed_hidden_verification_detail",
+      "home": null,
+      "kind": "string_literal",
+      "location": "tests/test_outputs.py:201",
+      "remediation": "No public-contract change needed.",
+      "severity": "PASS",
+      "value": ""
+    },
+    {
+      "classification": "allowed_hidden_verification_detail",
+      "home": null,
+      "kind": "string_literal",
+      "location": "tests/test_outputs.py:272",
+      "remediation": "No public-contract change needed.",
+      "severity": "PASS",
+      "value": "y"
+    },
+    {
+      "classification": "allowed_hidden_verification_detail",
+      "home": null,
+      "kind": "string_literal",
+      "location": "tests/test_outputs.py:273",
+      "remediation": "No public-contract change needed.",
+      "severity": "PASS",
+      "value": "xyz"
+    },
+    {
+      "classification": "visible_requirement_found",
+      "home": "instruction.md",
+      "kind": "output_key",
+      "location": "tests/test_outputs.py:152",
+      "remediation": "Give asserted output keys a visible schema home.",
+      "severity": "PASS",
+      "value": "actions"
+    },
+    {
+      "classification": "visible_requirement_found",
+      "home": "instruction.md",
+      "kind": "output_key",
+      "location": "tests/test_outputs.py:151",
+      "remediation": "Give asserted output keys a visible schema home.",
+      "severity": "PASS",
+      "value": "edges"
+    },
+    {
+      "classification": "visible_requirement_found",
+      "home": "instruction.md",
+      "kind": "output_key",
+      "location": "tests/test_outputs.py:153",
+      "remediation": "Give asserted output keys a visible schema home.",
+      "severity": "PASS",
+      "value": "actions"
+    },
+    {
+      "classification": "visible_requirement_found",
+      "home": "instruction.md",
+      "kind": "regenerated_output_path",
+      "location": "tests/test_outputs.py:15",
+      "remediation": "Document regenerated output paths.",
+      "severity": "PASS",
+      "value": "/app/output/verifier_report.json"
+    }
+  ],
+  "remediation_examples": [
+    "Instruction.md: 'The digest field is a 64-character sha256 hex string.'",
+    "Instruction.md: 'drift is observed - baseline for each record.'",
+    "Visible environment docstring: 'build_report() must satisfy the same public report contract as the CLI.'"
+  ],
+  "status": "PASS",
+  "strict": true,
+  "summary": {
+    "fail": 0,
+    "pass": 18,
+    "warn": 0
+  },
+  "task_dir": "tasks/incremental-build-graph-convergence"
+}

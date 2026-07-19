@@ -22,12 +22,14 @@ revise task/
 collapsechurn.md
 /terminal-bench-3*.zip
 
-# Excluded folders (per user request)
+# Excluded folders (per template)
 sample_task/
 sample_task_2/
-Task_Ready_To_Submit/
 approved_task/
-tasks/
+
+# Large submission zips (keep .txt submission copies tracked)
+Task_Ready_To_Submit/*.zip
+Task_Ready_To_Submit/*.json
 
 
 # OS

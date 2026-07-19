@@ -23,6 +23,7 @@ Attach all files in this folder:
 - `implementation-collapse-audit.md`
 - `terminal-bench-task-creation.md`
 - `TASK_PROPOSAL_RUBRIC.md`
+- **`pipeline-resistant-design.md` (MANDATORY — read before generating any idea; contains the 6 rules that make tasks survive the step pipeline without being trivialized by compliance edits)**
 
 Optional extra attachments:
 
@@ -103,8 +104,13 @@ Use these fixed values unless the user explicitly overrides them:
 - `author_email = "anonymous"`
 - `version = "2.0"`
 - standalone drafting default: `difficulty = "hard"`
-- default domain sweep: **full seven-category sweep** (use Opus-weak mode only when explicitly requested; never use blocked `software-engineering` or `debugging` categories)
+- default domain sweep: **full seven-category sweep** (use Opus-weak mode only when explicitly requested; never use blocked `software-engineering` or `debugging` categories; also skip session-blocked `data-processing` and `build-and-dependency-management` for the 4th task — those have already been used)
 - default final Step 1 bank size after Option A: **150 Step-2a-ready seeds** unless the user asks for a different target
+
+**Session language tracking (for 4th task diversity):**
+- **BLOCKED:** Python — not allowed for this session
+- Already used: Go ×2 (`go-module-proxy-index-divergence`, `incremental-build-graph-convergence`), Rust ×1 (`wal-segment-pruner-drift`)
+- Preferred next language: Java, C/C++, TypeScript, or JavaScript
 
 Important:
 
@@ -117,9 +123,12 @@ Important:
 
 ### Full-seven default and optional Opus-weak mode
 
-Generate across all **seven accepted categories** by default: `system-administration`,
-`build-and-dependency-management`, `data-processing`, `games`,
-`machine-learning`, `security`, and `scientific-computing`.
+Generate across all **seven accepted categories** by default, **excluding session-blocked categories**: `system-administration`,
+`build-and-dependency-management` *(session-blocked — already used)*,
+`data-processing` *(session-blocked — already used)*,
+`games`, `machine-learning`, `security`, and `scientific-computing`.
+
+**Active session-available categories (for the 4th task):** `system-administration`, `games`, `machine-learning`, `security`, `scientific-computing`.
 
 **Permanently blocked:** `software-engineering`, `debugging`. Do not generate seeds
 under these labels. Remap async/compiler/protocol/repair ideas to the accepted list.
