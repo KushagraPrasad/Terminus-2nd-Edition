@@ -4,7 +4,7 @@
       "classification": "visible_requirement_found",
       "home": "instruction.md",
       "kind": "expected_type",
-      "location": "tests/test_outputs.py:39",
+      "location": "tests/test_outputs.py:49",
       "remediation": "Document the expected output type in instruction.md or visible environment docs/source help.",
       "severity": "PASS",
       "value": "dict"
@@ -13,7 +13,7 @@
       "classification": "allowed_hidden_verification_detail",
       "home": null,
       "kind": "string_literal",
-      "location": "tests/test_outputs.py:44",
+      "location": "tests/test_outputs.py:54",
       "remediation": "No public-contract change needed.",
       "severity": "PASS",
       "value": "25"
@@ -22,7 +22,7 @@
       "classification": "visible_requirement_found",
       "home": "instruction.md",
       "kind": "expected_type",
-      "location": "tests/test_outputs.py:46",
+      "location": "tests/test_outputs.py:56",
       "remediation": "Document the expected output type in instruction.md or visible environment docs/source help.",
       "severity": "PASS",
       "value": "int"
@@ -31,7 +31,7 @@
       "classification": "visible_requirement_found",
       "home": "instruction.md",
       "kind": "expected_type",
-      "location": "tests/test_outputs.py:54",
+      "location": "tests/test_outputs.py:64",
       "remediation": "Document the expected output type in instruction.md or visible environment docs/source help.",
       "severity": "PASS",
       "value": "int"
@@ -40,7 +40,7 @@
       "classification": "visible_requirement_found",
       "home": "instruction.md",
       "kind": "expected_type",
-      "location": "tests/test_outputs.py:62",
+      "location": "tests/test_outputs.py:72",
       "remediation": "Document the expected output type in instruction.md or visible environment docs/source help.",
       "severity": "PASS",
       "value": "int"

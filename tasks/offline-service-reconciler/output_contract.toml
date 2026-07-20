@@ -1,0 +1,26 @@
+# Output contract for offline-service-reconciler
+
+user_visible_outputs = [
+  "output/host_inventory.json",
+  "output/run_report.json"
+]
+
+internal_harness_files = [
+  "tests/test_outputs.py"
+]
+
+[structured_outputs.host_inventory]
+target = "output/host_inventory.json"
+format = "json"
+instruction_checks = [
+  "host_inventory.json",
+]
+schema = { type = "object", required = ["hosts", "pack_digest"], properties = { pack_digest = { type = "string" } } }
+
+[structured_outputs.run_report]
+target = "output/run_report.json"
+format = "json"
+instruction_checks = [
+  "run_report.json",
+]
+schema = { type = "object", required = ["run_id", "hosts_processed", "pack_digest", "status"], properties = { pack_digest = { type = "string" } } }

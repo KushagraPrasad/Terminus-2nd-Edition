@@ -1,0 +1,49 @@
+================================================================================
+                           SUBMISSION PACKET & PORTAL DELIVERABLES
+================================================================================
+
+--------------------------------------------------------------------------------
+PART A — FINAL RUBRIC (Paste into portal Rubric Editor)
+--------------------------------------------------------------------------------
+# Rubric 1
+Agent resolves authority probe JSON entries and overrides authority matches correctly, +5
+Agent computes SHA256 of central inventory and concatenates with resolvedRoles to compute final digest, +5
+Agent parses overrides YAML idempotently without duplicating trace outputs, +5
+Agent creates required /app/output directories and writes host_inventory.json and run_report.json, +5
+Agent hardcodes inventory values or bypasses Go reconciler source code fixes, -5
+Agent uses unauthorized python libraries or external packages in tests, -3
+Agent fails to clean or compile the Go modules properly during solve execution, -3
+
+--------------------------------------------------------------------------------
+PART B — PORTAL FORM FIELDS
+--------------------------------------------------------------------------------
+
+[B1. Does this task use an approved canonical base image?]
+Does this task use an approved canonical base image?: Yes
+
+[B2. Comments for Reviewer]
+Comments for Reviewer:
+Recreated systems engineering/reconciliation task in Go. Implements an offline fleet state reconciler to resolve host states across probe cache, registry, and operator overrides. Verified dynamic mock data resolution, operator override yaml parsing, and SHA256 checksum validation. Passed local preflight check successfully, and final 10x oracle repeat and 20x verifier repeat checks passed successfully with 1.0 mean reward scores.
+
+[B3. Task Inspiration ID]
+(leave blank)
+
+--------------------------------------------------------------------------------
+STEP 6 — SUBMISSION EXPLANATIONS
+--------------------------------------------------------------------------------
+
+[1. Difficulty Explanation]
+The task requires resolving mismatched host roles and profiles across three distinct source files. The difficulty lies in implementing a custom line-based YAML parser in Go (or parsing overrides safely), dynamically resolving authority signatures from a JSON inventory, and computing deterministic SHA256 hashes of the files.
+
+[2. Solution Explanation]
+We fixed `rz_g4.go` to parse the JSON registry inventory and apply overriding signatures, updated `kv_w7.go` to compute SHA256 hashes and order hosts deterministically before hashing, and updated `parser.go` to merge overrides idempotently without accumulating duplicate records.
+
+[3. Verification Explanation]
+The test suite compiles the reconciler and runs it on the mock files. It asserts:
+1. Host role resolution dynamically matches expected sources.
+2. Overrides from operator YAML are correctly applied.
+3. The generated SHA256 pack digest is correct and matches the report.
+4. Rerunning the reconciler is fully idempotent and deterministic.
+
+[4. Canonical Base Image]
+Does this task use an approved canonical base image?: Yes

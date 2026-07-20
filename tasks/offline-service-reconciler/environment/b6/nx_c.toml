@@ -1,0 +1,3 @@
+host_id = "host_c"
+role = "unknown"
+profile = "zfs"

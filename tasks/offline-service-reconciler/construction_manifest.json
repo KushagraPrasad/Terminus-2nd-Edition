@@ -1,0 +1,104 @@
+{
+  "symbol_table": [
+    {
+      "path": "environment/rz/rz_g4.go",
+      "symbol": "rz_g4",
+      "kind": "function",
+      "signature": "func rz_g4(b6_path string, g2_path string) (map[string]map[string]string, error)",
+      "purpose": "Resolve authority among evidence surfaces given signed-source trust anchor; returns canonical role map"
+    },
+    {
+      "path": "environment/kv/kv_w7.go",
+      "symbol": "kv_w7",
+      "kind": "function",
+      "signature": "func kv_w7(g2_path string, resolved_roles map[string]map[string]string) (string, error)",
+      "purpose": "Verify signed source and compute pack_digest from reconciled role map and content-addressed headers"
+    },
+    {
+      "path": "environment/mx/parser.go",
+      "symbol": "applyParser",
+      "kind": "function",
+      "signature": "func applyParser(content string, result map[string]map[string]string) map[string]map[string]string",
+      "purpose": "Merge override YAML idempotently onto resolved role map; returns final canonical output"
+    }
+  ],
+  "oracle_frontier": [
+    {
+      "path": "environment/rz/rz_g4.go",
+      "fix_symbols": ["rz_g4"],
+      "co_resident_helpers": [],
+      "allowed_top_level_symbols": ["CentralInventory", "Rz_g4"]
+    },
+    {
+      "path": "environment/kv/kv_w7.go",
+      "fix_symbols": ["kv_w7"],
+      "co_resident_helpers": [],
+      "allowed_top_level_symbols": ["Kv_w7"]
+    },
+    {
+      "path": "environment/mx/parser.go",
+      "fix_symbols": ["applyParser"],
+      "co_resident_helpers": [],
+      "allowed_top_level_symbols": []
+    }
+  ],
+  "flipping_point_contract": {
+    "locations": [
+      {
+        "id": "A",
+        "path": "environment/rz/rz_g4.go",
+        "controls_tests": [
+          "test_gz_nvme_p3",
+          "test_gz_luks_p3"
+        ]
+      },
+      {
+        "id": "B",
+        "path": "environment/kv/kv_w7.go",
+        "controls_tests": [
+          "test_wk_xsig_p5",
+          "test_wk_report_p5"
+        ]
+      },
+      {
+        "id": "C",
+        "path": "environment/mx/parser.go",
+        "controls_tests": [
+          "test_rx_zfs_p7",
+          "test_rx_legacy_p7",
+          "test_rx_rerun_p7"
+        ]
+      }
+    ],
+    "no_single_location_flips_majority": true,
+    "concentration_cap": 0.43
+  },
+  "decoy_manifest": [
+    {
+      "path": "environment/p4/rz_sc.go",
+      "kind": "module",
+      "rhymes_with": "rz_g4",
+      "non_fix_purpose": "Diagnostics scanner that reads b6/ metadata for reporting; not on authority resolution fix path"
+    },
+    {
+      "path": "environment/p4/kv_au.go",
+      "kind": "module",
+      "rhymes_with": "kv_w7",
+      "non_fix_purpose": "Audit reporter that validates field presence but does not compute pack_digest; not a fix site"
+    }
+  ],
+  "code_forbidden_tokens": [
+    "sync",
+    "canonical",
+    "authority",
+    "trust",
+    "anchor",
+    "airgapped",
+    "fleet",
+    "idempotency",
+    "merge",
+    "resolver",
+    "verifier",
+    "signer"
+  ]
+}

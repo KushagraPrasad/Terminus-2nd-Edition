@@ -1,0 +1,553 @@
+{
+  "hardness_axes": [
+    {
+      "id": "discover",
+      "name": "Discover",
+      "verdict": "PASS",
+      "reasoning": "The agent must infer which of three authority surfaces (cached probe files, signed inventory, operator overrides) is canonical for host role assignment during airgapped sync. Instruction names all three surfaces but does not state priority ordering or how conflicts resolve. Agent must experiment across profiles and read cross-format invariant docs to discover that signed inventory carries a trust anchor that overrides probe-cache outcomes."
+    },
+    {
+      "id": "synthesize",
+      "name": "Synthesize",
+      "verdict": "PASS",
+      "reasoning": "Correct solution coordinates authority across three input formats (probe TOML, signed inventory JSON, operator override YAML) and two output artifacts (canonical host inventory JSON, run report JSON). No single-format fix is sufficient; agent must thread host role authority through all three and ensure pack_digest cross-validation passes."
+    },
+    {
+      "id": "navigate_coupling",
+      "name": "Navigate coupling",
+      "verdict": "PASS",
+      "reasoning": "Fixing authority resolution for one profile can inadvertently break the cross-format invariant tying pack_digest to run_report. Three-surface coupling means a locally correct probe fix can produce wrong pack_digest because signed inventory disagrees on host role. Agents fixing one profile at a time will hit partial failures."
+    },
+    {
+      "id": "reason_beyond_training",
+      "name": "Reason beyond training",
+      "verdict": "PASS",
+      "reasoning": "The offline inventory reconciler with three-surface authority quorum is not a textbook pattern. Standard reconciliation patterns (last-write-wins, quorum voting) fail because the signed inventory carries a trust anchor that must override probe-cache outcomes when they disagree \u2014 a constraint discoverable only from fixtures."
+    }
+  ],
+  "anti_trivialization_checks": [
+    {
+      "id": "instruction_specificity_test",
+      "name": "Instruction specificity test",
+      "verdict": "PASS",
+      "reasoning": "Instruction is constraint-complete: discloses output requirements, evidence surfaces, and verifier command without naming solution algorithm or fix locations."
+    },
+    {
+      "id": "topology_distribution_test",
+      "name": "Topology distribution test",
+      "verdict": "PASS",
+      "reasoning": "Three fix locations across three distinct modules with independent test subsets; max single-location share is 3/7 = 42.86%, under 50% cap."
+    }
+  ],
+  "rubric_axes": [
+    {
+      "id": "verifiable",
+      "name": "Verifiable",
+      "verdict": "PASS",
+      "reasoning": "Seven deterministic pytest tests cover four-profile matrix, pack_digest cross-check, run_report schema, and rerun idempotency. All tests use fixed fixtures and produce binary pass/fail outcomes with no timing or randomness."
+    },
+    {
+      "id": "solvable",
+      "name": "Solvable",
+      "verdict": "PASS",
+      "reasoning": "Oracle solve.sh demonstrates the task is solvable with 80+ LOC across three modules. All required invariants are discoverable from solver-visible environment/docs/ files."
+    },
+    {
+      "id": "difficult",
+      "name": "Difficult",
+      "verdict": "PASS",
+      "reasoning": "Three-surface authority quorum with idempotency requirement. No single-module fix passes majority. Naive last-write-wins fails pack_digest. Predicted worst-model pass rate well below 20%."
+    },
+    {
+      "id": "interesting",
+      "name": "Interesting",
+      "verdict": "PASS",
+      "reasoning": "Grounded in real airgapped fleet management reconciliation patterns. Three-surface authority conflict with pack_digest cross-validation is a realistic and non-trivial engineering challenge."
+    }
+  ],
+  "instruction_completeness_test": {
+    "verdict": "PASS",
+    "reasoning": "Agent cannot solve by reading instruction.md alone. Must engage with environment/ to discover authority ordering from probe cache files, signed inventory trust anchors, and operator override YAML. Must experiment across profiles to find which surface dominates under conflict."
+  },
+  "discovery_budget": [
+    {
+      "discovery": "Authority ordering among probe cache, signed inventory, and operator override under conflict",
+      "planned_location": "environment/docs/reconcile_contract.md documents the trust-anchor semantics; the signed inventory JSON includes a cryptographic signature field that the probe cache does not carry",
+      "why_instruction_must_not_reveal": "Revealing the trust anchor priority collapses the task to transcription; agent must discover from fixture disagreement and environment docs that signed inventory overrides cached probe data"
+    },
+    {
+      "discovery": "Pack digest formula ties output JSON to content-addressed hash of binary cache and bind manifest",
+      "planned_location": "environment/docs/pack_contract.md specifies the digest formula; naive output JSON fails the cross-check",
+      "why_instruction_must_not_reveal": "Instruction states pack_digest must match but revealing the hash algorithm and which files feed it reduces the task to formula transcription rather than requiring the agent to read and implement the contract doc"
+    },
+    {
+      "discovery": "Rerun safety requires idempotent operator override merge; non-idempotent merge corrupts cached probe state on second run",
+      "planned_location": "environment/data/probe_cache/ fixture reveals that a second reconciliation run with a naive merge appends duplicate operator override entries",
+      "why_instruction_must_not_reveal": "Instruction states rerun must produce identical output but naming the specific intermediate state (probe cache corruption) reduces the idempotency challenge to a single obvious guard clause"
+    }
+  ],
+  "instruction_specificity": {
+    "level": "constraint-complete",
+    "reasoning": "Instruction discloses all output requirements (four-profile matrix, pack_digest cross-check, run_report schema, rerun idempotency), evidence surfaces (probe cache, signed inventory, operator overrides), and verifier command. It does not disclose the authority ordering algorithm, merge strategy, or which artifact is canonical."
+  },
+  "attack_path": {
+    "summary": "Naive last-write-wins merge fails pack_digest; trust-anchor fix passes nvme/luks but breaks zfs/legacy idempotency; full three-module fix required.",
+    "reasoning": "Path 1: Agent assumes last-write-wins merge (most recent timestamp wins), produces canonical host inventory, fails pack_digest cross-check because signed inventory trust anchor is not honored. Path 2: Agent discovers trust anchor, fixes authority ordering, passes pack_digest for nvme and luks profiles, but operator override YAML merge is not idempotent so zfs and legacy profiles fail on second run. Path 3: Agent coordinates all three fixes \u2014 probe resolver honors signed inventory trust anchor, operator override merger is idempotent, pack_digest computed from reconciled state. All seven tests pass only when all three are correct."
+  },
+  "smallest_plausible_patch": {
+    "summary": "Fixing only the signed inventory trust anchor (one module) passes pack_digest for two profiles but fails operator override idempotency for two others.",
+    "reasoning": "Three coupled semantic fixes required across three modules. The operator override idempotency and the probe cache staleness on rerun are independent failure modes each requiring their own fix. No single-module or single-profile fix achieves majority test pass."
+  },
+  "collapse_audit": {
+    "verdict": "PASS",
+    "reasoning": "Fix-path symbols use opaque identifiers; instruction nouns do not map to fix-path function names. Three fix roots distributed across three modules with independent test subsets. Oracle spans 80+ substantive LOC. No scenario-field-value triples in instruction. Pack_digest anti-shortcut gate ensures static outputs fail. Post-disclosure collapse test passes: after all invariants disclosed, agent still must discover authority ordering, implement idempotent merge, and wire digest formula across three modules.",
+    "residual_hardness": "After full disclosure the agent must still: (1) identify which of three surfaces carries the trust anchor by comparing probe TOML vs signed inventory JSON under conflict, (2) implement idempotent operator override merge that survives rerun, and (3) wire pack_digest computation through all three reconciled surfaces. These three coordinated implementation steps require non-trivial design work that cannot be transcribed from the instruction alone.",
+    "red_flags": []
+  },
+  "topology_enumeration": [
+    {
+      "id": "T1",
+      "summary": "Probe cache resolver corrects signed-inventory trust anchor precedence",
+      "locations": [
+        "environment/src/rz_probe.py",
+        "environment/docs/reconcile_contract.md",
+        "environment/data/probe_cache/"
+      ],
+      "why_no_single_location_suffices": "Fixing rz_probe.py alone passes nvme and luks profile tests but the operator override idempotency in mx_merge.py still fails zfs and legacy profiles."
+    },
+    {
+      "id": "T2",
+      "summary": "Signed inventory verifier wires pack_digest cross-check between output artifacts",
+      "locations": [
+        "environment/src/kv_inv.py",
+        "environment/docs/pack_contract.md",
+        "environment/data/inventory/"
+      ],
+      "why_no_single_location_suffices": "Fixing kv_inv.py alone passes the pack_digest test but probe authority resolution in rz_probe.py still produces wrong host roles for nvme and luks profiles."
+    },
+    {
+      "id": "T3",
+      "summary": "Override merger implements idempotent operator override application over resolved inventory",
+      "locations": [
+        "environment/src/mx_merge.py",
+        "environment/data/overrides/",
+        "environment/data/probe_cache/"
+      ],
+      "why_no_single_location_suffices": "Fixing mx_merge.py alone passes rerun idempotency but pack_digest cross-check and probe authority resolution still fail their respective test subsets."
+    }
+  ],
+  "construction_manifest": {
+    "symbol_table": [
+      {
+        "path": "environment/src/rz_probe.py",
+        "symbol": "rz_g4",
+        "kind": "function",
+        "signature": "def rz_g4(cache_path: str, inv_path: str) -> dict",
+        "purpose": "resolve probe cache authority given signed inventory trust anchor; returns canonical host role map"
+      },
+      {
+        "path": "environment/src/kv_inv.py",
+        "symbol": "kv_w7",
+        "kind": "function",
+        "signature": "def kv_w7(inv_path: str, resolved_roles: dict) -> str",
+        "purpose": "verify signed inventory and compute pack_digest from reconciled host role map and binary cache headers"
+      },
+      {
+        "path": "environment/src/mx_merge.py",
+        "symbol": "mx_r9",
+        "kind": "function",
+        "signature": "def mx_r9(override_path: str, resolved_roles: dict) -> dict",
+        "purpose": "merge operator overrides idempotently onto resolved inventory; returns final canonical host inventory"
+      }
+    ],
+    "flipping_point_contract": {
+      "locations": [
+        {
+          "id": "A",
+          "path": "environment/src/rz_probe.py",
+          "controls_tests": [
+            "test_gz_nvme_p3",
+            "test_gz_luks_p3"
+          ]
+        },
+        {
+          "id": "B",
+          "path": "environment/src/kv_inv.py",
+          "controls_tests": [
+            "test_wk_xsig_p5",
+            "test_wk_report_p5"
+          ]
+        },
+        {
+          "id": "C",
+          "path": "environment/src/mx_merge.py",
+          "controls_tests": [
+            "test_rx_zfs_p7",
+            "test_rx_legacy_p7",
+            "test_rx_rerun_p7"
+          ]
+        }
+      ],
+      "no_single_location_flips_majority": true,
+      "concentration_cap": 0.43
+    },
+    "decoy_manifest": [
+      {
+        "path": "environment/src/rz_scan.py",
+        "kind": "module",
+        "rhymes_with": "rz_g4",
+        "non_fix_purpose": "probe diagnostics scanner that reads cache metadata for reporting; not on authority resolution fix path"
+      },
+      {
+        "path": "environment/src/kv_audit.py",
+        "kind": "module",
+        "rhymes_with": "kv_w7",
+        "non_fix_purpose": "inventory audit reporter that validates field presence but does not compute pack_digest; not a fix site"
+      }
+    ],
+    "code_forbidden_tokens": [
+      "probe",
+      "inventory",
+      "operator",
+      "sync",
+      "canonical",
+      "reconciler",
+      "resolver",
+      "verifier",
+      "merger",
+      "authority",
+      "trust",
+      "anchor",
+      "cache"
+    ]
+  },
+  "naming_pass": {
+    "instruction_nouns_extracted": [
+      "probe",
+      "inventory",
+      "operator",
+      "sync",
+      "canonical",
+      "reconciler",
+      "host",
+      "profile",
+      "role"
+    ],
+    "renames_during_drafting": [
+      {
+        "original": "resolve_probe_authority",
+        "renamed_to": "rz_g4",
+        "reason": "resolve and probe are both instruction nouns; opaque two-char prefix required"
+      },
+      {
+        "original": "verify_inventory_digest",
+        "renamed_to": "kv_w7",
+        "reason": "verify, inventory, and digest are all instruction nouns; opaque naming required"
+      },
+      {
+        "original": "merge_operator_overrides",
+        "renamed_to": "mx_r9",
+        "reason": "merge, operator are instruction nouns; opaque naming required"
+      }
+    ],
+    "test_names_audited": [
+      "test_gz_nvme_p3",
+      "test_gz_luks_p3",
+      "test_wk_xsig_p5",
+      "test_wk_report_p5",
+      "test_rx_zfs_p7",
+      "test_rx_legacy_p7",
+      "test_rx_rerun_p7"
+    ],
+    "concentration_math": {
+      "total_tests": 7,
+      "per_location": [
+        {
+          "location_id": "A",
+          "test_count": 2,
+          "ratio": 0.2857
+        },
+        {
+          "location_id": "B",
+          "test_count": 2,
+          "ratio": 0.2857
+        },
+        {
+          "location_id": "C",
+          "test_count": 3,
+          "ratio": 0.4286
+        }
+      ]
+    },
+    "recomputed_concentration": {
+      "total_tests": 7,
+      "concentration_cap": 0.43,
+      "per_location": [
+        {
+          "location_id": "A",
+          "test_count": 2,
+          "ratio": 0.2857142857142857
+        },
+        {
+          "location_id": "B",
+          "test_count": 2,
+          "ratio": 0.2857142857142857
+        },
+        {
+          "location_id": "C",
+          "test_count": 3,
+          "ratio": 0.42857142857142855
+        }
+      ]
+    }
+  },
+  "difficulty_mechanism_plan": [
+    {
+      "mechanism": "deceptive_but_valid_local_evidence",
+      "placement": "One of probe cache TOML, signed inventory JSON, or operator override YAML remains internally consistent but non-canonical; probe cache shows host_c as zfs role while signed inventory overrides it to luks; naive implementations trust the first green surface",
+      "why_model_misses_it": "Models default to last-write-wins or first-seen authority; the signed inventory trust anchor is a non-obvious precedence rule that requires reading reconcile_contract.md",
+      "fairness_guardrail": "reconcile_contract.md is solver-visible; trust anchor semantics are documented without naming the fix function"
+    },
+    {
+      "mechanism": "cross_file_cross_format_invariants",
+      "placement": "probe cache TOML, signed inventory JSON, and operator override YAML must agree on host role before pack_digest is computed; fixing one format while leaving another inconsistent breaks pack_digest cross-check",
+      "why_model_misses_it": "Models fix the most visible conflict (probe vs inventory) but miss that operator overrides must be applied after inventory resolution in a specific order",
+      "fairness_guardrail": "output_contract.toml declares both artifact paths and pack_digest cross-check requirement; schemas are publicly disclosed"
+    },
+    {
+      "mechanism": "stateful_multi_step_dependencies",
+      "placement": "reconciler must be run twice to verify idempotency; a non-idempotent operator override merge appends duplicate entries on second run, producing different output",
+      "why_model_misses_it": "Models stop after first successful run; rerun requirement is stated in instruction but the specific failure mode (duplicate override entries) requires probing the intermediate state",
+      "fairness_guardrail": "rerun stability test is visible in test_outputs.py structure; instruction states rerun must produce identical output"
+    },
+    {
+      "mechanism": "false_green_intermediate_states",
+      "placement": "early reconciler health check subcommand may report success before full four-profile matrix converges; pack_digest cross-check provides second gate that catches partial fixes",
+      "why_model_misses_it": "Models stop after health subcommand passes; full profile matrix test requires all three modules to be correctly wired",
+      "fairness_guardrail": "verifier command is the full --all-profiles invocation; health subcommand is a known insufficient shortcut documented in instruction"
+    }
+  ],
+  "calibration_plan": {
+    "oracle_runs": 3,
+    "no_op_runs": 3,
+    "target_agent_runs": 5,
+    "comparator_agent_runs": 5,
+    "human_sanity": "first-look dry run on instruction plus environment listing only; reviewer confirms no patch site named and pack_digest formula not in instruction",
+    "shortcut_audit": "agents that only hardcode host_inventory.json or copy probe cache directly without reconciliation must fail pack_digest cross-check; agents that fix one module only must fail majority of profile tests",
+    "ablation_plan": "revert each of three fix locations one at a time and confirm that the corresponding test subset fails while others pass; confirm no single revert flips majority",
+    "pass_rate_target": {
+      "hard_max_pct": 20,
+      "too_easy_threshold_pct": 80,
+      "basis": "Part E worst-model accuracy on platform (GPT-5.5 + Claude Opus 4.8)"
+    }
+  },
+  "verifier_scoring_plan": {
+    "metrics": [
+      {
+        "metric": "functional_correctness",
+        "weight": 0.45,
+        "criterion": "all four profile tests pass with correct canonical host inventory"
+      },
+      {
+        "metric": "hidden_invariants",
+        "weight": 0.2,
+        "criterion": "pack_digest cross-check passes between host_inventory.json and run_report.json"
+      },
+      {
+        "metric": "state_hygiene",
+        "weight": 0.15,
+        "criterion": "rerun idempotency test passes; second run produces byte-identical output"
+      },
+      {
+        "metric": "interface_correctness",
+        "weight": 0.15,
+        "criterion": "output artifacts conform to declared schema in output_contract.toml"
+      },
+      {
+        "metric": "deliverable_completeness",
+        "weight": 0.05,
+        "criterion": "both required output artifacts present at declared paths"
+      }
+    ],
+    "overall_threshold": 0.99,
+    "reward_output": "reward.txt",
+    "binary_threshold_rule": "single failed pytest assertion fails the suite; reward is 0 if any test fails"
+  },
+  "subtype_milestone_plan": {
+    "subcategories": [
+      "tool_specific"
+    ],
+    "milestone_count": 0,
+    "sequential_dependency": "conceptually staged but delivered as one task; no milestone gating required",
+    "local_only_data": true,
+    "sidecar_or_protocol_notes": "not required beyond local fixtures under environment/data/"
+  },
+  "platform_files": [
+    {
+      "path": "task.toml",
+      "role": "metadata; must set category=system-administration and allow_internet=false"
+    },
+    {
+      "path": "instruction.md",
+      "role": "natural public constraint-complete prompt"
+    },
+    {
+      "path": "output_contract.toml",
+      "role": "local output declaration for host_inventory.json and run_report.json"
+    },
+    {
+      "path": "tests/test.sh",
+      "role": "verifier entrypoint; invoke pre-installed pytest only"
+    },
+    {
+      "path": "tests/test_outputs.py",
+      "role": "domain verifier (7 tests)"
+    },
+    {
+      "path": "solution/solve.sh",
+      "role": "oracle coordinating rz_g4, kv_w7, mx_r9 fixes"
+    },
+    {
+      "path": "environment/Dockerfile",
+      "role": "build definition; bake Python 3.12, pytest offline"
+    },
+    {
+      "path": "construction_manifest.json",
+      "role": "local authoring artifact mirroring symbol table"
+    }
+  ],
+  "task_files": [
+    {
+      "path": "environment/src/rz_probe.py",
+      "role": "oracle frontier A \u2014 probe cache authority resolver with intentional defect"
+    },
+    {
+      "path": "environment/src/rz_scan.py",
+      "role": "decoy probe diagnostics scanner; not on fix path"
+    },
+    {
+      "path": "environment/src/kv_inv.py",
+      "role": "oracle frontier B \u2014 signed inventory verifier and pack_digest computation"
+    },
+    {
+      "path": "environment/src/kv_audit.py",
+      "role": "decoy inventory audit reporter; not a fix site"
+    },
+    {
+      "path": "environment/src/mx_merge.py",
+      "role": "oracle frontier C \u2014 operator override idempotent merger"
+    },
+    {
+      "path": "environment/src/run_reconciler.py",
+      "role": "entry point that calls all three modules; not a fix site"
+    },
+    {
+      "path": "environment/data/probe_cache/host_a.toml",
+      "role": "cached probe file for host A with nvme profile"
+    },
+    {
+      "path": "environment/data/probe_cache/host_b.toml",
+      "role": "cached probe file for host B with luks profile"
+    },
+    {
+      "path": "environment/data/probe_cache/host_c.toml",
+      "role": "cached probe file for host C with zfs profile"
+    },
+    {
+      "path": "environment/data/probe_cache/host_d.toml",
+      "role": "cached probe file for host D with legacy profile"
+    },
+    {
+      "path": "environment/data/inventory/signed_inventory.json",
+      "role": "signed inventory with trust anchors; authority override source"
+    },
+    {
+      "path": "environment/data/overrides/operator_overrides.yaml",
+      "role": "operator-level host role overrides"
+    },
+    {
+      "path": "environment/docs/reconcile_contract.md",
+      "role": "trust anchor semantics and authority ordering rules"
+    },
+    {
+      "path": "environment/docs/pack_contract.md",
+      "role": "pack_digest formula specification"
+    }
+  ],
+  "fix_frontier": {
+    "count": 3,
+    "distribution": "One substantive function each in environment/src/rz_probe.py, environment/src/kv_inv.py, and environment/src/mx_merge.py.",
+    "naming_policy": "Opaque fix-path identifiers using two-char prefix and alphanumeric suffix; instruction nouns must not grep onto frontier symbols.",
+    "forbidden_stems": [
+      "probe",
+      "inventory",
+      "operator",
+      "sync",
+      "digest",
+      "canonical",
+      "reconciler",
+      "resolver",
+      "verifier",
+      "merger",
+      "authority",
+      "trust"
+    ],
+    "helpers_policy": "Co-resident decoy modules rz_scan.py and kv_audit.py are listed in task_files and excluded from the flipping-point contract.",
+    "symbol_thin_preferred": true
+  },
+  "contract_surface": {
+    "boolean_fields_max": 1,
+    "direct_boolean_assertions_max": 1,
+    "preferred_assertion_styles": [
+      "dict equality on full regenerated host_inventory.json versus profile-expected fixture",
+      "pack_digest string equality between host_inventory.json and run_report.json",
+      "rerun stability: run twice, assert byte-identical output artifacts"
+    ],
+    "forbidden_assertion_styles": [
+      "scenario-to-key answer grids in instruction text",
+      "boolean verdict fields per profile in instruction"
+    ]
+  },
+  "task_shape": {
+    "type": "constrained_build",
+    "instruction_framing": "constraint-complete",
+    "hardness_source": "design search \u2014 agent must design the authority resolution strategy and idempotent merge without a recipe",
+    "collapse_risk": "If the trust anchor priority ordering is named in instruction or the pack_digest formula is disclosed in instruction text, the task collapses into transcription of two config rules."
+  },
+  "category_profile": {
+    "challenge_family": "offline host state reconciliation",
+    "profile_name": "distributed_reconciliation",
+    "allowed_instruction_disclosures": "Evidence surfaces (probe cache, signed inventory, operator overrides), output artifact names and schema, verifier command, rerun requirement, four profile names.",
+    "forbidden_instruction_leaks": "Canonical source discovery algorithm, merge priority ordering, trust anchor location, pack_digest formula, or which artifact wins under conflict.",
+    "category_specific_hardness_bar": "Solver reconciles multiple truth surfaces with idempotency and conflict lineage across four profiles.",
+    "category_specific_verifier_risks": "Count-only checks, last-write-wins shortcuts, golden merged fixture hardcoding, and static JSON output bypass.",
+    "coverage_role": "Adds offline host state reconciliation coverage through constrained_build without duplicating neighboring topology families."
+  },
+  "satisfiability_risk": {
+    "rc2_planned_name_risk": "low \u2014 fix-path symbols use opaque two-char prefix; instruction nouns excluded from frontier symbol names",
+    "gx9_contract_risk": "low \u2014 output contract exposes observations and artifact schemas; no verdict-restating boolean fields per profile",
+    "cr1_symbol_frontier_risk": "medium \u2014 three fix-path symbols with thin helper surface; oracle-touched helpers must stay symbol-thin and avoid prompt-noun function names",
+    "hidden_contract_risk": "low \u2014 authority ordering, digest formula, and rerun rules anchored in solver-visible environment/docs/ files before drafting"
+  },
+  "actionability_plan": {
+    "verifier_command_visible": "single local command runs reconciler and validates canonical host inventory from generated artifacts: python3 /app/environment/src/run_reconciler.py --all-profiles",
+    "source_fix_intent_visible": "yes at product level: produce canonical host inventory for offline reconciler under airgapped sync constraints without revealing algorithm or priority ordering",
+    "generated_output_rule_visible": "instruction names generated output artifacts, pack_digest cross-check requirement, and rerun behavior; static hand-authored outputs are insufficient",
+    "exact_formula_home": "environment/docs/pack_contract.md; pack_digest formula is solver-visible without being disclosed in instruction",
+    "schema_home": "instruction and output_contract.toml; public artifact schema names observations and artifact paths, not verdict booleans"
+  },
+  "waiver_plan": {
+    "waivers_expected": false,
+    "waiver_rationale": "No waiver expected; authority ordering and digest formula are anchored in solver-visible docs without naming the solution route. RC2 risk is low with opaque frontier naming."
+  },
+  "reference_pattern": {
+    "justification_if_none": "No promoted reference task matches this offline host inventory reconciliation with three-surface authority quorum topology; this seed introduces distinct distributed_reconciliation coverage in system-administration."
+  },
+  "realism_source": {
+    "source_type": "real_constraint",
+    "evidence_basis": "tool behavior",
+    "upstream_or_synthetic_rationale": "Grounded in real offline inventory reconciler behavior for airgapped fleet management systems where probe cache, signed inventory, and operator overrides disagree on host role. Pattern occurs in Ansible offline mode, Salt master-less setups, and Puppet enterprise airgapped deployments.",
+    "minimization_preserves": "host role authority coupling across probe cache TOML, signed inventory JSON, and operator override YAML; pack_digest cross-validation; rerun idempotency; four-profile matrix coverage.",
+    "synthetic_exception_review": "not required for real_constraint source; reject if Step 2b cannot wire the trust anchor semantics from a real system pattern while preserving the three-surface coupling structure"
+  }
+}

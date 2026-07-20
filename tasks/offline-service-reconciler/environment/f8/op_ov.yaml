@@ -1,0 +1,4 @@
+overrides:
+  - host_id: host_d
+    role: management-console
+    profile: legacy

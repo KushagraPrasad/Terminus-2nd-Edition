@@ -1,0 +1,24 @@
+{
+  "hosts": [
+    {
+      "host_id": "host_a",
+      "role": "compute",
+      "sig_anchor": false
+    },
+    {
+      "host_id": "host_b",
+      "role": "storage",
+      "sig_anchor": true
+    },
+    {
+      "host_id": "host_c",
+      "role": "backup",
+      "sig_anchor": true
+    },
+    {
+      "host_id": "host_d",
+      "role": "legacy-worker",
+      "sig_anchor": false
+    }
+  ]
+}

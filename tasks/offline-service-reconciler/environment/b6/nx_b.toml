@@ -1,0 +1,3 @@
+host_id = "host_b"
+role = "database"
+profile = "luks"

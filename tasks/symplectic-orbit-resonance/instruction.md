@@ -40,21 +40,19 @@ The verifier runs commands like `/app/environment/bin/orbit_sim 10.0 0.001 false
 
 The verifier will run the pipeline using the `pytest` test runner.
 
-During correct integration, the energy drift must stay bounded below tight tolerances.
+During correct integration, the energy drift must stay bounded below tight tolerances:
+- `energy_drift` must remain below `1.0e-6`
+- `max_drift` must remain below `1.0e-4`
+- `steps_completed` in the adaptive scaling run must exceed `1000` steps
 
 ## Architectural Notes
 
 The architecture separates coordinate integration, scaling, precision tracking, and loop execution.
 
-The solver must correct the step calculation in the integrator.
-
-The solver must manage the simulation step size when the proximity changes.
-
-The solver must subtract the compensation term in the precision accumulator.
-
-The solver must define a softening factor in force calculations.
-
-The solver must calculate sliding window standard deviation in the resonance lock.
+- **Integrator**: The symplectic leapfrog integrator must use the standard kick-drift-kick step structure: half-step velocity update (kick), full-step position update (drift), followed by another half-step velocity update (kick).
+- **Precision Accumulator**: The Kahan summation compensation term must be subtracted correctly to capture precision error offsets.
+- **Softening**: A non-zero softening factor `epsilon_sq` (e.g. `0.0001`) must be used in force calculations to prevent division-by-zero during close encounters.
+- **Resonance Lock**: The simulation detects resonance lock by computing a sliding-window standard deviation of the resonance angles (using a window size of 50 steps and evaluating lock condition as an average standard deviation below `1.0`).
 
 All these systems must agree at all times.
 

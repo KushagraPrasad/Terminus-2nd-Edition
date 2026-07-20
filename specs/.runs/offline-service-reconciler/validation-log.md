@@ -1,0 +1,217 @@
+# Validation Log: offline-service-reconciler
+
+## Attempt 1
+- Derived score: 61 FAILs, 0 WARNs
+- Evidence: specs/.runs/offline-service-reconciler/attempt-1-evidence.json
+- Evidence errors:
+  - Schema validation failed at $.anti_trivialization_checks[0]: 'id' is a required property
+  - Schema validation failed at $.anti_trivialization_checks[10]: 'id' is a required property
+  - Schema validation failed at $.anti_trivialization_checks[11]: 'id' is a required property
+  - Schema validation failed at $.anti_trivialization_checks[12]: 'id' is a required property
+  - Schema validation failed at $.anti_trivialization_checks[13]: 'id' is a required property
+  - Schema validation failed at $.anti_trivialization_checks[14]: 'id' is a required property
+  - Schema validation failed at $.anti_trivialization_checks[15]: 'id' is a required property
+  - Schema validation failed at $.anti_trivialization_checks[16]: 'id' is a required property
+  - Schema validation failed at $.anti_trivialization_checks[17]: 'id' is a required property
+  - Schema validation failed at $.anti_trivialization_checks[18]: 'id' is a required property
+  - Schema validation failed at $.anti_trivialization_checks[19]: 'id' is a required property
+  - Schema validation failed at $.anti_trivialization_checks[1]: 'id' is a required property
+  - Schema validation failed at $.anti_trivialization_checks[20]: 'id' is a required property
+  - Schema validation failed at $.anti_trivialization_checks[2]: 'id' is a required property
+  - Schema validation failed at $.anti_trivialization_checks[3]: 'id' is a required property
+  - Schema validation failed at $.anti_trivialization_checks[4]: 'id' is a required property
+  - Schema validation failed at $.anti_trivialization_checks[5]: 'id' is a required property
+  - Schema validation failed at $.anti_trivialization_checks[6]: 'id' is a required property
+  - Schema validation failed at $.anti_trivialization_checks[7]: 'id' is a required property
+  - Schema validation failed at $.anti_trivialization_checks[8]: 'id' is a required property
+  - Schema validation failed at $.anti_trivialization_checks[9]: 'id' is a required property
+  - Schema validation failed at $.attack_path: 'reasoning' is a required property
+  - Schema validation failed at $.attack_path: 'summary' is a required property
+  - Schema validation failed at $.attack_path: Additional properties are not allowed ('correct_path', 'naive_path', 'second_path' were unexpected)
+  - Schema validation failed at $.collapse_audit: 'reasoning' is a required property
+  - Schema validation failed at $.collapse_audit: 'residual_hardness' is a required property
+  - Schema validation failed at $.collapse_audit: 'verdict' is a required property
+  - Schema validation failed at $.collapse_audit: Additional properties are not allowed ('gx3_oracle_edit_distance', 'gx9_contract_saturation', 'post_disclosure_collapse', 'rc2_oracle_predictability', 'rc6_instruction_specificity', 'rc7_oracle_triviality', 'rc8_frontier_concentration' were unexpected)
+  - Schema validation failed at $.construction_manifest: 'code_forbidden_tokens' is a required property
+  - Schema validation failed at $.construction_manifest: 'decoy_manifest' is a required property
+  - Schema validation failed at $.construction_manifest.symbol_table[0]: 'signature' is a required property
+  - Schema validation failed at $.construction_manifest.symbol_table[1]: 'signature' is a required property
+  - Schema validation failed at $.construction_manifest.symbol_table[2]: 'signature' is a required property
+  - Schema validation failed at $.discovery_budget[0]: 'planned_location' is a required property
+  - Schema validation failed at $.discovery_budget[0]: 'why_instruction_must_not_reveal' is a required property
+  - Schema validation failed at $.discovery_budget[0]: Additional properties are not allowed ('how_agent_discovers', 'why_not_obvious_from_instruction' were unexpected)
+  - Schema validation failed at $.discovery_budget[1]: 'planned_location' is a required property
+  - Schema validation failed at $.discovery_budget[1]: 'why_instruction_must_not_reveal' is a required property
+  - Schema validation failed at $.discovery_budget[1]: Additional properties are not allowed ('how_agent_discovers', 'why_not_obvious_from_instruction' were unexpected)
+  - Schema validation failed at $.discovery_budget[2]: 'planned_location' is a required property
+  - Schema validation failed at $.discovery_budget[2]: 'why_instruction_must_not_reveal' is a required property
+  - Schema validation failed at $.discovery_budget[2]: Additional properties are not allowed ('how_agent_discovers', 'why_not_obvious_from_instruction' were unexpected)
+  - Schema validation failed at $.hardness_axes[0]: 'id' is a required property
+  - Schema validation failed at $.hardness_axes[1]: 'id' is a required property
+  - Schema validation failed at $.hardness_axes[2]: 'id' is a required property
+  - Schema validation failed at $.hardness_axes[3]: 'id' is a required property
+  - Schema validation failed at $.hardness_axes[4]: 'id' is a required property
+  - Schema validation failed at $.naming_pass: 'renames_during_drafting' is a required property
+  - Schema validation failed at $.naming_pass: 'test_names_audited' is a required property
+  - Schema validation failed at $.naming_pass: Additional properties are not allowed ('code_forbidden_tokens', 'decoy_audit', 'fix_path_symbol_audit' were unexpected)
+  - Schema validation failed at $.naming_pass.concentration_math: '3 fix locations, max single-location share = 3/7 tests = 43%, under 50% cap.' is not of type 'object'
+  - Schema validation failed at $.rubric_axes[0]: 'id' is a required property
+  - Schema validation failed at $.rubric_axes[1]: 'id' is a required property
+  - Schema validation failed at $.rubric_axes[2]: 'id' is a required property
+  - Schema validation failed at $.rubric_axes[3]: 'id' is a required property
+  - Schema validation failed at $.rubric_axes[4]: 'id' is a required property
+  - Schema validation failed at $.rubric_axes[5]: 'id' is a required property
+  - Schema validation failed at $.smallest_plausible_patch: 'reasoning' is a required property
+  - Schema validation failed at $.smallest_plausible_patch: 'summary' is a required property
+  - Schema validation failed at $.smallest_plausible_patch: Additional properties are not allowed ('description', 'why_insufficient' were unexpected)
+  - Schema validation failed at $.topology_enumeration: {'primary_topology': 'inventory quorum beats probe', 'fix_locations': [{'module': 'probe resolver', 'path': 'environment/src/rz_probe.py', 'controls_tests': ['test_nvme_profile', 'test_luks_profile']}, {'module': 'inventory verifier', 'path': 'environment/src/kv_inv.py', 'controls_tests': ['test_pack_digest', 'test_run_report_schema']}, {'module': 'override merger', 'path': 'environment/src/mx_merge.py', 'controls_tests': ['test_zfs_profile', 'test_legacy_profile', 'test_rerun_idempotency']}], 'decoy_files': [{'path': 'environment/src/rz_scan.py', 'purpose': 'Probe diagnostics scanner; not on fix path'}, {'path': 'environment/src/kv_audit.py', 'purpose': 'Inventory audit reporter; not on fix path'}]} is not of type 'array'
+- Blocking evidence failures:
+  - Schema validation failed at $.anti_trivialization_checks[0]: 'id' is a required property
+  - Schema validation failed at $.anti_trivialization_checks[10]: 'id' is a required property
+  - Schema validation failed at $.anti_trivialization_checks[11]: 'id' is a required property
+  - Schema validation failed at $.anti_trivialization_checks[12]: 'id' is a required property
+  - Schema validation failed at $.anti_trivialization_checks[13]: 'id' is a required property
+  - Schema validation failed at $.anti_trivialization_checks[14]: 'id' is a required property
+  - Schema validation failed at $.anti_trivialization_checks[15]: 'id' is a required property
+  - Schema validation failed at $.anti_trivialization_checks[16]: 'id' is a required property
+  - Schema validation failed at $.anti_trivialization_checks[17]: 'id' is a required property
+  - Schema validation failed at $.anti_trivialization_checks[18]: 'id' is a required property
+  - Schema validation failed at $.anti_trivialization_checks[19]: 'id' is a required property
+  - Schema validation failed at $.anti_trivialization_checks[1]: 'id' is a required property
+  - Schema validation failed at $.anti_trivialization_checks[20]: 'id' is a required property
+  - Schema validation failed at $.anti_trivialization_checks[2]: 'id' is a required property
+  - Schema validation failed at $.anti_trivialization_checks[3]: 'id' is a required property
+  - Schema validation failed at $.anti_trivialization_checks[4]: 'id' is a required property
+  - Schema validation failed at $.anti_trivialization_checks[5]: 'id' is a required property
+  - Schema validation failed at $.anti_trivialization_checks[6]: 'id' is a required property
+  - Schema validation failed at $.anti_trivialization_checks[7]: 'id' is a required property
+  - Schema validation failed at $.anti_trivialization_checks[8]: 'id' is a required property
+  - Schema validation failed at $.anti_trivialization_checks[9]: 'id' is a required property
+  - Schema validation failed at $.attack_path: 'reasoning' is a required property
+  - Schema validation failed at $.attack_path: 'summary' is a required property
+  - Schema validation failed at $.attack_path: Additional properties are not allowed ('correct_path', 'naive_path', 'second_path' were unexpected)
+  - Schema validation failed at $.collapse_audit: 'reasoning' is a required property
+  - Schema validation failed at $.collapse_audit: 'residual_hardness' is a required property
+  - Schema validation failed at $.collapse_audit: 'verdict' is a required property
+  - Schema validation failed at $.collapse_audit: Additional properties are not allowed ('gx3_oracle_edit_distance', 'gx9_contract_saturation', 'post_disclosure_collapse', 'rc2_oracle_predictability', 'rc6_instruction_specificity', 'rc7_oracle_triviality', 'rc8_frontier_concentration' were unexpected)
+  - Schema validation failed at $.construction_manifest: 'code_forbidden_tokens' is a required property
+  - Schema validation failed at $.construction_manifest: 'decoy_manifest' is a required property
+  - Schema validation failed at $.construction_manifest.symbol_table[0]: 'signature' is a required property
+  - Schema validation failed at $.construction_manifest.symbol_table[1]: 'signature' is a required property
+  - Schema validation failed at $.construction_manifest.symbol_table[2]: 'signature' is a required property
+  - Schema validation failed at $.discovery_budget[0]: 'planned_location' is a required property
+  - Schema validation failed at $.discovery_budget[0]: 'why_instruction_must_not_reveal' is a required property
+  - Schema validation failed at $.discovery_budget[0]: Additional properties are not allowed ('how_agent_discovers', 'why_not_obvious_from_instruction' were unexpected)
+  - Schema validation failed at $.discovery_budget[1]: 'planned_location' is a required property
+  - Schema validation failed at $.discovery_budget[1]: 'why_instruction_must_not_reveal' is a required property
+  - Schema validation failed at $.discovery_budget[1]: Additional properties are not allowed ('how_agent_discovers', 'why_not_obvious_from_instruction' were unexpected)
+  - Schema validation failed at $.discovery_budget[2]: 'planned_location' is a required property
+  - Schema validation failed at $.discovery_budget[2]: 'why_instruction_must_not_reveal' is a required property
+  - Schema validation failed at $.discovery_budget[2]: Additional properties are not allowed ('how_agent_discovers', 'why_not_obvious_from_instruction' were unexpected)
+  - Schema validation failed at $.hardness_axes[0]: 'id' is a required property
+  - Schema validation failed at $.hardness_axes[1]: 'id' is a required property
+  - Schema validation failed at $.hardness_axes[2]: 'id' is a required property
+  - Schema validation failed at $.hardness_axes[3]: 'id' is a required property
+  - Schema validation failed at $.hardness_axes[4]: 'id' is a required property
+  - Schema validation failed at $.naming_pass: 'renames_during_drafting' is a required property
+  - Schema validation failed at $.naming_pass: 'test_names_audited' is a required property
+  - Schema validation failed at $.naming_pass: Additional properties are not allowed ('code_forbidden_tokens', 'decoy_audit', 'fix_path_symbol_audit' were unexpected)
+  - Schema validation failed at $.naming_pass.concentration_math: '3 fix locations, max single-location share = 3/7 tests = 43%, under 50% cap.' is not of type 'object'
+  - Schema validation failed at $.rubric_axes[0]: 'id' is a required property
+  - Schema validation failed at $.rubric_axes[1]: 'id' is a required property
+  - Schema validation failed at $.rubric_axes[2]: 'id' is a required property
+  - Schema validation failed at $.rubric_axes[3]: 'id' is a required property
+  - Schema validation failed at $.rubric_axes[4]: 'id' is a required property
+  - Schema validation failed at $.rubric_axes[5]: 'id' is a required property
+  - Schema validation failed at $.smallest_plausible_patch: 'reasoning' is a required property
+  - Schema validation failed at $.smallest_plausible_patch: 'summary' is a required property
+  - Schema validation failed at $.smallest_plausible_patch: Additional properties are not allowed ('description', 'why_insufficient' were unexpected)
+  - Schema validation failed at $.topology_enumeration: {'primary_topology': 'inventory quorum beats probe', 'fix_locations': [{'module': 'probe resolver', 'path': 'environment/src/rz_probe.py', 'controls_tests': ['test_nvme_profile', 'test_luks_profile']}, {'module': 'inventory verifier', 'path': 'environment/src/kv_inv.py', 'controls_tests': ['test_pack_digest', 'test_run_report_schema']}, {'module': 'override merger', 'path': 'environment/src/mx_merge.py', 'controls_tests': ['test_zfs_profile', 'test_legacy_profile', 'test_rerun_idempotency']}], 'decoy_files': [{'path': 'environment/src/rz_scan.py', 'purpose': 'Probe diagnostics scanner; not on fix path'}, {'path': 'environment/src/kv_audit.py', 'purpose': 'Inventory audit reporter; not on fix path'}]} is not of type 'array'
+
+## Attempt 2
+- Derived score: 10 FAILs, 0 WARNs
+- Evidence: specs/.runs/offline-service-reconciler/attempt-2-evidence.json
+- Evidence errors:
+  - hardness_axes is missing required ids: diagnose_or_design.
+  - hardness_axes contains unexpected ids: diagnose.
+  - anti_trivialization_checks is missing required ids: disclosure_collapse, hidden_instance, single_artifact_repair, generalization, prompt_honesty, cheating_vs_difficulty, mechanical_fix_filter, localized_fix, oracle_locality, small_declarative_cluster, grep_collapse, pre_factored_helper, recipe_discount, security_aura_discount, orthogonal_checklist, harness_discount, one_pass_solvability, hard_only_gate, discovery_budget_test, instruction_specificity_test, topology_distribution_test.
+  - anti_trivialization_checks contains unexpected ids: A01, A02, A03, A04, A05, A06, A07, A08, A09, A10, A11, A12, A13, A14, A15, A16, A17, A18, A19, A20, A21.
+  - rubric_axes is missing required ids: verifiable, well_specified, solvable, difficult, interesting, outcome_verified.
+  - rubric_axes contains unexpected ids: hardness, fairness, actionability, verifier_strength, realism, collapse_resistance.
+  - naming_pass.instruction_nouns_extracted disagrees with construction_manifest.code_forbidden_tokens (extra in nouns: ['host', 'profile', 'role']; extra in tokens: ['anchor', 'merger', 'resolver', 'verifier']).
+  - test name 'test_wk_digest_p5' contains forbidden instruction noun 'digest'.
+  - naming_pass.concentration_math disagrees with computed values: location 'A' ratio supplied=0.29 computed=0.285714; location 'B' ratio supplied=0.29 computed=0.285714; location 'C' ratio supplied=0.43 computed=0.428571
+- Blocking evidence failures:
+  - verifier_scoring_plan.overall_threshold should be >= 0.99 for binary hard-task acceptance.
+  - hardness_axes is missing required ids: diagnose_or_design.
+  - hardness_axes contains unexpected ids: diagnose.
+  - anti_trivialization_checks is missing required ids: disclosure_collapse, hidden_instance, single_artifact_repair, generalization, prompt_honesty, cheating_vs_difficulty, mechanical_fix_filter, localized_fix, oracle_locality, small_declarative_cluster, grep_collapse, pre_factored_helper, recipe_discount, security_aura_discount, orthogonal_checklist, harness_discount, one_pass_solvability, hard_only_gate, discovery_budget_test, instruction_specificity_test, topology_distribution_test.
+  - anti_trivialization_checks contains unexpected ids: A01, A02, A03, A04, A05, A06, A07, A08, A09, A10, A11, A12, A13, A14, A15, A16, A17, A18, A19, A20, A21.
+  - rubric_axes is missing required ids: verifiable, well_specified, solvable, difficult, interesting, outcome_verified.
+  - rubric_axes contains unexpected ids: hardness, fairness, actionability, verifier_strength, realism, collapse_resistance.
+  - naming_pass.instruction_nouns_extracted disagrees with construction_manifest.code_forbidden_tokens (extra in nouns: ['host', 'profile', 'role']; extra in tokens: ['anchor', 'merger', 'resolver', 'verifier']).
+  - test name 'test_wk_digest_p5' contains forbidden instruction noun 'digest'.
+  - naming_pass.concentration_math disagrees with computed values: location 'A' ratio supplied=0.29 computed=0.285714; location 'B' ratio supplied=0.29 computed=0.285714; location 'C' ratio supplied=0.43 computed=0.428571
+
+## Attempt 3
+- Derived score: 24 FAILs, 0 WARNs
+- Evidence: specs/.runs/offline-service-reconciler/attempt-3-evidence.json
+- Evidence errors:
+  - hardness_axes entry 'diagnose_or_design' must use name 'Diagnose or Design/Search', found 'Diagnose or Design'.
+  - anti_trivialization_checks entry 'disclosure_collapse' must use name 'Disclosure-collapse', found 'Disclosure collapse check'.
+  - anti_trivialization_checks entry 'hidden_instance' must use name 'Hidden-instance', found 'Hidden instance check'.
+  - anti_trivialization_checks entry 'single_artifact_repair' must use name 'Single-artifact repair', found 'Single artifact repair check'.
+  - anti_trivialization_checks entry 'generalization' must use name 'Generalization', found 'Generalization check'.
+  - anti_trivialization_checks entry 'prompt_honesty' must use name 'Prompt-honesty', found 'Prompt honesty check'.
+  - anti_trivialization_checks entry 'cheating_vs_difficulty' must use name 'Cheating-vs-difficulty', found 'Cheating vs difficulty check'.
+  - anti_trivialization_checks entry 'mechanical_fix_filter' must use name 'Mechanical-fix filter', found 'Mechanical fix filter'.
+  - anti_trivialization_checks entry 'localized_fix' must use name 'Localized-fix', found 'Localized fix check'.
+  - anti_trivialization_checks entry 'oracle_locality' must use name 'Oracle-locality', found 'Oracle locality check'.
+  - anti_trivialization_checks entry 'small_declarative_cluster' must use name 'Small declarative-cluster', found 'Small declarative cluster check'.
+  - anti_trivialization_checks entry 'grep_collapse' must use name 'Grep-collapse', found 'Grep collapse check'.
+  - anti_trivialization_checks entry 'pre_factored_helper' must use name 'Pre-factored-helper', found 'Pre-factored helper check'.
+  - anti_trivialization_checks entry 'recipe_discount' must use name 'Recipe-discount', found 'Recipe discount check'.
+  - anti_trivialization_checks entry 'security_aura_discount' must use name 'Security-aura discount', found 'Security aura discount check'.
+  - anti_trivialization_checks entry 'orthogonal_checklist' must use name 'Orthogonal-checklist', found 'Orthogonal checklist check'.
+  - anti_trivialization_checks entry 'harness_discount' must use name 'Harness-discount', found 'Harness discount check'.
+  - anti_trivialization_checks entry 'one_pass_solvability' must use name 'One-pass solvability', found 'One-pass solvability check'.
+  - anti_trivialization_checks entry 'hard_only_gate' must use name 'Hard-only gate', found 'Hard-only gate check'.
+  - anti_trivialization_checks entry 'discovery_budget_test' must use name 'Discovery/design budget test', found 'Discovery budget test'.
+  - rubric_axes entry 'well_specified' must use name 'Well-specified', found 'Well specified'.
+  - rubric_axes entry 'outcome_verified' must use name 'Outcome-verified', found 'Outcome verified'.
+  - naming_pass.instruction_nouns_extracted disagrees with construction_manifest.code_forbidden_tokens (extra in nouns: ['host', 'profile', 'role']; extra in tokens: ['anchor', 'authority', 'cache', 'merger', 'resolver', 'trust', 'verifier']).
+  - naming_pass.concentration_math disagrees with computed values: location 'A' ratio supplied=0.2857 computed=0.285714; location 'B' ratio supplied=0.2857 computed=0.285714; location 'C' ratio supplied=0.4286 computed=0.428571
+- Blocking evidence failures:
+  - hardness_axes entry 'diagnose_or_design' must use name 'Diagnose or Design/Search', found 'Diagnose or Design'.
+  - anti_trivialization_checks entry 'disclosure_collapse' must use name 'Disclosure-collapse', found 'Disclosure collapse check'.
+  - anti_trivialization_checks entry 'hidden_instance' must use name 'Hidden-instance', found 'Hidden instance check'.
+  - anti_trivialization_checks entry 'single_artifact_repair' must use name 'Single-artifact repair', found 'Single artifact repair check'.
+  - anti_trivialization_checks entry 'generalization' must use name 'Generalization', found 'Generalization check'.
+  - anti_trivialization_checks entry 'prompt_honesty' must use name 'Prompt-honesty', found 'Prompt honesty check'.
+  - anti_trivialization_checks entry 'cheating_vs_difficulty' must use name 'Cheating-vs-difficulty', found 'Cheating vs difficulty check'.
+  - anti_trivialization_checks entry 'mechanical_fix_filter' must use name 'Mechanical-fix filter', found 'Mechanical fix filter'.
+  - anti_trivialization_checks entry 'localized_fix' must use name 'Localized-fix', found 'Localized fix check'.
+  - anti_trivialization_checks entry 'oracle_locality' must use name 'Oracle-locality', found 'Oracle locality check'.
+  - anti_trivialization_checks entry 'small_declarative_cluster' must use name 'Small declarative-cluster', found 'Small declarative cluster check'.
+  - anti_trivialization_checks entry 'grep_collapse' must use name 'Grep-collapse', found 'Grep collapse check'.
+  - anti_trivialization_checks entry 'pre_factored_helper' must use name 'Pre-factored-helper', found 'Pre-factored helper check'.
+  - anti_trivialization_checks entry 'recipe_discount' must use name 'Recipe-discount', found 'Recipe discount check'.
+  - anti_trivialization_checks entry 'security_aura_discount' must use name 'Security-aura discount', found 'Security aura discount check'.
+  - anti_trivialization_checks entry 'orthogonal_checklist' must use name 'Orthogonal-checklist', found 'Orthogonal checklist check'.
+  - anti_trivialization_checks entry 'harness_discount' must use name 'Harness-discount', found 'Harness discount check'.
+  - anti_trivialization_checks entry 'one_pass_solvability' must use name 'One-pass solvability', found 'One-pass solvability check'.
+  - anti_trivialization_checks entry 'hard_only_gate' must use name 'Hard-only gate', found 'Hard-only gate check'.
+  - anti_trivialization_checks entry 'discovery_budget_test' must use name 'Discovery/design budget test', found 'Discovery budget test'.
+  - rubric_axes entry 'well_specified' must use name 'Well-specified', found 'Well specified'.
+  - rubric_axes entry 'outcome_verified' must use name 'Outcome-verified', found 'Outcome verified'.
+  - naming_pass.instruction_nouns_extracted disagrees with construction_manifest.code_forbidden_tokens (extra in nouns: ['host', 'profile', 'role']; extra in tokens: ['anchor', 'authority', 'cache', 'merger', 'resolver', 'trust', 'verifier']).
+  - naming_pass.concentration_math disagrees with computed values: location 'A' ratio supplied=0.2857 computed=0.285714; location 'B' ratio supplied=0.2857 computed=0.285714; location 'C' ratio supplied=0.4286 computed=0.428571
+
+## Attempt 4
+- Derived score: 0 FAILs, 0 WARNs
+- Evidence: specs/.runs/offline-service-reconciler/attempt-4-evidence.json
+
+## Attempt 5
+- Derived score: 0 FAILs, 0 WARNs
+- Evidence: specs/.runs/offline-service-reconciler/attempt-5-evidence.json
+

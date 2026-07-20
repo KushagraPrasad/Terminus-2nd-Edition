@@ -1,0 +1,3 @@
+host_id = "host_a"
+role = "compute"
+profile = "nvme"
