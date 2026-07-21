@@ -8,6 +8,8 @@ TARGET = bin/orbit_sim
 
 all: $(TARGET)
 
+rebuild: clean all
+
 $(TARGET): $(OBJS)
 	mkdir -p bin
 	$(CXX) $(CXXFLAGS) -o $(TARGET) $(OBJS)
@@ -17,3 +19,5 @@ $(TARGET): $(OBJS)
 
 clean:
 	rm -f $(OBJS) $(TARGET)
+
+.PHONY: all rebuild clean

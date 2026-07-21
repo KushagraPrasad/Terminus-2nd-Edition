@@ -7,4 +7,4 @@ type = "string"
 description = "The simulation status JSON containing the final energy drift invariants"
 target = "stdout"
 format = "json"
-instruction_checks = ["Verify that energy coordinates do not drift"]
+instruction_checks = ["energy_drift < 1.0e-6", "max_drift < 1.0e-4"]
