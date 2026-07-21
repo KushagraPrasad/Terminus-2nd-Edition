@@ -4,10 +4,10 @@
       "classification": "visible_requirement_found",
       "home": "instruction.md",
       "kind": "boolean_polarity",
-      "location": "tests/test_outputs.py:87",
+      "location": "tests/test_outputs.py:34",
       "remediation": "Document exact boolean polarity.",
       "severity": "PASS",
-      "value": "true"
+      "value": "false"
     },
     {
       "classification": "visible_requirement_found",
@@ -16,31 +16,13 @@
       "location": "tests/test_outputs.py:114",
       "remediation": "Document exact boolean polarity.",
       "severity": "PASS",
-      "value": "false"
-    },
-    {
-      "classification": "visible_requirement_found",
-      "home": "instruction.md",
-      "kind": "boolean_polarity",
-      "location": "tests/test_outputs.py:158",
-      "remediation": "Document exact boolean polarity.",
-      "severity": "PASS",
       "value": "true"
     },
     {
       "classification": "visible_requirement_found",
       "home": "instruction.md",
       "kind": "boolean_polarity",
-      "location": "tests/test_outputs.py:159",
-      "remediation": "Document exact boolean polarity.",
-      "severity": "PASS",
-      "value": "true"
-    },
-    {
-      "classification": "visible_requirement_found",
-      "home": "instruction.md",
-      "kind": "boolean_polarity",
-      "location": "tests/test_outputs.py:163",
+      "location": "tests/test_outputs.py:141",
       "remediation": "Document exact boolean polarity.",
       "severity": "PASS",
       "value": "false"
@@ -49,7 +31,7 @@
       "classification": "visible_requirement_found",
       "home": "instruction.md",
       "kind": "boolean_polarity",
-      "location": "tests/test_outputs.py:167",
+      "location": "tests/test_outputs.py:185",
       "remediation": "Document exact boolean polarity.",
       "severity": "PASS",
       "value": "true"
@@ -58,7 +40,7 @@
       "classification": "visible_requirement_found",
       "home": "instruction.md",
       "kind": "boolean_polarity",
-      "location": "tests/test_outputs.py:208",
+      "location": "tests/test_outputs.py:186",
       "remediation": "Document exact boolean polarity.",
       "severity": "PASS",
       "value": "true"
@@ -67,7 +49,7 @@
       "classification": "visible_requirement_found",
       "home": "instruction.md",
       "kind": "boolean_polarity",
-      "location": "tests/test_outputs.py:212",
+      "location": "tests/test_outputs.py:190",
       "remediation": "Document exact boolean polarity.",
       "severity": "PASS",
       "value": "false"
@@ -76,7 +58,25 @@
       "classification": "visible_requirement_found",
       "home": "instruction.md",
       "kind": "boolean_polarity",
-      "location": "tests/test_outputs.py:241",
+      "location": "tests/test_outputs.py:194",
+      "remediation": "Document exact boolean polarity.",
+      "severity": "PASS",
+      "value": "true"
+    },
+    {
+      "classification": "visible_requirement_found",
+      "home": "instruction.md",
+      "kind": "boolean_polarity",
+      "location": "tests/test_outputs.py:235",
+      "remediation": "Document exact boolean polarity.",
+      "severity": "PASS",
+      "value": "true"
+    },
+    {
+      "classification": "visible_requirement_found",
+      "home": "instruction.md",
+      "kind": "boolean_polarity",
+      "location": "tests/test_outputs.py:239",
       "remediation": "Document exact boolean polarity.",
       "severity": "PASS",
       "value": "false"
@@ -85,7 +85,25 @@
       "classification": "visible_requirement_found",
       "home": "instruction.md",
       "kind": "boolean_polarity",
-      "location": "tests/test_outputs.py:279",
+      "location": "tests/test_outputs.py:268",
+      "remediation": "Document exact boolean polarity.",
+      "severity": "PASS",
+      "value": "false"
+    },
+    {
+      "classification": "visible_requirement_found",
+      "home": "instruction.md",
+      "kind": "boolean_polarity",
+      "location": "tests/test_outputs.py:306",
+      "remediation": "Document exact boolean polarity.",
+      "severity": "PASS",
+      "value": "false"
+    },
+    {
+      "classification": "visible_requirement_found",
+      "home": "instruction.md",
+      "kind": "boolean_polarity",
+      "location": "tests/test_outputs.py:333",
       "remediation": "Document exact boolean polarity.",
       "severity": "PASS",
       "value": "false"
@@ -94,19 +112,10 @@
       "classification": "visible_requirement_found",
       "home": "instruction.md",
       "kind": "command_chain",
-      "location": "tests/test_outputs.py:54",
+      "location": "tests/test_outputs.py:81",
       "remediation": "Name the verifier-rerun command or pipeline in instruction.md or visible docs.",
       "severity": "PASS",
       "value": "node /app/environment/dist/scenario.js scenario.json"
-    },
-    {
-      "classification": "visible_requirement_found",
-      "home": "instruction.md",
-      "kind": "cardinality",
-      "location": "tests/test_outputs.py:84",
-      "remediation": "Document exact tested lengths, sizes, and cardinalities.",
-      "severity": "PASS",
-      "value": "1"
     },
     {
       "classification": "visible_requirement_found",
@@ -118,10 +127,19 @@
       "value": "1"
     },
     {
+      "classification": "visible_requirement_found",
+      "home": "instruction.md",
+      "kind": "cardinality",
+      "location": "tests/test_outputs.py:138",
+      "remediation": "Document exact tested lengths, sizes, and cardinalities.",
+      "severity": "PASS",
+      "value": "1"
+    },
+    {
       "classification": "allowed_hidden_verification_detail",
       "home": null,
       "kind": "string_literal",
-      "location": "tests/test_outputs.py:117",
+      "location": "tests/test_outputs.py:144",
       "remediation": "No public-contract change needed.",
       "severity": "PASS",
       "value": "expire"
@@ -130,7 +148,7 @@
       "classification": "allowed_hidden_verification_detail",
       "home": null,
       "kind": "string_literal",
-      "location": "tests/test_outputs.py:164",
+      "location": "tests/test_outputs.py:191",
       "remediation": "No public-contract change needed.",
       "severity": "PASS",
       "value": "Token revoked"
@@ -139,10 +157,28 @@
       "classification": "allowed_hidden_verification_detail",
       "home": null,
       "kind": "string_literal",
-      "location": "tests/test_outputs.py:238",
+      "location": "tests/test_outputs.py:265",
       "remediation": "No public-contract change needed.",
       "severity": "PASS",
       "value": "error"
+    },
+    {
+      "classification": "visible_requirement_found",
+      "home": "instruction.md",
+      "kind": "cardinality",
+      "location": "tests/test_outputs.py:330",
+      "remediation": "Document exact tested lengths, sizes, and cardinalities.",
+      "severity": "PASS",
+      "value": "1"
+    },
+    {
+      "classification": "allowed_hidden_verification_detail",
+      "home": null,
+      "kind": "string_literal",
+      "location": "tests/test_outputs.py:335",
+      "remediation": "No public-contract change needed.",
+      "severity": "PASS",
+      "value": "expire"
     }
   ],
   "remediation_examples": [
@@ -154,7 +190,7 @@
   "strict": true,
   "summary": {
     "fail": 0,
-    "pass": 16,
+    "pass": 20,
     "warn": 0
   },
   "task_dir": "tasks/token-revocation-freshness"

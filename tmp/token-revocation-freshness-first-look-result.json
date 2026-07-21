@@ -1,14 +1,12 @@
 {
-  "first_look_result": {
-    "reviewer_or_model": "Codex dry run",
-    "date": "2026-07-17",
-    "packet_hash": "ba1df39bf88905bf5a988f2b17afd7ace48209da14951726ad93a45707c49a20",
-    "subsystem_identified": true,
-    "source_fix_understood": true,
-    "verifier_understood": true,
-    "static_output_rejected": true,
-    "rational_plan": true,
-    "failure_reason": "",
-    "decision": "PASS"
-  }
+  "reviewer_or_model": "Codex dry run",
+  "date": "2026-07-21",
+  "packet_hash": "832c757ed6dd2df1469050833f40fee9e11cf6a19d3cfe9afedd05a019128450",
+  "subsystem_identified": true,
+  "source_fix_understood": true,
+  "verifier_understood": true,
+  "static_output_rejected": true,
+  "rational_plan": true,
+  "failure_reason": "",
+  "decision": "PASS"
 }

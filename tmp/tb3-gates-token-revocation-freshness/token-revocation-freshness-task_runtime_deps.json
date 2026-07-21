@@ -3,9 +3,9 @@
     {
       "command": "node",
       "locations": [
-        "tests/test_outputs.py:35",
-        "tests/test_outputs.py:46",
-        "tests/test_outputs.py:55",
+        "tests/test_outputs.py:60",
+        "tests/test_outputs.py:71",
+        "tests/test_outputs.py:82",
         "environment/src/scenario.ts:28"
       ],
       "message": "node is invoked and an obvious provider is present",
@@ -41,17 +41,17 @@
     {
       "command": "node",
       "line": "res = subprocess.run([\"node\", \"-e\", js_cmd], capture_output=True, text=True, check=True, cwd=\"/app/environment\")",
-      "location": "tests/test_outputs.py:35"
+      "location": "tests/test_outputs.py:60"
     },
     {
       "command": "node",
       "line": "res = subprocess.run([\"node\", \"-e\", js_cmd], capture_output=True, text=True, check=True, cwd=\"/app/environment\")",
-      "location": "tests/test_outputs.py:46"
+      "location": "tests/test_outputs.py:71"
     },
     {
       "command": "node",
       "line": "[\"node\", \"/app/environment/dist/scenario.js\", \"scenario.json\"],",
-      "location": "tests/test_outputs.py:55"
+      "location": "tests/test_outputs.py:82"
     },
     {
       "command": "node",

@@ -8,6 +8,30 @@ import pytest
 DB_PATH = Path("gateway.db")
 SCENARIO_PATH = Path("scenario.json")
 TRACE_PATH = Path("/app/logs/verifier/auth_audit_trace.json")
+FORBIDDEN_TEST_READ_MARKERS = ("/tests", "test_outputs.py")
+
+
+def assert_runtime_does_not_reference_tests():
+    scan_roots = [Path("/app/environment/src"), Path("/app/environment/dist")]
+    offenders = []
+
+    for root in scan_roots:
+        if not root.exists():
+            continue
+
+        for file_path in root.rglob("*"):
+            if not file_path.is_file():
+                continue
+
+            try:
+                text = file_path.read_text(encoding="utf-8")
+            except (OSError, UnicodeDecodeError):
+                continue
+
+            if any(marker in text for marker in FORBIDDEN_TEST_READ_MARKERS):
+                offenders.append(str(file_path))
+
+    assert not offenders, f"Runtime code must not reference mounted test files: {offenders}"
 
 
 @pytest.fixture(autouse=True)
@@ -49,6 +73,8 @@ def make_jwt_tokens(payloads: list[dict], secret: str, kid: str) -> list[str]:
 
 
 def run_scenario_process(scenario: dict):
+    assert_runtime_does_not_reference_tests()
+
     with open(SCENARIO_PATH, "w") as f:
         json.dump(scenario, f)
 

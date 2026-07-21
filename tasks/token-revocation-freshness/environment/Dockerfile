@@ -24,7 +24,7 @@ COPY . /app/environment
 RUN rm -rf /app/environment/solution /app/environment/tests && \
     mkdir -p /app/logs/verifier && \
     cd /app/environment && \
-    npm install && \
+    npm ci && \
     npm run build && \
     chmod -R 755 /app /opt/verifier
 
